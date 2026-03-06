@@ -91,7 +91,7 @@ do_push() {
     copy_to_repo
 
     cd "$REPO_DIR" || exit 1
-    git add -A
+    git add -A 2>/dev/null
 
     # 변경 없으면 스킵
     if git diff --cached --quiet; then
@@ -102,13 +102,13 @@ do_push() {
     local host=$(hostname)
     local ts=$(date '+%Y-%m-%d %H:%M:%S')
     local changed=$(git diff --cached --stat | tail -1)
-    git commit -m "$(cat <<EOF
+    git commit -q -m "$(cat <<EOF
 [$host] $ts
 
 $changed
 EOF
 )"
-    git push 2>&1
+    git push -q 2>&1
     echo "완료: 백업됨 ($host, $ts)"
 }
 
@@ -134,14 +134,16 @@ do_status() {
 
     # 로컬 변경 확인 (임시 복사 후 diff)
     copy_to_repo
-    if git diff --quiet && git diff --cached --quiet; then
+    git add -A 2>/dev/null
+    if git diff --cached --quiet; then
         echo "상태: 동기화됨"
     else
         echo "상태: 로컬 변경 있음 — backup 필요"
-        git diff --stat
+        git diff --cached --stat
     fi
     # 복사한 변경 되돌리기
-    git checkout -- . 2>/dev/null
+    git reset -q HEAD -- . 2>/dev/null
+    git checkout -q -- . 2>/dev/null
 }
 
 case "$1" in
