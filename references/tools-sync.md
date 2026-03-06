@@ -18,15 +18,23 @@ git push && gdrive-sync push
 ```
 
 ## claude-config-sync (`~/bin/claude-config-sync.sh`)
-Claude Code 설정/스크립트/dotfiles → Google Drive 백업 (cp 기반)
-- `claude-config-sync push` — `~/.claude/` + `~/bin/` + dotfiles → `github-ignore/claude-config/`
-- `claude-config-sync pull` — Google Drive → 로컬 복원
-- `claude-config-sync status` — 백업된 파일 목록
+Claude Code 설정 → GitHub `ryudae33/claude-settings` (private) 백업
+- `claude-config-sync push` — `~/.claude/` + `~/bin/` + dotfiles → GitHub
+- `claude-config-sync pull` — GitHub → 로컬 복원
+- `claude-config-sync status` — 동기화 상태 (git log + diff)
 
 ### 백업 대상
-- `~/.claude/` — CLAUDE.md, config.json, mcp_servers.json, .claudeignore, *.vbs, claude.ico
+- `~/.claude/` — CLAUDE.md, settings.json, config.json, .claudeignore, *.bat, *.vbs
 - `~/.claude/commands/` — 사용자 스킬 (*.md)
 - `~/.claude/agents/` — 에이전트 정의 (*.md)
 - `~/.claude/references/` — 참조 문서 (*.md)
-- `~/bin/` — 스크립트/도구
+- `~/.claude/memory/` — 자동 메모리 (MEMORY.md)
+- `~/bin/` — 스크립트 (*.sh)
 - dotfiles — .bashrc, .bash_profile, .profile, .gitconfig, .vimrc
+- **제외**: mcp_servers.json (토큰 포함), *.exe 바이너리
+
+### 새 PC 세팅
+```bash
+gh repo clone ryudae33/claude-settings ~/claude-settings
+bash ~/claude-settings/bin/claude-config-sync.sh pull
+```
