@@ -1,0 +1,17 @@
+# 민감 정보
+.credentials.json
+*.secret
+.env
+
+# 바이너리
+bin/*.exe
+bin/*.dll
+
+# OS
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# 세션 데이터
+.sync-version.json
+mcp_servers.json

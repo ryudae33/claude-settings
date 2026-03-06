@@ -1,0 +1,67 @@
+# 빌드 출력
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/x86/
+**/x64/
+
+# .NET 바이너리
+**/*.exe
+**/*.dll
+**/*.pdb
+**/*.cache
+**/*.mdb
+**/*.ldf
+**/*.mdf
+
+# Visual Studio
+**/.vs/
+**/*.user
+**/*.suo
+**/packages/
+**/*.vshost.*
+
+# Designer 파일 (용량 큼, 필요시 직접 읽기)
+**/*.Designer.vb
+**/*.Designer.cs
+**/*.designer.cs
+
+# 이미지/미디어
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.bmp
+**/*.ico
+**/*.svg
+**/*.mp4
+**/*.avi
+**/*.wav
+**/*.mp3
+
+# 압축/아카이브
+**/*.zip
+**/*.rar
+**/*.7z
+**/*.tar
+**/*.gz
+
+# Node.js
+**/node_modules/
+**/package-lock.json
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/venv/
+
+# Git
+**/.git/
+
+# 기타 대용량
+**/*.log
+**/*.bak
+**/*.tmp
+**/Thumbs.db
