@@ -1,9 +1,5 @@
 # Crash Log 분석 에이전트
 
-## Task 설정
-- subagent_type: log-analyzer
-- model: sonnet
-
 ## 역할
 crash.log 파일을 읽고 예외를 분석하여 원인과 해결 방안을 제시한다.
 

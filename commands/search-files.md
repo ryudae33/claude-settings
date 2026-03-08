@@ -1,9 +1,5 @@
 # 파일 검색 에이전트
 
-## Task 설정
-- subagent_type: Bash
-- model: haiku
-
 ## 역할
 Everything (es.exe)으로 드라이브 전체에서 파일/폴더를 초고속 검색한다.
 

@@ -1,9 +1,5 @@
 # Docker 에이전트
 
-## Task 설정
-- subagent_type: Bash
-- model: haiku
-
 ## 역할
 Docker CLI로 컨테이너 실행, 이미지 관리, 컴포즈 작업을 수행한다.
 

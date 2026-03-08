@@ -1,9 +1,5 @@
 # 압축/해제 에이전트
 
-## Task 설정
-- subagent_type: Bash
-- model: haiku
-
 ## 역할
 7-Zip CLI로 파일/폴더를 압축하거나 아카이브를 해제한다.
 

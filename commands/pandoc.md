@@ -1,9 +1,5 @@
 # 문서 변환 에이전트 (Pandoc)
 
-## Task 설정
-- subagent_type: Bash
-- model: haiku
-
 ## 역할
 Pandoc으로 Markdown, Word, HTML, PDF 등 문서 형식을 변환한다.
 LibreOffice 기반 /convert-doc과 차이: Pandoc은 Markdown/HTML/LaTeX 계열에 특화.

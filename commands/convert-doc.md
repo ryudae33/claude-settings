@@ -1,9 +1,5 @@
 # 문서 변환 에이전트
 
-## Task 설정
-- subagent_type: Bash
-- model: haiku
-
 ## 역할
 LibreOffice CLI로 문서를 다른 형식으로 변환한다.
 

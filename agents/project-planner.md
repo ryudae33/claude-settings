@@ -1,7 +1,7 @@
 ---
 name: project-planner
 description: 신규 자동화 프로젝트 계획/설계. 요구사항 정리, 프로젝트 구조/통신/DB/시퀀스 설계, WBS 작성. 스펙 불명확 시 반드시 질문 먼저.
-model: claude-opus-4-6
+model: claude-sonnet-4-6
 color: purple
 ---
 

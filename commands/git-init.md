@@ -1,9 +1,5 @@
 # Git 프로젝트 초기화 에이전트
 
-## Task 설정
-- subagent_type: git-manager
-- model: haiku
-
 ## 역할
 새 프로젝트의 Git 리포지토리를 초기화하고, ftech-projects 조직에 리포를 생성하며, 필수 템플릿 파일을 세팅한다.
 

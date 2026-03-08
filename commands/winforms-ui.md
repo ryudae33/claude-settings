@@ -1,9 +1,5 @@
 # WinForms UI 작성 에이전트
 
-## Task 설정
-- subagent_type: ui-builder
-- model: sonnet
-
 ## 역할
 WinForms Designer.cs 코드 작성 및 UI 레이아웃 구성
 

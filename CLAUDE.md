@@ -4,8 +4,8 @@
 - Email: ryudae33@gmail.com / GitHub: ryudae33 (작업 전 `gh auth switch --user ryudae33`)
 - 조직: ftech-projects (리포 기본 `ftech-projects/` 아래)
 - **git push 후 반드시 `gdrive-sync push` 실행** — gitignore된 문서/DB 파일을 Google Drive `Sourcr ryudae/리포명/` 에 백업
-- **빌드 publish 결과물**: git 관리 대상 아님. 배포 전 수동 `gdrive-sync push`로 백업 여부는 프로젝트별 판단 (build-runner는 자동 동기화 안 함)
 - **git clone 후 반드시 `gdrive-sync pull` 실행** — Google Drive에서 gitignore된 문서/DB 파일 복원
+- **빌드 publish 결과물**: git 관리 대상 아님. 배포 전 수동 `gdrive-sync push`로 백업 여부는 프로젝트별 판단 (build-runner는 자동 동기화 안 함)
 
 ## 응답
 - 한글 응답, 코드 주석도 한글. 짧고 핵심만, 아부/수다 금지
@@ -25,7 +25,9 @@
 - 판단 기준: 단일 도메인 집중 작업이거나 병렬 처리가 유리하면 Task 도구 사용
 - 주요 에이전트: project-analyzer, build-runner, db-explorer, log-analyzer, hw-connector, doc-reader, web-searcher, git-manager
 - 단순 질문/단일 파일 수정은 직접 처리 (에이전트 남용 금지)
-
+- **web-searcher 호출 금지 케이스**: PLC/로봇/자동화 일반 지식, 표준 프로토콜(Modbus/EtherNet IP/TMSVR 등), C#/.NET API, 알고 있는 하드웨어 스펙 → 직접 답변
+- **web-searcher 호출 허용**: 특정 모델 최신 펌웨어/매뉴얼 URL, 단종 여부, 가격/납기 확인 등 실시간 정보만
+- web-searcher 최대 **2회** 호출 후 결과 없으면 "확인 불가" 보고
 ## 작업 기록
 - 시작 시 해당 폴더 CLAUDE.md 확인, 완료 시 시간+내역 기록 (`powershell Get-Date`, UTC 금지)
 

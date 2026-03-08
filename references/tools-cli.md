@@ -1,7 +1,7 @@
 # CLI 유틸리티
 
 ## 파일 검색
-- **Everything CLI** → `es` (PATH 등록, `C:\Users\ryuda\bin\es.exe` v1.1.0.27)
+- **Everything CLI** → `es` (PATH 등록, `C:\Users\Administrator\bin\es.exe` v1.1.0.27)
   - `es *.mdb` — 확장자 검색
   - `es ext:cs "C:\Projects"` — 경로 필터
   - `es -size -dm *.log` — 크기/수정일 포함
@@ -18,7 +18,7 @@
 - **LibreOffice** → `soffice` (PATH 등록, `C:\Program Files\LibreOffice\program\`)
   - `soffice --headless --convert-to pdf 파일.docx`
   - `soffice --headless --convert-to xlsx 파일.csv`
-- **SumatraPDF** → `SumatraPDF` (PATH 등록, `C:\Users\ryuda\AppData\Local\SumatraPDF\`)
+- **SumatraPDF** → `SumatraPDF` (PATH 등록, `C:\Users\Administrator\AppData\Local\SumatraPDF\`)
   - `SumatraPDF -print-to-default 파일.pdf` — 기본 프린터 출력
 - **Pandoc** → `pandoc` (PATH 등록, 설치됨)
   - `pandoc input.md -o output.docx` — Markdown → Word
@@ -53,7 +53,7 @@
   - 래퍼 스크립트: `gdrive-sync push/pull/status`
 
 ## 런타임
-- **Python** → `python` (PATH 등록, `C:\Users\ryuda\AppData\Local\Programs\Python\Python313\python.exe` v3.13.12)
+- **Python** → `python` (PATH 등록, `C:\Python314\python.exe` v3.14.3)
   - pip: `pip install 패키지`
   - 시리얼 테스트: `python -m serial.tools.miniterm COM1 9600`
 - **Node.js** → `node` / `npm` / `npx` (PATH 등록, v24.13.1)

@@ -1,7 +1,7 @@
 ---
 name: build-runner
 description: 빌드 및 커맨드 명령 실행. dotnet build/publish, MSBuild, PowerShell/CMD 스크립트 실행. 빌드 에러 분석 및 보고.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: green
 ---
 

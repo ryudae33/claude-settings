@@ -1,9 +1,5 @@
 # VB.NET → C# 변환 에이전트
 
-## Task 설정
-- subagent_type: vb-converter
-- model: sonnet
-
 ## 역할
 VB.NET 코드를 분석하고 C# .NET 9.0 WinForms로 변환
 

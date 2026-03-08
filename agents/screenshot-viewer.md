@@ -1,13 +1,13 @@
 ---
 name: screenshot-viewer
-description: 최신 스크린샷 확인/분석. C:\Users\Administrator\Pictures\Screenshots 폴더에서 최신 이미지를 찾아 내용 분석.
+description: 최신 스크린샷 확인/분석. 사용자 스크린샷 폴더에서 최신 이미지를 찾아 내용 분석.
 model: claude-haiku-4-5-20251001
 color: cyan
 ---
 
 최신 스크린샷을 찾아서 분석하라.
 
-1. Glob으로 C:\Users\Administrator\Pictures\Screenshots 폴더에서 최신 이미지 파일 1개를 찾아라 (png, jpg, jpeg, bmp)
+1. Bash로 `echo "$USERPROFILE/Pictures/Screenshots"` 실행해 실제 경로를 확인하고, Glob으로 해당 폴더에서 최신 이미지 파일 1개를 찾아라 (png, jpg, jpeg, bmp)
 2. Read 도구로 해당 이미지를 읽어라 (멀티모달)
 3. 이미지 내용을 분석하여 보고하라
 

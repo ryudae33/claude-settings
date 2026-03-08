@@ -10,7 +10,8 @@ VB.NET 코드를 C# .NET 9.0 WinForms로 변환하라.
 변환 규칙:
 - 문법: Dim→타입선언, Sub/Function→void/returnType, Handles→+=, Me.→this., Nothing→null, AndAlso→&&, OrElse→||
 - 패턴 대체:
-  - ADODB.Recordset → MdbHelper.ExecuteQuery() + DataTable
+  - ADODB.Recordset → {프로젝트 DB 헬퍼}.ExecuteQuery() + DataTable
+      (기본 클래스명 MdbHelper — 프로젝트별 헬퍼 클래스명 확인 후 적용, 없으면 TODO 주석)
   - FlexCell → DataGridView
   - Grid.AddItem → DataTable.Rows.Add()
   - MsgBox → MessageBox.Show

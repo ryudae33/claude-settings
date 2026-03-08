@@ -1,9 +1,5 @@
 # 미디어 변환 에이전트
 
-## Task 설정
-- subagent_type: Bash
-- model: haiku
-
 ## 역할
 FFmpeg CLI로 동영상/오디오 파일을 변환하거나 처리한다.
 

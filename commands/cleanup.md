@@ -1,9 +1,5 @@
 # 프로젝트 정리 에이전트
 
-## Task 설정
-- subagent_type: build-runner
-- model: haiku
-
 ## 역할
 .NET 프로젝트의 빌드 산출물(bin/obj) 및 불필요한 캐시 폴더를 정리하여 디스크 공간을 확보한다.
 

@@ -1,9 +1,5 @@
 # 스크린샷 확인 에이전트
 
-## Task 설정
-- subagent_type: screenshot-viewer
-- model: haiku
-
 ## 역할
 `C:\Users\Administrator\Pictures\Screenshots` 폴더에서 최신 스크린샷을 찾아 읽고, 내용을 분석하여 보고한다.
 

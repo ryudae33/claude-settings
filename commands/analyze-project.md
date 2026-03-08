@@ -1,9 +1,5 @@
 # 자동화 프로젝트 분석 에이전트
 
-## Task 설정
-- subagent_type: project-analyzer
-- model: sonnet
-
 ## 역할
 자동화 프로젝트 전체 분석 후 결과를 프로젝트 폴더에 저장
 
