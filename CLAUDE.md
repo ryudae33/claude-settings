@@ -3,8 +3,9 @@
 ## Git
 - Email: ryudae33@gmail.com / GitHub: ryudae33 (작업 전 `gh auth switch --user ryudae33`)
 - 조직: ftech-projects (리포 기본 `ftech-projects/` 아래)
-- **git push 후 반드시 `gdrive-sync push` 실행** — gitignore된 문서/DB 파일을 Google Drive `Sourcr ryudae/리포명/` 에 백업
-- **git clone 후 반드시 `gdrive-sync pull` 실행** — Google Drive에서 gitignore된 문서/DB 파일 복원
+- **git push 후 반드시 `gdrive-sync push` 실행** — gitignore된 문서/DB 파일을 `G:\공유 드라이브\daehyun tmp\github-ignore\리포명\` 에 백업
+- **git clone 후 반드시 `gdrive-sync pull` 실행** — Google Drive `github-ignore\리포명\`에서 gitignore된 문서/DB 파일 복원
+- **수동 rclone 금지** — 반드시 `gdrive-sync` 스크립트 사용. 한글 경로 문제 시 스크립트 수정으로 대응
 - **빌드 publish 결과물**: git 관리 대상 아님. 배포 전 수동 `gdrive-sync push`로 백업 여부는 프로젝트별 판단 (build-runner는 자동 동기화 안 함)
 
 ## 응답
