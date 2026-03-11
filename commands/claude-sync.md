@@ -14,7 +14,7 @@ Backs up or restores Claude Code settings (skills/agents/references/memory/dotfi
 
 ## Input
 $ARGUMENTS (task type)
-- `backup` or `push` — Local → GitHub backup
+- `backup` or `push` — Local → GitHub push
 - `load` or `pull` — GitHub → Local restore
 - `status` — Check sync status
 
@@ -36,7 +36,8 @@ bash ~/bin/claude-config-sync.sh status
 ```
 
 ### Repository
-`ryudae33/claude-settings` (private)
+`ryudae33/claude-settings` (public)
+Local clone: `~/claude-settings`
 
 ### New PC Initial Setup Steps
 1. Install Claude Code + authenticate gh CLI
@@ -46,6 +47,7 @@ bash ~/bin/claude-config-sync.sh status
 5. `mcp_servers.json` must be configured manually (excluded from git due to tokens)
 
 ## Rules
-- Auto-clone if repo doesn't exist
+- Auto-clone if repo doesn't exist locally
 - Skip commit if no changes
-- mcp_servers.json is gitignored (contains tokens)
+- mcp_servers.json is NOT synced (contains tokens)
+- settings.local.json is NOT synced (machine-specific)

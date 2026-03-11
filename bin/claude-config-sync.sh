@@ -1,159 +1,126 @@
 #!/bin/bash
-# claude-config-sync.sh — Claude Code 설정을 GitHub로 백업/복원
-# 리포: ryudae33/claude-settings (private)
+# claude-config-sync: Sync Claude Code settings with GitHub
+# Usage:
+#   claude-config-sync push   - Local settings → GitHub push
+#   claude-config-sync pull   - GitHub → Local settings restore
+#   claude-config-sync status - Check sync status
 
-REPO_DIR="$HOME/claude-settings"
-SRC="$HOME/.claude"
+REPO="ryudae33/claude-settings"
+LOCAL_REPO="$HOME/claude-settings"
+CLAUDE_DIR="$HOME/.claude"
 
-# 동기화 대상
-SYNC_FILES=(CLAUDE.md INSTALL.md .claudeignore config.json settings.json settings.local.json claude.ico build-template.md)
-SYNC_GLOBS=("*.bat" "*.vbs" "*.sh")
-SYNC_DIRS=(commands agents references memory)
-DOTFILES=(.bashrc .bash_profile .profile .gitconfig .vimrc)
+# Ensure gh auth
+gh auth switch --user ryudae33 2>/dev/null
 
-check_repo() {
-    if [ ! -d "$REPO_DIR/.git" ]; then
-        echo "리포 없음. 클론 중..."
-        gh repo clone ryudae33/claude-settings "$REPO_DIR" 2>/dev/null
-        if [ ! -d "$REPO_DIR/.git" ]; then
-            echo "오류: 리포 클론 실패"
-            exit 1
+# Clone repo if not exists
+ensure_repo() {
+    if [ ! -d "$LOCAL_REPO/.git" ]; then
+        echo "[Claude Config] Cloning repo..."
+        gh repo clone "$REPO" "$LOCAL_REPO"
+        cd "$LOCAL_REPO" && git config user.email "ryudae33@gmail.com"
+    fi
+}
+
+case "${1}" in
+    push)
+        ensure_repo
+        echo "[Claude Config] Local → GitHub push..."
+
+        # Copy settings to repo
+        cp "$CLAUDE_DIR/CLAUDE.md" "$LOCAL_REPO/" 2>/dev/null
+        cp "$CLAUDE_DIR/config.json" "$LOCAL_REPO/" 2>/dev/null
+        cp "$CLAUDE_DIR/settings.json" "$LOCAL_REPO/" 2>/dev/null
+        cp "$CLAUDE_DIR/.claudeignore" "$LOCAL_REPO/" 2>/dev/null
+        cp "$CLAUDE_DIR/build-template.md" "$LOCAL_REPO/" 2>/dev/null
+
+        # Commands (skills)
+        mkdir -p "$LOCAL_REPO/commands"
+        cp "$CLAUDE_DIR/commands/"*.md "$LOCAL_REPO/commands/" 2>/dev/null
+
+        # Agents
+        if [ -d "$CLAUDE_DIR/agents" ]; then
+            mkdir -p "$LOCAL_REPO/agents"
+            cp "$CLAUDE_DIR/agents/"*.md "$LOCAL_REPO/agents/" 2>/dev/null
         fi
-    fi
-}
 
-# ~/.claude → 리포로 파일 복사
-copy_to_repo() {
-    # 개별 파일
-    for f in "${SYNC_FILES[@]}"; do
-        [ -f "$SRC/$f" ] && cp "$SRC/$f" "$REPO_DIR/$f"
-    done
-    # glob
-    for g in "${SYNC_GLOBS[@]}"; do
-        for f in "$SRC"/$g; do
-            [ -f "$f" ] && cp "$f" "$REPO_DIR/$(basename "$f")"
-        done
-    done
-    # 디렉토리
-    for d in "${SYNC_DIRS[@]}"; do
-        if [ -d "$SRC/$d" ]; then
-            mkdir -p "$REPO_DIR/$d"
-            cp "$SRC/$d"/*.md "$REPO_DIR/$d/" 2>/dev/null
+        # References
+        if [ -d "$CLAUDE_DIR/references" ]; then
+            mkdir -p "$LOCAL_REPO/references"
+            cp "$CLAUDE_DIR/references/"*.md "$LOCAL_REPO/references/" 2>/dev/null
         fi
-    done
-    # ~/bin 스크립트
-    mkdir -p "$REPO_DIR/bin"
-    for f in "$HOME"/bin/*.sh; do
-        [ -f "$f" ] && cp "$f" "$REPO_DIR/bin/"
-    done
-    # dotfiles
-    mkdir -p "$REPO_DIR/dotfiles"
-    for f in "${DOTFILES[@]}"; do
-        [ -f "$HOME/$f" ] && cp "$HOME/$f" "$REPO_DIR/dotfiles/$f"
-    done
-}
 
-# 리포 → ~/.claude로 파일 복사
-copy_from_repo() {
-    # 개별 파일
-    for f in "${SYNC_FILES[@]}"; do
-        [ -f "$REPO_DIR/$f" ] && cp "$REPO_DIR/$f" "$SRC/$f"
-    done
-    # glob
-    for g in "${SYNC_GLOBS[@]}"; do
-        for f in "$REPO_DIR"/$g; do
-            [ -f "$f" ] && cp "$f" "$SRC/$(basename "$f")"
-        done
-    done
-    # 디렉토리
-    for d in "${SYNC_DIRS[@]}"; do
-        if [ -d "$REPO_DIR/$d" ]; then
-            mkdir -p "$SRC/$d"
-            cp "$REPO_DIR/$d"/*.md "$SRC/$d/" 2>/dev/null
+        # Bin scripts
+        mkdir -p "$LOCAL_REPO/bin"
+        cp "$HOME/bin/"*.sh "$LOCAL_REPO/bin/" 2>/dev/null
+
+        # Commit and push
+        cd "$LOCAL_REPO"
+        git add -A
+        if git diff --cached --quiet; then
+            echo "No changes to push."
+        else
+            git commit -m "[sync] $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+            echo "Push complete."
         fi
-    done
-    # ~/bin 스크립트
-    mkdir -p "$HOME/bin"
-    for f in "$REPO_DIR"/bin/*.sh; do
-        [ -f "$f" ] && cp "$f" "$HOME/bin/"
-    done
-    # dotfiles
-    if [ -d "$REPO_DIR/dotfiles" ]; then
-        for f in "${DOTFILES[@]}"; do
-            [ -f "$REPO_DIR/dotfiles/$f" ] && cp "$REPO_DIR/dotfiles/$f" "$HOME/$f"
-        done
-    fi
-}
+        ;;
+    pull)
+        ensure_repo
+        echo "[Claude Config] GitHub → Local restore..."
+        cd "$LOCAL_REPO" && git pull
 
-do_push() {
-    check_repo
-    echo "→ 설정 백업 중..."
-    copy_to_repo
+        # Restore settings
+        cp "$LOCAL_REPO/CLAUDE.md" "$CLAUDE_DIR/" 2>/dev/null
+        cp "$LOCAL_REPO/config.json" "$CLAUDE_DIR/" 2>/dev/null
+        cp "$LOCAL_REPO/settings.json" "$CLAUDE_DIR/" 2>/dev/null
+        cp "$LOCAL_REPO/.claudeignore" "$CLAUDE_DIR/" 2>/dev/null
+        cp "$LOCAL_REPO/build-template.md" "$CLAUDE_DIR/" 2>/dev/null
 
-    cd "$REPO_DIR" || exit 1
-    git add -A 2>/dev/null
+        # Commands
+        mkdir -p "$CLAUDE_DIR/commands"
+        cp "$LOCAL_REPO/commands/"*.md "$CLAUDE_DIR/commands/" 2>/dev/null
 
-    # 변경 없으면 스킵
-    if git diff --cached --quiet; then
-        echo "변경 없음 — 이미 최신"
-        return
-    fi
+        # Agents
+        if [ -d "$LOCAL_REPO/agents" ]; then
+            mkdir -p "$CLAUDE_DIR/agents"
+            cp "$LOCAL_REPO/agents/"*.md "$CLAUDE_DIR/agents/" 2>/dev/null
+        fi
 
-    local host=$(hostname)
-    local ts=$(date '+%Y-%m-%d %H:%M:%S')
-    local changed=$(git diff --cached --stat | tail -1)
-    git commit -q -m "$(cat <<EOF
-[$host] $ts
+        # References
+        if [ -d "$LOCAL_REPO/references" ]; then
+            mkdir -p "$CLAUDE_DIR/references"
+            cp "$LOCAL_REPO/references/"*.md "$CLAUDE_DIR/references/" 2>/dev/null
+        fi
 
-$changed
-EOF
-)"
-    git push -q 2>&1
-    echo "완료: 백업됨 ($host, $ts)"
-}
+        # Bin scripts
+        mkdir -p "$HOME/bin"
+        cp "$LOCAL_REPO/bin/"*.sh "$HOME/bin/" 2>/dev/null
 
-do_pull() {
-    check_repo
-    echo "← 설정 복원 중..."
-
-    cd "$REPO_DIR" || exit 1
-    git pull --ff-only 2>&1
-
-    copy_from_repo
-    echo "완료: 복원됨"
-}
-
-do_status() {
-    check_repo
-    cd "$REPO_DIR" || exit 1
-
-    # 최신 커밋 정보
-    echo "최근 백업:"
-    git log --oneline -5 --format="  %h  %s"
-    echo ""
-
-    # 로컬 변경 확인 (임시 복사 후 diff)
-    copy_to_repo
-    git add -A 2>/dev/null
-    if git diff --cached --quiet; then
-        echo "상태: 동기화됨"
-    else
-        echo "상태: 로컬 변경 있음 — backup 필요"
-        git diff --cached --stat
-    fi
-    # 복사한 변경 되돌리기
-    git reset -q HEAD -- . 2>/dev/null
-    git checkout -q -- . 2>/dev/null
-}
-
-case "$1" in
-    push|backup) do_push ;;
-    pull|load)   do_pull ;;
-    status)      do_status ;;
+        echo "Restore complete. Restart Claude Code."
+        ;;
+    status)
+        ensure_repo
+        echo "[Claude Config] Sync status:"
+        cd "$LOCAL_REPO"
+        git fetch
+        git status
+        echo ""
+        echo "Last commit:"
+        git log --oneline -3
+        ;;
     *)
-        echo "사용법: claude-config-sync [push|pull|status]"
-        echo "  push (backup) — 설정 → GitHub 백업"
-        echo "  pull (load)   — GitHub → 로컬 복원"
-        echo "  status        — 동기화 상태 확인"
+        echo "Usage: claude-config-sync {push|pull|status}"
+        echo ""
+        echo "  push   - Local Claude settings → GitHub backup"
+        echo "  pull   - GitHub → Local Claude settings restore"
+        echo "  status - Check sync status"
+        echo ""
+        echo "Restore on new PC:"
+        echo "  1. npm install -g @anthropic-ai/claude-code"
+        echo "  2. gh auth login"
+        echo "  3. gh repo clone $REPO ~/claude-settings"
+        echo "  4. bash ~/claude-settings/bin/claude-config-sync.sh pull"
+        echo "  5. claude"
+        exit 1
         ;;
 esac
