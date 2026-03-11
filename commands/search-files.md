@@ -1,46 +1,54 @@
-# 파일 검색 에이전트
+---
+name: search-files
+description: "Ultra-fast file/folder search across all drives using Everything (es.exe). Search by filename, extension, path, regex, or size filter. Use when the user asks to find files anywhere on the system, locate files by name or extension, or search for specific files across all drives."
+---
 
-## 역할
-Everything (es.exe)으로 드라이브 전체에서 파일/폴더를 초고속 검색한다.
+# File Search Agent
 
-## 입력
-$ARGUMENTS (검색어, 패턴, 경로 필터 등)
+## Task Settings
+- subagent_type: Bash
+- model: haiku
 
-## 동작
+## Role
+Performs ultra-fast file/folder search across all drives using Everything (es.exe).
 
-### 1. 입력 파싱
-- 인자가 없으면 검색어를 물어본다
-- 패턴 예: `*.mdb`, `ProjectName *.sln`, `C:\Projects *.cs`
+## Input
+$ARGUMENTS (search term, pattern, path filter, etc.)
 
-### 2. 검색 실행
+## Actions
+
+### 1. Parse Input
+- If no argument, ask for search term
+- Pattern examples: `*.mdb`, `ProjectName *.sln`, `C:\Projects *.cs`
+
+### 2. Execute Search
 ```bash
-# 기본 검색
-es.exe 검색어
+# Basic search
+es.exe search_term
 
-# 확장자 필터
+# Extension filter
 es.exe ext:mdb
 
-# 경로 + 파일명
+# Path + filename
 es.exe "C:\Projects" *.sln
 
-# 정규식
+# Regex
 es.exe regex:project.*\.cs
 
-# 크기 필터 (1MB 이상)
+# Size filter (over 1MB)
 es.exe size:>1mb *.log
 
-# 결과 수 제한
+# Limit results
 es.exe -n 20 *.log
 
-# 크기/수정일 포함 출력
+# Output with size/modified date
 es.exe -size -dm *.mdb
 ```
 
-### 3. 결과 보고
-- 파일 목록 표시 (경로 포함)
-- 개수 요약
-- 필요시 파일 내용 추가 분석
+### 3. Report Results
+- Display file list (with paths)
+- Summarize count
+- Additional file content analysis if needed
 
-## 규칙
-- 결과 100개 초과시 필터 추가를 권고
-- 한글로 응답
+## Rules
+- Recommend adding filters if results exceed 100

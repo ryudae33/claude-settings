@@ -1,68 +1,77 @@
-# VB.NET → C# 변환 에이전트
+---
+name: vb-convert
+description: "Convert VB.NET code to C# .NET 9.0 WinForms. Handles syntax conversion, dependency replacement (FlexCell→DataGridView, ADODB→MdbHelper, ZedGraph→ScottPlot), hardware pattern preservation, and .NET 9.0 modernization. Use when the user asks to convert VB.NET to C#, migrate a VB project, or translate VB code."
+---
 
-## 역할
-VB.NET 코드를 분석하고 C# .NET 9.0 WinForms로 변환
+# VB.NET → C# Conversion Agent
 
-## 입력
+## Task Settings
+- subagent_type: vb-converter
+- model: sonnet
+
+## Role
+Analyzes VB.NET code and converts it to C# .NET 9.0 WinForms
+
+## Input
 $ARGUMENTS
 
-## 작업 흐름
+## Workflow
 
-### Phase 1: 분석
-1. 파일/폴더 읽기
-2. 클래스, 폼, 모듈 구조 파악
-3. 의존성 식별:
-   - 서드파티: FlexCell→DataGridView, ZedGraph→ScottPlot
+### Phase 1: Analysis
+1. Read files/folders
+2. Identify class, form, module structure
+3. Identify dependencies:
+   - Third-party: FlexCell→DataGridView, ZedGraph→ScottPlot
    - COM: ADODB→MdbHelper, Excel COM→ClosedXML
-   - 하드웨어: SerialPort, 타이머 패턴
-4. DB 테이블, 쿼리 패턴 추출
-5. 전역 변수/함수 목록
+   - Hardware: SerialPort, timer patterns
+4. Extract DB tables, query patterns
+5. List global variables/functions
 
-### Phase 2: 변환
-**문법:**
+### Phase 2: Conversion
+**Syntax:**
 - `Dim x As Type` → `Type x`
 - `Sub/Function` → `void/returnType`
 - `Handles btn.Click` → `btn.Click += handler`
 - `Me.` → `this.`
 - `Nothing` → `null`
 - `AndAlso/OrElse` → `&&/||`
-- `WithEvents` → 수동 이벤트 연결
+- `WithEvents` → manual event wiring
 - `Chr(9)` → `\t`, `vbCrLf` → `\r\n`
 
-**패턴 대체:**
+**Pattern Replacements:**
 ```
 ADODB.Recordset + SQL → MdbHelper.ExecuteQuery() + DataTable
-ConnectionOpenMDB/Close → 제거 (MdbHelper가 관리)
+ConnectionOpenMDB/Close → remove (MdbHelper manages)
 FlexCell.Cell(r,c).Text → DataGridView.Rows[r].Cells[c].Value
-Grid.AddItem(tab구분) → DataTable.Rows.Add()
+Grid.AddItem(tab-delimited) → DataTable.Rows.Add()
 MsgBox → MessageBox.Show
 ```
 
-**하드웨어:**
-- SerialPort 패턴 유지
-- 타이머 폴링 구조 유지
-- 하드코딩 값 보존
+**Hardware:**
+- Preserve SerialPort patterns
+- Preserve timer polling structure
+- Keep hardcoded values
 
-### Phase 3: .NET 9.0 최적화
+### Phase 3: .NET 9.0 Optimization
 - nullable reference types
 - file-scoped namespace
 - target-typed new
 - pattern matching
 
-## 출력
+## Output
 
 ```
-=== 분석 결과 ===
-[의존성]: ...
-[변환 난이도]: ...
-[주의사항]: ...
+=== Analysis Result ===
+[Dependencies]: ...
+[Conversion Difficulty]: ...
+[Notes]: ...
 
-=== 변환된 코드 ===
-// C# 코드
+=== Converted Code ===
+// C# code
 ```
 
-## 규칙
-- 원본 로직 최대한 보존
-- 과도한 리팩토링 금지
-- 하드코딩 값 그대로 유지
-- 변환 불가 부분은 TODO 주석
+## Rules
+- Preserve original logic as much as possible
+- No excessive refactoring
+- Keep hardcoded values as-is
+- Add TODO comments for unconvertible parts

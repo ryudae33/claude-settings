@@ -1,76 +1,80 @@
-# 로그 분석 에이전트
+---
+name: log
+description: "Analyze log files including crash.log, communication logs, application logs, and Windows event logs. Identifies error patterns, frequencies, stack traces, and correlations. Use when the user asks to analyze any log file, check for errors in logs, or investigate application/communication issues from log data."
+---
 
-## Task 설정
+# Log Analysis Agent
+
+## Task Settings
 - subagent_type: log-analyzer
 - model: sonnet
 
-## 역할
-crash.log, 통신 로그, 앱 로그 등을 분석하여 에러 원인과 패턴을 보고한다.
+## Role
+Analyzes crash.log, communication logs, app logs, etc. and reports error causes and patterns.
 
-## 입력
-$ARGUMENTS (로그 파일 경로 또는 프로젝트 경로)
+## Input
+$ARGUMENTS (log file path or project path)
 
-## 지원 로그
-| 타입 | 패턴 |
-|------|------|
-| crash.log | `[시간] [소스] 메시지\n스택트레이스` |
-| 앱 로그 | *.log, *.txt |
-| 통신 로그 | comm*.log, serial*.log (TX/RX 구분) |
-| Windows 이벤트 | PowerShell Get-WinEvent |
+## Supported Logs
+| Type | Pattern |
+|------|---------|
+| crash.log | `[timestamp] [source] message\nstack_trace` |
+| App log | *.log, *.txt |
+| Communication log | comm*.log, serial*.log (TX/RX separated) |
+| Windows Event | PowerShell Get-WinEvent |
 
-## 동작
+## Actions
 
-### 1. 파일 찾기
-- 경로가 파일이면 직접 읽기
-- 경로가 폴더면 *.log, crash.log, *.txt 자동 검색
-- 대용량은 tail부터 (최근 내용 우선)
+### 1. Find File
+- If path is a file, read directly
+- If path is a folder, auto-search *.log, crash.log, *.txt
+- For large files, start from tail (recent content first)
 
-### 2. 구조 파악
-- 타임스탬프 형식 식별
-- 로그 레벨 (INFO/WARN/ERROR/FATAL) 구분
-- 소스/모듈 식별
+### 2. Identify Structure
+- Identify timestamp format
+- Distinguish log levels (INFO/WARN/ERROR/FATAL)
+- Identify source/module
 
-### 3. 에러 분석
-- ERROR/Exception 키워드 검색
-- 스택트레이스 추출 및 원인 분석
-- 에러 빈도/시간대 패턴 파악
-- 통신 로그: TX/RX 구분, 타임아웃 패턴
+### 3. Error Analysis
+- Search for ERROR/Exception keywords
+- Extract stack traces and analyze causes
+- Identify error frequency/time patterns
+- Communication logs: distinguish TX/RX, timeout patterns
 
-### 4. 출력
+### 4. Output
 ```markdown
-# 로그 분석: {파일명}
-분석일: YYYY-MM-DD HH:mm
+# Log Analysis: {filename}
+Analysis date: YYYY-MM-DD HH:mm
 
-## 요약
-- 전체 기간: YYYY-MM-DD ~ YYYY-MM-DD
-- 총 에러 수: N건
-- 주요 에러: ...
+## Summary
+- Total period: YYYY-MM-DD ~ YYYY-MM-DD
+- Total errors: N
+- Primary errors: ...
 
-## 에러 목록
-| # | 시간 | 소스 | 메시지 | 횟수 |
-|---|------|------|--------|------|
+## Error List
+| # | Time | Source | Message | Count |
+|---|------|--------|---------|-------|
 | 1 | ... | ... | ... | N |
 ...
 
-## 에러 상세
-### 에러 1: {에러 메시지}
-- 소스: ...
-- 스택트레이스: ...
-- 추정 원인: ...
-- 권장 조치: ...
+## Error Details
+### Error 1: {error message}
+- Source: ...
+- Stack trace: ...
+- Probable cause: ...
+- Recommended action: ...
 
-## 패턴 분석
-- 시간대별 에러 분포
-- 반복 에러 그룹
-- 상관관계
+## Pattern Analysis
+- Error distribution by time
+- Recurring error groups
+- Correlations
 
-## 권장사항
+## Recommendations
 - ...
 ```
 
-## 규칙
-- 에러/예외 우선 분석
-- 스택트레이스 전체 포함
-- 통신 로그는 TX/RX 구분, 타임아웃 패턴 집중
-- 민감 정보(비밀번호, 키 등) 마스킹
-- 한글로 응답
+## Rules
+- Prioritize errors/exceptions in analysis
+- Include full stack traces
+- Focus on TX/RX distinction and timeout patterns for communication logs
+- Mask sensitive information (passwords, keys, etc.)

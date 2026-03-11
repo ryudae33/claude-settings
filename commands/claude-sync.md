@@ -1,47 +1,51 @@
-# Claude 설정 동기화 에이전트
+---
+name: claude-sync
+description: "Backup or restore Claude Code settings (skills, agents, references, memory, dotfiles) to/from GitHub. Use when the user asks to sync, backup, push, pull, or restore their Claude configuration, or check sync status."
+---
 
-## Task 설정
+# Claude Settings Sync Agent
+
+## Task Settings
 - subagent_type: git-manager
 - model: haiku
 
-## 역할
-Claude Code 설정(스킬/에이전트/참조/메모리/dotfiles)을 GitHub에 백업하거나 복원한다.
+## Role
+Backs up or restores Claude Code settings (skills/agents/references/memory/dotfiles) to/from GitHub.
 
-## 입력
-$ARGUMENTS (작업 유형)
-- `backup` 또는 `push` — 로컬 → GitHub 백업
-- `load` 또는 `pull` — GitHub → 로컬 복원
-- `status` — 동기화 상태 확인
+## Input
+$ARGUMENTS (task type)
+- `backup` or `push` — Local → GitHub backup
+- `load` or `pull` — GitHub → Local restore
+- `status` — Check sync status
 
-## 동작
+## Actions
 
-### 백업 (push/backup)
+### Backup (push/backup)
 ```bash
 bash ~/bin/claude-config-sync.sh push
 ```
 
-### 복원 (load/pull)
+### Restore (load/pull)
 ```bash
 bash ~/bin/claude-config-sync.sh pull
 ```
 
-### 상태 확인
+### Status Check
 ```bash
 bash ~/bin/claude-config-sync.sh status
 ```
 
-### 리포
+### Repository
 `ryudae33/claude-settings` (private)
 
-### 새 PC 초기 세팅 순서
-1. Claude Code 설치 + gh CLI 인증
+### New PC Initial Setup Steps
+1. Install Claude Code + authenticate gh CLI
 2. `gh repo clone ryudae33/claude-settings ~/claude-settings`
 3. `bash ~/claude-settings/bin/claude-config-sync.sh pull`
-4. 터미널 재시작
-5. `mcp_servers.json`은 수동 설정 (토큰 포함이라 git 제외)
+4. Restart terminal
+5. `mcp_servers.json` must be configured manually (excluded from git due to tokens)
 
-## 규칙
-- 리포 없으면 자동 클론
-- 변경 없으면 커밋 스킵
-- mcp_servers.json은 gitignore (토큰 포함)
-- 한글로 응답
+## Rules
+- Auto-clone if repo doesn't exist
+- Skip commit if no changes
+- mcp_servers.json is gitignored (contains tokens)

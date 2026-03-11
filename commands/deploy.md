@@ -1,86 +1,90 @@
-# 배포 에이전트
+---
+name: deploy
+description: "Deploy .NET publish output to target PC or network path. Copies build artifacts with backup and verification. Use when the user asks to deploy an application, copy build output to a server or shared folder, or distribute a built application to a target machine."
+---
 
-## Task 설정
+# Deploy Agent
+
+## Task Settings
 - subagent_type: build-runner
 - model: sonnet
 
-## 역할
-publish 결과물을 대상 PC/경로에 복사하여 배포한다.
+## Role
+Copies publish output to target PC/path for deployment.
 
-## 입력
-$ARGUMENTS (배포 대상 또는 작업)
-- `\\192.168.1.10\share` — 네트워크 경로로 배포
-- `D:\Deploy\MyApp` — 로컬 경로로 배포
-- `status` — 최근 배포 상태 확인
+## Input
+$ARGUMENTS (deploy target or task)
+- `\\192.168.1.10\share` — deploy to network path
+- `D:\Deploy\MyApp` — deploy to local path
+- `status` — check recent deploy status
 
-## 동작
+## Actions
 
-### 1. 빌드 결과물 탐색
-- 현재 프로젝트에서 `bin/Release/**/publish/` 폴더 탐색
-- 여러 개면 최신 타임스탬프 기준 또는 사용자 선택
-- publish 폴더 없으면 빌드/퍼블리시 먼저 필요함을 안내
+### 1. Find Build Output
+- Search for `bin/Release/**/publish/` folder in current project
+- If multiple found, select by latest timestamp or ask user
+- If no publish folder exists, advise that build/publish is needed first
 
-### 2. 배포 전 확인
+### 2. Pre-Deploy Confirmation
 ```
-## 배포 계획
-- 소스: {publish 경로}
-- 대상: {배포 경로}
-- 파일 수: N개
-- 총 크기: XX MB
-- 대상 경로 기존 파일: 있음/없음 (덮어쓰기 예정)
+## Deploy Plan
+- Source: {publish path}
+- Target: {deploy path}
+- File count: N files
+- Total size: XX MB
+- Existing files at target: Yes/No (will be overwritten)
 ```
-- **반드시 사용자 확인 후 진행**
+- **Must get user confirmation before proceeding**
 
-### 3. 대상 경로 접근 확인
+### 3. Verify Target Path Access
 ```bash
-# 네트워크 경로 접근 확인
-ls "\\\\192.168.1.10\\share" 2>/dev/null || echo "접근 불가"
+# Check network path access
+ls "\\\\192.168.1.10\\share" 2>/dev/null || echo "Access denied"
 
-# 로컬 경로 존재 확인
-ls "{대상경로}" 2>/dev/null || mkdir -p "{대상경로}"
+# Check local path exists
+ls "{target_path}" 2>/dev/null || mkdir -p "{target_path}"
 ```
 
-### 4. 기존 백업 (선택)
-대상 경로에 기존 파일이 있으면:
+### 4. Backup Existing (Optional)
+If existing files at target path:
 ```bash
-# 기존 파일 백업
-mv "{대상경로}" "{대상경로}_backup_$(date +%Y%m%d_%H%M%S)"
-mkdir -p "{대상경로}"
+# Backup existing files
+mv "{target_path}" "{target_path}_backup_$(date +%Y%m%d_%H%M%S)"
+mkdir -p "{target_path}"
 ```
 
-### 5. 배포 실행
+### 5. Execute Deploy
 ```bash
-# robocopy로 복사 (Windows 최적)
-robocopy "{소스}" "{대상}" /MIR /NJH /NJS /NDL /NC /NS /NP
+# Copy with robocopy (optimal for Windows)
+robocopy "{source}" "{target}" /MIR /NJH /NJS /NDL /NC /NS /NP
 
-# 또는 cp로 복사
-cp -r "{소스}/"* "{대상}/"
+# Or copy with cp
+cp -r "{source}/"* "{target}/"
 ```
 
-### 6. 배포 검증
+### 6. Verify Deploy
 ```bash
-# 파일 수/크기 비교
-echo "소스:"
-find "{소스}" -type f | wc -l
-echo "대상:"
-find "{대상}" -type f | wc -l
+# Compare file count/size
+echo "Source:"
+find "{source}" -type f | wc -l
+echo "Target:"
+find "{target}" -type f | wc -l
 ```
 
-### 7. 결과 보고
+### 7. Result Report
 ```
-## 배포 결과
-- 소스: {publish 경로}
-- 대상: {배포 경로}
-- 복사된 파일: N개
-- 총 크기: XX MB
-- 백업: {백업 경로 또는 없음}
-- 상태: 성공/실패
-- 시간: {완료 시각}
+## Deploy Result
+- Source: {publish path}
+- Target: {deploy path}
+- Files copied: N
+- Total size: XX MB
+- Backup: {backup path or none}
+- Status: Success/Failure
+- Time: {completion time}
 ```
 
-## 규칙
-- **배포 전 반드시 사용자 확인** (가장 중요)
-- 기존 파일 덮어쓰기 시 백업 여부 확인
-- 네트워크 경로 접근 불가 시 원인 안내 (권한/방화벽/공유 설정)
-- 배포 후 실행 파일 경로 안내
-- 한글로 응답
+## Rules
+- **Must get user confirmation before deploy** (most important)
+- Confirm backup preference when overwriting existing files
+- Advise on cause when network path is inaccessible (permissions/firewall/share settings)
+- Report executable file path after deploy

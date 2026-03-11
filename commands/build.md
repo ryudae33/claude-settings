@@ -1,71 +1,104 @@
-# 빌드/퍼블리시 에이전트
+---
+name: build
+description: ".NET project build/publish agent. Runs dotnet build, dotnet publish, MSBuild, and analyzes/fixes build errors. Use this skill whenever the user asks to build, publish, clean build, rebuild, fix build errors, self-contained deploy, or any build-related request. Supports .NET Framework (MSBuild), .NET Core/5+/6+/8+/9+ (dotnet CLI), and MAUI Android."
+---
 
-## Task 설정
+# Build/Publish Agent
+
+## Task Settings
 - subagent_type: build-runner
 - model: sonnet
 
-## 역할
-.NET 프로젝트의 빌드, 퍼블리시를 수행하고 에러 발생 시 분석/수정한다.
+## Role
+Agent that performs .NET project build and publish, and analyzes/fixes errors when they occur.
 
-## 입력
-$ARGUMENTS (작업 유형 + 대상 경로, 없으면 현재 디렉토리)
-- `build` — 빌드만
-- `publish` — Release 퍼블리시
-- `publish win-x64` — 특정 RID로 퍼블리시
-- `clean build` — 클린 빌드
+## Input
+$ARGUMENTS (task type + target path, defaults to current directory if omitted)
+- `build` — build only
+- `publish` — Release publish
+- `publish win-x64` — publish with specific RID
+- `clean build` — clean build
+- `rebuild` — rebuild (clean + build)
+- Path: `build C:\path\to\project`
 
-## 동작
+## Actions
 
-### 1. 프로젝트 탐색
-- 현재 디렉토리에서 `*.sln` 또는 `*.csproj` 탐색
-- 여러 개면 사용자에게 선택 요청
-- 프로젝트 SDK 타입 확인 (WinForms/WPF/Console/MAUI 등)
+### 1. Project Discovery
+- Search for `*.sln`, `*.csproj`, `*.vbproj` in specified or current directory
+- If multiple found, ask user to select
+- Check project SDK type (WinForms/WPF/Console/MAUI/Library, etc.)
+- **Build system detection**: Check TargetFramework
+  - `net9.0`, `net8.0`, `net6.0`, etc. → `dotnet` CLI
+  - `v4.8`, `v4.7.2`, etc. .NET Framework → `MSBuild`
 
-### 2. 빌드 실행
+### 2. Build Execution
+
+#### dotnet CLI (.NET Core/5+)
 ```bash
-# 기본 빌드
-dotnet build "{프로젝트경로}" -c Release
+# Default build
+dotnet build "{project_path}" -c Release
 
-# 클린 빌드
-dotnet clean "{프로젝트경로}" && dotnet build "{프로젝트경로}" -c Release
+# Clean build
+dotnet clean "{project_path}" && dotnet build "{project_path}" -c Release
 
 # MAUI Android
 dotnet build -c Release -f net9.0-android -p:AndroidSdkDirectory=C:/android-sdk
 ```
 
-### 3. 퍼블리시 실행
+#### MSBuild (.NET Framework)
 ```bash
-# 기본 퍼블리시
-dotnet publish "{프로젝트경로}" -c Release
+# Find MSBuild path via vswhere
+$msbuild = & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -First 1
 
-# Self-contained
-dotnet publish "{프로젝트경로}" -c Release -r win-x64 --self-contained
+# Default build
+& $msbuild "{project_path}" /p:Configuration=Release /restore
+
+# Clean build
+& $msbuild "{project_path}" /t:Clean,Build /p:Configuration=Release /restore
+```
+
+### 3. Publish Execution
+```bash
+# Default publish
+dotnet publish "{project_path}" -c Release
+
+# Self-contained (no .NET runtime needed on target)
+dotnet publish "{project_path}" -c Release -r win-x64 --self-contained
 
 # Single file
-dotnet publish "{프로젝트경로}" -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
+dotnet publish "{project_path}" -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
+
+# Trimmed (remove unused assemblies, reduce size)
+dotnet publish "{project_path}" -c Release -r win-x64 --self-contained -p:PublishSingleFile=true -p:PublishTrimmed=true
 ```
 
-### 4. 에러 분석
-빌드 실패 시:
-1. 에러 메시지 분석 (CS/MSB/NU 코드 분류)
-2. 원인 파악 및 수정 방안 제시
-3. **사용자 확인 후** 코드 수정
-4. 재빌드
+### 4. Error Analysis & Fix
+On build failure:
+1. Classify error messages:
+   - **CS codes** (CS0246, CS1061, etc.): Compile errors — missing references, type errors
+   - **MSB codes** (MSB3073, MSB4019, etc.): Build system errors — SDK/tool issues
+   - **NU codes** (NU1101, NU1605, etc.): NuGet package errors — package restore failures
+   - **NETSDK codes**: SDK installation/version issues
+2. Identify cause and suggest fix
+3. **Fix code only after user confirmation** (no auto-fix)
+4. Rebuild after fix
 
-### 5. 결과 보고
+### 5. Result Report
 ```
-## 빌드 결과
-- 상태: 성공/실패
-- 프로젝트: {이름}
-- 구성: Release | {RID}
-- 출력: {출력 경로}
-- 경고: N개
-- 소요 시간: X초
+## Build Result
+- Status: Success/Failure
+- Project: {name}
+- Build Tool: dotnet CLI / MSBuild
+- Configuration: Release | {RID}
+- Output: {output path}
+- Warnings: N
+- Duration: X seconds
 ```
 
-## 규칙
-- 빌드 에러 수정 시 사용자 확인 필수
-- 경고는 보고하되 자동 수정하지 않음
-- MAUI Android는 AndroidSdkDirectory 속성 자동 추가
-- publish 결과 경로를 명확히 안내
-- 한글로 응답
+## Rules
+- User confirmation required before fixing build errors
+- Report warnings but do not auto-fix
+- Automatically add AndroidSdkDirectory property for MAUI Android builds
+- Clearly indicate publish output path
+- Try `dotnet restore` first on NuGet restore failures
+- Auto-detect MSBuild path via vswhere for .NET Framework projects

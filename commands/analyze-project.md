@@ -1,163 +1,172 @@
-# 자동화 프로젝트 분석 에이전트
+---
+name: analyze-project
+description: "Automated analysis of .NET automation projects. Analyzes communication protocols, state machines, PLC address maps, file structure, data flow, DB schemas, and hardcoded constants. Use whenever the user wants to analyze or understand an existing project's architecture, especially industrial automation projects with serial/TCP/Modbus communication."
+---
 
-## 역할
-자동화 프로젝트 전체 분석 후 결과를 프로젝트 폴더에 저장
+# Automated Project Analysis Agent
 
-## 입력
-$ARGUMENTS (프로젝트 경로)
+## Task Settings
+- subagent_type: project-analyzer
+- model: sonnet
 
-## 분석 항목
+## Role
+Analyzes the entire automation project and saves the results to the project folder.
 
-### 1. 통신 프로토콜
+## Input
+$ARGUMENTS (project path)
+
+## Analysis Items
+
+### 1. Communication Protocol
 ```
-[장비명]
-- 포트: COM?, 보레이트
-- 송신 명령: "MS\r\n", "P\r\n" 등
-- 응답 포맷: CSV, 고정길이, 구분자
-- 파싱 규칙: Split(n) → 의미
-- 폴링 주기: n ms
-- 타임아웃: n ms
-- 오프셋/보정값: LASER_TOL 등
+[Device Name]
+- Port: COM?, Baud rate
+- TX commands: "MS\r\n", "P\r\n", etc.
+- Response format: CSV, fixed-length, delimiter
+- Parsing rules: Split(n) → meaning
+- Polling interval: n ms
+- Timeout: n ms
+- Offset/calibration: LASER_TOL, etc.
 ```
 
-### 2. 상태머신/시퀀스
+### 2. State Machine / Sequence
 ```
-[메인 시퀀스]
-상태0: IDLE - 대기
-  → 조건: 시작신호 ON
-상태1: INIT - 초기화
-  → 조건: 초기화 완료
-상태2: MEASURE_FWD - 전방 측정
-  → 조건: 측정값 수신
-상태3: MEASURE_BWD - 후방 측정
+[Main Sequence]
+State 0: IDLE - Waiting
+  → Condition: Start signal ON
+State 1: INIT - Initialization
+  → Condition: Initialization complete
+State 2: MEASURE_FWD - Forward measurement
+  → Condition: Measurement value received
+State 3: MEASURE_BWD - Backward measurement
   ...
-상태N: COMPLETE - 완료
-  → IDLE로 복귀
+State N: COMPLETE - Complete
+  → Return to IDLE
 
-[에러 처리]
-ALARM 발생 조건: ...
-RESET 조건: ...
+[Error Handling]
+ALARM trigger conditions: ...
+RESET conditions: ...
 ```
 
-### 3. PLC 주소 맵
+### 3. PLC Address Map
 ```
-[입력 - 읽기]
-D100: 시작신호
-D101: 리셋신호
-M100: 도어센서
+[Input - Read]
+D100: Start signal
+D101: Reset signal
+M100: Door sensor
 
-[출력 - 쓰기]
-D200: 측정완료
-D201: OK/NG 결과
-M200: 알람출력
+[Output - Write]
+D200: Measurement complete
+D201: OK/NG result
+M200: Alarm output
 
-[데이터]
-D300~D310: 측정값 저장
-```
-
-### 4. 파일 구조
-```
-[폼]
-- FrmMain.vb: 메인화면, 측정 시퀀스
-- FrmBasic.vb: 기준값 설정
-- FrmPart.vb: 품번 관리
-
-[모듈]
-- Module1.vb: 전역변수, DB연결
-
-[클래스]
-- 없음 또는 목록
+[Data]
+D300~D310: Measurement value storage
 ```
 
-### 5. 데이터 흐름
+### 4. File Structure
 ```
-센서 → 시리얼수신 → 파싱 → 보정적용 → 판정 → 표시/저장
+[Forms]
+- FrmMain.vb: Main screen, measurement sequence
+- FrmBasic.vb: Reference value settings
+- FrmPart.vb: Part number management
+
+[Modules]
+- Module1.vb: Global variables, DB connection
+
+[Classes]
+- None or list
+```
+
+### 5. Data Flow
+```
+Sensor → Serial receive → Parse → Apply calibration → Judgment → Display/Save
          ↓
-      LaserDataManager (캐시)
+      LaserDataManager (cache)
          ↓
-      FrmAngle (보간테이블 → 각도변환)
+      FrmAngle (interpolation table → angle conversion)
 ```
 
-### 6. DB 테이블
+### 6. DB Tables
 ```
 [Table_Basic]
-- Type: 품번타입
-- 각도 Min/Max, DIFF Min/Max, Lever 설정...
+- Type: Part number type
+- Angle Min/Max, DIFF Min/Max, Lever settings...
 
 [Table_Part]
 - PartNo, PartName, WorkID...
 
 [Table_Angle_LH_FWD]
-- LaserDistance, ConvertAngle (보간테이블)
+- LaserDistance, ConvertAngle (interpolation table)
 ```
 
-### 7. 하드코딩 값
+### 7. Hardcoded Values
 ```
 LASER_TOL_1 = 300 (Laser1/BWD)
 LASER_TOL_2 = 900 (Laser2/FWD)
 LASER_TOL_3 = 900 (Laser3/3RD)
-폴링주기 = 50ms (원본 200ms)
+Polling interval = 50ms (original 200ms)
 ```
 
-## 출력
-분석 결과를 프로젝트 폴더에 저장:
+## Output
+Save analysis results to the project folder:
 ```
-{프로젝트경로}/.project-analysis.md
+{project_path}/.project-analysis.md
 ```
 
-## 저장 포맷
+## Output Format
 
 ```markdown
-# 프로젝트 분석: {프로젝트명}
-분석일: YYYY-MM-DD HH:mm
+# Project Analysis: {project_name}
+Analysis date: YYYY-MM-DD HH:mm
 
-## 통신 프로토콜
-### Laser1 (BWD/후방)
-- 포트: COM 설정에서 로드
-- 보레이트: 9600
-- 명령: MS\r\n
-- 응답: 7값 CSV
-- 파싱: Split(6)→[2], Split(4)→[1], Split(2)→[0]
-- 보정: LASER_TOL=300 - 값 + BwdTol
+## Communication Protocol
+### Laser1 (BWD/Backward)
+- Port: Loaded from COM settings
+- Baud rate: 9600
+- Command: MS\r\n
+- Response: 7-value CSV
+- Parsing: Split(6)→[2], Split(4)→[1], Split(2)→[0]
+- Calibration: LASER_TOL=300 - value + BwdTol
 
-### Laser2 (FWD/전방)
+### Laser2 (FWD/Forward)
 ...
 
-## 상태머신
-### 메인 시퀀스
-| 상태 | 이름 | 동작 | 전이조건 |
-|-----|-----|-----|---------|
-| 0 | IDLE | 대기 | 시작신호 |
-| 1 | MEASURE | 측정 | 완료 |
+## State Machine
+### Main Sequence
+| State | Name | Action | Transition Condition |
+|-------|------|--------|---------------------|
+| 0 | IDLE | Wait | Start signal |
+| 1 | MEASURE | Measure | Complete |
 ...
 
-## PLC 주소맵
-| 주소 | 방향 | 설명 |
-|-----|-----|-----|
-| D100 | R | 시작신호 |
+## PLC Address Map
+| Address | Direction | Description |
+|---------|-----------|-------------|
+| D100 | R | Start signal |
 ...
 
-## DB 스키마
+## DB Schema
 ### Table_Basic
-| 컬럼 | 타입 | 설명 |
-|-----|-----|-----|
+| Column | Type | Description |
+|--------|------|-------------|
 ...
 
-## 파일 구조
-| 파일 | 역할 | 변환상태 |
-|-----|-----|---------|
-| FrmMain | 메인화면 | 완료 |
-| FrmPart | 품번관리 | 미완료 |
+## File Structure
+| File | Role | Conversion Status |
+|------|------|-------------------|
+| FrmMain | Main screen | Complete |
+| FrmPart | Part management | Incomplete |
 ...
 
-## 하드코딩 상수
-| 이름 | 값 | 용도 |
-|-----|---|-----|
-| LASER_TOL_1 | 300 | BWD 기준거리 |
+## Hardcoded Constants
+| Name | Value | Purpose |
+|------|-------|---------|
+| LASER_TOL_1 | 300 | BWD reference distance |
 ...
 ```
 
-## 규칙
-- 소스 전체 스캔 후 저장
-- 이후 작업 시 이 파일 먼저 참조
-- 변경사항 발생 시 업데이트
+## Rules
+- Scan all source code before saving
+- Reference this file first for subsequent work
+- Update when changes occur

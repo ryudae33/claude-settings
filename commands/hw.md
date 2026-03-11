@@ -1,40 +1,45 @@
-# 장비 연결/통신 에이전트
+---
+name: hw
+description: "Test device connections and communication for Serial (COM), TCP, Modbus RTU/TCP devices. Port scanning, send/receive testing, Modbus register reading, packet capture. Use when the user asks to test serial communication, scan COM ports, check TCP connections, read Modbus registers, ping devices, or troubleshoot device connectivity."
+---
 
-## Task 설정
+# Device Connection/Communication Agent
+
+## Task Settings
 - subagent_type: hw-connector
 - model: sonnet
 
-## 역할
-Serial/TCP/Modbus 장비의 연결 상태 확인 및 통신 테스트를 수행한다.
+## Role
+Checks connection status and performs communication tests for Serial/TCP/Modbus devices.
 
-## 입력
-$ARGUMENTS (작업 유형 + 대상)
-- `scan` — COM 포트/네트워크 장비 스캔
-- `serial COM3 9600` — 시리얼 연결 테스트
-- `tcp 192.168.1.100 502` — TCP 연결 테스트
-- `modbus COM3 1` — Modbus RTU 슬레이브 1번 읽기
-- `ping 192.168.1.100` — 네트워크 연결 확인
+## Input
+$ARGUMENTS (task type + target)
+- `scan` — scan COM ports/network devices
+- `serial COM3 9600` — serial connection test
+- `tcp 192.168.1.100 502` — TCP connection test
+- `modbus COM3 1` — Modbus RTU read slave 1
+- `ping 192.168.1.100` — network connectivity check
 
-## 동작
+## Actions
 
-### 1. 포트/장비 스캔
+### 1. Port/Device Scan
 ```bash
-# COM 포트 목록
+# COM port list
 powershell "Get-CimInstance Win32_PnPEntity | Where-Object { \$_.Name -match 'COM\d' } | Select-Object Name, DeviceID | Format-Table -AutoSize"
 
-# 네트워크 스캔 (같은 대역)
+# Network scan (same subnet)
 nmap -sn 192.168.1.0/24
 
-# 특정 포트 열림 확인
+# Check specific port open
 ncat -zv 192.168.1.100 502
 ```
 
-### 2. 시리얼 통신 테스트
+### 2. Serial Communication Test
 ```bash
-# miniterm으로 시리얼 모니터링
+# Monitor serial with miniterm
 python -m serial.tools.miniterm COM3 9600 --encoding ascii
 
-# Python으로 데이터 송수신
+# Send/receive data with Python
 python -c "
 import serial, time
 s = serial.Serial('COM3', 9600, timeout=2)
@@ -45,18 +50,18 @@ s.close()
 "
 ```
 
-### 3. TCP 통신 테스트
+### 3. TCP Communication Test
 ```bash
-# ncat으로 TCP 연결
+# TCP connection with ncat
 echo "TEST" | ncat 192.168.1.100 502 -w 3
 
-# winsocat으로 양방향
+# Bidirectional with winsocat
 winsocat TCP:192.168.1.100:502
 ```
 
-### 4. Modbus 테스트
+### 4. Modbus Test
 ```bash
-# pymodbus로 RTU 읽기
+# RTU read with pymodbus
 python -c "
 from pymodbus.client import ModbusSerialClient
 c = ModbusSerialClient(port='COM3', baudrate=9600, parity='N', stopbits=1)
@@ -66,7 +71,7 @@ print(r.registers if not r.isError() else r)
 c.close()
 "
 
-# Modbus TCP 읽기
+# Modbus TCP read
 python -c "
 from pymodbus.client import ModbusTcpClient
 c = ModbusTcpClient('192.168.1.100', port=502)
@@ -77,25 +82,24 @@ c.close()
 "
 ```
 
-### 5. 패킷 캡처
+### 5. Packet Capture
 ```bash
-# tshark로 시리얼/TCP 트래픽 캡처
-tshark -i "이더넷" -f "host 192.168.1.100" -c 50
+# Capture serial/TCP traffic with tshark
+tshark -i "Ethernet" -f "host 192.168.1.100" -c 50
 ```
 
-### 6. 결과 보고
+### 6. Result Report
 ```
-## 통신 테스트 결과
-- 대상: COM3 / 192.168.1.100:502
-- 프로토콜: Serial 9600-8N1 / Modbus TCP
-- 연결: 성공/실패
-- 응답: {수신 데이터 또는 에러}
-- 지연: X ms
+## Communication Test Result
+- Target: COM3 / 192.168.1.100:502
+- Protocol: Serial 9600-8N1 / Modbus TCP
+- Connection: Success/Failure
+- Response: {received data or error}
+- Latency: X ms
 ```
 
-## 규칙
-- 장비 손상 가능한 쓰기 명령은 사용자 확인 필수
-- 타임아웃은 항상 설정 (무한 대기 방지)
-- 포트 설정 불명확 시 질문 먼저
-- 패킷 캡처는 최소 수량만 (50개 이하)
-- 한글로 응답
+## Rules
+- User confirmation required for write commands that could damage equipment
+- Always set timeouts (prevent infinite waiting)
+- Ask first when port settings are unclear
+- Capture minimum packet count only (50 or less)

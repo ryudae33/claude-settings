@@ -1,44 +1,52 @@
-# 문서 변환 에이전트
+---
+name: convert-doc
+description: "Convert office documents between formats using LibreOffice CLI (headless mode). Supports docx, xlsx, pptx, csv, hwp to PDF and other format conversions. Use when the user wants to convert Word/Excel/PowerPoint/HWP files to PDF or other formats. For Markdown/HTML/LaTeX conversions, use /pandoc instead."
+---
 
-## 역할
-LibreOffice CLI로 문서를 다른 형식으로 변환한다.
+# Document Conversion Agent
 
-## 입력
-$ARGUMENTS (파일 경로 [출력형식])
-- `파일.docx` → PDF 변환 (기본)
-- `파일.xlsx pdf` → PDF 변환
-- `파일.csv xlsx` → Excel 변환
+## Task Settings
+- subagent_type: Bash
+- model: haiku
 
-## 동작
+## Role
+Converts documents to other formats using LibreOffice CLI.
 
-### 변환 실행
+## Input
+$ARGUMENTS (file path [output format])
+- `file.docx` → PDF conversion (default)
+- `file.xlsx pdf` → PDF conversion
+- `file.csv xlsx` → Excel conversion
+
+## Actions
+
+### Execute Conversion
 ```bash
-# → PDF 변환 (기본)
-soffice --headless --convert-to pdf "파일경로"
+# → PDF conversion (default)
+soffice --headless --convert-to pdf "file_path"
 
 # → Excel (.xlsx)
-soffice --headless --convert-to xlsx "파일경로"
+soffice --headless --convert-to xlsx "file_path"
 
 # → CSV
-soffice --headless --convert-to csv "파일경로"
+soffice --headless --convert-to csv "file_path"
 
-# 출력 폴더 지정
-soffice --headless --convert-to pdf --outdir "C:\출력\" "파일경로"
+# Specify output folder
+soffice --headless --convert-to pdf --outdir "C:\output\" "file_path"
 
-# 여러 파일 일괄 변환
+# Batch convert multiple files
 soffice --headless --convert-to pdf *.docx
 ```
 
-### 지원 형식
-| 입력 | 출력 가능 |
-|------|---------|
+### Supported Formats
+| Input | Possible Output |
+|-------|----------------|
 | .docx/.doc | pdf, odt, txt |
 | .xlsx/.xls | pdf, csv, ods |
 | .pptx/.ppt | pdf, odp |
 | .csv | xlsx, ods |
-| .hwp (한글) | pdf (LibreOffice 한글 필터 필요) |
+| .hwp (Korean Hangul) | pdf (LibreOffice Hangul filter required) |
 
-## 규칙
-- 출력 파일은 입력 파일과 같은 폴더에 생성 (별도 지정 없으면)
-- 변환 완료 후 출력 파일 경로 안내
-- 한글로 응답
+## Rules
+- Output file is created in the same folder as input file (unless otherwise specified)
+- Report output file path after conversion

@@ -1,75 +1,79 @@
-# NuGet 패키지 에이전트
+---
+name: nuget
+description: "Search, add, update, and remove NuGet packages for .NET projects. Use when the user asks to install, add, update, remove, search, or list NuGet packages, or check for outdated packages."
+---
 
-## Task 설정
+# NuGet Package Agent
+
+## Task Settings
 - subagent_type: build-runner
 - model: haiku
 
-## 역할
-NuGet 패키지 검색, 추가, 업데이트, 제거를 수행한다.
+## Role
+Searches, adds, updates, and removes NuGet packages.
 
-## 입력
-$ARGUMENTS (작업 유형 + 패키지명)
-- `search ScottPlot` — 패키지 검색
-- `add Newtonsoft.Json` — 패키지 추가
-- `update` — 전체 패키지 업데이트 확인
-- `remove Serilog` — 패키지 제거
-- `list` — 설치된 패키지 목록
+## Input
+$ARGUMENTS (task type + package name)
+- `search ScottPlot` — search packages
+- `add Newtonsoft.Json` — add package
+- `update` — check all package updates
+- `remove Serilog` — remove package
+- `list` — list installed packages
 
-## 동작
+## Actions
 
-### 1. 프로젝트 탐색
-- 현재 디렉토리에서 `*.csproj` 탐색
-- 여러 개면 사용자에게 선택 요청
+### 1. Project Discovery
+- Search for `*.csproj` in current directory
+- If multiple found, ask user to select
 
-### 2. 패키지 검색
+### 2. Search Packages
 ```bash
-dotnet package search "{패키지명}" --take 10
+dotnet package search "{package_name}" --take 10
 ```
-- 이름, 최신 버전, 다운로드 수 표시
+- Display name, latest version, download count
 
-### 3. 설치된 패키지 목록
+### 3. List Installed Packages
 ```bash
-dotnet list "{프로젝트}" package
-dotnet list "{프로젝트}" package --outdated  # 업데이트 가능 목록
+dotnet list "{project}" package
+dotnet list "{project}" package --outdated  # updatable list
 ```
 
-### 4. 패키지 추가
+### 4. Add Package
 ```bash
-# 최신 버전
-dotnet add "{프로젝트}" package {패키지명}
+# Latest version
+dotnet add "{project}" package {package_name}
 
-# 특정 버전
-dotnet add "{프로젝트}" package {패키지명} --version {버전}
+# Specific version
+dotnet add "{project}" package {package_name} --version {version}
 
-# 프리릴리스 포함
-dotnet add "{프로젝트}" package {패키지명} --prerelease
+# Include prerelease
+dotnet add "{project}" package {package_name} --prerelease
 ```
 
-### 5. 패키지 업데이트
+### 5. Update Package
 ```bash
-# outdated 확인
-dotnet list "{프로젝트}" package --outdated
+# Check outdated
+dotnet list "{project}" package --outdated
 
-# 개별 업데이트 (제거 후 최신 추가)
-dotnet add "{프로젝트}" package {패키지명}
+# Update individual (remove and add latest)
+dotnet add "{project}" package {package_name}
 ```
 
-### 6. 패키지 제거
+### 6. Remove Package
 ```bash
-dotnet remove "{프로젝트}" package {패키지명}
+dotnet remove "{project}" package {package_name}
 ```
 
-### 7. 결과 보고
+### 7. Result Report
 ```
-## NuGet 작업 결과
-- 프로젝트: {이름}
-- 작업: 추가/업데이트/제거
-- 패키지: {이름} {버전}
-- 상태: 성공/실패
+## NuGet Task Result
+- Project: {name}
+- Task: Add/Update/Remove
+- Package: {name} {version}
+- Status: Success/Failure
 ```
 
-## 규칙
-- 패키지 추가/제거 후 빌드 확인 제안
-- 메이저 버전 업데이트는 breaking change 경고
-- 여러 프로젝트에 동시 추가 시 사용자 확인
-- 한글로 응답
+## Rules
+- Suggest build verification after adding/removing packages
+- Warn about breaking changes for major version updates
+- Get user confirmation when adding to multiple projects simultaneously

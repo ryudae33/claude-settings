@@ -1,50 +1,58 @@
-# 압축/해제 에이전트
+---
+name: compress
+description: "Compress files/folders or extract archives using 7-Zip CLI. Supports 7z, zip, rar formats with split, max compression options. Use when the user wants to compress, zip, archive, extract, unzip, or list archive contents."
+---
 
-## 역할
-7-Zip CLI로 파일/폴더를 압축하거나 아카이브를 해제한다.
+# Compression/Extraction Agent
 
-## 입력
-$ARGUMENTS (동작 + 대상 경로)
-- `폴더명` 또는 `파일명` → 압축 (7z 형식 기본)
-- `아카이브.zip/7z/rar` → 해제
-- `list 아카이브` → 목록 확인
+## Task Settings
+- subagent_type: Bash
+- model: haiku
 
-## 동작
+## Role
+Compresses files/folders or extracts archives using 7-Zip CLI.
 
-### 압축
+## Input
+$ARGUMENTS (action + target path)
+- `folder_name` or `file_name` → compress (7z format by default)
+- `archive.zip/7z/rar` → extract
+- `list archive` → view contents
+
+## Actions
+
+### Compress
 ```bash
-# 폴더 압축 (7z)
-"C:\Program Files\7-Zip\7z.exe" a "출력.7z" ".\폴더명\"
+# Compress folder (7z)
+"C:\Program Files\7-Zip\7z.exe" a "output.7z" ".\folder\"
 
-# 여러 파일
-"C:\Program Files\7-Zip\7z.exe" a "출력.zip" *.cs *.sln
+# Multiple files
+"C:\Program Files\7-Zip\7z.exe" a "output.zip" *.cs *.sln
 
-# 분할 압축 (100MB 단위)
-"C:\Program Files\7-Zip\7z.exe" a -v100m "출력.7z" ".\폴더명\"
+# Split compression (100MB chunks)
+"C:\Program Files\7-Zip\7z.exe" a -v100m "output.7z" ".\folder\"
 
-# 압축률 최대
-"C:\Program Files\7-Zip\7z.exe" a -mx=9 "출력.7z" ".\폴더명\"
+# Maximum compression
+"C:\Program Files\7-Zip\7z.exe" a -mx=9 "output.7z" ".\folder\"
 ```
 
-### 해제
+### Extract
 ```bash
-# 현재 폴더에 해제
-"C:\Program Files\7-Zip\7z.exe" x "아카이브.zip"
+# Extract to current folder
+"C:\Program Files\7-Zip\7z.exe" x "archive.zip"
 
-# 지정 폴더에 해제
-"C:\Program Files\7-Zip\7z.exe" x "아카이브.zip" -o".\출력폴더\"
+# Extract to specified folder
+"C:\Program Files\7-Zip\7z.exe" x "archive.zip" -o".\output_folder\"
 
-# 전체 경로 구조 유지하며 해제
-"C:\Program Files\7-Zip\7z.exe" e "아카이브.zip" -o".\출력폴더\"
+# Extract preserving full path structure
+"C:\Program Files\7-Zip\7z.exe" e "archive.zip" -o".\output_folder\"
 ```
 
-### 목록 확인
+### View Contents
 ```bash
-"C:\Program Files\7-Zip\7z.exe" l "아카이브.zip"
+"C:\Program Files\7-Zip\7z.exe" l "archive.zip"
 ```
 
-## 규칙
-- 기본 압축 형식: 7z (압축률 우수)
-- 해제 전 목록 확인 후 진행
-- 기존 파일 덮어쓰기 전 사용자 확인
-- 한글로 응답
+## Rules
+- Default compression format: 7z (superior compression ratio)
+- View contents before extraction
+- Get user confirmation before overwriting existing files
