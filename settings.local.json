@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(powershell:*)",
+      "Bash(python:*)",
+      "Bash(dotnet build:*)",
+      "Bash(where:*)",
+      "Bash(gh auth switch:*)",
+      "mcp__pcan__can_open",
+      "mcp__pcan__can_close",
+      "mcp__pcan__can_send",
+      "mcp__pcan__can_recv",
+      "mcp__pcan__can_monitor",
+      "mcp__pcan__uds_request",
+      "mcp__pcan__ign_start",
+      "mcp__pcan__ign_stop",
+      "mcp__pcan__tp_start",
+      "mcp__pcan__tp_stop",
+      "mcp__pcan__heater_status"
+    ]
+  },
+  "mcpServers": {
+    "pcan": {
+      "command": "python",
+      "args": ["C:\\Users\\Administrator\\mcp-servers\\pcan\\server.py"]
+    }
+  }
+}
