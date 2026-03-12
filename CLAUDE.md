@@ -17,8 +17,8 @@
 - Ask first if HW/protocol info is insufficient
 - **Tech suggestions**: When writing code related to industrial automation, robotics, serial/TCP communication, or sensor integration, proactively suggest newer/better libraries, tools, or approaches if available (e.g., newer NuGet packages, GitHub trending repos, better protocols). Focus areas: .NET, WinForms/WPF, embedded, PLC, cobot, servo/motor control, vision, IoT
 
-## New Project Structure (LLM-Optimized)
-All new projects MUST follow this structure for minimal token consumption and fast LLM editing.
+## Project Structure (LLM-Optimized)
+ALL projects (new and existing) MUST follow this structure. When modifying legacy projects, progressively refactor toward this structure — split large files, extract features, separate config.
 
 ### File Rules
 - **Max 200 lines per file** — split if exceeding. LLM reads entire file per edit; large files waste tokens
@@ -78,11 +78,6 @@ public interface IDevice { void Connect(); void Disconnect(); double Read(); }
 - Shared/Communication/ — serial/TCP communication helpers
 ```
 - This eliminates exploratory file searches → biggest token saver
-
-### Legacy Projects
-- Existing WinForms projects: no large-scale structural changes, follow existing patterns
-- Keep forms designer-compatible
-- Apply new structure rules only when creating new features/files within legacy projects where practical
 
 ## New Project Baseline
 - **Global exception handler**: `ThreadException` + `UnhandledException` → crash.log (time/source/message/stack). Thread/timer try-catch mandatory
