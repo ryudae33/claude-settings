@@ -25,7 +25,9 @@
 - Runtime settings → `config.json`/`appsettings.json` with strongly-typed config classes
 - State machines as data (enum + Dictionary), not giant switch-case
 - All devices implement common interface (`IDevice`) for easy extension
-- Every new project MUST have `CLAUDE.md` with file map section
+- Every project MUST have `CLAUDE.md` with file map section
+- Multi-project solutions: place CLAUDE.md at BOTH solution root (overall structure) and each project folder (feature details)
+- Single project: CLAUDE.md at project root is sufficient
 - See `references/project-structure-guide.md` for examples
 
 ## New Project Baseline
