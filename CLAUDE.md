@@ -59,3 +59,5 @@ CLI/DB/comm/sync tool details in `~/.claude/references/`:
 - `tools-sync.md` — gdrive-sync, claude-config-sync usage
 - `tools-screenshot.md` — PowerShell screenshot capture code
 - `project-structure-guide.md` — folder structure, state machine, interface, file map examples
+- `device-protocols.md` — LS PLC, RI-20W, LVDT, gauge, scanner, SCPI supply, Keyence laser, servo specs
+- `code-snippets.md` — serial polling, PLC Cnet, sensor reader, MDB adapter, ZedGraph, INI, PropertyGrid, state machine, log queue
