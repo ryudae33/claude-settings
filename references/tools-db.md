@@ -1,26 +1,26 @@
-# DB 조회 도구
+# DB Query Tools
 
 ## SQL Server
-- **sqlcmd** → `sqlcmd` (PATH 등록됨)
-  - `sqlcmd -S 서버명 -d DB명 -Q "SELECT TOP 10 * FROM 테이블"`
-  - `sqlcmd -S localhost -E` — Windows 인증
-  - `sqlcmd -S 서버 -U sa -P 비번 -d DB -Q "쿼리"`
+- **sqlcmd** → `sqlcmd` (in PATH)
+  - `sqlcmd -S server -d dbname -Q "SELECT TOP 10 * FROM table"`
+  - `sqlcmd -S localhost -E` — Windows auth
+  - `sqlcmd -S server -U sa -P password -d db -Q "query"`
 
 ## SQLite
-- **sqlite3** → `sqlite3` (PATH 등록됨)
-  - `sqlite3 파일.db` — 인터랙티브
-  - `sqlite3 파일.db "SELECT * FROM 테이블;"` — 직접 쿼리
-  - `sqlite3 파일.db ".tables"` — 테이블 목록
-  - `sqlite3 파일.db ".schema 테이블"` — 스키마
+- **sqlite3** → `sqlite3` (in PATH)
+  - `sqlite3 file.db` — interactive
+  - `sqlite3 file.db "SELECT * FROM table;"` — direct query
+  - `sqlite3 file.db ".tables"` — table list
+  - `sqlite3 file.db ".schema table"` — schema
 
 ## Access (.mdb/.accdb)
-- **PowerShell + OleDb** (Access Database Engine 2016 설치됨)
+- **PowerShell + OleDb** (Access Database Engine 2016 installed)
 ```powershell
 $conn = New-Object System.Data.OleDb.OleDbConnection
-$conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=파일경로;"
+$conn.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=filepath;"
 $conn.Open()
 $cmd = $conn.CreateCommand()
-$cmd.CommandText = "SELECT * FROM 테이블"
+$cmd.CommandText = "SELECT * FROM tablename"
 $reader = $cmd.ExecuteReader()
 while ($reader.Read()) { Write-Host $reader[0] }
 $conn.Close()

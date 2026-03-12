@@ -1,41 +1,116 @@
-# 글로벌 규칙
+# Global Rules
+
+## Response
+- Respond in Korean, code comments in Korean. Be concise, no flattery/chatter
+- Propose approach before modifying code, ask first if spec is unclear
 
 ## Git
-- Email: ryudae33@gmail.com / GitHub: ryudae33 (작업 전 `gh auth switch --user ryudae33`)
-- 조직: ftech-projects (리포 기본 `ftech-projects/` 아래)
-- **git push 후 반드시 `gdrive-sync push` 실행** — gitignore된 문서/DB 파일을 `G:\공유 드라이브\daehyun tmp\github-ignore\리포명\` 에 백업
-- **git clone 후 반드시 `gdrive-sync pull` 실행** — Google Drive `github-ignore\리포명\`에서 gitignore된 문서/DB 파일 복원
-- **수동 rclone 금지** — 반드시 `gdrive-sync` 스크립트 사용. 한글 경로 문제 시 스크립트 수정으로 대응
-- **빌드 publish 결과물**: git 관리 대상 아님. 배포 전 수동 `gdrive-sync push`로 백업 여부는 프로젝트별 판단 (build-runner는 자동 동기화 안 함)
+- Email: ryudae33@gmail.com / GitHub: ryudae33 (run `gh auth switch --user ryudae33` before work)
+- Org: ftech-projects (repos default under `ftech-projects/`)
+- **After git push, always run `gdrive-sync push`** — backs up gitignored docs/DB files to Google Drive `Sourcr ryudae/repo-name/`
+- **Build publish artifacts**: not tracked by git. Manual `gdrive-sync push` before deploy is project-specific (build-runner does not auto-sync)
+- **After git clone, always run `gdrive-sync pull`** — restores gitignored docs/DB files from Google Drive
+- **Commit messages must include clear change summary**: format `<Project>: <summary>`, use bullet points in body for multiple changes
 
-## 응답
-- 한글 응답, 코드 주석도 한글. 짧고 핵심만, 아부/수다 금지
-- 코드 수정 전 방안 제시 후 확인. 스펙 불명확 시 질문 먼저
+## Coding
+- PascalCase (classes/methods), camelCase (variables), ALL_CAPS (constants)
+- Ask first if HW/protocol info is insufficient
+- **Tech suggestions**: When writing code related to industrial automation, robotics, serial/TCP communication, or sensor integration, proactively suggest newer/better libraries, tools, or approaches if available (e.g., newer NuGet packages, GitHub trending repos, better protocols). Focus areas: .NET, WinForms/WPF, embedded, PLC, cobot, servo/motor control, vision, IoT
 
-## 코딩
-- PascalCase(클래스/메서드), camelCase(변수), ALL_CAPS(상수)
-- 레거시 WinForms: 대규모 구조 변경 금지, 기존 패턴 우선. 폼은 디자이너 호환 유지
-- HW/프로토콜 정보 부족 시 질문 먼저
+## New Project Structure (LLM-Optimized)
+All new projects MUST follow this structure for minimal token consumption and fast LLM editing.
 
-## 신규 프로젝트 필수
-- **전역 예외 핸들러**: `ThreadException`+`UnhandledException` → crash.log (시간/소스/메시지/스택). 쓰레드/타이머 try-catch 필수
-- **ScottPlot 한글**: `ScottPlot.Fonts.Default = "Malgun Gothic";` OnStartup에서 전역 설정
+### File Rules
+- **Max 200 lines per file** — split if exceeding. LLM reads entire file per edit; large files waste tokens
+- **Self-descriptive naming** — `MoveServoToPosition(int servoIndex, double targetMm)` not `DoWork(int m, double v)`
+- **No magic numbers in code** — all constants in config or dedicated constants class
 
-## 오케스트레이션
-- 복잡한 작업(분석/빌드/DB/통신/문서 등)은 전문 서브에이전트에 위임
-- 판단 기준: 단일 도메인 집중 작업이거나 병렬 처리가 유리하면 Task 도구 사용
-- 주요 에이전트: project-analyzer, build-runner, db-explorer, log-analyzer, hw-connector, doc-reader, web-searcher, git-manager
-- 단순 질문/단일 파일 수정은 직접 처리 (에이전트 남용 금지)
-- **web-searcher 호출 금지 케이스**: PLC/로봇/자동화 일반 지식, 표준 프로토콜(Modbus/EtherNet IP/TMSVR 등), C#/.NET API, 알고 있는 하드웨어 스펙 → 직접 답변
-- **web-searcher 호출 허용**: 특정 모델 최신 펌웨어/매뉴얼 URL, 단종 여부, 가격/납기 확인 등 실시간 정보만
-- web-searcher 최대 **2회** 호출 후 결과 없으면 "확인 불가" 보고
-## 작업 기록
-- 시작 시 해당 폴더 CLAUDE.md 확인, 완료 시 시간+내역 기록 (`powershell Get-Date`, UTC 금지)
+### Feature-Based Folder Structure (not layered MVC)
+```
+src/
+  Features/
+    Measurement/
+      MeasurementService.cs    # business logic
+      MeasurementConfig.cs     # settings/constants
+      MeasurementForm.cs       # UI (thin, delegates to Service)
+    ServoControl/
+      ServoService.cs
+      ServoConfig.cs
+      ServoForm.cs
+  Shared/
+    Communication/             # serial/TCP/Modbus helpers
+    Database/                  # DB access helpers
+    Models/                    # shared DTOs/enums
+  Program.cs                   # entry point + global exception handler
+  config.json                  # all runtime settings (ports, speeds, thresholds)
+```
+- Each feature folder is self-contained: UI + logic + config
+- LLM finds target file by feature name without Glob/Grep → saves search tokens
 
-## 도구 참조
-CLI/DB/통신/동기화 도구 상세는 `~/.claude/references/` 참조:
+### Config Separation
+- Runtime settings (ports, speeds, thresholds) → `config.json` or `appsettings.json`
+- Changing a value = editing JSON, not parsing 1000-line code file
+- Use strongly-typed config classes to deserialize
+
+### State Machine as Data
+- Define steps/sequences as enum + Dictionary or data structure, not giant switch-case
+- Step additions/changes become data edits, not logic refactoring
+```csharp
+enum Step { Init, Move, Measure, Evaluate }
+Dictionary<Step, StepConfig> Steps = new() {
+    [Step.Init] = new("초기화", ServoAction.Home, nextStep: Step.Move),
+    [Step.Move] = new("이동", ServoAction.MoveToPos, nextStep: Step.Measure),
+};
+```
+
+### Interface-Based Devices
+- All devices implement common interface → LLM can add new device without reading existing implementations
+```csharp
+public interface IDevice { void Connect(); void Disconnect(); double Read(); }
+```
+
+### Project CLAUDE.md File Map
+- Every new project MUST have a `CLAUDE.md` in project root with a file map section:
+```markdown
+## File Map
+- Features/Measurement/ — load cell/LVDT/gauge measurement
+- Features/ServoControl/ — servo control and positioning
+- Shared/Communication/ — serial/TCP communication helpers
+```
+- This eliminates exploratory file searches → biggest token saver
+
+### Legacy Projects
+- Existing WinForms projects: no large-scale structural changes, follow existing patterns
+- Keep forms designer-compatible
+- Apply new structure rules only when creating new features/files within legacy projects where practical
+
+## New Project Baseline
+- **Global exception handler**: `ThreadException` + `UnhandledException` → crash.log (time/source/message/stack). Thread/timer try-catch mandatory
+- **ScottPlot Korean font**: `ScottPlot.Fonts.Default = "Malgun Gothic";` set globally in OnStartup
+
+## Orchestration
+- Delegate complex tasks (analysis/build/DB/comm/docs) to specialized subagents
+- Criteria: use Task tool for single-domain focused work or parallelizable tasks
+- Key agents: project-analyzer, build-runner, db-explorer, log-analyzer, hw-connector, doc-reader, web-searcher, git-manager
+- Handle simple questions/single file edits directly (no agent abuse)
+
+## Token & Context Optimization
+- **All new features, structural changes, and plugin/MCP additions must prioritize token savings and context optimization**
+- Avoid redundant plugins/MCP servers that duplicate existing CLI tool capabilities (e.g., `github` plugin when `gh` CLI already works)
+- MCP tool schemas load into context every message — only install plugins that provide genuinely new capabilities
+- Prefer Bash CLI tools over MCP plugins when functionality overlaps
+- Keep system prompt lean: minimize skills, agents, and tools loaded per session
+
+## Config Files Language
+- All config/memory/reference files (`~/.claude/` including CLAUDE.md, commands/, agents/, references/, memory/) must be written in **English** to minimize token consumption
+
+## Work Log
+- Check project CLAUDE.md on start, record time + details on completion (`powershell Get-Date`, no UTC)
+
+## Tool References
+CLI/DB/comm/sync tool details in `~/.claude/references/`:
 - `tools-cli.md` — 7-Zip, Everything, rclone, LibreOffice, SumatraPDF, WSL
 - `tools-db.md` — SQL Server(sqlcmd), SQLite(sqlite3), Access(OleDb)
-- `tools-comm.md` — 시리얼(miniterm/plink), TCP(ncat), winsocat, tshark
-- `tools-sync.md` — gdrive-sync, claude-config-sync 사용법
-- `tools-screenshot.md` — PowerShell 스크린샷 캡처 코드
+- `tools-comm.md` — Serial(miniterm/plink), TCP(ncat), winsocat, tshark
+- `tools-sync.md` — gdrive-sync, claude-config-sync usage
+- `tools-screenshot.md` — PowerShell screenshot capture code

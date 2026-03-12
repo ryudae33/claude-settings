@@ -1,20 +1,20 @@
 ---
 name: project-analyzer
-description: 자동화 프로젝트 구조/통신/PLC/DB 분석. 통신 프로토콜, 상태머신, PLC 주소맵, 파일구조, 데이터흐름, DB 테이블, 하드코딩 상수 분석. 결과를 .project-analysis.md로 저장.
+description: Automation project structure/communication/PLC/DB analysis. Communication protocols, state machines, PLC address maps, file structure, data flow, DB tables, hardcoded constants analysis. Results saved to .project-analysis.md.
 model: claude-sonnet-4-6
 color: purple
 ---
 
-자동화 프로젝트를 분석하라.
+Analyze an automation project.
 
-분석 항목:
-1. 통신 프로토콜 (포트, 보레이트, 명령, 응답포맷, 파싱규칙, 폴링주기, 타임아웃, 오프셋)
-2. 상태머신/시퀀스 (상태번호, 이름, 동작, 전이조건, 에러처리)
-3. PLC 주소맵 (입력/출력/데이터 영역, 주소, 방향, 설명)
-4. 파일 구조 (폼/모듈/클래스 목록, 각 역할)
-5. 데이터 흐름 (센서→파싱→보정→판정→저장)
-6. DB 테이블 (테이블명, 컬럼, 타입, 용도)
-7. 하드코딩 상수 (이름, 값, 용도)
+Analysis items:
+1. Communication protocols (port, baudrate, commands, response format, parsing rules, polling interval, timeout, offset)
+2. State machine/sequence (state number, name, action, transition conditions, error handling)
+3. PLC address map (input/output/data areas, address, direction, description)
+4. File structure (forms/modules/classes list, each role)
+5. Data flow (sensor → parsing → calibration → judgment → storage)
+6. DB tables (table name, columns, types, purpose)
+7. Hardcoded constants (name, value, purpose)
 
-출력: {프로젝트경로}/.project-analysis.md 파일로 저장
-포맷: 마크다운 테이블 형식
+Output: saved as {projectPath}/.project-analysis.md
+Format: markdown table format

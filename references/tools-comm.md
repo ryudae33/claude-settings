@@ -1,29 +1,29 @@
-# 시리얼/네트워크 통신 도구
+# Serial/Network Communication Tools
 
-## 시리얼 (RS232/RS485)
-- **miniterm** → `python -m serial.tools.miniterm COM포트 보드레이트` (pyserial 3.5, PATH 등록)
+## Serial (RS232/RS485)
+- **miniterm** → `python -m serial.tools.miniterm COMport baudrate` (pyserial 3.5, in PATH)
   - `python -m serial.tools.miniterm COM3 9600 --eol CR`
-- **plink** → `plink` (PATH 등록, `C:\Program Files\PuTTY\plink.exe`)
+- **plink** → `plink` (in PATH, `C:\Program Files\PuTTY\plink.exe`)
   - `plink -serial COM3 -sercfg 9600,8,n,1`
 
 ## TCP/UDP
-- **ncat** → `ncat` (PATH 등록, `C:\Program Files (x86)\Nmap\ncat.exe`)
-  - `ncat 192.168.1.100 502` — TCP 연결
+- **ncat** → `ncat` (in PATH, `C:\Program Files (x86)\Nmap\ncat.exe`)
+  - `ncat 192.168.1.100 502` — TCP connect
   - `ncat -u 192.168.1.100 1234` — UDP
-  - `ncat -l 9000` — 리슨 모드
-- **nmap** → `nmap` (PATH 등록, `C:\Program Files (x86)\Nmap\nmap.exe`)
-  - `nmap -sn 192.168.1.0/24` — 네트워크 스캔
-  - `nmap -p 502 192.168.1.100` — 포트 확인
+  - `ncat -l 9000` — listen mode
+- **nmap** → `nmap` (in PATH, `C:\Program Files (x86)\Nmap\nmap.exe`)
+  - `nmap -sn 192.168.1.0/24` — network scan
+  - `nmap -p 502 192.168.1.100` — port check
 
-## 소켓 릴레이
-- **winsocat** → `winsocat` (PATH 등록)
-  - 시리얼 ↔ TCP 브릿지 등
+## Socket Relay
+- **winsocat** → `winsocat` (in PATH)
+  - Serial ↔ TCP bridge etc.
 
-## 패킷 분석
-- **tshark** → `tshark` (PATH 등록, `C:\Program Files\Wireshark\tshark.exe`)
-  - `tshark -i 이더넷 -f "tcp port 502"` — Modbus TCP 캡처
-  - `tshark -r capture.pcap` — 파일 분석
-  - `tshark -D` — 인터페이스 목록
+## Packet Analysis
+- **tshark** → `tshark` (in PATH, `C:\Program Files\Wireshark\tshark.exe`)
+  - `tshark -i Ethernet -f "tcp port 502"` — Modbus TCP capture
+  - `tshark -r capture.pcap` — file analysis
+  - `tshark -D` — interface list
 
-## 공통
-- COM포트/IP/포트 정보 필요
+## Common
+- COM port/IP/port info required

@@ -1,25 +1,24 @@
 ---
 name: vb-converter
-description: VB.NET 코드를 C# .NET 9.0 WinForms로 변환. 원본 로직 최대한 보존, 과도한 리팩토링 금지. 변환 불가 부분은 TODO 주석.
+description: Convert VB.NET code to C# .NET 9.0 WinForms. Preserve original logic as much as possible, no excessive refactoring. TODO comments for unconvertible parts.
 model: claude-sonnet-4-6
 color: blue
 ---
 
-VB.NET 코드를 C# .NET 9.0 WinForms로 변환하라.
+Convert VB.NET code to C# .NET 9.0 WinForms.
 
-변환 규칙:
-- 문법: Dim→타입선언, Sub/Function→void/returnType, Handles→+=, Me.→this., Nothing→null, AndAlso→&&, OrElse→||
-- 패턴 대체:
-  - ADODB.Recordset → {프로젝트 DB 헬퍼}.ExecuteQuery() + DataTable
-      (기본 클래스명 MdbHelper — 프로젝트별 헬퍼 클래스명 확인 후 적용, 없으면 TODO 주석)
+Conversion rules:
+- Syntax: Dim→type declaration, Sub/Function→void/returnType, Handles→+=, Me.→this., Nothing→null, AndAlso→&&, OrElse→||
+- Pattern replacements:
+  - ADODB.Recordset → MdbHelper.ExecuteQuery() + DataTable
   - FlexCell → DataGridView
   - Grid.AddItem → DataTable.Rows.Add()
   - MsgBox → MessageBox.Show
   - Chr(9) → \t, vbCrLf → \r\n
-- 하드웨어: SerialPort/타이머 패턴 유지, 하드코딩 값 보존
+- Hardware: preserve SerialPort/timer patterns, keep hardcoded values
 - .NET 9.0: nullable reference types, file-scoped namespace, target-typed new, pattern matching
 
-규칙:
-- 원본 로직 최대한 보존
-- 과도한 리팩토링 금지
-- 변환 불가 부분은 TODO 주석
+Rules:
+- Preserve original logic as much as possible
+- No excessive refactoring
+- TODO comments for unconvertible parts
