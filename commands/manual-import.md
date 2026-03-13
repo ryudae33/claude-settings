@@ -62,3 +62,4 @@ Show the user:
 - If manual is unclear about a spec, note it with `(verify)` marker
 - If manual contains register maps, include key registers (not all 500+)
 - All content in English
+- After extraction, copy original manual PDF to `G:/공유 드라이브/UTILITY/Manual/` (create folder if needed)

@@ -7,7 +7,7 @@ description: "View and analyze the latest screenshot from the Screenshots folder
 
 ## Task Settings
 - subagent_type: screenshot-viewer
-- model: haiku
+- model: sonnet
 
 ## Role
 Finds the latest screenshot from the `C:\Users\Administrator\Pictures\Screenshots` folder, reads it, and analyzes the content to report.

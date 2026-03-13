@@ -51,6 +51,10 @@
 ## Work Log
 - Check project CLAUDE.md on start, record time + details on completion (`powershell Get-Date`, no UTC)
 
+## Device Manuals
+- Store original device/equipment manuals (PDF) in: `G:/공유 드라이브/UTILITY/Manual/`
+- Use `/manual-import` skill to extract protocol specs → `~/.claude/references/device-protocols.md`
+
 ## Tool References
 CLI/DB/comm/sync tool details in `~/.claude/references/`:
 - `tools-cli.md` — 7-Zip, Everything, rclone, LibreOffice, SumatraPDF, WSL

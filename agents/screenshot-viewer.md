@@ -1,7 +1,7 @@
 ---
 name: screenshot-viewer
 description: View/analyze latest screenshots. Find and analyze the latest image from C:\Users\Administrator\Pictures\Screenshots folder.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: cyan
 ---
 
