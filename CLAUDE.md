@@ -1,7 +1,7 @@
 # Global Rules (v2026.03.16)
 
 ## Response
-- Respond in Korean, code comments in **English**. Be concise, no flattery/chatter
+- Respond in Korean, code comments in **Korean**. Be concise, no flattery/chatter
 - Propose approach before modifying code, ask first if spec is unclear
 
 ## Git
