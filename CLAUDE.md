@@ -10,6 +10,7 @@
 - After git push → always run `gdrive-sync push` (backs up gitignored docs/DB to Google Drive)
 - After git clone → always run `gdrive-sync pull` (restores gitignored docs/DB)
 - Build publish artifacts: not git-tracked, manual `gdrive-sync push` before deploy
+- Large documents (PDF, docx, xlsx, etc.) MUST NOT be committed to git — add to `.gitignore` and store via `gdrive-sync` path (`G:/공유 드라이브/daehyun tmp/github-ignore/<REPO_NAME>/`)
 - Commit format: `<Project>: <summary>`, bullet points in body for multiple changes
 
 ## Coding
