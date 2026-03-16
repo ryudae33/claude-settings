@@ -26,6 +26,10 @@ case "${1}" in
         ensure_repo
         echo "[Claude Config] Local → GitHub push..."
 
+        # Auto-update CLAUDE.md version (date-based)
+        VERSION="v$(date '+%Y.%m.%d')"
+        sed -i "s/^# Global Rules (v[0-9.]*)/# Global Rules ($VERSION)/" "$CLAUDE_DIR/CLAUDE.md"
+
         # Copy settings to repo
         cp "$CLAUDE_DIR/CLAUDE.md" "$LOCAL_REPO/" 2>/dev/null
         cp "$CLAUDE_DIR/config.json" "$LOCAL_REPO/" 2>/dev/null
