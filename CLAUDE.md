@@ -1,4 +1,4 @@
-# Global Rules (v2026.03.16)
+# Global Rules (v2026.03.17)
 
 ## Response
 - Respond in Korean, code comments in **Korean**. Be concise, no flattery/chatter
@@ -56,6 +56,11 @@
 - Store original device/equipment manuals (PDF) in: `G:/공유 드라이브/UTILITY/Manual/`
 - Use `/manual-import` skill to extract protocol specs → `~/.claude/references/device-protocols.md`
 
+## LS XG5000 ST Programming
+- **MANDATORY**: When writing or reviewing LS Electric XG5000 ST code, ALWAYS read `references/ls-xg5000-st.md` FIRST
+- Use `ladder-to-st` agent for ladder→ST conversion tasks
+- CSV generation: MUST use PowerShell .ps1 script (EUC-KR + CRLF), NEVER use Write tool for CSV
+
 ## Tool References
 CLI/DB/comm/sync tool details in `~/.claude/references/`:
 - `tools-cli.md` — 7-Zip, Everything, rclone, LibreOffice, SumatraPDF, WSL
@@ -66,3 +71,4 @@ CLI/DB/comm/sync tool details in `~/.claude/references/`:
 - `project-structure-guide.md` — folder structure, state machine, interface, file map examples
 - `device-protocols.md` — LS PLC, RI-20W, LVDT, gauge, scanner, SCPI supply, Keyence laser, servo specs
 - `code-snippets.md` — serial polling, PLC Cnet, sensor reader, MDB adapter, ZedGraph, INI, PropertyGrid, state machine, log queue
+- `ls-xg5000-st.md` — LS XG5000 ST rules: VAR_EXTERNAL, WORD/INT types, APM FB params, CSV encoding, compile errors
