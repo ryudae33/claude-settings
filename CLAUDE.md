@@ -1,4 +1,4 @@
-# Global Rules (v2026.03.18)
+# Global Rules (v2026.03.19)
 
 ## Response
 - Respond in Korean, code comments in **Korean**. Be concise, no flattery/chatter
@@ -36,9 +36,10 @@
 - ScottPlot Korean font: `ScottPlot.Fonts.Default = "Malgun Gothic";` in OnStartup
 
 ## Orchestration
-- Delegate complex tasks to subagents (project-analyzer, build-runner, db-explorer, log-analyzer, hw-connector, doc-reader, web-searcher, git-manager)
+- Delegate complex tasks to skills (`/build`, `/db`, `/log`, `/hw`, `/doc`, `/git`, `/analyze-project`, `/plan`)
+- Remaining agents: code-reviewer, hmi-designer, ladder-to-st, tm-robot, db-schema-designer
 - Use Task tool for single-domain focused work or parallelizable tasks
-- Handle simple questions/single file edits directly (no agent abuse)
+- Handle simple questions/single file edits directly (no skill/agent abuse)
 
 ## Token & Context Optimization
 - All new features/structural changes/MCP additions must prioritize token savings

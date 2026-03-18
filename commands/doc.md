@@ -3,50 +3,50 @@ name: doc
 description: "Read and analyze document files including PDF, Excel (.xlsx/.xls), Word (.docx), CSV, text, images. Auto-detects format and uses appropriate reading method. Use when the user asks to read, summarize, analyze, or extract content from any document file."
 ---
 
-# Document Reader Agent
+# Document Reader (Direct — no subagent)
 
-## Task Settings
-- subagent_type: doc-reader
-- model: sonnet
+Read the file at `$ARGUMENTS` directly using the tools below. Do NOT spawn a subagent.
 
-## Role
-Reads and analyzes document files such as PDF, Excel, Word, CSV and reports the content.
+## Reading Method by Extension
 
-## Input
-$ARGUMENTS (document file path)
+### PDF (.pdf)
+- Use `Read` tool with `pages` parameter
+- 10 pages or less → read all at once
+- Over 10 pages → split into chunks of 15 pages max
 
-## Supported Formats
-| Format | Reading Method |
-|--------|---------------|
-| PDF | Read tool (split reading with pages parameter if over 10 pages) |
-| Excel (.xlsx/.xls) | PowerShell OleDb (sheet list → data per sheet) |
-| CSV | Read tool (large files: PowerShell Import-Csv \| Select -First 100) |
-| Word (.docx) | PowerShell ZipFile → word/document.xml → extract w:t text |
-| Text/Log/Markdown | Read tool directly |
-| Image | Read tool (multimodal analysis) |
+### Excel (.xlsx / .xls)
+```powershell
+# List sheets
+$conn = New-Object System.Data.OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source='FILE';Extended Properties='Excel 12.0 Xml;HDR=YES;IMEX=1'")
+$conn.Open(); $conn.GetSchema("Tables") | Select TABLE_NAME; $conn.Close()
+# Read sheet data
+$cmd = $conn.CreateCommand(); $cmd.CommandText = "SELECT TOP 100 * FROM [Sheet1$]"
+$reader = $cmd.ExecuteReader(); # ... process rows
+```
 
-## Actions
+### Word (.docx)
+```powershell
+Add-Type -Assembly System.IO.Compression.FileSystem
+$zip = [IO.Compression.ZipFile]::OpenRead("FILE")
+$entry = $zip.Entries | Where { $_.FullName -eq "word/document.xml" }
+$sr = New-Object IO.StreamReader($entry.Open())
+$xml = [xml]$sr.ReadToEnd(); $sr.Close(); $zip.Dispose()
+$xml.GetElementsByTagName("w:t") | ForEach { $_.InnerText }
+```
 
-### 1. File Verification
-- Check file existence, size, extension
-- Auto-select reading method based on extension
+### CSV
+- Use `Read` tool directly
+- Large files (>500 lines): `powershell Import-Csv 'FILE' -Encoding UTF8 | Select -First 100`
 
-### 2. Read
-- **PDF**: Check total pages → read all if 10 pages or less, split reading if more
-- **Excel**: List sheets first → data per sheet (header + sample rows)
-- **CSV**: Read all (top 100 rows + total row count for large files)
-- **Word**: Extract text from XML
-- **Image**: Visual analysis
+### Text / Log / Markdown
+- Use `Read` tool directly
 
-### 3. Analysis/Report
-- Summarize document structure
-- Organize key content
-- Format tables/data as markdown tables
-- Extract key items from spec documents
+### Image (.png / .jpg / .bmp)
+- Use `Read` tool (multimodal visual analysis)
 
 ## Rules
-- Split reading for large files (no full load)
-- Check sheet list first for multi-sheet Excel files
-- Delegate binary DB files (.mdb, etc.) to db-explorer (`/db`)
-- Apply `-Encoding UTF8` for Korean encoding issues
-- Report file path/size/format info even on read failure
+- Split reading for large files — never load entire large file at once
+- For Excel, list sheets first, then read data per sheet
+- Binary DB files (.mdb, .accdb) → tell user to use `/db` instead
+- Use `-Encoding UTF8` for Korean content in PowerShell
+- Always report: file path, size, format, then content summary

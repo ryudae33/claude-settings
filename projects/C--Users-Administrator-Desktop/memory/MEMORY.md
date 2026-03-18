@@ -41,3 +41,7 @@
 
 # XG5000 ST Programming Rules
 - [xg5000-st-rules.md](xg5000-st-rules.md) — VAR_EXTERNAL, RETURN restriction, WORD arithmetic, APM FB correct params
+
+# Feedback
+- [feedback_detail_oriented.md](feedback_detail_oriented.md) — User expects proactive edge case handling (overflow, sign, safety)
+- [feedback_reset_safety.md](feedback_reset_safety.md) — Reset must retract 복동 SOL before clearing outputs

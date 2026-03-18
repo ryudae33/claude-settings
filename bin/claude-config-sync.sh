@@ -60,11 +60,13 @@ case "${1}" in
             cp "$CLAUDE_DIR/references/"*.md "$LOCAL_REPO/references/" 2>/dev/null
         fi
 
-        # Memory
-        if [ -d "$CLAUDE_DIR/projects" ]; then
-            # rsync-like: copy entire projects tree (contains per-project memory)
-            cp -r "$CLAUDE_DIR/projects" "$LOCAL_REPO/" 2>/dev/null
-        fi
+        # Memory (only .md files from memory/ folders, skip jsonl/subagents/tool-results)
+        for memdir in $(find "$CLAUDE_DIR/projects" -type d -name "memory" 2>/dev/null); do
+            # Get relative path: projects/C--Users-Administrator-Desktop/memory
+            relpath="${memdir#$CLAUDE_DIR/}"
+            mkdir -p "$LOCAL_REPO/$relpath"
+            cp "$memdir/"*.md "$LOCAL_REPO/$relpath/" 2>/dev/null
+        done
 
         # NLM docs
         if [ -d "$CLAUDE_DIR/nlm-docs" ]; then
@@ -121,10 +123,12 @@ case "${1}" in
             cp "$LOCAL_REPO/references/"*.md "$CLAUDE_DIR/references/" 2>/dev/null
         fi
 
-        # Memory
-        if [ -d "$LOCAL_REPO/projects" ]; then
-            cp -r "$LOCAL_REPO/projects" "$CLAUDE_DIR/" 2>/dev/null
-        fi
+        # Memory (only memory/ folders with .md files)
+        for memdir in $(find "$LOCAL_REPO/projects" -type d -name "memory" 2>/dev/null); do
+            relpath="${memdir#$LOCAL_REPO/}"
+            mkdir -p "$CLAUDE_DIR/$relpath"
+            cp "$memdir/"*.md "$CLAUDE_DIR/$relpath/" 2>/dev/null
+        done
 
         # NLM docs
         if [ -d "$LOCAL_REPO/nlm-docs" ]; then
