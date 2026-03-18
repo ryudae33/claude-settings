@@ -1,0 +1,167 @@
+msbuild 버전 18.4.0+6e61e96ac(.NET Framework용)
+빌드 시작: 2026-03-13 오후 4:01:13
+
+1 노드의 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj" 프로젝트(기본 대상)입니다.
+ResolveAssemblyReferences:
+  기본 참조 "Intel.RealSense"입니다.
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2451,5): warning MSB3245: 이 참조를 확인할 수 없습니다. "Intel.RealSense" 어셈블리를 찾을 수 없습니다. 어셈블리가 디스크에 있는지 확인하세요. 해당 코드에 이 참조가 필요한 경우 컴파일 오류가 발생할 수 있습니다. [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+          SearchPath "{HintPathFromItem}"에 사용됩니다.
+          "D:\Source\RealSense\lib\Intel.RealSense\bin\Debug\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          SearchPath "{TargetFrameworkDirectory}"에 사용됩니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          SearchPath "{AssemblyFoldersFromConfig:C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\AssemblyFolders.config,v4.8}"에 사용됩니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\SqlDb\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\SqlDb\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\SqlDb\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\PublicAssemblies\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\PublicAssemblies\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\PublicAssemblies\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v4.5\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v4.5\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v4.5\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v4.0\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v4.0\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v4.0\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v2.0\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v2.0\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\ReferenceAssemblies\v2.0\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}"에 사용됩니다.
+          AssemblyFoldersEx 위치로 간주했습니다.
+          SearchPath "{AssemblyFolders}"에 사용됩니다.
+          "C:\Program Files (x86)\FlexCell Technologies\FlexCell.NET4\Bin\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\FlexCell Technologies\FlexCell.NET4\Bin\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\FlexCell Technologies\FlexCell.NET4\Bin\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\IIS\Microsoft Web Deploy V3\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\IIS\Microsoft Web Deploy V3\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "C:\Program Files\IIS\Microsoft Web Deploy V3\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+          SearchPath "{GAC}"에 사용됩니다.
+          "Intel.RealSense"(으)로 간주했지만 GAC에서 찾을 수 없습니다.
+          SearchPath "{RawFileName}"에 사용됩니다.
+          "Intel.RealSense"을(를) 파일 이름으로 간주했지만 존재하지 않습니다.
+          SearchPath "bin\Release\"에 사용됩니다.
+          "bin\Release\Intel.RealSense.winmd"(으)로 간주했지만 존재하지 않습니다.
+          "bin\Release\Intel.RealSense.dll"(으)로 간주했지만 존재하지 않습니다.
+          "bin\Release\Intel.RealSense.exe"(으)로 간주했지만 존재하지 않습니다.
+ResolveComReferences:
+  COM 참조 'ACTETHERLib'은(는) ActiveX 컨트롤 'AxACTETHERLib'에 대한 interop 어셈블리이지만 /link 플래그로 컴파일러에 의해 링크되도록 표시되어 있습니다. 이 COM 참조는 참조로 간주되지만 링크되지 않습니다.
+CoreResGen:
+  리소스 파일 "FrmAngleNEA.resx"을(를) "obj\x86\Release\FrmAngleNEA.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmBasic.resx"을(를) "obj\x86\Release\FrmBasic.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmMain.resx"을(를) "obj\x86\Release\FrmMain.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmNg.resx"을(를) "obj\x86\Release\FrmNg.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmPart.resx"을(를) "obj\x86\Release\FrmPart.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmPassWord.resx"을(를) "obj\x86\Release\FrmPassWord.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmPop.resx"을(를) "obj\x86\Release\FrmPop.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmSearch.resx"을(를) "obj\x86\Release\FrmSearch.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmSet.resx"을(를) "obj\x86\Release\FrmSet.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmSIgnal.resx"을(를) "obj\x86\Release\FrmSIgnal.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmSignalPlc.resx"을(를) "obj\x86\Release\FrmSignalPlc.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "FrmWorkStandard.resx"을(를) "obj\x86\Release\FrmWorkStandard.resources"(으)로 처리하고 있습니다.
+  리소스 파일 "My Project\Resources.resx"을(를) "obj\x86\Release\Resources.resources"(으)로 처리하고 있습니다.
+CoreCompile:
+  C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\vbc.exe /noconfig /imports:Microsoft.VisualBasic,NationalInstruments,NationalInstruments.UI,System,System.Collections,System.Collections.Generic,System.Data,System.Drawing,System.Diagnostics,System.Windows.Forms,System.Linq,System.Xml.Linq /optioncompare:Binary /optionexplicit+ /optionstrict:custom /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /optioninfer+ /nostdlib /platform:x86 /sdkpath:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8" /highentropyva+ /doc:"obj\x86\Release\FtechPopNoiseTest(3.2).xml" /define:"CONFIG=\"Release\",TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"x86\"" /link:C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTBOARDLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTCCG4Lib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTCOMLKLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTGOTLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTLLTLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTMODEMLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTMULTILib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTPCCOMLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTPCMODULELib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTPCUSBLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ActProgTypeLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTSUPPORTLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ActSupportMsgLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ActUtlTypeLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTUWZDLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.MXLabelMemLib.dll /reference:"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\PublicAssemblies\adodb.dll",C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Debug\Automation.BDaq.dll,"C:\Program Files (x86)\FlexCell Technologies\FlexCell.NET4\bin\FlexCell.dll","C:\Program Files (x86)\National Instruments\Measurement Studio\DotNET\v4.0\AnyCPU\NationalInstruments.Common 19.1.40\NationalInstruments.Common.dll","C:\Program Files (x86)\National Instruments\MeasurementStudioVS2012\DotNET\Assemblies\Current\NationalInstruments.DAQmx.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Core.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Deployment.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Drawing.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Management.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Windows.Forms.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.Linq.dll",C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\ZedGraph.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTETHERLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\AxInterop.ACTETHERLib.dll /main:My.MyApplication /debug:pdbonly /filealign:512 /optimize+ /out:"obj\x86\Release\FtechPopNoiseTest(3.2).exe" /subsystemversion:6.00 /resource:obj\x86\Release\FrmAngleNEA.resources /resource:obj\x86\Release\FrmBasic.resources /resource:obj\x86\Release\FrmMain.resources /resource:obj\x86\Release\FrmNg.resources /resource:obj\x86\Release\FrmPart.resources /resource:obj\x86\Release\FrmPassWord.resources /resource:obj\x86\Release\FrmPop.resources /resource:obj\x86\Release\FrmSearch.resources /resource:obj\x86\Release\FrmSet.resources /resource:obj\x86\Release\FrmSIgnal.resources /resource:obj\x86\Release\FrmSignalPlc.resources /resource:obj\x86\Release\FrmWorkStandard.resources /resource:obj\x86\Release\Resources.resources /target:winexe /utf8output /win32icon:fauto.ico ClassCan2.vb ClassZedGraphVb.vb FrmAngleNEA.Designer.vb FrmAngleNEA.vb FrmBasic.Designer.vb FrmBasic.vb FrmMain.vb FrmMain.Designer.vb FrmNg.Designer.vb FrmNg.vb FrmPart.Designer.vb FrmPart.vb FrmPassWord.Designer.vb FrmPassWord.vb FrmPop.Designer.vb FrmPop.vb FrmSearch.Designer.vb FrmSearch.vb FrmSet.Designer.vb FrmSet.vb FrmSIgnal.Designer.vb FrmSIgnal.vb FrmSignalPlc.Designer.vb FrmSignalPlc.vb FrmWorkStandard.Designer.vb FrmWorkStandard.vb Module1.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" PCANBasic.vb VisionSocketServer.vb "obj\x86\Release\.NETFramework,Version=v4.8.AssemblyAttributes.vb"
+  Compilation request NoiseTest_ConvJG, PathToTool=C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\vbc.exe
+  CommandLine = ' /noconfig'
+  BuildResponseFile = '/imports:Microsoft.VisualBasic,NationalInstruments,NationalInstruments.UI,System,System.Collections,System.Collections.Generic,System.Data,System.Drawing,System.Diagnostics,System.Windows.Forms,System.Linq,System.Xml.Linq /optioncompare:Binary /optionexplicit+ /optionstrict:custom /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /optioninfer+ /nostdlib /platform:x86 /sdkpath:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8" /highentropyva+ /doc:"obj\x86\Release\FtechPopNoiseTest(3.2).xml" /define:"CONFIG=\"Release\",TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"x86\"" /link:C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTBOARDLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTCCG4Lib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTCOMLKLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTGOTLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTLLTLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTMODEMLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTMULTILib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTPCCOMLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTPCMODULELib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTPCUSBLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ActProgTypeLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTSUPPORTLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ActSupportMsgLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ActUtlTypeLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTUWZDLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.MXLabelMemLib.dll /reference:"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\PublicAssemblies\adodb.dll",C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Debug\Automation.BDaq.dll,"C:\Program Files (x86)\FlexCell Technologies\FlexCell.NET4\bin\FlexCell.dll","C:\Program Files (x86)\National Instruments\Measurement Studio\DotNET\v4.0\AnyCPU\NationalInstruments.Common 19.1.40\NationalInstruments.Common.dll","C:\Program Files (x86)\National Instruments\MeasurementStudioVS2012\DotNET\Assemblies\Current\NationalInstruments.DAQmx.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Core.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Deployment.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Drawing.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Management.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Windows.Forms.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.Linq.dll",C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\ZedGraph.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTETHERLib.dll,C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\AxInterop.ACTETHERLib.dll /main:My.MyApplication /debug:pdbonly /filealign:512 /optimize+ /out:"obj\x86\Release\FtechPopNoiseTest(3.2).exe" /subsystemversion:6.00 /resource:obj\x86\Release\FrmAngleNEA.resources /resource:obj\x86\Release\FrmBasic.resources /resource:obj\x86\Release\FrmMain.resources /resource:obj\x86\Release\FrmNg.resources /resource:obj\x86\Release\FrmPart.resources /resource:obj\x86\Release\FrmPassWord.resources /resource:obj\x86\Release\FrmPop.resources /resource:obj\x86\Release\FrmSearch.resources /resource:obj\x86\Release\FrmSet.resources /resource:obj\x86\Release\FrmSIgnal.resources /resource:obj\x86\Release\FrmSignalPlc.resources /resource:obj\x86\Release\FrmWorkStandard.resources /resource:obj\x86\Release\Resources.resources /target:winexe /utf8output /win32icon:fauto.ico ClassCan2.vb ClassZedGraphVb.vb FrmAngleNEA.Designer.vb FrmAngleNEA.vb FrmBasic.Designer.vb FrmBasic.vb FrmMain.vb FrmMain.Designer.vb FrmNg.Designer.vb FrmNg.vb FrmPart.Designer.vb FrmPart.vb FrmPassWord.Designer.vb FrmPassWord.vb FrmPop.Designer.vb FrmPop.vb FrmSearch.Designer.vb FrmSearch.vb FrmSet.Designer.vb FrmSet.vb FrmSIgnal.Designer.vb FrmSIgnal.vb FrmSignalPlc.Designer.vb FrmSignalPlc.vb FrmWorkStandard.Designer.vb FrmWorkStandard.vb Module1.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" PCANBasic.vb VisionSocketServer.vb "obj\x86\Release\.NETFramework,Version=v4.8.AssemblyAttributes.vb"'
+  Attempt to open named pipe 'AONTDuZzEy74OS89JSu8NhxvHMwM_K_71QxiRLxg8MM'
+  Attempt to connect named pipe 'AONTDuZzEy74OS89JSu8NhxvHMwM_K_71QxiRLxg8MM'
+  Named pipe 'AONTDuZzEy74OS89JSu8NhxvHMwM_K_71QxiRLxg8MM' connected
+  Begin writing request for NoiseTest_ConvJG
+  End writing request for NoiseTest_ConvJG
+  Begin reading response for NoiseTest_ConvJG
+  End reading response for NoiseTest_ConvJG
+vbc : warning BC40057: 프로젝트 수준의 Imports 'NationalInstruments.UI'에 지정된 네임스페이스 또는 형식에 public 멤버가 없거나 해당 네임스페이스 또는 형식을 찾을 수 없습니다. 네임스페이스 또는 형식이 정의되어 있고 하나 이상의 public 멤버를 포함하는지, 그리고 가져온 요소 이름이 별칭을 사용하지 않는지 확인하세요. [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(639,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1206,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1330,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1352,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1699,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(2073,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(2115,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(2759,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1473,8): warning BC42301: XML 주석 블록은 언어 요소마다 하나만 사용할 수 있습니다. [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  CompilerServer: server - server processed compilation - NoiseTest_ConvJG
+_CopyFilesMarkedCopyLocal:
+  "C:\Program Files (x86)\National Instruments\Measurement Studio\DotNET\v4.0\AnyCPU\NationalInstruments.Common 19.1.40\NationalInstruments.Common.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\NationalInstruments.Common.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\PublicAssemblies\adodb.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\adodb.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Program Files (x86)\FlexCell Technologies\FlexCell.NET4\bin\FlexCell.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\FlexCell.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Program Files (x86)\National Instruments\MeasurementStudioVS2012\DotNET\Assemblies\Current\NationalInstruments.DAQmx.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\NationalInstruments.DAQmx.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Debug\Automation.BDaq.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\Automation.BDaq.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\ZedGraph.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\ZedGraph.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Program Files (x86)\National Instruments\Measurement Studio\DotNET\v4.0\AnyCPU\NationalInstruments.Common 19.1.40\NationalInstruments.Common.xml"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\NationalInstruments.Common.xml"(으)로 파일을 복사하고 있습니다.
+  "C:\Program Files (x86)\National Instruments\MeasurementStudioVS2012\DotNET\Assemblies\Current\NationalInstruments.DAQmx.xml"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\NationalInstruments.DAQmx.xml"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\ZedGraph.xml"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\ZedGraph.xml"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\de" 디렉터리를 만들고 있습니다.
+  "bin\Release\es" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\de\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\de\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\fr" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\es\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\es\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\fr\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\fr\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\hu" 디렉터리를 만들고 있습니다.
+  "bin\Release\it" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\hu\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\hu\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\ja" 디렉터리를 만들고 있습니다.
+  "bin\Release\pt" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\it\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\it\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\ru" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\pt\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\pt\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\ja\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\ja\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\sk" 디렉터리를 만들고 있습니다.
+  "bin\Release\sv" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\ru\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\ru\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\tr" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\sk\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\sk\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\sv\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\sv\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "bin\Release\zh-tw" 디렉터리를 만들고 있습니다.
+  "bin\Release\zh-cn" 디렉터리를 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\tr\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\tr\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\zh-cn\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\zh-cn\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\packages\ZedGraph.5.2.0\lib\net35-Client\zh-tw\ZedGraph.resources.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\zh-tw\ZedGraph.resources.dll"(으)로 파일을 복사하고 있습니다.
+  "AlwaysCreate"이(가) 지정되었기 때문에 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\NoiseTes.1982F0F3.Up2Date"을(를) 만들고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\NoiseTes.1982F0F3.Up2Date"에 연결(touching)하고 있습니다.
+_CopyAppConfigFile:
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\app.config"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\FtechPopNoiseTest(3.2).exe.config"(으)로 파일을 복사하고 있습니다.
+CopyFilesToOutputDirectory:
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\FtechPopNoiseTest(3.2).exe"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\FtechPopNoiseTest(3.2).exe"(으)로 파일을 복사하고 있습니다.
+  NoiseTest_ConvJG -> C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\FtechPopNoiseTest(3.2).exe
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\FtechPopNoiseTest(3.2).pdb"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\FtechPopNoiseTest(3.2).pdb"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\FtechPopNoiseTest(3.2).xml"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\FtechPopNoiseTest(3.2).xml"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\AxInterop.ACTETHERLib.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\AxInterop.ACTETHERLib.dll"(으)로 파일을 복사하고 있습니다.
+  "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\obj\x86\Release\Interop.ACTETHERLib.dll"에서 "C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\bin\Release\Interop.ACTETHERLib.dll"(으)로 파일을 복사하고 있습니다.
+"C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+
+"C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj"(기본 대상)(1)->
+(ResolveAssemblyReferences 대상) -> 
+  C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2451,5): warning MSB3245: 이 참조를 확인할 수 없습니다. "Intel.RealSense" 어셈블리를 찾을 수 없습니다. 어셈블리가 디스크에 있는지 확인하세요. 해당 코드에 이 참조가 필요한 경우 컴파일 오류가 발생할 수 있습니다. [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+
+
+"C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj"(기본 대상)(1)->
+(CoreCompile 대상) -> 
+  vbc : warning BC40057: 프로젝트 수준의 Imports 'NationalInstruments.UI'에 지정된 네임스페이스 또는 형식에 public 멤버가 없거나 해당 네임스페이스 또는 형식을 찾을 수 없습니다. 네임스페이스 또는 형식이 정의되어 있고 하나 이상의 public 멤버를 포함하는지, 그리고 가져온 요소 이름이 별칭을 사용하지 않는지 확인하세요. [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(639,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1206,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1330,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1352,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1699,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(2073,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(2115,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(2759,13): warning BC42024: 사용되지 않는 지역 변수: 'i' [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+  C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\FrmMain.vb(1473,8): warning BC42301: XML 주석 블록은 언어 요소마다 하나만 사용할 수 있습니다. [C:\Users\Administrator\Desktop\DAEIL_JG\NoiseTestJG\NoiseTest_ConvJG.vbproj]
+
+    경고 11개
+    오류 0개
+
+경과 시간: 00:00:00.86

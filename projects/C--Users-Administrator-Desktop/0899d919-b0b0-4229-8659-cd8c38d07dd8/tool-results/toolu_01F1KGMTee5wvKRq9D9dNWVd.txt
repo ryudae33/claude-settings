@@ -1,0 +1,1245 @@
+     1→using System;
+     2→using System.Collections.Generic;
+     3→using System.Drawing;
+     4→using System.Drawing.Printing;
+     5→using System.IO;
+     6→using System.Linq;
+     7→using System.Windows.Forms;
+     8→
+     9→namespace WeldMonitor3
+    10→{
+    11→    public partial class _FrmDailyCheck : Form
+    12→    {
+    13→        [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+    14→        private static extern IntPtr CreateRoundRectRgn(
+    15→            int nLeftRect, int nTopRect, int nRightRect, int nBottomRect,
+    16→            int nWidthEllipse, int nHeightEllipse);
+    17→
+    18→        // 기본 점검항목 (하체부 DL3 워크시트 기준)
+    19→        // [0]=점검항목, [1]=점검기준, [2]=점검방법, [3]=구분
+    20→        private static readonly string[][] DEFAULT_ITEMS = new string[][]
+    21→        {
+    22→            new[] { "AIR 전동 고압 호스 압력",   "4~6 kgf/㎠",        "확인",   "1일/SHIFT" },
+    23→            new[] { "유닛 정위치 이동거리",       "무부하 움직임 확인", "확인",   "✓" },
+    24→            new[] { "시간제한 변경작동",           "변경 이상 여부",    "확인",   "✓" },
+    25→            new[] { "위치제한기 움직임",           "이상 여부",         "확인",   "✓" },
+    26→            new[] { "방전소음기 움직임",           "이상 여부",         "확인",   "✓" },
+    27→            new[] { "전류(1호기)",                "12~18 KA",          "용접기", "✓" },
+    28→            new[] { "사이클타임(1호기)",           "17~23 CYCLE",       "용접기", "✓" },
+    29→            new[] { "가압력(1호기)",              "4~6 Kgf/㎠",        "용접기", "✓" },
+    30→            new[] { "통전시간(1호기)",            "10~30 초",           "용접기", "✓" },
+    31→            new[] { "전류(2호기)",                "12~18 KA",          "용접기", "✓" },
+    32→            new[] { "사이클타임(2호기)",           "15~21 CYCLE",       "용접기", "✓" },
+    33→            new[] { "가압력(2호기)",              "4~6 Kgf/㎠",        "용접기", "✓" },
+    34→            new[] { "통전시간(2호기)",            "10~30 초",           "용접기", "✓" },
+    35→        };
+    36→
+    37→        // 동적 점검항목 리스트 (파일에서 로드/저장)
+    38→        private List<string[]> _items = new List<string[]>();
+    39→
+    40→        private string _basePath;
+    41→        private string _photoPath;
+    42→        private DateTime _currentMonth;
+    43→        private bool _loading = false;
+    44→        private int _currentRange = 0;  // 0=1~10, 1=11~20, 2=21~31
+    45→        private int _printRange = 0;    // PDF 인쇄용 페이지 카운터
+    46→
+    47→        private static readonly string[] SHIFT_KEYS = { "M", "A", "E" };
+    48→        private static readonly string[] SHIFT_NAMES = { "아", "점", "저" };
+    49→        private static readonly string[] SHIFT_FULL = { "아침", "점심", "저녁" };
+    50→        private const int FIXED_COL_COUNT = 5;  // NO, 항목, 기준, 방법, 구분
+    51→
+    52→        public _FrmDailyCheck()
+    53→        {
+    54→            InitializeComponent();
+    55→            ThemeManager.ApplyDarkTheme(this);
+    56→            StyleControls();
+    57→
+    58→            _basePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DailyCheck");
+    59→            _photoPath = Path.Combine(_basePath, "Photos");
+    60→            if (!Directory.Exists(_photoPath))
+    61→                Directory.CreateDirectory(_photoPath);
+    62→
+    63→            _currentMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+    64→            dtpMonth.Value = _currentMonth;
+    65→
+    66→            // 오늘 날짜 기준 범위 자동 선택
+    67→            AutoDetectRange();
+    68→            LoadItems();
+    69→
+    70→            // 이벤트 연결
+    71→            dtpMonth.ValueChanged += DtpMonth_ValueChanged;
+    72→            dgv.CellClick += Dgv_CellClick;
+    73→            dgv.CellEndEdit += Dgv_CellEndEdit;
+    74→            dgv.SelectionChanged += Dgv_SelectionChanged;
+    75→            btnSave.Click += BtnSave_Click;
+    76→            btnPdf.Click += BtnPdf_Click;
+    77→            btnSetPhoto.Click += BtnSetPhoto_Click;
+    78→            btnAddItem.Click += BtnAddItem_Click;
+    79→            btnDeleteItem.Click += BtnDeleteItem_Click;
+    80→            btnClose.Click += (s, e) => this.Close();
+    81→            btnRange1.Click += (s, e) => SetRange(0);
+    82→            btnRange2.Click += (s, e) => SetRange(1);
+    83→            btnRange3.Click += (s, e) => SetRange(2);
+    84→
+    85→            // 헤더 텍스트 변경 시 자동 저장
+    86→            foreach (var txt in new[] { txtDept, txtSupervisor, txtEquipName, txtQuality,
+    87→                                        txtEquipNo, txtWriter, txtReviewer, txtApprover,
+    88→                                        txtProdSign, txtQualSign })
+    89→            {
+    90→                txt.Leave += (s, e) => SaveData();
+    91→            }
+    92→
+    93→            SetupGrid();
+    94→            LoadData();
+    95→            UpdateRangeButtons();
+    96→            RefreshPhotoList();
+    97→        }
+    98→
+    99→        /// <summary>
+   100→        /// 오늘 날짜 기준 범위 자동 선택
+   101→        /// </summary>
+   102→        private void AutoDetectRange()
+   103→        {
+   104→            int today = DateTime.Now.Day;
+   105→            if (today <= 10) _currentRange = 0;
+   106→            else if (today <= 20) _currentRange = 1;
+   107→            else _currentRange = 2;
+   108→        }
+   109→
+   110→        /// <summary>
+   111→        /// 다크테마 버튼 스타일 적용
+   112→        /// </summary>
+   113→        private void StyleControls()
+   114→        {
+   115→            var allButtons = new List<Button>();
+   116→            foreach (Control c in panelBottom.Controls)
+   117→            {
+   118→                if (c is Button btn) allButtons.Add(btn);
+   119→            }
+   120→            allButtons.AddRange(new[] { btnRange1, btnRange2, btnRange3, btnSetPhoto });
+   121→
+   122→            foreach (var btn in allButtons)
+   123→            {
+   124→                btn.FlatAppearance.BorderColor = ThemeManager.DarkTheme.BorderColor;
+   125→                btn.FlatAppearance.BorderSize = 1;
+   126→                btn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn.Width, btn.Height, 8, 8));
+   127→                btn.MouseEnter += (s, e) => ((Button)s).BackColor = pColor.Theme.buttonHover;
+   128→                btn.MouseLeave += (s, e) =>
+   129→                {
+   130→                    var b = (Button)s;
+   131→                    if (b == btnRange1 || b == btnRange2 || b == btnRange3)
+   132→                        UpdateRangeButtons();
+   133→                    else
+   134→                        b.BackColor = ThemeManager.DarkTheme.BackgroundLight;
+   135→                };
+   136→            }
+   137→        }
+   138→
+   139→        /// <summary>
+   140→        /// 범위 버튼 활성 상태 표시
+   141→        /// </summary>
+   142→        private void UpdateRangeButtons()
+   143→        {
+   144→            var rangeButtons = new[] { btnRange1, btnRange2, btnRange3 };
+   145→            for (int i = 0; i < 3; i++)
+   146→            {
+   147→                if (i == _currentRange)
+   148→                {
+   149→                    rangeButtons[i].BackColor = Color.FromArgb(0, 90, 158);
+   150→                    rangeButtons[i].ForeColor = Color.White;
+   151→                }
+   152→                else
+   153→                {
+   154→                    rangeButtons[i].BackColor = ThemeManager.DarkTheme.BackgroundLight;
+   155→                    rangeButtons[i].ForeColor = ThemeManager.DarkTheme.TextPrimary;
+   156→                }
+   157→            }
+   158→        }
+   159→
+   160→        /// <summary>
+   161→        /// 범위 전환
+   162→        /// </summary>
+   163→        private void SetRange(int range)
+   164→        {
+   165→            if (_currentRange == range) return;
+   166→            _currentRange = range;
+   167→            SetupGrid();
+   168→            LoadData();
+   169→            UpdateRangeButtons();
+   170→        }
+   171→
+   172→        /// <summary>
+   173→        /// 현재 범위의 시작/끝 일자 계산
+   174→        /// </summary>
+   175→        private void GetRangeStartEnd(out int start, out int end)
+   176→        {
+   177→            int daysInMonth = DateTime.DaysInMonth(_currentMonth.Year, _currentMonth.Month);
+   178→            switch (_currentRange)
+   179→            {
+   180→                case 0: start = 1; end = 10; break;
+   181→                case 1: start = 11; end = 20; break;
+   182→                default: start = 21; end = Math.Min(31, daysInMonth); break;
+   183→            }
+   184→        }
+   185→
+   186→        /// <summary>
+   187→        /// 지정 범위의 시작/끝 일자 계산
+   188→        /// </summary>
+   189→        private void GetRangeStartEnd(int range, out int start, out int end)
+   190→        {
+   191→            int daysInMonth = DateTime.DaysInMonth(_currentMonth.Year, _currentMonth.Month);
+   192→            switch (range)
+   193→            {
+   194→                case 0: start = 1; end = 10; break;
+   195→                case 1: start = 11; end = 20; break;
+   196→                default: start = 21; end = Math.Min(31, daysInMonth); break;
+   197→            }
+   198→        }
+   199→
+   200→        #region 점검항목 관리 (파일 기반)
+   201→
+   202→        private string GetItemsFilePath() => Path.Combine(_basePath, "items.ini");
+   203→
+   204→        private void LoadItems()
+   205→        {
+   206→            _items.Clear();
+   207→            string filePath = GetItemsFilePath();
+   208→
+   209→            if (File.Exists(filePath))
+   210→            {
+   211→                try
+   212→                {
+   213→                    foreach (var line in File.ReadAllLines(filePath, System.Text.Encoding.UTF8))
+   214→                    {
+   215→                        string trimmed = line.Trim();
+   216→                        if (string.IsNullOrEmpty(trimmed) || trimmed.StartsWith("#")) continue;
+   217→                        string[] parts = trimmed.Split('\t');
+   218→                        if (parts.Length >= 4)
+   219→                            _items.Add(new[] { parts[0], parts[1], parts[2], parts[3] });
+   220→                    }
+   221→                }
+   222→                catch (Exception ex)
+   223→                {
+   224→                    Logger.Error($"[일상점검] 항목 로드 실패: {ex.Message}");
+   225→                }
+   226→            }
+   227→
+   228→            if (_items.Count == 0)
+   229→            {
+   230→                foreach (var item in DEFAULT_ITEMS)
+   231→                    _items.Add((string[])item.Clone());
+   232→                SaveItems();
+   233→            }
+   234→        }
+   235→
+   236→        private void SaveItems()
+   237→        {
+   238→            try
+   239→            {
+   240→                if (!Directory.Exists(_basePath))
+   241→                    Directory.CreateDirectory(_basePath);
+   242→
+   243→                string filePath = GetItemsFilePath();
+   244→                using (var sw = new StreamWriter(filePath, false, System.Text.Encoding.UTF8))
+   245→                {
+   246→                    sw.WriteLine("# 점검항목 설정 (탭 구분: 점검항목\\t점검기준\\t점검방법\\t구분)");
+   247→                    foreach (var item in _items)
+   248→                        sw.WriteLine($"{item[0]}\t{item[1]}\t{item[2]}\t{item[3]}");
+   249→                }
+   250→            }
+   251→            catch (Exception ex)
+   252→            {
+   253→                Logger.Error($"[일상점검] 항목 저장 실패: {ex.Message}");
+   254→            }
+   255→        }
+   256→
+   257→        private void SyncItemsFromGrid()
+   258→        {
+   259→            _items.Clear();
+   260→            for (int i = 0; i < dgv.Rows.Count; i++)
+   261→            {
+   262→                var row = dgv.Rows[i];
+   263→                string item = row.Cells["colItem"].Value?.ToString() ?? "";
+   264→                string standard = row.Cells["colStandard"].Value?.ToString() ?? "";
+   265→                string method = row.Cells["colMethod"].Value?.ToString() ?? "";
+   266→                string type = row.Cells["colType"].Value?.ToString() ?? "";
+   267→                _items.Add(new[] { item, standard, method, type });
+   268→            }
+   269→        }
+   270→
+   271→        private void BtnAddItem_Click(object sender, EventArgs e)
+   272→        {
+   273→            _loading = true;
+   274→            int newNo = dgv.Rows.Count + 1;
+   275→            int rowIdx = dgv.Rows.Add();
+   276→            var row = dgv.Rows[rowIdx];
+   277→            row.Cells["colNo"].Value = newNo.ToString();
+   278→            row.Cells["colItem"].Value = "(새 항목)";
+   279→            row.Cells["colStandard"].Value = "";
+   280→            row.Cells["colMethod"].Value = "확인";
+   281→            row.Cells["colType"].Value = "✓";
+   282→            row.Cells["colItem"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+   283→            row.Cells["colStandard"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+   284→            _loading = false;
+   285→
+   286→            SyncItemsFromGrid();
+   287→            SaveItems();
+   288→            SaveData();
+   289→
+   290→            dgv.CurrentCell = dgv.Rows[rowIdx].Cells["colItem"];
+   291→            dgv.BeginEdit(true);
+   292→
+   293→            LogCheckAction(newNo, "항목 추가", 0, "", "", "(새 항목)");
+   294→            RefreshPhotoList();
+   295→        }
+   296→
+   297→        private void BtnDeleteItem_Click(object sender, EventArgs e)
+   298→        {
+   299→            if (dgv.CurrentRow == null) return;
+   300→            int rowIdx = dgv.CurrentRow.Index;
+   301→            if (rowIdx < 0 || rowIdx >= dgv.Rows.Count) return;
+   302→
+   303→            string itemName = dgv.Rows[rowIdx].Cells["colItem"].Value?.ToString() ?? "";
+   304→            var result = MessageBox.Show(
+   305→                $"항목 {rowIdx + 1} ({itemName})을(를) 삭제하시겠습니까?\n\n※ 해당 항목의 모든 월별 체크 데이터도 영향을 받습니다.",
+   306→                "항목 삭제 확인", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+   307→
+   308→            if (result != DialogResult.Yes) return;
+   309→
+   310→            _loading = true;
+   311→            dgv.Rows.RemoveAt(rowIdx);
+   312→            for (int i = 0; i < dgv.Rows.Count; i++)
+   313→                dgv.Rows[i].Cells["colNo"].Value = (i + 1).ToString();
+   314→            _loading = false;
+   315→
+   316→            SyncItemsFromGrid();
+   317→            SaveItems();
+   318→            SaveData();
+   319→
+   320→            LogCheckAction(rowIdx + 1, itemName, 0, "", itemName, "삭제됨");
+   321→            RefreshPhotoList();
+   322→        }
+   323→
+   324→        #endregion
+   325→
+   326→        #region Grid 설정
+   327→
+   328→        private void SetupGrid()
+   329→        {
+   330→            _loading = true;
+   331→            dgv.Columns.Clear();
+   332→            dgv.Rows.Clear();
+   333→
+   334→            // 고정 컬럼
+   335→            AddColumn("colNo", "NO", 22, true);
+   336→            AddColumn("colItem", "점검 항목", 110, false);
+   337→            AddColumn("colStandard", "점검 기준", 80, false);
+   338→            AddColumn("colMethod", "방법", 38, false);
+   339→            AddColumn("colType", "구분", 35, false);
+   340→
+   341→            // 범위별 일자 × 교대 컬럼
+   342→            GetRangeStartEnd(out int startDay, out int endDay);
+   343→            int daysInMonth = DateTime.DaysInMonth(_currentMonth.Year, _currentMonth.Month);
+   344→
+   345→            for (int d = startDay; d <= endDay; d++)
+   346→            {
+   347→                for (int s = 0; s < 3; s++)
+   348→                {
+   349→                    var col = new DataGridViewTextBoxColumn();
+   350→                    col.Name = $"colDay{d}_{SHIFT_KEYS[s]}";
+   351→                    col.HeaderText = $"{d}\n{SHIFT_NAMES[s]}";
+   352→                    col.Width = 18;
+   353→                    col.MinimumWidth = 16;
+   354→                    col.ReadOnly = true;
+   355→                    col.SortMode = DataGridViewColumnSortMode.NotSortable;
+   356→                    col.DefaultCellStyle.Font = new Font("맑은 고딕", 7.5F, FontStyle.Bold);
+   357→
+   358→                    // 교대별 배경색 구분
+   359→                    if (d > daysInMonth)
+   360→                    {
+   361→                        col.DefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+   362→                    }
+   363→                    else if (s == 0)
+   364→                        col.DefaultCellStyle.BackColor = Color.FromArgb(38, 38, 48); // 아침
+   365→                    else if (s == 1)
+   366→                        col.DefaultCellStyle.BackColor = Color.FromArgb(38, 44, 38); // 점심
+   367→                    else
+   368→                        col.DefaultCellStyle.BackColor = Color.FromArgb(44, 38, 38); // 저녁
+   369→
+   370→                    dgv.Columns.Add(col);
+   371→                }
+   372→            }
+   373→
+   374→            // 항목 행 추가
+   375→            for (int i = 0; i < _items.Count; i++)
+   376→            {
+   377→                int rowIdx = dgv.Rows.Add();
+   378→                var row = dgv.Rows[rowIdx];
+   379→                row.Cells["colNo"].Value = (i + 1).ToString();
+   380→                row.Cells["colItem"].Value = _items[i][0];
+   381→                row.Cells["colStandard"].Value = _items[i][1];
+   382→                row.Cells["colMethod"].Value = _items[i][2];
+   383→                row.Cells["colType"].Value = _items[i][3];
+   384→                row.Cells["colItem"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+   385→                row.Cells["colStandard"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+   386→            }
+   387→
+   388→            // 고정 컬럼 (스크롤 시 왼쪽 고정)
+   389→            dgv.Columns["colType"].Frozen = true;
+   390→
+   391→            _loading = false;
+   392→        }
+   393→
+   394→        private void AddColumn(string name, string header, int width, bool readOnly)
+   395→        {
+   396→            var col = new DataGridViewTextBoxColumn();
+   397→            col.Name = name;
+   398→            col.HeaderText = header;
+   399→            col.Width = width;
+   400→            col.ReadOnly = readOnly;
+   401→            col.SortMode = DataGridViewColumnSortMode.NotSortable;
+   402→            dgv.Columns.Add(col);
+   403→        }
+   404→
+   405→        #endregion
+   406→
+   407→        #region 셀 편집 완료 → 항목 저장
+   408→
+   409→        private void Dgv_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+   410→        {
+   411→            if (_loading || e.RowIndex < 0) return;
+   412→            if (e.ColumnIndex >= 1 && e.ColumnIndex <= 4)
+   413→            {
+   414→                SyncItemsFromGrid();
+   415→                SaveItems();
+   416→                SaveData();
+   417→            }
+   418→        }
+   419→
+   420→        #endregion
+   421→
+   422→        #region 셀 클릭 → O/X 토글 + 로그
+   423→
+   424→        private void Dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+   425→        {
+   426→            if (_loading || e.RowIndex < 0 || e.ColumnIndex < FIXED_COL_COUNT) return;
+   427→
+   428→            string colName = dgv.Columns[e.ColumnIndex].Name;
+   429→            if (!colName.StartsWith("colDay")) return;
+   430→
+   431→            // colDay{d}_{M|A|E} 파싱
+   432→            string suffix = colName.Substring(6); // "d_M" or "dd_M"
+   433→            string[] parts = suffix.Split('_');
+   434→            if (parts.Length != 2) return;
+   435→
+   436→            int day;
+   437→            if (!int.TryParse(parts[0], out day)) return;
+   438→            string shiftKey = parts[1];
+   439→
+   440→            int daysInMonth = DateTime.DaysInMonth(_currentMonth.Year, _currentMonth.Month);
+   441→            if (day > daysInMonth) return;
+   442→
+   443→            var cell = dgv.Rows[e.RowIndex].Cells[e.ColumnIndex];
+   444→            string current = cell.Value?.ToString()?.Trim() ?? "";
+   445→
+   446→            // 순환: "" → O → X → ""
+   447→            string next;
+   448→            if (current == "") next = "O";
+   449→            else if (current == "O") next = "X";
+   450→            else next = "";
+   451→
+   452→            cell.Value = next;
+   453→            ApplyCellColor(cell, next, colName);
+   454→
+   455→            // 교대 이름 변환
+   456→            int shiftIdx = Array.IndexOf(SHIFT_KEYS, shiftKey);
+   457→            string shiftName = shiftIdx >= 0 ? SHIFT_FULL[shiftIdx] : shiftKey;
+   458→
+   459→            string itemName = dgv.Rows[e.RowIndex].Cells["colItem"].Value?.ToString() ?? "";
+   460→            LogCheckAction(e.RowIndex + 1, itemName, day, shiftName, current, next);
+   461→
+   462→            SaveData();
+   463→        }
+   464→
+   465→        private void ApplyCellColor(DataGridViewCell cell, string value, string colName = "")
+   466→        {
+   467→            if (value == "O")
+   468→            {
+   469→                cell.Style.ForeColor = Color.LimeGreen;
+   470→                cell.Style.BackColor = Color.FromArgb(30, 60, 30);
+   471→            }
+   472→            else if (value == "X")
+   473→            {
+   474→                cell.Style.ForeColor = Color.Red;
+   475→                cell.Style.BackColor = Color.FromArgb(70, 25, 25);
+   476→            }
+   477→            else
+   478→            {
+   479→                cell.Style.ForeColor = ThemeManager.DarkTheme.TextPrimary;
+   480→                // 교대별 기본 배경색 복원
+   481→                if (colName.EndsWith("_M"))
+   482→                    cell.Style.BackColor = Color.FromArgb(38, 38, 48);
+   483→                else if (colName.EndsWith("_A"))
+   484→                    cell.Style.BackColor = Color.FromArgb(38, 44, 38);
+   485→                else if (colName.EndsWith("_E"))
+   486→                    cell.Style.BackColor = Color.FromArgb(44, 38, 38);
+   487→                else
+   488→                    cell.Style.BackColor = ThemeManager.DarkTheme.BackgroundMedium;
+   489→            }
+   490→        }
+   491→
+   492→        #endregion
+   493→
+   494→        #region 참조사진 (썸네일 목록)
+   495→
+   496→        private int _selectedPhotoIndex = -1;  // 현재 선택된 사진 항목 인덱스
+   497→
+   498→        private void Dgv_SelectionChanged(object sender, EventArgs e)
+   499→        {
+   500→            if (dgv.CurrentRow == null) return;
+   501→            int rowIdx = dgv.CurrentRow.Index;
+   502→            if (rowIdx < 0 || rowIdx >= dgv.Rows.Count) return;
+   503→
+   504→            // 그리드 행 선택 시 해당 썸네일 하이라이트
+   505→            SelectPhotoThumb(rowIdx);
+   506→        }
+   507→
+   508→        /// <summary>
+   509→        /// 전체 항목 썸네일을 2줄 가로 배치로 생성/갱신
+   510→        /// </summary>
+   511→        private void RefreshPhotoList()
+   512→        {
+   513→            panelPhotoScroll.SuspendLayout();
+   514→            panelPhotoScroll.Controls.Clear();
+   515→
+   516→            int count = Math.Min(_items.Count, 15);  // 최대 15개 표시
+   517→            int cols = (count + 1) / 2;  // 2줄이므로 한 줄에 cols개
+   518→            int panelW = panelPhotoScroll.ClientSize.Width;
+   519→            int panelH = panelPhotoScroll.ClientSize.Height;
+   520→
+   521→            int gap = 3;
+   522→            int itemW = (panelW - gap * (cols + 1)) / cols;
+   523→            if (itemW < 60) itemW = 60;
+   524→            int lblH = 13;
+   525→            int rowH = (panelH - gap) / 2;  // 2줄 균등 분배
+   526→            int thumbH = rowH - lblH - gap;
+   527→
+   528→            for (int i = 0; i < count; i++)
+   529→            {
+   530→                int col = i % cols;
+   531→                int row = i / cols;
+   532→                int px = gap + col * (itemW + gap);
+   533→                int py = row * rowH;
+   534→
+   535→                // 항목 번호 + 이름 라벨
+   536→                var lbl = new Label();
+   537→                lbl.Text = $"{i + 1}. {_items[i][0]}";
+   538→                lbl.Location = new Point(px, py);
+   539→                lbl.Size = new Size(itemW, lblH);
+   540→                lbl.Font = new Font("맑은 고딕", 6.5F);
+   541→                lbl.ForeColor = Color.FromArgb(180, 180, 180);
+   542→                lbl.Tag = i;
+   543→                lbl.Cursor = Cursors.Hand;
+   544→                lbl.Click += PhotoThumb_Click;
+   545→                panelPhotoScroll.Controls.Add(lbl);
+   546→
+   547→                // 썸네일 PictureBox
+   548→                var pb = new PictureBox();
+   549→                pb.Location = new Point(px, py + lblH);
+   550→                pb.Size = new Size(itemW, thumbH);
+   551→                pb.SizeMode = PictureBoxSizeMode.Zoom;
+   552→                pb.BorderStyle = BorderStyle.FixedSingle;
+   553→                pb.BackColor = Color.FromArgb(35, 35, 35);
+   554→                pb.Tag = i;
+   555→                pb.Cursor = Cursors.Hand;
+   556→                pb.Click += PhotoThumb_Click;
+   557→                LoadPhotoInto(pb, i);
+   558→                panelPhotoScroll.Controls.Add(pb);
+   559→            }
+   560→
+   561→            panelPhotoScroll.ResumeLayout();
+   562→
+   563→            if (count > 0)
+   564→                SelectPhotoThumb(0);
+   565→        }
+   566→
+   567→        /// <summary>
+   568→        /// 지정 인덱스의 사진을 PictureBox에 로드
+   569→        /// </summary>
+   570→        private void LoadPhotoInto(PictureBox pb, int itemIndex)
+   571→        {
+   572→            string prefix = (itemIndex + 1).ToString("D2");
+   573→            string[] exts = { ".jpg", ".jpeg", ".png", ".bmp", ".gif" };
+   574→            foreach (var ext in exts)
+   575→            {
+   576→                string path = Path.Combine(_photoPath, prefix + ext);
+   577→                if (File.Exists(path))
+   578→                {
+   579→                    try
+   580→                    {
+   581→                        using (var fs = new FileStream(path, FileMode.Open, FileAccess.Read))
+   582→                        {
+   583→                            pb.Image?.Dispose();
+   584→                            pb.Image = Image.FromStream(fs);
+   585→                        }
+   586→                        return;
+   587→                    }
+   588→                    catch { }
+   589→                }
+   590→            }
+   591→            pb.Image?.Dispose();
+   592→            pb.Image = null;
+   593→        }
+   594→
+   595→        /// <summary>
+   596→        /// 썸네일 클릭 → 해당 항목 선택
+   597→        /// </summary>
+   598→        private void PhotoThumb_Click(object sender, EventArgs e)
+   599→        {
+   600→            int idx = -1;
+   601→            if (sender is Control ctrl && ctrl.Tag is int tagIdx)
+   602→                idx = tagIdx;
+   603→            if (idx < 0 || idx >= dgv.Rows.Count) return;
+   604→
+   605→            SelectPhotoThumb(idx);
+   606→
+   607→            // 그리드에서 해당 행 선택
+   608→            dgv.ClearSelection();
+   609→            dgv.Rows[idx].Selected = true;
+   610→            dgv.CurrentCell = dgv.Rows[idx].Cells["colItem"];
+   611→        }
+   612→
+   613→        /// <summary>
+   614→        /// 선택된 썸네일 하이라이트 (테두리 색상 변경)
+   615→        /// </summary>
+   616→        private void SelectPhotoThumb(int index)
+   617→        {
+   618→            _selectedPhotoIndex = index;
+   619→            lblPhotoTitle.Text = index >= 0 && index < _items.Count
+   620→                ? $"{index + 1}. {_items[index][0]}"
+   621→                : "참조 사진";
+   622→
+   623→            foreach (Control c in panelPhotoScroll.Controls)
+   624→            {
+   625→                if (c is PictureBox pb && pb.Tag is int pbIdx)
+   626→                {
+   627→                    pb.BackColor = (pbIdx == index)
+   628→                        ? Color.FromArgb(0, 90, 158)  // 선택 - 파란색
+   629→                        : Color.FromArgb(35, 35, 35);  // 미선택
+   630→                }
+   631→            }
+   632→
+   633→            // 2줄 배치에서는 스크롤 불필요
+   634→        }
+   635→
+   636→        /// <summary>
+   637→        /// 파일 다이알로그로 참조사진 선택/설정
+   638→        /// </summary>
+   639→        private void BtnSetPhoto_Click(object sender, EventArgs e)
+   640→        {
+   641→            int rowIdx = _selectedPhotoIndex;
+   642→            if (rowIdx < 0)
+   643→            {
+   644→                if (dgv.CurrentRow != null)
+   645→                    rowIdx = dgv.CurrentRow.Index;
+   646→            }
+   647→            if (rowIdx < 0 || rowIdx >= _items.Count)
+   648→            {
+   649→                MessageBox.Show("사진을 설정할 항목을 먼저 선택하세요.", "알림",
+   650→                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+   651→                return;
+   652→            }
+   653→
+   654→            string prefix = (rowIdx + 1).ToString("D2");
+   655→
+   656→            using (var ofd = new OpenFileDialog())
+   657→            {
+   658→                ofd.Filter = "이미지 파일|*.jpg;*.jpeg;*.png;*.bmp;*.gif|모든 파일|*.*";
+   659→                ofd.Title = $"항목 {rowIdx + 1} ({_items[rowIdx][0]}) 참조 사진 선택";
+   660→
+   661→                if (ofd.ShowDialog() != DialogResult.OK) return;
+   662→
+   663→                try
+   664→                {
+   665→                    if (!Directory.Exists(_photoPath))
+   666→                        Directory.CreateDirectory(_photoPath);
+   667→
+   668→                    // 기존 사진 삭제
+   669→                    string[] exts = { ".jpg", ".jpeg", ".png", ".bmp", ".gif" };
+   670→                    foreach (var ext in exts)
+   671→                    {
+   672→                        string oldPath = Path.Combine(_photoPath, prefix + ext);
+   673→                        if (File.Exists(oldPath))
+   674→                            File.Delete(oldPath);
+   675→                    }
+   676→
+   677→                    // 새 사진 복사
+   678→                    string newExt = Path.GetExtension(ofd.FileName).ToLower();
+   679→                    string destPath = Path.Combine(_photoPath, prefix + newExt);
+   680→                    File.Copy(ofd.FileName, destPath, true);
+   681→
+   682→                    // 해당 썸네일만 갱신
+   683→                    foreach (Control c in panelPhotoScroll.Controls)
+   684→                    {
+   685→                        if (c is PictureBox pb && pb.Tag is int pbIdx && pbIdx == rowIdx)
+   686→                        {
+   687→                            LoadPhotoInto(pb, rowIdx);
+   688→                            break;
+   689→                        }
+   690→                    }
+   691→
+   692→                    Logger.Log($"[일상점검] 항목 {rowIdx + 1} 사진 설정 완료");
+   693→                }
+   694→                catch (Exception ex)
+   695→                {
+   696→                    MessageBox.Show($"사진 설정 실패: {ex.Message}", "오류",
+   697→                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+   698→                }
+   699→            }
+   700→        }
+   701→
+   702→        #endregion
+   703→
+   704→        #region 월 변경
+   705→
+   706→        private void DtpMonth_ValueChanged(object sender, EventArgs e)
+   707→        {
+   708→            var newMonth = new DateTime(dtpMonth.Value.Year, dtpMonth.Value.Month, 1);
+   709→            if (newMonth == _currentMonth) return;
+   710→
+   711→            _currentMonth = newMonth;
+   712→
+   713→            // 현재 월이면 오늘 기준 자동 전환
+   714→            if (_currentMonth.Year == DateTime.Now.Year && _currentMonth.Month == DateTime.Now.Month)
+   715→                AutoDetectRange();
+   716→
+   717→            SetupGrid();
+   718→            LoadData();
+   719→            UpdateRangeButtons();
+   720→        }
+   721→
+   722→        #endregion
+   723→
+   724→        #region 데이터 저장/로드
+   725→
+   726→        private string GetMonthFolder()
+   727→        {
+   728→            string folder = Path.Combine(_basePath, _currentMonth.ToString("yyyy_MM"));
+   729→            if (!Directory.Exists(folder))
+   730→                Directory.CreateDirectory(folder);
+   731→            return folder;
+   732→        }
+   733→
+   734→        private string GetDataFilePath() => Path.Combine(GetMonthFolder(), "check_data.ini");
+   735→        private string GetLogFilePath() => Path.Combine(GetMonthFolder(), "check_log.txt");
+   736→
+   737→        private void BtnSave_Click(object sender, EventArgs e)
+   738→        {
+   739→            SyncItemsFromGrid();
+   740→            SaveItems();
+   741→            SaveData();
+   742→            MessageBox.Show("저장 완료", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+   743→        }
+   744→
+   745→        /// <summary>
+   746→        /// 체크 데이터 저장 (다른 범위 데이터 보존)
+   747→        /// </summary>
+   748→        private void SaveData()
+   749→        {
+   750→            if (_loading) return;
+   751→
+   752→            try
+   753→            {
+   754→                // 기존 데이터 로드 (다른 범위 데이터 유지)
+   755→                var existingData = LoadExistingData();
+   756→
+   757→                // 현재 그리드 데이터를 기존 데이터에 병합
+   758→                GetRangeStartEnd(out int startDay, out int endDay);
+   759→
+   760→                for (int i = 0; i < dgv.Rows.Count; i++)
+   761→                {
+   762→                    string itemKey = $"Item{i + 1}";
+   763→                    if (!existingData.ContainsKey(itemKey))
+   764→                        existingData[itemKey] = new Dictionary<string, string>();
+   765→
+   766→                    for (int d = startDay; d <= endDay; d++)
+   767→                    {
+   768→                        for (int s = 0; s < 3; s++)
+   769→                        {
+   770→                            string colName = $"colDay{d}_{SHIFT_KEYS[s]}";
+   771→                            string dataKey = $"Day{d}_{SHIFT_KEYS[s]}";
+   772→
+   773→                            if (dgv.Columns.Contains(colName))
+   774→                            {
+   775→                                string val = dgv.Rows[i].Cells[colName].Value?.ToString()?.Trim() ?? "";
+   776→                                if (!string.IsNullOrEmpty(val))
+   777→                                    existingData[itemKey][dataKey] = val;
+   778→                                else
+   779→                                    existingData[itemKey].Remove(dataKey);
+   780→                            }
+   781→                        }
+   782→                    }
+   783→                }
+   784→
+   785→                // 파일 저장
+   786→                string filePath = GetDataFilePath();
+   787→                using (var sw = new StreamWriter(filePath, false, System.Text.Encoding.UTF8))
+   788→                {
+   789→                    sw.WriteLine("[Header]");
+   790→                    sw.WriteLine($"Dept={txtDept.Text}");
+   791→                    sw.WriteLine($"Supervisor={txtSupervisor.Text}");
+   792→                    sw.WriteLine($"EquipName={txtEquipName.Text}");
+   793→                    sw.WriteLine($"Quality={txtQuality.Text}");
+   794→                    sw.WriteLine($"EquipNo={txtEquipNo.Text}");
+   795→                    sw.WriteLine($"Writer={txtWriter.Text}");
+   796→                    sw.WriteLine($"Reviewer={txtReviewer.Text}");
+   797→                    sw.WriteLine($"Approver={txtApprover.Text}");
+   798→                    sw.WriteLine($"ProdSign={txtProdSign.Text}");
+   799→                    sw.WriteLine($"QualSign={txtQualSign.Text}");
+   800→                    sw.WriteLine();
+   801→
+   802→                    // 항목 데이터를 Item 번호 순으로 저장
+   803→                    var sortedKeys = existingData.Keys
+   804→                        .OrderBy(k =>
+   805→                        {
+   806→                            int num;
+   807→                            return int.TryParse(k.Replace("Item", ""), out num) ? num : 999;
+   808→                        })
+   809→                        .ToList();
+   810→
+   811→                    foreach (var key in sortedKeys)
+   812→                    {
+   813→                        sw.WriteLine($"[{key}]");
+   814→                        foreach (var data in existingData[key].OrderBy(k => k.Key))
+   815→                            sw.WriteLine($"{data.Key}={data.Value}");
+   816→                        sw.WriteLine();
+   817→                    }
+   818→                }
+   819→            }
+   820→            catch (Exception ex)
+   821→            {
+   822→                Logger.Error($"[일상점검] 저장 실패: {ex.Message}");
+   823→            }
+   824→        }
+   825→
+   826→        /// <summary>
+   827→        /// 파일에서 기존 데이터 로드 (다른 범위 데이터 보존용)
+   828→        /// </summary>
+   829→        private Dictionary<string, Dictionary<string, string>> LoadExistingData()
+   830→        {
+   831→            var result = new Dictionary<string, Dictionary<string, string>>();
+   832→            string filePath = GetDataFilePath();
+   833→            if (!File.Exists(filePath)) return result;
+   834→
+   835→            try
+   836→            {
+   837→                string currentSection = "";
+   838→                foreach (var line in File.ReadAllLines(filePath, System.Text.Encoding.UTF8))
+   839→                {
+   840→                    string trimmed = line.Trim();
+   841→                    if (string.IsNullOrEmpty(trimmed)) continue;
+   842→
+   843→                    if (trimmed.StartsWith("[") && trimmed.EndsWith("]"))
+   844→                    {
+   845→                        currentSection = trimmed.Substring(1, trimmed.Length - 2);
+   846→                        continue;
+   847→                    }
+   848→
+   849→                    int eqIdx = trimmed.IndexOf('=');
+   850→                    if (eqIdx < 0) continue;
+   851→                    string key = trimmed.Substring(0, eqIdx);
+   852→                    string val = trimmed.Substring(eqIdx + 1);
+   853→
+   854→                    if (currentSection == "Header") continue;
+   855→
+   856→                    if (currentSection.StartsWith("Item"))
+   857→                    {
+   858→                        if (!result.ContainsKey(currentSection))
+   859→                            result[currentSection] = new Dictionary<string, string>();
+   860→                        result[currentSection][key] = val;
+   861→                    }
+   862→                }
+   863→            }
+   864→            catch { }
+   865→            return result;
+   866→        }
+   867→
+   868→        /// <summary>
+   869→        /// 체크 데이터 로드
+   870→        /// </summary>
+   871→        private void LoadData()
+   872→        {
+   873→            _loading = true;
+   874→            string filePath = GetDataFilePath();
+   875→
+   876→            if (!File.Exists(filePath))
+   877→            {
+   878→                txtDept.Text = "생기/공무팀";
+   879→                txtSupervisor.Text = "설비관리담당자";
+   880→                txtEquipName.Text = "";
+   881→                txtQuality.Text = "19기";
+   882→                txtEquipNo.Text = "IM-000-RW-01-32";
+   883→                _loading = false;
+   884→                return;
+   885→            }
+   886→
+   887→            try
+   888→            {
+   889→                string currentSection = "";
+   890→                foreach (var line in File.ReadAllLines(filePath, System.Text.Encoding.UTF8))
+   891→                {
+   892→                    string trimmed = line.Trim();
+   893→                    if (string.IsNullOrEmpty(trimmed)) continue;
+   894→
+   895→                    if (trimmed.StartsWith("[") && trimmed.EndsWith("]"))
+   896→                    {
+   897→                        currentSection = trimmed.Substring(1, trimmed.Length - 2);
+   898→                        continue;
+   899→                    }
+   900→
+   901→                    int eqIdx = trimmed.IndexOf('=');
+   902→                    if (eqIdx < 0) continue;
+   903→                    string key = trimmed.Substring(0, eqIdx);
+   904→                    string val = trimmed.Substring(eqIdx + 1);
+   905→
+   906→                    if (currentSection == "Header")
+   907→                    {
+   908→                        switch (key)
+   909→                        {
+   910→                            case "Dept": txtDept.Text = val; break;
+   911→                            case "Supervisor": txtSupervisor.Text = val; break;
+   912→                            case "EquipName": txtEquipName.Text = val; break;
+   913→                            case "Quality": txtQuality.Text = val; break;
+   914→                            case "EquipNo": txtEquipNo.Text = val; break;
+   915→                            case "Writer": txtWriter.Text = val; break;
+   916→                            case "Reviewer": txtReviewer.Text = val; break;
+   917→                            case "Approver": txtApprover.Text = val; break;
+   918→                            case "ProdSign": txtProdSign.Text = val; break;
+   919→                            case "QualSign": txtQualSign.Text = val; break;
+   920→                        }
+   921→                    }
+   922→                    else if (currentSection.StartsWith("Item"))
+   923→                    {
+   924→                        int itemNo;
+   925→                        if (!int.TryParse(currentSection.Substring(4), out itemNo)) continue;
+   926→                        if (itemNo < 1 || itemNo > dgv.Rows.Count) continue;
+   927→
+   928→                        // 새 형식: Day{d}_{M|A|E}
+   929→                        if (key.Contains("_"))
+   930→                        {
+   931→                            string colName = $"col{key}";
+   932→                            if (dgv.Columns.Contains(colName))
+   933→                            {
+   934→                                var cell = dgv.Rows[itemNo - 1].Cells[colName];
+   935→                                cell.Value = val;
+   936→                                ApplyCellColor(cell, val, colName);
+   937→                            }
+   938→                        }
+   939→                        // 하위 호환: 기존 Day{d} 형식 → 아침(M)으로 매핑
+   940→                        else if (key.StartsWith("Day"))
+   941→                        {
+   942→                            int dayNo;
+   943→                            if (!int.TryParse(key.Substring(3), out dayNo)) continue;
+   944→                            string colName = $"colDay{dayNo}_M";
+   945→                            if (dgv.Columns.Contains(colName))
+   946→                            {
+   947→                                var cell = dgv.Rows[itemNo - 1].Cells[colName];
+   948→                                cell.Value = val;
+   949→                                ApplyCellColor(cell, val, colName);
+   950→                            }
+   951→                        }
+   952→                    }
+   953→                }
+   954→            }
+   955→            catch (Exception ex)
+   956→            {
+   957→                Logger.Error($"[일상점검] 로드 실패: {ex.Message}");
+   958→            }
+   959→
+   960→            _loading = false;
+   961→        }
+   962→
+   963→        #endregion
+   964→
+   965→        #region 체크 로그 기록
+   966→
+   967→        private void LogCheckAction(int itemNo, string itemName, int day, string shift, string oldVal, string newVal)
+   968→        {
+   969→            try
+   970→            {
+   971→                string logPath = GetLogFilePath();
+   972→                string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+   973→                string oldDisplay = string.IsNullOrEmpty(oldVal) ? "-" : oldVal;
+   974→                string newDisplay = string.IsNullOrEmpty(newVal) ? "-" : newVal;
+   975→
+   976→                string logLine;
+   977→                if (day == 0)
+   978→                    logLine = $"[{timestamp}] 항목 {itemNo} ({itemName}) | {newDisplay}";
+   979→                else
+   980→                    logLine = $"[{timestamp}] 항목 {itemNo} ({itemName}) | {day}일 {shift} | {oldDisplay} → {newDisplay}";
+   981→
+   982→                File.AppendAllText(logPath, logLine + Environment.NewLine, System.Text.Encoding.UTF8);
+   983→            }
+   984→            catch { }
+   985→        }
+   986→
+   987→        #endregion
+   988→
+   989→        #region PDF 출력 (3페이지: 범위별)
+   990→
+   991→        private void BtnPdf_Click(object sender, EventArgs e)
+   992→        {
+   993→            using (var sfd = new SaveFileDialog())
+   994→            {
+   995→                sfd.Filter = "PDF 파일|*.pdf";
+   996→                sfd.FileName = $"점검체크시트_{_currentMonth:yyyy_MM}.pdf";
+   997→
+   998→                if (sfd.ShowDialog() != DialogResult.OK) return;
+   999→
+  1000→                try
+  1001→                {
+  1002→                    _printRange = 0;  // 첫 페이지부터
+  1003→
+  1004→                    using (var pd = new PrintDocument())
+  1005→                    {
+  1006→                        pd.PrintPage += PrintCheckSheet;
+  1007→                        pd.DefaultPageSettings.Landscape = true;
+  1008→                        pd.DefaultPageSettings.Margins = new Margins(30, 30, 30, 30);
+  1009→
+  1010→                        bool pdfPrinterFound = false;
+  1011→                        foreach (string printer in PrinterSettings.InstalledPrinters)
+  1012→                        {
+  1013→                            if (printer.Contains("Microsoft Print to PDF"))
+  1014→                            {
+  1015→                                pd.PrinterSettings.PrinterName = printer;
+  1016→                                pdfPrinterFound = true;
+  1017→                                break;
+  1018→                            }
+  1019→                        }
+  1020→
+  1021→                        if (!pdfPrinterFound)
+  1022→                        {
+  1023→                            MessageBox.Show("'Microsoft Print to PDF' 프린터를 찾을 수 없습니다.\n인쇄 대화상자에서 PDF 프린터를 선택해주세요.",
+  1024→                                "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+  1025→
+  1026→                            using (var printDlg = new PrintDialog())
+  1027→                            {
+  1028→                                printDlg.Document = pd;
+  1029→                                if (printDlg.ShowDialog() != DialogResult.OK) return;
+  1030→                            }
+  1031→                            pd.Print();
+  1032→                        }
+  1033→                        else
+  1034→                        {
+  1035→                            pd.PrinterSettings.PrintToFile = true;
+  1036→                            pd.PrinterSettings.PrintFileName = sfd.FileName;
+  1037→                            pd.Print();
+  1038→                        }
+  1039→                    }
+  1040→
+  1041→                    if (File.Exists(sfd.FileName))
+  1042→                    {
+  1043→                        System.Diagnostics.Process.Start(sfd.FileName);
+  1044→                        LogCheckAction(0, "PDF 출력", 0, "", "", sfd.FileName);
+  1045→                    }
+  1046→                }
+  1047→                catch (Exception ex)
+  1048→                {
+  1049→                    MessageBox.Show($"PDF 생성 실패: {ex.Message}", "오류",
+  1050→                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+  1051→                }
+  1052→            }
+  1053→        }
+  1054→
+  1055→        /// <summary>
+  1056→        /// 체크시트 인쇄 렌더링 (범위별 페이지)
+  1057→        /// </summary>
+  1058→        private void PrintCheckSheet(object sender, PrintPageEventArgs e)
+  1059→        {
+  1060→            Graphics g = e.Graphics;
+  1061→            var area = e.MarginBounds;
+  1062→            float x = area.Left;
+  1063→            float y = area.Top;
+  1064→            float pageW = area.Width;
+  1065→
+  1066→            // 현재 인쇄 범위
+  1067→            GetRangeStartEnd(_printRange, out int startDay, out int endDay);
+  1068→            int daysInMonth = DateTime.DaysInMonth(_currentMonth.Year, _currentMonth.Month);
+  1069→            if (endDay > daysInMonth) endDay = daysInMonth;
+  1070→            int dayCount = endDay - startDay + 1;
+  1071→            int shiftColCount = dayCount * 3;
+  1072→
+  1073→            // 전체 데이터 로드 (그리드에 없는 범위 포함)
+  1074→            var allData = LoadExistingData();
+  1075→
+  1076→            int rowCount = _items.Count;
+  1077→
+  1078→            // 폰트
+  1079→            var fontTitle = new Font("맑은 고딕", 12, FontStyle.Bold);
+  1080→            var fontHeader = new Font("맑은 고딕", 7);
+  1081→            var fontHeaderBold = new Font("맑은 고딕", 7, FontStyle.Bold);
+  1082→            var fontCell = new Font("맑은 고딕", 6.5f);
+  1083→            var fontCellBold = new Font("맑은 고딕", 7, FontStyle.Bold);
+  1084→            var fontShift = new Font("맑은 고딕", 5.5f);
+  1085→
+  1086→            var penBlack = new Pen(Color.Black, 0.5f);
+  1087→            var penBold = new Pen(Color.Black, 1.2f);
+  1088→            var brushBlack = Brushes.Black;
+  1089→            var brushGreen = new SolidBrush(Color.FromArgb(0, 128, 0));
+  1090→            var brushRed = new SolidBrush(Color.FromArgb(200, 0, 0));
+  1091→            var sfCenter = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center };
+  1092→            var sfLeft = new StringFormat { Alignment = StringAlignment.Near, LineAlignment = StringAlignment.Center };
+  1093→
+  1094→            // === 제목 ===
+  1095→            string rangeText = $"({startDay}~{endDay}일)";
+  1096→            g.DrawString($"(설비/용접조건) 점검 체크시트 {rangeText}", fontTitle, brushBlack, x + pageW / 2, y, sfCenter);
+  1097→            y += 24;
+  1098→
+  1099→            // === 헤더 정보 ===
+  1100→            string headerLine1 = $"관리부서: {txtDept.Text}    관리감독: {txtSupervisor.Text}    설비명칭: {txtEquipName.Text}";
+  1101→            string headerLine2 = $"품질: {txtQuality.Text}    설비번호: {txtEquipNo.Text}    " +
+  1102→                                 $"작성: {txtWriter.Text}    검토: {txtReviewer.Text}    승인: {txtApprover.Text}    " +
+  1103→                                 $"{_currentMonth:yyyy년 MM월}";
+  1104→            g.DrawString(headerLine1, fontHeader, brushBlack, x, y);
+  1105→            y += 13;
+  1106→            g.DrawString(headerLine2, fontHeader, brushBlack, x, y);
+  1107→            y += 16;
+  1108→
+  1109→            // === 테이블 ===
+  1110→            // 고정 컬럼 폭
+  1111→            float colNo = 20;
+  1112→            float colItem = 120;
+  1113→            float colStd = 100;
+  1114→            float colMethod = 40;
+  1115→            float colType = 40;
+  1116→            float fixedW = colNo + colItem + colStd + colMethod + colType;
+  1117→
+  1118→            // 교대 컬럼 폭
+  1119→            float shiftColW = (pageW - fixedW) / shiftColCount;
+  1120→
+  1121→            // 행 높이
+  1122→            float availableH = area.Bottom - y - 25;
+  1123→            float dayHeaderH = 14;
+  1124→            float shiftHeaderH = 12;
+  1125→            float rowH = Math.Min(20, (availableH - dayHeaderH - shiftHeaderH) / rowCount);
+  1126→            if (rowH < 11) rowH = 11;
+  1127→
+  1128→            // === 일자 헤더행 (날짜 번호, 3칸 병합) ===
+  1129→            float cx = x + fixedW;
+  1130→            // 고정 컬럼 헤더 (일자 헤더 높이만큼 병합)
+  1131→            float totalHeaderH = dayHeaderH + shiftHeaderH;
+  1132→
+  1133→            // 고정 컬럼 헤더 그리기
+  1134→            float hx = x;
+  1135→            string[] fixedHeaders = { "NO", "점검 항목", "점검 기준", "방법", "구분" };
+  1136→            float[] fixedWidths = { colNo, colItem, colStd, colMethod, colType };
+  1137→            for (int c = 0; c < 5; c++)
+  1138→            {
+  1139→                g.DrawRectangle(penBold, hx, y, fixedWidths[c], totalHeaderH);
+  1140→                g.DrawString(fixedHeaders[c], fontHeaderBold, brushBlack,
+  1141→                    new RectangleF(hx, y, fixedWidths[c], totalHeaderH), sfCenter);
+  1142→                hx += fixedWidths[c];
+  1143→            }
+  1144→
+  1145→            // 일자 헤더 (3칸 병합)
+  1146→            cx = x + fixedW;
+  1147→            for (int d = startDay; d <= endDay; d++)
+  1148→            {
+  1149→                float dayW = shiftColW * 3;
+  1150→                g.DrawRectangle(penBlack, cx, y, dayW, dayHeaderH);
+  1151→                g.DrawString(d.ToString(), fontHeaderBold, brushBlack,
+  1152→                    new RectangleF(cx, y, dayW, dayHeaderH), sfCenter);
+  1153→                cx += dayW;
+  1154→            }
+  1155→
+  1156→            // 교대 헤더 (아/점/저)
+  1157→            y += dayHeaderH;
+  1158→            cx = x + fixedW;
+  1159→            for (int d = startDay; d <= endDay; d++)
+  1160→            {
+  1161→                for (int s = 0; s < 3; s++)
+  1162→                {
+  1163→                    g.DrawRectangle(penBlack, cx, y, shiftColW, shiftHeaderH);
+  1164→                    g.DrawString(SHIFT_NAMES[s], fontShift, brushBlack,
+  1165→                        new RectangleF(cx, y, shiftColW, shiftHeaderH), sfCenter);
+  1166→                    cx += shiftColW;
+  1167→                }
+  1168→            }
+  1169→            y += shiftHeaderH;
+  1170→
+  1171→            // === 데이터행 ===
+  1172→            for (int r = 0; r < rowCount; r++)
+  1173→            {
+  1174→                hx = x;
+  1175→
+  1176→                // 고정 컬럼
+  1177→                string[] cellValues = {
+  1178→                    (r + 1).ToString(),
+  1179→                    _items[r][0],
+  1180→                    _items[r][1],
+  1181→                    _items[r][2],
+  1182→                    _items[r][3]
+  1183→                };
+  1184→                for (int c = 0; c < 5; c++)
+  1185→                {
+  1186→                    g.DrawRectangle(penBlack, hx, y, fixedWidths[c], rowH);
+  1187→                    var fmt = (c == 0 || c >= 3) ? sfCenter : sfLeft;
+  1188→                    var f = (c <= 1) ? fontCellBold : fontCell;
+  1189→                    g.DrawString(cellValues[c], f, brushBlack,
+  1190→                        new RectangleF(hx + 2, y, fixedWidths[c] - 4, rowH), fmt);
+  1191→                    hx += fixedWidths[c];
+  1192→                }
+  1193→
+  1194→                // 교대 컬럼
+  1195→                string itemKey = $"Item{r + 1}";
+  1196→                cx = x + fixedW;
+  1197→                for (int d = startDay; d <= endDay; d++)
+  1198→                {
+  1199→                    for (int s = 0; s < 3; s++)
+  1200→                    {
+  1201→                        g.DrawRectangle(penBlack, cx, y, shiftColW, rowH);
+  1202→
+  1203→                        string dataKey = $"Day{d}_{SHIFT_KEYS[s]}";
+  1204→                        string val = "";
+  1205→                        if (allData.ContainsKey(itemKey) && allData[itemKey].ContainsKey(dataKey))
+  1206→                            val = allData[itemKey][dataKey];
+  1207→
+  1208→                        if (!string.IsNullOrEmpty(val))
+  1209→                        {
+  1210→                            var brush = val == "O" ? brushGreen : (val == "X" ? brushRed : brushBlack);
+  1211→                            g.DrawString(val, fontCellBold, brush,
+  1212→                                new RectangleF(cx, y, shiftColW, rowH), sfCenter);
+  1213→                        }
+  1214→                        cx += shiftColW;
+  1215→                    }
+  1216→                }
+  1217→                y += rowH;
+  1218→            }
+  1219→
+  1220→            // === 서명란 ===
+  1221→            y += 8;
+  1222→            g.DrawString($"생산 관리자 (SIGN): {txtProdSign.Text}", fontHeader, brushBlack, x, y);
+  1223→            g.DrawString($"품질 관리자 (SIGN): {txtQualSign.Text}", fontHeader, brushBlack, x + 220, y);
+  1224→
+  1225→            // 폰트 해제
+  1226→            fontTitle.Dispose();
+  1227→            fontHeader.Dispose();
+  1228→            fontHeaderBold.Dispose();
+  1229→            fontCell.Dispose();
+  1230→            fontCellBold.Dispose();
+  1231→            fontShift.Dispose();
+  1232→            penBlack.Dispose();
+  1233→            penBold.Dispose();
+  1234→            brushGreen.Dispose();
+  1235→            brushRed.Dispose();
+  1236→
+  1237→            // 다음 페이지
+  1238→            _printRange++;
+  1239→            e.HasMorePages = (_printRange < 3);
+  1240→        }
+  1241→
+  1242→        #endregion
+  1243→    }
+  1244→}
+  1245→

@@ -30,27 +30,46 @@ case "${1}" in
         VERSION="v$(date '+%Y.%m.%d')"
         sed -i "s/^# Global Rules (v[0-9.]*)/# Global Rules ($VERSION)/" "$CLAUDE_DIR/CLAUDE.md"
 
-        # Copy settings to repo
+        # Copy dotfiles (settings excluded — machine-specific)
         cp "$CLAUDE_DIR/CLAUDE.md" "$LOCAL_REPO/" 2>/dev/null
-        cp "$CLAUDE_DIR/config.json" "$LOCAL_REPO/" 2>/dev/null
-        cp "$CLAUDE_DIR/settings.json" "$LOCAL_REPO/" 2>/dev/null
         cp "$CLAUDE_DIR/.claudeignore" "$LOCAL_REPO/" 2>/dev/null
         cp "$CLAUDE_DIR/build-template.md" "$LOCAL_REPO/" 2>/dev/null
 
         # Commands (skills)
         mkdir -p "$LOCAL_REPO/commands"
         cp "$CLAUDE_DIR/commands/"*.md "$LOCAL_REPO/commands/" 2>/dev/null
+        # Disabled commands subfolder
+        if [ -d "$CLAUDE_DIR/commands/disabled" ]; then
+            mkdir -p "$LOCAL_REPO/commands/disabled"
+            cp "$CLAUDE_DIR/commands/disabled/"*.md "$LOCAL_REPO/commands/disabled/" 2>/dev/null
+        fi
 
         # Agents
         if [ -d "$CLAUDE_DIR/agents" ]; then
             mkdir -p "$LOCAL_REPO/agents"
             cp "$CLAUDE_DIR/agents/"*.md "$LOCAL_REPO/agents/" 2>/dev/null
+            if [ -d "$CLAUDE_DIR/agents/disabled" ]; then
+                mkdir -p "$LOCAL_REPO/agents/disabled"
+                cp "$CLAUDE_DIR/agents/disabled/"*.md "$LOCAL_REPO/agents/disabled/" 2>/dev/null
+            fi
         fi
 
         # References
         if [ -d "$CLAUDE_DIR/references" ]; then
             mkdir -p "$LOCAL_REPO/references"
             cp "$CLAUDE_DIR/references/"*.md "$LOCAL_REPO/references/" 2>/dev/null
+        fi
+
+        # Memory
+        if [ -d "$CLAUDE_DIR/projects" ]; then
+            # rsync-like: copy entire projects tree (contains per-project memory)
+            cp -r "$CLAUDE_DIR/projects" "$LOCAL_REPO/" 2>/dev/null
+        fi
+
+        # NLM docs
+        if [ -d "$CLAUDE_DIR/nlm-docs" ]; then
+            mkdir -p "$LOCAL_REPO/nlm-docs"
+            cp "$CLAUDE_DIR/nlm-docs/"*.md "$LOCAL_REPO/nlm-docs/" 2>/dev/null
         fi
 
         # Bin scripts
@@ -73,27 +92,44 @@ case "${1}" in
         echo "[Claude Config] GitHub → Local restore..."
         cd "$LOCAL_REPO" && git pull
 
-        # Restore settings
+        # Restore dotfiles (settings excluded — machine-specific)
         cp "$LOCAL_REPO/CLAUDE.md" "$CLAUDE_DIR/" 2>/dev/null
-        cp "$LOCAL_REPO/config.json" "$CLAUDE_DIR/" 2>/dev/null
-        cp "$LOCAL_REPO/settings.json" "$CLAUDE_DIR/" 2>/dev/null
         cp "$LOCAL_REPO/.claudeignore" "$CLAUDE_DIR/" 2>/dev/null
         cp "$LOCAL_REPO/build-template.md" "$CLAUDE_DIR/" 2>/dev/null
 
         # Commands
         mkdir -p "$CLAUDE_DIR/commands"
         cp "$LOCAL_REPO/commands/"*.md "$CLAUDE_DIR/commands/" 2>/dev/null
+        if [ -d "$LOCAL_REPO/commands/disabled" ]; then
+            mkdir -p "$CLAUDE_DIR/commands/disabled"
+            cp "$LOCAL_REPO/commands/disabled/"*.md "$CLAUDE_DIR/commands/disabled/" 2>/dev/null
+        fi
 
         # Agents
         if [ -d "$LOCAL_REPO/agents" ]; then
             mkdir -p "$CLAUDE_DIR/agents"
             cp "$LOCAL_REPO/agents/"*.md "$CLAUDE_DIR/agents/" 2>/dev/null
+            if [ -d "$LOCAL_REPO/agents/disabled" ]; then
+                mkdir -p "$CLAUDE_DIR/agents/disabled"
+                cp "$LOCAL_REPO/agents/disabled/"*.md "$CLAUDE_DIR/agents/disabled/" 2>/dev/null
+            fi
         fi
 
         # References
         if [ -d "$LOCAL_REPO/references" ]; then
             mkdir -p "$CLAUDE_DIR/references"
             cp "$LOCAL_REPO/references/"*.md "$CLAUDE_DIR/references/" 2>/dev/null
+        fi
+
+        # Memory
+        if [ -d "$LOCAL_REPO/projects" ]; then
+            cp -r "$LOCAL_REPO/projects" "$CLAUDE_DIR/" 2>/dev/null
+        fi
+
+        # NLM docs
+        if [ -d "$LOCAL_REPO/nlm-docs" ]; then
+            mkdir -p "$CLAUDE_DIR/nlm-docs"
+            cp "$LOCAL_REPO/nlm-docs/"*.md "$CLAUDE_DIR/nlm-docs/" 2>/dev/null
         fi
 
         # Bin scripts

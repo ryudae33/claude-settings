@@ -1,0 +1,669 @@
+===== PAGE 1 =====
+USER MANUAL
+FOR TECHMAN ROBOTS
+v6.5.0
+Original Instructions
+
+
+===== PAGE 2 =====
+Contents
+1. Introduction.................................................................................................................................... 5
+1.1. Important Safety Notice....................................................................................................................5
+1.2. Scope of the Manual........................................................................................................................ 5
+1.2.1. Screwdriver..............................................................................................................................5
+1.2.2. Software and Firmware....................................................................................................... 5
+1.2.2.1. Compute Box Software............................................................................................5
+1.3. Naming Convention..........................................................................................................................5
+1.3.1. Compute Box/Eye Box..........................................................................................................5
+1.4. Copyright.............................................................................................................................................6
+2. Safety..............................................................................................................................................7
+2.1. Intended Use......................................................................................................................................7
+2.2. General Safety Instructions............................................................................................................7
+2.3. Risk Assessment.............................................................................................................................. 9
+2.4. Environmental Safety...................................................................................................................... 9
+2.5. Screwdriver Protective Features................................................................................................10
+2.5.1. Screw-bit System Always Hidden...................................................................................10
+2.5.2. Operational Safety.............................................................................................................. 11
+2.5.3. Automatic Protective Feature......................................................................................... 12
+3. HW Installation.............................................................................................................................13
+3.1. Overview............................................................................................................................................ 13
+3.2. Robot Mount.....................................................................................................................................13
+3.2.1. Adapter for TM Robots.......................................................................................................13
+3.2.2. Tools.......................................................................................................................................13
+3.2.2.1. Screwdriver...............................................................................................................13
+3.3. Compute Box Mount...................................................................................................................... 13
+3.3.1. Optional - Clip-on Bracket................................................................................................. 13
+3.4. Wiring................................................................................................................................................. 14
+3.4.1. Tool Data Cable....................................................................................................................15
+3.4.1.1. Cable to Screwdriver...............................................................................................15
+3.4.1.2. Cable to Compute Box...........................................................................................15
+3.4.2. Ethernet Cable.................................................................................................................... 16
+3.4.3. Recommended Grounding...............................................................................................16
+3.4.4. Compute Box DIP Switch Settings..................................................................................17
+3.4.5. Power Supply: Compute Box...........................................................................................17
+3.4.5.1. Screwdriver...............................................................................................................18
+4. SW Installation.............................................................................................................................19
+4.1. Enable Tool connector I/O (If using Tool connector).............................................................. 19
+4.2. Robot Software Setup for TMcraft............................................................................................ 20
+4.2.1. Import TMcraft.....................................................................................................................20
+2
+
+
+===== PAGE 3 =====
+4.2.2. Enable TMcraft OnRobot components........................................................................ 23
+4.2.3. OnRobot Tool Setup..........................................................................................................26
+4.2.3.1. Device Info............................................................................................................... 26
+4.3. Robot Software Setup using Components..............................................................................28
+4.3.1. Import Component.............................................................................................................28
+4.3.2. Set Robot Network Settings............................................................................................33
+4.3.3. Configure Gripper Buttons.............................................................................................. 34
+4.3.4. Configuring Modbus TCP for the Components......................................................... 35
+5. Operation..................................................................................................................................... 37
+5.1. Operation Overview.......................................................................................................................37
+5.2. Operation using TMcraft commands........................................................................................ 37
+5.3. OnRobot Toolbar............................................................................................................................37
+5.4. Operation using OnRobot Tool Components.........................................................................38
+5.4.1. Robot Operation Overview.............................................................................................. 38
+5.4.2. Compute Box I/O Components..................................................................................... 40
+5.4.2.1. CB_OR_CB_GETIO............................................................................................... 40
+5.4.3. Screwdriver Components.................................................................................................41
+5.4.3.1. ScrewDriver_OR_SD_110_TIGHTEN..................................................................41
+5.4.3.2. ScrewDriver_OR_SD_110_LOOSEN.................................................................43
+5.4.3.3. ScrewDriver_OR_SD_110_PICKUP...................................................................45
+5.4.3.4. ScrewDriver_OR_SD_110_MOVE......................................................................47
+5.4.3.5. ScrewDriver_OR_SD_110_SELFTAPPING...................................................... 49
+5.4.3.6. ScrewDriver_OR_SD_110_PREMOUNT........................................................... 51
+5.4.3.7. ScrewDriver_OR_SD_110_CONFIG.................................................................. 53
+5.4.3.8. ScrewDriver_OR_SD_110_GetParameters.....................................................53
+5.4.3.9. Global Variables.....................................................................................................55
+6. Additional Software Options.....................................................................................................58
+6.1. Compute Box/Eye Box.................................................................................................................. 58
+6.1.1. Web Client.............................................................................................................................58
+6.1.2. Web Client: Devices Menu...............................................................................................60
+6.1.2.1. Screwdriver................................................................................................................61
+6.1.3. Web Client: Configuration Menu.................................................................................... 65
+6.1.4. Web Client: Update Menu................................................................................................66
+6.1.5. Web Client: TCP/CoG........................................................................................................68
+6.1.5.1. Screwdriver...............................................................................................................69
+6.1.6. Web Client: Account Settings..........................................................................................70
+7. Hardware Specification.............................................................................................................. 74
+7.1. Technical Sheets..............................................................................................................................74
+7.1.1. Quick Changers.................................................................................................................... 74
+7.1.2. Screwdriver...........................................................................................................................76
+7.1.3. Compute Box......................................................................................................................106
+3
+
+
+===== PAGE 4 =====
+7.1.3.1. With 5A Wall Adapter (120W).............................................................................. 106
+7.1.3.2. With 6.25A Wall Adapter (150W)....................................................................... 106
+7.1.3.3. Compute Box I/O interface..................................................................................107
+7.2. Mechanical Drawings.................................................................................................................. 108
+7.2.1. Mountings............................................................................................................................108
+7.2.1.1. Quick Changer - Robot Side................................................................................108
+7.2.2. Tools.....................................................................................................................................109
+7.2.2.1. Screwdriver.............................................................................................................109
+7.2.2.2. Compute Box..........................................................................................................110
+7.2.3. Bit Extender.........................................................................................................................110
+7.3. TCP, CoG........................................................................................................................................... 111
+7.3.1. Screwdriver.......................................................................................................................... 112
+8. Maintenance...............................................................................................................................113
+8.1. Screwdriver......................................................................................................................................113
+9. Troubleshooting........................................................................................................................ 120
+9.1. Robot Has Not Obtained an IP Address................................................................................. 120
+9.2. Changing the DIP Switch Does Not Take Effect.................................................................. 120
+9.3. Screwdriver Error Codes............................................................................................................120
+9.3.1. Z-axis (Or General Init) Busy...........................................................................................120
+9.3.2. Z-axis Safety Activated...................................................................................................120
+9.3.3. Tool Is Not Calibrated.......................................................................................................121
+9.3.4. Initialize: Z Stall Current Not Reached.........................................................................121
+9.3.5. Initialize: No Z Index Mark Found................................................................................. 121
+9.3.6. Initialize: Unable to Home Z-axis/ Run Time: Too Much Current Is Drawn........121
+9.3.7. Initialize: Z Index Placement Not Ok............................................................................122
+9.3.8. Initialize: No Index Mark Found on Torque Encoders.............................................122
+9.3.9. Initialize: Too Big Torque Difference During Initialization......................................122
+9.3.10. Index Mark Value Has Changed.................................................................................122
+9.3.11. Quick Changer Error.......................................................................................................122
+9.3.12. Power Supply Error........................................................................................................ 123
+9.3.13. Additional Codes............................................................................................................ 123
+10. Warranties................................................................................................................................ 125
+10.1. Patents............................................................................................................................................125
+10.2. Product Warranty........................................................................................................................125
+10.3. Disclaimer..................................................................................................................................... 125
+11. Certifications.............................................................................................................................127
+11.1. Manufacturer Test Certificate.................................................................................................... 128
+11.2. Screwdriver - Environment........................................................................................................129
+11.3. Declaration of Incorporation.....................................................................................................130
+11.3.1. Screwdriver........................................................................................................................ 130
+4
+
+
+===== PAGE 5 =====
+1. Introduction
+1.1. Important Safety Notice
+DANGER:
+You must read, understand, and follow all safety information in this manual, the
+robot manual, and all associated equipment before initiating robot motion.
+Failure to comply with safety information could result in serious injury or death.
+1.2. Scope of the Manual
+The manual covers the following OnRobot products and their components:
+1.2.1. Screwdriver
+Tool
+Version
+Screwdriver
+v1
+For the Screwdriver, a Compute Box with hardware version of at least v3.4 is required. To
+check the HW version of the Compute Box, refer to the sticker on the device. Or check the
+HW version in the Web Client software.
+1.2.2. Software and Firmware
+1.2.2.1. Compute Box Software
+The manual covers the following Compute Box software version:
+Software
+Version
+Compute Box
+v6.5.x
+NOTE:
+When the used Compute Box has lower software/firmware version, update the
+Compute Box. For detailed instructions, see 6.1.4. Web Client: Update Menu.
+1.3. Naming Convention
+1.3.1. Compute Box/Eye Box
+Eye Box and Compute Box are used interchangeably.
+INTRODUCTION
+5
+
+
+===== PAGE 6 =====
+1.4. Copyright
+The information contained herein is property of OnRobot A/S and shall not be reproduced in
+whole or in part without prior written approval of OnRobot A/S. The information herein is
+subject to change without notice and should not be construed as a commitment by OnRobot
+A/S. This manual is periodically reviewed and revised.
+OnRobot A/S assumes no responsibility for any errors or omissions in this document.
+Copyright © 2015–2025 by OnRobot A/S.
+The OnRobot A/S logo is trademark of OnRobot A/S.
+INTRODUCTION
+6
+
+
+===== PAGE 7 =====
+2. Safety
+The robot integrator is responsible for ensuring that the applicable safety laws and
+regulations in the country concerned are observed and that any significant hazards in the
+complete robot application are eliminated. This includes, but is not limited to:
+•
+Performing a risk assessment for the complete robot system
+•
+Conduct a risk assessment and implement appropiate safety measures when interfacing
+with other machines
+•
+Interfacing other machines and additional safety devices if defined by the risk assessment
+•
+Setting up the appropriate safety settings in the robot software
+•
+Ensuring that the user will not modify any safety measures
+•
+Validating that the total robot system is designed and installed correctly
+•
+Specifying instructions for use
+•
+Marking the robot installation with relevant signs and contact information of the integrator
+•
+Collecting all documentation in a technical file; including the risk assessment and this
+manual
+2.1. Intended Use
+OnRobot tools and accessories are intended to be used on collaborative robots and light
+industrial robots with different payloads depending on the end-of-arm tooling specifications.
+OnRobot tools and accessories are normally used in pick-and-place, palletizing, machine
+tending, assembly, quality testing and inspection and surface finishing applications.
+The end-of-arm tooling and the accessories should only operate under conditions noted in
+7.1. Technical Sheets section.
+Any use or application deviating from intended use is deemed to be impermissible misuse.
+This includes, but is not limited to:
+•
+Use in potentially explosive atmospheres
+•
+Use in medical and life critical applications
+•
+Use before performing a risk assessment
+•
+Use outside the permissible operational conditions and specifications
+•
+Use close to a human’s head, face and eye area
+•
+Use as a climbing aid
+2.2. General Safety Instructions
+Generally, all national regulations, legislations and laws in the country of installation must be
+observed. Integration and use of the product must be done in compliance with precautions in
+this manual. Particular attention must be paid to the following warnings:
+SAFETY
+7
+
+
+===== PAGE 8 =====
+DANGER:
+You must read, understand, and follow all safety information in this manual, and
+the robot manual and all associated equipment before initiating robot motion.
+Failure to comply with safety information could result in death or serious injury.
+The information in this manual does not cover designing, installing, and
+operating a complete robot application, nor does it cover other peripheral
+equipment that can influence the safety of the complete system. The complete
+system must be designed and installed in accordance with the safety
+requirements set forth in the standards and regulations of the country where
+the robot is installed.
+Any safety information provided in this manual must not be construed as a
+warranty, by OnRobot A/S, that the robot application will not cause injury or
+damage, even if robot application complies with all safety instructions.
+OnRobot A/S disclaims any and all liability if any of OnRobot tools tooling are
+damaged, changed or modified in any way. OnRobot A/S cannot be held
+responsible for any damages caused to any of OnRobot tools tooling, the
+robot, or any other equipment due to programming errors or malfunctioning of
+any of OnRobot tools.
+WARNING:
+OnRobot tools are not allowed to be exposed to condensing conditions when
+power is on or when connected to a robot. If condensing conditions appear
+during transport or storage, the product must be placed between 20 and 40
+Celsius degrees for 24 hours before power is applied or before connected to a
+robot.
+It is recommended that OnRobot tools are integrated in compliance with the following guides
+and standards:
+•
+ISO 10218-2
+•
+ISO 12100
+•
+ISO/TR 20218-1
+•
+ISO/TS 15066
+SAFETY
+8
+
+
+===== PAGE 9 =====
+WARNING:
+ The tools have to be properly secured before operating the robot.
+ Keep fingers, clothes and hair away from the tool while the power is on.
+ Always use protective glasses when working with sharp objects.
+ Always ensure complete shutdown of the robot when working on the system
+for maintenance or inspection.
+ Do not use the tools on people or animals.
+ Do not perform any modification to the tooling.
+ If the robot supports a bounded workspace/ speed/ force limit, make sure to
+use those features.
+ Select robot trajectories that minimize risks of internal clamping between
+robot joints and tooling.
+2.3. Risk Assessment
+The robot integrator must perform a risk assessment on the complete robot application.
+OnRobot tools are partly completed machinery. The integrator must consider safety aspects
+of the completed machine so it can be operated in a safe way. OnRobot tools are designed
+with relatively smooth and round design with a limited amount of sharp edges and pinch
+points
+In collaborative applications, the trajectory of the robot can play a significant safety role. The
+integrator must consider the angle of contact with a human body, e.g. orientate OnRobot tools
+and workpieces so that the contact surface in the direction of movement is as large as
+possible. It is recommended that the tool connectors are pointed in the direction opposite to
+the movement.
+OnRobot A/S have identified the potential hazards listed below as significant hazards that
+must be considered by the integrator:
+•
+Objects flying from OnRobot tools due to loss of grip
+•
+Objects falling down from OnRobot tools due to loss of grip
+•
+Injuries due to collisions between humans and workpieces, OnRobot tools tooling, robot
+or other obstacles
+•
+Consequences due to loosened bolts
+•
+Consequences if OnRobot tools cable gets stuck to something
+•
+Hazards created by the workpiece itself
+2.4. Environmental Safety
+OnRobot A/S products must be disposed of in accordance with the applicable national laws,
+regulations, and standards.
+The product is produced with restricted use of hazardous substances to protect the
+environment, as defined by the EU RoHS Directive 2011/65/EU, as amended by 2015/863/EU
+and 2017/2102/EU. These substances include mercury, cadmium, lead, chromium VI,
+polybrominated biphenyls, polybrominated diphenyl ethers, Bis(2-ethylhexyl) phthalate, Butyl
+benzyl phthalate, Dibutyl phthalate and Diisobutyl phthalate.
+Observe national registration requirements for importers according to the EU WEEE Directive
+2012/19/EU, which governs the disposal and recycling of electrical and electronic equipment.
+SAFETY
+9
+
+
+===== PAGE 10 =====
+Declaration on substances of very high concern (SVHC) in accordance with regulation (EC)
+No 1907/2006 (REACH Regulation)
+In accordance with the duty to communicate information pursuant to Article 33 of the REACH
+Regulation we hereby declare the required information on SVHC’s in OnRobot A/S products.
+The European Chemicals Agency (ECHA) has published on its website a list of substances of
+very high concern (SVHC) which meet the criteria listed in Article 57 of the REACH Regulation
+and have been identified in accordance with Article 59 of the REACH Regulation (Candidate
+List of substances of very high concern for Authorisation - ECHA (europa.eu)).
+We are required to inform customers of any products that contain SCHC’s in a concentration
+above 0.1% w/w.
+Our products are compliant with the requirements and restrictions of the REACH Regulations
+regarding the SVHC’s.
+2.5. Screwdriver Protective Features
+2.5.1. Screw-bit System Always Hidden
+The Screw-bit System can always be hidden inside the housing to enhance
+safety.
+The Move Shank command allows the user to hide the Screw-bit System
+inside the housing at any time.
+After running a Tighten, Loosen or Pick Screw command, the Screw-bit
+System will be automatically hidden inside the housing.
+NOTE:
+This protective functionality will be achieved if the screw
+length is equal or less than 35 mm and no bit extender is
+used.
+For further information about the Screw-bit System, see the Screw-bit System section.
+For further information about the bit extender, see the Bit Extender section.
+SAFETY
+10
+
+
+===== PAGE 11 =====
+2.5.2. Operational Safety
+The Screwdriver's operations must be executed when the distance between the Screwdriver's
+bottom part and the surface where the action takes place is within the range of 0 - 8 mm (see
+image below). If the distance is higher than this, the Screwdriver operations will not be
+successful, and the system will generate an error.
+This ensures that nothing larger than 8 mm is exposed to be harmed by the Screw-bit System
+while executing a Screwdriver operation.
+For instance, if a hand is located on the workpiece when the robot moves towards the
+recorded waypoint, the robot in a collaborative installation will have a protective stop when
+hitting the hand as it does not reach the recorded waypoint. If the robot reaches the recorded
+waypoint and starts the screwing operation, the < 8 mm distance prevents the user from
+placing a hand/finger underneath during a Screwdriver operation.
+NOTE:
+This protective functionality will be achieved if the screw length is up to 35 mm
+and no bit extender is used.
+WARNING:
+ Keep fingers and hands away from the end of the Screwdriver.
+ Always disconnect the power source while cleaning or performing
+maintenance.
+ When Bit extenders are used, safe guarding might be needed depending on
+the risk assessment.
+ When the screw length is longer than 35 mm, safe guarding is needed to
+prevent pinching hazards.
+ After tightening or pre-mounting, safe guarding is needed to prevent
+pinching hazards from screw tips sticking out.
+ Do not perform any troubleshooting with a screw or a bit attached.
+ Do not use the Screwdriver for drilling or deburring.
+ Do not operate the Screwdriver without the protective end cup.
+SAFETY
+11
+
+
+===== PAGE 12 =====
+2.5.3. Automatic Protective Feature
+An automatic protective feature has been implemented to reduce the possibility of the users
+to be in danger.
+This protective feature is activated if the Screw-bit System detects a force above 40 N during
+operation. In such a case, a mechanical appliance will immediately retract the shank and hide
+it (up to 35 mm screw length).
+Screw-bit System out
+Automatic Protective Feature Activated
+If this happens, the safety state becomes triggered.
+To reset from this state, command the shank to a new position.
+Additionally, if the bottom part of the Screw-bit System detects an unexpected force above 20
+N while not in operation, the Screw-bit System will retract and be temporarily hidden into the
+housing (up to 35 mm screw length). This will not stop the robot program, only temporarily
+hide the Screw-bit System.
+CAUTION:
+This retract functionality does not work if the power is interrupted. Further
+actions may be required to eliminate the risk, identified by the risk assessment.
+SAFETY
+12
+
+
+===== PAGE 13 =====
+3. HW Installation
+3.1. Overview
+For a successful installation the following steps will be required:
+•
+Mount the components
+•
+Setup the software
+In the following sections, these installation steps will be described.
+3.2. Robot Mount
+3.2.1. Adapter for TM Robots
+3.2.2. Tools
+3.2.2.1. Screwdriver
+Step 1:
+Move the tool close to the Quick Changer as
+illustrated.
+The hook mechanism (rod and hook tongue)
+will keep the lower part locked once mounted.
+Step 2:
+Flip the tool until it is fully mated, and you hear
+a clicking sound.
+To unmount the tool, press the aluminum
+button on the Quick Changer and repeat the
+steps in the reverse order.
+CAUTION:
+Make sure to use the 4.5A version of the Quick Changers.
+3.3. Compute Box Mount
+3.3.1. Optional - Clip-on Bracket
+Optionally, fix the Compute Box to a surface using the provided Clip-on Brackets ( included
+only from 17th December 2020).
+HW INSTALLATION
+13
+
+
+===== PAGE 14 =====
+Do the following on both sides of the Compute Box:
+1.
+Hook the Clip-on Bracket to the rail on the side of the Compute Box and then flip it down.
+2. Fasten the Clip-on Bracket with the plastic srew.
+3.4. Wiring
+Three cables need to be connected to wire the system properly:
+•
+Tool data cable between the tool(s) and the Compute Box
+•
+Ethernet communication cable between the robot controller and the Compute Box
+•
+Power supply of the Compute Box
+NOTE:
+For the Quick Changer - Robot Side no cable is needed to be connected.
+HW INSTALLATION
+14
+
+
+===== PAGE 15 =====
+3.4.1. Tool Data Cable
+3.4.1.1. Cable to Screwdriver
+Step 1
+Mount the cable protector to the Quick
+Changer to keep safe the data cable as
+illustrated on the left.
+Step 2
+Connect the data cable to the tool.
+Step 3
+Route the cable through the cable holder on
+the other side of the Quick Changer.
+CAUTION:
+Make sure to use the supplied cable protector to prevent any excessive strain
+on the 90-degree M8 connector caused by the rotation of the cable.
+3.4.1.2. Cable to Compute Box
+Then route the Tool data cable to the Compute Box (CB) and use the supplied Velcro tape
+(black) to fix it.
+HW INSTALLATION
+15
+
+
+===== PAGE 16 =====
+NOTE:
+Make sure that during the routing some extra length is used at the joints so
+that cable is not pulled when the robot moves.
+Also make sure that the cable bending radius is minimum 40mm (for the HEX-
+E/H QC it is 70mm).
+Finally, connect the other end of the Tool data cable to the Compute Box's DEVICES
+connector.
+CAUTION:
+Quick Changer and Dual Quick
+Changer can only be used to
+power OnRobot tools.
+3.4.2. Ethernet Cable
+Connect one end of the supplied Ethernet Cat 5e cable to the robot controller's Ethernet
+(LAN) port.
+NOTE:
+If the robot controller's Ethernet port is in use, use a standard 4-port Ethernet
+switch to be able to use two network devices at the same time.
+Connect the other end of the supplied cable to the Compute Box's
+ETHERNET connector.
+It is recommended to use Ethernet cables that are shorter than 3 m.
+3.4.3. Recommended Grounding
+WARNING:
+Incorrect grounding can result in device damage. Please follow the
+recommendations below.
+HW INSTALLATION
+16
+
+
+===== PAGE 17 =====
+1.
+Connect all metal devices* to a central point. Use 4mm ground wires.
+2. Connect the central point to the factory ground. Use a 6mm ground wire.
+3. Check grounding by moving a Grounding Tester** throughout the setup. Confirm the
+device reads close to 0.
+To learn more about grounding checking, watch the tutorial on https://learn.onrobot.com/en/
+how-test-grounding.
+* We refer to metal devices as OnRobot devices, robot, fences, conveyor belts, machines, etc,
+that are in the application.
+** Can be purchased at OnRobot with the Item Number #114040.
+3.4.4. Compute Box DIP Switch Settings
+Set the DIP switches of the Compute Box as follows:
+Set the DIP switch 3 to ON and the DIP switch 4 to OFF position.
+For more information about the Ethernet interface settings, see Ethernet Interface Setup.
+3.4.5. Power Supply: Compute Box
+Connect the supplied power supply to the Compute Box 24V connector.
+HW INSTALLATION
+17
+
+
+===== PAGE 18 =====
+NOTE:
+To disconnect the power connector,
+make sure to pull the connector housing
+(where the arrows are shown) and not
+the cable.
+CAUTION:
+Use only original OnRobot power
+supplies.
+Finally, power up the power supply that will power the Compute Box and the connected
+Tool(s).
+3.4.5.1. Screwdriver
+Power Supply
+1.5 A
+5 A
+6.25 A
+HW INSTALLATION
+18
+
+
+===== PAGE 19 =====
+4. SW Installation
+4.1. Enable Tool connector I/O (If using Tool connector)
+To enable the robot to connect to OnRobot tools via the Tool Connector on the Tool Flange,
+certain I/O settings must be configured.
+Follow the steps below to configure the Tool Connector:
+1.
+Tap the main menu icon
+2. Tap on settings icon
+3. Tap on configuration
+4. Tap on I/O Setup
+5. Check RS485 under the COM2 tab
+6. Check the new option RS485(-) & RS485(+) that appears under the Pin 6 & Pin 7 tab.
+7.
+Tap Save
+SW INSTALLATION
+19
+
+
+===== PAGE 20 =====
+4.2. Robot Software Setup for TMcraft
+4.2.1. Import TMcraft
+OnRobot provides the components in one of the following ways:
+a. The component is stored in the accompanying USB stick (OPTIONAL - may not be part of
+the delivery for some of the devices).
+b. The component can be downloaded from www.onrobot.com.
+NOTE:
+Copy or move the TM_Export folder to the root of the USB stick, then rename
+the USB stick to “TMROBOT”. The component files are password-protected zip
+files and cannot be unfolded.
+Follow the steps below and plug the USB stick into the robot controller to import the TM Craft
+Components:
+1.
+Tap on the main menu icon
+2. Tap on the Settings icon
+3. Tap on System
+4. Tap on Import/Export
+5. Tap Import
+SW INSTALLATION
+20
+
+
+===== PAGE 21 =====
+6. Select the correct folder from the Robot List
+7.
+Tap Select
+8. Tap on TMcraft
+9. Tap on Node
+10. Tap the (GripperNameXXXXNode_xxxx.zip) nodes to be imported
+SW INSTALLATION
+21
+
+
+===== PAGE 22 =====
+11. Tap on Service
+12. Select the OnRobot_tool_service_xxx.zip to be imported
+13. Tap on Toolbar
+14. Select the toolbars (GripperNameToolbar_xxx.zip) to be imported
+15. Tap on Setup
+SW INSTALLATION
+22
+
+
+===== PAGE 23 =====
+16. Select the setups (GripperNameSetup_xxx.zip) to be imported
+17. Tap on the import button
+4.2.2. Enable TMcraft OnRobot components
+After importing the TMcraft OnRobot components, you need to enable them in the
+Configuration tab. Follow the steps below to enable the TMcraft components:
+1.
+Tap on the main menu icon
+2. Tap on the Settings icon
+3. Tap on Configuration
+4. Tap on TMcraft Management
+5. Tap on Node
+6. Enable the OnRobot nodes by clicking the checkbox next to the nodes
+7.
+Tap on Save
+SW INSTALLATION
+23
+
+
+===== PAGE 24 =====
+8. Tap on Toolbar
+9. Enable the OnRobot Toolbar
+10. Tap on Save
+11. Tap on Setup
+12. Enable the OnRobot Setup
+13. Tap on Save
+SW INSTALLATION
+24
+
+
+===== PAGE 25 =====
+14. Tap on Service
+15. Enable the OnRobot tool service
+16. Tap on Save
+17. A popup will appear prompting you to restart the controller. Tap OK to continue.
+18. Restart the controller
+19. Once started again you can check if the service is running by checking the Executing LED
+is Green
+SW INSTALLATION
+25
+
+

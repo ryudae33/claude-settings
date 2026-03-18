@@ -1,0 +1,1719 @@
+jg 1st
+bACK cv
+조립라인
+machine
+MANUAL
+jg 1st back CV조립라인
+MACHINE
+OPERATION MANUAL
+NAME OF COMMODITY JG 1st Back CV 조립라인 MACHINE
+MODEL NO.DIJG01-A
+PROJECT NO. DI-JGCV01A 
+DATE -2025.09.04
+USER’S AGREEMENT : 
+THE CONTENTS OF THIS OPERATION MANUAL ARE VALUABLE PROPERTY 
+OF F-TECH CO., LTD. 
+THE USE OF THIS MANUAL IS ONLY APPLIED WITHIN THE PERMITTED COMPANY.
+DO NOT DISCLOSE THE CONTENTS TO OTHER COMPANIES THAT HAVE NOT BEEN APPROVED BY F-TECH CO., LTD.
+PRODUCT SPECIFICATION
+POWER AC 220V / 50/60Hz / 3P
+SIZE(mm)/WEIGHT20000D x 3500W x 3500H /kg
+AIR PRESSUREMIN. AIR 5bar / MAX AIR 6bar
+THIS OPERATION MANUAL HAS BEEN PRODUCED WITH SPECIAL CARE.
+IF THERE IS ANY PART THAT IS WRONG OR DOES NOT COINCIDE WITH THE EQUIPMENT, CONTACT US AT F-TECH CO., LTD.
+INDEX : OPERATION MANUAL
+CHAP 0. 안전 
+CHAP 1. 운전
+CHAP 2. 운전 중 화면
+CHAP 3. DATA & MONITORING
+CHAP 4. MANUAL OPERATION SCREEN
+CHAP 5. POSITION TEACHING SCREEN
+CHAP 6. ALARM 화면
+CHAP 7. PC I/F 화면
+안전
+안전에 대한 전반적 사항
+안전관리에 대하여
+작업자의 안전을 지키고 본 장치의 고장을 방지하기 위해서는 아래의 안전정보를 충분히 이해하시고, 항상 안전관리에 주의하여 쾌적한 작업에 노력하여 주시기 바랍니다.
+  [위험 : 금지]
+취급주의 사항을 준수하지 않을 경우, 인체에 위험이나 중대한 재해를 초래 할 수 있습니다. 
+사용 전에
+MAIN BREAKER의 1차 측 단자, 단자대를 만지거나 접촉 시, 감전 주의바랍니다.
+MAIN BREAKER를 [ON]으로 하는 경우에는 기계주변의 안전을 확인한 후 [ON] 바랍니다.
+MAIN BREAKER를 [ON]으로 되어 있는 상태에서는 제어반, 조작반, 단자BOX의 COVER는 절대로 열지 않도록 주의 바랍니다.
+MOTOR 회전 중에는 절대로 MAIN BREAKER를 [OFF]하지 않도록 합니다. 
+MOTOR제어가 안되게 되며 사고의 원인이 됩니다.
+MAIN BREAKER를 [OFF]로 하는 경우에도 기계의 [안전]을 확인한 후에 [OFF] 바랍니다.
+유지 보수 작업 전에는 반드시 전원을 OFF, 주 전원 차단 장치의 시건 장치를 잠그십시오.
+일반인의 임의 전원 차단을 방지 할 필요가 있을 경우에도 시건 장치를 잠그십시오.
+비상정지 버튼과 도어 안전 센서 등 안전과 관련된 장치들을 의도적으로 분해 무효화 시키지 마십시오.
+허가된 자 이외에는 배전반을 열지 마십시오.
+유지 보수 작업을 위해 전원을 OFF하고 시건 장치를 잠근 후에도, 주변 사람이 쉽게 볼 수 있는 위치에 유지보수작업중임을 알 수 있도록 안내판 설치바랍니다. 
+ [경고]
+취급주의 사항을 준수하지 않을 경우, 인체에 해를 끼칠 가능성이 있습니다.
+사용 전에
+도어 인터록 장치는 어떠한 경우라도 분해되거나 무효화 되어서는 안 됩니다.
+유지 보수, 고장해결 작업을 하기 전에는 반드시 주 전원을 차단한 후에 작업하십시오.
+비상정지버튼이 눌러진 상태에서는 위험한 작동부의 동력원이 차단됩니다. 그러나, 이것이 모든 전원의 차단을 의미하는 것은 아니며, 다수의 전도부 에는 여전히 전원이 ON 되어 있습니다.
+비상정지버튼을 누르는 행위는 위험한 상황으로부터 벗어나 안전한 상태에 있는 것을 의미하는 것이 아닙니다. 비상정지 버튼은 위험한 상황의 진전과 확산을 막을 뿐입니다.
+전원에 의한 감전사고가 발생하였다면 비상정지버튼이 아닌 주전원 차단기를 내려야 합니다.
+운전 중에는 무리하게 장치의 가동범위로 들어간다거나 조정작업등을 절대로 실시하지 않도록 하여 주시기 바랍니다. 신체의 위험을 가하게 됩니다.
+본 장치의 안전보호 COVER나 가동부의 COVER등을 떼어내거나 안전장치를 개량(개조), 제어회로의 INTERLOCK 제거 등의 개조는 절대로 하지 않도록 합니다.
+보호 COVER를 제거한다거나 열어놓은 상태로 절대로 운전하지 않도록 합니다. 회전부를 만지면 신체에 위험을 가하게 됩니다.
+통지작업이나 정비 점검 등으로 ROLLER를 만지는 경우에는 반드시 MAIN BREAKER를 내리고 ROLLER의 정지를 확인한 후 작업하여 주시기 바랍니다.
+회전중의 제품을 절대로 만지지 말아 주십시오. 제품을 만지는 경우에는 반드시 기계가 정지되었는지 확인한 후 작업을 진행하여 주십시오.
+가동부를 움직인다거나 정비 조정하는 경우에는 손이 들어가는지 주의를 충분히 고려한 후 무리하게 신체와 가까이하지 않도록 주의하여 주시기 바랍니다.
+운전 중 INDEX 주위에 손을 넣는다거나 신체를 가까이 가지 않도록 하여 주십시오.
+SWITCH 조작은 본 기계의 동작을 충분히 숙지한 후에 실시하여 주시기 바랍니다. 조작반, 제어반 내의 청소는 1개월 마다 반드시 실시하여 주시기 바랍니다. 먼지가 쌓이면 누전사고를 발생시킬 위험이 있습니다.
+제어반 내에서의 작업을 실시하는 경우에는 본 기계 전기설비에 대한 지식을 가진 사람이 작업하여 주시기 바랍니다.
+ [주의]
+취급주의 사항을 준수하지 않을 경우, 본 장치나 설비에 부상, 데미지를 입을 수도 있습니다.
+사용 전에
+허가를 받고 작동과 관련한 교육을 받은 사람만이 기계에 대한 접근 권한이 있습니다.
+기계의 작동에 익숙하지 않다면, 설명서를 충분히 숙지하고 작동하십시오.
+비숙련자는 숙련된 작업자의 관리 및 승인 아래 작동할 수 있습니다.
+전문 유지보수 엔지니어나 본사의 엔지니어만이 이 기계에 대한 수리, 유지보수, 교체 등을 할 수 있습니다. 
+설명서에 쓰여져 있는 것과 다른 방법으로 이 장치를 사용할 경우, 예상치 못한 장치의 고장이나 사고로 이어질 수 있습니다. 설명서는 필요한 때에 항상 사용할 수 있도록 본 설비의 근처에 중요하게 보관 바랍니다. 
+ 설비의 안전한 사용 방법
+전기 안전 개요
+본 설비는 고액의 지정된 안전 사양에 준하도록 설계되었습니다. 최우선적으로 사용자의 안전을 고려하였으며, 혹 오동작에 의한 설비 파손에 대비한 경보/ALARM 및 INTERLOCK을 철저히 대비하여 이를 미연에 방지하고자 하였습니다. 사용자는 본 내용을 숙지하고, 안전 상황 발생 시 신속히 대처하고 경보/ALARM 이나 설비 INTERLOCK에 의해 구동이 되지 않을 시 이를 파악하고 조치 할 수 있도록 합니다.
+* 모든 인터록에 대해서는 무효화 불가능하도록 프로그래밍 되어있습니다.
+* 본사와 협의 없이 프로그램 개조로 인한 사고에 대해서는 본사에서 책임지지 않습니다.
+전기 안전 내용
+비상정지 스위치 위치 : Main OP Panel, Local EMO
+비상정지 작동위치는 터치스크린에서 확인합니다.
+작동한 비상정지 스위치를 시계방향으로 돌려서 해제합니다.
+OP BOX의 ALARM RESET 버튼을 1회 누릅니다
+운전
+1.1 전원 투입 및 비상정지 
+Main Menu OP1
+전원 투입은 Main Panel의 Main Power MCCB를 ON 하고 Op Panel의 Power On s/w를 On 하여 투입 합니다. (CONTROL POWER LAMP가 ON 됩니다.)
+ALARM RESET 버튼을 1초간 누른 후 OFF하면 알람해제 됩니다. 
+READY 버튼을 누르면 SERVO X축이 SERVO MOTOR의 원점복귀가 완료 되며 실린더 초기 위치 동작 완료 후LAMP가 점등됩니다. 
+OP PANEL의 MODE AUTO/MAUAL 선택 가능합니다. 자동운전 전 AUTO MODE를 반드시
+하여 주십시오.
+OP PANEL의 CYCLE START 버튼을 누르면 자동운전이 진행됩니다. 
+OP PANEL의 AUTO STOP 버튼을 누르면 자동운전이 정지됩니다.
+비상정지 : 비상 상황 발생시 OP PANEL 및 전/후/좌/우에 위치한 비상정지 버튼을 눌러 전체 SERVO OFF, INVERTER OFF 및 전체 UNIT을 정지합니다. 
+Main Menu OP2
+방음부스 룸 내부 터치판넬이며 별도의 조작스위치 없습니다.
+터치 UI에 조작 스위치.
+-원위치 : 수동모드 상태에서 조작가능 하며 버튼 ON 시 모든 동작이 초기화 상태로 돌아가며
+완료시 스위치 상단에 점등됩니다.
+-자동운전 : 자동모드 상태에 버튼 ON 가능하며 버튼 ON시 자동운전이 동작됩니다.
+-STOP : 설비 가동중 버튼 ON시 정지동작 되며 컨베어 회전이 정지 완료 후 정지가 됩니다.
+-PAUSE : 자동동작 중 버튼 ON시 일시 정지 상태가 됩니다.
+-자동/수동 스위치 : 스위치 ON시 자동운전 및 수동운전 모드 전환스위치 입니다.
+Main Menu OP3
+ALARM RESET 버튼을 1초간 누른 후 OFF하면 알람해제 됩니다. 
+HOME 버튼을 누르면 실린더 초기 위치 동작 완료 후LAMP가 점등됩니다. 
+OP PANEL의 MODE AUTO/MAUAL 선택 가능합니다. 자동운전 전 AUTO MODE를 반드시
+하여 주십시오.
+OP PANEL의 CYCLE START 버튼을 누르면 자동운전이 진행됩니다. 
+비상정지 : 비상 상황 발생시 OP PANEL 및 전/후/좌/우에 위치한 비상정지 버튼을 눌러 전체 SERVO OFF, INVERTER OFF 및 전체 UNIT을 정지합니다. 
+장비 운전 권한
+작업자
+설비의 자동 운전 및 수동 조작 만 가능 (DEFAULT 권한)
+PARAMETER DATA, TEACHING값 변경은 불가
+엔지니어
+작업자 권한 포함 설비 점검과 TROUBLE SHOOTING 처리를 위한 모든 권한 부여
+사용자 관리에서 암호 입력 후 권한 부여
+OP PANEL SWITCH 및 LAMP 
+CONTROL POWER ON/OFF
+MAIN POWER ON/OFF 버튼을 돌려 전원을 투입 및 차단 합니다.
+MODE SWITCH AUTO/MANUAL
+MANUAL 선택 시 각 UNIT을 수동으로 조작 할 수 있습니다.
+AUTO MODE인 경우 장비를 자동으로 운전합니다.
+CYCLE START/STOP S/W
+[START]: AUTO 모드에서 장비를 자동 운전 합니다. HOME START LAMP가 점등(전축 원점복귀 완료)되어야 하고 각 UNIT의 텐션 및 PID 제어가 ON 되어야 운전이 가능합니다.
+[STOP]: 장비의 자동 운전을 STOP 하는 스위치 입니다. (하강 CYCLE 동작 후 정지)
+BUZZER STOP S/W
+ERROR 발생시 BUZZER 음이 울리는데 잠시 소리를 OFF 하고자 하는 경우 사용합니다.
+READY/HOME S/W
+SERVO MOTOR 원점복귀를 시작, 정지하는 버튼입니다. 원점복귀가 완료 된 후 대기 위치로 가며실린더의 모든 동작이 초기위치로 동작합니다.
+ALARM RESET S/W
+Error 발생시 누르면 에러가 해제 됩니다. 
+E-STOP
+비상 상황 발생시 설비 전면에 위치한 비상정지 버튼을 눌러 설비를 정지합니다. 
+운전 중 화면
+초기 SCREEN
+[초기 화면]
+위 화면은 전원을 투입 후 프로그램을 실행하면 보여지는 화면입니다. 
+장비를 가동하기 위한 절차는 다음과 같습니다.
+* 적색 영역을 손으로 클릭하면 해당 상세 화면으로 전환됨.
+1) E-Stop S/W 해제 확인
+2) Main Air 투입 확인
+3) HOME START(전체 Motor Origin 작업)
+MENU 메뉴
+수동운전 SCREEN
+수동운전 메인 화면으로 전환 합니다.
+자동운전 SCREEN
+자동운전 모니터링 화면으로 전환 합니다.
+레이아웃 SCREEN
+설비 레이아웃 모니터 화면으로 전환 합니다. 
+서보 SCREEN
+장비 동작을 위한 각축의 위치를 TEACHING 하거나 각종 DATA 입력하는 화면으로 전환 합니다.
+알람 SCREEN
+    Error 발생 시 보여지는 화면으로 발생된 Error 및 과거 리스트를 확인 하는 화면으로 전환 합니다.
+모니터링 SCREEN : 
+    모니터링 메인 화면으로 전환 합니다. 
+데이타 SCREEN : 
+    데이타 메인 화면으로 전환 합니다. 
+인터페이스 SCREEN :
+인터페이스 메인 화면으로 전환 합니다. 
+SCREEN 상단 정보
+ 화면 상단 Display
+메인화면 화면전환 스위치
+BUZZER STOP 알람발생시 부저의 소음을 정지 시키는 스위치
+날짜와 시간 표시
+자동운전 SCREEN 
+[기본 화면]
+위 화면은 각 UNIT의 PART ON/OFF 상태와 생산 현황을 파악 하는 화면입니다. 각 항목별 상세 설명입니다.
+1) 각 공정별 존 상태 확인 대기중 JIG없는 상태 
+2) JIG 도착 후 제품있음 상태
+3) 작업자의 의해 워크엔드 S/W On후 작업완료 상태가됨.
+4) 작업자의 의해 워크패스 S/W On후 작업 PASS 상태가 됨.
+  푸쉬너트 유무감지 센서
+해당 UNIT의 푸쉬너트가 있을 경우 주황색으로 표시되고, 1,2번의 주황색 점등 후
+NUT LOADING END S/W ON 후 작업진행 가능 상태가 됨.
+    스윙 및 코치 설정 가능 스위치 및 램프
+    설정 된 모델에 대한 동작 구분
+    푸쉬너트 감지 센서 전,후진 동작이 됨,
+ 간거리 검사 자동운전 화면 전환 스위치
+간거리 검사 스윙 자동운전 상태
+간거리 검사 코치 자동운전 상태
+SYSTEM DATA OPERATION
+장비를 구동할 때 사용되는 각 기능 및 설정 값을 변경/확인하는 화면입니다.
+PARAMETER 변경 시 정상적인 생산이 되지 않을 수 있으니 변경에 유의하세요.
+3.1. 데이터 화면
+SCREEN DISPLAY
+ ▶ 이 버튼을 클릭하면 아래의 화면으로 이동한다. 
+Data 설정 Main 화면에서 기능옵션 버튼을 클릭하여 화면을 이동합니다.
+방음실#10 미사용/시용 : 방음실 첫번째 존의 사용을 선택합니다
+방음실#11 미사용/시용 : 방음실 두번째 존의 사용을 선택합니다
+RFID 미사용/시용 : RFID 사용/미사용을 선택합니다
+PC 미사용/시용 : PC작업의 신호를 사용/미사용을 선택합니다
+Dry Run 미사용/시용 : 공회전 운전을 할 경우 사용으로 선택합니다.
+ IO CHECK 
+▶ IO CHECK : 입/출력 상태를 확인 하는 화면입니다.
+확인하고자 하는 IO를 선택합니다.   NEXT 버튼을 누르면 페이지 이동이 됩니다.
+EX) WX40,WX41 을 선택 한 경우
+   X400~X40F, X410~X41F의 입력을 확인 할 수 있습니다.
+MANUAL OPERATION SCREEN
+ 매뉴얼 메인화면
+ 공정 별 수동 화면으로 전환됩니다.
+매뉴얼 메인 화면 OP_01
+[관련 공정 별 화면전환 스위치]
+Section#1
+-> IN LIFT 
+->푸쉬너트공정 (JIG#1)
+->IDLE#1 (JIG#2)
+->럼버 공정 (JIG#3)
+Section#2
+-> 헤드레스트 공정 (JIG#4)
+-> IDLE#2 (JIG#5)
+Section#3
+-> SAB 조립 공정 (JIG#6)
+-> 리트렉터 조립 공정 (JIG#7)
+Section#4
+-> IDLE#3 (JIG#8)
+-> IDLE#4 (JIG#9)
+리턴
+-> 리턴 C/V
+매뉴얼 메인 화면 OP_02
+[관련 공정 별 화면전환 스위치]
+조작화면(Section#5)
+-> 방음실 JIG#10
+-> 방음실 JIG#11
+매뉴얼 메인 화면 OP_03
+[관련 공정 별 화면전환 스위치]
+Section#6
+-> IDLE#5 (JIG#12)
+-> 제품배출 (JIG#13)
+-> 파렛트배출 (JIG#14)
+-> 배출 LIFT
+Swing Coach
+-> 간거리 검사 (SWING)
+-> 간거리 검사 (COACH)
+ Section#1 
+투입리프트 / 푸쉬너트 JIG#1 / 푸쉬너트 트랜스퍼 / IDLE#1 JIG#2 / 럼버 JIG#3 
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+투입 리프트
+-> 컨베이어 : 정회전 및 역회전 스위치 (조건 : End 스토퍼 상승시)
+-> 리프트 : 상승 및 하강 스위치 (조건 : 파렛트 감지시 스토퍼,End 스토퍼 상승시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+-> End 스토퍼 : 상승 및 하강 스위치 (조건 : 없읍)
+푸쉬너트 JIG#1
+-> 컨베이어 : 정회전 및 역회전 스위치 (조건 : 정회전 없음, 역회전 LIFT 상승시)
+-> 팔렛트 : 상승 및 하강 스위치 (조건 : 컨베이어 정지시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+-> 클램프 : 상승 및 하강 스위치 (조건 : 클램프 후진 감지시)
+-> 클램프 왼쪽 : 전진 및 후진 스위치 (조건 : 클램프 상승시)
+-> 클램프 오른쪽 : 전진 및 후진 스위치 (조건 : 클램프 상승시)
+-> 클램프 동시 : 전진 및 후진 스위치 (조건 : 클램프 상승시)
+-> 클램프 : 켜짐 및 꺼짐 스위치 (조건 : 클램프 상승 및 전진시)
+-> 언클램프 : 켜짐 및 꺼짐 스위치 (조건 : 클램프 상승 및 전진시)
+푸쉬너트 트랜스퍼
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 압입 실린더 모두 후진, 감지시 스토퍼 후진시)
+-> 스토퍼 : 전진 및 후진 스위치 (조건 : 압입 실린더 모두 후진, 감지시 스토퍼 상승시)
+-> NUT B 센서 : 전진 및 후진 스위치 (SWING Model : 전진 , COACH Model : 후진)
+-> SWING압입 : 전진 및 후진 스위치 (조건 : SWING MODEL , 트랜스퍼 Y SWING 위치시)
+-> COACH압입 : 전진 및 후진 스위치 (조건 : COACH MODEL , 트랜스퍼 Y COACH 위치시)
+IDLE#1 JIG#2
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+럼버 JIG#3
+-> 팔레트 : 상승 및 하강 스위치 (조건 : 컨베이어 정지시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+ Section#2
+헤드레스트 JIG#4 / IDLE#2 JIG#5 
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+헤드레스트 JIG#4
+-> 팔레트 : 상승 및 하강 스위치 (조건 : 컨베이어 정지시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+IDLE#2 JIG#2
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+ Section#3
+SAB 조립 JIG#6 / 리트렉터 조립 JIG#7
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+SAB 조립 JIG#6
+-> 팔레트 : 상승 및 하강 스위치 (조건 : 컨베이어 정지시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+리트렉터 조립 JIG#7
+-> 팔레트 : 상승 및 하강 스위치 (조건 : 컨베이어 정지시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+(COACH MODEL만 해당됨.)
+ Section#4
+IDLE#3 JIG#8 / IDLE#4 JIG#9
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+(1) IDLE#3 JIG#8
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+(2) IDLE#4 JIG#9
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+ 리턴
+리턴 C/V
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+리턴 C/V
+-> 컨베이어 : 정회전 및 역회전 스위치 (조건 : 정회전 없음, 역회전 LIFT 상승시)
+-> 스토퍼 #1 : 상승 및 하강 스위치 (조건 : 없음)
+-> 스토퍼 #2 : 상승 및 하강 스위치 (조건 : 없음)
+-> 스토퍼 #4 : 상승 및 하강 스위치 (조건 : 없음)
+-> 스토퍼 #6 : 상승 및 하강 스위치 (조건 : 없음)
+ Section#5
+OP#2 : 방음실 JIG#10 / 방음실 JIG#11
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+방음실 JIG#10
+-> 팔레트 : 상승 및 하강 스위치 (조건 : 컨베이어 정지시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+-> DOOR : 오픈 및 클로즈 스위치 (조건 : DOOR 해제 감지시)
+-> DOOR : 밀착 및 해제 스위치 (조건 : DOOR 클로즈 감지시)
+방음실 JIG#11
+-> 팔레트 : 상승 및 하강 스위치 (조건 : 컨베이어 정지시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+-> DOOR : 오픈 및 클로즈 스위치 (조건 : DOOR 해제 감지시)
+-> DOOR : 밀착 및 해제 스위치 (조건 : DOOR 클로즈 감지시)
+ Section#6
+ IDLE#5 JIG#12 / 제품배출 JIG#13 / 팔레트 배출 JIG#14 / 배출 리프트
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+IDLE#5 JIG#12
+-> 컨베이어 : 정회전 및 역회전 스위치 (조건 : 정회전 없음, 역회전 LIFT 상승시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+제품배출 JIG#13
+-> 클램프 : 상승 및 하강 스위치 (조건 : 클램프 후진 감지시)
+-> 클램프 왼쪽 : 전진 및 후진 스위치 (조건 : 클램프 상승시)
+-> 클램프 오른쪽 : 전진 및 후진 스위치 (조건 : 클램프 상승시)
+-> 클램프 동시 : 전진 및 후진 스위치 (조건 : 클램프 상승시)
+-> 클램프 : 켜짐 및 꺼짐 스위치 (조건 : 클램프 상승 및 전진시)
+-> 언클램프 : 켜짐 및 꺼짐 스위치 (조건 : 클램프 상승 및 전진시 실린더 동작)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+팔레트 배출 JIG#14
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+배출 LIFT
+-> 컨베이어 : 정회전 및 역회전 스위치 (조건 : End 스토퍼 상승시)
+-> 리프트 : 상승 및 하강 스위치 (조건 : 파렛트 감지시 스토퍼,End 스토퍼 상승시)
+-> 스토퍼 : 상승 및 하강 스위치 (조건 : 없음)
+-> End 스토퍼 : 상승 및 하강 스위치 (조건 : 없읍)
+간거리 검사
+ SWING / COACH
+[작동 하고자 하는 UNIT 버튼을 눌러 선택을 하고 누르면 작동합니다.]
+SWING
+-> 클램프 : 상승 및 하강 스위치 (조건 : 제품 감지 및 스위치 누름)
+COACH
+-> 클램프 : 상승 및 하강 스위치 (조건 : 제품 감지 및 스위치 누름)
+TEACHING OPERATION
+TEACHING 원리 설명.
+기계 원점위치Machine OriginTypeOffset실제 이동위치Actual Position절대위치Absolute positionRobot
+기계 원점위치
+Machine Origin
+Type
+Offset
+실제 이동위치
+Actual Position
+절대위치
+Absolute 
+position
+Robot
+MACHINE ORIGIN (기계 원점위치) 
+Origin 센서와 Servo Motor의 Z상을 이용한 원점위치
+ABSOLUTE POSITION (절대위치) 
+전 Model에 공통으로 사용되는 위치이며 해당 동작을 하기 위한 기준좌표가 됨.
+(이 값을 변경하면 전 Model에 영향을 미치므로 실제 이동위치 조정이 필요한 경우 
+Offset을 사용함.)
+TYPE DATA
+각 모델의 기준 좌표가 제품에 의해 변경이 필요한 경우 PARAMETER 설정 값으로 생성
+OFFSET 
+해당 Model에서만 적용되며 실제이동위치를 변경
+ACTUAL MOVE POSITION = ABSOLUTE POSITION+TYPE DATA+ OFFSET
+본 장비는 절대위치를 사용하여 TYPE DATA 와 OFFSET은 무시 합니다.
+해당 위치를 선택하고 Enable 축을 Jog로 원하는 위치로 이동한 다음 위치 버튼을 
+3초 동안 누르면 해당 위치 값이 변경됩니다.
+▣ JOG 속도 & PITCH  이동 량 설정
+(1)  해당축의 원점 센서 및 +-LIMIT 센서 동작 상태를 표시
+원점센서는 NORMAL 상태 회색, ON 시 적색으로 표시
+(2) 가속/감속 : 서보모터의 가속 및 감속값을 설정합니다. 
+(3) JOG 속도 : 현재 축에 대한 JOG 이동 속도 설정으로 숫자를 클릭하면 설정 입력 창 표시
+(4) 현재위치 : 현재 축의 위치를 표시합니다.
+(5) 알람코드/토크 값 : 서보의 알람코드 및 서보의 토크를 표시합니다.
+(6) SERVO ON : 서보 ON/OFF를 수행합니다.
+(7) 원점 : 원점 동작을 수행합니다.
+(8) 조그(+) : 조그 전진 이동을 합니다.
+(9) 조그(-) : 조그 후진 이동을 합니다.
+화면 전환MENU
+SCREEN DISPLAY
+ ▶ 이 버튼을 클릭하면 아래의 화면으로 이동합니다. 
+각 Servo Motor의 POSITION 확인 및 설정을 변경 할 수 있는 화면입니다.
+TEACHUNG Main 화면으로 변경 및 확인하고자 하는 내용의 버튼을 클릭하여 화면을 이동합니다 
+▶ 화면전환 버튼: 제목을 클릭하면 해당 화면으로 전환됨.
+▶ TEACHING 해당 화면 공통사항 : 
+▶ 설정화면에서 사용자가 직접 입력을 할 수 있는 숫자나 문자의 경우  
+황색으로 표시 되며 해당 항목을 클릭하면 아래와 같은 숫자나 문자 입력기 가 표시됩니다. 
+Unit 별 티칭 조작
+Transfer Y-Axis#1 
+Transfer Y UNIT 
+대기 위치 : 트랜스퍼의 대기위치로 이동합니다.
+(셋팅 기준 : JIG 제품 투입시 관섭 회피 거리까지 이동 후 현재 위치를 선택된 위치에 저장 버튼을 누른다.)
+SWING 작업위치 : 트랜스퍼의 스윙 압입 위치로 이동합니다.
+(셋팅 기준 : 스윙 샤프트에 실린더를 맞춘뒤 압입 확인 후 현재 위치를 선택된 위치에 저장 버튼을 누른다.)
+COACH 작업위치 : 트랜스퍼의 코치 압입 위치로 이동합니다.
+(셋팅 기준 : 코치 샤프트에 실린더를 맞춘뒤 압입 확인 후 현재 위치를 선택된 위치에 저장 버튼을 누른다.)
+.
+ALARM 화면
+6-1. ALARM DISPLAY
+아래 화면은 ERROR 가 발생 할 경우 Main 화면 우측의 알람 화면 버튼을 클릭하면 전환됩니다. 
+에러 발생 시 [ERROR RESET]을 누를 경우, ERROR 가 해제 되며 [BUZZER STOP] 버튼을 누를 경우 ERROR 는 해제 되지 않고 BUZZER 만 정지하게 됩니다.
+현재 날짜 이전의 ERROR LIST 를 보고자 할 경우 [ALARM HISTORY]를 클릭 하면 
+Alarm History 화면의 ERROR LIST 를 Display 하게 됩니다.  
+적색 영역을 손으로 클릭하면 ALARM DISPLAY 의 상세 화면으로 전환됨. 
+               ②                 ③ 
+알람 선택을 위방향으로 스크롤 합니다.
+알람 선택을 아래방향으로 스크롤 합니다.
+알람 내역을 삭제 합니다.
+주의) 알람 발생은 PLC 기준으로 발생합니다. 현재 알람이 발생한 것을 지우더라도 PLC에서 발생되어 있으면 지워지지 않습니다. 
+  알람 화면에서 이 버튼을 클릭하면 아래의 화면으로 이동합니다. 
+위 화면은 ERROR의 History를 확인 하는 화면입니다. Alarm Display 화면에서 알람이력 버튼을 클릭하면 아래의 화면이 표시됩니다. 
+에러 발생시간 순으로 정렬됩니다.
+적색으로 표시된 부분은 현재 에러가 발생된 상태이고, 청색으로 표시된 부분은 에러가 발생 후  
+     해제된 상태를 표시합니다.
+Buzzer 정지: ERROR 는 해제되지 않고 BUZZER 만 정지하게 됩니다.
+6-2. ALARM LIST
+NO.
+알람명
+비고
+[L10000]S_Prod_RESERVED
+[L10001]S_Prod_PLC Battery Low Alarm(SM52)
+[L10002]S_Prod_Main Panel Temp. Over Alarm
+[L10003]S_Prod_RESERVED
+[L10004]S_Prod_RESERVED
+[L10005]S_Prod_RESERVED
+[L10006]S_Prod_RESERVED
+[L10007]S_Prod_RESERVED
+[L10008]S_Prod_RESERVED
+[L10009]S_Prod_CIM Warning
+[L10010]S_Prod_RESERVED
+[L10011]S_Prod_Door 01-1 Open Alarm
+[L10012]S_Prod_Door 01-2 Open Alarm
+[L10013]S_Prod_Door 01-3 Open Alarm
+[L10014]S_Prod_Door 01-4 Open Alarm
+[L10015]S_Prod_Door 02-1 Open Alarm
+[L10016]S_Prod_Door 02-2 Open Alarm
+[L10017]S_Prod_Door 02-3 Open Alarm
+[L10018]S_Prod_Door 02-4 Open Alarm
+[L10019]S_Prod_RESERVED
+[L10020]S_Prod_RESERVED
+[L10021]S_Prod_RESERVED
+[L10022]S_Prod_RESERVED
+[L10023]S_Prod_RESERVED
+[L10024]S_Prod_RESERVED
+[L10025]S_Prod_RESERVED
+[L10026]S_Prod_RESERVED
+[L10027]S_Prod_RESERVED
+[L10028]S_Prod_RESERVED
+[L10029]S_Prod_RESERVED
+[L10030]S_Prod_RESERVED
+[L10031]S_Prod_RESERVED
+[L10032]S_Prod_RESERVED
+[L10033]S_Prod_RESERVED
+[L10034]S_Prod_RESERVED
+[L10035]S_Prod_RESERVED
+[L10036]S_Prod_RESERVED
+[L10037]S_Prod_RESERVED
+[L10038]S_Prod_RESERVED
+[L10039]S_Prod_RESERVED
+[L10040]S_Maint_RESERVED
+[L10041]S_Maint_RESERVED
+[L10042]S_Maint_RESERVED
+[L10043]S_Maint_RESERVED
+[L10044]S_Maint_RESERVED
+[L10045]S_Maint_RESERVED
+[L10046]S_Maint_RESERVED
+[L10047]S_Maint_RESERVED
+[L10048]S_Maint_RESERVED
+[L10049]S_Maint_RESERVED
+[L10050]S_Maint_Currnet Model Number Miss Match Error
+[L10051]S_Maint_CIM PC OFF LINE Error
+[L10052]S_Maint_MES Link Test Timeout Error
+[L10053]S_Maint_CIM Alarm
+[L10054]S_Maint_RESERVED
+[L10055]S_Maint_RESERVED
+[L10056]S_Maint_RESERVED
+[L10057]S_Maint_RESERVED
+[L10058]S_Maint_RESERVED
+[L10059]S_Maint_RESERVED
+[L10060]S_Maint_RESERVED
+[L10061]S_Maint_EMO#1 Error_Main OP(X 504)
+[L10062]S_Maint_EMO#2 Error_ST#6 OP(X 564)
+[L10063]S_Maint_EMO#3 Error_IN_LIFT(X 583)
+[L10064]S_Maint_EMO#4 Error_JIG#03(X 593)
+[L10065]S_Maint_EMO#5 Error_JIG#10(X 6C4)
+[L10066]S_Maint_EMO#6 Error_JIG#11(X 704)
+[L10067]S_Maint_EMO#7 Error_OUT_LIFT(X 743)
+[L10068]S_Maint_EMO#8 Error_JIG#14(X 753)
+[L10069]S_Maint_EMO#9 Error
+[L10070]S_Maint_EMO#10 Error
+[L10071]S_Maint_EMO#11 Error
+[L10072]S_Maint_EMO#12 Error
+[L10073]S_Maint_EMO#13 Error
+[L10074]S_Maint_EMO#14 Error
+[L10075]S_Maint_EMO#15 Error
+[L10076]S_Maint_EMO#16 Error
+[L10077]S_Maint_EMO#17 Error
+[L10078]S_Maint_EMO#18 Error
+[L10079]S_Maint_EMO#19 Error
+[L10080]S_Maint_EMO#20 Error
+[L10081]S_Maint_EMO#21 Error
+[L10082]S_Maint_EMO#22 Error
+[L10083]S_Maint_EMO#23 Error
+[L10084]S_Maint_EMO#24 Error
+[L10085]S_Maint_EMO#25 Error
+[L10086]S_Maint_EMO#26 Error
+[L10087]S_Maint_EMO#27 Error
+[L10088]S_Maint_EMO#28 Error
+[L10089]S_Maint_EMO#29 Error
+[L10090]S_Maint_RESERVED
+[L10091]S_Maint_RESERVED
+[L10092]S_Maint_RESERVED
+[L10093]S_Maint_RESERVED
+[L10094]S_Maint_RESERVED
+[L10095]S_Maint_RESERVED
+[L10096]S_Maint_RESERVED
+[L10097]S_Maint_RESERVED
+[L10098]S_Maint_RESERVED
+[L10099]S_Maint_RESERVED
+[L10100]S_Maint_CBA+11C4_Trip Check_3Ph, 220Vac Surge Protective01 Power Error
+[L10101]S_Maint_CBA+11B5_Trip Check_24VDC Control on/off Supply Power Error
+[L10102]S_Maint_CBA+12B2_Trip Check_3Ph, Main Receptacle Power Error
+[L10103]S_Maint_CBA+12B3_Trip Check_3Ph, 220Vac Laser Printer Power Error
+[L10104]S_Maint_---
+[L10105]S_Maint_CPA+15B2_Trip Check_24VDC Control on/off Power Error
+[L10106]S_Maint_CPA+15C3_Trip Check_24VDC Main Panel On Lamp Power Error
+[L10107]S_Maint_CPA+15D5_Trip Check_24VDC Cooling Fan (DOOR) Power Error
+[L10108]S_Maint_---
+[L10109]S_Maint_CBA+21B2_Trip Check_3Ph 220Vac SV./INVT. EMG Power Error
+[L10110]S_Maint_MCA+21D2_On Check_3Ph 220Vac SV./INVT. EMG MC Power Error
+[L10111]S_Maint_---
+[L10112]S_Maint_CBA+22B2_Trip Check_3Ph 220Vac Servo Motor Power Error
+[L10113]S_Maint_CBA+22B3_Trip Check_3Ph 220Vac Inverter Motor Power Error
+[L10114]S_Maint_---
+[L10115]S_Maint_MMA+A1B2_Trip Check_SV#01 Transfer Y-Axis Power Error
+[L10116]S_Maint_MMA+A1B6_Trip Check_SV#02 Power Error
+[L10117]S_Maint_MMA+A2B2_Trip Check_SV#03 Power Error
+[L10118]S_Maint_---
+[L10119]S_Maint_MMA+C1B2_Trip Check_INV#01 In Lift Motor Power Error
+[L10120]S_Maint_MMA+C1B5_Trip Check_INV#02 Out Lift Motor Power Error
+[L10121]S_Maint_MMA+C2B2_Trip Check_INV#03 ST#1C/V Motor Power Error
+[L10122]S_Maint_MMA+C1B2_Trip Check_INV#04 ST#4C/V Motor Power Error
+[L10123]S_Maint_MMA+C1B2_Trip Check_INV#05 ST#5C/V Motor Power Error
+[L10124]S_Maint_MMA+C1B2_Trip Check_INV#06 ST#6C/V Motor Power Error
+[L10125]S_Maint_RESERVED
+[L10126]S_Maint_RESERVED
+[L10127]S_Maint_RESERVED
+[L10128]S_Maint_RESERVED
+[L10129]S_Maint_RESERVED
+[L10130]S_Maint_CBA+21D3_Trip Check_Servo Drive Control Power Error
+[L10131]S_Maint_CBA+24B2_Trip_2Ph 220V Main Panel Recept Power Error
+[L10132]S_Maint_CBA+24B3_Trip_PLC Power Error
+[L10133]S_Maint_---
+[L10134]S_Maint_CBA+25B2_Trip_Main Control 24Vdc SMPS Power Error
+[L10135]S_Maint_---
+[L10136]S_Maint_---
+[L10137]S_Maint_CPA+25E2_Trip_Main Panel Box unit 24Vdc Power Error
+[L10138]S_Maint_CPA+25E3_Trip_Local Panel Box unit 24Vdc Power Error
+[L10139]S_Maint_RESERVED
+[L10140]S_Maint_IN LIFT C/V Motor Alarm
+[L10141]S_Maint_OUT LIFT C/V Motor Alarm 
+[L10142]S_Maint_Section#1~4  Conveyor Motor Alarm
+[L10143]S_Maint_RETURN  Conveyor Motor Alarm
+[L10144]S_Maint_Section#5  Conveyor Motor Alarm
+[L10145]S_Maint_Section#6  Conveyor Motor Alarm
+[L10146]S_Maint_RESERVED
+[L10147]S_Maint_RESERVED
+[L10148]S_Maint_RESERVED
+[L10149]S_Maint_RESERVED
+[L10150]S_Maint_RESERVED
+[L10151]S_Maint_RESERVED
+[L10152]S_Maint_RESERVED
+[L10153]S_Maint_RESERVED
+[L10154]S_Maint_RESERVED
+[L10155]S_Maint_RESERVED
+[L10156]S_Maint_RESERVED
+[L10157]S_Maint_RESERVED
+[L10158]S_Maint_RESERVED
+[L10159]S_Maint_RESERVED
+[L10160]S_Maint_RESERVED
+[L10161]S_Maint_RESERVED
+[L10162]S_Maint_RESERVED
+[L10163]S_Maint_RESERVED
+[L10164]S_Maint_RESERVED
+[L10165]S_Maint_RESERVED
+[L10166]S_Maint_RESERVED
+[L10167]S_Maint_RESERVED
+[L10168]S_Maint_RESERVED
+[L10169]S_Maint_RESERVED
+[L10170]S_Maint_RESERVED
+[L10171]S_Maint_RESERVED
+[L10172]S_Maint_RESERVED
+[L10173]S_Maint_RESERVED
+[L10174]S_Maint_RESERVED
+[L10175]S_Maint_RESERVED
+[L10176]S_Maint_RESERVED
+[L10177]S_Maint_RESERVED
+[L10178]S_Maint_RESERVED
+[L10179]S_Maint_RESERVED
+[L10180]S_Maint_RESERVED
+[L10181]S_Maint_RESERVED
+[L10182]S_Maint_RESERVED
+[L10183]S_Maint_RESERVED
+[L10184]S_Maint_RESERVED
+[L10185]S_Maint_RESERVED
+[L10186]S_Maint_RESERVED
+[L10187]S_Maint_RESERVED
+[L10188]S_Maint_RESERVED
+[L10189]S_Maint_RESERVED
+[L10190]S_Maint_RESERVED
+[L10191]S_Maint_RESERVED
+[L10192]S_Maint_RESERVED
+[L10193]S_Maint_RESERVED
+[L10194]S_Maint_RESERVED
+[L10195]S_Maint_RESERVED
+[L10196]S_Maint_RESERVED
+[L10197]S_Maint_RESERVED
+[L10198]S_Maint_RESERVED
+[L10199]S_Maint_RESERVED
+[L10200]S_Maint_CPA+51B4_Trip Check_Touch#01 Power Error
+[L10201]S_Maint_CBB+13B2_Trip Check_Section#1 Local Receptacle Power Error
+[L10202]S_Maint_CPB+35B2_Trip Check_Section#1 Local Box 24Vdc Power Error
+[L10203]S_Maint_CPA+52B4_Trip Check_Touch#02 Power Error
+[L10204]S_Maint_CBB+13B3_Trip Check_Section#2 Local Receptacle Power Error
+[L10205]S_Maint_CPB+35B3_Trip Check_Section#2 Local Box 24Vdc Power Error
+[L10206]S_Maint_CPA+53B4_Trip Check_Touch#03 Power Error
+[L10207]S_Maint_CBB+13B4_Trip Check_Section#3 Local Receptacle Power Error
+[L10208]S_Maint_CPB+35B4_Trip Check_Section#3 Local Box 24Vdc Power Error
+[L10209]S_Maint_CBB+13B5_Trip Check_Section#4 Local Receptacle Power Error
+[L10210]S_Maint_CPB+35B5_Trip Check_Section#4 Local Box 24Vdc Power Error
+[L10211]S_Maint_CBB+13B6_Trip Check_Section#5 Local Receptacle Power Error
+[L10212]S_Maint_CPB+35B6_Trip Check_Section#5 Local Box 24Vdc Power Error
+[L10213]S_Maint_CBB+13B7_Trip Check_Section#6 Local Receptacle Power Error
+[L10214]S_Maint_CPB+35B7_Trip Check_Section#6 Local Box 24Vdc Power Error
+[L10215]S_Maint_CBB+14B2_Trip Check_Section#7 Local Receptacle Power Error
+[L10216]S_Maint_CPB+35B8_Trip Check_Section#7 Local Box 24Vdc Power Error
+[L10217]S_Maint_RESERVED
+[L10218]S_Maint_RESERVED
+[L10219]S_Maint_RESERVED
+[L10220]S_Maint_Part #01_1 Main Air Error
+[L10221]S_Maint_RESERVED
+[L10222]S_Maint_RESERVED
+[L10223]S_Maint_RESERVED
+[L10224]S_Maint_RESERVED
+[L10225]S_Maint_RESERVED
+[L10226]S_Maint_RESERVED
+[L10227]S_Maint_RESERVED
+[L10228]S_Maint_RESERVED
+[L10229]S_Maint_RESERVED
+[L10230]S_Maint_RESERVED
+[L10231]S_Maint_RESERVED
+[L10232]S_Maint_RESERVED
+[L10233]S_Maint_RESERVED
+[L10234]S_Maint_RESERVED
+[L10235]S_Maint_RESERVED
+[L10236]S_Maint_RESERVED
+[L10237]S_Maint_RESERVED
+[L10238]S_Maint_RESERVED
+[L10239]S_Maint_RESERVED
+[L10240]S_Maint_RESERVED
+[L10241]S_Maint_RESERVED
+[L10242]S_Maint_RESERVED
+[L10243]S_Maint_RESERVED
+[L10244]S_Maint_RESERVED
+[L10245]S_Maint_RESERVED
+[L10246]S_Maint_RESERVED
+[L10247]S_Maint_RESERVED
+[L10248]S_Maint_RESERVED
+[L10249]S_Maint_RESERVED
+[L10250]S_Maint_RESERVED
+[L10251]S_Maint_RESERVED
+[L10252]S_Maint_RESERVED
+[L10253]S_Maint_RESERVED
+[L10254]S_Maint_RESERVED
+[L10255]S_Maint_RESERVED
+[L10256]S_Maint_RESERVED
+[L10257]S_Maint_RESERVED
+[L10258]S_Maint_RESERVED
+[L10259]S_Maint_RESERVED
+[L10260]S_Maint_RESERVED
+[L10261]S_Maint_RESERVED
+[L10262]S_Maint_RESERVED
+[L10263]S_Maint_RESERVED
+[L10264]S_Maint_RESERVED
+[L10265]S_Maint_RESERVED
+[L10266]S_Maint_RESERVED
+[L10267]S_Maint_RESERVED
+[L10268]S_Maint_RESERVED
+[L10269]S_Maint_RESERVED
+[L10270]S_Maint_RESERVED
+[L10271]S_Maint_RESERVED
+[L10272]S_Maint_RESERVED
+[L10273]S_Maint_RESERVED
+[L10274]S_Maint_RESERVED
+[L10275]S_Maint_RESERVED
+[L10276]S_Maint_RESERVED
+[L10277]S_Maint_RESERVED
+[L10278]S_Maint_RESERVED
+[L10279]S_Maint_RESERVED
+[L10280]S_Maint_RESERVED
+[L10281]S_Maint_RESERVED
+[L10282]S_Maint_RESERVED
+[L10283]S_Maint_RESERVED
+[L10284]S_Maint_RESERVED
+[L10285]S_Maint_RESERVED
+[L10286]S_Maint_RESERVED
+[L10287]S_Maint_RESERVED
+[L10288]S_Maint_RESERVED
+[L10289]S_Maint_RESERVED
+[L10290]S_Maint_RESERVED
+[L10291]S_Maint_RESERVED
+[L10292]S_Maint_RESERVED
+[L10293]S_Maint_RESERVED
+[L10294]S_Maint_RESERVED
+[L10295]S_Maint_RESERVED
+[L10296]S_Maint_RESERVED
+[L10297]S_Maint_RESERVED
+[L10298]S_Maint_RESERVED
+[L10299]S_Maint_RESERVED
+[L10300]S_Maint_RESERVED
+[L10301]S_Maint_RESERVED
+[L10302]S_Maint_RESERVED
+[L10303]S_Maint_RESERVED
+[L10304]S_Maint_RESERVED
+[L10305]S_Maint_RESERVED
+[L10306]S_Maint_RESERVED
+[L10307]S_Maint_RESERVED
+[L10308]S_Maint_RESERVED
+[L10309]S_Maint_RESERVED
+[L10310]S_Maint_RESERVED
+[L10311]S_Maint_RESERVED
+[L10312]S_Maint_RESERVED
+[L10313]S_Maint_RESERVED
+[L10314]S_Maint_RESERVED
+[L10315]S_Maint_RESERVED
+[L10316]S_Maint_RESERVED
+[L10317]S_Maint_RESERVED
+[L10318]S_Maint_RESERVED
+[L10319]S_Maint_RESERVED
+[L10320]S_Maint_RESERVED
+[L10321]S_Maint_RESERVED
+[L10322]S_Maint_RESERVED
+[L10323]S_Maint_RESERVED
+[L10324]S_Maint_RESERVED
+[L10325]S_Maint_RESERVED
+[L10326]S_Maint_RESERVED
+[L10327]S_Maint_RESERVED
+[L10328]S_Maint_RESERVED
+[L10329]S_Maint_RESERVED
+[L10330]S_Maint_RESERVED
+[L10331]S_Maint_RESERVED
+[L10332]S_Maint_RESERVED
+[L10333]S_Maint_RESERVED
+[L10334]S_Maint_RESERVED
+[L10335]S_Maint_RESERVED
+[L10336]S_Maint_RESERVED
+[L10337]S_Maint_RESERVED
+[L10338]S_Maint_RESERVED
+[L10339]S_Maint_RESERVED
+[L10340]S_Maint_RESERVED
+[L10341]S_Maint_RESERVED
+[L10342]S_Maint_RESERVED
+[L10343]S_Maint_RESERVED
+[L10344]S_Maint_RESERVED
+[L10345]S_Maint_RESERVED
+[L10346]S_Maint_RESERVED
+[L10347]S_Maint_RESERVED
+[L10348]S_Maint_RESERVED
+[L10349]S_Maint_RESERVED
+[L10350]S_Maint_RESERVED
+[L10351]S_Maint_RESERVED
+[L10352]S_Maint_RESERVED
+[L10353]_RESERVED
+[L10354]_RESERVED
+[L10355]_RESERVED
+[L10356]_RESERVED
+[L10357]_RESERVED
+[L10358]_RESERVED
+[L10359]_RESERVED
+[L10360]_RESERVED
+[L10361]_RESERVED
+[L10362]_RESERVED
+[L10363]_RESERVED
+[L10364]_RESERVED
+[L10365]_RESERVED
+[L10366]_RESERVED
+[L10367]_RESERVED
+[L10368]_RESERVED
+[L10369]_RESERVED
+[L10370]_RESERVED
+[L10371]_RESERVED
+[L10372]_RESERVED
+[L10373]_RESERVED
+[L10374]_RESERVED
+[L10375]_RESERVED
+[L10376]_RESERVED
+[L10377]_RESERVED
+[L10378]_RESERVED
+[L10379]_RESERVED
+[L10380]_RESERVED
+[L10381]_RESERVED
+[L10382]_RESERVED
+[L10383]_RESERVED
+[L10384]_RESERVED
+[L10385]_RESERVED
+[L10386]_RESERVED
+[L10387]_RESERVED
+[L10388]_RESERVED
+[L10389]_RESERVED
+[L10390]_RESERVED
+[L10391]_RESERVED
+[L10392]_RESERVED
+[L10393]_RESERVED
+[L10394]_RESERVED
+[L10395]_RESERVED
+[L10396]_RESERVED
+[L10397]_RESERVED
+[L10398]_RESERVED
+[L10399]_RESERVED
+[L10400]_Unit #01 Warning
+[L10401]_Unit #01 Warning
+[L10402]_Unit #01 Warning
+[L10403]_Unit #01 Warning
+[L10404]_Unit #01 Warning
+[L10405]_Unit #01 Warning
+[L10406]_Unit #01 Warning
+[L10407]_Unit #01 Warning
+[L10408]_Unit #01 Warning
+[L10409]_Unit #01 Warning
+[L10410]_INV#01_In Lift_ C/V Error
+[L10411]_INV#01_In Lift_ C/V Run T/O Error
+[L10412]_RESERVED
+[L10413]_RESERVED
+[L10414]_In Lift C/V Pallet Detect Error
+[L10415]_RESERVED
+[L10416]_RESERVED
+[L10417]_RESERVED
+[L10418]_RESERVED
+[L10419]_RESERVED
+[L10420]_In Lift C/V Stopper UP/DW Error
+[L10421]_In Lift C/V End Stopper UP/DW  Error
+[L10422]_In Lift Pallet UP/DW Error
+[L10423]_RESERVED
+[L10424]_RESERVED
+[L10425]_RESERVED
+[L10426]_RESERVED
+[L10427]_RESERVED
+[L10428]_RESERVED
+[L10429]_RESERVED
+[L10430]_INV #03_JIG1~9 C/V Error
+[L10431]_INV #03_JIG1~9 C/V Run Time Out Error
+[L10432]_INV #03_JIG1~9 C/V Run NG Error
+[L10433]_RESERVED
+[L10434]_U_JIG 1 C/V Pallet Detect Error
+[L10435]_Transfer B Sensor L Nut  Error
+[L10436]_Transfer B Sensor r Nut  Error
+[L10437]_RESERVED
+[L10438]_RESERVED
+[L10439]_RESERVED
+[L10440]_U_JIG 1 C/V Stopper UP/DW Error
+[L10441]_RESERVED
+[L10442]_U_JIG 1 C/V Pallet UP/DW Error
+[L10443]_U_JIG#01 CLAMP Up/Down Error
+[L10444]_U_JIG#01 CLAMP(LEFT)FW/BW Error
+[L10445]_U_JIG#01 CLAMP(RIGHT)FW/BW Err
+[L10446]_Transfer Stopper UP/Down Error
+[L10447]_Transfer Stopper Fw/Bw Error
+[L10448]_Transfer B Sensor Fw/Bw Error
+[L10449]_Transfer Swing 압입 Fw/Bw Error
+[L10450]_Transfer Coach 압입 Fw/Bw Error
+[L10451]_RESERVED
+[L10452]_RESERVED
+[L10453]_PCtoPLC Flicker Error
+[L10454]_U_JIG 2 C/V Pallet Detect Error
+[L10455]_RESERVED
+[L10456]_RESERVED
+[L10457]_RESERVED
+[L10458]_RESERVED
+[L10459]_RESERVED
+[L10460]_U_JIG 2 C/V Stopper UP/DW Error
+[L10461]_RESERVED
+[L10462]_RESERVED
+[L10463]_RESERVED
+[L10464]_RESERVED
+[L10465]_RESERVED
+[L10466]_RESERVED
+[L10467]_RESERVED
+[L10468]_RESERVED
+[L10469]_RESERVED
+[L10470]_RESERVED
+[L10471]_RESERVED
+[L10472]_RESERVED
+[L10473]_RESERVED
+[L10474]_U_JIG 3 C/V Pallet Detect Error
+[L10475]_RESERVED
+[L10476]_RESERVED
+[L10477]_RESERVED
+[L10478]_RESERVED
+[L10479]_RESERVED
+[L10480]_U_JIG 3 C/V Stopper UP/DW Error
+[L10481]_RESERVED
+[L10482]_U_JIG 3 C/V Pallet UP/DW Error
+[L10483]_RESERVED
+[L10484]_RESERVED
+[L10485]_RESERVED
+[L10486]_RESERVED
+[L10487]_RESERVED
+[L10488]_RESERVED
+[L10489]_RESERVED
+[L10490]_TRANSFER Axis#01 Origin  Alarm
+[L10491]_TRANSFER Axis#01 Servo   Alarm
+[L10492]_TRANSFER Axis#01 Limit   Alarm
+[L10493]_TRANSFER Axis#01 Moving TimeOut Error
+[L10494]_RESERVED
+[L10495]_RESERVED
+[L10496]_RESERVED
+[L10497]_RESERVED
+[L10498]_RESERVED
+[L10499]_RESERVED
+[L10500]_Unit #02 Warning
+[L10501]_Unit #02 Warning
+[L10502]_Unit #02 Warning
+[L10503]_Unit #02 Warning
+[L10504]_Unit #02 Warning
+[L10505]_Unit #02 Warning
+[L10506]_Unit #02 Warning
+[L10507]_Unit #02 Warning
+[L10508]_Unit #02 Warning
+[L10509]_Unit #02 Warning
+[L10510]_RESERVED
+[L10511]_RESERVED
+[L10512]_RESERVED
+[L10513]_RESERVED
+[L10514]_U_JIG 4 C/V Pallet Detect Error
+[L10515]_RESERVED
+[L10516]_RESERVED
+[L10517]_RESERVED
+[L10518]_RESERVED
+[L10519]_RESERVED
+[L10520]_U_JIG 4 C/V Stopper UP/DW Error
+[L10521]_RESERVED
+[L10522]_U_JIG 4 C/V Pallet UP/DW Error
+[L10523]_RESERVED
+[L10524]_RESERVED
+[L10525]_RESERVED
+[L10526]_RESERVED
+[L10527]_RESERVED
+[L10528]_RESERVED
+[L10529]_RESERVED
+[L10530]_RESERVED
+[L10531]_RESERVED
+[L10532]_RESERVED
+[L10533]_RESERVED
+[L10534]_U_JIG 5 C/V Pallet Detect Error
+[L10535]_RESERVED
+[L10536]_RESERVED
+[L10537]_RESERVED
+[L10538]_RESERVED
+[L10539]_RESERVED
+[L10540]_U_JIG 5 C/V Stopper UP/DW Error
+[L10541]_RESERVED
+[L10542]_RESERVED
+[L10543]_RESERVED
+[L10544]_RESERVED
+[L10545]_RESERVED
+[L10546]_RESERVED
+[L10547]_RESERVED
+[L10548]_RESERVED
+[L10549]_RESERVED
+[L10550]_RESERVED
+[L10551]_RESERVED
+[L10552]_RESERVED
+[L10553]_RESERVED
+[L10554]_RESERVED
+[L10555]_RESERVED
+[L10556]_RESERVED
+[L10557]_RESERVED
+[L10558]_RESERVED
+[L10559]_RESERVED
+[L10560]_RESERVED
+[L10561]_RESERVED
+[L10562]_RESERVED
+[L10563]_RESERVED
+[L10564]_RESERVED
+[L10565]_RESERVED
+[L10566]_RESERVED
+[L10567]_RESERVED
+[L10568]_RESERVED
+[L10569]_RESERVED
+[L10570]_RESERVED
+[L10571]_RESERVED
+[L10572]_RESERVED
+[L10573]_RESERVED
+[L10574]_RESERVED
+[L10575]_RESERVED
+[L10576]_RESERVED
+[L10577]_RESERVED
+[L10578]_RESERVED
+[L10579]_RESERVED
+[L10580]_RESERVED
+[L10581]_RESERVED
+[L10582]_RESERVED
+[L10583]_RESERVED
+[L10584]_RESERVED
+[L10585]_RESERVED
+[L10586]_RESERVED
+[L10587]_RESERVED
+[L10588]_RESERVED
+[L10589]_RESERVED
+[L10590]_RESERVED
+[L10591]_RESERVED
+[L10592]_RESERVED
+[L10593]_RESERVED
+[L10594]_RESERVED
+[L10595]_RESERVED
+[L10596]_RESERVED
+[L10597]_RESERVED
+[L10598]_RESERVED
+[L10599]_RESERVED
+[L10600]_Unit #03 Warning
+[L10601]_Unit #03 Warning
+[L10602]_Unit #03 Warning
+[L10603]_Unit #03 Warning
+[L10604]_Unit #03 Warning
+[L10605]_Unit #03 Warning
+[L10606]_Unit #03 Warning
+[L10607]_Unit #03 Warning
+[L10608]_Unit #03 Warning
+[L10609]_Unit #03 Warning
+[L10610]_RESERVED
+[L10611]_RESERVED
+[L10612]_RESERVED
+[L10613]_RESERVED
+[L10614]_U_JIG 6 C/V Pallet Detect Error
+[L10615]_RESERVED
+[L10616]_RESERVED
+[L10617]_RESERVED
+[L10618]_RESERVED
+[L10619]_RESERVED
+[L10620]_U_JIG 6 C/V Stopper UP/DW Error
+[L10621]_RESERVED
+[L10622]_U_JIG 6 C/V Pallet UP/DW Error
+[L10623]_RESERVED
+[L10624]_RESERVED
+[L10625]_RESERVED
+[L10626]_RESERVED
+[L10627]_RESERVED
+[L10628]_RESERVED
+[L10629]_RESERVED
+[L10630]_RESERVED
+[L10631]_RESERVED
+[L10632]_RESERVED
+[L10633]_RESERVED
+[L10634]_U_JIG 7 C/V Pallet Detect Error
+[L10635]_RESERVED
+[L10636]_RESERVED
+[L10637]_RESERVED
+[L10638]_RESERVED
+[L10639]_RESERVED
+[L10640]_U_JIG 7 C/V Stopper UP/DW Error
+[L10641]_RESERVED
+[L10642]_U_JIG 7 C/V Pallet UP/DW Error
+[L10643]_RESERVED
+[L10644]_RESERVED
+[L10645]_RESERVED
+[L10646]_RESERVED
+[L10647]_RESERVED
+[L10648]_RESERVED
+[L10649]_RESERVED
+[L10650]_RESERVED
+[L10651]_RESERVED
+[L10652]_RESERVED
+[L10653]_RESERVED
+[L10654]_RESERVED
+[L10655]_RESERVED
+[L10656]_RESERVED
+[L10657]_RESERVED
+[L10658]_RESERVED
+[L10659]_RESERVED
+[L10660]_RESERVED
+[L10661]_RESERVED
+[L10662]_RESERVED
+[L10663]_RESERVED
+[L10664]_RESERVED
+[L10665]_RESERVED
+[L10666]_RESERVED
+[L10667]_RESERVED
+[L10668]_RESERVED
+[L10669]_RESERVED
+[L10670]_RESERVED
+[L10671]_RESERVED
+[L10672]_RESERVED
+[L10673]_RESERVED
+[L10674]_RESERVED
+[L10675]_RESERVED
+[L10676]_RESERVED
+[L10677]_RESERVED
+[L10678]_RESERVED
+[L10679]_RESERVED
+[L10680]_RESERVED
+[L10681]_RESERVED
+[L10682]_RESERVED
+[L10683]_RESERVED
+[L10684]_RESERVED
+[L10685]_RESERVED
+[L10686]_RESERVED
+[L10687]_RESERVED
+[L10688]_RESERVED
+[L10689]_RESERVED
+[L10690]_RESERVED
+[L10691]_RESERVED
+[L10692]_RESERVED
+[L10693]_RESERVED
+[L10694]_RESERVED
+[L10695]_RESERVED
+[L10696]_RESERVED
+[L10697]_RESERVED
+[L10698]_RESERVED
+[L10699]_RESERVED
+[L10700]_Unit #04 Warning
+[L10701]_Unit #04 Warning
+[L10702]_Unit #04 Warning
+[L10703]_Unit #04 Warning
+[L10704]_Unit #04 Warning
+[L10705]_Unit #04 Warning
+[L10706]_Unit #04 Warning
+[L10707]_Unit #04 Warning
+[L10708]_Unit #04 Warning
+[L10709]_Unit #04 Warning
+[L10710]_RESERVED
+[L10711]_RESERVED
+[L10712]_RESERVED
+[L10713]_RESERVED
+[L10714]_U_JIG 8 C/V Pallet Detect Error
+[L10715]_RESERVED
+[L10716]_RESERVED
+[L10717]_RESERVED
+[L10718]_RESERVED
+[L10719]_RESERVED
+[L10720]_U_JIG 8 C/V Stopper UP/DW Error
+[L10721]_RESERVED
+[L10722]_RESERVED
+[L10723]_RESERVED
+[L10724]_RESERVED
+[L10725]_RESERVED
+[L10726]_RESERVED
+[L10727]_RESERVED
+[L10728]_RESERVED
+[L10729]_RESERVED
+[L10730]_RESERVED
+[L10731]_RESERVED
+[L10732]_RESERVED
+[L10733]_RESERVED
+[L10734]_U_JIG 9 C/V Pallet Detect Error
+[L10735]_RESERVED
+[L10736]_RESERVED
+[L10737]_RESERVED
+[L10738]_RESERVED
+[L10739]_RESERVED
+[L10740]_U_JIG 9 C/V Stopper UP/DW Error
+[L10741]_RESERVED
+[L10742]_RESERVED
+[L10743]_RESERVED
+[L10744]_RESERVED
+[L10745]_RESERVED
+[L10746]_RESERVED
+[L10747]_RESERVED
+[L10748]_RESERVED
+[L10749]_RESERVED
+[L10750]_RESERVED
+[L10751]_RESERVED
+[L10752]_RESERVED
+[L10753]_RESERVED
+[L10754]_RESERVED
+[L10755]_RESERVED
+[L10756]_RESERVED
+[L10757]_RESERVED
+[L10758]_RESERVED
+[L10759]_RESERVED
+[L10760]_RESERVED
+[L10761]_RESERVED
+[L10762]_RESERVED
+[L10763]_RESERVED
+[L10764]_RESERVED
+[L10765]_RESERVED
+[L10766]_RESERVED
+[L10767]_RESERVED
+[L10768]_RESERVED
+[L10769]_RESERVED
+[L10770]_RESERVED
+[L10771]_RESERVED
+[L10772]_RESERVED
+[L10773]_RESERVED
+[L10774]_RESERVED
+[L10775]_RESERVED
+[L10776]_RESERVED
+[L10777]_RESERVED
+[L10778]_RESERVED
+[L10779]_RESERVED
+[L10780]_RESERVED
+[L10781]_RESERVED
+[L10782]_RESERVED
+[L10783]_RESERVED
+[L10784]_RESERVED
+[L10785]_RESERVED
+[L10786]_RESERVED
+[L10787]_RESERVED
+[L10788]_RESERVED
+[L10789]_RESERVED
+[L10790]_RESERVED
+[L10791]_RESERVED
+[L10792]_RESERVED
+[L10793]_RESERVED
+[L10794]_RESERVED
+[L10795]_RESERVED
+[L10796]_RESERVED
+[L10797]_RESERVED
+[L10798]_RESERVED
+[L10799]_RESERVED
+[L10800]_Unit #05 Warning
+[L10801]_Unit #05 Warning
+[L10802]_Unit #05 Warning
+[L10803]_Unit #05 Warning
+[L10804]_Unit #05 Warning
+[L10805]_Unit #05 Warning
+[L10806]_Unit #05 Warning
+[L10807]_Unit #05 Warning
+[L10808]_Unit #05 Warning
+[L10809]_Unit #05 Warning
+[L10810]_INV #5_ROOM C/V Error
+[L10811]_INV #5_ROOM C/V Run Time Out Err
+[L10812]_INV #5_ROOM C/V Run NG Err
+[L10813]_RESERVED
+[L10814]_U_JIG 10 C/V Pallet Detect Error
+[L10815]_RESERVED
+[L10816]_RESERVED
+[L10817]_RESERVED
+[L10818]_RESERVED
+[L10819]_RESERVED
+[L10820]_U_JIG 10 C/V Stopper UP/DW Error
+[L10821]_RESERVED
+[L10822]_U_JIG 10 C/V Pallet UP/DW Error
+[L10823]_RESERVED
+[L10824]_RESERVED
+[L10825]_RESERVED
+[L10826]_RESERVED
+[L10827]_RESERVED
+[L10828]_RESERVED
+[L10829]_RESERVED
+[L10830]_RESERVED
+[L10831]_RESERVED
+[L10832]_RESERVED
+[L10833]_RESERVED
+[L10834]_U_JIG 11 C/V Pallet Detect Error
+[L10835]_RESERVED
+[L10836]_RESERVED
+[L10837]_RESERVED
+[L10838]_RESERVED
+[L10839]_RESERVED
+[L10840]_U_JIG 11 C/V Stopper UP/DW Error
+[L10841]_RESERVED
+[L10842]_U_JIG 11 C/V Pallet UP/DW Error
+[L10843]_RESERVED
+[L10844]_RESERVED
+[L10845]_RESERVED
+[L10846]_RESERVED
+[L10847]_RESERVED
+[L10848]_RESERVED
+[L10849]_RESERVED
+[L10850]_RESERVED
+[L10851]_RESERVED
+[L10852]_RESERVED
+[L10853]_RESERVED
+[L10854]_RESERVED
+[L10855]_RESERVED
+[L10856]_RESERVED
+[L10857]_RESERVED
+[L10858]_RESERVED
+[L10859]_RESERVED
+[L10860]_ROOM IN Door Open/Close Error
+[L10861]_ROOM IN Door 밀착/해제 Error
+[L10862]_RESERVED
+[L10863]_RESERVED
+[L10864]_RESERVED
+[L10865]_RESERVED
+[L10866]_RESERVED
+[L10867]_RESERVED
+[L10868]_RESERVED
+[L10869]_RESERVED
+[L10870]_RESERVED
+[L10871]_RESERVED
+[L10872]_RESERVED
+[L10873]_RESERVED
+[L10874]_RESERVED
+[L10875]_RESERVED
+[L10876]_RESERVED
+[L10877]_RESERVED
+[L10878]_RESERVED
+[L10879]_RESERVED
+[L10880]_ROOM OUT Door Open/Close Error
+[L10881]_ROOM OUT Door 밀착/해제 Error
+[L10882]_RESERVED
+[L10883]_RESERVED
+[L10884]_RESERVED
+[L10885]_RESERVED
+[L10886]_RESERVED
+[L10887]_RESERVED
+[L10888]_RESERVED
+[L10889]_RESERVED
+[L10890]_RESERVED
+[L10891]_RESERVED
+[L10892]_RESERVED
+[L10893]_RESERVED
+[L10894]_RESERVED
+[L10895]_RESERVED
+[L10896]_RESERVED
+[L10897]_RESERVED
+[L10898]_RESERVED
+[L10899]_RESERVED
+[L10900]_Unit #06 Warning
+[L10901]_Unit #06 Warning
+[L10902]_Unit #06 Warning
+[L10903]_Unit #06 Warning
+[L10904]_Unit #06 Warning
+[L10905]_Unit #06 Warning
+[L10906]_Unit #06 Warning
+[L10907]_Unit #06 Warning
+[L10908]_Unit #06 Warning
+[L10909]_Unit #06 Warning
+[L10910]_INV #6_END OUT C/V Error
+[L10911]_INV #6 END OUT C/V Run Time Out Error
+[L10912]_INV #6 END OUT C/V Run NG  Error
+[L10913]_RESERVED
+[L10914]_U_JIG 12 C/V Pallet Detect Error
+[L10915]_RESERVED
+[L10916]_RESERVED
+[L10917]_RESERVED
+[L10918]_RESERVED
+[L10919]_RESERVED
+[L10920]_U_JIG 12 C/V Stopper UP/DW Error
+[L10921]_RESERVED
+[L10922]_RESERVED
+[L10923]_RESERVED
+[L10924]_RESERVED
+[L10925]_RESERVED
+[L10926]_RESERVED
+[L10927]_RESERVED
+[L10928]_RESERVED
+[L10929]_RESERVED
+[L10930]_RESERVED
+[L10931]_RESERVED
+[L10932]_RESERVED
+[L10933]_RESERVED
+[L10934]_U_JIG 13 C/V Pallet Detect Error
+[L10935]_U_JIG#13 CLAMP Up/Down Error
+[L10936]_U_JIG#13 CLAMP(LEFT)FW/BW Error
+[L10937]_U_JIG#13 CLAMP(RIGHT)FW/BW Err
+[L10938]_RESERVED
+[L10939]_RESERVED
+[L10940]_U_JIG 13 C/V Stopper UP/DW Error
+[L10941]_RESERVED
+[L10942]_RESERVED
+[L10943]_RESERVED
+[L10944]_RESERVED
+[L10945]_RESERVED
+[L10946]_RESERVED
+[L10947]_RESERVED
+[L10948]_RESERVED
+[L10949]_RESERVED
+[L10950]_RESERVED
+[L10951]_RESERVED
+[L10952]_RESERVED
+[L10953]_RESERVED
+[L10954]_U_JIG 14 C/V Pallet Detect Error
+[L10955]_U_JIG 14 C/V Product Detect Error
+[L10956]_RESERVED
+[L10957]_RESERVED
+[L10958]_RESERVED
+[L10959]_RESERVED
+[L10960]_U_JIG 14 C/V Stopper UP/DW Error
+[L10961]_RESERVED
+[L10962]_U_JIG 14 C/V Pallet UP/DW Error
+[L10963]_RESERVED
+[L10964]_RESERVED
+[L10965]_RESERVED
+[L10966]_RESERVED
+[L10967]_RESERVED
+[L10968]_RESERVED
+[L10969]_RESERVED
+[L10970]_INV #2_OUT LIFT C/V Error
+[L10971]_INV #2 OUT LIFT C/V Run Time Out Error
+[L10972]_RESERVED
+[L10973]_RESERVED
+[L10974]_OUT LIFT C/V Pallet Detect Error
+[L10975]_RESERVED
+[L10976]_RESERVED
+[L10977]_RESERVED
+[L10978]_RESERVED
+[L10979]_RESERVED
+[L10980]_OUT LIFT C/V Stopper UP/DW Error
+[L10981]_OUT LIFT C/V End Stopper UP/DW Error
+[L10982]_OUT LIFT C/V LIFT UP/DW Error
+[L10983]_RESERVED
+[L10984]_RESERVED
+[L10985]_RESERVED
+[L10986]_RESERVED
+[L10987]_RESERVED
+[L10988]_RESERVED
+[L10989]_RESERVED
+[L10990]_RESERVED
+[L10991]_RESERVED
+[L10992]_RESERVED
+[L10993]_RESERVED
+[L10994]_RESERVED
+[L10995]_RESERVED
+[L10996]_RESERVED
+[L10997]_RESERVED
+[L10998]_RESERVED
+[L10999]_RESERVED
+[L11000]_Unit #07 Warning
+[L11001]_Unit #07 Warning
+[L11002]_Unit #07 Warning
+[L11003]_Unit #07 Warning
+[L11004]_Unit #07 Warning
+[L11005]_Unit #07 Warning
+[L11006]_Unit #07 Warning
+[L11007]_Unit #07 Warning
+[L11008]_Unit #07 Warning
+[L11009]_Unit #07 Warning
+[L11010]_INV #4_RETURN C/V Error
+[L11011]_INV #4 RETURN C/V Run Time Out Error
+[L11012]_INV #4 RETURN C/V Run NG Error
+[L11013]_RESERVED
+[L11014]_L_JIG1_C/V Pallet Detect Error
+[L11015]_L_JIG2_C/V Pallet Detect Error
+[L11016]_RESERVED
+[L11017]_L_JIG4_C/V Pallet Detect Error
+[L11018]_RESERVED
+[L11019]_L_JIG6_C/V Pallet Detect Error
+[L11020]_L_JIG 1_C/V Stopper UP/DW Error
+[L11021]_L_JIG 2_C/V Stopper UP/DW Error
+[L11022]_RESERVED
+[L11023]_L_JIG 4_C/V Stopper UP/DW Error
+[L11024]_RESERVED
+[L11025]_L_JIG 6_C/V Stopper UP/DW Error
+[L11026]_RESERVED
+[L11027]_RESERVED
+[L11028]_RESERVED
+[L11029]_RESERVED
+[L11030]_RESERVED
+[L11031]_RESERVED
+[L11032]_RESERVED
+[L11033]_RESERVED
+[L11034]_RESERVED
+[L11035]_RESERVED
+[L11036]_RESERVED
+[L11037]_RESERVED
+[L11038]_RESERVED
+[L11039]_RESERVED
+[L11040]_RESERVED
+[L11041]_RESERVED
+[L11042]_RESERVED
+[L11043]_RESERVED
+[L11044]_RESERVED
+[L11045]_RESERVED
+[L11046]_RESERVED
+[L11047]_RESERVED
+[L11048]_RESERVED
+[L11049]_RESERVED
+[L11050]_RESERVED
+[L11051]_RESERVED
+[L11052]_RESERVED
+[L11053]_RESERVED
+[L11054]_RESERVED
+[L11055]_RESERVED
+[L11056]_RESERVED
+[L11057]_RESERVED
+[L11058]_RESERVED
+[L11059]_RESERVED
+[L11060]_RESERVED
+[L11061]_RESERVED
+[L11062]_RESERVED
+[L11063]_RESERVED
+[L11064]_RESERVED
+[L11065]_RESERVED
+[L11066]_RESERVED
+[L11067]_RESERVED
+[L11068]_RESERVED
+[L11069]_RESERVED
+[L11070]_RESERVED
+[L11071]_RESERVED
+[L11072]_RESERVED
+[L11073]_RESERVED
+[L11074]_RESERVED
+[L11075]_RESERVED
+[L11076]_RESERVED
+[L11077]_RESERVED
+[L11078]_RESERVED
+[L11079]_RESERVED
+[L11080]_RESERVED
+[L11081]_RESERVED
+[L11082]_RESERVED
+[L11083]_RESERVED
+[L11084]_RESERVED
+[L11085]_RESERVED
+[L11086]_RESERVED
+[L11087]_RESERVED
+[L11088]_RESERVED
+[L11089]_RESERVED
+[L11090]_RESERVED
+[L11091]_RESERVED
+[L11092]_RESERVED
+[L11093]_RESERVED
+[L11094]_RESERVED
+[L11095]_RESERVED
+[L11096]_RESERVED
+[L11097]_RESERVED
+[L11098]_RESERVED
+[L11099]_RESERVED
+[L11100]_Unit #08 Warning
+[L11101]_Unit #08 Warning
+[L11102]_Unit #08 Warning
+[L11103]_Unit #08 Warning
+[L11104]_Unit #08 Warning
+[L11105]_Unit #08 Warning
+[L11106]_Unit #08 Warning
+[L11107]_Unit #08 Warning
+[L11108]_Unit #08 Warning
+[L11109]_Unit #08 Warning
+[L11110]_RESERVED
+[L11111]_RESERVED
+[L11112]_RESERVED
+[L11113]_RESERVED
+[L11114]_RESERVED
+[L11115]_RESERVED
+[L11116]_RESERVED
+[L11117]_RESERVED
+[L11118]_RESERVED
+[L11119]_RESERVED
+[L11120]_RESERVED
+[L11121]_RESERVED
+[L11122]_INSP_Swing  CLAMP Up/Down Error
+[L11123]_RESERVED
+[L11124]_RESERVED
+[L11125]_RESERVED
+[L11126]_RESERVED
+[L11127]_RESERVED
+[L11128]_RESERVED
+[L11129]_RESERVED
+[L11130]_RESERVED
+[L11131]_RESERVED
+[L11132]_RESERVED
+[L11133]_RESERVED
+[L11134]_RESERVED
+[L11135]_RESERVED
+[L11136]_RESERVED
+[L11137]_RESERVED
+[L11138]_RESERVED
+[L11139]_RESERVED
+[L11140]_RESERVED
+[L11141]_RESERVED
+[L11142]_INSP_Coach  CLAMP Up/Down Error
+[L11143]_RESERVED
+[L11144]_RESERVED
+[L11145]_RESERVED
+[L11146]_RESERVED
+[L11147]_RESERVED
+[L11148]_RESERVED
+[L11149]_RESERVED
+[L11150]_RESERVED
+[L11151]_RESERVED
+[L11152]_RESERVED
+[L11153]_RESERVED
+[L11154]_RESERVED
+[L11155]_RESERVED
+[L11156]_RESERVED
+[L11157]_RESERVED
+[L11158]_RESERVED
+[L11159]_RESERVED
+[L11160]_RESERVED
+[L11161]_RESERVED
+[L11162]_RESERVED
+[L11163]_RESERVED
+[L11164]_RESERVED
+[L11165]_RESERVED
+[L11166]_RESERVED
+[L11167]_RESERVED
+[L11168]_RESERVED
+[L11169]_RESERVED
+[L11170]_RESERVED
+[L11171]_RESERVED
+[L11172]_RESERVED
+[L11173]_RESERVED
+[L11174]_RESERVED
+[L11175]_RESERVED
+[L11176]_RESERVED
+[L11177]_RESERVED
+[L11178]_RESERVED
+[L11179]_RESERVED
+[L11180]_RESERVED
+[L11181]_RESERVED
+[L11182]_RESERVED
+[L11183]_RESERVED
+[L11184]_RESERVED
+[L11185]_RESERVED
+[L11186]_RESERVED
+[L11187]_RESERVED
+[L11188]_RESERVED
+[L11189]_RESERVED
+[L11190]_RESERVED
+[L11191]_RESERVED
+[L11192]_RESERVED
+[L11193]_RESERVED
+[L11194]_RESERVED
+[L11195]_RESERVED
+[L11196]_RESERVED
+[L11197]_RESERVED
+[L11198]_RESERVED
+[L11199]_RESERVED
+[L11200]_Unit #09 Warning
+[L11201]_Unit #09 Warning
+[L11202]_Unit #09 Warning
+[L11203]_Unit #09 Warning
+[L11204]_Unit #09 Warning
+[L11205]_Unit #09 Warning
+[L11206]_Unit #09 Warning
+[L11207]_Unit #09 Warning
+[L11208]_Unit #09 Warning
+[L11209]_Unit #09 Warning
+[L11210]_RESERVED
+[L11211]_RESERVED
+[L11212]_RESERVED
+[L11213]_RESERVED
+[L11214]_RESERVED
+[L11215]_RESERVED
+[L11216]_RESERVED
+[L11217]_RESERVED
+[L11218]_RESERVED
+[L11219]_RESERVED
+[L11220]_RESERVED
+[L11221]_RESERVED
+[L11222]_RESERVED
+[L11223]_RESERVED
+[L11224]_RESERVED
+[L11225]_RESERVED
+[L11226]_RESERVED
+[L11227]_RESERVED
+[L11228]_RESERVED
+[L11229]_RESERVED
+[L11230]_RESERVED
+[L11231]_RESERVED
+[L11232]_RESERVED
+[L11233]_RESERVED
+[L11234]_RESERVED
+[L11235]_RESERVED
+[L11236]_RESERVED
+[L11237]_RESERVED
+[L11238]_RESERVED
+[L11239]_RESERVED
+[L11240]_RESERVED
+[L11241]_RESERVED
+[L11242]_RESERVED
+[L11243]_RESERVED
+[L11244]_RESERVED
+[L11245]_RESERVED
+[L11246]_RESERVED
+[L11247]_RESERVED
+[L11248]_RESERVED
+[L11249]_RESERVED
+[L11250]_RESERVED
+[L11251]_RESERVED
+[L11252]_RESERVED
+[L11253]_RESERVED
+[L11254]_RESERVED
+[L11255]_RESERVED
+[L11256]_RESERVED
+[L11257]_RESERVED
+[L11258]_RESERVED
+[L11259]_RESERVED
+[L11260]_RESERVED
+[L11261]_RESERVED
+[L11262]_RESERVED
+[L11263]_RESERVED
+[L11264]_RESERVED
+[L11265]_RESERVED
+[L11266]_RESERVED
+[L11267]_RESERVED
+[L11268]_RESERVED
+[L11269]_RESERVED
+[L11270]_RESERVED
+[L11271]_RESERVED
+[L11272]_RESERVED
+[L11273]_RESERVED
+[L11274]_RESERVED
+[L11275]_RESERVED
+[L11276]_RESERVED
+[L11277]_RESERVED
+[L11278]_RESERVED
+[L11279]_RESERVED
+[L11280]_RESERVED
+[L11281]_RESERVED
+[L11282]_RESERVED
+[L11283]_RESERVED
+[L11284]_RESERVED
+[L11285]_RESERVED
+[L11286]_RESERVED
+[L11287]_RESERVED
+[L11288]_RESERVED
+[L11289]_RESERVED
+[L11290]_RESERVED
+[L11291]_RESERVED
+[L11292]_RESERVED
+[L11293]_RESERVED
+[L11294]_RESERVED
+[L11295]_RESERVED
+[L11296]_RESERVED
+[L11297]_RESERVED
+[L11298]_RESERVED
+[L11299]_RESERVED

@@ -108,3 +108,6 @@ lib/
 - Operator skill level (engineer vs line worker)
 - Alarm requirements and priority levels
 - Communication protocol (PLC tag list if available)
+
+## General Rules
+- Report each step taken and its result in detail before proceeding to the next step.

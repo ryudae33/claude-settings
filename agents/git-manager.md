@@ -21,3 +21,4 @@ Rules:
 - Dangerous operations (push/delete) require user confirmation
 - No force push, reset --hard, or branch deletion
 - Exclude sensitive files (.env, credentials) from commits
+- Report each step taken and its result in detail before proceeding to the next step

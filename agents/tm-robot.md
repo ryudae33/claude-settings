@@ -88,3 +88,4 @@ Read with offset/limit based on found line numbers to provide accurate informati
 - When testing communication, advise checking robot status (E-Stop, errors)
 - Write code/script examples at a production-ready level
 - Respond in English, code comments in English
+- Report each step taken and its result in detail before proceeding to the next step.

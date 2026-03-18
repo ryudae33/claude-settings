@@ -1,0 +1,1132 @@
+--- Lines 17-40 ---
+17: TWOFG_ID = 0xC0
+18: MG_ID = 0xA0
+19: SG_ID = 0x50
+20: SD_ID = 0x80
+21: RG2FT_ID = 0x22
+22: VGP_ID = 0x18
+23: SDR_ID = 0xB0
+24: FGP_ID = 0xF0
+25: LIFT_ID = 0x100
+26: 
+27: #Hex t_index
+28: HEX_INDEX = -1
+29: #HEX device id's
+30: HEXV3_ID = 0x40
+31: HEXV2_ID = 0x42
+32: 
+33: #LIFT t_index
+34: LIFT_INDEX = 100
+35: 
+36: EYES_DOOSAN_ID = 8
+37: 
+38: CONN_ERR = -2
+39: RET_OK = 0
+
+--- Lines 20-43 ---
+20: SD_ID = 0x80
+21: RG2FT_ID = 0x22
+22: VGP_ID = 0x18
+23: SDR_ID = 0xB0
+24: FGP_ID = 0xF0
+25: LIFT_ID = 0x100
+26: 
+27: #Hex t_index
+28: HEX_INDEX = -1
+29: #HEX device id's
+30: HEXV3_ID = 0x40
+31: HEXV2_ID = 0x42
+32: 
+33: #LIFT t_index
+34: LIFT_INDEX = 100
+35: 
+36: EYES_DOOSAN_ID = 8
+37: 
+38: CONN_ERR = -2
+39: RET_OK = 0
+40: RET_FAIL = -1
+41: 
+42: 
+
+--- Lines 2738-2761 ---
+2738: 
+2739: 
+2740: 
+2741: class SDR():
+2742:     '''
+2743:     This class is for handling the Sander device
+2744:     '''
+2745:     cb = None
+2746: 
+2747:     def __init__(self, dev):
+2748:         #Mask for power supply warning
+2749:         self.PS_MASK = 0x20
+2750:         self.cb = dev.getCB()
+2751: 
+2752:     def isconn(self):
+2753:         '''
+2754:         Returns with True if a Sander device is connected, False otherwise
+2755: 
+2756:         @return: True if connected, False otherwise
+2757:         @rtype: bool
+2758:         '''
+2759:         IsSDR = self.cb.cb_is_device_connected(0, SDR_ID)
+2760:         if IsSDR is False:
+
+--- Lines 2756-2779 ---
+2756:         @return: True if connected, False otherwise
+2757:         @rtype: bool
+2758:         '''
+2759:         IsSDR = self.cb.cb_is_device_connected(0, SDR_ID)
+2760:         if IsSDR is False:
+2761:             tp_popup("No Sander device connected", DR_PM_WARNING)
+2762:             return False
+2763:         else:
+2764:             #Check power supply
+2765:             warn_field = self.cb.sdr_get_warning(0)
+2766:             ps_f = warn_field and self.PS_MASK
+2767:             if ps_f != 0:
+2768:                 tp_popup("Sander external power supply is not connected!", DR_PM_WARNING)
+2769:                 return False
+2770:             else:
+2771:                 return True
+2772: 
+2773:     def get_warning(self):
+2774:         '''
+2775:         Returns with warning code of the Sander
+2776: 
+2777:         @return: Warning code, 0 means no warnings
+2778:         @rtype: int
+
+--- Lines 2757-2780 ---
+2757:         @rtype: bool
+2758:         '''
+2759:         IsSDR = self.cb.cb_is_device_connected(0, SDR_ID)
+2760:         if IsSDR is False:
+2761:             tp_popup("No Sander device connected", DR_PM_WARNING)
+2762:             return False
+2763:         else:
+2764:             #Check power supply
+2765:             warn_field = self.cb.sdr_get_warning(0)
+2766:             ps_f = warn_field and self.PS_MASK
+2767:             if ps_f != 0:
+2768:                 tp_popup("Sander external power supply is not connected!", DR_PM_WARNING)
+2769:                 return False
+2770:             else:
+2771:                 return True
+2772: 
+2773:     def get_warning(self):
+2774:         '''
+2775:         Returns with warning code of the Sander
+2776: 
+2777:         @return: Warning code, 0 means no warnings
+2778:         @rtype: int
+2779:         '''
+
+--- Lines 3942-3965 ---
+3942:         else:
+3943:             return RET_OK
+3944: 
+3945: class SD():
+3946:     '''
+3947:     This class is for handling the Screw driver
+3948:     '''
+3949:     cb = None
+3950: 
+3951:     def __init__(self, dev):
+3952:         #To turn on/off error handling for this instance (def: ON)
+3953:         self.err_h = [True, True, True]
+3954:         self.cb = dev.getCB()
+3955: 
+3956:     def isconn(self, t_index):
+3957:         '''
+3958:         Returns with True if Screw driver is connected, False otherwise
+3959: 
+3960:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3961:         @return: True if connected, False otherwise
+3962:         @rtype: bool
+3963:         '''
+3964:         isSDConn = self.cb.cb_is_device_connected(t_index, SD_ID)
+
+--- Lines 3961-3984 ---
+3961:         @return: True if connected, False otherwise
+3962:         @rtype: bool
+3963:         '''
+3964:         isSDConn = self.cb.cb_is_device_connected(t_index, SD_ID)
+3965:         if not isSDConn:
+3966:             tp_popup("No Screw driver connected", DR_PM_WARNING)
+3967:             return False
+3968:         else:
+3969:             return True
+3970: 
+3971:     def setErrhON(self, t_index):
+3972:         '''
+3973:         Turns ON error handling for all screwdriver commands
+3974:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3975:         '''
+3976:         self.err_h[t_index] = True
+3977: 
+3978:     def setErrhOFF(self, t_index):
+3979:         '''
+3980:         Turns OFF error handling for all screwdriver commands
+3981:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3982:         '''
+3983:         self.err_h[t_index] = False
+
+--- Lines 3962-3985 ---
+3962:         @rtype: bool
+3963:         '''
+3964:         isSDConn = self.cb.cb_is_device_connected(t_index, SD_ID)
+3965:         if not isSDConn:
+3966:             tp_popup("No Screw driver connected", DR_PM_WARNING)
+3967:             return False
+3968:         else:
+3969:             return True
+3970: 
+3971:     def setErrhON(self, t_index):
+3972:         '''
+3973:         Turns ON error handling for all screwdriver commands
+3974:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3975:         '''
+3976:         self.err_h[t_index] = True
+3977: 
+3978:     def setErrhOFF(self, t_index):
+3979:         '''
+3980:         Turns OFF error handling for all screwdriver commands
+3981:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3982:         '''
+3983:         self.err_h[t_index] = False
+3984: 
+
+--- Lines 3970-3993 ---
+3970: 
+3971:     def setErrhON(self, t_index):
+3972:         '''
+3973:         Turns ON error handling for all screwdriver commands
+3974:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3975:         '''
+3976:         self.err_h[t_index] = True
+3977: 
+3978:     def setErrhOFF(self, t_index):
+3979:         '''
+3980:         Turns OFF error handling for all screwdriver commands
+3981:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3982:         '''
+3983:         self.err_h[t_index] = False
+3984: 
+3985:     def getErrh(self, t_index):
+3986:         '''
+3987:         Gets if error handling is turned ON or OFF for the given instance
+3988: 
+3989:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3990:         @return: True if error handling is turned on for this instance, False if turned off
+3991:         @rtype: bool
+3992:         '''
+
+--- Lines 3977-4000 ---
+3977: 
+3978:     def setErrhOFF(self, t_index):
+3979:         '''
+3980:         Turns OFF error handling for all screwdriver commands
+3981:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3982:         '''
+3983:         self.err_h[t_index] = False
+3984: 
+3985:     def getErrh(self, t_index):
+3986:         '''
+3987:         Gets if error handling is turned ON or OFF for the given instance
+3988: 
+3989:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+3990:         @return: True if error handling is turned on for this instance, False if turned off
+3991:         @rtype: bool
+3992:         '''
+3993:         return self.err_h[t_index]
+3994: 
+3995: 
+3996: 
+3997:     #Private function
+3998:     def _err_handler(self, t_index):
+3999:         '''
+
+--- Lines 4007-4030 ---
+4007:         if self.isconn(t_index) is False:
+4008:             return CONN_ERR
+4009: 
+4010:         err_code = self.cb.sd_get_error_code(t_index)
+4011:         cmd_result = self.cb.sd_get_command_results(t_index)
+4012: 
+4013:         init_err_mask = 0xF0
+4014:         retval = True
+4015: 
+4016:         #Check the error code
+4017:         if err_code != 0:
+4018:             if err_code & 0x04 != 0:
+4019:                 tp_popup("Screw driver saftey circuit triggered", DR_PM_ALARM)
+4020:             if err_code & 0x08 != 0:
+4021:                 tp_popup("Screw driver not calibrated", DR_PM_ALARM)
+4022: 
+4023:             init_err = err_code & init_err_mask
+4024: 
+4025:             #Check init errors
+4026:             if init_err == 0x10:
+4027:                 tp_popup("Screw driver init error: Shank stall current not reached", DR_PM_ALARM)
+4028:             elif init_err == 0x20:
+4029:                 tp_popup("Screw driver init error: No shank index mark found", DR_PM_ALARM)
+
+--- Lines 4008-4031 ---
+4008:             return CONN_ERR
+4009: 
+4010:         err_code = self.cb.sd_get_error_code(t_index)
+4011:         cmd_result = self.cb.sd_get_command_results(t_index)
+4012: 
+4013:         init_err_mask = 0xF0
+4014:         retval = True
+4015: 
+4016:         #Check the error code
+4017:         if err_code != 0:
+4018:             if err_code & 0x04 != 0:
+4019:                 tp_popup("Screw driver saftey circuit triggered", DR_PM_ALARM)
+4020:             if err_code & 0x08 != 0:
+4021:                 tp_popup("Screw driver not calibrated", DR_PM_ALARM)
+4022: 
+4023:             init_err = err_code & init_err_mask
+4024: 
+4025:             #Check init errors
+4026:             if init_err == 0x10:
+4027:                 tp_popup("Screw driver init error: Shank stall current not reached", DR_PM_ALARM)
+4028:             elif init_err == 0x20:
+4029:                 tp_popup("Screw driver init error: No shank index mark found", DR_PM_ALARM)
+4030:             elif init_err == 0x30:
+
+--- Lines 4060-4083 ---
+4060:             elif cmd_result == 4:
+4061:                 cmd_res_msg = "Torque exceeded prematurely"
+4062:             elif cmd_result == 5:
+4063:                 cmd_res_msg = "Unable to loosen screw"
+4064:             elif cmd_result == 6:
+4065:                 cmd_res_msg = "Shank reached the end"
+4066:             elif cmd_result == 7:
+4067:                 cmd_res_msg = "Shank obstructed during move"
+4068:             else:
+4069:                 cmd_res_msg = "Unknown command result"
+4070: 
+4071:             tp_popup("Screwdriver command result: " + cmd_res_msg, DR_PM_ALARM)
+4072:         else:
+4073:             retval = False
+4074: 
+4075:         return retval
+4076: 
+4077: 
+4078:     def isBusy(self, t_index):
+4079:         '''
+4080:         Gets if the screw driver is busy or not
+4081: 
+4082:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+
+--- Lines 4068-4091 ---
+4068:             else:
+4069:                 cmd_res_msg = "Unknown command result"
+4070: 
+4071:             tp_popup("Screwdriver command result: " + cmd_res_msg, DR_PM_ALARM)
+4072:         else:
+4073:             retval = False
+4074: 
+4075:         return retval
+4076: 
+4077: 
+4078:     def isBusy(self, t_index):
+4079:         '''
+4080:         Gets if the screw driver is busy or not
+4081: 
+4082:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4083:         @type t_index: int
+4084:         @rtype: bool
+4085:         @return: True if busy, False otherwise
+4086:         '''
+4087:         if self.isconn(t_index) is False:
+4088:             return CONN_ERR
+4089: 
+4090:         shank_busy = self.cb.sd_get_shank_busy(t_index)
+
+--- Lines 4087-4110 ---
+4087:         if self.isconn(t_index) is False:
+4088:             return CONN_ERR
+4089: 
+4090:         shank_busy = self.cb.sd_get_shank_busy(t_index)
+4091:         dev_busy = self.cb.sd_get_screwdriver_busy(t_index)
+4092: 
+4093:         if ((not shank_busy) and (not dev_busy)):
+4094:             return False
+4095:         else:
+4096:             return True
+4097: 
+4098:     def get_torque_grad(self, t_index):
+4099:         '''
+4100:         Gets the torque gradient result
+4101: 
+4102:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4103:         @type t_index: int
+4104:         @rtype: float
+4105:         @return: Torque gradient
+4106:         '''
+4107:         if self.isconn(t_index) is False:
+4108:             return CONN_ERR
+4109: 
+
+--- Lines 4088-4111 ---
+4088:             return CONN_ERR
+4089: 
+4090:         shank_busy = self.cb.sd_get_shank_busy(t_index)
+4091:         dev_busy = self.cb.sd_get_screwdriver_busy(t_index)
+4092: 
+4093:         if ((not shank_busy) and (not dev_busy)):
+4094:             return False
+4095:         else:
+4096:             return True
+4097: 
+4098:     def get_torque_grad(self, t_index):
+4099:         '''
+4100:         Gets the torque gradient result
+4101: 
+4102:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4103:         @type t_index: int
+4104:         @rtype: float
+4105:         @return: Torque gradient
+4106:         '''
+4107:         if self.isconn(t_index) is False:
+4108:             return CONN_ERR
+4109: 
+4110:         return self.cb.sd_get_torque_gradient(t_index)
+
+--- Lines 4107-4130 ---
+4107:         if self.isconn(t_index) is False:
+4108:             return CONN_ERR
+4109: 
+4110:         return self.cb.sd_get_torque_gradient(t_index)
+4111: 
+4112:     def get_shank_pos(self, t_index):
+4113:         '''
+4114:         Gets the current shank position
+4115: 
+4116:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4117:         @type t_index: int
+4118:         @rtype: float
+4119:         @return: Shank position in mm
+4120:         '''
+4121:         if self.isconn(t_index) is False:
+4122:             return CONN_ERR
+4123: 
+4124:         return self.cb.sd_get_shank_position(t_index)
+4125: 
+4126:     def get_force(self, t_index):
+4127:         '''
+4128:         Gets the current force
+4129: 
+
+--- Lines 4121-4144 ---
+4121:         if self.isconn(t_index) is False:
+4122:             return CONN_ERR
+4123: 
+4124:         return self.cb.sd_get_shank_position(t_index)
+4125: 
+4126:     def get_force(self, t_index):
+4127:         '''
+4128:         Gets the current force
+4129: 
+4130:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4131:         @type t_index: int
+4132:         @rtype: float
+4133:         @return: Current force in N
+4134:         '''
+4135:         if self.isconn(t_index) is False:
+4136:             return CONN_ERR
+4137: 
+4138:         return self.cb.sd_get_force(t_index)
+4139: 
+4140:     def get_ach_torq(self, t_index):
+4141:         '''
+4142:         Gets the achieved torque
+4143: 
+
+--- Lines 4135-4158 ---
+4135:         if self.isconn(t_index) is False:
+4136:             return CONN_ERR
+4137: 
+4138:         return self.cb.sd_get_force(t_index)
+4139: 
+4140:     def get_ach_torq(self, t_index):
+4141:         '''
+4142:         Gets the achieved torque
+4143: 
+4144:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4145:         @type t_index: int
+4146:         @rtype: float
+4147:         @return: Achieved torque in Nm
+4148:         '''
+4149:         if self.isconn(t_index) is False:
+4150:             return CONN_ERR
+4151: 
+4152:         return self.cb.sd_get_achieved_torque(t_index)
+4153: 
+4154:     def get_curr_torq(self, t_index):
+4155:         '''
+4156:         Gets the current torque
+4157: 
+
+--- Lines 4149-4172 ---
+4149:         if self.isconn(t_index) is False:
+4150:             return CONN_ERR
+4151: 
+4152:         return self.cb.sd_get_achieved_torque(t_index)
+4153: 
+4154:     def get_curr_torq(self, t_index):
+4155:         '''
+4156:         Gets the current torque
+4157: 
+4158:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4159:         @type t_index: int
+4160:         @rtype: float
+4161:         @return: Current torque in Nm
+4162:         '''
+4163:         if self.isconn(t_index) is False:
+4164:             return CONN_ERR
+4165: 
+4166:         return self.cb.sd_get_current_torque(t_index)
+4167: 
+4168:     def tighten(self, t_index, force, screw_len, torq, f_wait):
+4169:         '''
+4170:         Starts a screw tighten command
+4171: 
+
+--- Lines 4163-4186 ---
+4163:         if self.isconn(t_index) is False:
+4164:             return CONN_ERR
+4165: 
+4166:         return self.cb.sd_get_current_torque(t_index)
+4167: 
+4168:     def tighten(self, t_index, force, screw_len, torq, f_wait):
+4169:         '''
+4170:         Starts a screw tighten command
+4171: 
+4172:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4173:         @type t_index: int
+4174:         @param force:  Screw in force in N (18-30)
+4175:         @type force: int
+4176:         @param screw_len: Screwing lenght in mm (0-35)
+4177:         @type screw_len: float
+4178:         @param torq: Screw in torque in Nm (0-5)
+4179:         @type torq: float
+4180:         @param f_wait: Wait for command to finish or not?
+4181:         @type f_wait: bool
+4182:         '''
+4183: 
+4184:         if self.isconn(t_index) is False:
+4185:             return CONN_ERR
+
+--- Lines 4165-4188 ---
+4165: 
+4166:         return self.cb.sd_get_current_torque(t_index)
+4167: 
+4168:     def tighten(self, t_index, force, screw_len, torq, f_wait):
+4169:         '''
+4170:         Starts a screw tighten command
+4171: 
+4172:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4173:         @type t_index: int
+4174:         @param force:  Screw in force in N (18-30)
+4175:         @type force: int
+4176:         @param screw_len: Screwing lenght in mm (0-35)
+4177:         @type screw_len: float
+4178:         @param torq: Screw in torque in Nm (0-5)
+4179:         @type torq: float
+4180:         @param f_wait: Wait for command to finish or not?
+4181:         @type f_wait: bool
+4182:         '''
+4183: 
+4184:         if self.isconn(t_index) is False:
+4185:             return CONN_ERR
+4186: 
+4187:         #Sanity check
+
+--- Lines 4167-4190 ---
+4167: 
+4168:     def tighten(self, t_index, force, screw_len, torq, f_wait):
+4169:         '''
+4170:         Starts a screw tighten command
+4171: 
+4172:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4173:         @type t_index: int
+4174:         @param force:  Screw in force in N (18-30)
+4175:         @type force: int
+4176:         @param screw_len: Screwing lenght in mm (0-35)
+4177:         @type screw_len: float
+4178:         @param torq: Screw in torque in Nm (0-5)
+4179:         @type torq: float
+4180:         @param f_wait: Wait for command to finish or not?
+4181:         @type f_wait: bool
+4182:         '''
+4183: 
+4184:         if self.isconn(t_index) is False:
+4185:             return CONN_ERR
+4186: 
+4187:         #Sanity check
+4188:         if force < 18 or force > 30:
+4189:             tp_popup("Invalid force parameter for tighten command, valid range: 18-30", DR_PM_WARNING)
+
+--- Lines 4186-4209 ---
+4186: 
+4187:         #Sanity check
+4188:         if force < 18 or force > 30:
+4189:             tp_popup("Invalid force parameter for tighten command, valid range: 18-30", DR_PM_WARNING)
+4190:             return RET_FAIL
+4191: 
+4192:         if screw_len < 0.0 or screw_len > 35.0:
+4193:             tp_popup("Invalid screw length for tighten command, valid range: 0-35", DR_PM_WARNING)
+4194:             return RET_FAIL
+4195: 
+4196:         if torq < 0.0 or torq > 5.0:
+4197:             tp_popup("Invalid torque parameter for tighten command, valid range: 0-5", DR_PM_WARNING)
+4198:             return RET_FAIL
+4199: 
+4200:         self.cb.sd_tighten(t_index, int(force), float(screw_len), float(torq))
+4201: 
+4202:         timeout = False
+4203:         if f_wait:
+4204:             busy_cnt = 0
+4205:             f_busy = self.isBusy(t_index)
+4206:             while (f_busy):
+4207:                 wait(0.1)
+4208:                 f_busy = self.isBusy(t_index)
+
+--- Lines 4190-4213 ---
+4190:             return RET_FAIL
+4191: 
+4192:         if screw_len < 0.0 or screw_len > 35.0:
+4193:             tp_popup("Invalid screw length for tighten command, valid range: 0-35", DR_PM_WARNING)
+4194:             return RET_FAIL
+4195: 
+4196:         if torq < 0.0 or torq > 5.0:
+4197:             tp_popup("Invalid torque parameter for tighten command, valid range: 0-5", DR_PM_WARNING)
+4198:             return RET_FAIL
+4199: 
+4200:         self.cb.sd_tighten(t_index, int(force), float(screw_len), float(torq))
+4201: 
+4202:         timeout = False
+4203:         if f_wait:
+4204:             busy_cnt = 0
+4205:             f_busy = self.isBusy(t_index)
+4206:             while (f_busy):
+4207:                 wait(0.1)
+4208:                 f_busy = self.isBusy(t_index)
+4209:                 busy_cnt += 1
+4210:                 if busy_cnt > 300:
+4211:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4212:                     timeout = True
+
+--- Lines 4194-4217 ---
+4194:             return RET_FAIL
+4195: 
+4196:         if torq < 0.0 or torq > 5.0:
+4197:             tp_popup("Invalid torque parameter for tighten command, valid range: 0-5", DR_PM_WARNING)
+4198:             return RET_FAIL
+4199: 
+4200:         self.cb.sd_tighten(t_index, int(force), float(screw_len), float(torq))
+4201: 
+4202:         timeout = False
+4203:         if f_wait:
+4204:             busy_cnt = 0
+4205:             f_busy = self.isBusy(t_index)
+4206:             while (f_busy):
+4207:                 wait(0.1)
+4208:                 f_busy = self.isBusy(t_index)
+4209:                 busy_cnt += 1
+4210:                 if busy_cnt > 300:
+4211:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4212:                     timeout = True
+4213:                     break
+4214:             else:
+4215:                 timeout = False
+4216: 
+
+--- Lines 4197-4220 ---
+4197:             tp_popup("Invalid torque parameter for tighten command, valid range: 0-5", DR_PM_WARNING)
+4198:             return RET_FAIL
+4199: 
+4200:         self.cb.sd_tighten(t_index, int(force), float(screw_len), float(torq))
+4201: 
+4202:         timeout = False
+4203:         if f_wait:
+4204:             busy_cnt = 0
+4205:             f_busy = self.isBusy(t_index)
+4206:             while (f_busy):
+4207:                 wait(0.1)
+4208:                 f_busy = self.isBusy(t_index)
+4209:                 busy_cnt += 1
+4210:                 if busy_cnt > 300:
+4211:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4212:                     timeout = True
+4213:                     break
+4214:             else:
+4215:                 timeout = False
+4216: 
+4217:         #Check for error
+4218:         if self.err_h[t_index]:
+4219:             err_state = self._err_handler(t_index)
+
+--- Lines 4208-4231 ---
+4208:                 f_busy = self.isBusy(t_index)
+4209:                 busy_cnt += 1
+4210:                 if busy_cnt > 300:
+4211:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4212:                     timeout = True
+4213:                     break
+4214:             else:
+4215:                 timeout = False
+4216: 
+4217:         #Check for error
+4218:         if self.err_h[t_index]:
+4219:             err_state = self._err_handler(t_index)
+4220:             #There was no error and no timeout
+4221:             if (err_state == False) and (timeout == False):
+4222:                 return RET_OK
+4223:             else:
+4224:                 return RET_FAIL
+4225:         #There was no error handling only check timeout
+4226:         else:
+4227:             if timeout:
+4228:                 return RET_FAIL
+4229:             else:
+4230:                 return RET_OK
+
+--- Lines 4229-4252 ---
+4229:             else:
+4230:                 return RET_OK
+4231: 
+4232:     def loosen(self, t_index, force, screw_len, f_wait):
+4233:         '''
+4234:         Starts a screw loosening command
+4235: 
+4236:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4237:         @type t_index: int
+4238:         @param force:  Screw loosen force in N (18-30)
+4239:         @type force: int
+4240:         @param screw_len: Length of the screw in mm (0-35)
+4241:         @type screw_len: float
+4242:         @param f_wait: Wait for command to finish or not?
+4243:         @type f_wait: bool
+4244:         '''
+4245: 
+4246:         if self.isconn(t_index) is False:
+4247:             return CONN_ERR
+4248: 
+4249:         #Sanity check
+4250:         if force < 18 or force > 30:
+4251:             tp_popup("Invalid force parameter for loosen command, valid range: 18-30", DR_PM_WARNING)
+
+--- Lines 4231-4254 ---
+4231: 
+4232:     def loosen(self, t_index, force, screw_len, f_wait):
+4233:         '''
+4234:         Starts a screw loosening command
+4235: 
+4236:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4237:         @type t_index: int
+4238:         @param force:  Screw loosen force in N (18-30)
+4239:         @type force: int
+4240:         @param screw_len: Length of the screw in mm (0-35)
+4241:         @type screw_len: float
+4242:         @param f_wait: Wait for command to finish or not?
+4243:         @type f_wait: bool
+4244:         '''
+4245: 
+4246:         if self.isconn(t_index) is False:
+4247:             return CONN_ERR
+4248: 
+4249:         #Sanity check
+4250:         if force < 18 or force > 30:
+4251:             tp_popup("Invalid force parameter for loosen command, valid range: 18-30", DR_PM_WARNING)
+4252:             return RET_FAIL
+4253: 
+
+--- Lines 4235-4258 ---
+4235: 
+4236:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4237:         @type t_index: int
+4238:         @param force:  Screw loosen force in N (18-30)
+4239:         @type force: int
+4240:         @param screw_len: Length of the screw in mm (0-35)
+4241:         @type screw_len: float
+4242:         @param f_wait: Wait for command to finish or not?
+4243:         @type f_wait: bool
+4244:         '''
+4245: 
+4246:         if self.isconn(t_index) is False:
+4247:             return CONN_ERR
+4248: 
+4249:         #Sanity check
+4250:         if force < 18 or force > 30:
+4251:             tp_popup("Invalid force parameter for loosen command, valid range: 18-30", DR_PM_WARNING)
+4252:             return RET_FAIL
+4253: 
+4254:         if screw_len < 0.0 or screw_len > 35.0:
+4255:             tp_popup("Invalid screw length for loosen command, valid range: 0-35", DR_PM_WARNING)
+4256:             return RET_FAIL
+4257: 
+
+--- Lines 4248-4271 ---
+4248: 
+4249:         #Sanity check
+4250:         if force < 18 or force > 30:
+4251:             tp_popup("Invalid force parameter for loosen command, valid range: 18-30", DR_PM_WARNING)
+4252:             return RET_FAIL
+4253: 
+4254:         if screw_len < 0.0 or screw_len > 35.0:
+4255:             tp_popup("Invalid screw length for loosen command, valid range: 0-35", DR_PM_WARNING)
+4256:             return RET_FAIL
+4257: 
+4258:         self.cb.sd_loosen(t_index, int(force), float(screw_len))
+4259: 
+4260:         timeout = False
+4261:         if f_wait:
+4262:             busy_cnt = 0
+4263:             f_busy = self.isBusy(t_index)
+4264:             while (f_busy):
+4265:                 wait(0.1)
+4266:                 f_busy = self.isBusy(t_index)
+4267:                 busy_cnt += 1
+4268:                 if busy_cnt > 100:
+4269:                     tp_popup("Screw driver loosen command timeout", DR_PM_WARNING)
+4270:                     timeout = True
+
+--- Lines 4252-4275 ---
+4252:             return RET_FAIL
+4253: 
+4254:         if screw_len < 0.0 or screw_len > 35.0:
+4255:             tp_popup("Invalid screw length for loosen command, valid range: 0-35", DR_PM_WARNING)
+4256:             return RET_FAIL
+4257: 
+4258:         self.cb.sd_loosen(t_index, int(force), float(screw_len))
+4259: 
+4260:         timeout = False
+4261:         if f_wait:
+4262:             busy_cnt = 0
+4263:             f_busy = self.isBusy(t_index)
+4264:             while (f_busy):
+4265:                 wait(0.1)
+4266:                 f_busy = self.isBusy(t_index)
+4267:                 busy_cnt += 1
+4268:                 if busy_cnt > 100:
+4269:                     tp_popup("Screw driver loosen command timeout", DR_PM_WARNING)
+4270:                     timeout = True
+4271:                     break
+4272:             else:
+4273:                 timeout = False
+4274: 
+
+--- Lines 4255-4278 ---
+4255:             tp_popup("Invalid screw length for loosen command, valid range: 0-35", DR_PM_WARNING)
+4256:             return RET_FAIL
+4257: 
+4258:         self.cb.sd_loosen(t_index, int(force), float(screw_len))
+4259: 
+4260:         timeout = False
+4261:         if f_wait:
+4262:             busy_cnt = 0
+4263:             f_busy = self.isBusy(t_index)
+4264:             while (f_busy):
+4265:                 wait(0.1)
+4266:                 f_busy = self.isBusy(t_index)
+4267:                 busy_cnt += 1
+4268:                 if busy_cnt > 100:
+4269:                     tp_popup("Screw driver loosen command timeout", DR_PM_WARNING)
+4270:                     timeout = True
+4271:                     break
+4272:             else:
+4273:                 timeout = False
+4274: 
+4275:         #Check for error
+4276:         if self.err_h[t_index]:
+4277:             err_state = self._err_handler(t_index)
+
+--- Lines 4266-4289 ---
+4266:                 f_busy = self.isBusy(t_index)
+4267:                 busy_cnt += 1
+4268:                 if busy_cnt > 100:
+4269:                     tp_popup("Screw driver loosen command timeout", DR_PM_WARNING)
+4270:                     timeout = True
+4271:                     break
+4272:             else:
+4273:                 timeout = False
+4274: 
+4275:         #Check for error
+4276:         if self.err_h[t_index]:
+4277:             err_state = self._err_handler(t_index)
+4278:             #There was no error and no timeout
+4279:             if (err_state == False) and (timeout == False):
+4280:                 return RET_OK
+4281:             else:
+4282:                 return RET_FAIL
+4283:         #There was no error handling only check timeout
+4284:         else:
+4285:             if timeout:
+4286:                 return RET_FAIL
+4287:             else:
+4288:                 return RET_OK
+
+--- Lines 4287-4310 ---
+4287:             else:
+4288:                 return RET_OK
+4289: 
+4290:     def pickup_screw(self, t_index, zforce, screw_len, f_wait):
+4291:         '''
+4292:         Starts a screw pickup command
+4293: 
+4294:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4295:         @type t_index: int
+4296:         @param zforce:  Screw pickup force in N (18-30)
+4297:         @type zforce: int
+4298:         @param screw_len: Length of the screw in mm (0-35)
+4299:         @type screw_len: float
+4300:         @param f_wait: Wait for command to finish or not?
+4301:         @type f_wait: bool
+4302:         '''
+4303: 
+4304:         #Sanity check
+4305:         if zforce < 18 or zforce > 30:
+4306:             tp_popup("Invalid zforce parameter for pickup screw command, valid range: 18-30", DR_PM_WARNING)
+4307:             return RET_FAIL
+4308: 
+4309:         if screw_len < 0.0 or screw_len > 35.0:
+
+--- Lines 4289-4312 ---
+4289: 
+4290:     def pickup_screw(self, t_index, zforce, screw_len, f_wait):
+4291:         '''
+4292:         Starts a screw pickup command
+4293: 
+4294:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4295:         @type t_index: int
+4296:         @param zforce:  Screw pickup force in N (18-30)
+4297:         @type zforce: int
+4298:         @param screw_len: Length of the screw in mm (0-35)
+4299:         @type screw_len: float
+4300:         @param f_wait: Wait for command to finish or not?
+4301:         @type f_wait: bool
+4302:         '''
+4303: 
+4304:         #Sanity check
+4305:         if zforce < 18 or zforce > 30:
+4306:             tp_popup("Invalid zforce parameter for pickup screw command, valid range: 18-30", DR_PM_WARNING)
+4307:             return RET_FAIL
+4308: 
+4309:         if screw_len < 0.0 or screw_len > 35.0:
+4310:             tp_popup("Invalid screw length for pickup screw command, valid range: 0-35", DR_PM_WARNING)
+4311:             return RET_FAIL
+
+--- Lines 4293-4316 ---
+4293: 
+4294:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4295:         @type t_index: int
+4296:         @param zforce:  Screw pickup force in N (18-30)
+4297:         @type zforce: int
+4298:         @param screw_len: Length of the screw in mm (0-35)
+4299:         @type screw_len: float
+4300:         @param f_wait: Wait for command to finish or not?
+4301:         @type f_wait: bool
+4302:         '''
+4303: 
+4304:         #Sanity check
+4305:         if zforce < 18 or zforce > 30:
+4306:             tp_popup("Invalid zforce parameter for pickup screw command, valid range: 18-30", DR_PM_WARNING)
+4307:             return RET_FAIL
+4308: 
+4309:         if screw_len < 0.0 or screw_len > 35.0:
+4310:             tp_popup("Invalid screw length for pickup screw command, valid range: 0-35", DR_PM_WARNING)
+4311:             return RET_FAIL
+4312: 
+4313:         self.cb.sd_pickup_screw(t_index, int(zforce), float(screw_len))
+4314: 
+4315:         timeout = False
+
+--- Lines 4303-4326 ---
+4303: 
+4304:         #Sanity check
+4305:         if zforce < 18 or zforce > 30:
+4306:             tp_popup("Invalid zforce parameter for pickup screw command, valid range: 18-30", DR_PM_WARNING)
+4307:             return RET_FAIL
+4308: 
+4309:         if screw_len < 0.0 or screw_len > 35.0:
+4310:             tp_popup("Invalid screw length for pickup screw command, valid range: 0-35", DR_PM_WARNING)
+4311:             return RET_FAIL
+4312: 
+4313:         self.cb.sd_pickup_screw(t_index, int(zforce), float(screw_len))
+4314: 
+4315:         timeout = False
+4316:         if f_wait:
+4317:             busy_cnt = 0
+4318:             f_busy = self.isBusy(t_index)
+4319:             while (f_busy):
+4320:                 wait(0.1)
+4321:                 f_busy = self.isBusy(t_index)
+4322:                 busy_cnt += 1
+4323:                 if busy_cnt > 100:
+4324:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4325:                     timeout = True
+
+--- Lines 4307-4330 ---
+4307:             return RET_FAIL
+4308: 
+4309:         if screw_len < 0.0 or screw_len > 35.0:
+4310:             tp_popup("Invalid screw length for pickup screw command, valid range: 0-35", DR_PM_WARNING)
+4311:             return RET_FAIL
+4312: 
+4313:         self.cb.sd_pickup_screw(t_index, int(zforce), float(screw_len))
+4314: 
+4315:         timeout = False
+4316:         if f_wait:
+4317:             busy_cnt = 0
+4318:             f_busy = self.isBusy(t_index)
+4319:             while (f_busy):
+4320:                 wait(0.1)
+4321:                 f_busy = self.isBusy(t_index)
+4322:                 busy_cnt += 1
+4323:                 if busy_cnt > 100:
+4324:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4325:                     timeout = True
+4326:                     break
+4327:             else:
+4328:                 timeout = False
+4329: 
+
+--- Lines 4310-4333 ---
+4310:             tp_popup("Invalid screw length for pickup screw command, valid range: 0-35", DR_PM_WARNING)
+4311:             return RET_FAIL
+4312: 
+4313:         self.cb.sd_pickup_screw(t_index, int(zforce), float(screw_len))
+4314: 
+4315:         timeout = False
+4316:         if f_wait:
+4317:             busy_cnt = 0
+4318:             f_busy = self.isBusy(t_index)
+4319:             while (f_busy):
+4320:                 wait(0.1)
+4321:                 f_busy = self.isBusy(t_index)
+4322:                 busy_cnt += 1
+4323:                 if busy_cnt > 100:
+4324:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4325:                     timeout = True
+4326:                     break
+4327:             else:
+4328:                 timeout = False
+4329: 
+4330:         #Check for error
+4331:         if self.err_h[t_index]:
+4332:             err_state = self._err_handler(t_index)
+
+--- Lines 4321-4344 ---
+4321:                 f_busy = self.isBusy(t_index)
+4322:                 busy_cnt += 1
+4323:                 if busy_cnt > 100:
+4324:                     tp_popup("Screw driver tighten command timeout", DR_PM_WARNING)
+4325:                     timeout = True
+4326:                     break
+4327:             else:
+4328:                 timeout = False
+4329: 
+4330:         #Check for error
+4331:         if self.err_h[t_index]:
+4332:             err_state = self._err_handler(t_index)
+4333:             #There was no error and no timeout
+4334:             if (err_state == False) and (timeout == False):
+4335:                 return RET_OK
+4336:             else:
+4337:                 return RET_FAIL
+4338:         #There was no error handling only check timeout
+4339:         else:
+4340:             if timeout:
+4341:                 return RET_FAIL
+4342:             else:
+4343:                 return RET_OK
+
+--- Lines 4362-4385 ---
+4362:             tp_popup("Invalid shank position parameter for move shank command, valid range: 0-55", DR_PM_WARNING)
+4363:             return RET_FAIL
+4364: 
+4365:         self.cb.sd_move_shank(t_index, int(shank_pos))
+4366: 
+4367:         timeout = False
+4368:         if f_wait:
+4369:             busy_cnt = 0
+4370:             f_busy = self.isBusy(t_index)
+4371:             while (f_busy):
+4372:                 wait(0.1)
+4373:                 f_busy = self.isBusy(t_index)
+4374:                 busy_cnt += 1
+4375:                 if busy_cnt > 30:
+4376:                     tp_popup("Screw driver move shank command timeout", DR_PM_WARNING)
+4377:                     timeout = True
+4378:                     break
+4379:             else:
+4380:                 timeout = False
+4381: 
+4382:         #Check for error
+4383:         if self.err_h[t_index]:
+4384:             err_state = self._err_handler(t_index)
+
+--- Lines 4403-4426 ---
+4403:         @type t_index: int
+4404:         '''
+4405: 
+4406:         self.cb.sd_stop(t_index)
+4407: 
+4408:     def resetpower(self, t_index):
+4409:         '''
+4410:         Resets the power of the grippers\n
+4411:         Needs to be issued after saftey event
+4412: 
+4413:         @param t_index: The position of the device (0 for single, 1 for dual primary, 2 for dual secondary)
+4414:         @type t_index: int
+4415:         '''
+4416:         if self.isconn(t_index) is False:
+4417:             return CONN_ERR
+4418:         self.cb.cb_reset_tool_power()
+4419: 
+4420: 
+4421: class LIFT():
+4422:     '''
+4423:     This class is for handling the LIFT device
+4424:     '''
+4425:     def __init__(self, dev):
+
+--- Lines 4982-4998 ---
+4982: or_eyes = EYES(or_dev)
+4983: or_sg = SG(or_dev)
+4984: or_mg = MG(or_dev)
+4985: or_sdr = SDR(or_dev)
+4986: or_vgp = VGP(or_dev)
+4987: or_hex = HEX(or_dev)
+4988: or_rg2ft = RG2FT(or_dev)
+4989: or_sd = SD(or_dev)
+4990: or_fgp = FGP(or_dev)
+4991: or_lift = LIFT(or_dev)
+4992: or_cb = CBIO(or_dev)
+4993: or_wl = Weblytics(or_dev)
+4994: 
+4995: 
+4996: 
+4997: 
+
+--- Lines 4986-4998 ---
+4986: or_vgp = VGP(or_dev)
+4987: or_hex = HEX(or_dev)
+4988: or_rg2ft = RG2FT(or_dev)
+4989: or_sd = SD(or_dev)
+4990: or_fgp = FGP(or_dev)
+4991: or_lift = LIFT(or_dev)
+4992: or_cb = CBIO(or_dev)
+4993: or_wl = Weblytics(or_dev)
+4994: 
+4995: 
+4996: 
+4997: 
+

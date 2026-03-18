@@ -22,3 +22,4 @@ Rules:
 - If no files found, report "No screenshots found"
 - If image reading fails, report at least file path and size info
 - Report concisely in English
+- Report each step taken and its result in detail before proceeding to the next step

@@ -1,4 +1,4 @@
-# Global Rules (v2026.03.17)
+# Global Rules (v2026.03.18)
 
 ## Response
 - Respond in Korean, code comments in **Korean**. Be concise, no flattery/chatter

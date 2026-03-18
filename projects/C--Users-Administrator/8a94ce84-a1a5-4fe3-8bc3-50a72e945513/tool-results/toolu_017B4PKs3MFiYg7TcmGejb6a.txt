@@ -1,0 +1,2154 @@
+     1→Total pages: 51
+     2→=== PAGE 1 ===
+     3→ 
+     4→ 
+     5→ 
+     6→ 
+     7→Japan Quality since 1968 
+     8→ 
+     9→ 
+    10→ 
+    11→ 
+    12→ 
+    13→ 
+    14→ 
+    15→ 
+    16→ 
+    17→ 
+    18→ 
+    19→ 
+    20→ 
+    21→ 
+    22→ 
+    23→ 
+    24→ 
+    25→ 
+    26→AUTOMATIC SCREW FEEDER 
+    27→ 
+    28→NSRI SERIES 
+    29→ 
+    30→User Manual 
+    31→ 
+    32→                                                                                
+    33→ 
+    34→                                      
+    35→
+    36→=== PAGE 2 ===
+    37→ 
+    38→ 
+    39→ 
+    40→Read these instructions for the proper use of this machine. After having read these 
+    41→instructions, keep them in a convenient place so you or the operator can refer to them 
+    42→whenever necessary. 
+    43→ 
+    44→ 
+    45→ 
+    46→ 
+    47→ 
+    48→ 
+    49→ 
+    50→ ATTENTION : www.ohtake-root.co.jp is the only web site associated with our company. 􀀃         
+    51→We do not have any branches in China.  
+    52→ 
+    53→ 
+    54→ 
+    55→ 
+    56→ 
+    57→
+    58→=== PAGE 3 ===
+    59→ 
+    60→3 
+    61→ 
+    62→Contents 
+    63→1 Overview of this machine ............................................................................................................ 5 
+    64→2 Before use ....................................................................................................................................... 5 
+    65→3 Operating precautions ................................................................................................................. 6 
+    66→4 Name of Machine parts ................................................................................................................ 9 
+    67→5 Adjustments and checks before use ...................................................................................... 10 
+    68→5.1 Checking the model number of the body ......................................................................... 10 
+    69→5.2 Basic operation ...................................................................................................................... 12 
+    70→5.2.1 Amount of screws to be loaded ............................................................................... 12 
+    71→5.2.2 Loading the screws ..................................................................................................... 13 
+    72→5.2.3 Turning ON the power ............................................................................................... 13 
+    73→5.3 Checking and adjusting the brush ...................................................................................... 14 
+    74→5.4 Checking and adjusting the passing plate ........................................................................ 15 
+    75→5.5 Checking and adjusting the rail vibration ......................................................................... 16 
+    76→5.6 Checking and adjusting the holding plate ..................................................................... 18 
+    77→5.7 Checking and adjusting the front/rear sides of the rail ................................................. 19 
+    78→5.8 Checking and adjusting the timer ...................................................................................... 20 
+    79→5.9 Installing the additional “Nejikura” Screw hopper .......................................................... 21 
+    80→6 Maintenance ................................................................................................................................. 22 
+    81→7 Parts adjustments and replacements .................................................................................... 23 
+    82→7.1 Replacing and Adjusting the Brush .................................................................................... 24 
+    83→7.2 Replacing the main motor ................................................................................................... 25 
+    84→7.3 Operation Timing After Replacing the Main Motor ........................................................ 26 
+    85→7.4 Replacing the rail ................................................................................................................... 27 
+    86→7.5 Replacing the passing plate ................................................................................................ 28 
+    87→7.6 Replacing and adjusting the escaper and the robot escaper guide ............................. 29 
+    88→7.6.1 Replace the escaper and robot escaper guide. ...................................................... 30 
+    89→7.6.2 Check and adjust the position of the robot escaper guide. ................................ 31 
+    90→7.6.3 Adjust the escaper notch position. .......................................................................... 32 
+    91→7.6.4 Explanation of the escaper movement before adjusting the sensor ................ 34 
+    92→7.6.5 Checking and adjusting the sensor .......................................................................... 36 
+    93→8 Operational check ....................................................................................................................... 37 
+    94→9 Application with Robotic System ............................................................................................ 38 
+    95→9.1 Installation with Robotic System ........................................................................................ 38 
+    96→9.2 External output signals ........................................................................................................ 39 
+    97→9.3 Robotic operations ............................................................................................................... 39 
+    98→10 Miscellaneous ............................................................................................................................... 41 
+    99→10.1 
+   100→Overload Protective Circuit .......................................................................................... 41 
+   101→
+   102→=== PAGE 4 ===
+   103→ 
+   104→4 
+   105→ 
+   106→11 Troubleshooting .......................................................................................................................... 42 
+   107→12 Specifications ............................................................................................................................... 45 
+   108→12.1 
+   109→Technical sheet ............................................................................................................... 45 
+   110→12.2 
+   111→Replacement parts ......................................................................................................... 47 
+   112→12.3 
+   113→External mechanical dimensions ................................................................................. 48 
+   114→13 Warranty ........................................................................................................................................ 49 
+   115→13.1 
+   116→Product Warranty ........................................................................................................... 49 
+   117→13.2 
+   118→Disclaimer ........................................................................................................................ 49 
+   119→ 
+   120→ 
+   121→
+   122→=== PAGE 5 ===
+   123→Overview of this machine 
+   124→5 
+   125→ 
+   126→1 
+   127→Overview of this machine 
+   128→Thank you very much for selecting our Automatic Screw Feeder "NSRI series". This machine, 
+   129→with the screwing robot, can line up screws (M-1, M-3) and supplies them one by one to an 
+   130→automatic machine to help streamline screw tightening.  
+   131→Different sizes of screws can be used by changing the rail, escaper, passing plate and the robot 
+   132→escaper guide. It can be used wherever there is a power source for an AC adapter. 
+   133→ 
+   134→2 
+   135→Before use 
+   136→Please check for the following accessories before operating the machine. 
+   137→• Operation Manual 1 copy 
+   138→• AC Adapter 1 unit 
+   139→• Screwdriver 1 piece  
+   140→• Hexagonal Wrench 1 piece 
+   141→• Ground Wire 1 piece 
+   142→ 
+   143→The design, performance and specifications are subject to change without prior notice for the 
+   144→sake of improvement. 
+   145→
+   146→=== PAGE 6 ===
+   147→Operating precautions 
+   148→6 
+   149→ 
+   150→3 
+   151→Operating precautions 
+   152→This manual contains safety alert, symbols and signal words to help prevent injuries to the user 
+   153→or damage to property. 
+   154→Indications 
+   155→ 
+   156→WARNING: 
+   157→This indicates there is a chance of death, serious injury or fire if the instructions are 
+   158→not followed. 
+   159→ 
+   160→CAUTION: 
+   161→This indicates there is a chance of personal injury or damage to property if the 
+   162→instructions are not followed. 
+   163→ 
+   164→Symbols indicating type of danger and preventative measures 
+   165→ 
+   166→Prohibited operation. Never do this! 
+   167→ 
+   168→Do not disassemble, modify or repair 
+   169→Do not touch with wet hands 
+   170→This indicates to stop operations 
+   171→ 
+   172→Unplug power supply from wall outlet 
+   173→General caution 
+   174→ 
+   175→Attach the ground wire by loosening the screw near the mark 
+   176→  of the equipment. 
+   177→Bottom of the main body 
+   178→ 
+   179→ 
+   180→ 
+   181→
+   182→=== PAGE 7 ===
+   183→Operating precautions 
+   184→7 
+   185→ 
+   186→ 
+   187→ 
+   188→WARNING 
+   189→Do not disassemble the AC adapter as there is a risk of electric shock, fire or malfunction. 
+   190→ 
+   191→Do not damage, alter or change the power cord. Do not place heavy objects on the cord. Do 
+   192→not pull hard on the cord or twist the cord as it could be damaged, thereby causing a risk of 
+   193→fire or electric shock. 
+   194→Do not handle the AC adapter with wet hands as it could cause an electric shock. 
+   195→ 
+   196→When using an outlet with AC100 ～ 240V, don't overload the electrical circuit. 
+   197→Do not modify or remodel this machine as this may cause a fire or electric shock. 
+   198→ 
+   199→Stop operating the machine and unplug the AC adapter from the wall outlet when you 
+   200→detect overheating, smoke, a pungent odor or any other unusual condition, as there may be 
+   201→a risk of fire or electric shock. Contact the dealer, from which you purchased the machine, 
+   202→and have it examined and repaired. 
+   203→ 
+   204→In the case of a thunderstorm, stop operating the machine, turn off the power and unplug 
+   205→the AC adapter from the wall outlet. If there is lightning and thunder nearby, move away 
+   206→from the machine and do not touch it or the AC adapter. 
+   207→After the thunder stops, and when it is safe to do so, check the machine. If there is any 
+   208→abnormality, contact your dealer. 
+   209→ 
+   210→When performing maintenance, changing parts or when you sense an abnormality in the 
+   211→machine, turn the power off and pull the AC adapter from the wall outlet. 
+   212→In addition, there are parts that become hot in the circuit board. When performing 
+   213→maintenance around the circuit board, turn off the power for at least 5 minutes before 
+   214→performing work. There is a risk of burns. 
+   215→ 
+   216→ 
+   217→ 
+   218→
+   219→=== PAGE 8 ===
+   220→Operating precautions 
+   221→8 
+   222→ 
+   223→ 
+   224→CAUTION 
+   225→Use only the AC adapter supplied with this machine otherwise it may result in a fire or 
+   226→electric shock. 
+   227→ 
+   228→Do not install this machine in an unstable location otherwise it may fall causing 
+   229→damage or injury. 
+   230→Always operate the machine with the upper cover in place, otherwise it may result in 
+   231→injury. 
+   232→ 
+   233→Do not allow any foreign material to enter the machine while in operation. 
+   234→Do not put your fingers into the machine while in operation, otherwise an injury will 
+   235→result. 
+   236→ 
+   237→Do not operate this machine in overly humid or dusty conditions. 
+   238→Keep the plug socket clean at all times otherwise it may cause a fire or electric shock. 
+   239→When moving the machine, always disconnect the AC adapter from the wall outlet or 
+   240→it may result in damage to the cord or cause a fire or electric shock. 
+   241→ 
+   242→Turn off the machine and unplug the AC adapter from the wall outlet during closing 
+   243→hours or if the machine will be unused for any extended period of time. 
+   244→When moving the machine, be sure to hold it with both hands and be careful not to 
+   245→drop it. Dropping the machine at your feet may cause injury. 
+   246→Do not operate the machine with tension on the AC adapter cord. Keep the cord loose 
+   247→and untangled. 
+   248→Do not bend, alter or damage the rail. Do not apply any oil. It is recommended that the 
+   249→user clean the rail periodically. 
+   250→Do not use any screw that is out of the specified range nor any screw that is oily or 
+   251→dirty. 
+   252→When picking up screws, do not exert excessive force or shock to the screws. 
+   253→ 
+   254→When opening the upper lid, please do not apply excessive force. There is a risk of 
+   255→damage. 
+   256→ 
+   257→
+   258→=== PAGE 9 ===
+   259→Name of Machine parts 
+   260→9 
+   261→ 
+   262→4 
+   263→Name of Machine parts 
+   264→ 
+   265→ 
+   266→ 
+   267→ 
+   268→ 
+   269→A. Rear cover 
+   270→B. Upper cover 
+   271→C. Rail fixing bolt  
+   272→D. Front cover 
+   273→E. Holding plate  
+   274→F. LED screw indicator 
+   275→G. Sensor bracket attaching bolt 
+   276→H. Escaper bracket installing screw 
+   277→I. Power switch 
+   278→ 
+   279→ 
+   280→ 
+   281→ 
+   282→J. Escaper 
+   283→K. Escaper guide for the robot 
+   284→L. Light-emitting sensor 
+   285→M. Light-receiving sensor 
+   286→ 
+   287→ 
+   288→N. Scooping block left and right 
+   289→(moving up and down) 
+   290→O. Brush 
+   291→P. Passing plate 
+   292→Q. Scooping chamber 
+   293→R. DC jack 
+   294→S. Signal line out 
+   295→T. Vibration adjusting bolt (under 
+   296→the machine) 
+   297→U. Vibration adjusting plate fixing 
+   298→bolt 
+   299→V. Rail 
+   300→W. Timer knob 
+   301→ 
+   302→A 
+   303→B 
+   304→C 
+   305→D 
+   306→E 
+   307→F 
+   308→G 
+   309→I 
+   310→H 
+   311→K 
+   312→M  
+   313→L 
+   314→J 
+   315→p  
+   316→R  
+   317→S  
+   318→T  
+   319→Q  
+   320→U  
+   321→O  
+   322→V  
+   323→W 
+   324→N  
+   325→
+   326→=== PAGE 10 ===
+   327→Adjustments and checks before use 
+   328→10 
+   329→ 
+   330→5 
+   331→Adjustments and checks before use 
+   332→5.1 Checking the model number of the body 
+   333→Check if the machine has the parts which match the nominal diameter of the screws to be 
+   334→loaded. Check the model number of the rail, escaper, escaper guide for the robot and 
+   335→passing plate by referring to the following table. Each escaper is stamped with a model 
+   336→number which matches with the type of screws that can be used. The escaper guide for the 
+   337→robot is stamped with a model number which corresponds with the types of screws that 
+   338→can be used. 
+   339→ 
+   340→ 
+   341→ 
+   342→Before delivery, each section of the machine is checked and adjusted with panhead screws 
+   343→matching the nominal diameters of the ordered model. 
+   344→Most screws may be usable in the initial status of adjustment however, if the height or 
+   345→shape of the screw head is different or if the operation is regarded as abnormal, each 
+   346→section must be readjusted. If this is the case, make the following checks and adjustments: 
+   347→• Check the screw load amount 
+   348→• Check and adjust the passing plate 
+   349→• Check and adjust the holding plate 
+   350→• Check and adjust the timer 
+   351→• Check and adjust the brush 
+   352→• Check and adjust the rail vibration 
+   353→• Check and adjust the front and rear sides of the rail 
+   354→Rail 
+   355→identification 
+   356→seal 
+   357→Passing 
+   358→plate 
+   359→identification seal 
+   360→Escaper guide for the 
+   361→robot identification 
+   362→stamp 
+   363→Escaper 
+   364→identification stamp 
+   365→
+   366→=== PAGE 11 ===
+   367→Adjustments and checks before use 
+   368→11 
+   369→ 
+   370→Screw 
+   371→feeder 
+   372→series 
+   373→Screw 
+   374→feeder 
+   375→model 
+   376→ 
+   377→Screw 
+   378→size 
+   379→ 
+   380→Exchange 
+   381→kit No. 
+   382→ 
+   383→Rail 
+   384→model 
+   385→No. 
+   386→ 
+   387→Escaper 
+   388→model No. 
+   389→Robot 
+   390→escaper 
+   391→guide model 
+   392→No. 
+   393→Passing 
+   394→plate 
+   395→model No. 
+   396→NSRI 
+   397→NSRI10 
+   398→M1.0 
+   399→RI10SET 
+   400→RI10 
+   401→SIE10 
+   402→ 
+   403→ 
+   404→SIER10-17 
+   405→ 
+   406→ 
+   407→SW1017 
+   408→NSRI12 
+   409→M1.2 
+   410→RI12SET 
+   411→RI12 
+   412→SIE12 
+   413→NSRI14 
+   414→M1.4 
+   415→RI14SET 
+   416→RI14 
+   417→SIE14 
+   418→NSRI17 
+   419→M1.6 
+   420→M1.7 
+   421→RI17SET 
+   422→RI17 
+   423→SIE17 
+   424→NSRI20 
+   425→M2.0 
+   426→RI20SET 
+   427→RI20 
+   428→SIE20 
+   429→ 
+   430→ 
+   431→SIER20-30 
+   432→ 
+   433→ 
+   434→SW2030 
+   435→NSRI23 
+   436→M2.3 
+   437→RI23SET 
+   438→RI23 
+   439→SIE23 
+   440→NSRI26 
+   441→M2.6 
+   442→RI26SET 
+   443→RI26 
+   444→SIE26 
+   445→NSRI30 
+   446→M3.0 
+   447→RI30SET 
+   448→RI30 
+   449→SIE30 
+   450→ 
+   451→ 
+   452→NOTE: 
+   453→Screws, with a different nominal diameter, can be used by replacing the rail, 
+   454→escaper, passing plate and the robot escaper guide for the robot. 
+   455→The parts, for replacement, are available separately.  
+   456→ 
+   457→If the rail, escaper, passing plate and robot escaper guide are replaced, screws with a 
+   458→different nominal diameter can be accepted. After these parts are replaced, fine adjusting is 
+   459→required. The respective adjusting procedures will be described elsewhere. Please read these 
+   460→procedures. 
+   461→ 
+   462→ 
+   463→
+   464→=== PAGE 12 ===
+   465→Adjustments and checks before use 
+   466→12 
+   467→ 
+   468→5.2 Basic operation 
+   469→5.2.1 Amount of screws to be loaded 
+   470→1. Turn the power switch ON and OFF so that the scooping block is at the lower limit 
+   471→position. 
+   472→2. Load screws up to approximately 2 ～ 3mm below the rail surface. 
+   473→3. At this time, check that screws are not loaded so as to cover the upper portion of the 
+   474→inclined plate. 
+   475→4. Be sure to determine the screw load by observing the machine while it is in operation. 
+   476→ 
+   477→CAUTION: 
+   478→An excessive amount of screws, loaded into the chamber, will have an adverse 
+   479→effect on the screw alignment and transport. 
+   480→The figure, shown below, indicates the maximum amount of screws to be loaded. 
+   481→Use this as a guide when loading the screws. 
+   482→ 
+   483→ 
+   484→ 
+   485→ 
+   486→Screws, loaded into the chamber, must not be above the rail-groove surface. 
+   487→(The maximum screw load must be 2 to 3 mm below the rail-groove surface.) 
+   488→Power switch 
+   489→This inclined surface, on both the right 
+   490→and left inclined plates, should be 
+   491→visible. 
+   492→
+   493→=== PAGE 13 ===
+   494→Adjustments and checks before use 
+   495→13 
+   496→ 
+   497→5.2.2 Loading the screws 
+   498→1. Open the upper cover. 
+   499→2. When the chamber plates are at their lowest position, load screws up to 2 to 3 mm below 
+   500→the rail groove surface. 
+   501→3. Check that the screws are not loaded so as to cover the upper portion of the inclined 
+   502→plates. 
+   503→ 
+   504→CAUTION: 
+   505→Do not overload the chamber with screws otherwise it may cause a malfunction 
+   506→or damage the machine. 
+   507→ 
+   508→5.2.3 Turning ON the power 
+   509→1. Plug the attached AC adapter into the main body and power outlet. 
+   510→2. When the power switch is turned ON, the power switch lamp lights up. The scooping block 
+   511→starts to move up and down. The rail starts to vibrate, and the escaper starts rotating. 
+   512→3. Screws move along the rail towards the rotating escaper which selects one screw at a 
+   513→time. 
+   514→4. The escaper rotates and deposits the selected screw at the pickup site. 
+   515→5. At this moment, the sensor detects a screw and the screw sensor LED lights up and then 
+   516→the operation stops. 
+   517→6. When a screw is picked up, the sensor detects this, and the sensor LED light goes off and 
+   518→the machine resumes operation. 
+   519→ 
+   520→CAUTION: 
+   521→Do not use any AC adapter other than the one included with this unit, as it may 
+   522→cause damage. 
+   523→ 
+   524→ 
+   525→ 
+   526→
+   527→=== PAGE 14 ===
+   528→Adjustments and checks before use 
+   529→14 
+   530→ 
+   531→5.3 Checking and adjusting the brush 
+   532→ 
+   533→CAUTION: 
+   534→Turn OFF the power switch before starting replacement and adjustment. 
+   535→1. Load the screws into the scooping hopper, turn ON and OFF the power switch so that 
+   536→screws are aligned into the rail groove. 
+   537→2. Turn ON and OFF the power switch so that the brush bristles are in a horizontal position 
+   538→as shown in the figure at right. 
+   539→3. Check that the heads of the screws, in the rail groove, are in slight contact with the brush 
+   540→bristles. 
+   541→When the brush height is too high or low, this will have an adverse effect on the screw 
+   542→alignment and transport. 
+   543→4. If any adjustment is necessary, loosen the brush height adjusting bolt to adjust the brush 
+   544→height. 
+   545→5. If the plastic portion, at the front of the brush, comes into contact with the passing plate, 
+   546→loosen the brush assembly mounting screw and make an adjustment either backward or 
+   547→forward. 
+   548→6. Operate the machine to check that the brush operation is normal. 
+   549→ 
+   550→ 
+   551→ 
+   552→ 
+   553→ 
+   554→Power 
+   555→switch 
+   556→Turn On and Off the power switch to put the brush 
+   557→bristles in a horizontal position. 
+   558→Passing plate 
+   559→Brush 
+   560→assembly 
+   561→attaching 
+   562→Brush height adjusting bolt 
+   563→The brush must not be in contact with the 
+   564→passing plate when it moves. 
+   565→Brush 
+   566→Loaded screws 
+   567→Move the brush by hand to check that the screws, in the rail groove, are in 
+   568→slight contact with the brush bristles and make adjustments if necessary. 
+   569→
+   570→=== PAGE 15 ===
+   571→Adjustments and checks before use 
+   572→15 
+   573→ 
+   574→5.4 Checking and adjusting the passing plate 
+   575→ 
+   576→CAUTION: 
+   577→Turn OFF the power switch before making any checks or adjustments. 
+   578→1. Check that the passing plate is adjusted to a height that permits loaded screws to pass 
+   579→just within the clearance limit. 
+   580→If the passing plate is too low, screws cannot pass. If the passing plate is too high, it will 
+   581→hamper a smooth transport of the screws. 
+   582→2. If adjustment is required, loosen the passing plate attaching bolt and adjust the height. 
+   583→3. After making an adjustment, do an operational check. 
+   584→ 
+   585→NOTE: 
+   586→Using the half-presses on both sides of the passing plate as guides, slide the 
+   587→passing plate up or down. 
+   588→ 
+   589→ 
+   590→The clearance should be just enough to permit the loaded screws to pass through the passing 
+   591→plate. 
+   592→ 
+   593→ 
+   594→ 
+   595→Passing plate attaching bolt 
+   596→Passing plate 
+   597→Half-press (provided on both sides of 
+   598→the passing plate) 
+   599→Loaded screw 
+   600→
+   601→=== PAGE 16 ===
+   602→Adjustments and checks before use 
+   603→16 
+   604→ 
+   605→5.5 Checking and adjusting the rail vibration 
+   606→This machine’s rail vibration can be adjusted. 
+   607→The screw transport speed differs depending on the screw type. Check the screw transport 
+   608→speed. If the rail vibration hinders a smooth transport of the screws, it can be adjusted. 
+   609→1. Loosen the anti-vibration screw at the rear of the machine. 
+   610→2. Next, turn the vibration adjusting screw, located on the bottom of the machine, to 
+   611→adjust the vibration. 
+   612→When the screw is turned clockwise, as viewed from the bottom of the machine, the 
+   613→vibration will increase. 
+   614→When the screw is turned counterclockwise, the vibration decreases. 
+   615→If the vibration is adjusted to a too large a value to increase the transport speed, the rail 
+   616→will hit against the escaper and screws may fall into the machine from the clearance, failing 
+   617→to unload screws normally. Adjust the vibration to a proper value that matches the loaded 
+   618→screws. 
+   619→For complementary information, see section Checking and adjusting the front/rear sides of the 
+   620→rail page 19. 
+   621→ 
+   622→NOTE: 
+   623→After making an adjustment, be sure to tighten the vibration plate fixing 
+   624→bolt. 
+   625→After making an adjustment, do an operational check. 
+   626→ 
+   627→
+   628→=== PAGE 17 ===
+   629→Adjustments and checks before use 
+   630→17 
+   631→ 
+   632→ 
+   633→ 
+   634→ 
+   635→Stronger 
+   636→vibration 
+   637→weaker 
+   638→vibration 
+   639→Vibration 
+   640→adjusting bolt 
+   641→Vibration adjusting 
+   642→plate fixing bolt 
+   643→The rail must not come in contact with the escaper. 
+   644→The clearance must not be too large 
+   645→
+   646→=== PAGE 18 ===
+   647→Adjustments and checks before use 
+   648→18 
+   649→ 
+   650→5.6 Checking and adjusting the holding plate 
+   651→1. Check that the clearance between screws in the rail groove and the holding plate is about 
+   652→0 to 1 mm. 
+   653→If there is no clearance, a screw will be caught. If the clearance is too large, a screw pile or 
+   654→screw jump will occur. 
+   655→2. If any adjustment is required, loosen the holding plate attaching screw and move the 
+   656→plate up or down. 
+   657→3. If the holding plate makes contact with the escaper, it will affect the smooth operation 
+   658→of the escaper movement. 
+   659→4. After making an adjustment, check the machine operation. 
+   660→ 
+   661→ 
+   662→ 
+   663→ 
+   664→Holding 
+   665→plate 
+   666→Loaded 
+   667→screw 
+   668→Escaper 
+   669→The clearance between screws loaded 
+   670→in the rail and the holding plate should 
+   671→be about 0 to 1 mm. 
+   672→Up/down 
+   673→adjustment 
+   674→Holding 
+   675→plate 
+   676→attaching screw 
+   677→The holding plate must not make contact 
+   678→with the escaper. 
+   679→
+   680→=== PAGE 19 ===
+   681→Adjustments and checks before use 
+   682→19 
+   683→ 
+   684→5.7 Checking and adjusting the front/rear sides of the rail 
+   685→If the rail comes into contact with the escaper, or the clearance between the rail and escaper is 
+   686→too large, when the machine is operated, loosen the rail fixing bolt and adjust the rail either 
+   687→backward or forward. 
+   688→After making an adjustment, be sure to tighten the rail fixing bolt. 
+   689→If the rail hits against the escaper, the escaper will not function properly. 
+   690→If the clearance between the rail and the escaper is too large, screws may fall into the machine. 
+   691→After making an adjustment, try making a vibration readjustment by referring to Checking and 
+   692→adjusting the rail vibration page 16. 
+   693→ 
+   694→Rail fixing bolt 
+   695→Adjust the rail either backward or forward. 
+   696→
+   697→=== PAGE 20 ===
+   698→Adjustments and checks before use 
+   699→20 
+   700→ 
+   701→5.8 Checking and adjusting the timer  
+   702→The screw transport feed differs depending on screw type. 
+   703→This machine can make screw unloading smooth through timer adjustment. For screws with a 
+   704→low transport speed, set the timer long. For screws with a high transport speed, set the timer 
+   705→short. 
+   706→This machine continues its operation when no screw is found at the screw pick up site. The 
+   707→machine continues operating with a screw at the pickup site but will stop, after a certain lapse 
+   708→of time, if the screw is not picked up. This time lapse can be varied by adjusting the timer. After 
+   709→the screw is picked up, the machine starts operating again. 
+   710→Check the operation by intercepting the optical axis of the sensor. 
+   711→Make an adjustment with the timer knob at the rear of the machine body (as shown in the figure 
+   712→on the right). 
+   713→When the timer knob is turned clockwise, as viewed from the rear side, the time becomes 
+   714→shorter. When the knob is turned counterclockwise, the time becomes longer. 
+   715→Make this adjustment, by using the accompanying screwdriver, within the allowable 
+   716→turning range, without using excessive force. 
+   717→Do an operational check with screws loaded in the scooping chamber and set the timer 
+   718→properly. 
+   719→ 
+   720→ 
+   721→                        
+   722→ 
+   723→ 
+   724→ 
+   725→ 
+   726→ 
+   727→ 
+   728→Adjust 
+   729→the 
+   730→timer with the 
+   731→timer knob 
+   732→When the optical axis of 
+   733→the sensor is intercepted, 
+   734→the timer will function to 
+   735→stop the operation of the 
+   736→machine. 
+   737→Longer 
+   738→Timer knob 
+   739→Shorter 
+   740→
+   741→=== PAGE 21 ===
+   742→Adjustments and checks before use 
+   743→21 
+   744→ 
+   745→5.9 Installing the additional “Nejikura” Screw hopper 
+   746→We have, as an attachment, "Nejikura" which supplies a constant amount of screws, 
+   747→automatically. 
+   748→To use "Nejikura", take off the upper cover of the screw feeder NSRI type and put on 
+   749→"Nejikura". 
+   750→"Nejikura" 
+   751→• Detects, by sensor, the amount of screws in the scooping chamber of the screw feeder. 
+   752→• Continues to supply screws automatically as the sensor detects the amount of screws, in 
+   753→the scooping chamber, to be decreasing. 
+   754→• Two other "Nejikura", that fit the NSRI type, are the SR-80 Floor type(Table-Top) and the 
+   755→T-510S Tower type. 
+   756→• If space above the screw feeder is limited, choose the SR-80 Floor type(Table-Top). If 
+   757→there's enough space above, choose the T-510S Tower type. 
+   758→ 
+   759→To order, please contact your dealer. 
+   760→ 
+   761→ 
+   762→ 
+   763→ 
+   764→ 
+   765→ 
+   766→The example for setting the "Nejikura"  
+   767→SR-80 Floor type 
+   768→The example for setting the "Nejikura"  
+   769→T-510S Tower type 
+   770→ 
+   771→
+   772→=== PAGE 22 ===
+   773→Maintenance 
+   774→22 
+   775→ 
+   776→6 
+   777→Maintenance  
+   778→A dirty rail groove may interfere with the screw transport speed. Clean the dirty rail with a 
+   779→soft, clean cloth dipped in alcohol. 
+   780→If cleaning is difficult, remove the rail from the machine and clean the rail groove. Before 
+   781→removing the rail from the machine, be sure to turn off the power supply and take the screws 
+   782→out of the chamber. 
+   783→If there is any dirt or a flaw in the rail groove that may cause an impediment in use, we 
+   784→recommend the user to clean or replace the rail. 
+   785→Loosen the rail fixing bolts and pull out the rail assembly from the rear side of the 
+   786→machine. 
+   787→ 
+   788→ 
+   789→Rail fixing bolt 
+   790→Clean the rail groove 
+   791→
+   792→=== PAGE 23 ===
+   793→Parts adjustments and replacements 
+   794→23 
+   795→ 
+   796→7 
+   797→Parts adjustments and replacements 
+   798→The brush and main motor are consumable parts. 
+   799→When using a different diameter of screw, the following items must be replaced: rail, escaper 
+   800→and passing plate. These parts may be ordered separately. 
+   801→The replacing and adjusting procedures are described on the next pages. 
+   802→When replacing any parts, a fine adjustment is required. Make these fine adjustments by 
+   803→reading the corresponding contents carefully. 
+   804→ 
+   805→CAUTION: 
+   806→Before replacing any parts, be sure to remove all the screws from the hopper. 
+   807→ 
+   808→ 
+   809→ 
+   810→
+   811→=== PAGE 24 ===
+   812→Parts adjustments and replacements 
+   813→24 
+   814→ 
+   815→7.1 Replacing and Adjusting the Brush  
+   816→ 
+   817→CAUTION: 
+   818→Turn OFF the power switch before starting replacement and adjustment. 
+   819→If the brush is too worn to sweep screws off of the rail, replace it.  
+   820→A brush with harder bristles, than the standard brush, is available as an option. 
+   821→1. Turn ON and OFF the power switch in order to set the brush at the position shown in the 
+   822→figure on the right and detach the brush assembly. 
+   823→2. The brush assembly can be disassembled as shown in the figure below. 
+   824→3. After completing the assembly, check that the front part of the brush doesn’t come in 
+   825→contact with the passing plate. The ideal clearance is 0mm. 
+   826→For assembly, reverse the disassembling procedure. 
+   827→For adjustment, refer to Adjustments and checks before use page 10. 
+   828→Part number of brush assembly: 
+   829→• OHTAKE - NSB 02053, OnRobot - 104849 #01 (standard brush) 
+   830→• OHTAKE NSB 02053, OnRobot - 104850 #02 (optional, harder bristle brush) 
+   831→ 
+   832→ 
+   833→ 
+   834→Brush assembly attaching screw 
+   835→Passing plate 
+   836→Brush 
+   837→assembly 
+   838→Passing 
+   839→plate 
+   840→Brush 
+   841→When the brush is operating, it should not 
+   842→come in contact with the passing plate. 
+   843→(Exploded view) 
+   844→Hex socket head small bolt M2.6x10 
+   845→Spring washer M2.6 
+   846→Plain washer M2.6 
+   847→Brush bracket #1 
+   848→Brush  
+   849→Brush bracket #2 
+   850→
+   851→=== PAGE 25 ===
+   852→Parts adjustments and replacements 
+   853→25 
+   854→ 
+   855→7.2 Replacing the main motor 
+   856→ 
+   857→CAUTION: 
+   858→T urn OFF the power switch before starting to replace and adjust the main motor.
+   859→When the motor is damaged, replace it with a new one. 
+   860→1. First, remove the cover from the main body.  
+   861→2. Then, disconnect the connectors for the power switch and LED screw indicator. 
+   862→This makes it easier to work within the body. 
+   863→3. Disconnect the motor junction connector. 
+   864→4. Remove the motor attaching screws on the bottom of the main body. 
+   865→5. Pull out the motor from the rear side of the main body. 
+   866→(If the motor is hard to pull out, insert an Allen wrench into the oblong hole in the base of the 
+   867→body and push the motor bracket backward.) 
+   868→The motor can be disassembled as shown in the figure below. 
+   869→For reassembly, reverse the disassembling procedure. 
+   870→The combination of the operation timing for the left and right scooping blocks is shown on the 
+   871→next page. 
+   872→ 
+   873→NOTE: 
+   874→Do not use excessive force with the motor wiring in order to avoid wire 
+   875→breakage. 
+   876→ 
+   877→Part number of main motor unit :  OHTAKE - NSIB 7115, OnRobot - 104847 
+   878→1. Remove the cover and disconnect the 
+   879→motor connector. 
+   880→  2. Remove the motor attaching screws. 
+   881→  M2.6 X 8 2 pieces 
+   882→         
+   883→ 
+   884→             
+   885→ 
+   886→3. Remove the motor bracket towards
+   887→the rear. 
+   888→     4. Pull the motor out towards the rear. 
+   889→            
+   890→ 
+   891→                 
+   892→ 
+   893→ 
+   894→ 
+   895→
+   896→=== PAGE 26 ===
+   897→Parts adjustments and replacements 
+   898→26 
+   899→ 
+   900→7.3 Operation Timing After Replacing the Main Motor 
+   901→ 
+   902→CAUTION: 
+   903→Turn OFF the power switch before starting to replace and adjust the main motor.
+   904→• To adjust the timing of the scooping block in respect to the brush movement, it is 
+   905→necessary to adjust the gear engagement. 
+   906→• When the motor has been removed from the main body, adjust the gear engagement of 
+   907→the motor, as shown in the figure below then the operation timing can be adjusted. After 
+   908→assembling the motor, be sure to tighten the screws again. 
+   909→• When it is hard to engage the driving gear, of the motor with the driven gear, loosen the 
+   910→drive shaft bracket (right) then this will facilitate the assembly. (Refer to the figure on the 
+   911→below.) 
+   912→• After installing the motor, switch the power ON to check the operation timing. (Check 
+   913→that both right and left scooping blocks operate almost simultaneously.) 
+   914→• After doing an operation check, return the wiring arrangement to its original status. 
+   915→When installing the cover, be careful not to pinch any wires. Be careful that the wiring 
+   916→does not hinder the operation of moving parts. The wiring, on the inside, should not 
+   917→hinder adjustments made from the outside of the machine. 
+   918→ 
+   919→NOTE: 
+   920→To avoid breakage, do not use excessive force with the motor wiring. 
+   921→ 
+   922→ 
+   923→ 
+   924→Assemble the motor section when the 
+   925→scooping blocks left, and right are in the 
+   926→lowest position. 
+   927→To get the left and right scooping blocks at 
+   928→almost the same height, clinch the drive 
+   929→gear of the motor shaft and the gears on the 
+   930→left and right, and tighten the motor 
+   931→bracket. 
+   932→(M2.6 x 8 - 2 pieces) 
+   933→ 
+   934→ 
+   935→The left and right scooping blocks 
+   936→should be at the lowest position. 
+   937→When the  right pin 
+   938→is vertical, the left 
+   939→pin 
+   940→should 
+   941→be 
+   942→inclined about 46°. 
+   943→Right driving shaft 
+   944→bracket 
+   945→Attaching screws at 
+   946→4 positions 
+   947→When it is hard to get a proper gear 
+   948→engagement, loosen the right driving 
+   949→shaft bracket then adjust the gears and 
+   950→tighten the screws. 
+   951→
+   952→=== PAGE 27 ===
+   953→Parts adjustments and replacements 
+   954→27 
+   955→ 
+   956→7.4 Replacing the rail 
+   957→ 
+   958→CAUTION: 
+   959→Turn OFF the power switch before starting to replace and adjust the rail. 
+   960→Before replacing, remove all the screws from the hopper, the rail, and the 
+   961→escaper. 
+   962→The rail of this machine can be easily replaced. 
+   963→If there is any dirt or flaw on the rail groove that prevents a smooth operation, we 
+   964→recommend the user clean or replace the rail. 
+   965→Use the passing plate, rail and escaper that correspond to the diameter of the screws loaded. 
+   966→Loosen the rail fixing bolts and pull out the rail assembly from the rear of the machine. 
+   967→After replacing the rail, each part must be adjusted. 
+   968→                  
+   969→ 
+   970→ 
+   971→ 
+   972→Rail fixing bolt 
+   973→Loosen the rail fixing bolts and remove the 
+   974→rail assembly from the rear of the machine. 
+   975→
+   976→=== PAGE 28 ===
+   977→Parts adjustments and replacements 
+   978→28 
+   979→ 
+   980→7.5 Replacing the passing plate 
+   981→ 
+   982→CAUTION: 
+   983→Turn OFF the power switch before starting to replace and adjust the passing
+   984→plate. 
+   985→Use the passing plate, rail and escaper that correspond with the diameter of the screws 
+   986→loaded. 
+   987→The following are passing plate numbers which correspond with the model numbers: 
+   988→• 1.0 ～ 1.7 corresponds with Model No. SW1017 
+   989→• 2.0 ～ 3.0 corresponds with Model No. SW2030 
+   990→Please check that the model numbers correspond with the screws that can be used. 
+   991→Remove the passing plate. 
+   992→Do not lose the attached bolts. Using bolts other than those supplied with this machine may 
+   993→result in a malfunction. 
+   994→When installing, use the half-press on both sides of the passing plate as guides. 
+   995→After replacement, make the adjustments that correspond with the screws loaded. 
+   996→                           
+   997→ 
+   998→ 
+   999→ 
+  1000→Attaching bolt 
+  1001→Passing plate 
+  1002→Half-press 
+  1003→(Provided on each side 
+  1004→of the passing plate.) 
+  1005→
+  1006→=== PAGE 29 ===
+  1007→Parts adjustments and replacements 
+  1008→29 
+  1009→ 
+  1010→7.6 Replacing and adjusting the escaper and the robot escaper guide 
+  1011→ 
+  1012→CAUTION: 
+  1013→Turn OFF the power switch before replacing. 
+  1014→Turn ON the power switch when adjustments are necessary. Before replacing, 
+  1015→remove all the screws from the hopper, the rail, and the escaper. 
+  1016→When using screws with a different diameter, replace the escaper, rail, passing plate and the 
+  1017→robot escaper guide. 
+  1018→• The robot escaper guide SIER1017 - matches the 1.0 ~ 1.7 type of screws. 
+  1019→• The robot escaper guide SIER2030 - matches the 2.0 ~ 3.0 type of screws 
+  1020→Please check that the model numbers correspond with the screws being used. 
+  1021→Replace and adjust the escaper and escaper guide after removing the attaching plate for the 
+  1022→holding plate as well as the holding plate. 
+  1023→After replacement, be sure to adjust and check the parts in the area of the escaper. 
+  1024→When you remove the escaper attaching screw, please use the driver for M2 (bit No.0). 
+  1025→Summary of the adjustment: 
+  1026→Adjust moving parts to correspond with the rail. In terms of height, the level of the escaper 
+  1027→surface should be lower than the level of the rail surface. Line up the rail groove with an 
+  1028→escaper notch at the end of the reference point run. A reference point run is the detecting of 
+  1029→the starting point of the escaper motor rotation. Also, make sure there is no contact with the 
+  1030→side of the rail and the robot escaper guide. 
+  1031→ 
+  1032→ 
+  1033→ 
+  1034→LED screw 
+  1035→indicator 
+  1036→Rail 
+  1037→Holding plate Screw for the attaching plate for the 
+  1038→holding plate 
+  1039→Power 
+  1040→switch 
+  1041→Escaper 
+  1042→Light-receiving sensor 
+  1043→Light-emitting sensor 
+  1044→Robot escaper 
+  1045→guide 
+  1046→Line up the rail groove 
+  1047→with an escaper notch. 
+  1048→Escaper 
+  1049→surface 
+  1050→Rail surface 
+  1051→The surface of the escaper should be slightly lower than the surface of the rail. 
+  1052→The sides of the rail should not be in contact with the robot escaper guide 
+  1053→
+  1054→=== PAGE 30 ===
+  1055→Parts adjustments and replacements 
+  1056→30 
+  1057→ 
+  1058→7.6.1 Replace the escaper and robot escaper guide. 
+  1059→Before replacement, remove any screws that were loaded in the chamber. 
+  1060→Replace and adjust the escaper and the robot escaper guide after removing the attaching 
+  1061→plate for the holding plate along with the holding plate. 
+  1062→To replace the escaper, remove the screws attaching the robot escaper guide and then 
+  1063→remove the robot escaper guide. Remove the screws attaching the escaper and then remove 
+  1064→the escaper. 
+  1065→Assemble, loosely, the escaper that corresponds with the screw’s nominal diameter, as it will 
+  1066→need adjusting later. 
+  1067→Attach the robot escaper guide which corresponds with the screw’s nominal diameter. 
+  1068→ 
+  1069→ 
+  1070→ 
+  1071→ 
+  1072→Escaper 
+  1073→Power switch 
+  1074→Escaper attaching 
+  1075→screw 
+  1076→Screw  for attaching 
+  1077→the robot escaper 
+  1078→guide 
+  1079→Screw sensor LED 
+  1080→Escaper 
+  1081→bracket 
+  1082→attaching bolt 
+  1083→Robot escaper 
+  1084→guide 
+  1085→
+  1086→=== PAGE 31 ===
+  1087→Parts adjustments and replacements 
+  1088→31 
+  1089→ 
+  1090→7.6.2 Check and adjust the position of the robot escaper guide. 
+  1091→Check and adjust the position of the robot escaper guide in relation to width and the position 
+  1092→of the escaper in relation to height. 
+  1093→Check that the clearances between the outside of the rail and the robot escaper guide are 
+  1094→almost even on the right and on the left. 
+  1095→If they are in contact, the screws cannot be delivered. If there is too much clearance on either 
+  1096→side, screws may fall into the machine. 
+  1097→When the clearances are uneven, loosen the escaper bracket attaching bolt and make 
+  1098→adjustments so that the clearances between the outsides of the rail and the robot escaper 
+  1099→guide are almost even on the left and the right. 
+  1100→At this time, make the top surface of the escaper even to, or slightly lower than, the rail 
+  1101→surface. If it's too high, a screw won't enter an escaper notch. If it's too low, a screw will not 
+  1102→enter a notch properly. 
+  1103→ 
+  1104→ 
+  1105→ 
+  1106→ 
+  1107→The clearances between the sides of the rail and 
+  1108→the robot escaper guide should be almost even. 
+  1109→The escaper top surface should be the same 
+  1110→height as the rail top surface or slightly lower. 
+  1111→
+  1112→=== PAGE 32 ===
+  1113→Parts adjustments and replacements 
+  1114→32 
+  1115→ 
+  1116→7.6.3 Adjust the escaper notch position. 
+  1117→Turn the power switch ON while covering the sensor light axis 
+  1118→When the power is ON, the screw sensor LED lights up and the escaper motor moves around 
+  1119→to the back, to the starting point. (Reference point run.) 
+  1120→When the escaper motor is at the reference point, the escaper doesn't move. 
+  1121→When it is not at the starting point, the escaper motor moves oppositely around to return to 
+  1122→the starting point and then stops. (Reference point run.) 
+  1123→ 
+  1124→NOTE: 
+  1125→Before adjustment, the starting point for the escaper motor and the position of 
+  1126→the escaper notch are not the same. 
+  1127→A reference point run is the detecting of the starting point of the escaper 
+  1128→motor rotation. 
+  1129→Cover the sensor's optical axis with a piece of paper. 
+  1130→When the power is on, the escaper motor has the ability to remain stationary. 
+  1131→Make a reference point run-and-stop and when the escaper motor is stationary, then you can 
+  1132→align the position of an escaper notch with the rail groove. 
+  1133→Fine adjustments can be made for the clearance between the end of the rail and the escaper 
+  1134→by loosening the screws, on either side of the center of the escaper, and moving the escaper 
+  1135→to an ideal position. 
+  1136→Remember to tighten the screws again. 
+  1137→After adjustment, turn the power switch OFF/ON in order to make a reference point run and 
+  1138→check that an escaper notch and the rail groove align. 
+  1139→After, remove the paper blocking the sensor's optical axis and the escaper will start rotating. 
+  1140→Check that all 4 notches of the escaper, each in rotation, stop at the rail groove. 
+  1141→[Reference] It is possible to adjust the groove section as you adjust the position of the 
+  1142→escaper bracket. Refer to Check and adjust the position of the robot escaper guide. page 31. 
+  1143→• There must not be any contact between the rail and the robot escaper guide. 
+  1144→• The escaper top surface should be the same height as the rail top surface or slightly lower. 
+  1145→
+  1146→=== PAGE 33 ===
+  1147→Parts adjustments and replacements 
+  1148→33 
+  1149→ 
+  1150→ 
+  1151→ 
+  1152→ 
+  1153→ 
+  1154→ 
+  1155→Escaper 
+  1156→Oval hole 
+  1157→Adjust an escaper notch position by loosening 
+  1158→the screws and rotating the escaper. 
+  1159→Cover the sensor’s optical axis with paper. 
+  1160→Fine adjustment (Note: 2) 
+  1161→Escaper bracket attaching bolt 
+  1162→You can make fine adjustments for width clearance between the end of the rail and 
+  1163→the escaper. 
+  1164→Also, you can make fine adjustments for height clearance between the rail surface 
+  1165→and the escaper surface. 
+  1166→
+  1167→=== PAGE 34 ===
+  1168→Parts adjustments and replacements 
+  1169→34 
+  1170→ 
+  1171→7.6.4 Explanation of the escaper movement before adjusting the sensor 
+  1172→When the power switch is turned ON, if there is no screw at the site where the screw is to be 
+  1173→picked up, the escaper rotates with the screw sensor LED off. 
+  1174→The escaper rotates and accepts a screw from the rail. 
+  1175→As the escaper rotates, it brings a screw to the screw pick up site. At this time, the sensor 
+  1176→detects a screw, the LED lights up and the escaper stops. 
+  1177→When the screw is removed from the pickup site, the LED light goes off and the escaper 
+  1178→rotates to accept another screw from the rail. 
+  1179→This is the correct sequence of operation. Usually, there is no need to adjust the sensor as it 
+  1180→was done when assembled in the factory. 
+  1181→The following are irregular situations that require adjustment: 
+  1182→• There is no screw at the pickup site but, the LED is on and the escaper doesn't rotate 
+  1183→• There's a screw at the pickup site, but the LED is not lit and the escaper rotates 
+  1184→
+  1185→=== PAGE 35 ===
+  1186→Parts adjustments and replacements 
+  1187→35 
+  1188→ 
+  1189→ 
+  1190→ 
+  1191→ 
+  1192→ 
+  1193→ 
+  1194→Power switch 
+  1195→Sensor 
+  1196→Screw pick up site 
+  1197→Escaper 
+  1198→LED screw 
+  1199→indicator 
+  1200→Accepting a screw 
+  1201→LED screw indicator 
+  1202→OFF 
+  1203→The screw is carried to 
+  1204→the pickup site. LED 
+  1205→screw indicator ON 
+  1206→Picking up the screw at 
+  1207→the pickup site. LED 
+  1208→screw indicator OFF 
+  1209→When a screw is not 
+  1210→at the pickup site, 
+  1211→LED screw indicator 
+  1212→OFF. 
+  1213→When a screw is at 
+  1214→the pickup site, LED 
+  1215→screw indicator ON. 
+  1216→The rotation of the escaper, in the opposite direction, is a 
+  1217→reference point run of the escaper motor. 
+  1218→The rotation of the escaper, in the opposite direction, occurs 
+  1219→when the power is turned on and the starting point of the 
+  1220→escaper is not aligned with the reference point of the escaper 
+  1221→motor.  
+  1222→During regular operation, as in the figure above, the escaper 
+  1223→rotates clockwise. 
+  1224→[Reference] 
+  1225→
+  1226→=== PAGE 36 ===
+  1227→Parts adjustments and replacements 
+  1228→36 
+  1229→ 
+  1230→7.6.5 Checking and adjusting the sensor 
+  1231→Check when required. 
+  1232→When checking is required, take the rear cover off and check the voltage level of No. 7 pin of 
+  1233→IC4050 on the base and adjust the sensor bracket. When measuring the voltage level, the 
+  1234→metal part of the main body is the ground. When a screw is not at the pickup site, turn the 
+  1235→power ON. Next loosen the 2 sensors bracket attaching bolts and do the following: 
+  1236→1.  Move the sensor bracket down and check if the voltage is over 4V and if the sensor light 
+  1237→is ON. At this time, the escaper is stopped. 
+  1238→2.  Next, while checking the voltage level, slowly move the sensor bracket up which causes 
+  1239→the voltage to decrease. When the voltage is around 0.25V to 1.5V tighten the sensor 
+  1240→bracket. During this procedure when the voltage is around 2.5V, the LED screw indicator 
+  1241→turns OFF and the escaper rotates. 
+  1242→When there is no screw at the pickup site, the voltage is 0.25V to 1.5V and the LED screw 
+  1243→indicator is OFF. 
+  1244→When there is a screw at the pickup site and the voltage is over 3.5V, the LED screw indicator 
+  1245→is ON. 
+  1246→This is a general standard. The borderline, if there is a screw in position or not, is 2.5V. 
+  1247→ 
+  1248→ 
+  1249→Remove the rear cover of the 
+  1250→machine. While adjusting the sensor, 
+  1251→check the voltage of No. 7 pin of 
+  1252→IC4050. 
+  1253→No. 7 pin of 
+  1254→IC4050 
+  1255→Sensor bracket 
+  1256→Location of the sensor 
+  1257→bracket attaching bolts 
+  1258→1. Push the sensor bracket down and check if 
+  1259→the voltage is more than 4V. 
+  1260→2. Move the sensor bracket up slowly to reach 
+  1261→a voltage of between 0.25V to 1.5V. 
+  1262→High 
+  1263→Voltage 
+  1264→when there 
+  1265→is a screw 
+  1266→Low 
+  1267→Voltage 
+  1268→when there 
+  1269→is no screw 
+  1270→2.5 V 
+  1271→The recommended 
+  1272→voltage is  over 
+  1273→3.5V 
+  1274→when 
+  1275→the 
+  1276→screw 
+  1277→ 
+  1278→is 
+  1279→in 
+  1280→position. 
+  1281→Under 1.5V 
+  1282→The recommended 
+  1283→voltage for when 
+  1284→there are no screws. 
+  1285→This is no malfunction when the 
+  1286→voltage is slightly off of 2.5V.  
+  1287→The adjustment, for ordinary screws, 
+  1288→would be as described above.  
+  1289→For screws which have a flatter head, 
+  1290→refer to the figure on the left for 
+  1291→adjustments.  
+  1292→Depending 
+  1293→on 
+  1294→the 
+  1295→screw-head 
+  1296→height, it may be necessary to set 
+  1297→the low-range voltage at more than 
+  1298→1.5V and the high-range voltage at 
+  1299→under 3.5V. 
+  1300→
+  1301→=== PAGE 37 ===
+  1302→Operational check 
+  1303→37 
+  1304→ 
+  1305→8 
+  1306→Operational check 
+  1307→After checking and adjusting each component, do an operational check with screws loaded. 
+  1308→If any abnormality is found, make the said adjustments once again in addition to the rail 
+  1309→vibration and front/rear position adjustments. 
+  1310→After completing the operational check, return the wiring arrangement to its original status. 
+  1311→When installing the cover, take care not to catch or pinch the wires. 
+  1312→Watch that the wiring does not hinder the operation of this machine. 
+  1313→
+  1314→=== PAGE 38 ===
+  1315→Application with Robotic System 
+  1316→38 
+  1317→ 
+  1318→9 
+  1319→Application with Robotic System 
+  1320→9.1 Installation with Robotic System 
+  1321→When installed with a robotic assembly, the screw feeder shall be fastened by lower edges of 
+  1322→the cover (Please refer to diagram below). Fastening screws on bottom edge of the cover can 
+  1323→be used for this purpose as well. 
+  1324→For screws entering cover of the feeder, please use screws less than 5 mm in length. 
+  1325→ 
+  1326→ 
+  1327→ 
+  1328→Fixing method 
+  1329→Fixing screws (M2.6) 
+  1330→
+  1331→=== PAGE 39 ===
+  1332→Application with Robotic System 
+  1333→39 
+  1334→ 
+  1335→9.2 External output signals 
+  1336→The wires coming out from the back of the machine serves as the detection of presence of 
+  1337→screws on the rotational escaper, which shall be used with automatic assembly machines or 
+  1338→external screw counters 
+  1339→[Function]: Screw present: signal high (ON)  
+  1340→Incoming current: shall be limited to less than 100mA 
+  1341→ [Capacity]: Max DC current: 100mA 
+  1342→External supply voltage: 5 ~24VDC (Max: 27VDC)  
+  1343→ 
+  1344→CAUTION: 
+  1345→Additional resistor is required on external circuit for regulating current 
+  1346→Please keep the length of output signal wire less than 3m 
+  1347→The purple wire functions as signal output high (Collector end), with the gray wire as common 
+  1348→(Emitter end) 
+  1349→Circuit for Screw Feeder Output Signal  
+  1350→• 
+  1351→Screw present: LED on, output HIGH.  
+  1352→• 
+  1353→No screw or feeder off: output LOW.  
+  1354→ 
+  1355→ 
+  1356→9.3 Robotic operations 
+  1357→When the screw feeder is used with an automatic screwdriver, the pushing force of the 
+  1358→screwdriver on the escaper and/or the escaper guide must not be higher than 20 N. 
+  1359→
+  1360→=== PAGE 40 ===
+  1361→Application with Robotic System 
+  1362→40 
+  1363→ 
+  1364→                               
+  1365→ 
+  1366→ 
+  1367→Screw 
+  1368→Bit cover 
+  1369→Driver bit 
+  1370→F < 20 N 
+  1371→
+  1372→=== PAGE 41 ===
+  1373→Miscellaneous 
+  1374→41 
+  1375→ 
+  1376→10 Miscellaneous 
+  1377→10.1 Overload Protective Circuit 
+  1378→This machine is provided with an overload protective circuit. Usually, the driving motor 
+  1379→rotates forward (normal rotation) to feed loaded screws to the escaper continuously, thus 
+  1380→picking up screws one after another. However, if an overload is applied to the driving section, 
+  1381→the driving motor rotates backward for a certain time and then returns to the normal 
+  1382→rotation. When the cause of the overload is removed at the reverse rotation, the driving 
+  1383→motor returns to the ordinary normal rotation and can pick up screws. 
+  1384→If the cause of the overload is not removed during the reverse rotation, the driving motor 
+  1385→repeats the sequence of reverse rotation - normal rotation - reverse rotation - normal rotation 
+  1386→for a certain time to shut off the power to the driving motor. At this time, the escaper 
+  1387→operation is not stopped. When the power to the driving motor is shut off, turn off the power 
+  1388→switch and remove the cause of the overload. For example, when too many screws are put 
+  1389→into the scooping chamber, reduce the quantity of loaded screws to a proper level. If any 
+  1390→screw is caught by the driving section, remove it. 
+  1391→After removing the cause of the overload, turn on the power switch to operate this machine. 
+  1392→(Power reset) 
+  1393→
+  1394→=== PAGE 42 ===
+  1395→Troubleshooting 
+  1396→42 
+  1397→ 
+  1398→11 Troubleshooting 
+  1399→Trouble 
+  1400→Cause 
+  1401→Corrective measures 
+  1402→ 
+  1403→ 
+  1404→ 
+  1405→ 
+  1406→ 
+  1407→The machine does 
+  1408→not operate though 
+  1409→the power switch is 
+  1410→turned ON. 
+  1411→Power is not supplied. 
+  1412→Check the connection of the 
+  1413→power supply of the AC power 
+  1414→adapter. 
+  1415→A screw hasn't been removed from 
+  1416→the pickup spot for a certain amount 
+  1417→of time. 
+  1418→Take the screw out from the 
+  1419→pickup site. 
+  1420→Too many screws were loaded into the 
+  1421→scooping hopper. 
+  1422→Adjust the timer setting knob. 
+  1423→Reduce the quantity of screws in 
+  1424→the scooping hopper to a proper 
+  1425→load level. 
+  1426→A foreign object (for example: a 
+  1427→screw) intruded into the main body. 
+  1428→Remove the foreign object. 
+  1429→The AC adapter is faulty. 
+  1430→Consult our service section. 
+  1431→[Model number UI315-15] 
+  1432→Screws do not flow 
+  1433→Screws with a larger diameter than 
+  1434→the specified rail size were loaded or 
+  1435→screws with a different diameter were 
+  1436→mixed in together. 
+  1437→Use screws with the specified 
+  1438→nominal diameter. 
+  1439→Remove the screws with the odd 
+  1440→nominal diameter. 
+  1441→An insufficient quantity of screws is in 
+  1442→the scooping hopper. 
+  1443→Add a proper quantity of screws 
+  1444→into the scooping hopper. 
+  1445→Screws do not flow 
+  1446→Screws in an abnormal position in the 
+  1447→passing plate cannot be swept away 
+  1448→with the brush. 
+  1449→Adjust the brush. 
+  1450→Adjust the passing plate. 
+  1451→If a proper amount of screws is 
+  1452→loaded 
+  1453→into 
+  1454→the 
+  1455→scooping 
+  1456→hopper, the status may be 
+  1457→improved 
+  1458→The axis of the screw thread entered 
+  1459→the passing plate. 
+  1460→Remove the abnormal screw and 
+  1461→check and adjust the passing 
+  1462→plate. 
+  1463→A screw has stopped in an abnormal 
+  1464→position while moving on the rail. 
+  1465→Remove 
+  1466→the 
+  1467→screw 
+  1468→in 
+  1469→the 
+  1470→abnormal position. Take care 
+  1471→not to damage the rail groove. 
+  1472→Move the holding plate bracket 
+  1473→assembly upward to remove the 
+  1474→screw. After, adjust the position 
+  1475→of the holding plate. 
+  1476→The rail does not vibrate. 
+  1477→(For example, a screw is caught in the 
+  1478→hopper.) 
+  1479→Remove the screw that is 
+  1480→obstructing the vibration. 
+  1481→Check the vibration adjustment. 
+  1482→Check that the scraper does not 
+  1483→make contact with the hopper 
+  1484→wall. If no screw is obstructing 
+  1485→the 
+  1486→clearance, 
+  1487→consult 
+  1488→our 
+  1489→service section. 
+  1490→ 
+  1491→
+  1492→=== PAGE 43 ===
+  1493→Troubleshooting 
+  1494→43 
+  1495→ 
+  1496→Trouble 
+  1497→Cause 
+  1498→Corrective measures 
+  1499→A screw has fallen into 
+  1500→the rail groove. 
+  1501→Screws with a smaller diameter 
+  1502→than the specified rail size were 
+  1503→loaded. 
+  1504→Use screws with the specified 
+  1505→nominal diameter and length. 
+  1506→Screws with a shorter total length 
+  1507→than the rail groove width were 
+  1508→loaded. 
+  1509→No 
+  1510→corrective 
+  1511→measure 
+  1512→is 
+  1513→available. Consult our service 
+  1514→section. 
+  1515→The flow on the screw 
+  1516→rail is 
+  1517→not 
+  1518→working 
+  1519→properly. 
+  1520→The clearance between the holding 
+  1521→plate and the head of the loaded 
+  1522→screw is low. 
+  1523→Screws with a spring washer having 
+  1524→one increment smaller than the 
+  1525→specified nominal rail size were 
+  1526→loaded. 
+  1527→Adjust the holding plate. Adjust 
+  1528→the vibration. 
+  1529→If, 
+  1530→after 
+  1531→following 
+  1532→the 
+  1533→instructions written above, the 
+  1534→machine still does not function 
+  1535→properly, consult our service 
+  1536→section. 
+  1537→ 
+  1538→The rail is oily or dirty. 
+  1539→Clean the rail. 
+  1540→The rail does not vibrate. 
+  1541→(A screw is caught in the gap.) 
+  1542→Remove the screws caught in 
+  1543→the clearance. 
+  1544→If there is no screw that is 
+  1545→caught, 
+  1546→consult 
+  1547→our 
+  1548→service 
+  1549→section. 
+  1550→Check that the vibration level is 
+  1551→properly adjusted. 
+  1552→The motor is worn malfunctioning. Replace the motor. 
+  1553→[Part No. : TPO01002 #17] 
+  1554→Screws tend to pass 
+  1555→through the passing 
+  1556→plate in an ab- normal 
+  1557→position. 
+  1558→The passing plate is not adjusted 
+  1559→properly. 
+  1560→Adjust the passing plate 
+  1561→The axis of the screw 
+  1562→thread tends to enter 
+  1563→the passing plate. 
+  1564→Too many screws are in the 
+  1565→scooping hopper. 
+  1566→Reduce the quantity of screws 
+  1567→to a proper level. 
+  1568→No screw flows to the 
+  1569→pickup spot. 
+  1570→Screws are stopped while still on 
+  1571→the rail. 
+  1572→Adjust the position of the 
+  1573→holding plate. 
+  1574→Screws 
+  1575→cannot 
+  1576→be 
+  1577→transferred 
+  1578→smoothly from the rail to the 
+  1579→escaper. 
+  1580→Adjust the distance between the 
+  1581→end of the rail and the escaper. 
+  1582→The machine stops its 
+  1583→operation suddenly 
+  1584→The overload protective circuit was 
+  1585→activated. 
+  1586→Turn the machine OFF and then 
+  1587→ON again. 
+  1588→Remove the cause of overload. 
+  1589→Too many screws are in the 
+  1590→scooping hopper. 
+  1591→Remove screws to a proper 
+  1592→level. 
+  1593→When the machine stops, even if 
+  1594→the screws are at a proper level, 
+  1595→consult our service section. 
+  1596→A screw is caught in the clearance. Remove the screw that is caught 
+  1597→A screw at the pickup spot, could 
+  1598→not be picked up for an amount of 
+  1599→time. 
+  1600→Remove the screw. 
+  1601→
+  1602→=== PAGE 44 ===
+  1603→Troubleshooting 
+  1604→44 
+  1605→ 
+  1606→ 
+  1607→Trouble 
+  1608→Cause 
+  1609→Corrective measures 
+  1610→The 
+  1611→scooping 
+  1612→operation 
+  1613→does 
+  1614→not 
+  1615→stop though a screw is 
+  1616→at the pickup site. 
+  1617→The timer knob is not properly 
+  1618→adjusted. 
+  1619→Readjust the timer knob. 
+  1620→The escaper operation 
+  1621→does not stop though a 
+  1622→screw is at the pickup 
+  1623→site. 
+  1624→The sensor does not detect a 
+  1625→screw. 
+  1626→Readjust the voltage of the 
+  1627→sensor. 
+  1628→A screw has fallen into 
+  1629→the machine. 
+  1630→ 
+  1631→Take the cover off and remove 
+  1632→the screw. 
+  1633→The 
+  1634→noise 
+  1635→of 
+  1636→the 
+  1637→machine has increased. 
+  1638→Adjustments of the vibrational 
+  1639→frequency 
+  1640→and 
+  1641→the 
+  1642→amplitude 
+  1643→volume are unsuitable. 
+  1644→Adjust the vibrational frequency 
+  1645→and amplitude volume again. 
+  1646→There is insufficient grease. 
+  1647→Apply grease to the transport 
+  1648→section. 
+  1649→Recommended grease: 
+  1650→BR2 Plus , Dow Corning Asia Co. 
+  1651→Ltd. 
+  1652→The escaper does not 
+  1653→rotate when no screws 
+  1654→are present, although 
+  1655→the indicator light is on. 
+  1656→Undesired objects blocking front  
+  1657→screw sensor. 
+  1658→Make sure there are no debris or 
+  1659→other objects present in the 
+  1660→sensor brackets. 
+  1661→• If the escaper or stopper is 
+  1662→damaged or worn-off, parts 
+  1663→replacement is recommended. 
+  1664→Adjustment of the front screw 
+  1665→sensors is unsuitable. 
+  1666→Adjustment 
+  1667→on front 
+  1668→screw 
+  1669→sensors 
+  1670→The escaper rotates in 
+  1671→the wrong direction. 
+  1672→• When the escaper is operating, 
+  1673→some alien object is preventing the 
+  1674→escaper from rotating smoothly. 
+  1675→While the screw rotates, please 
+  1676→check whether it has hit the 
+  1677→holding plate. 
+  1678→• Escaper and the escaper guide do 
+  1679→not fit together. 
+  1680→If the escaper or escaper guide is 
+  1681→damaged 
+  1682→or 
+  1683→worn 
+  1684→off, 
+  1685→replacement is recommended. 
+  1686→The escaper continues 
+  1687→to rotate in the wrong 
+  1688→direction. 
+  1689→The 
+  1690→origin 
+  1691→sensor 
+  1692→may 
+  1693→be 
+  1694→improperly adjusted. 
+  1695→Please contact your dealer or 
+  1696→our service section 
+  1697→ 
+  1698→ 
+  1699→CAUTION: 
+  1700→For safety, always unplug the AC adapter from the wall outlet before making 
+  1701→any adjustments. 
+  1702→ 
+  1703→
+  1704→=== PAGE 45 ===
+  1705→Specifications 
+  1706→45 
+  1707→ 
+  1708→12 Specifications 
+  1709→12.1 Technical sheet 
+  1710→General property 
+  1711→Description/Value 
+  1712→Unit 
+  1713→Power AC adapter (switching type) 
+  1714→Input: AC 100~240,  
+  1715→50/60  
+  1716→[V] 
+  1717→[Hz] 
+  1718→Output: DC 15 
+  1719→1 
+  1720→[V] 
+  1721→[A] 
+  1722→Dimensions (W,D,H) 
+  1723→123x181x145 
+  1724→4.8x7.1x5.7 
+  1725→[mm] 
+  1726→[inch] 
+  1727→Weight (including rail) 
+  1728→Approx. 3 
+  1729→Approx. 6.6 
+  1730→[kg] 
+  1731→[lg] 
+  1732→Following accessories  
+  1733→Operation Manual 1 copy 
+  1734→AC Adapter 1 unit 
+  1735→Hexagonal wrench 1 piece 
+  1736→Screwdriver 1 piece 
+  1737→Ground wire 1 piece 
+  1738→Installation location 
+  1739→Level stable place 
+  1740→Operating and storage temperature 0-40 
+  1741→[ºC] 
+  1742→Operating and storage humidity 
+  1743→(without condensation) 
+  1744→10-85 
+  1745→[%] 
+  1746→Compliance standards 
+  1747→ECC: 2014/30/UE 
+  1748→RoHS: 2011/65/EU 
+  1749→ 
+  1750→ 
+  1751→ 
+  1752→
+  1753→=== PAGE 46 ===
+  1754→Specifications 
+  1755→46 
+  1756→ 
+  1757→Reference table of the specified screws 
+  1758→Shape of screw head 
+  1759→Screw 
+  1760→size 
+  1761→ 
+  1762→Screw 
+  1763→shaft 
+  1764→diameter 
+  1765→[Ø] 
+  1766→Screw 
+  1767→head 
+  1768→diameter 
+  1769→[Ø] 
+  1770→ 
+  1771→Screw 
+  1772→head 
+  1773→thickness 
+  1774→[mm] 
+  1775→Screw 
+  1776→shaft 
+  1777→Length 
+  1778→[mm] 
+  1779→Pan head 
+  1780→Bind 
+  1781→Flat 
+  1782→head 
+  1783→Counter 
+  1784→sunk 
+  1785→head 
+  1786→Hexagon 
+  1787→flange 
+  1788→bolt 
+  1789→Sems 
+  1790→Double 
+  1791→sems 
+  1792→Washer 
+  1793→head 
+  1794→M1.0 
+  1795→0.9～0.95 
+  1796→1.2～4.5 
+  1797→0.35～1.0 
+  1798→1.6～10 
+  1799→ 
+  1800→ 
+  1801→ 
+  1802→ 
+  1803→x 
+  1804→ 
+  1805→ 
+  1806→M1.2 
+  1807→1.1～1.15 
+  1808→1.4～4.5 
+  1809→0.35～1.0 
+  1810→1.8～10 
+  1811→ 
+  1812→ 
+  1813→ 
+  1814→ 
+  1815→x 
+  1816→ 
+  1817→ 
+  1818→M1.4 
+  1819→1.3～1.4 
+  1820→1.7～4.5 
+  1821→0.35～1.0 
+  1822→2.0～10 
+  1823→ 
+  1824→ 
+  1825→ 
+  1826→ 
+  1827→x 
+  1828→ 
+  1829→ 
+  1830→M1.7 
+  1831→1.6～1.7 
+  1832→2.0～4.5 
+  1833→0.35～1.0 
+  1834→2.3～10 
+  1835→ 
+  1836→ 
+  1837→ 
+  1838→ 
+  1839→x 
+  1840→ 
+  1841→ 
+  1842→M2.0 
+  1843→1.9～2.1 
+  1844→2.4～6 
+  1845→0.35～4.5 
+  1846→2.6～20 
+  1847→x 
+  1848→x 
+  1849→x 
+  1850→x 
+  1851→x 
+  1852→x 
+  1853→x 
+  1854→M2.3 
+  1855→2.2～2.4 
+  1856→2.7～6 
+  1857→0.35～4.5 
+  1858→2.9～20 
+  1859→x 
+  1860→x 
+  1861→x 
+  1862→x 
+  1863→x 
+  1864→x 
+  1865→x 
+  1866→M2.6 
+  1867→2.5～2.7 
+  1868→3.0～6 
+  1869→0.35～4.5 
+  1870→3.2～20 
+  1871→x 
+  1872→x 
+  1873→x 
+  1874→x 
+  1875→x 
+  1876→x 
+  1877→x 
+  1878→M3.0 
+  1879→2.9～3.2 
+  1880→3.5～6 
+  1881→0.35～4.5 
+  1882→3.6～20 
+  1883→x 
+  1884→x 
+  1885→x 
+  1886→x 
+  1887→x 
+  1888→x 
+  1889→x 
+  1890→ 
+  1891→NOTE: 
+  1892→• Please consult your distributor for thin head. 
+  1893→• Check if the axis diameter of the loaded screw corresponds with the be- low 
+  1894→rail groove width. 
+  1895→• With the range of screw size and lengths below, there may be instances lf 
+  1896→unique screw shape or structure not compatible with the screw feeder unit. 
+  1897→• In the main body type, the main body model can be changed. 
+  1898→• To change the nominal diameter of loaded screw, replace it with a part that 
+  1899→is mentioned in the next page table. 
+  1900→• The rail, escaper, robot escaper guide and passing plate are separately 
+  1901→available for replacement. 
+  1902→• The design, performance and specifications are subject to change with- out 
+  1903→prior notice for the sake of improvement. 
+  1904→• The noise of this unit is less than LAeq 70 dB at a distance of 1 m. 
+  1905→• This product complies with EC directive. Please check the EC Declaration of 
+  1906→Conformity for compliance standards. 
+  1907→ 
+  1908→Screw 
+  1909→feeder 
+  1910→series 
+  1911→Screw 
+  1912→feeder 
+  1913→model 
+  1914→ 
+  1915→Screw 
+  1916→size 
+  1917→ 
+  1918→Exchange kit No. 
+  1919→ 
+  1920→Rail 
+  1921→model 
+  1922→No. 
+  1923→ 
+  1924→Escaper 
+  1925→model No. 
+  1926→Robot escaper 
+  1927→guide model 
+  1928→No. 
+  1929→Passing 
+  1930→plate model 
+  1931→No. 
+  1932→NSRI 
+  1933→NSRI10 
+  1934→M1.0 
+  1935→RI10SET (T213) 
+  1936→RI10 
+  1937→TOKX0239 #01 
+  1938→ 
+  1939→TOKX0240 #01 
+  1940→ 
+  1941→ 
+  1942→SW1017 
+  1943→NSRI12 
+  1944→M1.2 
+  1945→RI12SET (T213) 
+  1946→RI12 
+  1947→TOKX0239 #02 
+  1948→NSRI14 
+  1949→M1.4 
+  1950→RI14SET (T213) 
+  1951→RI14 
+  1952→TOKX0239 #03 
+  1953→NSRI17 
+  1954→M1.7 
+  1955→RI17SET (T213) 
+  1956→RI17 
+  1957→TOKX0239 #04 
+  1958→NSRI20 
+  1959→M2.0 
+  1960→RI20SET (T213) 
+  1961→RI20 
+  1962→TOKX0239 #05 
+  1963→ 
+  1964→TOKX0240 #02 
+  1965→ 
+  1966→SW2030 
+  1967→NSRI23 
+  1968→M2.3 
+  1969→RI23SET (T213) 
+  1970→RI23 
+  1971→TOKX0239 #06 
+  1972→NSRI26 
+  1973→M2.6 
+  1974→RI26SET (T213) 
+  1975→RI26 
+  1976→TOKX0239 #07 
+  1977→NSRI30 
+  1978→M3.0 
+  1979→RI30SET (T213) 
+  1980→RI30 
+  1981→TOKX0239 #08 
+  1982→ 
+  1983→NOTE: 
+  1984→• In the Exchange kit ordered, Rail assembly, Escaper, Robot escaper guide 
+  1985→and Passing plate are included. 
+  1986→• Please contact us by " ～ SET" type when you need rail. 
+  1987→
+  1988→=== PAGE 47 ===
+  1989→Specifications 
+  1990→47 
+  1991→ 
+  1992→12.2 Replacement parts 
+  1993→ 
+  1994→Rail 
+  1995→  Escaper 
+  1996→Passing plate 
+  1997→Robot escaper guide 
+  1998→ 
+  1999→  
+  2000→ 
+  2001→ 
+  2002→ 
+  2003→Brush assembly 
+  2004→Main motor 
+  2005→(with Harness) 
+  2006→TPO01002 #17 
+  2007→ 
+  2008→ 
+  2009→ 
+  2010→ 
+  2011→
+  2012→=== PAGE 48 ===
+  2013→Specifications 
+  2014→48 
+  2015→ 
+  2016→12.3 External mechanical dimensions 
+  2017→ 
+  2018→All dimensions are in mm 
+  2019→Signal line out 
+  2020→(Distance till center of screw)
+  2021→Height till top of escaper
+  2022→Screw  
+  2023→size
+  2024→Approximate 
+  2025→measuremen
+  2026→t of A 
+  2027→
+  2028→=== PAGE 49 ===
+  2029→Warranty 
+  2030→49 
+  2031→ 
+  2032→13 Warranty 
+  2033→13.1 Product Warranty 
+  2034→Without prejudice to any claim the user (customer) may have in relation to the dealer or retailer, 
+  2035→the customer shall be granted a manufacturer’s warranty under the conditions set out below: 
+  2036→In the case of new devices and their components exhibiting defects resulting from 
+  2037→manufacturing and/or material faults within 12 months of entry into service (maximum of 15 
+  2038→months from shipment), OnRobot A/S shall provide the necessary spare parts, while the 
+  2039→customer (user) shall provide working hours to replace the spare parts, either replace the part 
+  2040→with another part reflecting the current state of the art, or repair the said part. This warranty 
+  2041→shall be invalid if the device defect is attributable to improper treatment and/or failure to 
+  2042→comply with information contained in the user guides. This warranty shall not apply to or 
+  2043→extend to services performed by the authorized dealer or the customer themselves (e.g. 
+  2044→installation, configuration, software downloads). The purchase receipt, together with the date 
+  2045→of purchase, shall be required as evidence for invoking the warranty. Claims under the warranty 
+  2046→must be submitted within two months of the warranty default becoming evident. Ownership 
+  2047→of devices or components replaced by and returned to OnRobot A/S shall vest in OnRobot A/S. 
+  2048→Any other claims resulting out of or in connection with the device shall be excluded from this 
+  2049→warranty. Nothing in this warranty shall attempt to limit or exclude a customer’s statutory 
+  2050→rights nor the manufacturer’s liability for death or personal injury resulting from its negligence. 
+  2051→The duration of the warranty shall not be extended by services rendered under the terms of 
+  2052→the warranty. Insofar as no warranty default exists, OnRobot A/S reserves the right to charge 
+  2053→the customer for replacement or repair. The above provisions do not imply a change in the 
+  2054→burden of proof to the detriment of the customer. In case of a device exhibiting defects, 
+  2055→OnRobot A/S shall not be liable for any indirect, incidental, special or consequential damages, 
+  2056→including but not limited to, lost profits, loss of use, loss of production or damage to other 
+  2057→production equipment. 
+  2058→In case of a device exhibiting defects, OnRobot A/S shall not cover any consequential damage 
+  2059→or loss, such as loss of production or damage to other production equipment. 
+  2060→13.2 Disclaimer 
+  2061→OnRobot A/S continues to improve reliability and performance of its products, and therefore 
+  2062→reserves the right to upgrade the product without prior warning. OnRobot A/S ensures that the 
+  2063→content of this manual is precise and correct but takes no responsibility for any errors or 
+  2064→missing information. 
+  2065→
+  2066→=== PAGE 50 ===
+  2067→  
+  2068→50 
+  2069→ 
+  2070→ 
+  2071→Please not that on disposal, this product may be safely recycled in accordance with the 
+  2072→relevant national legislation relating to electrical/electronic product. If in doubt, please 
+  2073→contact your retailer for guidance. 
+  2074→ 
+  2075→ 
+  2076→OnRobot A/S 
+  2077→Teglværksvej 47H 
+  2078→DK-5220 Odense SØ. 
+  2079→Denmark 
+  2080→CVR: DK36492449 
+  2081→Phone number: +45 53535739 
+  2082→www.onrobot.com 
+  2083→e-mail info@onrobot.com 
+  2084→http://www.ohtake-root.co.jp 
+  2085→ 
+  2086→OHTAKE-ROOT KOGYO CO.,LTD. 
+  2087→岩手県一関市萩荘字金ヶ崎 
+  2088→27〒021-0902 
+  2089→Tel +81-191-24-3144 
+  2090→Fax +81-191-24-3145 
+  2091→27 Kanegasaki Hagisho Ichinoseki 
+  2092→Iwate, 02-0902 JAPAN 
+  2093→Tel +81-191-24-3144 
+  2094→Fax +81-191-24-3145 
+  2095→「Quicher」「OHTAKE」「OHTAKE・ROOT KOGYO」 are trademarks or/and registered 
+  2096→trademarks of OHTAKE・ROOT KOGYO CO.LTD. 
+  2097→「Quicher(クイッチャー）」「OHTAKE」「OHTAKE・ROOT KOGYO」は、株式会社 大武・ル
+  2098→ート工業の商標又は登録商標です。 
+  2099→ 
+  2100→The specifications and/or design may be altered, without notice, whenever there are changes 
+  2101→or improvements.  
+  2102→改良のため、予告なくデザイン、性能、仕様等を変更することがあります。 
+  2103→ 
+  2104→Photocopying, reproduction or publication, in whole or in part, of this manual, without 
+  2105→permission, is strictly prohibited by copyright law. 
+  2106→この取扱説明書の一部または全部の無断転載、複製を禁じます。 
+  2107→© Copyright OHTAKE・ROOT KOGYO CO.,LTD. 
+  2108→ 
+  2109→(as of Feb. 2020) 
+  2110→(2020 年 2 月現在) 
+  2111→ 
+  2112→
+  2113→=== PAGE 51 ===
+  2114→  
+  2115→51 
+  2116→ 
+  2117→ 
+  2118→ 
+  2119→ 
+  2120→ 
+  2121→ 
+  2122→ 
+  2123→ 
+  2124→ 
+  2125→ 
+  2126→ 
+  2127→ 
+  2128→ 
+  2129→ 
+  2130→ 
+  2131→ 
+  2132→ 
+  2133→ 
+  2134→ 
+  2135→ 
+  2136→ 
+  2137→ 
+  2138→ 
+  2139→ 
+  2140→ 
+  2141→The User Manual is translated into 20+ languages.  
+  2142→Find 
+  2143→these 
+  2144→translations 
+  2145→on 
+  2146→the 
+  2147→USB 
+  2148→stick 
+  2149→or 
+  2150→visit 
+  2151→www.OnRobot.com 
+  2152→ 
+  2153→
+  2154→

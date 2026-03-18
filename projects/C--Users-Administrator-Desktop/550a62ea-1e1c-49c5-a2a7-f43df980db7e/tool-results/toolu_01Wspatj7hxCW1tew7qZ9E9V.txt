@@ -1,0 +1,1029 @@
+  1100→            // 
+  1101→            // Val_Operating3
+  1102→            // 
+  1103→            this.Val_Operating3.BackColor = System.Drawing.Color.WhiteSmoke;
+  1104→            this.Val_Operating3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1105→            this.Val_Operating3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1106→            this.Val_Operating3.ForeColor = System.Drawing.Color.Black;
+  1107→            this.Val_Operating3.Location = new System.Drawing.Point(332, 133);
+  1108→            this.Val_Operating3.Name = "Val_Operating3";
+  1109→            this.Val_Operating3.Size = new System.Drawing.Size(243, 25);
+  1110→            this.Val_Operating3.TabIndex = 154;
+  1111→            this.Val_Operating3.Text = "SPEC";
+  1112→            this.Val_Operating3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1113→            // 
+  1114→            // Val_StartUp3
+  1115→            // 
+  1116→            this.Val_StartUp3.BackColor = System.Drawing.Color.WhiteSmoke;
+  1117→            this.Val_StartUp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1118→            this.Val_StartUp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1119→            this.Val_StartUp3.ForeColor = System.Drawing.Color.Black;
+  1120→            this.Val_StartUp3.Location = new System.Drawing.Point(332, 108);
+  1121→            this.Val_StartUp3.Name = "Val_StartUp3";
+  1122→            this.Val_StartUp3.Size = new System.Drawing.Size(243, 25);
+  1123→            this.Val_StartUp3.TabIndex = 153;
+  1124→            this.Val_StartUp3.Text = "SPEC";
+  1125→            this.Val_StartUp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1126→            // 
+  1127→            // Spec_StartUp3
+  1128→            // 
+  1129→            this.Spec_StartUp3.BackColor = System.Drawing.Color.WhiteSmoke;
+  1130→            this.Spec_StartUp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1131→            this.Spec_StartUp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1132→            this.Spec_StartUp3.ForeColor = System.Drawing.Color.Black;
+  1133→            this.Spec_StartUp3.Location = new System.Drawing.Point(76, 108);
+  1134→            this.Spec_StartUp3.Name = "Spec_StartUp3";
+  1135→            this.Spec_StartUp3.Size = new System.Drawing.Size(256, 25);
+  1136→            this.Spec_StartUp3.TabIndex = 33;
+  1137→            this.Spec_StartUp3.Text = "SPEC";
+  1138→            this.Spec_StartUp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1139→            // 
+  1140→            // label16
+  1141→            // 
+  1142→            this.label16.BackColor = System.Drawing.SystemColors.Control;
+  1143→            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1144→            this.label16.ForeColor = System.Drawing.Color.Black;
+  1145→            this.label16.Location = new System.Drawing.Point(1450, 941);
+  1146→            this.label16.Name = "label16";
+  1147→            this.label16.Size = new System.Drawing.Size(155, 40);
+  1148→            this.label16.TabIndex = 205;
+  1149→            this.label16.Text = "진동 검사 시간 : ";
+  1150→            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1151→            // 
+  1152→            // srclbvTestTime
+  1153→            // 
+  1154→            this.srclbvTestTime.BackColor = System.Drawing.SystemColors.Control;
+  1155→            this.srclbvTestTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1156→            this.srclbvTestTime.ForeColor = System.Drawing.Color.Black;
+  1157→            this.srclbvTestTime.Location = new System.Drawing.Point(1597, 941);
+  1158→            this.srclbvTestTime.Name = "srclbvTestTime";
+  1159→            this.srclbvTestTime.Size = new System.Drawing.Size(272, 40);
+  1160→            this.srclbvTestTime.TabIndex = 206;
+  1161→            this.srclbvTestTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+  1162→            // 
+  1163→            // button1
+  1164→            // 
+  1165→            this.button1.Location = new System.Drawing.Point(1690, 1005);
+  1166→            this.button1.Name = "button1";
+  1167→            this.button1.Size = new System.Drawing.Size(212, 27);
+  1168→            this.button1.TabIndex = 207;
+  1169→            this.button1.Text = "Vib Zero";
+  1170→            this.button1.UseVisualStyleBackColor = true;
+  1171→            this.button1.Click += new System.EventHandler(this.button1_Click);
+  1172→            // 
+  1173→            // label24
+  1174→            // 
+  1175→            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1176→            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1177→            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1178→            this.label24.ForeColor = System.Drawing.Color.Black;
+  1179→            this.label24.Location = new System.Drawing.Point(11, 753);
+  1180→            this.label24.Name = "label24";
+  1181→            this.label24.Size = new System.Drawing.Size(416, 34);
+  1182→            this.label24.TabIndex = 208;
+  1183→            this.label24.Text = "진동 검사 공정 바코드 스캔";
+  1184→            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1185→            // 
+  1186→            // srclbVibScanOK
+  1187→            // 
+  1188→            this.srclbVibScanOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1189→            this.srclbVibScanOK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1190→            this.srclbVibScanOK.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1191→            this.srclbVibScanOK.ForeColor = System.Drawing.Color.White;
+  1192→            this.srclbVibScanOK.Location = new System.Drawing.Point(1355, 753);
+  1193→            this.srclbVibScanOK.Name = "srclbVibScanOK";
+  1194→            this.srclbVibScanOK.Size = new System.Drawing.Size(80, 34);
+  1195→            this.srclbVibScanOK.TabIndex = 209;
+  1196→            this.srclbVibScanOK.Text = "OK";
+  1197→            this.srclbVibScanOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1198→            // 
+  1199→            // srclbNoiseScanOK1
+  1200→            // 
+  1201→            this.srclbNoiseScanOK1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1202→            this.srclbNoiseScanOK1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1203→            this.srclbNoiseScanOK1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1204→            this.srclbNoiseScanOK1.ForeColor = System.Drawing.Color.White;
+  1205→            this.srclbNoiseScanOK1.Location = new System.Drawing.Point(629, 35);
+  1206→            this.srclbNoiseScanOK1.Name = "srclbNoiseScanOK1";
+  1207→            this.srclbNoiseScanOK1.Size = new System.Drawing.Size(80, 34);
+  1208→            this.srclbNoiseScanOK1.TabIndex = 211;
+  1209→            this.srclbNoiseScanOK1.Text = "OK";
+  1210→            this.srclbNoiseScanOK1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1211→            // 
+  1212→            // label30
+  1213→            // 
+  1214→            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1215→            this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1216→            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1217→            this.label30.ForeColor = System.Drawing.Color.Black;
+  1218→            this.label30.Location = new System.Drawing.Point(11, 35);
+  1219→            this.label30.Name = "label30";
+  1220→            this.label30.Size = new System.Drawing.Size(337, 34);
+  1221→            this.label30.TabIndex = 210;
+  1222→            this.label30.Text = "방음실 검사 모터 1 바코드 스캔";
+  1223→            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1224→            // 
+  1225→            // srclbNoiseScanOK2
+  1226→            // 
+  1227→            this.srclbNoiseScanOK2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1228→            this.srclbNoiseScanOK2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1229→            this.srclbNoiseScanOK2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1230→            this.srclbNoiseScanOK2.ForeColor = System.Drawing.Color.White;
+  1231→            this.srclbNoiseScanOK2.Location = new System.Drawing.Point(1355, 35);
+  1232→            this.srclbNoiseScanOK2.Name = "srclbNoiseScanOK2";
+  1233→            this.srclbNoiseScanOK2.Size = new System.Drawing.Size(80, 34);
+  1234→            this.srclbNoiseScanOK2.TabIndex = 213;
+  1235→            this.srclbNoiseScanOK2.Text = "OK";
+  1236→            this.srclbNoiseScanOK2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1237→            // 
+  1238→            // label32
+  1239→            // 
+  1240→            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1241→            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1242→            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1243→            this.label32.ForeColor = System.Drawing.Color.Black;
+  1244→            this.label32.Location = new System.Drawing.Point(726, 35);
+  1245→            this.label32.Name = "label32";
+  1246→            this.label32.Size = new System.Drawing.Size(337, 34);
+  1247→            this.label32.TabIndex = 212;
+  1248→            this.label32.Text = "방음실 검사 모터 2 바코드 스캔";
+  1249→            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1250→            // 
+  1251→            // srcDisScan1
+  1252→            // 
+  1253→            this.srcDisScan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1254→            this.srcDisScan1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1255→            this.srcDisScan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1256→            this.srcDisScan1.ForeColor = System.Drawing.Color.Black;
+  1257→            this.srcDisScan1.Location = new System.Drawing.Point(427, 753);
+  1258→            this.srcDisScan1.Name = "srcDisScan1";
+  1259→            this.srcDisScan1.Size = new System.Drawing.Size(928, 34);
+  1260→            this.srcDisScan1.TabIndex = 214;
+  1261→            this.srcDisScan1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1262→            // 
+  1263→            // srcDisScan2_1
+  1264→            // 
+  1265→            this.srcDisScan2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1266→            this.srcDisScan2_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1267→            this.srcDisScan2_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1268→            this.srcDisScan2_1.ForeColor = System.Drawing.Color.Black;
+  1269→            this.srcDisScan2_1.Location = new System.Drawing.Point(348, 35);
+  1270→            this.srcDisScan2_1.Name = "srcDisScan2_1";
+  1271→            this.srcDisScan2_1.Size = new System.Drawing.Size(281, 34);
+  1272→            this.srcDisScan2_1.TabIndex = 215;
+  1273→            this.srcDisScan2_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1274→            // 
+  1275→            // srcDisScan2_2
+  1276→            // 
+  1277→            this.srcDisScan2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1278→            this.srcDisScan2_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1279→            this.srcDisScan2_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1280→            this.srcDisScan2_2.ForeColor = System.Drawing.Color.Black;
+  1281→            this.srcDisScan2_2.Location = new System.Drawing.Point(1063, 35);
+  1282→            this.srcDisScan2_2.Name = "srcDisScan2_2";
+  1283→            this.srcDisScan2_2.Size = new System.Drawing.Size(292, 34);
+  1284→            this.srcDisScan2_2.TabIndex = 216;
+  1285→            this.srcDisScan2_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1286→            // 
+  1287→            // label2
+  1288→            // 
+  1289→            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1290→            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1291→            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1292→            this.label2.ForeColor = System.Drawing.Color.Black;
+  1293→            this.label2.Location = new System.Drawing.Point(0, 133);
+  1294→            this.label2.Name = "label2";
+  1295→            this.label2.Size = new System.Drawing.Size(77, 25);
+  1296→            this.label2.TabIndex = 158;
+  1297→            this.label2.Text = "OPERATING";
+  1298→            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1299→            // 
+  1300→            // label8
+  1301→            // 
+  1302→            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1303→            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1304→            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1305→            this.label8.ForeColor = System.Drawing.Color.Black;
+  1306→            this.label8.Location = new System.Drawing.Point(0, 108);
+  1307→            this.label8.Name = "label8";
+  1308→            this.label8.Size = new System.Drawing.Size(77, 25);
+  1309→            this.label8.TabIndex = 157;
+  1310→            this.label8.Text = "START UP";
+  1311→            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1312→            // 
+  1313→            // label3
+  1314→            // 
+  1315→            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1316→            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1317→            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1318→            this.label3.ForeColor = System.Drawing.Color.Black;
+  1319→            this.label3.Location = new System.Drawing.Point(0, 134);
+  1320→            this.label3.Name = "label3";
+  1321→            this.label3.Size = new System.Drawing.Size(77, 25);
+  1322→            this.label3.TabIndex = 170;
+  1323→            this.label3.Text = "OPERATING";
+  1324→            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1325→            // 
+  1326→            // label9
+  1327→            // 
+  1328→            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1329→            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1330→            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1331→            this.label9.ForeColor = System.Drawing.Color.Black;
+  1332→            this.label9.Location = new System.Drawing.Point(0, 109);
+  1333→            this.label9.Name = "label9";
+  1334→            this.label9.Size = new System.Drawing.Size(77, 25);
+  1335→            this.label9.TabIndex = 169;
+  1336→            this.label9.Text = "START UP";
+  1337→            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1338→            // 
+  1339→            // label10
+  1340→            // 
+  1341→            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1342→            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1343→            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1344→            this.label10.ForeColor = System.Drawing.Color.Black;
+  1345→            this.label10.Location = new System.Drawing.Point(0, 134);
+  1346→            this.label10.Name = "label10";
+  1347→            this.label10.Size = new System.Drawing.Size(77, 25);
+  1348→            this.label10.TabIndex = 172;
+  1349→            this.label10.Text = "OPERATING";
+  1350→            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1351→            // 
+  1352→            // label12
+  1353→            // 
+  1354→            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1355→            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1356→            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1357→            this.label12.ForeColor = System.Drawing.Color.Black;
+  1358→            this.label12.Location = new System.Drawing.Point(0, 109);
+  1359→            this.label12.Name = "label12";
+  1360→            this.label12.Size = new System.Drawing.Size(77, 25);
+  1361→            this.label12.TabIndex = 171;
+  1362→            this.label12.Text = "START UP";
+  1363→            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1364→            // 
+  1365→            // panel7
+  1366→            // 
+  1367→            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1368→            this.panel7.Controls.Add(this.label17);
+  1369→            this.panel7.Controls.Add(this.label18);
+  1370→            this.panel7.Controls.Add(this.label19);
+  1371→            this.panel7.Controls.Add(this.zedGraphControl1);
+  1372→            this.panel7.Controls.Add(this.label20);
+  1373→            this.panel7.Controls.Add(this.label21);
+  1374→            this.panel7.Controls.Add(this.label22);
+  1375→            this.panel7.Controls.Add(this.label23);
+  1376→            this.panel7.Controls.Add(this.label25);
+  1377→            this.panel7.Location = new System.Drawing.Point(725, 576);
+  1378→            this.panel7.Name = "panel7";
+  1379→            this.panel7.Size = new System.Drawing.Size(711, 161);
+  1380→            this.panel7.TabIndex = 220;
+  1381→            // 
+  1382→            // label17
+  1383→            // 
+  1384→            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1385→            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1386→            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1387→            this.label17.ForeColor = System.Drawing.Color.Black;
+  1388→            this.label17.Location = new System.Drawing.Point(0, 134);
+  1389→            this.label17.Name = "label17";
+  1390→            this.label17.Size = new System.Drawing.Size(77, 25);
+  1391→            this.label17.TabIndex = 172;
+  1392→            this.label17.Text = "OPERATING";
+  1393→            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1394→            // 
+  1395→            // label18
+  1396→            // 
+  1397→            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1398→            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1399→            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1400→            this.label18.ForeColor = System.Drawing.Color.Black;
+  1401→            this.label18.Location = new System.Drawing.Point(0, 109);
+  1402→            this.label18.Name = "label18";
+  1403→            this.label18.Size = new System.Drawing.Size(77, 25);
+  1404→            this.label18.TabIndex = 171;
+  1405→            this.label18.Text = "START UP";
+  1406→            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1407→            // 
+  1408→            // label19
+  1409→            // 
+  1410→            this.label19.BackColor = System.Drawing.Color.WhiteSmoke;
+  1411→            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1412→            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1413→            this.label19.ForeColor = System.Drawing.Color.White;
+  1414→            this.label19.Location = new System.Drawing.Point(576, 134);
+  1415→            this.label19.Name = "label19";
+  1416→            this.label19.Size = new System.Drawing.Size(133, 25);
+  1417→            this.label19.TabIndex = 168;
+  1418→            this.label19.Text = "OK";
+  1419→            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1420→            // 
+  1421→            // zedGraphControl1
+  1422→            // 
+  1423→            this.zedGraphControl1.Dock = System.Windows.Forms.DockStyle.Top;
+  1424→            this.zedGraphControl1.Location = new System.Drawing.Point(0, 0);
+  1425→            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
+  1426→            this.zedGraphControl1.Name = "zedGraphControl1";
+  1427→            this.zedGraphControl1.ScrollGrace = 0D;
+  1428→            this.zedGraphControl1.ScrollMaxX = 0D;
+  1429→            this.zedGraphControl1.ScrollMaxY = 0D;
+  1430→            this.zedGraphControl1.ScrollMaxY2 = 0D;
+  1431→            this.zedGraphControl1.ScrollMinX = 0D;
+  1432→            this.zedGraphControl1.ScrollMinY = 0D;
+  1433→            this.zedGraphControl1.ScrollMinY2 = 0D;
+  1434→            this.zedGraphControl1.Size = new System.Drawing.Size(709, 109);
+  1435→            this.zedGraphControl1.TabIndex = 156;
+  1436→            this.zedGraphControl1.UseExtendedPrintDialog = true;
+  1437→            // 
+  1438→            // label20
+  1439→            // 
+  1440→            this.label20.BackColor = System.Drawing.Color.WhiteSmoke;
+  1441→            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1442→            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1443→            this.label20.ForeColor = System.Drawing.Color.White;
+  1444→            this.label20.Location = new System.Drawing.Point(576, 109);
+  1445→            this.label20.Name = "label20";
+  1446→            this.label20.Size = new System.Drawing.Size(133, 25);
+  1447→            this.label20.TabIndex = 161;
+  1448→            this.label20.Text = "OK";
+  1449→            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1450→            // 
+  1451→            // label21
+  1452→            // 
+  1453→            this.label21.BackColor = System.Drawing.Color.WhiteSmoke;
+  1454→            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1455→            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1456→            this.label21.ForeColor = System.Drawing.Color.Black;
+  1457→            this.label21.Location = new System.Drawing.Point(77, 134);
+  1458→            this.label21.Name = "label21";
+  1459→            this.label21.Size = new System.Drawing.Size(256, 25);
+  1460→            this.label21.TabIndex = 160;
+  1461→            this.label21.Text = "SPEC";
+  1462→            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1463→            // 
+  1464→            // label22
+  1465→            // 
+  1466→            this.label22.BackColor = System.Drawing.Color.WhiteSmoke;
+  1467→            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1468→            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1469→            this.label22.ForeColor = System.Drawing.Color.Black;
+  1470→            this.label22.Location = new System.Drawing.Point(333, 134);
+  1471→            this.label22.Name = "label22";
+  1472→            this.label22.Size = new System.Drawing.Size(243, 25);
+  1473→            this.label22.TabIndex = 167;
+  1474→            this.label22.Text = "SPEC";
+  1475→            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1476→            // 
+  1477→            // label23
+  1478→            // 
+  1479→            this.label23.BackColor = System.Drawing.Color.WhiteSmoke;
+  1480→            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1481→            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1482→            this.label23.ForeColor = System.Drawing.Color.Black;
+  1483→            this.label23.Location = new System.Drawing.Point(333, 109);
+  1484→            this.label23.Name = "label23";
+  1485→            this.label23.Size = new System.Drawing.Size(243, 25);
+  1486→            this.label23.TabIndex = 166;
+  1487→            this.label23.Text = "SPEC";
+  1488→            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1489→            // 
+  1490→            // label25
+  1491→            // 
+  1492→            this.label25.BackColor = System.Drawing.Color.WhiteSmoke;
+  1493→            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1494→            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1495→            this.label25.ForeColor = System.Drawing.Color.Black;
+  1496→            this.label25.Location = new System.Drawing.Point(77, 109);
+  1497→            this.label25.Name = "label25";
+  1498→            this.label25.Size = new System.Drawing.Size(256, 25);
+  1499→            this.label25.TabIndex = 158;
+  1500→            this.label25.Text = "SPEC";
+  1501→            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1502→            // 
+  1503→            // panel9
+  1504→            // 
+  1505→            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1506→            this.panel9.Controls.Add(this.label26);
+  1507→            this.panel9.Controls.Add(this.label27);
+  1508→            this.panel9.Controls.Add(this.label28);
+  1509→            this.panel9.Controls.Add(this.zedGraphControl2);
+  1510→            this.panel9.Controls.Add(this.label29);
+  1511→            this.panel9.Controls.Add(this.label31);
+  1512→            this.panel9.Controls.Add(this.label33);
+  1513→            this.panel9.Controls.Add(this.label34);
+  1514→            this.panel9.Controls.Add(this.label35);
+  1515→            this.panel9.Location = new System.Drawing.Point(725, 411);
+  1516→            this.panel9.Name = "panel9";
+  1517→            this.panel9.Size = new System.Drawing.Size(711, 160);
+  1518→            this.panel9.TabIndex = 219;
+  1519→            // 
+  1520→            // label26
+  1521→            // 
+  1522→            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1523→            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1524→            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1525→            this.label26.ForeColor = System.Drawing.Color.Black;
+  1526→            this.label26.Location = new System.Drawing.Point(0, 133);
+  1527→            this.label26.Name = "label26";
+  1528→            this.label26.Size = new System.Drawing.Size(77, 25);
+  1529→            this.label26.TabIndex = 158;
+  1530→            this.label26.Text = "OPERATING";
+  1531→            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1532→            // 
+  1533→            // label27
+  1534→            // 
+  1535→            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1536→            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1537→            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1538→            this.label27.ForeColor = System.Drawing.Color.Black;
+  1539→            this.label27.Location = new System.Drawing.Point(0, 108);
+  1540→            this.label27.Name = "label27";
+  1541→            this.label27.Size = new System.Drawing.Size(77, 25);
+  1542→            this.label27.TabIndex = 157;
+  1543→            this.label27.Text = "START UP";
+  1544→            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1545→            // 
+  1546→            // label28
+  1547→            // 
+  1548→            this.label28.BackColor = System.Drawing.Color.WhiteSmoke;
+  1549→            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1550→            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1551→            this.label28.ForeColor = System.Drawing.Color.White;
+  1552→            this.label28.Location = new System.Drawing.Point(575, 133);
+  1553→            this.label28.Name = "label28";
+  1554→            this.label28.Size = new System.Drawing.Size(134, 25);
+  1555→            this.label28.TabIndex = 156;
+  1556→            this.label28.Text = "OK";
+  1557→            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1558→            // 
+  1559→            // zedGraphControl2
+  1560→            // 
+  1561→            this.zedGraphControl2.Dock = System.Windows.Forms.DockStyle.Top;
+  1562→            this.zedGraphControl2.Location = new System.Drawing.Point(0, 0);
+  1563→            this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+  1564→            this.zedGraphControl2.Name = "zedGraphControl2";
+  1565→            this.zedGraphControl2.ScrollGrace = 0D;
+  1566→            this.zedGraphControl2.ScrollMaxX = 0D;
+  1567→            this.zedGraphControl2.ScrollMaxY = 0D;
+  1568→            this.zedGraphControl2.ScrollMaxY2 = 0D;
+  1569→            this.zedGraphControl2.ScrollMinX = 0D;
+  1570→            this.zedGraphControl2.ScrollMinY = 0D;
+  1571→            this.zedGraphControl2.ScrollMinY2 = 0D;
+  1572→            this.zedGraphControl2.Size = new System.Drawing.Size(709, 108);
+  1573→            this.zedGraphControl2.TabIndex = 155;
+  1574→            this.zedGraphControl2.UseExtendedPrintDialog = true;
+  1575→            // 
+  1576→            // label29
+  1577→            // 
+  1578→            this.label29.BackColor = System.Drawing.Color.WhiteSmoke;
+  1579→            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1580→            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1581→            this.label29.ForeColor = System.Drawing.Color.White;
+  1582→            this.label29.Location = new System.Drawing.Point(575, 108);
+  1583→            this.label29.Name = "label29";
+  1584→            this.label29.Size = new System.Drawing.Size(134, 25);
+  1585→            this.label29.TabIndex = 36;
+  1586→            this.label29.Text = "OK";
+  1587→            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1588→            // 
+  1589→            // label31
+  1590→            // 
+  1591→            this.label31.BackColor = System.Drawing.Color.WhiteSmoke;
+  1592→            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1593→            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1594→            this.label31.ForeColor = System.Drawing.Color.Black;
+  1595→            this.label31.Location = new System.Drawing.Point(76, 133);
+  1596→            this.label31.Name = "label31";
+  1597→            this.label31.Size = new System.Drawing.Size(256, 25);
+  1598→            this.label31.TabIndex = 35;
+  1599→            this.label31.Text = "SPEC";
+  1600→            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1601→            // 
+  1602→            // label33
+  1603→            // 
+  1604→            this.label33.BackColor = System.Drawing.Color.WhiteSmoke;
+  1605→            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1606→            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1607→            this.label33.ForeColor = System.Drawing.Color.Black;
+  1608→            this.label33.Location = new System.Drawing.Point(332, 133);
+  1609→            this.label33.Name = "label33";
+  1610→            this.label33.Size = new System.Drawing.Size(243, 25);
+  1611→            this.label33.TabIndex = 154;
+  1612→            this.label33.Text = "SPEC";
+  1613→            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1614→            // 
+  1615→            // label34
+  1616→            // 
+  1617→            this.label34.BackColor = System.Drawing.Color.WhiteSmoke;
+  1618→            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1619→            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1620→            this.label34.ForeColor = System.Drawing.Color.Black;
+  1621→            this.label34.Location = new System.Drawing.Point(332, 108);
+  1622→            this.label34.Name = "label34";
+  1623→            this.label34.Size = new System.Drawing.Size(243, 25);
+  1624→            this.label34.TabIndex = 153;
+  1625→            this.label34.Text = "SPEC";
+  1626→            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1627→            // 
+  1628→            // label35
+  1629→            // 
+  1630→            this.label35.BackColor = System.Drawing.Color.WhiteSmoke;
+  1631→            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1632→            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1633→            this.label35.ForeColor = System.Drawing.Color.Black;
+  1634→            this.label35.Location = new System.Drawing.Point(76, 108);
+  1635→            this.label35.Name = "label35";
+  1636→            this.label35.Size = new System.Drawing.Size(256, 25);
+  1637→            this.label35.TabIndex = 33;
+  1638→            this.label35.Text = "SPEC";
+  1639→            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1640→            // 
+  1641→            // panel10
+  1642→            // 
+  1643→            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1644→            this.panel10.Controls.Add(this.label36);
+  1645→            this.panel10.Controls.Add(this.label37);
+  1646→            this.panel10.Controls.Add(this.label38);
+  1647→            this.panel10.Controls.Add(this.zedGraphControl3);
+  1648→            this.panel10.Controls.Add(this.label39);
+  1649→            this.panel10.Controls.Add(this.label40);
+  1650→            this.panel10.Controls.Add(this.label41);
+  1651→            this.panel10.Controls.Add(this.label42);
+  1652→            this.panel10.Controls.Add(this.label43);
+  1653→            this.panel10.Location = new System.Drawing.Point(10, 577);
+  1654→            this.panel10.Name = "panel10";
+  1655→            this.panel10.Size = new System.Drawing.Size(711, 161);
+  1656→            this.panel10.TabIndex = 218;
+  1657→            // 
+  1658→            // label36
+  1659→            // 
+  1660→            this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1661→            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1662→            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1663→            this.label36.ForeColor = System.Drawing.Color.Black;
+  1664→            this.label36.Location = new System.Drawing.Point(0, 134);
+  1665→            this.label36.Name = "label36";
+  1666→            this.label36.Size = new System.Drawing.Size(77, 25);
+  1667→            this.label36.TabIndex = 170;
+  1668→            this.label36.Text = "OPERATING";
+  1669→            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1670→            // 
+  1671→            // label37
+  1672→            // 
+  1673→            this.label37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1674→            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1675→            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1676→            this.label37.ForeColor = System.Drawing.Color.Black;
+  1677→            this.label37.Location = new System.Drawing.Point(0, 109);
+  1678→            this.label37.Name = "label37";
+  1679→            this.label37.Size = new System.Drawing.Size(77, 25);
+  1680→            this.label37.TabIndex = 169;
+  1681→            this.label37.Text = "START UP";
+  1682→            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1683→            // 
+  1684→            // label38
+  1685→            // 
+  1686→            this.label38.BackColor = System.Drawing.Color.WhiteSmoke;
+  1687→            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1688→            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1689→            this.label38.ForeColor = System.Drawing.Color.White;
+  1690→            this.label38.Location = new System.Drawing.Point(576, 134);
+  1691→            this.label38.Name = "label38";
+  1692→            this.label38.Size = new System.Drawing.Size(133, 25);
+  1693→            this.label38.TabIndex = 168;
+  1694→            this.label38.Text = "OK";
+  1695→            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1696→            // 
+  1697→            // zedGraphControl3
+  1698→            // 
+  1699→            this.zedGraphControl3.Dock = System.Windows.Forms.DockStyle.Top;
+  1700→            this.zedGraphControl3.Location = new System.Drawing.Point(0, 0);
+  1701→            this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
+  1702→            this.zedGraphControl3.Name = "zedGraphControl3";
+  1703→            this.zedGraphControl3.ScrollGrace = 0D;
+  1704→            this.zedGraphControl3.ScrollMaxX = 0D;
+  1705→            this.zedGraphControl3.ScrollMaxY = 0D;
+  1706→            this.zedGraphControl3.ScrollMaxY2 = 0D;
+  1707→            this.zedGraphControl3.ScrollMinX = 0D;
+  1708→            this.zedGraphControl3.ScrollMinY = 0D;
+  1709→            this.zedGraphControl3.ScrollMinY2 = 0D;
+  1710→            this.zedGraphControl3.Size = new System.Drawing.Size(709, 109);
+  1711→            this.zedGraphControl3.TabIndex = 156;
+  1712→            this.zedGraphControl3.UseExtendedPrintDialog = true;
+  1713→            // 
+  1714→            // label39
+  1715→            // 
+  1716→            this.label39.BackColor = System.Drawing.Color.WhiteSmoke;
+  1717→            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1718→            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1719→            this.label39.ForeColor = System.Drawing.Color.White;
+  1720→            this.label39.Location = new System.Drawing.Point(576, 109);
+  1721→            this.label39.Name = "label39";
+  1722→            this.label39.Size = new System.Drawing.Size(133, 25);
+  1723→            this.label39.TabIndex = 161;
+  1724→            this.label39.Text = "OK";
+  1725→            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1726→            // 
+  1727→            // label40
+  1728→            // 
+  1729→            this.label40.BackColor = System.Drawing.Color.WhiteSmoke;
+  1730→            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1731→            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1732→            this.label40.ForeColor = System.Drawing.Color.Black;
+  1733→            this.label40.Location = new System.Drawing.Point(77, 134);
+  1734→            this.label40.Name = "label40";
+  1735→            this.label40.Size = new System.Drawing.Size(256, 25);
+  1736→            this.label40.TabIndex = 160;
+  1737→            this.label40.Text = "SPEC";
+  1738→            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1739→            // 
+  1740→            // label41
+  1741→            // 
+  1742→            this.label41.BackColor = System.Drawing.Color.WhiteSmoke;
+  1743→            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1744→            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1745→            this.label41.ForeColor = System.Drawing.Color.Black;
+  1746→            this.label41.Location = new System.Drawing.Point(333, 134);
+  1747→            this.label41.Name = "label41";
+  1748→            this.label41.Size = new System.Drawing.Size(243, 25);
+  1749→            this.label41.TabIndex = 167;
+  1750→            this.label41.Text = "SPEC";
+  1751→            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1752→            // 
+  1753→            // label42
+  1754→            // 
+  1755→            this.label42.BackColor = System.Drawing.Color.WhiteSmoke;
+  1756→            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1757→            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1758→            this.label42.ForeColor = System.Drawing.Color.Black;
+  1759→            this.label42.Location = new System.Drawing.Point(333, 109);
+  1760→            this.label42.Name = "label42";
+  1761→            this.label42.Size = new System.Drawing.Size(243, 25);
+  1762→            this.label42.TabIndex = 166;
+  1763→            this.label42.Text = "SPEC";
+  1764→            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1765→            // 
+  1766→            // label43
+  1767→            // 
+  1768→            this.label43.BackColor = System.Drawing.Color.WhiteSmoke;
+  1769→            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1770→            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1771→            this.label43.ForeColor = System.Drawing.Color.Black;
+  1772→            this.label43.Location = new System.Drawing.Point(77, 109);
+  1773→            this.label43.Name = "label43";
+  1774→            this.label43.Size = new System.Drawing.Size(256, 25);
+  1775→            this.label43.TabIndex = 158;
+  1776→            this.label43.Text = "SPEC";
+  1777→            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1778→            // 
+  1779→            // panel100
+  1780→            // 
+  1781→            this.panel100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1782→            this.panel100.Controls.Add(this.label44);
+  1783→            this.panel100.Controls.Add(this.zedGraphControl4);
+  1784→            this.panel100.Controls.Add(this.label45);
+  1785→            this.panel100.Controls.Add(this.label46);
+  1786→            this.panel100.Controls.Add(this.label47);
+  1787→            this.panel100.Controls.Add(this.label48);
+  1788→            this.panel100.Controls.Add(this.label49);
+  1789→            this.panel100.Controls.Add(this.label50);
+  1790→            this.panel100.Controls.Add(this.label51);
+  1791→            this.panel100.Location = new System.Drawing.Point(10, 410);
+  1792→            this.panel100.Name = "panel100";
+  1793→            this.panel100.Size = new System.Drawing.Size(711, 161);
+  1794→            this.panel100.TabIndex = 217;
+  1795→            // 
+  1796→            // label44
+  1797→            // 
+  1798→            this.label44.BackColor = System.Drawing.Color.WhiteSmoke;
+  1799→            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1800→            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1801→            this.label44.ForeColor = System.Drawing.Color.White;
+  1802→            this.label44.Location = new System.Drawing.Point(576, 134);
+  1803→            this.label44.Name = "label44";
+  1804→            this.label44.Size = new System.Drawing.Size(134, 25);
+  1805→            this.label44.TabIndex = 156;
+  1806→            this.label44.Text = "OK";
+  1807→            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1808→            // 
+  1809→            // zedGraphControl4
+  1810→            // 
+  1811→            this.zedGraphControl4.Dock = System.Windows.Forms.DockStyle.Top;
+  1812→            this.zedGraphControl4.Location = new System.Drawing.Point(0, 0);
+  1813→            this.zedGraphControl4.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
+  1814→            this.zedGraphControl4.Name = "zedGraphControl4";
+  1815→            this.zedGraphControl4.ScrollGrace = 0D;
+  1816→            this.zedGraphControl4.ScrollMaxX = 0D;
+  1817→            this.zedGraphControl4.ScrollMaxY = 0D;
+  1818→            this.zedGraphControl4.ScrollMaxY2 = 0D;
+  1819→            this.zedGraphControl4.ScrollMinX = 0D;
+  1820→            this.zedGraphControl4.ScrollMinY = 0D;
+  1821→            this.zedGraphControl4.ScrollMinY2 = 0D;
+  1822→            this.zedGraphControl4.Size = new System.Drawing.Size(709, 109);
+  1823→            this.zedGraphControl4.TabIndex = 155;
+  1824→            this.zedGraphControl4.UseExtendedPrintDialog = true;
+  1825→            // 
+  1826→            // label45
+  1827→            // 
+  1828→            this.label45.BackColor = System.Drawing.Color.WhiteSmoke;
+  1829→            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1830→            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1831→            this.label45.ForeColor = System.Drawing.Color.White;
+  1832→            this.label45.Location = new System.Drawing.Point(576, 109);
+  1833→            this.label45.Name = "label45";
+  1834→            this.label45.Size = new System.Drawing.Size(133, 25);
+  1835→            this.label45.TabIndex = 36;
+  1836→            this.label45.Text = "OK";
+  1837→            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1838→            // 
+  1839→            // label46
+  1840→            // 
+  1841→            this.label46.BackColor = System.Drawing.Color.WhiteSmoke;
+  1842→            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1843→            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1844→            this.label46.ForeColor = System.Drawing.Color.Black;
+  1845→            this.label46.Location = new System.Drawing.Point(77, 134);
+  1846→            this.label46.Name = "label46";
+  1847→            this.label46.Size = new System.Drawing.Size(256, 25);
+  1848→            this.label46.TabIndex = 35;
+  1849→            this.label46.Text = "SPEC";
+  1850→            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1851→            // 
+  1852→            // label47
+  1853→            // 
+  1854→            this.label47.BackColor = System.Drawing.Color.WhiteSmoke;
+  1855→            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1856→            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1857→            this.label47.ForeColor = System.Drawing.Color.Black;
+  1858→            this.label47.Location = new System.Drawing.Point(333, 134);
+  1859→            this.label47.Name = "label47";
+  1860→            this.label47.Size = new System.Drawing.Size(243, 25);
+  1861→            this.label47.TabIndex = 154;
+  1862→            this.label47.Text = "SPEC";
+  1863→            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1864→            // 
+  1865→            // label48
+  1866→            // 
+  1867→            this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1868→            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1869→            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1870→            this.label48.ForeColor = System.Drawing.Color.Black;
+  1871→            this.label48.Location = new System.Drawing.Point(0, 134);
+  1872→            this.label48.Name = "label48";
+  1873→            this.label48.Size = new System.Drawing.Size(77, 25);
+  1874→            this.label48.TabIndex = 34;
+  1875→            this.label48.Text = "OPERATING";
+  1876→            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1877→            // 
+  1878→            // label49
+  1879→            // 
+  1880→            this.label49.BackColor = System.Drawing.Color.WhiteSmoke;
+  1881→            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1882→            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1883→            this.label49.ForeColor = System.Drawing.Color.Black;
+  1884→            this.label49.Location = new System.Drawing.Point(333, 109);
+  1885→            this.label49.Name = "label49";
+  1886→            this.label49.Size = new System.Drawing.Size(243, 25);
+  1887→            this.label49.TabIndex = 153;
+  1888→            this.label49.Text = "SPEC";
+  1889→            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1890→            // 
+  1891→            // label50
+  1892→            // 
+  1893→            this.label50.BackColor = System.Drawing.Color.WhiteSmoke;
+  1894→            this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1895→            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1896→            this.label50.ForeColor = System.Drawing.Color.Black;
+  1897→            this.label50.Location = new System.Drawing.Point(77, 109);
+  1898→            this.label50.Name = "label50";
+  1899→            this.label50.Size = new System.Drawing.Size(256, 25);
+  1900→            this.label50.TabIndex = 33;
+  1901→            this.label50.Text = "SPEC";
+  1902→            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1903→            // 
+  1904→            // label51
+  1905→            // 
+  1906→            this.label51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+  1907→            this.label51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1908→            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1909→            this.label51.ForeColor = System.Drawing.Color.Black;
+  1910→            this.label51.Location = new System.Drawing.Point(0, 109);
+  1911→            this.label51.Name = "label51";
+  1912→            this.label51.Size = new System.Drawing.Size(77, 25);
+  1913→            this.label51.TabIndex = 32;
+  1914→            this.label51.Text = "START UP";
+  1915→            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1916→            // 
+  1917→            // FrmMain
+  1918→            // 
+  1919→            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+  1920→            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+  1921→            this.ClientSize = new System.Drawing.Size(1916, 1041);
+  1922→            this.Controls.Add(this.panel7);
+  1923→            this.Controls.Add(this.panel9);
+  1924→            this.Controls.Add(this.panel10);
+  1925→            this.Controls.Add(this.panel100);
+  1926→            this.Controls.Add(this.srcDisScan2_2);
+  1927→            this.Controls.Add(this.srcDisScan2_1);
+  1928→            this.Controls.Add(this.srcDisScan1);
+  1929→            this.Controls.Add(this.srclbNoiseScanOK2);
+  1930→            this.Controls.Add(this.label32);
+  1931→            this.Controls.Add(this.srclbNoiseScanOK1);
+  1932→            this.Controls.Add(this.label30);
+  1933→            this.Controls.Add(this.srclbVibScanOK);
+  1934→            this.Controls.Add(this.label24);
+  1935→            this.Controls.Add(this.button1);
+  1936→            this.Controls.Add(this.label16);
+  1937→            this.Controls.Add(this.srclbvTestTime);
+  1938→            this.Controls.Add(this.panel3);
+  1939→            this.Controls.Add(this.panel6);
+  1940→            this.Controls.Add(this.label15);
+  1941→            this.Controls.Add(this.srclbTestTime);
+  1942→            this.Controls.Add(this.label6);
+  1943→            this.Controls.Add(this.label4);
+  1944→            this.Controls.Add(this.label1);
+  1945→            this.Controls.Add(this.srcLbX);
+  1946→            this.Controls.Add(this.srcLbY);
+  1947→            this.Controls.Add(this.label11);
+  1948→            this.Controls.Add(this.srcLbZ);
+  1949→            this.Controls.Add(this.label13);
+  1950→            this.Controls.Add(this.panel2);
+  1951→            this.Controls.Add(this.label14);
+  1952→            this.Controls.Add(this.srcLbCurr);
+  1953→            this.Controls.Add(this.srcLbVolt);
+  1954→            this.Controls.Add(this.srcLbNoise);
+  1955→            this.Controls.Add(this.panel11);
+  1956→            this.Controls.Add(this.panel8);
+  1957→            this.Controls.Add(this.panel4);
+  1958→            this.Controls.Add(this.panel5);
+  1959→            this.Controls.Add(this.panel1);
+  1960→            this.Controls.Add(this.menuStrip1);
+  1961→            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1962→            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+  1963→            this.Name = "FrmMain";
+  1964→            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+  1965→            this.Text = "NoiseTest";
+  1966→            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+  1967→            this.menuStrip1.ResumeLayout(false);
+  1968→            this.menuStrip1.PerformLayout();
+  1969→            this.panel4.ResumeLayout(false);
+  1970→            this.panel11.ResumeLayout(false);
+  1971→            this.panel11.PerformLayout();
+  1972→            this.panel5.ResumeLayout(false);
+  1973→            this.panel8.ResumeLayout(false);
+  1974→            this.panel1.ResumeLayout(false);
+  1975→            this.panel2.ResumeLayout(false);
+  1976→            this.panel3.ResumeLayout(false);
+  1977→            this.panel6.ResumeLayout(false);
+  1978→            this.panel7.ResumeLayout(false);
+  1979→            this.panel9.ResumeLayout(false);
+  1980→            this.panel10.ResumeLayout(false);
+  1981→            this.panel100.ResumeLayout(false);
+  1982→            this.ResumeLayout(false);
+  1983→            this.PerformLayout();
+  1984→
+  1985→        }
+  1986→
+  1987→        #endregion
+  1988→        private System.Windows.Forms.MenuStrip menuStrip1;
+  1989→        private System.Windows.Forms.ToolStripMenuItem mENUToolStripMenuItem;
+  1990→        private System.Windows.Forms.ToolStripMenuItem systemSettingToolStripMenuItem;
+  1991→        private System.Windows.Forms.ToolStripMenuItem basicSettingToolStripMenuItem;
+  1992→        private System.Windows.Forms.ToolStripMenuItem partSettingToolStripMenuItem;
+  1993→        private System.Windows.Forms.ToolStripMenuItem dataSearchToolStripMenuItem;
+  1994→        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+  1995→        private System.Windows.Forms.Label label86;
+  1996→        private System.Windows.Forms.Panel panel4;
+  1997→        private System.Windows.Forms.ToolStripMenuItem iOToolStripMenuItem;
+  1998→        private System.Windows.Forms.TextBox textBox1;
+  1999→        private System.Windows.Forms.Panel panel11;
+  2000→        private System.Windows.Forms.Label srcLbNoise;
+  2001→        private System.IO.Ports.SerialPort SerialScanner1;
+  2002→        private System.IO.Ports.SerialPort SerialPrinter;
+  2003→        private System.Windows.Forms.Label srcLbVolt;
+  2004→        private System.Windows.Forms.Label srcLbCurr;
+  2005→        private System.Windows.Forms.Timer tmrWorkNoiseCurrent;
+  2006→        private System.Windows.Forms.ToolStripMenuItem barcodeToolStripMenuItem;
+  2007→        private System.Windows.Forms.ToolStripMenuItem kEYBOARDToolStripMenuItem;
+  2008→        private System.Windows.Forms.Panel panel5;
+  2009→        private System.Windows.Forms.Panel panel8;
+  2010→        private ZedGraph.ZedGraphControl Graph5;
+  2011→        private System.Windows.Forms.Label label7;
+  2012→        private System.Windows.Forms.Label Spec_StartUp1;
+  2013→        private System.Windows.Forms.Label Val_StartUp1;
+  2014→        private System.Windows.Forms.Label label5;
+  2015→        private System.Windows.Forms.Label Val_Operating1;
+  2016→        private System.Windows.Forms.Label Spec_Operating1;
+  2017→        private System.Windows.Forms.Label Dec_StartUp1;
+  2018→        private System.Windows.Forms.Label Dec_Operating1;
+  2019→        private System.Windows.Forms.Panel panel1;
+  2020→        private ZedGraph.ZedGraphControl Graph1;
+  2021→        private System.Windows.Forms.Panel panel2;
+  2022→        private ZedGraph.ZedGraphControl Graph2;
+  2023→        private System.Windows.Forms.Label Dec_Operating2;
+  2024→        private System.Windows.Forms.Label Dec_StartUp2;
+  2025→        private System.Windows.Forms.Label Spec_Operating2;
+  2026→        private System.Windows.Forms.Label Val_Operating2;
+  2027→        private System.Windows.Forms.Label Val_StartUp2;
+  2028→        private System.Windows.Forms.Label Spec_StartUp2;
+  2029→        private ZedGraph.ZedGraphControl Graph7;
+  2030→        private ZedGraph.ZedGraphControl Graph6;
+  2031→        private System.Windows.Forms.Label srcLbZ;
+  2032→        private System.Windows.Forms.Label srcLbY;
+  2033→        private System.Windows.Forms.Label srcLbX;
+  2034→        private System.Windows.Forms.Label label1;
+  2035→        private System.Windows.Forms.Label label11;
+  2036→        private System.Windows.Forms.Label label13;
+  2037→        private System.Windows.Forms.Label label14;
+  2038→        private System.Windows.Forms.Label label4;
+  2039→        private System.Windows.Forms.Label label6;
+  2040→        private System.Windows.Forms.Label label15;
+  2041→        private System.Windows.Forms.Label srclbTestTime;
+  2042→        private System.Windows.Forms.Timer tmrDisplay;
+  2043→        private System.Windows.Forms.Panel panel3;
+  2044→        private System.Windows.Forms.Label Dec_Operating4;
+  2045→        private ZedGraph.ZedGraphControl Graph4;
+  2046→        private System.Windows.Forms.Label Dec_StartUp4;
+  2047→        private System.Windows.Forms.Label Spec_Operating4;
+  2048→        private System.Windows.Forms.Label Val_Operating4;
+  2049→        private System.Windows.Forms.Label Val_StartUp4;
+  2050→        private System.Windows.Forms.Label Spec_StartUp4;
+  2051→        private System.Windows.Forms.Panel panel6;
+  2052→        private System.Windows.Forms.Label Dec_Operating3;
+  2053→        private ZedGraph.ZedGraphControl Graph3;
+  2054→        private System.Windows.Forms.Label Dec_StartUp3;
+  2055→        private System.Windows.Forms.Label Spec_Operating3;
+  2056→        private System.Windows.Forms.Label Val_Operating3;
+  2057→        private System.Windows.Forms.Label Val_StartUp3;
+  2058→        private System.Windows.Forms.Label Spec_StartUp3;
+  2059→        private System.Windows.Forms.Timer tmrWorkVib;
+  2060→        private System.Windows.Forms.Label label16;
+  2061→        private System.Windows.Forms.Label srclbvTestTime;
+  2062→        private System.Windows.Forms.Button button1;
+  2063→        private ZedGraph.ZedGraphControl GraphX;
+  2064→        private ZedGraph.ZedGraphControl GraphZ;
+  2065→        private ZedGraph.ZedGraphControl GraphY;
+  2066→        private System.Windows.Forms.ListView _listZ;
+  2067→        private System.Windows.Forms.ListView _listY;
+  2068→        private System.Windows.Forms.ListView _listX;
+  2069→        private System.IO.Ports.SerialPort SerialScanner2;
+  2070→        private System.Windows.Forms.Label label24;
+  2071→        private System.Windows.Forms.Label srclbVibScanOK;
+  2072→        private System.Windows.Forms.Label srclbNoiseScanOK1;
+  2073→        private System.Windows.Forms.Label label30;
+  2074→        private System.Windows.Forms.Label srclbNoiseScanOK2;
+  2075→        private System.Windows.Forms.Label label32;
+  2076→        private System.Windows.Forms.Label srcDisScan1;
+  2077→        private System.Windows.Forms.Label srcDisScan2_1;
+  2078→        private System.Windows.Forms.Label srcDisScan2_2;
+  2079→        private System.Windows.Forms.Label label2;
+  2080→        private System.Windows.Forms.Label label8;
+  2081→        private System.Windows.Forms.Label label3;
+  2082→        private System.Windows.Forms.Label label9;
+  2083→        private System.Windows.Forms.Label label10;
+  2084→        private System.Windows.Forms.Label label12;
+  2085→        private System.Windows.Forms.Panel panel7;
+  2086→        private System.Windows.Forms.Label label17;
+  2087→        private System.Windows.Forms.Label label18;
+  2088→        private System.Windows.Forms.Label label19;
+  2089→        private ZedGraph.ZedGraphControl zedGraphControl1;
+  2090→        private System.Windows.Forms.Label label20;
+  2091→        private System.Windows.Forms.Label label21;
+  2092→        private System.Windows.Forms.Label label22;
+  2093→        private System.Windows.Forms.Label label23;
+  2094→        private System.Windows.Forms.Label label25;
+  2095→        private System.Windows.Forms.Panel panel9;
+  2096→        private System.Windows.Forms.Label label26;
+  2097→        private System.Windows.Forms.Label label27;
+  2098→        private System.Windows.Forms.Label label28;
+  2099→        private ZedGraph.ZedGraphControl zedGraphControl2;
+  2100→        private System.Windows.Forms.Label label29;
+  2101→        private System.Windows.Forms.Label label31;
+  2102→        private System.Windows.Forms.Label label33;
+  2103→        private System.Windows.Forms.Label label34;
+  2104→        private System.Windows.Forms.Label label35;
+  2105→        private System.Windows.Forms.Panel panel10;
+  2106→        private System.Windows.Forms.Label label36;
+  2107→        private System.Windows.Forms.Label label37;
+  2108→        private System.Windows.Forms.Label label38;
+  2109→        private ZedGraph.ZedGraphControl zedGraphControl3;
+  2110→        private System.Windows.Forms.Label label39;
+  2111→        private System.Windows.Forms.Label label40;
+  2112→        private System.Windows.Forms.Label label41;
+  2113→        private System.Windows.Forms.Label label42;
+  2114→        private System.Windows.Forms.Label label43;
+  2115→        private System.Windows.Forms.Panel panel100;
+  2116→        private System.Windows.Forms.Label label44;
+  2117→        private ZedGraph.ZedGraphControl zedGraphControl4;
+  2118→        private System.Windows.Forms.Label label45;
+  2119→        private System.Windows.Forms.Label label46;
+  2120→        private System.Windows.Forms.Label label47;
+  2121→        private System.Windows.Forms.Label label48;
+  2122→        private System.Windows.Forms.Label label49;
+  2123→        private System.Windows.Forms.Label label50;
+  2124→        private System.Windows.Forms.Label label51;
+  2125→    }
+  2126→}
+  2127→
+  2128→

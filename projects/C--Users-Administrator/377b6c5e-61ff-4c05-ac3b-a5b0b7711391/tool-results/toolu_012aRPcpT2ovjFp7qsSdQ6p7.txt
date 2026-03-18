@@ -1,0 +1,214 @@
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:17:namespace ROBOT_CORRECT
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:70:            WritePrivateProfileString("NETWORK", "ROBOT_IP1", txtIP1.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:71:            WritePrivateProfileString("NETWORK", "ROBOT_IP2", txtIP2.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:72:            WritePrivateProfileString("NETWORK", "ROBOT_IP3", txtIP3.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:73:            WritePrivateProfileString("NETWORK", "ROBOT_IP4", txtIP4.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:79:            WritePrivateProfileString("NETWORK", "ROBOT_CNTM", txtCNTM.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:85:            WritePrivateProfileString("NETWORK", "ROBOT_RPLM", txtRPLYM.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:91:            WritePrivateProfileString("NETWORK", "SERIAL_PORT", cbSERIAL.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:101:                GetPrivateProfileString("NETWORK", "ROBOT_IP1", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:104:                GetPrivateProfileString("NETWORK", "ROBOT_IP2", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:107:                GetPrivateProfileString("NETWORK", "ROBOT_IP3", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:110:                GetPrivateProfileString("NETWORK", "ROBOT_IP4", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:117:                GetPrivateProfileString("NETWORK", "ROBOT_CNTM", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:122:                GetPrivateProfileString("NETWORK", "ROBOT_RPLM", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:127:                GetPrivateProfileString("NETWORK", "SERIAL_PORT", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:132:                GetPrivateProfileString("IMAGE", "TEMPLATE", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:137:                GetPrivateProfileString("TOLERANCE", "X_TOLERANCE", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:141:                GetPrivateProfileString("TOLERANCE", "Y_TOLERANCE", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:145:                GetPrivateProfileString("TOLERANCE", "Z_TOLERANCE", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:150:                GetPrivateProfileString("OUTOFRANGE", "X", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:154:                GetPrivateProfileString("OUTOFRANGE", "Y", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:159:                GetPrivateProfileString("WAIT", "ACT1", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:163:                GetPrivateProfileString("WAIT", "ACT2", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:167:                GetPrivateProfileString("WAIT", "ACT3", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:171:                GetPrivateProfileString("WAIT", "CRT1", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:175:                GetPrivateProfileString("WAIT", "CRT2", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:179:                GetPrivateProfileString("WAIT", "CRT3", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:183:                GetPrivateProfileString("WAIT", "CRT4", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:187:                //CORRECT SPEED
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:189:                GetPrivateProfileString("COR_SPD", "CRT1", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:193:                GetPrivateProfileString("COR_SPD", "CRT2", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:197:                GetPrivateProfileString("COR_SPD", "CRT3", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:201:                GetPrivateProfileString("COR_SPD", "CRT4", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:206:                GetPrivateProfileString("Z_SCAN", "Min", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:210:                GetPrivateProfileString("Z_SCAN", "Max", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:215:                GetPrivateProfileString("CHK_CORD", "XCORD", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:219:                GetPrivateProfileString("CHK_CORD", "YCORD", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:223:                GetPrivateProfileString("CHK_CORD", "ZCORD", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:228:                GetPrivateProfileString("DISPLAY", "CENTERX", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:232:                GetPrivateProfileString("DISPLAY", "CENTERY", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:236:                GetPrivateProfileString("DISPLAY", "FIT_R", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:240:                GetPrivateProfileString("DISPLAY", "OUT_R", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:245:                GetPrivateProfileString("OUT_RANGE", "MAX", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:249:                GetPrivateProfileString("OUT_RANGE", "MIN", "", get, get.Capacity, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:857:                WritePrivateProfileString("IMAGE", "TEMPLATE", txtTEMPFILE.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:968:        private void display_correct()
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:972:            CORRECT.Image?.Dispose();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:973:            CORRECT.Image = st_var.bitmap_catch;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1250:            if (!tmAUTO.Enabled && !tmCORRECT.Enabled) { tmAUTO.Enabled = true; }
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1281:                    CORRECT.Image = null;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1282:                    CORRECT.Image?.Dispose();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1451:                    CORRECT_X.Text = st_var.cort_x.ToString("F2");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1452:                    CORRECT_Y.Text = st_var.cort_y.ToString("F2");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1453:                    CORRECT_Z.Text = st_var.cort_z.ToString("F2");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1490:                    st_var.correct_step = 1000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1491:                    tmCORRECT.Enabled = true;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1498:                    if (!tmCORRECT.Enabled)
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1606:        private void tmCORRECT_Tick(object sender, EventArgs e)
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1608:            switch (st_var.correct_step)
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1612:                    CORRECT_X.Text = "";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1613:                    CORRECT_Y.Text = "";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1614:                    CORRECT_Z.Text = "";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1616:                    CORRECT.Image = null;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1617:                    CORRECT.Image?.Dispose();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1644:                    display_correct();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1645:                    st_var.correct_step = 2000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1666:                    st_var.correct_step = 3000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1672:                        st_var.correct_step = 4000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1695:                    st_var.correct_step = 5000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1701:                        st_var.correct_step = 6000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1715:                    display_correct();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1716:                    st_var.correct_step = 7000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1737:                    st_var.correct_step = 8000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1745:                        st_var.correct_step = 9000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1769:                    st_var.correct_step = 10000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1777:                        st_var.correct_step = 11000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1791:                    display_correct();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1792:                    st_var.correct_step = 12000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1813:                    st_var.correct_step = 13000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1820:                        st_var.correct_step = 14000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1844:                    st_var.correct_step = 15000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1852:                        st_var.correct_step = 16000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1866:                    display_correct();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1867:                    st_var.correct_step = 17000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1888:                    st_var.correct_step = 18000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1895:                        st_var.correct_step = 19000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1919:                    st_var.correct_step = 20000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1926:                        st_var.correct_step = 21000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1949:                    st_var.correct_step = 22000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1958:                        st_var.correct_step = 23000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1966:                            st_var.correct_step = 32000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1992:                    st_var.correct_step = 24000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:1999:                        st_var.correct_step = 25000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2010:                        display_correct();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2013:                        st_var.correct_step = 26000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2017:                        st_var.correct_step = 28000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2035:                    st_var.correct_step = 27000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2041:                        st_var.correct_step = 25000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2067:                    st_var.correct_step = 29000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2075:                        st_var.correct_step = 30000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2097:                    st_var.correct_step = 31000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2115:                        CORRECT_X.Text = st_var.cort_x.ToString("F2");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2116:                        CORRECT_Y.Text = st_var.cort_y.ToString("F2");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2117:                        CORRECT_Z.Text = st_var.cort_z.ToString("F2");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2119:                        st_var.correct_step = 32000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2127:                            st_var.correct_step = 32000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2135:                    display_correct();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2141:                    tmCORRECT.Enabled = false;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2147:                    CORRECT.Image = Properties.Resources.button4_up;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2148:                    tmCORRECT.Enabled = false;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2163:            WritePrivateProfileString("TOLERANCE", "X_TOLERANCE", txtXtol.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2164:            WritePrivateProfileString("TOLERANCE", "Y_TOLERANCE", txtYtol.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2165:            WritePrivateProfileString("TOLERANCE", "Z_TOLERANCE", txtZtol.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2303:            WritePrivateProfileString("WAIT", "ACT1", txtACT1WAIT.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2304:            WritePrivateProfileString("WAIT", "ACT2", txtACT2WAIT.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2305:            WritePrivateProfileString("WAIT", "ACT3", txtACT3WAIT.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2307:            WritePrivateProfileString("WAIT", "CRT1", txtCOR1WAIT.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2308:            WritePrivateProfileString("WAIT", "CRT2", txtCOR2WAIT.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2309:            WritePrivateProfileString("WAIT", "CRT3", txtCOR3WAIT.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2310:            WritePrivateProfileString("WAIT", "CRT4", txtCOR4WAIT.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2325:            WritePrivateProfileString("OUTOFRANGE", "X", txtXOUTR.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2328:            WritePrivateProfileString("OUTOFRANGE", "Y", txtYOUTR.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2334:            WritePrivateProfileString("COR_SPD", "CRT1", txtCOR1SPD.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2337:            WritePrivateProfileString("COR_SPD", "CRT2", txtCOR2SPD.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2340:            WritePrivateProfileString("COR_SPD", "CRT3", txtCOR3SPD.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2343:            WritePrivateProfileString("COR_SPD", "CRT4", txtCOR4SPD.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2358:                WritePrivateProfileString("Z_SCAN", "MIN", txtMin.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2361:                WritePrivateProfileString("Z_SCAN", "MAX", txtMax.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2368:            if (!tmCORRECT.Enabled)
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2370:                st_var.correct_step = 1000;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2371:                tmCORRECT.Enabled = true;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2377:            WritePrivateProfileString("CHK_CORD", "XCORD", txtXCORD.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2380:            WritePrivateProfileString("CHK_CORD", "YCORD", txtYCORD.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2383:            WritePrivateProfileString("CHK_CORD", "ZCORD", txtZCORD.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2395:            WritePrivateProfileString("DISPLAY", "CENTERX", txtCNTRX.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2398:            WritePrivateProfileString("DISPLAY", "CENTERY", txtCNTRY.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2401:            WritePrivateProfileString("DISPLAY", "FIT_R", txtFITR.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2404:            WritePrivateProfileString("DISPLAY", "OUT_R", txtOUTR.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2755:            WritePrivateProfileString("OUT_RANGE", "MAX", txtMAXBR.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.cs:2758:            WritePrivateProfileString("OUT_RANGE", "MIN", txtMINBR.Text, "C:\\ROBOT_CORRECT\\config.ini");
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:1:namespace ROBOT_CORRECT
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:56:            CORRECT_Z = new TextBox();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:67:            CORRECT_Y = new TextBox();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:68:            CORRECT_X = new TextBox();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:79:            CORRECT = new PictureBox();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:235:            tmCORRECT = new System.Windows.Forms.Timer(components);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:239:            ((System.ComponentModel.ISupportInitialize)CORRECT).BeginInit();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:335:            TAB1.Controls.Add(CORRECT_Z);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:346:            TAB1.Controls.Add(CORRECT_Y);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:347:            TAB1.Controls.Add(CORRECT_X);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:358:            TAB1.Controls.Add(CORRECT);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:572:            CRT_START.Text = "CORRECT";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:604:            label50.Text = "Z CORRECT(mm)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:606:            // CORRECT_Z
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:608:            CORRECT_Z.Font = new Font("맑은 고딕", 12F);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:609:            CORRECT_Z.Location = new Point(1696, 13);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:610:            CORRECT_Z.Name = "CORRECT_Z";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:611:            CORRECT_Z.Size = new Size(95, 29);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:612:            CORRECT_Z.TabIndex = 25;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:613:            CORRECT_Z.TextAlign = HorizontalAlignment.Center;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:761:            label2.Text = "Y CORRECT(mm)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:773:            label1.Text = "X CORRECT(mm)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:775:            // CORRECT_Y
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:777:            CORRECT_Y.Font = new Font("맑은 고딕", 12F);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:778:            CORRECT_Y.Location = new Point(1482, 13);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:779:            CORRECT_Y.Name = "CORRECT_Y";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:780:            CORRECT_Y.Size = new Size(95, 29);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:781:            CORRECT_Y.TabIndex = 13;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:782:            CORRECT_Y.TextAlign = HorizontalAlignment.Center;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:784:            // CORRECT_X
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:786:            CORRECT_X.Font = new Font("맑은 고딕", 12F);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:787:            CORRECT_X.Location = new Point(1268, 13);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:788:            CORRECT_X.Name = "CORRECT_X";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:789:            CORRECT_X.Size = new Size(95, 29);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:790:            CORRECT_X.TabIndex = 12;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:791:            CORRECT_X.TextAlign = HorizontalAlignment.Center;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:966:            // CORRECT
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:968:            CORRECT.BackColor = Color.Transparent;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:969:            CORRECT.Location = new Point(970, 81);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:970:            CORRECT.Name = "CORRECT";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:971:            CORRECT.Size = new Size(820, 820);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:972:            CORRECT.SizeMode = PictureBoxSizeMode.Zoom;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:973:            CORRECT.TabIndex = 1;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:974:            CORRECT.TabStop = false;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2463:            label43.Text = "CORRECT 4(%)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2475:            label44.Text = "CORRECT 3(%)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2487:            label45.Text = "CORRECT 2(%)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2499:            label46.Text = "CORRECT 1(%)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2511:            label42.Text = "CORRECT SPEED";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2649:            label38.Text = "CORRECT 4(sec)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2661:            label37.Text = "CORRECT 3(sec)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2673:            label36.Text = "CORRECT 2(sec)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:2685:            label35.Text = "CORRECT 1(sec)";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3117:            // tmCORRECT
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3119:            tmCORRECT.Interval = 50;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3120:            tmCORRECT.Tick += tmCORRECT_Tick;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3138:            Text = "ROBOT CORRECT";
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3145:            ((System.ComponentModel.ISupportInitialize)CORRECT).EndInit();
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3162:        private PictureBox CORRECT;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3176:        private TextBox CORRECT_Y;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3177:        private TextBox CORRECT_X;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3274:        private System.Windows.Forms.Timer tmCORRECT;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Main.Designer.cs:3326:        private TextBox CORRECT_Z;
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Program.cs:1:namespace ROBOT_CORRECT
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\st_var.cs:8:namespace ROBOT_CORRECT
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\st_var.cs:54:        static public int correct_step = 0; 
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\obj\Release\net10.0-windows\ROBOT_CORRECT.AssemblyInfo.cs:14:[assembly: System.Reflection.AssemblyCompanyAttribute("ROBOT_CORRECT")]
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\obj\Release\net10.0-windows\ROBOT_CORRECT.AssemblyInfo.cs:18:[assembly: System.Reflection.AssemblyProductAttribute("ROBOT_CORRECT")]
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\obj\Release\net10.0-windows\ROBOT_CORRECT.AssemblyInfo.cs:19:[assembly: System.Reflection.AssemblyTitleAttribute("ROBOT_CORRECT")]
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Properties\Resources.Designer.cs:11:namespace ROBOT_CORRECT.Properties {
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\Properties\Resources.Designer.cs:42:                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ROBOT_CORRECT.Properties.Resources", typeof(Resources).Assembly);
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\obj\Debug\net10.0-windows\ROBOT_CORRECT.AssemblyInfo.cs:14:[assembly: System.Reflection.AssemblyCompanyAttribute("ROBOT_CORRECT")]
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\obj\Debug\net10.0-windows\ROBOT_CORRECT.AssemblyInfo.cs:18:[assembly: System.Reflection.AssemblyProductAttribute("ROBOT_CORRECT")]
+C:\Users\Administrator\Desktop\WELDING_CORRECT\ROBOT_CORRECT\obj\Debug\net10.0-windows\ROBOT_CORRECT.AssemblyInfo.cs:19:[assembly: System.Reflection.AssemblyTitleAttribute("ROBOT_CORRECT")]

@@ -1,0 +1,761 @@
+./Frm_Main.Designer.vb:        Me.AxCWButton45 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton46 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton47 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton48 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton49 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton50 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton51 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton52 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton44 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton43 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton41 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton40 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton39 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton38 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton37 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton34 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton16 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton17 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton18 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton19 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton23 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton25 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton26 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton27 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton29 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton31 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton32 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton33 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton15 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton14 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton9 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton10 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton11 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton12 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton13 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton8 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton7 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton6 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton5 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton4 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Cover = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Damper = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton54 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton53 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton42 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_message = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Color = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.PAnel_Tq1_Dec = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Recl_Barcode_Dec = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton55 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Recl_Barcode = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.PAnel_PartScript1 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.PAnel_Tq1_Value = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_TQ_BASIC = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton28 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton22 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton36 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Info = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton2 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton20 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Serial = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Part = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton35 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton3 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton24 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Scanner = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton30 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.Panel_Decision = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        Me.AxCWButton21 = New AxCWUIControlsLib.AxCWButton()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton45, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton46, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton47, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton48, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton49, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton50, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton51, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton52, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton44, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton43, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton41, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton40, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton39, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton38, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton37, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton34, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton16, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton17, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton18, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton19, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton23, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton25, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton26, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton27, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton29, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton31, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton32, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton33, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton15, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton14, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton9, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton10, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton11, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton12, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton13, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton8, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton7, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton6, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton5, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton4, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton54, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton53, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton42, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton55, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton28, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton22, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton36, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton20, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton35, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton3, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton24, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton30, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton21, System.ComponentModel.ISupportInitialize).BeginInit()
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton45)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton46)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton47)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton48)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton49)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton50)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton51)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton52)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton44)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton43)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton41)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton40)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton39)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton38)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton37)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton34)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton16)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton17)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton18)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton19)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton23)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton25)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton26)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton27)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton29)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton31)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton32)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton33)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton15)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton14)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton9)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton10)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton11)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton12)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton13)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton8)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton7)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton6)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton5)
+./Frm_Main.Designer.vb:        Me.Panel1.Controls.Add(Me.AxCWButton4)
+./Frm_Main.Designer.vb:        'AxCWButton45
+./Frm_Main.Designer.vb:        Me.AxCWButton45.Location = New System.Drawing.Point(199, 547)
+./Frm_Main.Designer.vb:        Me.AxCWButton45.Name = "AxCWButton45"
+./Frm_Main.Designer.vb:        Me.AxCWButton45.OcxState = CType(resources.GetObject("AxCWButton45.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton45.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton45.TabIndex = 116
+./Frm_Main.Designer.vb:        'AxCWButton46
+./Frm_Main.Designer.vb:        Me.AxCWButton46.Location = New System.Drawing.Point(199, 519)
+./Frm_Main.Designer.vb:        Me.AxCWButton46.Name = "AxCWButton46"
+./Frm_Main.Designer.vb:        Me.AxCWButton46.OcxState = CType(resources.GetObject("AxCWButton46.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton46.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton46.TabIndex = 115
+./Frm_Main.Designer.vb:        'AxCWButton47
+./Frm_Main.Designer.vb:        Me.AxCWButton47.Location = New System.Drawing.Point(199, 491)
+./Frm_Main.Designer.vb:        Me.AxCWButton47.Name = "AxCWButton47"
+./Frm_Main.Designer.vb:        Me.AxCWButton47.OcxState = CType(resources.GetObject("AxCWButton47.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton47.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton47.TabIndex = 114
+./Frm_Main.Designer.vb:        'AxCWButton48
+./Frm_Main.Designer.vb:        Me.AxCWButton48.Location = New System.Drawing.Point(199, 463)
+./Frm_Main.Designer.vb:        Me.AxCWButton48.Name = "AxCWButton48"
+./Frm_Main.Designer.vb:        Me.AxCWButton48.OcxState = CType(resources.GetObject("AxCWButton48.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton48.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton48.TabIndex = 113
+./Frm_Main.Designer.vb:        'AxCWButton49
+./Frm_Main.Designer.vb:        Me.AxCWButton49.Location = New System.Drawing.Point(199, 435)
+./Frm_Main.Designer.vb:        Me.AxCWButton49.Name = "AxCWButton49"
+./Frm_Main.Designer.vb:        Me.AxCWButton49.OcxState = CType(resources.GetObject("AxCWButton49.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton49.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton49.TabIndex = 112
+./Frm_Main.Designer.vb:        'AxCWButton50
+./Frm_Main.Designer.vb:        Me.AxCWButton50.Location = New System.Drawing.Point(199, 407)
+./Frm_Main.Designer.vb:        Me.AxCWButton50.Name = "AxCWButton50"
+./Frm_Main.Designer.vb:        Me.AxCWButton50.OcxState = CType(resources.GetObject("AxCWButton50.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton50.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton50.TabIndex = 111
+./Frm_Main.Designer.vb:        'AxCWButton51
+./Frm_Main.Designer.vb:        Me.AxCWButton51.Location = New System.Drawing.Point(199, 379)
+./Frm_Main.Designer.vb:        Me.AxCWButton51.Name = "AxCWButton51"
+./Frm_Main.Designer.vb:        Me.AxCWButton51.OcxState = CType(resources.GetObject("AxCWButton51.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton51.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton51.TabIndex = 110
+./Frm_Main.Designer.vb:        'AxCWButton52
+./Frm_Main.Designer.vb:        Me.AxCWButton52.Location = New System.Drawing.Point(199, 351)
+./Frm_Main.Designer.vb:        Me.AxCWButton52.Name = "AxCWButton52"
+./Frm_Main.Designer.vb:        Me.AxCWButton52.OcxState = CType(resources.GetObject("AxCWButton52.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton52.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton52.TabIndex = 109
+./Frm_Main.Designer.vb:        'AxCWButton44
+./Frm_Main.Designer.vb:        Me.AxCWButton44.Location = New System.Drawing.Point(13, 547)
+./Frm_Main.Designer.vb:        Me.AxCWButton44.Name = "AxCWButton44"
+./Frm_Main.Designer.vb:        Me.AxCWButton44.OcxState = CType(resources.GetObject("AxCWButton44.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton44.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton44.TabIndex = 108
+./Frm_Main.Designer.vb:        'AxCWButton43
+./Frm_Main.Designer.vb:        Me.AxCWButton43.Location = New System.Drawing.Point(13, 519)
+./Frm_Main.Designer.vb:        Me.AxCWButton43.Name = "AxCWButton43"
+./Frm_Main.Designer.vb:        Me.AxCWButton43.OcxState = CType(resources.GetObject("AxCWButton43.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton43.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton43.TabIndex = 107
+./Frm_Main.Designer.vb:        'AxCWButton41
+./Frm_Main.Designer.vb:        Me.AxCWButton41.Location = New System.Drawing.Point(13, 491)
+./Frm_Main.Designer.vb:        Me.AxCWButton41.Name = "AxCWButton41"
+./Frm_Main.Designer.vb:        Me.AxCWButton41.OcxState = CType(resources.GetObject("AxCWButton41.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton41.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton41.TabIndex = 106
+./Frm_Main.Designer.vb:        'AxCWButton40
+./Frm_Main.Designer.vb:        Me.AxCWButton40.Location = New System.Drawing.Point(13, 463)
+./Frm_Main.Designer.vb:        Me.AxCWButton40.Name = "AxCWButton40"
+./Frm_Main.Designer.vb:        Me.AxCWButton40.OcxState = CType(resources.GetObject("AxCWButton40.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton40.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton40.TabIndex = 105
+./Frm_Main.Designer.vb:        'AxCWButton39
+./Frm_Main.Designer.vb:        Me.AxCWButton39.Location = New System.Drawing.Point(13, 435)
+./Frm_Main.Designer.vb:        Me.AxCWButton39.Name = "AxCWButton39"
+./Frm_Main.Designer.vb:        Me.AxCWButton39.OcxState = CType(resources.GetObject("AxCWButton39.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton39.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton39.TabIndex = 104
+./Frm_Main.Designer.vb:        'AxCWButton38
+./Frm_Main.Designer.vb:        Me.AxCWButton38.Location = New System.Drawing.Point(13, 407)
+./Frm_Main.Designer.vb:        Me.AxCWButton38.Name = "AxCWButton38"
+./Frm_Main.Designer.vb:        Me.AxCWButton38.OcxState = CType(resources.GetObject("AxCWButton38.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton38.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton38.TabIndex = 103
+./Frm_Main.Designer.vb:        'AxCWButton37
+./Frm_Main.Designer.vb:        Me.AxCWButton37.Location = New System.Drawing.Point(13, 379)
+./Frm_Main.Designer.vb:        Me.AxCWButton37.Name = "AxCWButton37"
+./Frm_Main.Designer.vb:        Me.AxCWButton37.OcxState = CType(resources.GetObject("AxCWButton37.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton37.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton37.TabIndex = 102
+./Frm_Main.Designer.vb:        'AxCWButton34
+./Frm_Main.Designer.vb:        Me.AxCWButton34.Location = New System.Drawing.Point(13, 351)
+./Frm_Main.Designer.vb:        Me.AxCWButton34.Name = "AxCWButton34"
+./Frm_Main.Designer.vb:        Me.AxCWButton34.OcxState = CType(resources.GetObject("AxCWButton34.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton34.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton34.TabIndex = 101
+./Frm_Main.Designer.vb:        'AxCWButton16
+./Frm_Main.Designer.vb:        Me.AxCWButton16.Location = New System.Drawing.Point(199, 323)
+./Frm_Main.Designer.vb:        Me.AxCWButton16.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton16.Name = "AxCWButton16"
+./Frm_Main.Designer.vb:        Me.AxCWButton16.OcxState = CType(resources.GetObject("AxCWButton16.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton16.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton16.TabIndex = 88
+./Frm_Main.Designer.vb:        'AxCWButton17
+./Frm_Main.Designer.vb:        Me.AxCWButton17.Location = New System.Drawing.Point(199, 295)
+./Frm_Main.Designer.vb:        Me.AxCWButton17.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton17.Name = "AxCWButton17"
+./Frm_Main.Designer.vb:        Me.AxCWButton17.OcxState = CType(resources.GetObject("AxCWButton17.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton17.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton17.TabIndex = 87
+./Frm_Main.Designer.vb:        'AxCWButton18
+./Frm_Main.Designer.vb:        Me.AxCWButton18.Location = New System.Drawing.Point(199, 267)
+./Frm_Main.Designer.vb:        Me.AxCWButton18.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton18.Name = "AxCWButton18"
+./Frm_Main.Designer.vb:        Me.AxCWButton18.OcxState = CType(resources.GetObject("AxCWButton18.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton18.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton18.TabIndex = 86
+./Frm_Main.Designer.vb:        'AxCWButton19
+./Frm_Main.Designer.vb:        Me.AxCWButton19.Location = New System.Drawing.Point(199, 241)
+./Frm_Main.Designer.vb:        Me.AxCWButton19.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton19.Name = "AxCWButton19"
+./Frm_Main.Designer.vb:        Me.AxCWButton19.OcxState = CType(resources.GetObject("AxCWButton19.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton19.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton19.TabIndex = 85
+./Frm_Main.Designer.vb:        'AxCWButton23
+./Frm_Main.Designer.vb:        Me.AxCWButton23.Location = New System.Drawing.Point(199, 211)
+./Frm_Main.Designer.vb:        Me.AxCWButton23.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton23.Name = "AxCWButton23"
+./Frm_Main.Designer.vb:        Me.AxCWButton23.OcxState = CType(resources.GetObject("AxCWButton23.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton23.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton23.TabIndex = 84
+./Frm_Main.Designer.vb:        'AxCWButton25
+./Frm_Main.Designer.vb:        Me.AxCWButton25.Location = New System.Drawing.Point(199, 185)
+./Frm_Main.Designer.vb:        Me.AxCWButton25.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton25.Name = "AxCWButton25"
+./Frm_Main.Designer.vb:        Me.AxCWButton25.OcxState = CType(resources.GetObject("AxCWButton25.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton25.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton25.TabIndex = 83
+./Frm_Main.Designer.vb:        'AxCWButton26
+./Frm_Main.Designer.vb:        Me.AxCWButton26.Location = New System.Drawing.Point(199, 155)
+./Frm_Main.Designer.vb:        Me.AxCWButton26.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton26.Name = "AxCWButton26"
+./Frm_Main.Designer.vb:        Me.AxCWButton26.OcxState = CType(resources.GetObject("AxCWButton26.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton26.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton26.TabIndex = 82
+./Frm_Main.Designer.vb:        'AxCWButton27
+./Frm_Main.Designer.vb:        Me.AxCWButton27.Location = New System.Drawing.Point(199, 129)
+./Frm_Main.Designer.vb:        Me.AxCWButton27.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton27.Name = "AxCWButton27"
+./Frm_Main.Designer.vb:        Me.AxCWButton27.OcxState = CType(resources.GetObject("AxCWButton27.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton27.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton27.TabIndex = 81
+./Frm_Main.Designer.vb:        'AxCWButton29
+./Frm_Main.Designer.vb:        Me.AxCWButton29.Location = New System.Drawing.Point(199, 99)
+./Frm_Main.Designer.vb:        Me.AxCWButton29.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton29.Name = "AxCWButton29"
+./Frm_Main.Designer.vb:        Me.AxCWButton29.OcxState = CType(resources.GetObject("AxCWButton29.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton29.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton29.TabIndex = 80
+./Frm_Main.Designer.vb:        'AxCWButton31
+./Frm_Main.Designer.vb:        Me.AxCWButton31.Location = New System.Drawing.Point(199, 71)
+./Frm_Main.Designer.vb:        Me.AxCWButton31.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton31.Name = "AxCWButton31"
+./Frm_Main.Designer.vb:        Me.AxCWButton31.OcxState = CType(resources.GetObject("AxCWButton31.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton31.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton31.TabIndex = 79
+./Frm_Main.Designer.vb:        'AxCWButton32
+./Frm_Main.Designer.vb:        Me.AxCWButton32.Location = New System.Drawing.Point(199, 43)
+./Frm_Main.Designer.vb:        Me.AxCWButton32.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton32.Name = "AxCWButton32"
+./Frm_Main.Designer.vb:        Me.AxCWButton32.OcxState = CType(resources.GetObject("AxCWButton32.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton32.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton32.TabIndex = 78
+./Frm_Main.Designer.vb:        'AxCWButton33
+./Frm_Main.Designer.vb:        Me.AxCWButton33.Location = New System.Drawing.Point(199, 15)
+./Frm_Main.Designer.vb:        Me.AxCWButton33.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton33.Name = "AxCWButton33"
+./Frm_Main.Designer.vb:        Me.AxCWButton33.OcxState = CType(resources.GetObject("AxCWButton33.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton33.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton33.TabIndex = 77
+./Frm_Main.Designer.vb:        'AxCWButton15
+./Frm_Main.Designer.vb:        Me.AxCWButton15.Location = New System.Drawing.Point(13, 323)
+./Frm_Main.Designer.vb:        Me.AxCWButton15.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton15.Name = "AxCWButton15"
+./Frm_Main.Designer.vb:        Me.AxCWButton15.OcxState = CType(resources.GetObject("AxCWButton15.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton15.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton15.TabIndex = 65
+./Frm_Main.Designer.vb:        'AxCWButton14
+./Frm_Main.Designer.vb:        Me.AxCWButton14.Location = New System.Drawing.Point(13, 295)
+./Frm_Main.Designer.vb:        Me.AxCWButton14.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton14.Name = "AxCWButton14"
+./Frm_Main.Designer.vb:        Me.AxCWButton14.OcxState = CType(resources.GetObject("AxCWButton14.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton14.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton14.TabIndex = 64
+./Frm_Main.Designer.vb:        'AxCWButton9
+./Frm_Main.Designer.vb:        Me.AxCWButton9.Location = New System.Drawing.Point(13, 267)
+./Frm_Main.Designer.vb:        Me.AxCWButton9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton9.Name = "AxCWButton9"
+./Frm_Main.Designer.vb:        Me.AxCWButton9.OcxState = CType(resources.GetObject("AxCWButton9.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton9.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton9.TabIndex = 63
+./Frm_Main.Designer.vb:        'AxCWButton10
+./Frm_Main.Designer.vb:        Me.AxCWButton10.Location = New System.Drawing.Point(13, 239)
+./Frm_Main.Designer.vb:        Me.AxCWButton10.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton10.Name = "AxCWButton10"
+./Frm_Main.Designer.vb:        Me.AxCWButton10.OcxState = CType(resources.GetObject("AxCWButton10.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton10.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton10.TabIndex = 62
+./Frm_Main.Designer.vb:        'AxCWButton11
+./Frm_Main.Designer.vb:        Me.AxCWButton11.Location = New System.Drawing.Point(13, 211)
+./Frm_Main.Designer.vb:        Me.AxCWButton11.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton11.Name = "AxCWButton11"
+./Frm_Main.Designer.vb:        Me.AxCWButton11.OcxState = CType(resources.GetObject("AxCWButton11.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton11.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton11.TabIndex = 61
+./Frm_Main.Designer.vb:        'AxCWButton12
+./Frm_Main.Designer.vb:        Me.AxCWButton12.Location = New System.Drawing.Point(13, 183)
+./Frm_Main.Designer.vb:        Me.AxCWButton12.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton12.Name = "AxCWButton12"
+./Frm_Main.Designer.vb:        Me.AxCWButton12.OcxState = CType(resources.GetObject("AxCWButton12.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton12.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton12.TabIndex = 60
+./Frm_Main.Designer.vb:        'AxCWButton13
+./Frm_Main.Designer.vb:        Me.AxCWButton13.Location = New System.Drawing.Point(13, 155)
+./Frm_Main.Designer.vb:        Me.AxCWButton13.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton13.Name = "AxCWButton13"
+./Frm_Main.Designer.vb:        Me.AxCWButton13.OcxState = CType(resources.GetObject("AxCWButton13.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton13.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton13.TabIndex = 59
+./Frm_Main.Designer.vb:        'AxCWButton8
+./Frm_Main.Designer.vb:        Me.AxCWButton8.Location = New System.Drawing.Point(13, 127)
+./Frm_Main.Designer.vb:        Me.AxCWButton8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton8.Name = "AxCWButton8"
+./Frm_Main.Designer.vb:        Me.AxCWButton8.OcxState = CType(resources.GetObject("AxCWButton8.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton8.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton8.TabIndex = 58
+./Frm_Main.Designer.vb:        'AxCWButton7
+./Frm_Main.Designer.vb:        Me.AxCWButton7.Location = New System.Drawing.Point(13, 99)
+./Frm_Main.Designer.vb:        Me.AxCWButton7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton7.Name = "AxCWButton7"
+./Frm_Main.Designer.vb:        Me.AxCWButton7.OcxState = CType(resources.GetObject("AxCWButton7.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton7.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton7.TabIndex = 56
+./Frm_Main.Designer.vb:        'AxCWButton6
+./Frm_Main.Designer.vb:        Me.AxCWButton6.Location = New System.Drawing.Point(13, 71)
+./Frm_Main.Designer.vb:        Me.AxCWButton6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton6.Name = "AxCWButton6"
+./Frm_Main.Designer.vb:        Me.AxCWButton6.OcxState = CType(resources.GetObject("AxCWButton6.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton6.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton6.TabIndex = 54
+./Frm_Main.Designer.vb:        'AxCWButton5
+./Frm_Main.Designer.vb:        Me.AxCWButton5.Location = New System.Drawing.Point(13, 43)
+./Frm_Main.Designer.vb:        Me.AxCWButton5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton5.Name = "AxCWButton5"
+./Frm_Main.Designer.vb:        Me.AxCWButton5.OcxState = CType(resources.GetObject("AxCWButton5.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton5.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton5.TabIndex = 52
+./Frm_Main.Designer.vb:        'AxCWButton4
+./Frm_Main.Designer.vb:        Me.AxCWButton4.Location = New System.Drawing.Point(13, 15)
+./Frm_Main.Designer.vb:        Me.AxCWButton4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton4.Name = "AxCWButton4"
+./Frm_Main.Designer.vb:        Me.AxCWButton4.OcxState = CType(resources.GetObject("AxCWButton4.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton4.Size = New System.Drawing.Size(38, 35)
+./Frm_Main.Designer.vb:        Me.AxCWButton4.TabIndex = 50
+./Frm_Main.Designer.vb:        'AxCWButton54
+./Frm_Main.Designer.vb:        Me.AxCWButton54.Location = New System.Drawing.Point(1156, 859)
+./Frm_Main.Designer.vb:        Me.AxCWButton54.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton54.Name = "AxCWButton54"
+./Frm_Main.Designer.vb:        Me.AxCWButton54.OcxState = CType(resources.GetObject("AxCWButton54.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton54.Size = New System.Drawing.Size(165, 100)
+./Frm_Main.Designer.vb:        Me.AxCWButton54.TabIndex = 215
+./Frm_Main.Designer.vb:        Me.AxCWButton54.Visible = False
+./Frm_Main.Designer.vb:        'AxCWButton53
+./Frm_Main.Designer.vb:        Me.AxCWButton53.Location = New System.Drawing.Point(809, 859)
+./Frm_Main.Designer.vb:        Me.AxCWButton53.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton53.Name = "AxCWButton53"
+./Frm_Main.Designer.vb:        Me.AxCWButton53.OcxState = CType(resources.GetObject("AxCWButton53.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton53.Size = New System.Drawing.Size(165, 100)
+./Frm_Main.Designer.vb:        Me.AxCWButton53.TabIndex = 214
+./Frm_Main.Designer.vb:        Me.AxCWButton53.Visible = False
+./Frm_Main.Designer.vb:        'AxCWButton42
+./Frm_Main.Designer.vb:        Me.AxCWButton42.Location = New System.Drawing.Point(638, 857)
+./Frm_Main.Designer.vb:        Me.AxCWButton42.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton42.Name = "AxCWButton42"
+./Frm_Main.Designer.vb:        Me.AxCWButton42.OcxState = CType(resources.GetObject("AxCWButton42.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton42.Size = New System.Drawing.Size(165, 100)
+./Frm_Main.Designer.vb:        Me.AxCWButton42.TabIndex = 213
+./Frm_Main.Designer.vb:        Me.AxCWButton42.Visible = False
+./Frm_Main.Designer.vb:        'AxCWButton55
+./Frm_Main.Designer.vb:        Me.AxCWButton55.Location = New System.Drawing.Point(638, 588)
+./Frm_Main.Designer.vb:        Me.AxCWButton55.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton55.Name = "AxCWButton55"
+./Frm_Main.Designer.vb:        Me.AxCWButton55.OcxState = CType(resources.GetObject("AxCWButton55.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton55.Size = New System.Drawing.Size(165, 261)
+./Frm_Main.Designer.vb:        Me.AxCWButton55.TabIndex = 207
+./Frm_Main.Designer.vb:        Me.AxCWButton55.Visible = False
+./Frm_Main.Designer.vb:        'AxCWButton28
+./Frm_Main.Designer.vb:        Me.AxCWButton28.Location = New System.Drawing.Point(809, 675)
+./Frm_Main.Designer.vb:        Me.AxCWButton28.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton28.Name = "AxCWButton28"
+./Frm_Main.Designer.vb:        Me.AxCWButton28.OcxState = CType(resources.GetObject("AxCWButton28.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton28.Size = New System.Drawing.Size(142, 87)
+./Frm_Main.Designer.vb:        Me.AxCWButton28.TabIndex = 184
+./Frm_Main.Designer.vb:        Me.AxCWButton28.Visible = False
+./Frm_Main.Designer.vb:        'AxCWButton22
+./Frm_Main.Designer.vb:        Me.AxCWButton22.Location = New System.Drawing.Point(12, 124)
+./Frm_Main.Designer.vb:        Me.AxCWButton22.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton22.Name = "AxCWButton22"
+./Frm_Main.Designer.vb:        Me.AxCWButton22.OcxState = CType(resources.GetObject("AxCWButton22.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton22.Size = New System.Drawing.Size(620, 46)
+./Frm_Main.Designer.vb:        Me.AxCWButton22.TabIndex = 179
+./Frm_Main.Designer.vb:        'AxCWButton36
+./Frm_Main.Designer.vb:        Me.AxCWButton36.Location = New System.Drawing.Point(1508, 124)
+./Frm_Main.Designer.vb:        Me.AxCWButton36.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton36.Name = "AxCWButton36"
+./Frm_Main.Designer.vb:        Me.AxCWButton36.OcxState = CType(resources.GetObject("AxCWButton36.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton36.Size = New System.Drawing.Size(400, 46)
+./Frm_Main.Designer.vb:        Me.AxCWButton36.TabIndex = 174
+./Frm_Main.Designer.vb:        'AxCWButton2
+./Frm_Main.Designer.vb:        Me.AxCWButton2.Location = New System.Drawing.Point(638, 124)
+./Frm_Main.Designer.vb:        Me.AxCWButton2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton2.Name = "AxCWButton2"
+./Frm_Main.Designer.vb:        Me.AxCWButton2.OcxState = CType(resources.GetObject("AxCWButton2.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton2.Size = New System.Drawing.Size(864, 46)
+./Frm_Main.Designer.vb:        Me.AxCWButton2.TabIndex = 154
+./Frm_Main.Designer.vb:        'AxCWButton1
+./Frm_Main.Designer.vb:        Me.AxCWButton1.Location = New System.Drawing.Point(12, 124)
+./Frm_Main.Designer.vb:        Me.AxCWButton1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton1.Name = "AxCWButton1"
+./Frm_Main.Designer.vb:        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton1.Size = New System.Drawing.Size(620, 46)
+./Frm_Main.Designer.vb:        Me.AxCWButton1.TabIndex = 153
+./Frm_Main.Designer.vb:        'AxCWButton20
+./Frm_Main.Designer.vb:        Me.AxCWButton20.Location = New System.Drawing.Point(638, 469)
+./Frm_Main.Designer.vb:        Me.AxCWButton20.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton20.Name = "AxCWButton20"
+./Frm_Main.Designer.vb:        Me.AxCWButton20.OcxState = CType(resources.GetObject("AxCWButton20.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton20.Size = New System.Drawing.Size(165, 53)
+./Frm_Main.Designer.vb:        Me.AxCWButton20.TabIndex = 150
+./Frm_Main.Designer.vb:        'AxCWButton35
+./Frm_Main.Designer.vb:        Me.AxCWButton35.Location = New System.Drawing.Point(638, 285)
+./Frm_Main.Designer.vb:        Me.AxCWButton35.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton35.Name = "AxCWButton35"
+./Frm_Main.Designer.vb:        Me.AxCWButton35.OcxState = CType(resources.GetObject("AxCWButton35.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton35.Size = New System.Drawing.Size(165, 74)
+./Frm_Main.Designer.vb:        Me.AxCWButton35.TabIndex = 127
+./Frm_Main.Designer.vb:        'AxCWButton3
+./Frm_Main.Designer.vb:        Me.AxCWButton3.Location = New System.Drawing.Point(638, 367)
+./Frm_Main.Designer.vb:        Me.AxCWButton3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton3.Name = "AxCWButton3"
+./Frm_Main.Designer.vb:        Me.AxCWButton3.OcxState = CType(resources.GetObject("AxCWButton3.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton3.Size = New System.Drawing.Size(165, 96)
+./Frm_Main.Designer.vb:        Me.AxCWButton3.TabIndex = 122
+./Frm_Main.Designer.vb:        'AxCWButton24
+./Frm_Main.Designer.vb:        Me.AxCWButton24.Location = New System.Drawing.Point(12, 55)
+./Frm_Main.Designer.vb:        Me.AxCWButton24.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton24.Name = "AxCWButton24"
+./Frm_Main.Designer.vb:        Me.AxCWButton24.OcxState = CType(resources.GetObject("AxCWButton24.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton24.Size = New System.Drawing.Size(1896, 63)
+./Frm_Main.Designer.vb:        Me.AxCWButton24.TabIndex = 121
+./Frm_Main.Designer.vb:        'AxCWButton30
+./Frm_Main.Designer.vb:        Me.AxCWButton30.Location = New System.Drawing.Point(638, 527)
+./Frm_Main.Designer.vb:        Me.AxCWButton30.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton30.Name = "AxCWButton30"
+./Frm_Main.Designer.vb:        Me.AxCWButton30.OcxState = CType(resources.GetObject("AxCWButton30.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton30.Size = New System.Drawing.Size(165, 53)
+./Frm_Main.Designer.vb:        Me.AxCWButton30.TabIndex = 119
+./Frm_Main.Designer.vb:        'AxCWButton21
+./Frm_Main.Designer.vb:        Me.AxCWButton21.Location = New System.Drawing.Point(638, 178)
+./Frm_Main.Designer.vb:        Me.AxCWButton21.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+./Frm_Main.Designer.vb:        Me.AxCWButton21.Name = "AxCWButton21"
+./Frm_Main.Designer.vb:        Me.AxCWButton21.OcxState = CType(resources.GetObject("AxCWButton21.OcxState"), System.Windows.Forms.AxHost.State)
+./Frm_Main.Designer.vb:        Me.AxCWButton21.Size = New System.Drawing.Size(165, 99)
+./Frm_Main.Designer.vb:        Me.AxCWButton21.TabIndex = 107
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton54)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton53)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton42)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton55)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton28)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton22)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton36)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton2)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton1)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton20)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton35)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton3)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton24)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton30)
+./Frm_Main.Designer.vb:        Me.Controls.Add(Me.AxCWButton21)
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton45, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton46, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton47, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton48, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton49, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton50, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton51, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton52, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton44, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton43, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton41, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton40, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton39, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton38, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton37, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton34, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton16, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton17, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton18, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton19, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton23, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton25, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton26, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton27, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton29, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton31, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton32, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton33, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton15, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton14, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton9, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton10, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton11, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton12, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton13, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton8, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton7, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton6, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton5, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton4, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton54, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton53, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton42, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton55, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton28, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton22, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton36, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton20, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton35, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton3, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton24, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton30, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:        CType(Me.AxCWButton21, System.ComponentModel.ISupportInitialize).EndInit()
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton21 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Decision As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Scanner As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton30 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton24 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton3 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Part As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton35 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton20 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton2 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Info As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton36 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton45 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton46 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton47 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton48 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton49 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton50 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton51 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton52 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton44 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton43 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton41 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton40 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton39 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton38 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton37 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton34 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton16 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton17 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton18 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton19 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton23 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton25 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton26 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton27 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton29 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton31 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton32 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton33 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton15 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton14 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton9 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton10 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton11 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton12 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton13 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton8 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton7 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton6 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton5 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton4 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton22 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Serial As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents PAnel_PartScript1 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Recl_Barcode_Dec As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton55 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Recl_Barcode As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents PAnel_Tq1_Value As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_TQ_BASIC As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton28 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents PAnel_Tq1_Dec As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Color As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_message As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton42 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton53 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents AxCWButton54 As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Damper As AxCWUIControlsLib.AxCWButton
+./Frm_Main.Designer.vb:    Friend WithEvents Panel_Cover As AxCWUIControlsLib.AxCWButton
+./Frm_Main.vb:    Public LED_IN(0 To 32) As AxCWUIControlsLib.AxCWButton
+./Frm_Main.vb:    Public LED_OUT(0 To 16) As AxCWUIControlsLib.AxCWButton
+./Frm_Main.vb:        LED_IN(0) = AxCWButton4
+./Frm_Main.vb:        LED_IN(1) = AxCWButton5
+./Frm_Main.vb:        LED_IN(2) = AxCWButton6
+./Frm_Main.vb:        LED_IN(3) = AxCWButton7
+./Frm_Main.vb:        LED_IN(4) = AxCWButton8
+./Frm_Main.vb:        LED_IN(5) = AxCWButton13
+./Frm_Main.vb:        LED_IN(6) = AxCWButton12
+./Frm_Main.vb:        LED_IN(7) = AxCWButton11
+./Frm_Main.vb:        LED_IN(8) = AxCWButton10
+./Frm_Main.vb:        LED_IN(9) = AxCWButton9
+./Frm_Main.vb:        LED_IN(10) = AxCWButton14
+./Frm_Main.vb:        LED_IN(11) = AxCWButton15
+./Frm_Main.vb:        LED_IN(12) = AxCWButton33
+./Frm_Main.vb:        LED_IN(13) = AxCWButton32
+./Frm_Main.vb:        LED_IN(14) = AxCWButton31
+./Frm_Main.vb:        LED_IN(15) = AxCWButton29
+./Frm_Main.vb:        LED_IN(16) = AxCWButton27
+./Frm_Main.vb:        LED_IN(17) = AxCWButton26
+./Frm_Main.vb:        LED_IN(18) = AxCWButton25
+./Frm_Main.vb:        LED_IN(19) = AxCWButton23
+./Frm_Main.vb:        LED_IN(20) = AxCWButton19
+./Frm_Main.vb:        LED_IN(21) = AxCWButton18
+./Frm_Main.vb:        LED_IN(22) = AxCWButton17
+./Frm_Main.vb:        LED_IN(23) = AxCWButton16
+./Frm_Main.vb:        LED_OUT(0) = AxCWButton34
+./Frm_Main.vb:        LED_OUT(1) = AxCWButton37
+./Frm_Main.vb:        LED_OUT(2) = AxCWButton38
+./Frm_Main.vb:        LED_OUT(3) = AxCWButton39
+./Frm_Main.vb:        LED_OUT(4) = AxCWButton40
+./Frm_Main.vb:        LED_OUT(5) = AxCWButton41
+./Frm_Main.vb:        LED_OUT(6) = AxCWButton43
+./Frm_Main.vb:        LED_OUT(7) = AxCWButton44
+./Frm_Main.vb:        LED_OUT(8) = AxCWButton52
+./Frm_Main.vb:        LED_OUT(9) = AxCWButton51
+./Frm_Main.vb:        LED_OUT(10) = AxCWButton50
+./Frm_Main.vb:        LED_OUT(11) = AxCWButton49
+./Frm_Main.vb:        LED_OUT(12) = AxCWButton48
+./Frm_Main.vb:        LED_OUT(13) = AxCWButton47
+./Frm_Main.vb:        LED_OUT(14) = AxCWButton46
+./Frm_Main.vb:        LED_OUT(15) = AxCWButton35
+./Frm_Main.vb:            LED_IN(i).Mode = CWUIControlsLib.CWButtonModes.cwModeIndicator
+./Frm_Main.vb:            LED_OUT(i).Mode = CWUIControlsLib.CWButtonModes.cwModeSwitchWhenPressed
+./Frm_Main.vb:    Private Sub AxCWButton34_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton34.ValueChanged
+./Frm_Main.vb:        If AxCWButton34.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton37_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton37.ValueChanged
+./Frm_Main.vb:        If AxCWButton37.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton38_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton38.ValueChanged
+./Frm_Main.vb:        If AxCWButton38.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton39_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton39.ValueChanged
+./Frm_Main.vb:        If AxCWButton39.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton40_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton40.ValueChanged
+./Frm_Main.vb:        If AxCWButton40.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton41_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton41.ValueChanged
+./Frm_Main.vb:        If AxCWButton41.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton43_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton43.ValueChanged
+./Frm_Main.vb:        If AxCWButton43.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton44_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton44.ValueChanged
+./Frm_Main.vb:        If AxCWButton44.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton52_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton52.ValueChanged
+./Frm_Main.vb:        If AxCWButton52.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton51_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton51.ValueChanged
+./Frm_Main.vb:        If AxCWButton51.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton50_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton50.ValueChanged
+./Frm_Main.vb:        If AxCWButton50.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton49_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton49.ValueChanged
+./Frm_Main.vb:        If AxCWButton49.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton48_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton48.ValueChanged
+./Frm_Main.vb:        If AxCWButton48.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton47_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton47.ValueChanged
+./Frm_Main.vb:        If AxCWButton47.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton46_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton46.ValueChanged
+./Frm_Main.vb:        If AxCWButton46.Value = True Then
+./Frm_Main.vb:    Private Sub AxCWButton45_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton45.ValueChanged
+./Frm_Main.vb:        If AxCWButton45.Value = True Then
+./OP 10 MNL.vbproj:    <COMReference Include="AxCWUIControlsLib">
+./OP 10 MNL.vbproj:    <COMReference Include="CWUIControlsLib">
+./OP 20.vbproj:    <COMReference Include="AxCWUIControlsLib">
+./OP 20.vbproj:    <COMReference Include="CWUIControlsLib">
+./OP10.vbproj:    <COMReference Include="AxCWUIControlsLib">
+./OP10.vbproj:    <COMReference Include="CWUIControlsLib">

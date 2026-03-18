@@ -1,0 +1,816 @@
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:44:    Public LED_IN(0 To 32) As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:45:    Public LED_OUT(0 To 16) As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:471:        LED_IN(0) = AxCWButton4
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:472:        LED_IN(1) = AxCWButton5
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:473:        LED_IN(2) = AxCWButton6
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:474:        LED_IN(3) = AxCWButton7
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:475:        LED_IN(4) = AxCWButton8
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:476:        LED_IN(5) = AxCWButton13
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:477:        LED_IN(6) = AxCWButton12
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:478:        LED_IN(7) = AxCWButton11
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:479:        LED_IN(8) = AxCWButton10
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:480:        LED_IN(9) = AxCWButton9
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:481:        LED_IN(10) = AxCWButton14
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:482:        LED_IN(11) = AxCWButton15
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:484:        LED_IN(12) = AxCWButton33
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:485:        LED_IN(13) = AxCWButton32
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:486:        LED_IN(14) = AxCWButton31
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:487:        LED_IN(15) = AxCWButton29
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:488:        LED_IN(16) = AxCWButton27
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:489:        LED_IN(17) = AxCWButton26
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:490:        LED_IN(18) = AxCWButton25
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:491:        LED_IN(19) = AxCWButton23
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:492:        LED_IN(20) = AxCWButton19
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:493:        LED_IN(21) = AxCWButton18
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:494:        LED_IN(22) = AxCWButton17
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:495:        LED_IN(23) = AxCWButton16
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:497:        LED_OUT(0) = AxCWButton34
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:498:        LED_OUT(1) = AxCWButton37
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:499:        LED_OUT(2) = AxCWButton38
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:500:        LED_OUT(3) = AxCWButton39
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:501:        LED_OUT(4) = AxCWButton40
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:502:        LED_OUT(5) = AxCWButton41
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:503:        LED_OUT(6) = AxCWButton43
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:504:        LED_OUT(7) = AxCWButton44
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:506:        LED_OUT(8) = AxCWButton52
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:507:        LED_OUT(9) = AxCWButton51
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:508:        LED_OUT(10) = AxCWButton50
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:509:        LED_OUT(11) = AxCWButton49
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:510:        LED_OUT(12) = AxCWButton48
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:511:        LED_OUT(13) = AxCWButton47
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:512:        LED_OUT(14) = AxCWButton46
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:513:        LED_OUT(15) = AxCWButton35
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:518:            LED_IN(i).Mode = CWUIControlsLib.CWButtonModes.cwModeIndicator
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:521:            LED_OUT(i).Mode = CWUIControlsLib.CWButtonModes.cwModeSwitchWhenPressed
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:970:    Private Sub AxCWButton34_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton34.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:971:        If AxCWButton34.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:979:    Private Sub AxCWButton37_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton37.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:980:        If AxCWButton37.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:988:    Private Sub AxCWButton38_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton38.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:989:        If AxCWButton38.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:997:    Private Sub AxCWButton39_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton39.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:998:        If AxCWButton39.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1006:    Private Sub AxCWButton40_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton40.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1007:        If AxCWButton40.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1015:    Private Sub AxCWButton41_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton41.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1016:        If AxCWButton41.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1024:    Private Sub AxCWButton43_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton43.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1025:        If AxCWButton43.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1033:    Private Sub AxCWButton44_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton44.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1034:        If AxCWButton44.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1043:    Private Sub AxCWButton52_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton52.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1044:        If AxCWButton52.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1052:    Private Sub AxCWButton51_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton51.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1053:        If AxCWButton51.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1061:    Private Sub AxCWButton50_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton50.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1062:        If AxCWButton50.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1070:    Private Sub AxCWButton49_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton49.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1071:        If AxCWButton49.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1079:    Private Sub AxCWButton48_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton48.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1080:        If AxCWButton48.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1088:    Private Sub AxCWButton47_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton47.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1089:        If AxCWButton47.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1097:    Private Sub AxCWButton46_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton46.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1098:        If AxCWButton46.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1106:    Private Sub AxCWButton45_ValueChanged(sender As Object, e As AxCWUIControlsLib._DCWButtonEvents_ValueChangedEvent) Handles AxCWButton45.ValueChanged
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.vb:1107:        If AxCWButton45.Value = True Then
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:153:  <data name="AxCWButton45.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:186:  <data name="AxCWButton46.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:219:  <data name="AxCWButton47.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:252:  <data name="AxCWButton48.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:285:  <data name="AxCWButton49.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:318:  <data name="AxCWButton50.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:351:  <data name="AxCWButton51.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:384:  <data name="AxCWButton52.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:417:  <data name="AxCWButton44.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:450:  <data name="AxCWButton43.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:483:  <data name="AxCWButton41.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:516:  <data name="AxCWButton40.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:549:  <data name="AxCWButton39.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:582:  <data name="AxCWButton38.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:615:  <data name="AxCWButton37.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:648:  <data name="AxCWButton34.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:681:  <data name="AxCWButton16.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:714:  <data name="AxCWButton17.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:747:  <data name="AxCWButton18.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:780:  <data name="AxCWButton19.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:813:  <data name="AxCWButton23.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:846:  <data name="AxCWButton25.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:879:  <data name="AxCWButton26.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:912:  <data name="AxCWButton27.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:945:  <data name="AxCWButton29.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:978:  <data name="AxCWButton31.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1011:  <data name="AxCWButton32.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1044:  <data name="AxCWButton33.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1077:  <data name="AxCWButton15.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1110:  <data name="AxCWButton14.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1143:  <data name="AxCWButton9.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1176:  <data name="AxCWButton10.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1209:  <data name="AxCWButton11.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1242:  <data name="AxCWButton12.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1275:  <data name="AxCWButton13.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1308:  <data name="AxCWButton8.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1341:  <data name="AxCWButton7.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1374:  <data name="AxCWButton6.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1407:  <data name="AxCWButton5.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1440:  <data name="AxCWButton4.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1542:  <data name="AxCWButton54.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1575:  <data name="AxCWButton53.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1608:  <data name="AxCWButton42.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1773:  <data name="AxCWButton55.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1938:  <data name="AxCWButton28.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:1971:  <data name="AxCWButton22.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2004:  <data name="AxCWButton36.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2071:  <data name="AxCWButton2.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2104:  <data name="AxCWButton1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2137:  <data name="AxCWButton20.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2236:  <data name="AxCWButton35.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2269:  <data name="AxCWButton3.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2302:  <data name="AxCWButton24.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2368:  <data name="AxCWButton30.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.resx:2434:  <data name="AxCWButton21.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:62:        Me.AxCWButton45 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:63:        Me.AxCWButton46 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:64:        Me.AxCWButton47 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:65:        Me.AxCWButton48 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:66:        Me.AxCWButton49 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:67:        Me.AxCWButton50 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:68:        Me.AxCWButton51 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:69:        Me.AxCWButton52 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:70:        Me.AxCWButton44 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:71:        Me.AxCWButton43 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:72:        Me.AxCWButton41 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:73:        Me.AxCWButton40 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:74:        Me.AxCWButton39 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:75:        Me.AxCWButton38 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:76:        Me.AxCWButton37 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:77:        Me.AxCWButton34 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:90:        Me.AxCWButton16 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:91:        Me.AxCWButton17 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:92:        Me.AxCWButton18 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:93:        Me.AxCWButton19 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:94:        Me.AxCWButton23 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:95:        Me.AxCWButton25 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:96:        Me.AxCWButton26 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:97:        Me.AxCWButton27 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:98:        Me.AxCWButton29 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:99:        Me.AxCWButton31 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:100:        Me.AxCWButton32 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:101:        Me.AxCWButton33 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:113:        Me.AxCWButton15 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:114:        Me.AxCWButton14 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:115:        Me.AxCWButton9 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:116:        Me.AxCWButton10 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:117:        Me.AxCWButton11 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:118:        Me.AxCWButton12 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:119:        Me.AxCWButton13 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:120:        Me.AxCWButton8 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:121:        Me.AxCWButton7 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:122:        Me.AxCWButton6 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:123:        Me.AxCWButton5 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:125:        Me.AxCWButton4 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:130:        Me.Panel_Cover = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:131:        Me.Panel_Damper = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:132:        Me.AxCWButton54 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:133:        Me.AxCWButton53 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:134:        Me.AxCWButton42 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:135:        Me.Panel_message = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:136:        Me.Panel_Color = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:137:        Me.PAnel_Tq1_Dec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:138:        Me.Panel_Recl_Barcode_Dec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:139:        Me.AxCWButton55 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:140:        Me.Panel_Recl_Barcode = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:141:        Me.PAnel_PartScript1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:142:        Me.PAnel_Tq1_Value = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:143:        Me.Panel_TQ_BASIC = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:144:        Me.AxCWButton28 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:145:        Me.AxCWButton22 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:146:        Me.AxCWButton36 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:147:        Me.Panel_Info = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:148:        Me.AxCWButton2 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:149:        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:150:        Me.AxCWButton20 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:151:        Me.Panel_Serial = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:152:        Me.Panel_Part = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:153:        Me.AxCWButton35 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:154:        Me.AxCWButton3 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:155:        Me.AxCWButton24 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:156:        Me.Panel_Scanner = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:157:        Me.AxCWButton30 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:158:        Me.Panel_Decision = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:159:        Me.AxCWButton21 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:165:        CType(Me.AxCWButton45, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:166:        CType(Me.AxCWButton46, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:167:        CType(Me.AxCWButton47, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:168:        CType(Me.AxCWButton48, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:169:        CType(Me.AxCWButton49, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:170:        CType(Me.AxCWButton50, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:171:        CType(Me.AxCWButton51, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:172:        CType(Me.AxCWButton52, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:173:        CType(Me.AxCWButton44, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:174:        CType(Me.AxCWButton43, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:175:        CType(Me.AxCWButton41, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:176:        CType(Me.AxCWButton40, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:177:        CType(Me.AxCWButton39, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:178:        CType(Me.AxCWButton38, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:179:        CType(Me.AxCWButton37, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:180:        CType(Me.AxCWButton34, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:181:        CType(Me.AxCWButton16, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:182:        CType(Me.AxCWButton17, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:183:        CType(Me.AxCWButton18, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:184:        CType(Me.AxCWButton19, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:185:        CType(Me.AxCWButton23, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:186:        CType(Me.AxCWButton25, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:187:        CType(Me.AxCWButton26, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:188:        CType(Me.AxCWButton27, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:189:        CType(Me.AxCWButton29, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:190:        CType(Me.AxCWButton31, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:191:        CType(Me.AxCWButton32, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:192:        CType(Me.AxCWButton33, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:193:        CType(Me.AxCWButton15, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:194:        CType(Me.AxCWButton14, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:195:        CType(Me.AxCWButton9, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:196:        CType(Me.AxCWButton10, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:197:        CType(Me.AxCWButton11, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:198:        CType(Me.AxCWButton12, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:199:        CType(Me.AxCWButton13, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:200:        CType(Me.AxCWButton8, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:201:        CType(Me.AxCWButton7, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:202:        CType(Me.AxCWButton6, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:203:        CType(Me.AxCWButton5, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:204:        CType(Me.AxCWButton4, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:207:        CType(Me.AxCWButton54, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:208:        CType(Me.AxCWButton53, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:209:        CType(Me.AxCWButton42, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:214:        CType(Me.AxCWButton55, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:219:        CType(Me.AxCWButton28, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:220:        CType(Me.AxCWButton22, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:221:        CType(Me.AxCWButton36, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:223:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:224:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:225:        CType(Me.AxCWButton20, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:228:        CType(Me.AxCWButton35, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:229:        CType(Me.AxCWButton3, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:230:        CType(Me.AxCWButton24, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:232:        CType(Me.AxCWButton30, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:234:        CType(Me.AxCWButton21, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:359:        Me.Panel1.Controls.Add(Me.AxCWButton45)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:360:        Me.Panel1.Controls.Add(Me.AxCWButton46)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:361:        Me.Panel1.Controls.Add(Me.AxCWButton47)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:362:        Me.Panel1.Controls.Add(Me.AxCWButton48)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:363:        Me.Panel1.Controls.Add(Me.AxCWButton49)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:364:        Me.Panel1.Controls.Add(Me.AxCWButton50)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:365:        Me.Panel1.Controls.Add(Me.AxCWButton51)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:366:        Me.Panel1.Controls.Add(Me.AxCWButton52)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:367:        Me.Panel1.Controls.Add(Me.AxCWButton44)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:368:        Me.Panel1.Controls.Add(Me.AxCWButton43)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:369:        Me.Panel1.Controls.Add(Me.AxCWButton41)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:370:        Me.Panel1.Controls.Add(Me.AxCWButton40)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:371:        Me.Panel1.Controls.Add(Me.AxCWButton39)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:372:        Me.Panel1.Controls.Add(Me.AxCWButton38)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:373:        Me.Panel1.Controls.Add(Me.AxCWButton37)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:374:        Me.Panel1.Controls.Add(Me.AxCWButton34)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:387:        Me.Panel1.Controls.Add(Me.AxCWButton16)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:388:        Me.Panel1.Controls.Add(Me.AxCWButton17)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:389:        Me.Panel1.Controls.Add(Me.AxCWButton18)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:390:        Me.Panel1.Controls.Add(Me.AxCWButton19)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:391:        Me.Panel1.Controls.Add(Me.AxCWButton23)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:392:        Me.Panel1.Controls.Add(Me.AxCWButton25)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:393:        Me.Panel1.Controls.Add(Me.AxCWButton26)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:394:        Me.Panel1.Controls.Add(Me.AxCWButton27)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:395:        Me.Panel1.Controls.Add(Me.AxCWButton29)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:396:        Me.Panel1.Controls.Add(Me.AxCWButton31)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:397:        Me.Panel1.Controls.Add(Me.AxCWButton32)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:398:        Me.Panel1.Controls.Add(Me.AxCWButton33)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:410:        Me.Panel1.Controls.Add(Me.AxCWButton15)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:411:        Me.Panel1.Controls.Add(Me.AxCWButton14)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:412:        Me.Panel1.Controls.Add(Me.AxCWButton9)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:413:        Me.Panel1.Controls.Add(Me.AxCWButton10)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:414:        Me.Panel1.Controls.Add(Me.AxCWButton11)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:415:        Me.Panel1.Controls.Add(Me.AxCWButton12)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:416:        Me.Panel1.Controls.Add(Me.AxCWButton13)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:417:        Me.Panel1.Controls.Add(Me.AxCWButton8)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:418:        Me.Panel1.Controls.Add(Me.AxCWButton7)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:419:        Me.Panel1.Controls.Add(Me.AxCWButton6)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:420:        Me.Panel1.Controls.Add(Me.AxCWButton5)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:422:        Me.Panel1.Controls.Add(Me.AxCWButton4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:622:        'AxCWButton45
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:624:        Me.AxCWButton45.Location = New System.Drawing.Point(199, 547)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:625:        Me.AxCWButton45.Name = "AxCWButton45"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:626:        Me.AxCWButton45.OcxState = CType(resources.GetObject("AxCWButton45.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:627:        Me.AxCWButton45.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:628:        Me.AxCWButton45.TabIndex = 116
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:630:        'AxCWButton46
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:632:        Me.AxCWButton46.Location = New System.Drawing.Point(199, 519)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:633:        Me.AxCWButton46.Name = "AxCWButton46"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:634:        Me.AxCWButton46.OcxState = CType(resources.GetObject("AxCWButton46.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:635:        Me.AxCWButton46.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:636:        Me.AxCWButton46.TabIndex = 115
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:638:        'AxCWButton47
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:640:        Me.AxCWButton47.Location = New System.Drawing.Point(199, 491)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:641:        Me.AxCWButton47.Name = "AxCWButton47"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:642:        Me.AxCWButton47.OcxState = CType(resources.GetObject("AxCWButton47.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:643:        Me.AxCWButton47.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:644:        Me.AxCWButton47.TabIndex = 114
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:646:        'AxCWButton48
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:648:        Me.AxCWButton48.Location = New System.Drawing.Point(199, 463)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:649:        Me.AxCWButton48.Name = "AxCWButton48"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:650:        Me.AxCWButton48.OcxState = CType(resources.GetObject("AxCWButton48.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:651:        Me.AxCWButton48.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:652:        Me.AxCWButton48.TabIndex = 113
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:654:        'AxCWButton49
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:656:        Me.AxCWButton49.Location = New System.Drawing.Point(199, 435)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:657:        Me.AxCWButton49.Name = "AxCWButton49"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:658:        Me.AxCWButton49.OcxState = CType(resources.GetObject("AxCWButton49.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:659:        Me.AxCWButton49.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:660:        Me.AxCWButton49.TabIndex = 112
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:662:        'AxCWButton50
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:664:        Me.AxCWButton50.Location = New System.Drawing.Point(199, 407)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:665:        Me.AxCWButton50.Name = "AxCWButton50"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:666:        Me.AxCWButton50.OcxState = CType(resources.GetObject("AxCWButton50.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:667:        Me.AxCWButton50.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:668:        Me.AxCWButton50.TabIndex = 111
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:670:        'AxCWButton51
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:672:        Me.AxCWButton51.Location = New System.Drawing.Point(199, 379)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:673:        Me.AxCWButton51.Name = "AxCWButton51"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:674:        Me.AxCWButton51.OcxState = CType(resources.GetObject("AxCWButton51.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:675:        Me.AxCWButton51.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:676:        Me.AxCWButton51.TabIndex = 110
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:678:        'AxCWButton52
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:680:        Me.AxCWButton52.Location = New System.Drawing.Point(199, 351)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:681:        Me.AxCWButton52.Name = "AxCWButton52"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:682:        Me.AxCWButton52.OcxState = CType(resources.GetObject("AxCWButton52.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:683:        Me.AxCWButton52.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:684:        Me.AxCWButton52.TabIndex = 109
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:686:        'AxCWButton44
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:688:        Me.AxCWButton44.Location = New System.Drawing.Point(13, 547)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:689:        Me.AxCWButton44.Name = "AxCWButton44"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:690:        Me.AxCWButton44.OcxState = CType(resources.GetObject("AxCWButton44.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:691:        Me.AxCWButton44.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:692:        Me.AxCWButton44.TabIndex = 108
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:694:        'AxCWButton43
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:696:        Me.AxCWButton43.Location = New System.Drawing.Point(13, 519)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:697:        Me.AxCWButton43.Name = "AxCWButton43"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:698:        Me.AxCWButton43.OcxState = CType(resources.GetObject("AxCWButton43.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:699:        Me.AxCWButton43.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:700:        Me.AxCWButton43.TabIndex = 107
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:702:        'AxCWButton41
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:704:        Me.AxCWButton41.Location = New System.Drawing.Point(13, 491)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:705:        Me.AxCWButton41.Name = "AxCWButton41"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:706:        Me.AxCWButton41.OcxState = CType(resources.GetObject("AxCWButton41.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:707:        Me.AxCWButton41.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:708:        Me.AxCWButton41.TabIndex = 106
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:710:        'AxCWButton40
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:712:        Me.AxCWButton40.Location = New System.Drawing.Point(13, 463)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:713:        Me.AxCWButton40.Name = "AxCWButton40"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:714:        Me.AxCWButton40.OcxState = CType(resources.GetObject("AxCWButton40.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:715:        Me.AxCWButton40.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:716:        Me.AxCWButton40.TabIndex = 105
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:718:        'AxCWButton39
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:720:        Me.AxCWButton39.Location = New System.Drawing.Point(13, 435)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:721:        Me.AxCWButton39.Name = "AxCWButton39"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:722:        Me.AxCWButton39.OcxState = CType(resources.GetObject("AxCWButton39.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:723:        Me.AxCWButton39.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:724:        Me.AxCWButton39.TabIndex = 104
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:726:        'AxCWButton38
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:728:        Me.AxCWButton38.Location = New System.Drawing.Point(13, 407)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:729:        Me.AxCWButton38.Name = "AxCWButton38"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:730:        Me.AxCWButton38.OcxState = CType(resources.GetObject("AxCWButton38.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:731:        Me.AxCWButton38.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:732:        Me.AxCWButton38.TabIndex = 103
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:734:        'AxCWButton37
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:736:        Me.AxCWButton37.Location = New System.Drawing.Point(13, 379)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:737:        Me.AxCWButton37.Name = "AxCWButton37"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:738:        Me.AxCWButton37.OcxState = CType(resources.GetObject("AxCWButton37.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:739:        Me.AxCWButton37.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:740:        Me.AxCWButton37.TabIndex = 102
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:742:        'AxCWButton34
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:744:        Me.AxCWButton34.Location = New System.Drawing.Point(13, 351)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:745:        Me.AxCWButton34.Name = "AxCWButton34"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:746:        Me.AxCWButton34.OcxState = CType(resources.GetObject("AxCWButton34.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:747:        Me.AxCWButton34.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:748:        Me.AxCWButton34.TabIndex = 101
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:894:        'AxCWButton16
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:896:        Me.AxCWButton16.Location = New System.Drawing.Point(199, 323)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:897:        Me.AxCWButton16.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:898:        Me.AxCWButton16.Name = "AxCWButton16"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:899:        Me.AxCWButton16.OcxState = CType(resources.GetObject("AxCWButton16.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:900:        Me.AxCWButton16.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:901:        Me.AxCWButton16.TabIndex = 88
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:903:        'AxCWButton17
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:905:        Me.AxCWButton17.Location = New System.Drawing.Point(199, 295)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:906:        Me.AxCWButton17.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:907:        Me.AxCWButton17.Name = "AxCWButton17"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:908:        Me.AxCWButton17.OcxState = CType(resources.GetObject("AxCWButton17.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:909:        Me.AxCWButton17.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:910:        Me.AxCWButton17.TabIndex = 87
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:912:        'AxCWButton18
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:914:        Me.AxCWButton18.Location = New System.Drawing.Point(199, 267)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:915:        Me.AxCWButton18.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:916:        Me.AxCWButton18.Name = "AxCWButton18"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:917:        Me.AxCWButton18.OcxState = CType(resources.GetObject("AxCWButton18.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:918:        Me.AxCWButton18.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:919:        Me.AxCWButton18.TabIndex = 86
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:921:        'AxCWButton19
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:923:        Me.AxCWButton19.Location = New System.Drawing.Point(199, 241)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:924:        Me.AxCWButton19.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:925:        Me.AxCWButton19.Name = "AxCWButton19"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:926:        Me.AxCWButton19.OcxState = CType(resources.GetObject("AxCWButton19.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:927:        Me.AxCWButton19.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:928:        Me.AxCWButton19.TabIndex = 85
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:930:        'AxCWButton23
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:932:        Me.AxCWButton23.Location = New System.Drawing.Point(199, 211)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:933:        Me.AxCWButton23.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:934:        Me.AxCWButton23.Name = "AxCWButton23"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:935:        Me.AxCWButton23.OcxState = CType(resources.GetObject("AxCWButton23.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:936:        Me.AxCWButton23.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:937:        Me.AxCWButton23.TabIndex = 84
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:939:        'AxCWButton25
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:941:        Me.AxCWButton25.Location = New System.Drawing.Point(199, 185)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:942:        Me.AxCWButton25.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:943:        Me.AxCWButton25.Name = "AxCWButton25"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:944:        Me.AxCWButton25.OcxState = CType(resources.GetObject("AxCWButton25.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:945:        Me.AxCWButton25.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:946:        Me.AxCWButton25.TabIndex = 83
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:948:        'AxCWButton26
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:950:        Me.AxCWButton26.Location = New System.Drawing.Point(199, 155)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:951:        Me.AxCWButton26.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:952:        Me.AxCWButton26.Name = "AxCWButton26"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:953:        Me.AxCWButton26.OcxState = CType(resources.GetObject("AxCWButton26.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:954:        Me.AxCWButton26.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:955:        Me.AxCWButton26.TabIndex = 82
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:957:        'AxCWButton27
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:959:        Me.AxCWButton27.Location = New System.Drawing.Point(199, 129)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:960:        Me.AxCWButton27.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:961:        Me.AxCWButton27.Name = "AxCWButton27"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:962:        Me.AxCWButton27.OcxState = CType(resources.GetObject("AxCWButton27.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:963:        Me.AxCWButton27.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:964:        Me.AxCWButton27.TabIndex = 81
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:966:        'AxCWButton29
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:968:        Me.AxCWButton29.Location = New System.Drawing.Point(199, 99)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:969:        Me.AxCWButton29.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:970:        Me.AxCWButton29.Name = "AxCWButton29"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:971:        Me.AxCWButton29.OcxState = CType(resources.GetObject("AxCWButton29.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:972:        Me.AxCWButton29.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:973:        Me.AxCWButton29.TabIndex = 80
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:975:        'AxCWButton31
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:977:        Me.AxCWButton31.Location = New System.Drawing.Point(199, 71)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:978:        Me.AxCWButton31.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:979:        Me.AxCWButton31.Name = "AxCWButton31"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:980:        Me.AxCWButton31.OcxState = CType(resources.GetObject("AxCWButton31.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:981:        Me.AxCWButton31.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:982:        Me.AxCWButton31.TabIndex = 79
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:984:        'AxCWButton32
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:986:        Me.AxCWButton32.Location = New System.Drawing.Point(199, 43)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:987:        Me.AxCWButton32.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:988:        Me.AxCWButton32.Name = "AxCWButton32"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:989:        Me.AxCWButton32.OcxState = CType(resources.GetObject("AxCWButton32.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:990:        Me.AxCWButton32.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:991:        Me.AxCWButton32.TabIndex = 78
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:993:        'AxCWButton33
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:995:        Me.AxCWButton33.Location = New System.Drawing.Point(199, 15)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:996:        Me.AxCWButton33.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:997:        Me.AxCWButton33.Name = "AxCWButton33"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:998:        Me.AxCWButton33.OcxState = CType(resources.GetObject("AxCWButton33.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:999:        Me.AxCWButton33.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1000:        Me.AxCWButton33.TabIndex = 77
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1134:        'AxCWButton15
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1136:        Me.AxCWButton15.Location = New System.Drawing.Point(13, 323)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1137:        Me.AxCWButton15.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1138:        Me.AxCWButton15.Name = "AxCWButton15"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1139:        Me.AxCWButton15.OcxState = CType(resources.GetObject("AxCWButton15.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1140:        Me.AxCWButton15.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1141:        Me.AxCWButton15.TabIndex = 65
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1143:        'AxCWButton14
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1145:        Me.AxCWButton14.Location = New System.Drawing.Point(13, 295)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1146:        Me.AxCWButton14.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1147:        Me.AxCWButton14.Name = "AxCWButton14"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1148:        Me.AxCWButton14.OcxState = CType(resources.GetObject("AxCWButton14.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1149:        Me.AxCWButton14.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1150:        Me.AxCWButton14.TabIndex = 64
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1152:        'AxCWButton9
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1154:        Me.AxCWButton9.Location = New System.Drawing.Point(13, 267)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1155:        Me.AxCWButton9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1156:        Me.AxCWButton9.Name = "AxCWButton9"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1157:        Me.AxCWButton9.OcxState = CType(resources.GetObject("AxCWButton9.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1158:        Me.AxCWButton9.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1159:        Me.AxCWButton9.TabIndex = 63
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1161:        'AxCWButton10
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1163:        Me.AxCWButton10.Location = New System.Drawing.Point(13, 239)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1164:        Me.AxCWButton10.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1165:        Me.AxCWButton10.Name = "AxCWButton10"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1166:        Me.AxCWButton10.OcxState = CType(resources.GetObject("AxCWButton10.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1167:        Me.AxCWButton10.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1168:        Me.AxCWButton10.TabIndex = 62
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1170:        'AxCWButton11
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1172:        Me.AxCWButton11.Location = New System.Drawing.Point(13, 211)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1173:        Me.AxCWButton11.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1174:        Me.AxCWButton11.Name = "AxCWButton11"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1175:        Me.AxCWButton11.OcxState = CType(resources.GetObject("AxCWButton11.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1176:        Me.AxCWButton11.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1177:        Me.AxCWButton11.TabIndex = 61
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1179:        'AxCWButton12
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1181:        Me.AxCWButton12.Location = New System.Drawing.Point(13, 183)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1182:        Me.AxCWButton12.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1183:        Me.AxCWButton12.Name = "AxCWButton12"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1184:        Me.AxCWButton12.OcxState = CType(resources.GetObject("AxCWButton12.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1185:        Me.AxCWButton12.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1186:        Me.AxCWButton12.TabIndex = 60
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1188:        'AxCWButton13
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1190:        Me.AxCWButton13.Location = New System.Drawing.Point(13, 155)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1191:        Me.AxCWButton13.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1192:        Me.AxCWButton13.Name = "AxCWButton13"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1193:        Me.AxCWButton13.OcxState = CType(resources.GetObject("AxCWButton13.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1194:        Me.AxCWButton13.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1195:        Me.AxCWButton13.TabIndex = 59
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1197:        'AxCWButton8
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1199:        Me.AxCWButton8.Location = New System.Drawing.Point(13, 127)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1200:        Me.AxCWButton8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1201:        Me.AxCWButton8.Name = "AxCWButton8"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1202:        Me.AxCWButton8.OcxState = CType(resources.GetObject("AxCWButton8.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1203:        Me.AxCWButton8.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1204:        Me.AxCWButton8.TabIndex = 58
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1206:        'AxCWButton7
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1208:        Me.AxCWButton7.Location = New System.Drawing.Point(13, 99)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1209:        Me.AxCWButton7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1210:        Me.AxCWButton7.Name = "AxCWButton7"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1211:        Me.AxCWButton7.OcxState = CType(resources.GetObject("AxCWButton7.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1212:        Me.AxCWButton7.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1213:        Me.AxCWButton7.TabIndex = 56
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1215:        'AxCWButton6
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1217:        Me.AxCWButton6.Location = New System.Drawing.Point(13, 71)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1218:        Me.AxCWButton6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1219:        Me.AxCWButton6.Name = "AxCWButton6"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1220:        Me.AxCWButton6.OcxState = CType(resources.GetObject("AxCWButton6.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1221:        Me.AxCWButton6.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1222:        Me.AxCWButton6.TabIndex = 54
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1224:        'AxCWButton5
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1226:        Me.AxCWButton5.Location = New System.Drawing.Point(13, 43)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1227:        Me.AxCWButton5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1228:        Me.AxCWButton5.Name = "AxCWButton5"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1229:        Me.AxCWButton5.OcxState = CType(resources.GetObject("AxCWButton5.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1230:        Me.AxCWButton5.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1231:        Me.AxCWButton5.TabIndex = 52
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1245:        'AxCWButton4
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1247:        Me.AxCWButton4.Location = New System.Drawing.Point(13, 15)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1248:        Me.AxCWButton4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1249:        Me.AxCWButton4.Name = "AxCWButton4"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1250:        Me.AxCWButton4.OcxState = CType(resources.GetObject("AxCWButton4.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1251:        Me.AxCWButton4.Size = New System.Drawing.Size(38, 35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1252:        Me.AxCWButton4.TabIndex = 50
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1305:        'AxCWButton54
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1307:        Me.AxCWButton54.Location = New System.Drawing.Point(1156, 859)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1308:        Me.AxCWButton54.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1309:        Me.AxCWButton54.Name = "AxCWButton54"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1310:        Me.AxCWButton54.OcxState = CType(resources.GetObject("AxCWButton54.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1311:        Me.AxCWButton54.Size = New System.Drawing.Size(165, 100)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1312:        Me.AxCWButton54.TabIndex = 215
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1313:        Me.AxCWButton54.Visible = False
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1315:        'AxCWButton53
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1317:        Me.AxCWButton53.Location = New System.Drawing.Point(809, 859)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1318:        Me.AxCWButton53.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1319:        Me.AxCWButton53.Name = "AxCWButton53"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1320:        Me.AxCWButton53.OcxState = CType(resources.GetObject("AxCWButton53.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1321:        Me.AxCWButton53.Size = New System.Drawing.Size(165, 100)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1322:        Me.AxCWButton53.TabIndex = 214
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1323:        Me.AxCWButton53.Visible = False
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1325:        'AxCWButton42
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1327:        Me.AxCWButton42.Location = New System.Drawing.Point(638, 857)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1328:        Me.AxCWButton42.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1329:        Me.AxCWButton42.Name = "AxCWButton42"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1330:        Me.AxCWButton42.OcxState = CType(resources.GetObject("AxCWButton42.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1331:        Me.AxCWButton42.Size = New System.Drawing.Size(165, 100)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1332:        Me.AxCWButton42.TabIndex = 213
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1333:        Me.AxCWButton42.Visible = False
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1373:        'AxCWButton55
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1375:        Me.AxCWButton55.Location = New System.Drawing.Point(638, 588)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1376:        Me.AxCWButton55.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1377:        Me.AxCWButton55.Name = "AxCWButton55"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1378:        Me.AxCWButton55.OcxState = CType(resources.GetObject("AxCWButton55.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1379:        Me.AxCWButton55.Size = New System.Drawing.Size(165, 261)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1380:        Me.AxCWButton55.TabIndex = 207
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1381:        Me.AxCWButton55.Visible = False
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1422:        'AxCWButton28
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1424:        Me.AxCWButton28.Location = New System.Drawing.Point(809, 675)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1425:        Me.AxCWButton28.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1426:        Me.AxCWButton28.Name = "AxCWButton28"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1427:        Me.AxCWButton28.OcxState = CType(resources.GetObject("AxCWButton28.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1428:        Me.AxCWButton28.Size = New System.Drawing.Size(142, 87)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1429:        Me.AxCWButton28.TabIndex = 184
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1430:        Me.AxCWButton28.Visible = False
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1432:        'AxCWButton22
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1434:        Me.AxCWButton22.Location = New System.Drawing.Point(12, 124)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1435:        Me.AxCWButton22.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1436:        Me.AxCWButton22.Name = "AxCWButton22"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1437:        Me.AxCWButton22.OcxState = CType(resources.GetObject("AxCWButton22.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1438:        Me.AxCWButton22.Size = New System.Drawing.Size(620, 46)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1439:        Me.AxCWButton22.TabIndex = 179
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1441:        'AxCWButton36
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1443:        Me.AxCWButton36.Location = New System.Drawing.Point(1508, 124)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1444:        Me.AxCWButton36.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1445:        Me.AxCWButton36.Name = "AxCWButton36"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1446:        Me.AxCWButton36.OcxState = CType(resources.GetObject("AxCWButton36.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1447:        Me.AxCWButton36.Size = New System.Drawing.Size(400, 46)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1448:        Me.AxCWButton36.TabIndex = 174
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1459:        'AxCWButton2
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1461:        Me.AxCWButton2.Location = New System.Drawing.Point(638, 124)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1462:        Me.AxCWButton2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1463:        Me.AxCWButton2.Name = "AxCWButton2"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1464:        Me.AxCWButton2.OcxState = CType(resources.GetObject("AxCWButton2.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1465:        Me.AxCWButton2.Size = New System.Drawing.Size(864, 46)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1466:        Me.AxCWButton2.TabIndex = 154
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1468:        'AxCWButton1
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1470:        Me.AxCWButton1.Location = New System.Drawing.Point(12, 124)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1471:        Me.AxCWButton1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1472:        Me.AxCWButton1.Name = "AxCWButton1"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1473:        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1474:        Me.AxCWButton1.Size = New System.Drawing.Size(620, 46)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1475:        Me.AxCWButton1.TabIndex = 153
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1477:        'AxCWButton20
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1479:        Me.AxCWButton20.Location = New System.Drawing.Point(638, 469)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1480:        Me.AxCWButton20.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1481:        Me.AxCWButton20.Name = "AxCWButton20"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1482:        Me.AxCWButton20.OcxState = CType(resources.GetObject("AxCWButton20.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1483:        Me.AxCWButton20.Size = New System.Drawing.Size(165, 53)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1484:        Me.AxCWButton20.TabIndex = 150
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1504:        'AxCWButton35
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1506:        Me.AxCWButton35.Location = New System.Drawing.Point(638, 285)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1507:        Me.AxCWButton35.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1508:        Me.AxCWButton35.Name = "AxCWButton35"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1509:        Me.AxCWButton35.OcxState = CType(resources.GetObject("AxCWButton35.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1510:        Me.AxCWButton35.Size = New System.Drawing.Size(165, 74)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1511:        Me.AxCWButton35.TabIndex = 127
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1513:        'AxCWButton3
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1515:        Me.AxCWButton3.Location = New System.Drawing.Point(638, 367)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1516:        Me.AxCWButton3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1517:        Me.AxCWButton3.Name = "AxCWButton3"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1518:        Me.AxCWButton3.OcxState = CType(resources.GetObject("AxCWButton3.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1519:        Me.AxCWButton3.Size = New System.Drawing.Size(165, 96)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1520:        Me.AxCWButton3.TabIndex = 122
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1522:        'AxCWButton24
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1524:        Me.AxCWButton24.Location = New System.Drawing.Point(12, 55)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1525:        Me.AxCWButton24.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1526:        Me.AxCWButton24.Name = "AxCWButton24"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1527:        Me.AxCWButton24.OcxState = CType(resources.GetObject("AxCWButton24.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1528:        Me.AxCWButton24.Size = New System.Drawing.Size(1896, 63)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1529:        Me.AxCWButton24.TabIndex = 121
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1540:        'AxCWButton30
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1542:        Me.AxCWButton30.Location = New System.Drawing.Point(638, 527)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1543:        Me.AxCWButton30.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1544:        Me.AxCWButton30.Name = "AxCWButton30"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1545:        Me.AxCWButton30.OcxState = CType(resources.GetObject("AxCWButton30.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1546:        Me.AxCWButton30.Size = New System.Drawing.Size(165, 53)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1547:        Me.AxCWButton30.TabIndex = 119
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1558:        'AxCWButton21
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1560:        Me.AxCWButton21.Location = New System.Drawing.Point(638, 178)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1561:        Me.AxCWButton21.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1562:        Me.AxCWButton21.Name = "AxCWButton21"
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1563:        Me.AxCWButton21.OcxState = CType(resources.GetObject("AxCWButton21.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1564:        Me.AxCWButton21.Size = New System.Drawing.Size(165, 99)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1565:        Me.AxCWButton21.TabIndex = 107
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1585:        Me.Controls.Add(Me.AxCWButton54)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1586:        Me.Controls.Add(Me.AxCWButton53)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1587:        Me.Controls.Add(Me.AxCWButton42)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1592:        Me.Controls.Add(Me.AxCWButton55)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1597:        Me.Controls.Add(Me.AxCWButton28)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1598:        Me.Controls.Add(Me.AxCWButton22)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1603:        Me.Controls.Add(Me.AxCWButton36)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1606:        Me.Controls.Add(Me.AxCWButton2)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1607:        Me.Controls.Add(Me.AxCWButton1)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1608:        Me.Controls.Add(Me.AxCWButton20)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1611:        Me.Controls.Add(Me.AxCWButton35)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1612:        Me.Controls.Add(Me.AxCWButton3)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1613:        Me.Controls.Add(Me.AxCWButton24)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1615:        Me.Controls.Add(Me.AxCWButton30)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1617:        Me.Controls.Add(Me.AxCWButton21)
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1632:        CType(Me.AxCWButton45, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1633:        CType(Me.AxCWButton46, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1634:        CType(Me.AxCWButton47, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1635:        CType(Me.AxCWButton48, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1636:        CType(Me.AxCWButton49, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1637:        CType(Me.AxCWButton50, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1638:        CType(Me.AxCWButton51, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1639:        CType(Me.AxCWButton52, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1640:        CType(Me.AxCWButton44, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1641:        CType(Me.AxCWButton43, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1642:        CType(Me.AxCWButton41, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1643:        CType(Me.AxCWButton40, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1644:        CType(Me.AxCWButton39, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1645:        CType(Me.AxCWButton38, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1646:        CType(Me.AxCWButton37, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1647:        CType(Me.AxCWButton34, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1648:        CType(Me.AxCWButton16, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1649:        CType(Me.AxCWButton17, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1650:        CType(Me.AxCWButton18, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1651:        CType(Me.AxCWButton19, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1652:        CType(Me.AxCWButton23, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1653:        CType(Me.AxCWButton25, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1654:        CType(Me.AxCWButton26, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1655:        CType(Me.AxCWButton27, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1656:        CType(Me.AxCWButton29, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1657:        CType(Me.AxCWButton31, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1658:        CType(Me.AxCWButton32, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1659:        CType(Me.AxCWButton33, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1660:        CType(Me.AxCWButton15, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1661:        CType(Me.AxCWButton14, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1662:        CType(Me.AxCWButton9, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1663:        CType(Me.AxCWButton10, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1664:        CType(Me.AxCWButton11, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1665:        CType(Me.AxCWButton12, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1666:        CType(Me.AxCWButton13, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1667:        CType(Me.AxCWButton8, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1668:        CType(Me.AxCWButton7, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1669:        CType(Me.AxCWButton6, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1670:        CType(Me.AxCWButton5, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1671:        CType(Me.AxCWButton4, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1674:        CType(Me.AxCWButton54, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1675:        CType(Me.AxCWButton53, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1676:        CType(Me.AxCWButton42, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1681:        CType(Me.AxCWButton55, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1686:        CType(Me.AxCWButton28, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1687:        CType(Me.AxCWButton22, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1688:        CType(Me.AxCWButton36, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1690:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1691:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1692:        CType(Me.AxCWButton20, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1695:        CType(Me.AxCWButton35, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1696:        CType(Me.AxCWButton3, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1697:        CType(Me.AxCWButton24, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1699:        CType(Me.AxCWButton30, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1701:        CType(Me.AxCWButton21, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1710:    Friend WithEvents AxCWButton21 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1711:    Friend WithEvents Panel_Decision As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1712:    Friend WithEvents Panel_Scanner As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1713:    Friend WithEvents AxCWButton30 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1714:    Friend WithEvents AxCWButton24 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1716:    Friend WithEvents AxCWButton3 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1719:    Friend WithEvents Panel_Part As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1720:    Friend WithEvents AxCWButton35 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1726:    Friend WithEvents AxCWButton20 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1729:    Friend WithEvents AxCWButton2 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1730:    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1733:    Friend WithEvents Panel_Info As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1734:    Friend WithEvents AxCWButton36 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1752:    Friend WithEvents AxCWButton45 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1753:    Friend WithEvents AxCWButton46 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1754:    Friend WithEvents AxCWButton47 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1755:    Friend WithEvents AxCWButton48 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1756:    Friend WithEvents AxCWButton49 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1757:    Friend WithEvents AxCWButton50 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1758:    Friend WithEvents AxCWButton51 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1759:    Friend WithEvents AxCWButton52 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1760:    Friend WithEvents AxCWButton44 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1761:    Friend WithEvents AxCWButton43 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1762:    Friend WithEvents AxCWButton41 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1763:    Friend WithEvents AxCWButton40 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1764:    Friend WithEvents AxCWButton39 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1765:    Friend WithEvents AxCWButton38 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1766:    Friend WithEvents AxCWButton37 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1767:    Friend WithEvents AxCWButton34 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1780:    Friend WithEvents AxCWButton16 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1781:    Friend WithEvents AxCWButton17 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1782:    Friend WithEvents AxCWButton18 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1783:    Friend WithEvents AxCWButton19 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1784:    Friend WithEvents AxCWButton23 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1785:    Friend WithEvents AxCWButton25 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1786:    Friend WithEvents AxCWButton26 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1787:    Friend WithEvents AxCWButton27 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1788:    Friend WithEvents AxCWButton29 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1789:    Friend WithEvents AxCWButton31 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1790:    Friend WithEvents AxCWButton32 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1791:    Friend WithEvents AxCWButton33 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1803:    Friend WithEvents AxCWButton15 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1804:    Friend WithEvents AxCWButton14 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1805:    Friend WithEvents AxCWButton9 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1806:    Friend WithEvents AxCWButton10 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1807:    Friend WithEvents AxCWButton11 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1808:    Friend WithEvents AxCWButton12 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1809:    Friend WithEvents AxCWButton13 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1810:    Friend WithEvents AxCWButton8 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1811:    Friend WithEvents AxCWButton7 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1812:    Friend WithEvents AxCWButton6 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1813:    Friend WithEvents AxCWButton5 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1815:    Friend WithEvents AxCWButton4 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1819:    Friend WithEvents AxCWButton22 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1821:    Friend WithEvents Panel_Serial As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1822:    Friend WithEvents PAnel_PartScript1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1825:    Friend WithEvents Panel_Recl_Barcode_Dec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1826:    Friend WithEvents AxCWButton55 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1827:    Friend WithEvents Panel_Recl_Barcode As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1828:    Friend WithEvents PAnel_Tq1_Value As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1829:    Friend WithEvents Panel_TQ_BASIC As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1830:    Friend WithEvents AxCWButton28 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1831:    Friend WithEvents PAnel_Tq1_Dec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1832:    Friend WithEvents Panel_Color As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1833:    Friend WithEvents Panel_message As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1834:    Friend WithEvents AxCWButton42 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1835:    Friend WithEvents AxCWButton53 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1836:    Friend WithEvents AxCWButton54 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1837:    Friend WithEvents Panel_Damper As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\Frm_Main.Designer.vb:1838:    Friend WithEvents Panel_Cover As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\GL3\1차 MNL\OP 10 MNL.vbproj:203:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\OP 10 MNL.vbproj:211:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\OP 20.vbproj:182:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\OP 20.vbproj:190:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\OP10.vbproj:235:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\GL3\1차 MNL\OP10.vbproj:243:    <COMReference Include="CWUIControlsLib">

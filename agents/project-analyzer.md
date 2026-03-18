@@ -18,3 +18,6 @@ Analysis items:
 
 Output: saved as {projectPath}/.project-analysis.md
 Format: markdown table format
+
+Rules:
+- Report each step taken and its result in detail before proceeding to the next step

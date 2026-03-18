@@ -1,0 +1,331 @@
+57-
+58-        '° Ω ±
+59-
+60:        srclbReclFwdAmpDiffSpec.Text = CStr(BAsicReclFWdDiffMin) & " ~ " & CStr(BAsicReclFWdDiffMax) & " A"
+61:        srclbReclBwdAmpDiffSpec.Text = CStr(BAsicReclBWdDiffMin) & " ~ " & CStr(BAsicReclBWdDiffMax) & " A"
+62-
+63:        srclbReclFwdStartAmpSpec.Text = CStr(BasicReclFwdStartAmpMin) & " ~ " & CStr(BasicReclFwdStartAmpMax) & " A"
+64:        srclbReclFwdMovingAmpSpec.Text = CStr(BasicReclFwdMovingAmpMin) & " ~ " & CStr(BasicReclFwdMovingAmpMax) & " A"
+65:        srclbReclBwdStartAmpSpec.Text = CStr(BasicReclBwdStartAmpMin) & " ~ " & CStr(BasicReclBwdStartAmpMax) & " A"
+66:        srclbReclBwdMovingAmpSpec.Text = CStr(BasicReclBwdMovingAmpMin) & " ~ " & CStr(BasicReclBwdMovingAmpMax) & " A"
+67-
+68:        srclbReclFwdStartNoiseSpec.Text = CStr(BasicReclFwdStartNoiseMin) & " ~ " & CStr(BasicReclFwdStartNoiseMax) & " dB"
+69:        srclbReclFwdMovingNoiseSpec.Text = CStr(BasicReclFwdMovingNoiseMin) & " ~ " & CStr(BasicReclFwdMovingNoiseMax) & " dB"
+70:        srclbReclBwdStartNoiseSpec.Text = CStr(BasicReclBwdStartNoiseMin) & " ~ " & CStr(BasicReclBwdStartNoiseMax) & " dB"
+71:        srclbReclBwdMovingNoiseSpec.Text = CStr(BasicReclBwdMovingNoiseMin) & " ~ " & CStr(BasicReclBwdMovingNoiseMax) & " dB"
+72-
+73:        srclbReclFwdAngleSpec.Text = CStr(BasicReclFwdAngleMin) & " ~ " & CStr(BasicReclFwdAngleMax) & " °"
+74:        srclbReclBwdAngleSpec.Text = CStr(BasicReclBwdAngleMin) & " ~ " & CStr(BasicReclBwdAngleMax) & " °"
+75-        srclbReclEndAngleSpec.Text = CStr(BasicReclEndAngleMin) & " ~ " & CStr(BasicReclEndAngleMax) & " °"
+76:        srclbReclFwdSpeedSpec.Text = CStr(BasicReclFwdSpeedMin) & " ~ " & CStr(BasicReclFwdSpeedMax) & " °/s"
+77:        srclbReclBwdSpeedSpec.Text = CStr(BasicReclBwdSpeedMin) & " ~ " & CStr(BasicReclBwdSpeedMax) & " °/s"
+78-
+--
+231-        srclbLsuptMiddledefAmpdEc.BackColor = Color.Black
+232-        srclbLsuptLowerdefAmpdEc.BackColor = Color.Black
+233-
+234:        srclbReclFwdStartAmpVal.Text = ""
+235:        srclbReclFwdStartNoiseVal.Text = ""
+236:        srclbReclBwdStartAmpVal.Text = ""
+237:        srclbReclBwdStartNoiseVal.Text = ""
+238:        srclbReclFwdMovingAmpVal.Text = ""
+239:        srclbReclFwdMovingNoiseVal.Text = ""
+240:        srclbReclBwdMovingAmpVal.Text = ""
+241:        srclbReclBwdMovingNoiseVal.Text = ""
+242:        srclbReclFwdAngleVal.Text = ""
+243:        srclbReclBwdAngleVal.Text = ""
+244-        srclbReclEndAngleVal.Text = ""
+245:        srclbReclFwdSpeedVal.Text = ""
+246:        srclbReclBwdSpeedVal.Text = ""
+247-
+248:        srclbReclFwdAmpDiffVal.Text = ""
+249:        srclbReclBwdAmpDiffVal.Text = ""
+250-
+251:        srclbReclFwdStartAmpDec.Text = ""
+252:        srclbReclFwdStartNoiseDec.Text = ""
+253:        srclbReclBwdStartAmpDec.Text = ""
+254:        srclbReclBwdStartNoiseDec.Text = ""
+255:        srclbReclFwdMovingAmpDec.Text = ""
+256:        srclbReclFwdMovingNoiseDec.Text = ""
+257:        srclbReclBwdMovingAmpDec.Text = ""
+258:        srclbReclBwdMovingNoiseDec.Text = ""
+259:        srclbReclFwdAngleDec.Text = ""
+260:        srclbReclBwdAngleDec.Text = ""
+261-        srclbReclEndAngleDec.Text = ""
+262:        srclbReclFwdSpeedDec.Text = ""
+263:        srclbReclBwdSpeedDec.Text = ""
+264-
+265:        srclbReclFwdAmpDiffDec.Text = ""
+266:        srclbReclBwdAmpDiffDec.Text = ""
+267-
+268:        srclbReclFwdStartAmpDec.BackColor = Color.Black
+269:        srclbReclFwdStartNoiseDec.BackColor = Color.Black
+270:        srclbReclBwdStartAmpDec.BackColor = Color.Black
+271:        srclbReclBwdStartNoiseDec.BackColor = Color.Black
+272:        srclbReclFwdMovingAmpDec.BackColor = Color.Black
+273:        srclbReclFwdMovingNoiseDec.BackColor = Color.Black
+274:        srclbReclBwdMovingAmpDec.BackColor = Color.Black
+275:        srclbReclBwdMovingNoiseDec.BackColor = Color.Black
+276:        srclbReclFwdAngleDec.BackColor = Color.Black
+277:        srclbReclBwdAngleDec.BackColor = Color.Black
+278-        srclbReclEndAngleDec.BackColor = Color.Black
+279:        srclbReclFwdSpeedDec.BackColor = Color.Black
+280:        srclbReclBwdSpeedDec.BackColor = Color.Black
+281-
+282:        srclbReclFwdAmpDiffDec.BackColor = Color.Black
+283:        srclbReclBwdAmpDiffDec.BackColor = Color.Black
+284-
+--
+287-
+288-        InitTotalGraph()
+289-
+290:        'RangeReclFwdAmp.Visible = False
+291:        'RangeReclBwdAmp.Visible = False
+292-
+293-
+294:        'RangeReclFwdNoise.Visible = False
+295:        'RangeReclBwdNoise.Visible = False
+296-
+297-
+298:        'srclbReclFwdTime.Text = ""
+299:        'srclbReclBwdTime.Text = ""
+300-
+--
+729-            Dim isCoach As Boolean = (TmpType <> "SWING")
+730-            If PlcInputBit(PlcInSignalStartAddress + 1, 7) = True And
+731-               PlcInputBit(PlcInSignalStartAddress + 1, 8) = False Then
+732:                If isCoach Then ReclBwd() Else ReclFwd() ' coach: 전후진 반대
+733-            ElseIf PlcInputBit(PlcInSignalStartAddress + 1, 7) = False And
+734-                   PlcInputBit(PlcInSignalStartAddress + 1, 8) = True Then
+735:                If isCoach Then ReclFwd() Else ReclBwd() ' coach: 전후진 반대
+736-            ElseIf PlcInputBit(PlcInSignalStartAddress + 1, 7) = False And
+737-                   PlcInputBit(PlcInSignalStartAddress + 1, 8) = False Then
+738:                'ReclStop()
+739-            End If
+--
+798-                    Appendlog("READ RFID TAG ID - " & GetRfid)
+799-                    FLagRfid = False
+800-                    CanStep = 0
+801:                    ReclStop()
+802-                    wStep = 2
+--
+1111-
+1112-            ElseIf wStep = 1000 Then
+1113-
+1114:                If srclbReclFwdStartAmpDec.Text = "NG" Or srclbReclFwdStartNoiseDec.Text = "NG" Or
+1115:                                   srclbReclBwdStartAmpDec.Text = "NG" Or srclbReclBwdStartNoiseDec.Text = "NG" Or
+1116:                                   srclbReclFwdMovingAmpDec.Text = "NG" Or srclbReclFwdMovingNoiseDec.Text = "NG" Or
+1117:                                   srclbReclBwdMovingAmpDec.Text = "NG" Or srclbReclBwdMovingNoiseDec.Text = "NG" Or
+1118:                                   srclbReclBwdAngleDec.Text = "NG" Or srclbReclFwdAngleDec.Text = "NG" Or
+1119:                           srclbReclEndAngleDec.Text = "NG" Or srclbReclFwdSpeedDec.Text = "NG" Or srclbReclBwdSpeedDec.Text = "NG" Then
+1120-
+--
+1209-        strSQL = strSQL & "Test_Recl_BwdAngle,Test_Recl_BwdSpeed,"
+1210-        strSQL = strSQL & "Test_Recl_EndAngle,Test_Decision) VALUES ('"
+1211-        strSQL = Format(Now, "yyyy-MM-dd") & "'," & StartTime & "'," & Format(Now, "HH:mm:ss") & "'," &
+1212:                 srclbReclFwdStartAmpVal.Text & "'," & srclbReclFwdStartNoiseVal.Text & "'," &
+1213:                 srclbReclBwdStartAmpVal.Text & "'," & srclbReclBwdStartNoiseVal.Text & "'," &
+1214:                 srclbReclFwdMovingAmpVal.Text & "'," & srclbReclFwdMovingNoiseVal.Text & "'," &
+1215:                 srclbReclBwdMovingAmpVal.Text & "'," & srclbReclBwdMovingNoiseVal.Text & "'," &
+1216:                 srclbReclFwdAngleVal.Text & "'," & srclbReclFwdSpeedVal.Text & "'," &
+1217:                 srclbReclBwdAngleVal.Text & "'," & srclbReclBwdSpeedVal.Text & "'," &
+1218-                 srclbReclEndAngleVal.Text & "'," & srcLbTotalDec.Text & "')"
+--
+1668-
+1669-    Private Sub InitTotalGraph()
+1670-
+1671:        ClassZedGraph.InitGraph(ZedGraphReclFwdNoise, "리클 전진 소음", "Noise (dB)", 20, 80)
+1672:        ClassZedGraph.InitGraph(ZedGraphReclBwdNoise, "리클 후진 소음", "Noise (dB)", 20, 80)
+1673-        ClassZedGraph.InitGraph(ZedGraphLsuptInfNoise, "럼버 흡기 소음", "Noise (dB)", 20, 80)
+--
+1676-        'ClassZedGraph.InitGraph(ZedGraphMassageNoise, "", "Noise (dB)", 20, 80)
+1677-        ClassZedGraph.InitGraph(ZedGraphHeadNoise, "헤드레스트 소음", "Noise (dB)", 20, 80)
+1678-
+1679:        ClassZedGraph.InitGraph(ZedGraphReclFwdAmp, "리클 전진 전류", "Current (A)", 0, 4)
+1680:        ClassZedGraph.InitGraph(ZedGraphReclBwdAmp, "리클 후진 전류", "Current (A)", 0, 4)
+1681-        ClassZedGraph.InitGraph(ZedGraphLsuptInfAmp, "럼버 흡기 전류", "Current (A)", 0, 1.5)
+--
+1839-    Private Sub UpdateSQLDB_Recliner(ByVal serialNo As String)
+1840-        Dim sb As New System.Text.StringBuilder()
+1841-        sb.AppendLine("UPDATE TABLE_MAIN SET ")
+1842:        sb.AppendLine("    Test_Recl_Starting_FwdAmp = " & SqlQ(srclbReclFwdStartAmpVal.Text) & ",")
+1843:        sb.AppendLine("    Test_Recl_Starting_FwdNoise = " & SqlQ(srclbReclFwdStartNoiseVal.Text) & ",")
+1844:        sb.AppendLine("    Test_Recl_Starting_BwdAmp = " & SqlQ(srclbReclBwdStartAmpVal.Text) & ",")
+1845:        sb.AppendLine("    Test_Recl_Starting_BwdNoise = " & SqlQ(srclbReclBwdStartNoiseVal.Text) & ",")
+1846:        sb.AppendLine("    Test_Recl_Moving_FwdAmp = " & SqlQ(srclbReclFwdMovingAmpVal.Text) & ",")
+1847:        sb.AppendLine("    Test_Recl_Moving_FwdNoise = " & SqlQ(srclbReclFwdMovingNoiseVal.Text) & ",")
+1848:        sb.AppendLine("    Test_Recl_Moving_BwdAmp = " & SqlQ(srclbReclBwdMovingAmpVal.Text) & ",")
+1849:        sb.AppendLine("    Test_Recl_Moving_BwdNoise = " & SqlQ(srclbReclBwdMovingNoiseVal.Text) & ",")
+1850:        sb.AppendLine("    Test_Recl_FwdAngle = " & SqlQ(srclbReclFwdAngleVal.Text) & ",")
+1851:        sb.AppendLine("    Test_Recl_FwdSpeed = " & SqlQ(srclbReclFwdSpeedVal.Text) & ",")
+1852:        sb.AppendLine("    Test_Recl_BwdAngle = " & SqlQ(srclbReclBwdAngleVal.Text) & ",")
+1853:        sb.AppendLine("    Test_Recl_BwdSpeed = " & SqlQ(srclbReclBwdSpeedVal.Text) & ",")
+1854-        sb.AppendLine("    Test_Recl_EndAngle = " & SqlQ(srclbReclEndAngleVal.Text))
+--
+1875-        Dim vStartTime As String = StartTime
+1876-        Dim vEndTime As String = Format(Now, "HH:mm:ss")
+1877-
+1878:        Dim vFwdStartAmp As String = srclbReclFwdStartAmpVal.Text
+1879:        Dim vFwdStartNoise As String = srclbReclFwdStartNoiseVal.Text
+1880:        Dim vBwdStartAmp As String = srclbReclBwdStartAmpVal.Text
+1881:        Dim vBwdStartNoise As String = srclbReclBwdStartNoiseVal.Text
+1882-
+1883:        Dim vFwdMoveAmp As String = srclbReclFwdMovingAmpVal.Text
+1884:        Dim vFwdMoveNoise As String = srclbReclFwdMovingNoiseVal.Text
+1885:        Dim vBwdMoveAmp As String = srclbReclBwdMovingAmpVal.Text
+1886:        Dim vBwdMoveNoise As String = srclbReclBwdMovingNoiseVal.Text
+1887-
+1888:        Dim vFwdAngle As String = srclbReclFwdAngleVal.Text
+1889:        Dim vFwdSpeed As String = srclbReclFwdSpeedVal.Text
+1890:        Dim vBwdAngle As String = srclbReclBwdAngleVal.Text
+1891:        Dim vBwdSpeed As String = srclbReclBwdSpeedVal.Text
+1892-
+--
+2678-        End If
+2679-
+2680-    End Sub
+2681:    Private Sub ReclFwd()
+2682-        DoOn(5)
+2683-    End Sub
+2684:    Private Sub ReclBwd()
+2685-        DoOn(4)
+2686-    End Sub
+2687:    Private Sub ReclStop()
+2688-        DoOff(4)
+--
+2766-
+2767-                sw.Restart()
+2768-                TargetVolt1 = BasicReclTestVolt
+2769:                ReclFwd()
+2770-                wStep = 99.1
+2771-
+2772-            ElseIf wStep = 99.1 Then
+2773-                TotalTime = sw.Elapsed.TotalSeconds
+2774:                If (ValueAmp1 > BasicReclStopAmp AndAlso TotalTime > 1) OrElse (ValueAmp1 < 0.1 AndAlso TotalTime > 1) Then
+2775:                    ReclStop()
+2776-                    sw.Restart()
+--
+2788-                stats.Reset()
+2789-                TmpSTartAngle = CDbl(Format(Laser2Angle(ValueLaser))) ' 시작각(또는 길이)
+2790-                TargetVolt1 = BasicReclTestVolt
+2791:                ReclBwd()
+2792-                sw.Restart()
+--
+2795-            ElseIf wStep = 101 Then ' 측정 중 (BWD)
+2796-                TotalTime = sw.Elapsed.TotalSeconds
+2797-                Try
+2798:                    ClassZedGraph.DrawGraph(ZedGraphReclBwdAmp, 0, ValueAmp1, TotalTime)
+2799:                    ClassZedGraph.DrawGraph(ZedGraphReclBwdNoise, 0, ValueNoise, TotalTime)
+2800-                Catch ex As Exception
+2801-                End Try
+2802-                stats.Push(TotalTime, ValueAmp1, ValueNoise, ReclSector)
+2803:                If TotalTime > 2 AndAlso (ValueAmp1 > BasicReclStopAmp OrElse ValueAmp1 < 0.01) Then
+2804:                    ReclStop()
+2805-                    wStep = 102
+2806-                End If
+2807-
+2808-            ElseIf wStep = 102 Then ' BWD 결과 계산/표시
+2809:                ClassZedGraph.AddGuideLines(ZedGraphReclBwdAmp,
+2810-                              yLines:=New Double() {stats.MoveAmpMax,
+2811-                                                   If(stats.MoveAmpMin = Double.MaxValue, 0, stats.MoveAmpMin),
+2812:                                                   BasicReclBwdMovingAmpMin, BasicReclBwdMovingAmpMax},
+2813-                              xLines:=New Double() {0, ReclSector, Math.Max(0, TotalTime - 1)},
+2814-                              yColor:=Color.DarkGray, xColor:=Color.DarkGray,
+2815-                              lineWidth:=2.0F, lineStyle:=Drawing2D.DashStyle.Dash)
+2816:                ClassZedGraph.AddGuideLines(ZedGraphReclBwdNoise,
+2817:                              yLines:=New Double() {BasicReclBwdMovingNoiseMin, BasicReclBwdMovingNoiseMax},
+2818-                              xLines:=New Double() {0, ReclSector, Math.Max(0, TotalTime - 1)},
+2819-                              yColor:=Color.DarkGray, xColor:=Color.DarkGray,
+2820-                              lineWidth:=2.0F, lineStyle:=Drawing2D.DashStyle.Dash)
+2821:                DecideControl(srclbReclBwdAmpDiffVal, srclbReclBwdAmpDiffDec, BAsicReclBWdDiffMin, BAsicReclBWdDiffMax, (stats.MoveAmpMax - If(stats.MoveAmpMin = Double.MaxValue, stats.MoveAmpMax, stats.MoveAmpMin)))
+2822:                DecideControl(srclbReclBwdStartAmpVal, srclbReclBwdStartAmpDec, BasicReclBwdStartAmpMin, BasicReclBwdStartAmpMax, If(stats.StartAmpMax = Double.MinValue, 0, stats.StartAmpMax))
+2823:                DecideControl(srclbReclBwdMovingAmpVal, srclbReclBwdMovingAmpDec, BasicReclBwdMovingAmpMin, BasicReclBwdMovingAmpMax, If(stats.MoveAmpMax = Double.MinValue, 0, stats.MoveAmpMax))
+2824:                DecideControl(srclbReclBwdStartNoiseVal, srclbReclBwdStartNoiseDec, BasicReclBwdStartNoiseMin, BasicReclBwdStartNoiseMax, If(stats.StartNoiseMax = Double.MinValue, 0, stats.StartNoiseMax))
+2825:                DecideControl(srclbReclBwdMovingNoiseVal, srclbReclBwdMovingNoiseDec, BasicReclBwdMovingNoiseMin, BasicReclBwdMovingNoiseMax, If(stats.MoveNoiseMax = Double.MinValue, 0, stats.MoveNoiseMax))
+2826:                DecideControl(srclbReclBwdAngleVal, srclbReclBwdAngleDec, BasicReclBwdAngleMin, BasicReclBwdAngleMax, CDbl(Format(Laser2Angle(ValueLaser), "#0.0#")))
+2827-                TmpEndAngle = CDbl(Format(Laser2Angle(ValueLaser)))
+2828:                DecideControl(srclbReclBwdSpeedVal, srclbReclBwdSpeedDec, BasicReclBwdSpeedMin, BasicReclBwdSpeedMax, Math.Abs(CDbl(Format((TmpSTartAngle - TmpEndAngle) / Math.Max(0.001, TotalTime), "#0.0#"))))
+2829-                Appendlog("리클 후진 검사 종료")
+--
+2833-                Appendlog("리클 전진 검사 시작")
+2834-                CanBusService.AddTraceLog("-- 리클 전진 검사 - 하드와이어 구동 (CAN 해당사항 없음)--")
+2835-                TmpSTartAngle = CDbl(Format(Laser2Angle(ValueLaser)))
+2836:                ReclFwd()
+2837-                stats.Reset()
+--
+2841-            ElseIf wStep = 111 Then ' 측정 중 (FWD)
+2842-                TotalTime = sw.Elapsed.TotalSeconds
+2843-                Try
+2844:                    ClassZedGraph.DrawGraph(ZedGraphReclFwdAmp, 0, ValueAmp1, TotalTime)
+2845:                    ClassZedGraph.DrawGraph(ZedGraphReclFwdNoise, 0, ValueNoise, TotalTime)
+2846-                Catch ex As Exception
+2847-                End Try
+2848-                stats.Push(TotalTime, ValueAmp1, ValueNoise, ReclSector)
+2849:                If TotalTime > 2 AndAlso (ValueAmp1 > BasicReclStopAmp OrElse ValueAmp1 < 0.01) Then
+2850:                    ReclStop()
+2851-                    wStep = 112
+2852-                End If
+2853-
+2854-            ElseIf wStep = 112 Then ' FWD 결과
+2855:                ClassZedGraph.AddGuideLines(ZedGraphReclFwdAmp,
+2856-                              yLines:=New Double() {stats.MoveAmpMax,
+2857-                                                   If(stats.MoveAmpMin = Double.MaxValue, 0, stats.MoveAmpMin),
+2858:                                                   BasicReclFwdMovingAmpMin, BasicReclFwdMovingAmpMax},
+2859-                              xLines:=New Double() {0, ReclSector, Math.Max(0, TotalTime - 1)},
+2860-                              yColor:=Color.DarkGray, xColor:=Color.DarkGray,
+2861-                              lineWidth:=2.0F, lineStyle:=Drawing2D.DashStyle.Dash)
+2862:                ClassZedGraph.AddGuideLines(ZedGraphReclFwdNoise,
+2863:                              yLines:=New Double() {BasicReclFwdMovingNoiseMin, BasicReclFwdMovingNoiseMax},
+2864-                              xLines:=New Double() {0, ReclSector, Math.Max(0, TotalTime - 1)},
+2865-                              yColor:=Color.DarkGray, xColor:=Color.DarkGray,
+2866-                              lineWidth:=2.0F, lineStyle:=Drawing2D.DashStyle.Dash)
+2867:                DecideControl(srclbReclFwdAmpDiffVal, srclbReclFwdAmpDiffDec, BAsicReclFWdDiffMin, BAsicReclFWdDiffMax, (stats.MoveAmpMax - If(stats.MoveAmpMin = Double.MaxValue, stats.MoveAmpMax, stats.MoveAmpMin)))
+2868:                DecideControl(srclbReclFwdStartAmpVal, srclbReclFwdStartAmpDec, BasicReclFwdStartAmpMin, BasicReclFwdStartAmpMax, If(stats.StartAmpMax = Double.MinValue, 0, stats.StartAmpMax))
+2869:                DecideControl(srclbReclFwdMovingAmpVal, srclbReclFwdMovingAmpDec, BasicReclFwdMovingAmpMin, BasicReclFwdMovingAmpMax, If(stats.MoveAmpMax = Double.MinValue, 0, stats.MoveAmpMax))
+2870:                DecideControl(srclbReclFwdStartNoiseVal, srclbReclFwdStartNoiseDec, BasicReclFwdStartNoiseMin, BasicReclFwdStartNoiseMax, If(stats.StartNoiseMax = Double.MinValue, 0, stats.StartNoiseMax))
+2871:                DecideControl(srclbReclFwdMovingNoiseVal, srclbReclFwdMovingNoiseDec, BasicReclFwdMovingNoiseMin, BasicReclFwdMovingNoiseMax, If(stats.MoveNoiseMax = Double.MinValue, 0, stats.MoveNoiseMax))
+2872-                If BasicAngleMode = "ANGLE" Then
+2873:                    DecideControl(srclbReclFwdAngleVal, srclbReclFwdAngleDec, BasicReclFwdAngleMin, BasicReclFwdAngleMax, CDbl(Format(Laser2Angle(ValueLaser), "#0.0#")))
+2874-                Else
+2875:                    DecideControl(srclbReclFwdAngleVal, srclbReclFwdAngleDec, BasicReclFwdAngleMin, BasicReclFwdAngleMax, ValueLaser)
+2876-                End If
+2877-                TmpEndAngle = CDbl(Format(Laser2Angle(ValueLaser)))
+2878:                DecideControl(srclbReclFwdSpeedVal, srclbReclFwdSpeedDec, BasicReclFwdSpeedMin, BasicReclFwdSpeedMax, Math.Abs(CDbl(Format((TmpSTartAngle - TmpEndAngle) / Math.Max(0.001, TotalTime), "#0.0#"))))
+2879-                Appendlog("리클 전진 검사 종료")
+--
+2881-
+2882-            ElseIf wStep = 120 Then ' 출하각
+2883-                Appendlog("출하각 후진")
+2884:                ReclBwd()
+2885-                sw.Restart()
+--
+2888-            ElseIf wStep = 121 Then
+2889-                TotalTime = sw.Elapsed.TotalSeconds
+2890-                If TotalTime > 3 AndAlso (ValueAmp1 < 0.01 OrElse ValueAmp1 > 6) Then
+2891:                    ReclStop()
+2892-                    wStep = 122
+--
+2895-                    srclbReclEndAngleVal.Text = Format(Laser2Angle(ValueLaser), "#0.0#")
+2896-                    Dim ang As Double = CDbl(srclbReclEndAngleVal.Text)
+2897-                    If ang >= BasicReclEndAngleMin - 1 AndAlso ang <= BasicReclEndAngleMax + 1 Then
+2898:                        ReclStop()
+2899-                        wStep = 122
+2900-                    End If
+2901-                Else
+2902-                    If ValueLaser >= BasicReclEndAngleMin AndAlso ValueLaser <= BasicReclEndAngleMax Then
+2903:                        ReclStop()
+2904-                        wStep = 122
+--
+2923-                Dim ang As Double = CDbl(srclbReclEndAngleVal.Text)
+2924-                TargetVolt1 = 7
+2925-                If ang < BasicReclEndAngleMin Then
+2926:                    Appendlog("출하각 전진") : ReclFwd()
+2927-                ElseIf ang > BasicReclEndAngleMax Then
+2928:                    Appendlog("출하각 후진") : ReclBwd()
+2929-                End If
+--
+2934-                srclbReclEndAngleVal.Text = Format(Laser2Angle(ValueLaser), "#0.0#")
+2935-                Dim ang As Double = CDbl(srclbReclEndAngleVal.Text)
+2936-                If ang >= BasicReclEndAngleMin AndAlso ang <= BasicReclEndAngleMax Then
+2937:                    ReclStop()
+2938-                    wStep = 122

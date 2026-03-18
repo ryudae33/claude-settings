@@ -99,3 +99,4 @@ For each table:
 - Respond in English, DDL comments in English
 - No excessive normalization (prioritize practicality)
 - Indexes only based on actual query patterns (no unnecessary indexes)
+- Report each step taken and its result in detail before proceeding to the next step.

@@ -1,7 +1,7 @@
 ---
 name: log-analyzer
 description: Log file analysis. Supports crash.log, application logs, communication logs, Windows event logs. Error/exception priority analysis, stack trace tracking.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: red
 ---
 
@@ -21,3 +21,4 @@ Rules:
 - Prioritize errors/exceptions
 - Include full stack traces
 - For communication logs, distinguish TX/RX, analyze timeout patterns
+- Report each step taken and its result in detail before proceeding to the next step

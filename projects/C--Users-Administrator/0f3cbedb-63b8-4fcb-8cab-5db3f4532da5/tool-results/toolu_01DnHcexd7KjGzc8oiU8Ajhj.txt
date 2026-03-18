@@ -1,0 +1,663 @@
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:196:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-197-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-198-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-199-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-200-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-201-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:204:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:205:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-206-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-207-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-208-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-209-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-210-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:212:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:213:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-214-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-215-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-216-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-217-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-218-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:220:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:221:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-222-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-223-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-224-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-225-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-226-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:229:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:230:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-231-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-232-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-233-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-234-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-235-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj:238:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-239-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-240-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-241-    <Content Include="Quvb_dll.dll" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-242-    <Content Include="Ux64_dllb.dll" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST01_LH\LH_ST01-192.168.0.150.vbproj-243-    <None Include="Resources\search_PNG_64.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj:194:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-195-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-196-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-197-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-198-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-199-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj:202:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj:203:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-204-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-205-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-206-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-207-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-208-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj:210:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj:211:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-212-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-213-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-214-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-215-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-216-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj:219:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-220-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-221-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-222-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-223-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST01\RH_ST01-192.168.0.170.vbproj-224-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:197:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-198-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-199-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-200-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-201-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-202-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:205:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:206:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-207-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-208-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-209-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-210-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-211-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:213:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:214:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-215-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-216-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-217-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-218-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-219-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:221:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:222:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-223-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-224-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-225-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-226-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-227-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:230:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:231:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-232-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-233-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-234-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-235-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-236-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj:239:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-240-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-241-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-242-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-243-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST03\RH_ST03-192.168.0.172.vbproj-244-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:194:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-195-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-196-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-197-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-198-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-199-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:202:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:203:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-204-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-205-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-206-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-207-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-208-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:210:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:211:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-212-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-213-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-214-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-215-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-216-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:218:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:219:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-220-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-221-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-222-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-223-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-224-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:227:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:228:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-229-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-230-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-231-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-232-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-233-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj:236:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-237-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-238-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-239-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-240-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST02\RH_ST02-192.168.0.171.vbproj-241-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:194:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-195-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-196-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-197-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-198-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-199-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:202:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:203:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-204-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-205-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-206-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-207-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-208-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:210:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:211:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-212-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-213-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-214-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-215-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-216-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:218:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:219:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-220-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-221-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-222-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-223-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-224-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:227:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:228:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-229-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-230-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-231-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-232-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-233-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj:236:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-237-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-238-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-239-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-240-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST_ECU\RH_ST02.5-192.168.0.173.vbproj-241-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:197:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-198-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-199-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-200-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-201-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-202-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:205:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:206:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-207-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-208-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-209-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-210-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-211-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:213:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:214:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-215-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-216-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-217-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-218-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-219-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:221:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:222:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-223-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-224-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-225-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-226-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-227-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:230:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:231:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-232-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-233-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-234-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-235-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-236-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj:239:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-240-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-241-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-242-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-243-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST03_LH\LH_ST03-192.168.0.152.vbproj-244-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:196:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-197-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-198-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-199-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-200-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-201-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:204:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:205:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-206-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-207-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-208-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-209-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-210-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:212:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:213:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-214-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-215-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-216-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-217-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-218-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:220:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:221:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-222-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-223-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-224-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-225-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-226-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:229:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:230:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-231-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-232-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-233-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-234-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-235-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj:238:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-239-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-240-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-241-    <Content Include="Quvb_dll.dll" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-242-    <Content Include="Ux64_dllb.dll" />
+C:\Users\Administrator\Desktop\dsc_nx4\ST02_LH_SAB\LH_ST02_SAB-192.168.0.151.vbproj-243-    <None Include="Resources\search_PNG_64.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj:168:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-169-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-170-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-171-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-172-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-173-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj:175:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj:176:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-177-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-178-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-179-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-180-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-181-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj:184:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj:185:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-186-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-187-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-188-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-189-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-190-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj:193:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-194-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-195-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-196-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-197-       Other similar extension points exist, see Microsoft.Common.targets.
+C:\Users\Administrator\Desktop\dsc_nx4\Manual Barcode\HKMC_BRACODE.vbproj-198-  <Target Name="BeforeBuild">
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:201:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-202-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-203-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-204-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-205-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-206-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:209:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:210:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-211-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-212-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-213-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-214-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-215-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:217:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:218:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-219-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-220-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-221-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-222-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-223-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:225:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:226:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-227-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-228-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-229-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-230-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-231-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:234:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:235:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-236-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-237-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-238-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-239-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-240-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj:243:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-244-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-245-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-246-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-247-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST30\ST30.vbproj-248-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:201:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-202-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-203-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-204-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-205-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-206-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:209:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:210:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-211-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-212-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-213-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-214-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-215-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:217:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:218:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-219-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-220-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-221-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-222-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-223-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:225:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:226:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-227-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-228-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-229-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-230-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-231-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:234:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:235:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-236-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-237-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-238-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-239-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-240-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj:243:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-244-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-245-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-246-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-247-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST30\ST30.vbproj-248-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj:162:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-163-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-164-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-165-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-166-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-167-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj:169:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj:170:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-171-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-172-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-173-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-174-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-175-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj:178:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj:179:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-180-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-181-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-182-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-183-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-184-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj:187:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-188-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-189-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-190-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-191-       Other similar extension points exist, see Microsoft.Common.targets.
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\Manual Barcode\HKMC_BRACODE.vbproj-192-  <Target Name="BeforeBuild">
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:192:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-193-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-194-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-195-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-196-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-197-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:200:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:201:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-202-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-203-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-204-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-205-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-206-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:208:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:209:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-210-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-211-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-212-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-213-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-214-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:216:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:217:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-218-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-219-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-220-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-221-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-222-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:225:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:226:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-227-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-228-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-229-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-230-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-231-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj:234:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-235-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-236-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-237-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-238-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST10\ST10.vbproj-239-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:201:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-202-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-203-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-204-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-205-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-206-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:209:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:210:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-211-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-212-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-213-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-214-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-215-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:217:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:218:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-219-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-220-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-221-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-222-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-223-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:225:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:226:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-227-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-228-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-229-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-230-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-231-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:234:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:235:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-236-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-237-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-238-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-239-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-240-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj:243:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-244-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-245-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-246-    <None Include="Resources\printer.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-247-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_WELD\ST20\NX4_WeldBarcode.vbproj-248-    <None Include="Resources\Search_PNG_72.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:192:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-193-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-194-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-195-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-196-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-197-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:200:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:201:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-202-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-203-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-204-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-205-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-206-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:208:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:209:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-210-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-211-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-212-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-213-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-214-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:216:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:217:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-218-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-219-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-220-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-221-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-222-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:225:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:226:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-227-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-228-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-229-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-230-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-231-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj:234:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-235-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-236-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-237-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-238-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST20\NX4_WeldBarcode.vbproj-239-    <None Include="Resources\Search_PNG_96.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj:225:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-226-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-227-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-228-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-229-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-230-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj:233:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj:234:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-235-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-236-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-237-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-238-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-239-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj:241:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-242-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-243-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-244-    <Content Include="fauto.ico" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-245-    <None Include="Resources\DSC2.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\FRT\NX4_FRT.vbproj-246-    <None Include="Resources\Keyboard.png" />
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:192:    <COMReference Include="ACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-193-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-194-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-195-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-196-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-197-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:200:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:201:    <COMReference Include="AxACTETHERLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-202-      <Guid>{A306B168-AE98-11D3-83AE-00A024BDBF2B}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-203-      <VersionMajor>3</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-204-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-205-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-206-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:208:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:209:    <COMReference Include="AxCWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-210-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-211-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-212-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-213-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-214-      <WrapperTool>aximp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:216:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:217:    <COMReference Include="CWUIControlsLib">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-218-      <Guid>{D940E4E4-6079-11CE-88CB-0020AF6845F6}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-219-      <VersionMajor>1</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-220-      <VersionMinor>6</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-221-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-222-      <WrapperTool>tlbimp</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:225:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:226:    <COMReference Include="stdole">
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-227-      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-228-      <VersionMajor>2</VersionMajor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-229-      <VersionMinor>0</VersionMinor>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-230-      <Lcid>0</Lcid>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-231-      <WrapperTool>primary</WrapperTool>
+--
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj:234:    </COMReference>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-235-  </ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-236-  <ItemGroup>
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-237-    <None Include="Resources\search_PNG_64.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-238-    <None Include="Resources\Search_PNG_72.png" />
+C:\Users\Administrator\Desktop\dsc_nx4\NX4_Front_Ver.Server\NX4_Front_Ver.Server\ST10\ST10.vbproj-239-    <None Include="Resources\Search_PNG_96.png" />

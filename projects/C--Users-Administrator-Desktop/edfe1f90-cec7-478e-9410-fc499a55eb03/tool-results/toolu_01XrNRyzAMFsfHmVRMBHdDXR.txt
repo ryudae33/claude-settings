@@ -1,0 +1,466 @@
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-13-### 1.1 라인 레이아웃
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-14-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-15-```
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-16-[상층 - 작업 라인 (CW 방향 →)]  ※ INV#03 단일모터(Y470)로 JIG#01~09 전체 구동
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-17-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:18:  IN LIFT → JIG#01   → JIG#02 → JIG#03 → JIG#04      → JIG#05 → JIG#06     → JIG#07       → JIG#08 → JIG#09
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-19-  (INV#01)  너트체결    IDLE#1   가공JIG   리어패널가공    IDLE#2   SAB나사조임  앞프레임(COACH) IDLE#3   IDLE#4
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-20-            ├─Section#1(Unit#01)────────┤  ├Section#2(Unit#02)┤  ├Section#3(Unit#03)┤  ├Section#4(Unit#04)┤
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-21-    ↑                                                                                          │
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-22-    │      JIG#10  → JIG#11               JIG#12 → JIG#13    → JIG#14    → OUT LIFT           │
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-23-    │      Unload    Unload                IDLE#5   제품언로드   Clamp언로드                      │
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-68-| **M011_** | 321 | **HMI** — 터치패널 화면전환, EMO표시, 서보축 설정UI, 일일생산량 | 전체 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-69-| **M012_** | 579 | **모델저장** — 모델별 위치/속도 데이터 저장·복원·전환 | 서보 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-70-| **M023_** | 597 | **서보제어** — QD77MS2 2축 서보 위치결정, JOG, 에러처리 | 서보 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-71-| **U001_** | 2,293 | **Section#1** — LIFT1, JIG#01~03, C/V 이송, 스토퍼, 클램프, 너트공급 | Unit#01 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-72-| **U002_** | 615 | **Section#2** — JIG#04~05 작업·스토퍼·팔레트 | Unit#02 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:73:| **U003_** | 658 | **Section#3** — JIG#06~07 작업·스토퍼·팔레트 | Unit#03 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-74-| **U004_** | 534 | **Section#4** — JIG#08~09 작업·스토퍼 (팔레트 실린더 없음) | Unit#04 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-75-| **U005_** | 1,213 | **Section#5** — JIG#10~11 작업·스토퍼·팔레트·도어잠금 | Unit#05 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-76-| **U006_** | 1,455 | **Section#6** — JIG#12~14, LIFT2, 클램프, 스토퍼 | Unit#06 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-77-| **U007_** | 662 | **RETURN C/V** — 하층 팔레트 귀로 (RET#01→#02→#04→#06) | Unit#07 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-78-| **U008_** | 620 | **검사** — 스윙/코치도어 리클라이너 클램프·검사 시퀀스 | Unit#08 |
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-158-| JIG#02 | L20140 | U001_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-159-| JIG#03 | L20160 | U001_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-160-| JIG#04 | L20200 | U002_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-161-| JIG#05 | L20220 | U002_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-162-| JIG#06 | L20300 | U003_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:163:| JIG#07 | L20320 | U003_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-164-| JIG#08 | L20400 | U004_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-165-| JIG#09 | L20420 | U004_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-166-| JIG#10 | L20500 | U005_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-167-| JIG#11 | L20520 | U005_ |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-168-| JIG#12 | L20600 | U006_ |
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-185-| **D70040** | **ST#01 C/V** | **U001_** | 0→1→3→10→18 (컨베어 이송 스텝) |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-186-| **D70050** | **Work Select** | **U001_** | K1~K10 (목적지 JIG 번호) |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-187-| D70200 | JIG#04 | U002_ | 0→1→3→6→8 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-188-| D70210 | JIG#05 | U002_ | 0→1→3→6→8 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-189-| D70400 | JIG#06 | U003_ | 0→1→3→6→8 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:190:| D70410 | JIG#07 | U003_ | 0→1→3→6→8 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-191-| D70600 | JIG#08 | U004_ | 0→1→3→6→8 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-192-| D70610 | JIG#09 | U004_ | 0→1→3→6→8 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-193-| D70800 | JIG#10 | U005_ | 0→1→3→6→8→10 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-194-| D70810 | JIG#11 | U005_ | 0→1→3→6→8→10 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-195-| D70840 | ST#05 C/V | U005_ | 0→1→3→10→18→24 |
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-313-- JIG#04 (Rear Panel Unit): Pallet Up/Down + Stopper (Y630~Y633)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-314-- JIG#05 (IDLE#2): Stopper만 (Y63B~Y63C)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-315-- 스텝: D70200/D70210, 값 0→1→3→6→8
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-316-- PC 통신: D4031에 상태 전송 (M20400~M20417)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-317-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:318:### 4.4 U003_ — Section#3, JIG#06~07 (658줄)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-319-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:320:**역할**: JIG#06(SAB 나사 조임) + JIG#07(앞프레임 가공, COACH 전용) 센서처리, 자동시퀀스, 출력제어
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-321-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-322-**특징**:
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-323-- JIG#06 (SAB Nut Tightening): Pallet + Stopper (Y670~Y673)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:324:- JIG#07 (Front Frame Assembly, **COACH 모델 전용**): Pallet + Stopper (Y679~Y67C)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:325:- 스텝: D70400/D70410
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:326:- **⚠ 주의**: JIG#07 센서 정의에 OR 로직 이상 발견 (Line 56~75, 원본 래더 확인 필요)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-327-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-328-### 4.5 U004_ — Section#4, JIG#08~09 (534줄)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-329-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-330-**역할**: JIG#08(IDLE#3) + JIG#09(IDLE#4) 센서처리, 자동시퀀스, 출력제어
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-331-
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-461-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-462-시작: D70050 := K10 (전부 비었을 때)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-463-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-464-IF JIG#09 빈자리 있으면 → D70050 := K9
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-465-IF JIG#08 빈자리 있으면 → D70050 := K8  (위 조건도 충족해야)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:466:IF JIG#07 빈자리 있으면 → D70050 := K7  (위 조건도 충족해야)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-467-...
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-468-IF JIG#01 빈자리 있으면 → D70050 := K1  (모든 상위 JIG도 비어야)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-469-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-470-최종: D70050 = 가장 앞번 빈 JIG 번호
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-471-```
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-519-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-520-| # | 위치 | 내용 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-521-|---|------|------|
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-522-| 1 | U003_ Line 75 | `NOT X65C AND X65C` — 논리적 모순 (항상 FALSE). 원본 래더 확인 필요 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-523-| 2 | U004_ Line 51 | `NOT X69C AND X69C` — 동일 모순 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md:524:| 3 | U003_ Line 56 | JIG#07 센서 `(SM400) OR (조건)` — SM400=항상ON이라 조건 무시됨. IL→ST 변환 오류 가능성 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-525-| 4 | U004_ Line 44 | JIG#09 센서 동일 문제 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-526-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-527-### 7.3 설계 의문점
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-528-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_구조분석.md-529-| # | 질문 |
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-35-### 1.4 물리 레이아웃
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-36-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-37-```
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-38-[상층 - 작업 라인 (→ 방향)]  ※ INV#03 단일모터(Y470)로 JIG#01~09 전체 구동
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-39-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md:40:  IN LIFT → JIG#01  → JIG#02  → JIG#03  → JIG#04     → JIG#05  → JIG#06    → JIG#07      → JIG#08  → JIG#09
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-41-  (INV#01)  너트체결   IDLE#1    가공JIG    리어패널가공   IDLE#2    SAB나사조임  앞프레임가공   IDLE#3    IDLE#4
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-42-            ├──────── Section#1 ────────┤  ├── Section#2 ──┤  ├── Section#3 ──┤  ├─ Section#4 ─┤
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-43-    ↑                                                                              (COACH전용↑)      │
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-44-    │      JIG#10   → JIG#11               JIG#12 → JIG#13   → JIG#14   → OUT LIFT                  │
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-45-    │      Unload     Unload                IDLE#5   제품언로드   Clamp언로드                           │
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-91-| 2 | **M011_** | 321 | HMI | 터치패널 화면전환, EMO표시, 생산량 집계 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-92-| 3 | **M012_** | 579 | 모델저장 | 모델별 서보 위치/속도 데이터 관리 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-93-| 4 | **M023_** | 597 | 서보 | QD77MS2 2축 위치결정, JOG, 에러처리 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-94-| 5 | **U001_** | 2,293 | Section#1 | LIFT1 + JIG#01~03 + **컨베어 이송 로직** + 너트/프레스 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-95-| 6 | **U002_** | 615 | Section#2 | JIG#04~05 작업·스토퍼·팔레트 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md:96:| 7 | **U003_** | 658 | Section#3 | JIG#06~07 작업·스토퍼·팔레트 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-97-| 8 | **U004_** | 534 | Section#4 | JIG#08~09 작업·스토퍼 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-98-| 9 | **U005_** | 1,213 | Section#5 | JIG#10~11 작업·도어잠금·독립컨베어 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-99-| 10 | **U006_** | 1,455 | Section#6 | JIG#12~14 + LIFT2 + 클램프 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-100-| 11 | **U007_** | 662 | RETURN | 하층 팔레트 귀로 (LIFT2→LIFT1) |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-101-| 12 | **U008_** | 620 | 검사 | 스윙/코치도어 리클라이너 검사 |
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-184-| JIG#02 | L20140 | JIG#10 | L20500 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-185-| JIG#03 | L20160 | JIG#11 | L20520 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-186-| JIG#04 | L20200 | JIG#12 | L20600 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-187-| JIG#05 | L20220 | JIG#13 | L20620 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-188-| JIG#06 | L20300 | JIG#14 | L20640 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md:189:| JIG#07 | L20320 | LIFT2 | L20660 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-190-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-191-**예시**: JIG#04에 제품이 있는지 → **L20200** 확인, 작업 완료 여부 → **L20206** 확인
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-192-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-193-### 3.4 자동 스텝 레지스터 — D70xxx / D71xxx
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-194-
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-333-  M25009 = JIG#09 받을 수 있음
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-334-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-335-스캔 순서 (역순):
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-336-  JIG#09 비어있으면 → D70050 := K9
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-337-  + JIG#08도 비어있으면 → D70050 := K8
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md:338:  + JIG#07도 비어있으면 → D70050 := K7
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-339-  ...
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-340-  + JIG#01까지 전부 비어있으면 → D70050 := K1
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-341-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-342-결과: D70050 = 가장 앞번(가장 가까운) 빈 JIG 번호
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-343-```
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-388-| JIG#02 | **IDLE#1** | 스토퍼만 | 단순 통과/대기 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-389-| JIG#03 | **가공 JIG** | 팔레트, 스토퍼 | |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-390-| JIG#04 | **Rear Panel Unit (리어패널 가공)** | 팔레트, 스토퍼 | |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-391-| JIG#05 | **IDLE#2** | 스토퍼만 | |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-392-| JIG#06 | **SAB Nut Tightening (SAB 나사 조임)** | 팔레트, 스토퍼 | |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md:393:| JIG#07 | **Front Frame Assembly (앞프레임 가공)** | 팔레트, 스토퍼 | **⚠ COACH 모델 전용** |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-394-| JIG#08 | **IDLE#3** | 스토퍼만 | Room Door 있음 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-395-| JIG#09 | **IDLE#4** | 스토퍼만 | |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-396-| JIG#10 | **Unload (제품 언로드)** | 팔레트, 스토퍼, 도어 잠금 | Unload Room |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-397-| JIG#11 | **Unload (제품 언로드)** | 팔레트, 스토퍼, 도어 잠금 | Unload Room |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-398-| JIG#12 | **IDLE#5** | 스토퍼만 | |
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-542-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-543-### 9.2 코드 이상 (IL→ST 변환 과정의 오류 가능성)
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-544-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-545-| 위치 | 내용 | 위험도 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-546-|------|------|-------|
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md:547:| U003_ Line 56~75 | JIG#07 센서: `(SM400) OR (조건)` → SM400=항상ON이라 조건 무시됨 | 중 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-548-| U003_ Line 75 | `NOT X65C AND X65C` → 항상 FALSE (논리 모순) | 중 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-549-| U004_ Line 44~56 | JIG#09 센서: 동일 OR 로직 문제 | 중 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-550-| U004_ Line 51 | `NOT X69C AND X69C` → 항상 FALSE | 중 |
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-551-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\PLC_인수인계서.md-552-**→ 원본 GX Works2 래더에서 해당 부분 확인 필요 (IL→ST 변환 오류인지 원본 문제인지)**
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1065-    D400 := K5;  // MOV  // 연산    TEMP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1066-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1067-IF SM400 AND M2050 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1068-    D400 := K30;  // MOV  // 연산    TEMP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1069-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1070:IF M2712 AND (K7 = D70050) AND M2050 AND NOT T4093 THEN  // ST#01_CVU_JIG#07IN Delay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1071-    TON(T4092, D400);  // 타이머 T4092 설정값=D400
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1072-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1073-    T4092 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1074-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1075-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1076-    D400 := K5;  // MOV  // 연산    TEMP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1077-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1078-IF SM400 AND M2050 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1079-    D400 := K30;  // MOV  // 연산    TEMP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1080-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1081:IF M2712 AND (K8 = D70050) AND M2050 THEN  // ST#01_CVU_JIG#07NonDelay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1082-    TON(T4093, D400);  // 타이머 T4093 설정값=D400
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1083-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1084-    T4093 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1085-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1086:IF SM400 AND M1024 AND T4092 THEN  // U_JIG#07InMemory
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1087-    L20320 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1088-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1089:IF SM400 AND L20320 AND T4093 THEN  // U_JIG#07InMemory
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1090-    L20320 := FALSE;  // RST
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1091-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1092:IF NOT (SM400 AND L20320) THEN  // U_JIG#07Working
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1093-    BKRST(L20322, K8);  // 블록리셋: L20322부터 K8개 OFF
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1094-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1095:IF SM400 AND L20320 AND M50969 AND T4479 THEN  // U_JIG#07Working
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1096-    BKRST(L20322, K8);  // 블록리셋: L20322부터 K8개 OFF
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1097-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1098-IF SM400 AND L20320 AND M50969 AND T4479 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1099:    D70410 := K0;  // MOV  // U_JIG#07AutoStep
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1100-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1101:IF SM400 AND L20320 AND M50969 THEN  // U_JIG#07Delay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1102-    TON(T4479, K30);  // 타이머 T4479 설정값=K30
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1103-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1104-    T4479 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1105-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1106-IF SM400 THEN
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1172-M25002 := L20126 OR L20128 AND NOT L20140 AND NOT M50600;  // U_JIG#02Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1173-M25003 := L20146 OR L20148 AND NOT L20160 AND NOT M50650 AND M50657;  // U_JIG#03Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1174-M25004 := L20166 OR L20168 AND NOT L20200 AND NOT M50700 AND M50707;  // U_JIG#04Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1175-M25005 := L20206 OR L20208 AND NOT L20220 AND NOT M50750;  // U_JIG#05Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1176-M25006 := L20226 OR L20228 AND NOT L20300 AND NOT M50900 AND M50907;  // U_JIG#06Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st:1177:M25007 := L20306 OR L20308 AND NOT L20320 AND NOT M50950 AND M50957;  // U_JIG#07Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1178-M25008 := L20326 OR L20328 AND NOT L20400 AND NOT M51100;  // U_JIG#08Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1179-M25009 := L20406 OR L20408 AND NOT L20420 AND NOT M51150;  // U_JIG#09Input   Possible
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1180-IF NOT L20502 OR NOT L20522 AND NOT L20506 AND NOT L20526 AND NOT L20508 AND NOT L20528 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1181-    D70050 := K10;  // MOV  // ST#01C/VAutoStepSelect  Work No
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U001_.st-1182-END_IF;
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-49-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-50-    T4413 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-51-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-52-M50919 := SM400 AND X64A;  // U_06_WK Reset   S/W
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-53-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:54:// --- U_JIG#07 DEFINE ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-55-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-56-M50950 := (SM400) OR (M4050 AND M1044 AND L20300);  // U_07_WK In Pos  Detect
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-57-M50956 := (SM400) OR (M4050 AND M1044 AND L20300) AND X659 AND T4440;  // U_07_WK Pallet  Up      Detect
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:58:IF (SM400) OR (M4050 AND M1044 AND L20300) AND X659 THEN  // U_JIG#07PLT UP  Detect  Delay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-59-    TON(T4440, K3);  // 타이머 T4440 설정값=K3
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-60-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-61-    T4440 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-62-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-63-M50957 := (SM400) OR (M4050 AND M1044 AND L20300) AND X659 AND X65A AND T4441;  // U_07_WK Pallet  Dw      Detect
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:64:IF (SM400) OR (M4050 AND M1044 AND L20300) AND X659 AND X65A THEN  // U_JIG#07PLT DW  Detect  Delay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-65-    TON(T4441, K3);  // 타이머 T4441 설정값=K3
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-66-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-67-    T4441 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-68-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-69-M50958 := (SM400) OR (M4050 AND M1044 AND L20300) AND X659 AND X65A AND NOT X65C AND T4442;  // U_07_WK Stopper Up      Detect
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:70:IF (SM400) OR (M4050 AND M1044 AND L20300) AND X659 AND X65A AND NOT X65C THEN  // U_JIG#07STP UP  Detect  Delay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-71-    TON(T4442, K3);  // 타이머 T4442 설정값=K3
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-72-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-73-    T4442 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-74-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-75-M50959 := (SM400) OR (M4050 AND M1044 AND L20300) AND X659 AND X65A AND NOT X65C AND X65C AND T4443;  // U_07_WK Stopper Dw      Detect
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:76:IF (SM400) OR (M4050 AND M1044 AND L20300) AND X659 AND X65A AND NOT X65C AND X65C THEN  // U_JIG#07STP DW  Detect  Delay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-77-    TON(T4443, K1);  // 타이머 T4443 설정값=K1
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-78-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-79-    T4443 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-80-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-81-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-82-M50967 := SM400 AND X64B AND T4452;  // U_07_WK Work EndS/W
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:83:IF SM400 AND X64B THEN  // U_JIG#07Work EndDelay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-84-    TON(T4452, K5);  // 타이머 T4452 설정값=K5
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-85-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-86-    T4452 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-87-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-88-M50968 := SM400 AND X64C AND T4453;  // U_07_WK WorkPassS/W
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:89:IF SM400 AND X64C THEN  // U_JIG#07WorkPassDelay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-90-    TON(T4453, K5);  // 타이머 T4453 설정값=K5
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-91-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-92-    T4453 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-93-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-94-M50969 := SM400 AND X64D;  // U_07_WK Reset   S/W
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-215-M4314 := (SM400) AND (M4414 AND NOT M50906 AND SM412 OR M50906);  // U_JIG#06C/V     PLT Up  LP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-216-M4315 := M4415 AND NOT M50907 AND SM412 OR M50907;  // U_JIG#06C/V     PLT DownLP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-217-M4316 := (SM400) AND (M4416 AND NOT M50908 AND SM412 OR M50908);  // U_JIG#06C/V     STP Up  LP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-218-M4317 := M4417 AND NOT M50909 AND SM412 OR M50909;  // U_JIG#06C/V     STP DownLP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-219-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:220:M4324 := (SM400) AND (M4424 AND NOT M50956 AND SM412 OR M50956);  // U_JIG#07C/V     PLT Up  LP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:221:M4325 := M4425 AND NOT M50957 AND SM412 OR M50957;  // U_JIG#07C/V     PLT DownLP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:222:M4326 := (SM400) AND (M4426 AND NOT M50958 AND SM412 OR M50958);  // U_JIG#07C/V     STP Up  LP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:223:M4327 := M4427 AND NOT M50959 AND SM412 OR M50959;  // U_JIG#07C/V     STP DownLP
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-224-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-225-IF SM400 AND NOT M1040 AND NOT M1041 AND NOT M1044 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-226-    D20300 := K0;  // MOV  // #01 ZoneMode    Lamp
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-227-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-228-IF SM400 AND M1040 AND NOT M1044 THEN
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-314-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-315-IF NOT M1042 OR M4090 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-316-    DECO(D70400, K4);  // 디코드: D70400 → K4비트 전개
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-317-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-318-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:319:// --- -. Sub02 : Upper_JIG#07 ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-320-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-321-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-322-// --- ___Memory Set ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-323-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:324:IF SM400 AND SM400 AND R_TRIG(M1046) AND M50950 AND NOT L20320 THEN  // U_JIG#07InMemory
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-325-    L20320 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-326-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:327:IF SM400 AND SM400 AND R_TRIG(M1046) AND NOT M50950 AND M50957 THEN  // U_JIG#07InMemory
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-328-    L20320 := FALSE;  // RST
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-329-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:330:IF SM400 AND SM400 AND R_TRIG(M1046) AND NOT M50950 AND M50957 THEN  // U_JIG#07Working
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-331-    BKRST(L20322, K8);  // 블록리셋: L20322부터 K8개 OFF
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-332-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:333:L20322 := SM400 AND SM400 AND M1040 AND L20320 AND NOT L20326 AND NOT L20328;  // U_JIG#07Working
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:334:IF (SM400 AND SM400) AND (NOT L29311 AND M20751 OR L29311) OR L29310 AND L20320 THEN  // U_JIG#07READ OK
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-335-    L20323 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-336-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:337:IF NOT ((SM400 AND SM400) AND (NOT L29311 AND M20751 OR L29311) OR L29310 AND L20320 AND NOT M20752 AND NOT L29311) AND M4559 THEN  // U_JIG#07PCOK
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-338-    L20324 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-339-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:340:IF NOT (NOT ((SM400 AND SM400) AND (NOT L29311 AND M20751 OR L29311) OR L29310 AND L20320 AND NOT M20752 AND NOT L29311) AND M4559 AND NOT M50967) AND M4559 AND L20320 AND L20324 THEN  // U_JIG#07Nut WorkEnd OK
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-341-    L20326 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-342-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:343:IF M4552 OR M4559 AND L20320 AND L20323 THEN  // U_JIG#07PASS    MODE     ON
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-344-    L20328 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-345-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-346-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-347-// --- ___Auto Step ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-348-IF NOT (NOT M4554 AND NOT M4557 AND NOT M4561) THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:349:    D70410 := K0;  // MOV  // U_JIG#07AutoStep
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-350-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-351-IF M1044 OR M1052 AND NOT M1042 AND M4550 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:352:    D70410 := K1;  // MOV  // U_JIG#07AutoStep
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-353-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-354-IF M1044 OR M1052 AND NOT M1042 AND M4552 AND NOT L20320 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:355:    D70410 := K3;  // MOV  // U_JIG#07AutoStep
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-356-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-357-IF M1044 OR M1052 AND NOT M1042 AND M4552 AND L20320 AND NOT L20323 AND NOT L20326 AND NOT L20328 AND NOT Y470 AND NOT Y471 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:358:    D70410 := K6;  // MOV  // U_JIG#07AutoStep
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-359-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-360-IF M1044 OR M1052 AND NOT M1042 AND M4552 AND L20320 AND L20323 AND NOT L20326 AND NOT L20328 AND NOT Y470 AND NOT Y471 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:361:    D70410 := K8;  // MOV  // U_JIG#07AutoStep
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-362-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-363-IF NOT M1042 OR M4091 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:364:    DECO(D70410, K4);  // 디코드: D70410 → K4비트 전개
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-365-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-366-IF M1044 OR M1052 AND NOT M1045 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:367:    D70410 := D70410 + 1;  // INC
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-368-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-369-IF NOT M1042 OR M4091 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:370:    DECO(D70410, K4);  // 디코드: D70410 → K4비트 전개
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-371-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-372-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-373-// --- [Title]M/A Output Define ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-374-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-375-// --- -.U_JIG#06 Pallet - Up/Down ---
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-408-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-409-IF M60 THEN  // U_JIG#06C/V     STP Up  Sig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-410-    BKRST(M4416, K2);  // 블록리셋: M4416부터 K2개 OFF
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-411-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-412-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:413:// --- -.U_JIG#07 Pallet - Up/Down ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:414:M4124 := NOT (NOT M4099 AND NOT SM401 AND NOT SM401);  // U_JIG#07C/V     PLT Up  Int-Lock
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:415:IF M1046 AND SM401 AND M4124 THEN  // U_JIG#07C/V     PLT DownSig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-416-    M4425 := FALSE;  // RST
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-417-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:418:IF M1046 AND SM401 AND M4124 THEN  // U_JIG#07C/V     PLT Up  Sig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-419-    M4424 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-420-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:421:M4125 := NOT (NOT M4099 AND NOT SM401 AND NOT SM401);  // U_JIG#07C/V     PLT DownInt-Lock
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:422:IF M1046 AND NOT L20323 AND NOT L20324 AND NOT L20326 AND M4125 THEN  // U_JIG#07C/V     PLT Up  Sig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-423-    M4424 := FALSE;  // RST
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-424-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:425:IF M1046 AND NOT L20323 AND NOT L20324 AND NOT L20326 AND M4125 THEN  // U_JIG#07C/V     PLT DownSig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-426-    M4425 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-427-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:428:IF M60 THEN  // U_JIG#07C/V     PLT Up  Sig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-429-    BKRST(M4424, K2);  // 블록리셋: M4424부터 K2개 OFF
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-430-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-431-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:432:// --- -.U_JIG#07 Stopper - Up/Down ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:433:M4126 := NOT (NOT M4099 AND NOT SM401 AND NOT SM401);  // U_JIG#07C/V     STP Up  Int-Lock
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:434:IF NOT (NOT M4226 AND NOT SM401 AND NOT SM401) AND M4000 OR M1046 AND M4126 THEN  // U_JIG#07C/V     STP DownSig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-435-    M4427 := FALSE;  // RST
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-436-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:437:IF NOT (NOT M4226 AND NOT SM401 AND NOT SM401) AND M4000 OR M1046 AND M4126 THEN  // U_JIG#07C/V     STP Up  Sig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-438-    M4426 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-439-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:440:M4127 := NOT (NOT M4099 AND NOT SM401 AND NOT SM401);  // U_JIG#07C/V     STP DownInt-Lock
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:441:IF M1046 AND SM401 AND M4127 THEN  // U_JIG#07C/V     STP Up  Sig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-442-    M4426 := FALSE;  // RST
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-443-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:444:IF M1046 AND SM401 AND M4127 THEN  // U_JIG#07C/V     STP DownSig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-445-    M4427 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-446-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:447:IF M60 THEN  // U_JIG#07C/V     STP Up  Sig
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-448-    BKRST(M4426, K2);  // 블록리셋: M4426부터 K2개 OFF
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-449-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-450-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-451-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-452-// --- [Title] Output ---
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-516-    K4M20650 := D4053;  // MOV
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-517-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-518-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-519-    K4M20670 := D4054;  // MOV
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-520-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:521:M20700 := SM400 AND SM412;  // U_JIG#07PLCtoPC Flicker 1sec
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:522:M20701 := (SM400) AND (NOT (NOT M4556) AND L20320 OR F54);  // U_JIG#07PLCtoPC Pallet  IN OK
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:523:M20702 := M4002 AND M50956 OR F55;  // U_JIG#07PLCtoPC Pallet  UP OK
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:524:M20703 := M4559 OR F56 AND SM400 OR M20703 AND NOT M20753 AND NOT L20324 AND NOT L20326 AND NOT L20328;  // U_JIG#07PLCtoPC Work Go
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:525:M20704 := M50969 OR F57 AND T10106;  // U_JIG#07PLCtoPC Reset ON
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:526:IF M50969 OR F57 THEN  // U_JIG#07Reset   Delay
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-527-    TON(T10106, K10);  // 타이머 T10106 설정값=K10
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-528-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-529-    T10106 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-530-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-531-M20707 := R_TRIG(X65B) OR M20707 AND NOT T10261;
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-548-IF R_TRIG(X65D) OR M20708 AND T10262 AND NOT X65D THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-549-    TON(T10263, K1);  // 타이머 T10263 설정값=K1
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-550-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-551-    T10263 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-552-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:553:M20709 := X65F OR F59;  // U_JIG#07PLCtoPC Screw OK
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-554-M20710 := L20323 AND L20326 OR L20328;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-555-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:556:    D4061 := K4M20700;  // MOV  // U_JIG#07PLC>>PC
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-557-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-558-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:559:    D4062 := K4M20720;  // MOV  // U_JIG#07PLC>>PC
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-560-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-561-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-562-    K4M20750 := D4063;  // MOV
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-563-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-564-IF SM400 THEN
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-566-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-567-IF NOT (L10430 AND L10431 AND L10432 AND L10433) THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-568-    D4055 := K0;  // MOV  // U_JIG#06Alarm   Code1
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-569-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-570-IF NOT (L10430 AND L10431 AND L10432 AND L10433) THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:571:    D4065 := K0;  // MOV  // U_JIG#07Alarm   Code1
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-572-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-573-IF NOT (L10610 AND L10611 AND L10612 AND L10613 AND L10614 AND L10615 AND L10616 AND L10617 AND L10618 AND L10619 AND L10620 AND L10621 AND L10622 AND L10623 AND L10624 AND L10625) THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-574-    D4056 := K0;  // MOV  // U_JIG#06Alarm   Code2
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-575-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-576-IF NOT (L10630 AND L10631 AND L10632 AND L10633 AND L10634 AND L10635 AND L10636 AND L10637 AND L10638 AND L10639 AND L10640 AND L10641 AND L10642 AND L10643 AND L10644 AND L10644) THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:577:    D4066 := K0;  // MOV  // U_JIG#07Alarm   Code2
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-578-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-579-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-580-    D4055 := K1L10430;  // MOV  // U_JIG#06Alarm   Code1
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-581-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-582-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:583:    D4065 := K1L10430;  // MOV  // U_JIG#07Alarm   Code1
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-584-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-585-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-586-    D4056 := K4L10610;  // MOV  // U_JIG#06Alarm   Code2
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-587-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-588-IF SM400 THEN
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:589:    D4066 := K4L10630;  // MOV  // U_JIG#07Alarm   Code2
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-590-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-591-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-592-// --- [Title]Error ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-593-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-594-// --- -. L10600~L10699 ---
+--
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-628-    TON(T1622, K30);  // 타이머 T1622 설정값=K30
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-629-ELSE
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-630-    T1622 := FALSE;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-631-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-632-
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st:633:// --- -.U_JIG#07 Alarm ---
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-634-IF NOT L20320 AND M50950 AND T1634 THEN  // U_JIG 7 C/V Pallet Detect Error
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-635-    L10634 := TRUE;  // SET
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-636-END_IF;
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-637-IF NOT L20320 AND M50950 AND NOT M141 THEN  // U_JIG 7 C/V Pallet Detect Error
+C:\Users\Administrator\Desktop\DAEIL_JG\PLC\ST_OUTPUT\U003_.st-638-    TON(T1634, K60);  // 타이머 T1634 설정값=K60

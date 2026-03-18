@@ -1,0 +1,712 @@
+C:\Users\Administrator\Desktop\JX1\Common\PLC통신.vb:73:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\Common\PLC통신.vb:80:            iInAreaReturnCode = LocalActPLC.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\Common\PLC통신.vb:86:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\Common\PLC통신.vb:97:        ReadPLCBlock = iInAreaReturnCode
+C:\Users\Administrator\Desktop\JX1\S150 2\FrmMain.vb:338:            System.Diagnostics.Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.System) & "/OSK.exe")
+C:\Users\Administrator\Desktop\JX1\S110\FrmMain.vb:614:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S110\FrmMain.vb:621:        '    iInAreaReturnCode = 0
+C:\Users\Administrator\Desktop\JX1\S110\FrmMain.vb:624:            iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S110\FrmMain.vb:632:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S110\FrmMain.vb:667:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.vb:1305:                If workMode = "FOLDING" Then
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.vb:1975:    Private Sub btn_Folding_Click(sender As Object, e As EventArgs) Handles btn_Folding.Click
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.vb:1977:        workMode = "FOLDING"
+C:\Users\Administrator\Desktop\JX1\S40\FrmMain.vb:920:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S40\FrmMain.vb:927:            iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S40\FrmMain.vb:934:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S40\FrmMain.vb:969:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\S50\FrmMain.vb:597:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S50\FrmMain.vb:604:            iInAreaReturnCode = 0
+C:\Users\Administrator\Desktop\JX1\S50\FrmMain.vb:607:                iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S50\FrmMain.vb:615:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S50\FrmMain.vb:650:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:72:        Me.btn_Folding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:685:        Me.TableLayoutPanel1.Controls.Add(Me.btn_Folding, 10, 1)
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:846:        'btn_Folding
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:848:        Me.btn_Folding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:851:        Me.btn_Folding.AutoSize = True
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:852:        Me.btn_Folding.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:853:        Me.btn_Folding.Location = New System.Drawing.Point(1340, 38)
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:854:        Me.btn_Folding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:855:        Me.btn_Folding.Name = "btn_Folding"
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:856:        Me.TableLayoutPanel1.SetRowSpan(Me.btn_Folding, 5)
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:857:        Me.btn_Folding.Size = New System.Drawing.Size(134, 171)
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:858:        Me.btn_Folding.TabIndex = 116
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:859:        Me.btn_Folding.Text = "폴딩 동작"
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:860:        Me.btn_Folding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\REWORK TEST\FrmMain.Designer.vb:2728:    Friend WithEvents btn_Folding As Button
+C:\Users\Administrator\Desktop\JX1\S30\FrmMain.vb:1064:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S30\FrmMain.vb:1071:            iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S30\FrmMain.vb:1078:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S30\FrmMain.vb:1119:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:39:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:40:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:41:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:42:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1022:                            'FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1023:                            'FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1024:                            'FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1025:                            'FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1033:                                FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1034:                                If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1036:                                FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1037:                                If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1039:                            PANEL_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:1040:                            PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2609:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2610:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2611:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2612:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2624:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2625:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2626:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2627:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:2651:                If FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:3239:    Private Sub btnFoldingSetting_Click(sender As Object, e As EventArgs) Handles btnFoldingSetting.Click
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:3249:    Private Sub btnFolding_Click(sender As Object, e As EventArgs) Handles btnFolding.Click
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.vb:3254:                Serial_CAN.Write("t4A580800000000000000" & Chr(13)) 'LH Folding
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:17:    Private FlagSendFoldingSignal As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:38:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:39:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:40:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:41:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:678:                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:679:                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:681:                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:682:                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:686:                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:687:                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:689:                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:690:                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2150:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2151:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2152:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2153:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2154:            FlagSendFoldingSignal = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2163:                If FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2980:                If CanStep = 2000 Then 'FOLDING
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:2997:                    If FlagSendFoldingSignal = True Then
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:3018:                    FlagSendFoldingSignal = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:3093:    Private Sub btnFoldingSetting_Click(sender As Object, e As EventArgs) Handles btnFoldingSetting.Click
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:3103:    Private Sub btnFolding_Click(sender As Object, e As EventArgs) Handles btnFolding.Click
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.vb:3108:                Serial_CAN.Write("t4A580800000000000000" & Chr(13)) 'LH Folding
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:43:        Me.btnFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:44:        Me.btnFoldingSetting = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:342:        Me.TableLayoutPanel1.Controls.Add(Me.btnFolding, 1, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:343:        Me.TableLayoutPanel1.Controls.Add(Me.btnFoldingSetting, 2, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:416:        'btnFolding
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:418:        Me.btnFolding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:421:        Me.btnFolding.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:422:        Me.btnFolding.Location = New System.Drawing.Point(116, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:423:        Me.btnFolding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:424:        Me.btnFolding.Name = "btnFolding"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:425:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFolding, 2)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:426:        Me.btnFolding.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:427:        Me.btnFolding.TabIndex = 61
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:428:        Me.btnFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:429:        Me.btnFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:431:        'btnFoldingSetting
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:433:        Me.btnFoldingSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:436:        Me.btnFoldingSetting.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:437:        Me.btnFoldingSetting.Location = New System.Drawing.Point(275, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:438:        Me.btnFoldingSetting.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:439:        Me.btnFoldingSetting.Name = "btnFoldingSetting"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:440:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFoldingSetting, 2)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:441:        Me.btnFoldingSetting.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:442:        Me.btnFoldingSetting.TabIndex = 60
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:443:        Me.btnFoldingSetting.Text = "폴딩세팅"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:444:        Me.btnFoldingSetting.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:2487:    Friend WithEvents btnFolding As Button
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\S150\FrmMain.Designer.vb:2488:    Friend WithEvents btnFoldingSetting As Button
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:39:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:40:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:41:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:42:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1022:                            'FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1023:                            'FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1024:                            'FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1025:                            'FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1033:                                FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1034:                                If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1036:                                FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1037:                                If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1039:                            PANEL_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:1040:                            PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2609:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2610:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2611:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2612:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2624:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2625:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2626:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2627:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:2651:                If FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:3239:    Private Sub btnFoldingSetting_Click(sender As Object, e As EventArgs) Handles btnFoldingSetting.Click
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:3249:    Private Sub btnFolding_Click(sender As Object, e As EventArgs) Handles btnFolding.Click
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.vb:3254:                Serial_CAN.Write("t4A580800000000000000" & Chr(13)) 'LH Folding
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:42:        Me.btnFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:43:        Me.btnFoldingSetting = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:333:        Me.TableLayoutPanel1.Controls.Add(Me.btnFolding, 1, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:334:        Me.TableLayoutPanel1.Controls.Add(Me.btnFoldingSetting, 2, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:407:        'btnFolding
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:409:        Me.btnFolding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:412:        Me.btnFolding.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:413:        Me.btnFolding.Location = New System.Drawing.Point(116, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:414:        Me.btnFolding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:415:        Me.btnFolding.Name = "btnFolding"
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:416:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFolding, 2)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:417:        Me.btnFolding.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:418:        Me.btnFolding.TabIndex = 61
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:419:        Me.btnFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:420:        Me.btnFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:422:        'btnFoldingSetting
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:424:        Me.btnFoldingSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:427:        Me.btnFoldingSetting.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:428:        Me.btnFoldingSetting.Location = New System.Drawing.Point(275, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:429:        Me.btnFoldingSetting.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:430:        Me.btnFoldingSetting.Name = "btnFoldingSetting"
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:431:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFoldingSetting, 2)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:432:        Me.btnFoldingSetting.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:433:        Me.btnFoldingSetting.TabIndex = 60
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:434:        Me.btnFoldingSetting.Text = "폴딩세팅"
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:435:        Me.btnFoldingSetting.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:2586:    Friend WithEvents btnFolding As Button
+C:\Users\Administrator\Desktop\JX1\S150 V2\FrmMain.Designer.vb:2587:    Friend WithEvents btnFoldingSetting As Button
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:43:        Me.btnFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:44:        Me.btnFoldingSetting = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:342:        Me.TableLayoutPanel1.Controls.Add(Me.btnFolding, 1, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:343:        Me.TableLayoutPanel1.Controls.Add(Me.btnFoldingSetting, 2, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:416:        'btnFolding
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:418:        Me.btnFolding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:421:        Me.btnFolding.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:422:        Me.btnFolding.Location = New System.Drawing.Point(116, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:423:        Me.btnFolding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:424:        Me.btnFolding.Name = "btnFolding"
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:425:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFolding, 2)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:426:        Me.btnFolding.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:427:        Me.btnFolding.TabIndex = 61
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:428:        Me.btnFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:429:        Me.btnFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:431:        'btnFoldingSetting
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:433:        Me.btnFoldingSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:436:        Me.btnFoldingSetting.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:437:        Me.btnFoldingSetting.Location = New System.Drawing.Point(275, 0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:438:        Me.btnFoldingSetting.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:439:        Me.btnFoldingSetting.Name = "btnFoldingSetting"
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:440:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFoldingSetting, 2)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:441:        Me.btnFoldingSetting.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:442:        Me.btnFoldingSetting.TabIndex = 60
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:443:        Me.btnFoldingSetting.Text = "폴딩세팅"
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:444:        Me.btnFoldingSetting.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:2487:    Friend WithEvents btnFolding As Button
+C:\Users\Administrator\Desktop\JX1\S150 V2\S150\FrmMain.Designer.vb:2488:    Friend WithEvents btnFoldingSetting As Button
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:17:    Private FlagSendFoldingSignal As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:40:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:41:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:42:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:43:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1389:                            'FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1390:                            'FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1391:                            'FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1392:                            'FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1400:                                FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1401:                                If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1403:                                FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1404:                                If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1406:                            PANEL_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:1407:                            PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3061:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3062:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3063:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3064:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3065:            FlagSendFoldingSignal = False
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3074:                If FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3600:                If CanStep = 2000 Then 'FOLDING
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3617:                    If FlagSendFoldingSignal = True Then
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3638:                    FlagSendFoldingSignal = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3715:    Private Sub btnFoldingSetting_Click(sender As Object, e As EventArgs) Handles btnFoldingSetting.Click
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3725:    Private Sub btnFolding_Click(sender As Object, e As EventArgs) Handles btnFolding.Click
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.vb:3730:                Serial_CAN.Write("t4A580800000000000000" & Chr(13)) 'LH Folding
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:21:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:22:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:23:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:24:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:25:    Public Folding_Check As String = String.Empty
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:777:    Private Sub wFolding()
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1211:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1212:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1213:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1214:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1215:            Label10.Text = "Header String : " & Folding_Check
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1241:            Label10.Text = "Header String : " & Folding_Check
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1242:            Label8.Text = "Folding BWD : " & FLAG_FOLDING_BWD_COMP.ToString
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1243:            Label9.Text = "Folding FWD : " & FLAG_FOLDING_FWD_COMP.ToString
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1245:            If FLAG_FOLDING_BWD_COMP = True Or FLAG_FOLDING_FWD_COMP = True Then '(GetTickCount() - CurrentProgressTimeStamp) > 30000 Then
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1278:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1279:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1280:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1281:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1282:            Label10.Text = "Header String : " & Folding_Check
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1308:            Label10.Text = "Header String : " & Folding_Check
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1309:            Label8.Text = "Folding BWD : " & FLAG_FOLDING_BWD_COMP.ToString
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1310:            Label9.Text = "Folding FWD : " & FLAG_FOLDING_FWD_COMP.ToString
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1312:            If FLAG_FOLDING_BWD_COMP = True Or FLAG_FOLDING_FWD_COMP = True Then '(GetTickCount() - CurrentProgressTimeStamp) > 30000 Then
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1676:                                FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1677:                                If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1679:                                FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1680:                                If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.vb:1683:                        'Folding_Check = Mid(RecvString_CAN.ToString, 1, 3)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:43:        Me.btnFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:44:        Me.btnFoldingSetting = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:342:        Me.TableLayoutPanel1.Controls.Add(Me.btnFolding, 1, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:343:        Me.TableLayoutPanel1.Controls.Add(Me.btnFoldingSetting, 2, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:416:        'btnFolding
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:418:        Me.btnFolding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:421:        Me.btnFolding.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:422:        Me.btnFolding.Location = New System.Drawing.Point(116, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:423:        Me.btnFolding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:424:        Me.btnFolding.Name = "btnFolding"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:425:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFolding, 2)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:426:        Me.btnFolding.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:427:        Me.btnFolding.TabIndex = 61
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:428:        Me.btnFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:429:        Me.btnFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:431:        'btnFoldingSetting
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:433:        Me.btnFoldingSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:436:        Me.btnFoldingSetting.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:437:        Me.btnFoldingSetting.Location = New System.Drawing.Point(275, 0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:438:        Me.btnFoldingSetting.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:439:        Me.btnFoldingSetting.Name = "btnFoldingSetting"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:440:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFoldingSetting, 2)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:441:        Me.btnFoldingSetting.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:442:        Me.btnFoldingSetting.TabIndex = 60
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:443:        Me.btnFoldingSetting.Text = "폴딩세팅"
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:444:        Me.btnFoldingSetting.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:2488:    Friend WithEvents btnFolding As Button
+C:\Users\Administrator\Desktop\JX1\S150 - 복사본\FrmMain.Designer.vb:2489:    Friend WithEvents btnFoldingSetting As Button
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.Designer.vb:934:        Me.Label10.Text = "Folding Check"
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.Designer.vb:943:        Me.Label9.Text = "Folding FWD"
+C:\Users\Administrator\Desktop\JX1\S100\FrmMain.Designer.vb:952:        Me.Label8.Text = "Folding BWD"
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:33:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:34:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:35:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:36:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:596:                            'FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:597:                            'FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:598:                            'FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:599:                            'FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:607:                                FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:608:                                If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:610:                                FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:611:                                If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:614:                            PANEL_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:615:                            PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1970:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1971:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1972:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1973:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1985:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1986:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1987:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:1988:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:2008:            If FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:2572:    Private Sub btnFoldingSetting_Click(sender As Object, e As EventArgs) Handles btnFoldingSetting.Click
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:2582:    Private Sub btnFolding_Click(sender As Object, e As EventArgs) Handles btnFolding.Click
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.vb:2587:                Serial_CAN.Write("t4A580800000000000000" & Chr(13)) 'LH Folding
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:38:        Me.btnFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:39:        Me.btnFoldingSetting = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:261:        Me.TableLayoutPanel1.Controls.Add(Me.btnFolding, 1, 0)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:262:        Me.TableLayoutPanel1.Controls.Add(Me.btnFoldingSetting, 2, 0)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:335:        'btnFolding
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:337:        Me.btnFolding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:340:        Me.btnFolding.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:341:        Me.btnFolding.Location = New System.Drawing.Point(116, 0)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:342:        Me.btnFolding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:343:        Me.btnFolding.Name = "btnFolding"
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:344:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFolding, 2)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:345:        Me.btnFolding.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:346:        Me.btnFolding.TabIndex = 61
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:347:        Me.btnFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:348:        Me.btnFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:350:        'btnFoldingSetting
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:352:        Me.btnFoldingSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:355:        Me.btnFoldingSetting.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:356:        Me.btnFoldingSetting.Location = New System.Drawing.Point(275, 0)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:357:        Me.btnFoldingSetting.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:358:        Me.btnFoldingSetting.Name = "btnFoldingSetting"
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:359:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFoldingSetting, 2)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:360:        Me.btnFoldingSetting.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:361:        Me.btnFoldingSetting.TabIndex = 60
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:362:        Me.btnFoldingSetting.Text = "폴딩세팅"
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:363:        Me.btnFoldingSetting.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:2171:    Friend WithEvents btnFolding As Button
+C:\Users\Administrator\Desktop\JX1\S150 3\FrmMain.Designer.vb:2172:    Friend WithEvents btnFoldingSetting As Button
+C:\Users\Administrator\Desktop\JX1\S70\FrmMain.vb:634:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S70\FrmMain.vb:641:            iInAreaReturnCode = 0
+C:\Users\Administrator\Desktop\JX1\S70\FrmMain.vb:644:                iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S70\FrmMain.vb:652:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S70\FrmMain.vb:687:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\S20\FrmMain.vb:987:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S20\FrmMain.vb:994:            iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S20\FrmMain.vb:1001:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S20\FrmMain.vb:1036:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.vb:1834:    Private Sub btn_Folding_Click(sender As Object, e As EventArgs) Handles btn_Folding.Click
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:21:    Private FoldingMode As String
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:22:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:23:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:24:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:25:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:27:    Public Folding_check_Timer As Integer
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:344:            System.Diagnostics.Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.System) & "/OSK.exe")
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:391:        Folding_check_Timer = 0
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:541:            ' t39a folding 완료
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:669:                                FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:670:                                If FLAG_FOLDING_FWD_COUNT >= 3 Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:671:                                    FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:672:                                    FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:673:                                    FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:675:                                Panel_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 5 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:678:                                FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:679:                                If FLAG_FOLDING_BWD_COUNT >= 3 Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:680:                                    FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:681:                                    FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:682:                                    FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:684:                                PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 5 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:687:                                FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:688:                                FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:691:                                FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:692:                                FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:699:                                'FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWC` UNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:700:                                'If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:701:                                'PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:703:                                'FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:704:                                'If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:705:                                'Panel_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:725:    '                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:726:    '                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:728:    '                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:729:    '                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:731:    '                                Panel_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:732:    '                                PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:741:    '                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:742:    '                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:744:    '                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:745:    '                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:747:    '                                Panel_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3" & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:748:    '                                PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3" & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:798:                        If FlagFolding = True Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:799:                            FlagFolding = False
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1361:    Private Sub wFolding()
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1362:        FlagFolding = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1363:        FlagFoldingStart = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1364:        numFoldingState = 1
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1369:        'FlagFolding = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1474:    Private FlagFoldingStart As Boolean = False
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1475:    Private numFoldingState As Integer = 0
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1654:                wFolding()
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1697:                wFolding()
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1713:                If FLAG_FOLDING_BWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1715:                ElseIf FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1744:                wFolding()
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1794:                wFolding()
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1799:                If numFoldingState = 2 Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1801:                ElseIf numFoldingState = 3 Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1808:                    If FLAG_FOLDING_BWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:1810:                    ElseIf FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:2135:    Private FlagFolding As Boolean = False
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:2151:    Private Sub cbFolding_Click(sender As Object, e As EventArgs) Handles cbFolding.Click
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.vb:2153:        wFolding()
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:67:        Me.btn_Folding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:606:        Me.TableLayoutPanel1.Controls.Add(Me.btn_Folding, 10, 1)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:767:        'btn_Folding
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:769:        Me.btn_Folding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:772:        Me.btn_Folding.AutoSize = True
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:773:        Me.btn_Folding.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:774:        Me.btn_Folding.Location = New System.Drawing.Point(1340, 38)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:775:        Me.btn_Folding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:776:        Me.btn_Folding.Name = "btn_Folding"
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:777:        Me.TableLayoutPanel1.SetRowSpan(Me.btn_Folding, 5)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:778:        Me.btn_Folding.Size = New System.Drawing.Size(134, 171)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:779:        Me.btn_Folding.TabIndex = 116
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:780:        Me.btn_Folding.Text = "폴딩 동작"
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:781:        Me.btn_Folding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN NO Server\FrmMain.Designer.vb:2602:    Friend WithEvents btn_Folding As Button
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:136:        Me.cbFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1516:        'cbFolding
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1518:        Me.cbFolding.Location = New System.Drawing.Point(16, 519)
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1519:        Me.cbFolding.Name = "cbFolding"
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1520:        Me.cbFolding.Size = New System.Drawing.Size(158, 55)
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1521:        Me.cbFolding.TabIndex = 280
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1522:        Me.cbFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1523:        Me.cbFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:1531:        Me.Panel9.Controls.Add(Me.cbFolding)
+C:\Users\Administrator\Desktop\JX1\S140\FrmMain.Designer.vb:2276:    Friend WithEvents cbFolding As Button
+C:\Users\Administrator\Desktop\JX1\S10\FrmMain.vb:760:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S10\FrmMain.vb:767:            iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S10\FrmMain.vb:774:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S10\FrmMain.vb:805:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:17:    Private FlagSendFoldingSignal As Boolean
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:40:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:41:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:42:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:43:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:623:                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:624:                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:626:                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:627:                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:631:                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:632:                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:634:                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:635:                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3048:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3049:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3050:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3051:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3052:            FlagSendFoldingSignal = False
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3061:                If FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3644:                If CanStep = 2000 Then 'FOLDING
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3661:                    If FlagSendFoldingSignal = True Then
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3682:                    FlagSendFoldingSignal = True
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3757:    Private Sub btnFoldingSetting_Click(sender As Object, e As EventArgs) Handles btnFoldingSetting.Click
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3767:    Private Sub btnFolding_Click(sender As Object, e As EventArgs) Handles btnFolding.Click
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.vb:3772:                Serial_CAN.Write("t4A580800000000000000" & Chr(13)) 'LH Folding
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:43:        Me.btnFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:44:        Me.btnFoldingSetting = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:339:        Me.TableLayoutPanel1.Controls.Add(Me.btnFolding, 1, 0)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:340:        Me.TableLayoutPanel1.Controls.Add(Me.btnFoldingSetting, 2, 0)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:413:        'btnFolding
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:415:        Me.btnFolding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:418:        Me.btnFolding.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:419:        Me.btnFolding.Location = New System.Drawing.Point(116, 0)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:420:        Me.btnFolding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:421:        Me.btnFolding.Name = "btnFolding"
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:422:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFolding, 2)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:423:        Me.btnFolding.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:424:        Me.btnFolding.TabIndex = 61
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:425:        Me.btnFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:426:        Me.btnFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:428:        'btnFoldingSetting
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:430:        Me.btnFoldingSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:433:        Me.btnFoldingSetting.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:434:        Me.btnFoldingSetting.Location = New System.Drawing.Point(275, 0)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:435:        Me.btnFoldingSetting.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:436:        Me.btnFoldingSetting.Name = "btnFoldingSetting"
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:437:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFoldingSetting, 2)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:438:        Me.btnFoldingSetting.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:439:        Me.btnFoldingSetting.TabIndex = 60
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:440:        Me.btnFoldingSetting.Text = "폴딩세팅"
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:441:        Me.btnFoldingSetting.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:2499:    Friend WithEvents btnFolding As Button
+C:\Users\Administrator\Desktop\JX1\S150\FrmMain.Designer.vb:2500:    Friend WithEvents btnFoldingSetting As Button
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.vb:335:        Panel_Folding.Text = ""
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.vb:336:        Panel_Folding.BackColor = Color.White
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.vb:1175:                    Panel_Folding.Text = "OK"
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.vb:1176:                    Panel_Folding.BackColor = Color.Blue
+C:\Users\Administrator\Desktop\JX1\S60\FrmMain.vb:720:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S60\FrmMain.vb:727:            iInAreaReturnCode = 0
+C:\Users\Administrator\Desktop\JX1\S60\FrmMain.vb:730:                iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S60\FrmMain.vb:738:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S60\FrmMain.vb:773:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:144:        Me.Panel_Folding = New System.Windows.Forms.Label()
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1630:        Me.Panel5.Controls.Add(Me.Panel_Folding)
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1666:        'Panel_Folding
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1668:        Me.Panel_Folding.BackColor = System.Drawing.Color.Blue
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1669:        Me.Panel_Folding.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1670:        Me.Panel_Folding.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1671:        Me.Panel_Folding.ForeColor = System.Drawing.Color.White
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1672:        Me.Panel_Folding.Location = New System.Drawing.Point(390, 551)
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1673:        Me.Panel_Folding.Name = "Panel_Folding"
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1674:        Me.Panel_Folding.Size = New System.Drawing.Size(78, 62)
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1675:        Me.Panel_Folding.TabIndex = 277
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1676:        Me.Panel_Folding.Text = "OK"
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1677:        Me.Panel_Folding.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:1678:        Me.Panel_Folding.Visible = False
+C:\Users\Administrator\Desktop\JX1\S130\FrmMain.Designer.vb:2252:    Friend WithEvents Panel_Folding As System.Windows.Forms.Label
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:39:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:40:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:41:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:42:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1022:                            'FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1023:                            'FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1024:                            'FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1025:                            'FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1033:                                FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1034:                                If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1036:                                FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1037:                                If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1039:                            PANEL_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:1040:                            PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2609:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2610:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2611:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2612:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2624:            FLAG_FOLDING_BWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2625:            FLAG_FOLDING_FWD_COMP = False
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2626:            FLAG_FOLDING_FWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2627:            FLAG_FOLDING_BWD_COUNT = 0
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:2651:                If FLAG_FOLDING_FWD_COMP = True Then
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:3239:    Private Sub btnFoldingSetting_Click(sender As Object, e As EventArgs) Handles btnFoldingSetting.Click
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:3249:    Private Sub btnFolding_Click(sender As Object, e As EventArgs) Handles btnFolding.Click
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.vb:3254:                Serial_CAN.Write("t4A580800000000000000" & Chr(13)) 'LH Folding
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:43:        Me.btnFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:44:        Me.btnFoldingSetting = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:342:        Me.TableLayoutPanel1.Controls.Add(Me.btnFolding, 1, 0)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:343:        Me.TableLayoutPanel1.Controls.Add(Me.btnFoldingSetting, 2, 0)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:416:        'btnFolding
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:418:        Me.btnFolding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:421:        Me.btnFolding.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:422:        Me.btnFolding.Location = New System.Drawing.Point(116, 0)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:423:        Me.btnFolding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:424:        Me.btnFolding.Name = "btnFolding"
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:425:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFolding, 2)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:426:        Me.btnFolding.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:427:        Me.btnFolding.TabIndex = 61
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:428:        Me.btnFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:429:        Me.btnFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:431:        'btnFoldingSetting
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:433:        Me.btnFoldingSetting.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:436:        Me.btnFoldingSetting.Font = New System.Drawing.Font("맑은 고딕", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:437:        Me.btnFoldingSetting.Location = New System.Drawing.Point(275, 0)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:438:        Me.btnFoldingSetting.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:439:        Me.btnFoldingSetting.Name = "btnFoldingSetting"
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:440:        Me.TableLayoutPanel1.SetRowSpan(Me.btnFoldingSetting, 2)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:441:        Me.btnFoldingSetting.Size = New System.Drawing.Size(159, 71)
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:442:        Me.btnFoldingSetting.TabIndex = 60
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:443:        Me.btnFoldingSetting.Text = "폴딩세팅"
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:444:        Me.btnFoldingSetting.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:2487:    Friend WithEvents btnFolding As Button
+C:\Users\Administrator\Desktop\JX1\S150\S150\FrmMain.Designer.vb:2488:    Friend WithEvents btnFoldingSetting As Button
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.vb:1813:    Private Sub btn_Folding_Click(sender As Object, e As EventArgs) Handles btn_Folding.Click
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:498:        Dim iInAreaReturnCode As Integer
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:505:            iInAreaReturnCode = ACT_PLC1.ReadDeviceBlock(ReadAddress, ReadLength, InDeviceValue(0))
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:512:        If iInAreaReturnCode = 0 Then
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:543:            tError1 = Dec2Hex(iInAreaReturnCode)
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:690:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:691:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:692:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:693:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:730:                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:731:                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:733:                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:734:                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:739:                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:740:                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:742:                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S90\FrmMain.vb:743:                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.vb:1448:                If WorkMode = "FOLDING" Then
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.vb:1916:    Private Sub btn_Folding_Click(sender As Object, e As EventArgs) Handles btn_Folding.Click
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.vb:1962:    Private WorkMode = "FOLDING"
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:70:        Me.btn_Folding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:641:        Me.TableLayoutPanel1.Controls.Add(Me.btn_Folding, 10, 1)
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:802:        'btn_Folding
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:804:        Me.btn_Folding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:807:        Me.btn_Folding.AutoSize = True
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:808:        Me.btn_Folding.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:809:        Me.btn_Folding.Location = New System.Drawing.Point(530, 38)
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:810:        Me.btn_Folding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:811:        Me.btn_Folding.Name = "btn_Folding"
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:812:        Me.TableLayoutPanel1.SetRowSpan(Me.btn_Folding, 5)
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:813:        Me.btn_Folding.Size = New System.Drawing.Size(53, 171)
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:814:        Me.btn_Folding.TabIndex = 116
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:815:        Me.btn_Folding.Text = "폴딩 동작"
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:816:        Me.btn_Folding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\REWORK\FrmMain.Designer.vb:2408:    Friend WithEvents btn_Folding As Button
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:67:        Me.btn_Folding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:617:        Me.TableLayoutPanel1.Controls.Add(Me.btn_Folding, 10, 1)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:778:        'btn_Folding
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:780:        Me.btn_Folding.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:783:        Me.btn_Folding.AutoSize = True
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:784:        Me.btn_Folding.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:785:        Me.btn_Folding.Location = New System.Drawing.Point(1340, 38)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:786:        Me.btn_Folding.Margin = New System.Windows.Forms.Padding(0)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:787:        Me.btn_Folding.Name = "btn_Folding"
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:788:        Me.TableLayoutPanel1.SetRowSpan(Me.btn_Folding, 5)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:789:        Me.btn_Folding.Size = New System.Drawing.Size(134, 171)
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:790:        Me.btn_Folding.TabIndex = 116
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:791:        Me.btn_Folding.Text = "폴딩 동작"
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:792:        Me.btn_Folding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\REWORK SCAN\FrmMain.Designer.vb:2770:    Friend WithEvents btn_Folding As Button
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:139:        Me.cbFolding = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:198:        Me.TmrFolding = New System.Windows.Forms.Timer(Me.components)
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1553:        'cbFolding
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1555:        Me.cbFolding.Location = New System.Drawing.Point(16, 519)
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1556:        Me.cbFolding.Name = "cbFolding"
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1557:        Me.cbFolding.Size = New System.Drawing.Size(158, 55)
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1558:        Me.cbFolding.TabIndex = 280
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1559:        Me.cbFolding.Text = "폴딩"
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1560:        Me.cbFolding.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:1568:        Me.Panel9.Controls.Add(Me.cbFolding)
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:2221:        'TmrFolding
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:2387:    Friend WithEvents cbFolding As Button
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.Designer.vb:2443:    Friend WithEvents TmrFolding As Timer
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:22:    Private FLAG_FOLDING_FWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:23:    Private FLAG_FOLDING_BWD_COUNT As Integer
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:24:    Private FLAG_FOLDING_FWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:25:    Private FLAG_FOLDING_BWD_COMP As Boolean
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:27:    Public Folding_check_Timer As Integer
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:344:            System.Diagnostics.Process.Start(Environment.GetFolderPath(Environment.SpecialFolder.System) & "/OSK.exe")
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:391:        Folding_check_Timer = 0
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:541:            ' t39a folding 완료
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:639:    Private FoldingState As String = ""
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:646:        If FoldingState = "FWD" Then 'FWD
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:660:        ElseIf FoldingState = "BWD" Then 'BWD
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:674:        ElseIf FoldingState = "FWDING" Then 'FWD ing
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:688:        ElseIf FoldingState = "BWDING" Then 'BWD ing
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:702:        ElseIf FoldingState = "CANNOT MOVE" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:785:                                    If StateCount > 5 Then FoldingState = "FWD"
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:788:                                    If StateCount > 5 Then FoldingState = "BWD"
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:790:                                    FoldingState = "BWDING"
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:792:                                    FoldingState = "FWDING"
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:794:                                    FoldingState = "CANT FOLD"
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:796:                                    FoldingState = ""
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:836:    '                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:837:    '                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:839:    '                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:840:    '                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:842:    '                                Panel_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3 " & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:843:    '                                PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3 " & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:852:    '                                    FLAG_FOLDING_BWD_COUNT = FLAG_FOLDING_BWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:853:    '                                    If FLAG_FOLDING_BWD_COUNT >= 1 Then FLAG_FOLDING_BWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:855:    '                                    FLAG_FOLDING_FWD_COUNT = FLAG_FOLDING_FWD_COUNT + 1
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:856:    '                                    If FLAG_FOLDING_FWD_COUNT >= 1 Then FLAG_FOLDING_FWD_COMP = True
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:858:    '                                Panel_F_FWD.Text = FLAG_FOLDING_FWD_COUNT & " / 3" & FLAG_FOLDING_FWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:859:    '                                PANEL_F_BWD.Text = FLAG_FOLDING_BWD_COUNT & " / 3" & FLAG_FOLDING_BWD_COMP
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1383:    Private Sub wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1388:        'FlagFolding = True
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1560:                    FoldingState = ""
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1639:                    If FoldingState = "BWD" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1640:                        wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1643:                    ElseIf FoldingState = "FWD" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1644:                        wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1652:                If FoldingState <> "FWD" Then wStep = 8.2
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1656:                If FoldingState = "BWD" Then wStep = 8.3
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1661:                    If FoldingState <> "CANNOT MOVE" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1662:                        wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1670:                If FoldingState <> "BWD" Then '전진 이동중인가 확인
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1718:                If FoldingState = "" And CDbl(lblPowerCurrent.Text) < 0.5 Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1719:                    wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1726:                If FoldingState = "BWDING" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1732:                If FoldingState = "BWD" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1738:                If FoldingState <> "CANNOT MOVE" And CDbl(lblPowerCurrent.Text) < 0.5 Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1739:                    wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1746:                If FoldingState <> "BWD" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1757:                If FoldingState = "FWD" Then '전진 도착
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1784:                If FoldingState = "FWD" Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1791:                    wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1798:                If FoldingState <> "FWD" Then '후진 이동중인가 확인
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1846:                If FoldingState = "" And CDbl(lblPowerCurrent.Text) < 0.5 Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1847:                    wFolding() 'FoldingState = "FWDING" 전진중임 신호주면 전진해야함
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1854:                If FoldingState = "FWDING" Then '후진 이동중인가 확인
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1860:                If FoldingState = "FWD" Then '전진 완료
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1867:                    wFolding() '후진가자
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1874:                If FoldingState <> "FWD" Then '후진중
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:1880:                If FoldingState = "BWD" Then '후진완료
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2177:    Private FlagFolding As Boolean = False
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2193:    Private Sub cbFolding_Click(sender As Object, e As EventArgs) Handles cbFolding.Click
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2195:        wFolding()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2329:    Dim FlagFold As Boolean = False
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2385:        TmrFolding.Interval = 600
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2386:        TmrFolding.Start()
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2420:    Private Sub TmrFolding_Tick(sender As Object, e As EventArgs) Handles TmrFolding.Tick
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2422:        If FlagFold = True Then
+C:\Users\Administrator\Desktop\JX1\S140 NEW\FrmMain.vb:2432:            FlagFold = False

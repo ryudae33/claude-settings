@@ -19,3 +19,4 @@ Rules:
 - Always include source URLs
 - Mark outdated materials (3+ years) with caution
 - On search failure, retry with different keywords
+- Report each step taken and its result in detail before proceeding to the next step

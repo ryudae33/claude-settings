@@ -1,0 +1,345 @@
+20:Imports NationalInstruments.DAQmx
+87:        SetVoltage(0, 0)
+88:        SetVoltage(1, 0)
+96:    Public Sub DOON(ByVal num1 As Integer)
+112:    Public Sub DOOFF(ByVal num1 As Integer)
+249:        srcGraph1Noise.ClearData()
+250:        srcGraph1Amp.ClearData()
+254:        srcGraph2Noise.ClearData()
+255:        srcGraph2Flow.ClearData()
+259:        srcGraph3Noise.ClearData()
+260:        srcGraph3Flow.ClearData()
+261:        srcGraph3Amp.ClearData()
+266:        srcGraph4Noise.ClearData()
+267:        srcGraph4Flow.ClearData()
+268:        srcGraph4Amp.ClearData()
+273:        srcGraph5Noise.ClearData()
+274:        srcGraph5Flow.ClearData()
+344:        srcGraph1Amp.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt((_1TestTime * 6) + 8))
+345:        srcGraph1Noise.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt((_1TestTime * 6) + 8))
+347:        srcGraph2Flow.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_2TestTime + 1))
+348:        srcGraph2Noise.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_2TestTime + 1))
+350:        srcGraph3Flow.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_3TestTime + 1))
+351:        srcGraph3Noise.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_3TestTime + 1))
+352:        srcGraph3Amp.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_3TestTime + 1))
+354:        srcGraph4Flow.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_4TestTime + 1))
+355:        srcGraph4Noise.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_4TestTime + 1))
+356:        srcGraph4Amp.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_4TestTime + 1))
+358:        srcGraph5Flow.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_5TestTime + 1))
+359:        srcGraph5Noise.XAxes.Item(0).Range = New NationalInstruments.UI.Range(0, CInt(_5TestTime + 1))
+461:    Public Sub InsertDB(strMsg As String, tCOunt As String)
+677:    Private MeasureGraph As NationalInstruments.UI.WindowsForms.ScatterGraph
+797:                        DOOFF(i)
+799:                    DOON(23) ' 커넥터 후진
+805:                        DOOFF(23)
+806:                        DOON(19) '배관 후진
+807:                        DOON(21)
+813:                        DOOFF(19)
+814:                        DOOFF(21)
+815:                        DOON(17) '언클램프
+821:                        DOOFF(17)
+822:                        SetVoltage(0, 0)
+823:                        SetVoltage(1, 0)
+842:                        DOON(16) '클램프
+846:                            DOOFF(16)
+850:                        DOON(22) '커넥터 전진
+854:                            DOOFF(22)
+855:                            DOON(3) '제품고정하강
+881:                            If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+882:                            If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+886:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+887:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+890:                                DOON(10)
+895:                                DOOFF(10)
+906:                        'srcGraph1Amp.Cursors.Item(0).Visible = True
+907:                        'srcGraph1Amp.Cursors.Item(0).XPosition = TotalTime + 0.5
+908:                        'srcGraph1Noise.Cursors.Item(0).Visible = True
+909:                        'srcGraph1Noise.Cursors.Item(0).XPosition = TotalTime + 0.5
+930:                            If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+931:                            If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+935:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+936:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+939:                                DOON(10)
+944:                                DOOFF(10)
+955:                        'srcGraph1Amp.Cursors.Item(1).Visible = True
+956:                        'srcGraph1Amp.Cursors.Item(1).XPosition = TotalTime + 0.5
+957:                        'srcGraph1Noise.Cursors.Item(1).Visible = True
+958:                        'srcGraph1Noise.Cursors.Item(1).XPosition = TotalTime + 0.5
+978:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+979:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+980:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+981:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+984:                                DOON(10)
+989:                                DOOFF(10)
+1000:                        'srcGraph1Amp.Cursors.Item(2).Visible = True
+1001:                        'srcGraph1Amp.Cursors.Item(2).XPosition = TotalTime + 0.5
+1002:                        'srcGraph1Noise.Cursors.Item(2).Visible = True
+1003:                        'srcGraph1Noise.Cursors.Item(2).XPosition = TotalTime + 0.5
+1023:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1024:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1025:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1026:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1029:                                DOON(10)
+1034:                                DOOFF(10)
+1045:                        'srcGraph1Amp.Cursors.Item(3).Visible = True
+1046:                        'srcGraph1Amp.Cursors.Item(3).XPosition = TotalTime + 0.5
+1047:                        'srcGraph1Noise.Cursors.Item(3).Visible = True
+1048:                        'srcGraph1Noise.Cursors.Item(3).XPosition = TotalTime + 0.5
+1068:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1069:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1070:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1071:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1074:                                DOON(10)
+1079:                                DOOFF(10)
+1090:                        'srcGraph1Amp.Cursors.Item(4).Visible = True
+1091:                        'srcGraph1Amp.Cursors.Item(4).XPosition = TotalTime + 0.5
+1092:                        'srcGraph1Noise.Cursors.Item(4).Visible = True
+1093:                        'srcGraph1Noise.Cursors.Item(4).XPosition = TotalTime + 0.5
+1113:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1114:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1115:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1116:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1119:                                DOON(10)
+1124:                                DOOFF(10)
+1173:                        DOON(26) '좌측하강
+1174:                        DOON(25)
+1180:                            DOOFF(26)
+1181:                            DOOFF(25)
+1182:                            DOON(18)
+1183:                            DOON(20)
+1190:                            DOOFF(18)
+1191:                            DOOFF(20)
+1197:                        SetVoltage(0, _2Air)
+1198:                        DOON(10)
+1215:                            If srcGraph2Flow.IsHandleCreated = True Then srcGraph2Flow.Plots(0).PlotXYAppend(TotalTime, ValueFlow)
+1216:                            If srcGraph2Noise.IsHandleCreated = True Then srcGraph2Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1220:                            ArryAmp(ArryCount) = ValueAmp
+1221:                            ArryNoise(ArryCount) = ValueNoise
+1222:                            ArryFlow(ArryCount) = ValueFlow
+1227:                            SetVoltage(0, 0)
+1241:                            Range2Flow.XRange = New NationalInstruments.UI.Range(0.5, _2TestTime - 0.5)
+1242:                            Range2Flow.YRange = New NationalInstruments.UI.Range(_2FlowMin, _2FlowMax)
+1247:                            Range2Noise.XRange = New NationalInstruments.UI.Range(0.5, _2TestTime - 0.5)
+1248:                            Range2Noise.YRange = New NationalInstruments.UI.Range(_2NoiseMin, _2NoiseMax)
+1254:                        DOOFF(10)
+1265:                        SetVoltage(0, _3Air)
+1282:                            If srcGraph3Flow.IsHandleCreated = True Then srcGraph3Flow.Plots(0).PlotXYAppend(TotalTime, ValueFlow)
+1283:                            If srcGraph3Noise.IsHandleCreated = True Then srcGraph3Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1284:                            If srcGraph3Amp.IsHandleCreated = True Then srcGraph3Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1288:                            ArryAmp(ArryCount) = ValueAmp
+1289:                            ArryNoise(ArryCount) = ValueNoise
+1290:                            ArryFlow(ArryCount) = ValueFlow
+1296:                            SetVoltage(0, 0)
+1313:                            DOOFF(10)
+1321:                            Range3Flow.XRange = New NationalInstruments.UI.Range(0.5, _3TestTime - 0.5)
+1322:                            Range3Flow.YRange = New NationalInstruments.UI.Range(_3FlowMin, _3FlowMax)
+1327:                            Range3Noise.XRange = New NationalInstruments.UI.Range(0.5, _3TestTime - 0.5)
+1328:                            Range3Noise.YRange = New NationalInstruments.UI.Range(_3NoiseMin, _3NoiseMax)
+1333:                            Range3Amp.XRange = New NationalInstruments.UI.Range(0.5, _3TestTime - 0.5)
+1334:                            Range3Amp.YRange = New NationalInstruments.UI.Range(_3AmpMin, _3AmpMax)
+1345:                        'DOON(19) '우측 배관 후진
+1353:                        DOON(4) ' 우측삽입 후진
+1359:                            DOOFF(4)
+1360:                            DOON(8) '배관 A
+1367:                            DOOFF(8)
+1368:                            DOON(5)
+1375:                            DOOFF(5)
+1387:                        SetVoltage(1, _4Air)
+1395:                            DOON(11)
+1406:                            If srcGraph4Flow.IsHandleCreated = True Then srcGraph4Flow.Plots(0).PlotXYAppend(TotalTime, ValueFlow)
+1407:                            If srcGraph4Noise.IsHandleCreated = True Then srcGraph4Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1408:                            If srcGraph4Amp.IsHandleCreated = True Then srcGraph4Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1412:                            ArryAmp(ArryCount) = ValueAmp
+1413:                            ArryNoise(ArryCount) = ValueNoise
+1414:                            ArryFlow(ArryCount) = ValueFlow
+1420:                            SetVoltage(1, 0)
+1437:                            DOOFF(11)
+1445:                            Range4Flow.XRange = New NationalInstruments.UI.Range(0.5, _4TestTime - 0.5)
+1446:                            Range4Flow.YRange = New NationalInstruments.UI.Range(_4FlowMin, _4FlowMax)
+1451:                            Range4Noise.XRange = New NationalInstruments.UI.Range(0.5, _4TestTime - 0.5)
+1452:                            Range4Noise.YRange = New NationalInstruments.UI.Range(_4NoiseMin, _4NoiseMax)
+1457:                            Range4Amp.XRange = New NationalInstruments.UI.Range(0.5, _4TestTime - 0.5)
+1458:                            Range4Amp.YRange = New NationalInstruments.UI.Range(_4AmpMin, _4AmpMax)
+1476:                        SetVoltage(1, _5Air)
+1488:                            If srcGraph5Flow.IsHandleCreated = True Then srcGraph5Flow.Plots(0).PlotXYAppend(TotalTime, ValuePressure)
+1489:                            If srcGraph5Noise.IsHandleCreated = True Then srcGraph5Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1493:                            ArryAmp(ArryCount) = ValueAmp
+1494:                            ArryNoise(ArryCount) = ValueNoise
+1502:                            SetVoltage(1, 0)
+1526:                            Range5Flow.XRange = New NationalInstruments.UI.Range(0.5, _5TestTime - 0.5)
+1527:                            Range5Flow.YRange = New NationalInstruments.UI.Range(_5FlowMin, _5FlowMax)
+1532:                            Range5Noise.XRange = New NationalInstruments.UI.Range(0.5, _5TestTime - 0.5)
+1533:                            Range5Noise.YRange = New NationalInstruments.UI.Range(_5NoiseMin, _5NoiseMax)
+1547:                        DOON(19)
+1548:                        DOON(21)
+1554:                            DOOFF(19)
+1555:                            DOOFF(21)
+1556:                            DOON(23)
+1563:                            DOOFF(23)
+1564:                            DOON(17)
+1571:                            DOOFF(17)
+1572:                            SetVoltage(0, 0)
+1573:                            SetVoltage(1, 0)
+1603:                        DOOFF(i)
+1605:                    DOON(6)
+1611:                        DOOFF(6)
+1612:                        DOON(4)
+1613:                        DOON(2)
+1619:                        DOOFF(4)
+1620:                        DOOFF(2)
+1621:                        DOON(0)
+1622:                        DOON(6)
+1623:                        DOON(8)
+1629:                        DOOFF(0)
+1630:                        DOOFF(6)
+1631:                        DOOFF(8)
+1632:                        SetVoltage(0, 0)
+1633:                        SetVoltage(1, 0)
+1652:                        DOON(9) '배관 B
+1656:                            DOOFF(9)
+1660:                        DOON(1) '제품 고정 전진
+1664:                            DOOFF(1)
+1665:                            DOON(3) '제품고정하강
+1670:                            DOOFF(3)
+1671:                            DOON(7) '전원인가전진
+1676:                            DOOFF(7)
+1677:                            DOON(5) '우측삽입전진
+1682:                            DOOFF(5)
+1705:                            If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1706:                            If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1710:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1711:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1714:                                DOON(10)
+1719:                                DOOFF(10)
+1730:                        'srcGraph1Amp.Cursors.Item(0).Visible = True
+1731:                        'srcGraph1Amp.Cursors.Item(0).XPosition = TotalTime + 0.5
+1732:                        'srcGraph1Noise.Cursors.Item(0).Visible = True
+1733:                        'srcGraph1Noise.Cursors.Item(0).XPosition = TotalTime + 0.5
+1754:                            If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1755:                            If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1759:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1760:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1763:                                DOON(11)
+1768:                                DOOFF(11)
+1779:                        'srcGraph1Amp.Cursors.Item(1).Visible = True
+1780:                        'srcGraph1Amp.Cursors.Item(1).XPosition = TotalTime + 0.5
+1781:                        'srcGraph1Noise.Cursors.Item(1).Visible = True
+1782:                        'srcGraph1Noise.Cursors.Item(1).XPosition = TotalTime + 0.5
+1802:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1803:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1804:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1805:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1808:                                DOON(10)
+1813:                                DOOFF(10)
+1824:                        'srcGraph1Amp.Cursors.Item(2).Visible = True
+1825:                        'srcGraph1Amp.Cursors.Item(2).XPosition = TotalTime + 0.5
+1826:                        'srcGraph1Noise.Cursors.Item(2).Visible = True
+1827:                        'srcGraph1Noise.Cursors.Item(2).XPosition = TotalTime + 0.5
+1847:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1848:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1849:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1850:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1853:                                DOON(11)
+1858:                                DOOFF(11)
+1869:                        'srcGraph1Amp.Cursors.Item(3).Visible = True
+1870:                        'srcGraph1Amp.Cursors.Item(3).XPosition = TotalTime + 0.5
+1871:                        'srcGraph1Noise.Cursors.Item(3).Visible = True
+1872:                        'srcGraph1Noise.Cursors.Item(3).XPosition = TotalTime + 0.5
+1892:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1893:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1894:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1895:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1898:                                DOON(10)
+1903:                                DOOFF(10)
+1914:                        'srcGraph1Amp.Cursors.Item(4).Visible = True
+1915:                        'srcGraph1Amp.Cursors.Item(4).XPosition = TotalTime + 0.5
+1916:                        'srcGraph1Noise.Cursors.Item(4).Visible = True
+1917:                        'srcGraph1Noise.Cursors.Item(4).XPosition = TotalTime + 0.5
+1937:                        If srcGraph1Amp.IsHandleCreated = True Then srcGraph1Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+1938:                        If srcGraph1Noise.IsHandleCreated = True Then srcGraph1Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+1939:                        If TmpAmpMax < ValueAmp Then TmpAmpMax = ValueAmp
+1940:                        If TmpNoiseMax < ValueNoise Then TmpNoiseMax = ValueNoise
+1943:                                DOON(11)
+1948:                                DOOFF(11)
+1997:                        SetVoltage(0, _2Air)
+2014:                            If srcGraph2Flow.IsHandleCreated = True Then srcGraph2Flow.Plots(0).PlotXYAppend(TotalTime, ValueFlow)
+2015:                            If srcGraph2Noise.IsHandleCreated = True Then srcGraph2Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+2019:                            ArryAmp(ArryCount) = ValueAmp
+2020:                            ArryNoise(ArryCount) = ValueNoise
+2026:                            SetVoltage(0, 0)
+2040:                            Range2Flow.XRange = New NationalInstruments.UI.Range(0.5, _2TestTime - 0.5)
+2041:                            Range2Flow.YRange = New NationalInstruments.UI.Range(_2FlowMin, _2FlowMax)
+2046:                            Range2Noise.XRange = New NationalInstruments.UI.Range(0.5, _2TestTime - 0.5)
+2047:                            Range2Noise.YRange = New NationalInstruments.UI.Range(_2NoiseMin, _2NoiseMax)
+2063:                        SetVoltage(0, _3Air)
+2071:                            DOON(10)
+2081:                            If srcGraph3Flow.IsHandleCreated = True Then srcGraph3Flow.Plots(0).PlotXYAppend(TotalTime, ValueFlow)
+2082:                            If srcGraph3Noise.IsHandleCreated = True Then srcGraph3Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+2083:                            If srcGraph3Amp.IsHandleCreated = True Then srcGraph3Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+2087:                            ArryAmp(ArryCount) = ValueAmp
+2088:                            ArryNoise(ArryCount) = ValueNoise
+2089:                            ArryFlow(ArryCount) = ValueFlow
+2095:                            SetVoltage(0, 0)
+2112:                            DOOFF(10)
+2120:                            Range3Flow.XRange = New NationalInstruments.UI.Range(0.5, _3TestTime - 0.5)
+2121:                            Range3Flow.YRange = New NationalInstruments.UI.Range(_3FlowMin, _3FlowMax)
+2126:                            Range3Noise.XRange = New NationalInstruments.UI.Range(0.5, _3TestTime - 0.5)
+2127:                            Range3Noise.YRange = New NationalInstruments.UI.Range(_3NoiseMin, _3NoiseMax)
+2132:                            Range3Amp.XRange = New NationalInstruments.UI.Range(0.5, _3TestTime - 0.5)
+2133:                            Range3Amp.YRange = New NationalInstruments.UI.Range(_3AmpMin, _3AmpMax)
+2145:                        DOON(4) ' 우측삽입 후진
+2151:                            DOOFF(4)
+2152:                            DOON(8) '배관 A
+2159:                            DOOFF(8)
+2160:                            DOON(5)
+2167:                            DOOFF(5)
+2179:                        SetVoltage(1, _4Air)
+2187:                            DOON(11)
+2198:                            If srcGraph4Flow.IsHandleCreated = True Then srcGraph4Flow.Plots(0).PlotXYAppend(TotalTime, ValueFlow)
+2199:                            If srcGraph4Noise.IsHandleCreated = True Then srcGraph4Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+2200:                            If srcGraph4Amp.IsHandleCreated = True Then srcGraph4Amp.Plots(0).PlotXYAppend(TotalTime, ValueAmp)
+2204:                            ArryAmp(ArryCount) = ValueAmp
+2205:                            ArryNoise(ArryCount) = ValueNoise
+2206:                            ArryFlow(ArryCount) = ValueFlow
+2212:                            SetVoltage(1, 0)
+2229:                            DOOFF(11)
+2237:                            Range4Flow.XRange = New NationalInstruments.UI.Range(0.5, _4TestTime - 0.5)
+2238:                            Range4Flow.YRange = New NationalInstruments.UI.Range(_4FlowMin, _4FlowMax)
+2243:                            Range4Noise.XRange = New NationalInstruments.UI.Range(0.5, _4TestTime - 0.5)
+2244:                            Range4Noise.YRange = New NationalInstruments.UI.Range(_4NoiseMin, _4NoiseMax)
+2249:                            Range4Amp.XRange = New NationalInstruments.UI.Range(0.5, _4TestTime - 0.5)
+2250:                            Range4Amp.YRange = New NationalInstruments.UI.Range(_4AmpMin, _4AmpMax)
+2268:                        SetVoltage(1, _5Air)
+2280:                            If srcGraph5Flow.IsHandleCreated = True Then srcGraph5Flow.Plots(0).PlotXYAppend(TotalTime, ValuePressure)
+2281:                            If srcGraph5Noise.IsHandleCreated = True Then srcGraph5Noise.Plots(0).PlotXYAppend(TotalTime, ValueNoise)
+2285:                            ArryAmp(ArryCount) = ValueAmp
+2286:                            ArryNoise(ArryCount) = ValueNoise
+2294:                            SetVoltage(1, 0)
+2318:                            Range5Flow.XRange = New NationalInstruments.UI.Range(0.5, _5TestTime - 0.5)
+2319:                            Range5Flow.YRange = New NationalInstruments.UI.Range(_5FlowMin, _5FlowMax)
+2324:                            Range5Noise.XRange = New NationalInstruments.UI.Range(0.5, _5TestTime - 0.5)
+2325:                            Range5Noise.YRange = New NationalInstruments.UI.Range(_5NoiseMin, _5NoiseMax)
+2339:                        DOON(6)
+2340:                        DOON(4)
+2346:                            DOOFF(6)
+2347:                            DOOFF(4)
+2348:                            DOON(2)
+2355:                            DOOFF(2)
+2356:                            DOON(0)
+2363:                            DOOFF(0)
+2364:                            SetVoltage(0, 0)
+2365:                            SetVoltage(1, 0)
+2429:        lbVOlt.Text = ValueVolt & " " & "V"
+2430:        lbAMP.Text = ValueAmp & " " & "A"
+2435:    Public ValueVolt As Double
+2436:    Public ValueAmp As Double
+2443:                    ValueVolt = CDbl(Format(CDbl(Mid(Buffer, 1, Len(Buffer) - 1)), "#0.0#"))
+2446:                    ValueAmp = CDbl(Format(CDbl(Mid(Buffer, 1, Len(Buffer) - 1)), "#0.0#"))
+2467:    Public Sub SetVoltage(Channel As Integer, Val As Double)
+2503:    Private ValueNoise As Double
+2504:    Private ValueFlow As Double
+2544:        ValueNoise = CDbl(Format((Ch1AvrSUm / Ch1AvrCOunt * 100), "#0.0#"))
+2551:        ValueFlow = (CDbl(Format((Ch2AvrSUm / Ch2AvrCOunt), "#0.0#")) * 20)
+2561:        lbNoise.text = CStr(ValueNoise) & " " & "dB"
+2562:        lbPressure.Text = CStr(ValuePressure) & " " & "KPa"
+2563:        lbFlow.Text = CStr(ValueFlow) & " " & "l/min"

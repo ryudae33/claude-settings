@@ -1,0 +1,1998 @@
+     1→Imports System.Runtime.InteropServices
+     2→Imports System.Text
+     3→Imports System.Net
+     4→Imports System.IO
+     5→Imports System.Threading
+     6→Imports System.Media
+     7→Imports System
+     8→Imports System.Collections.Generic
+     9→Imports System.ComponentModel
+    10→Imports System.Data
+    11→Imports System.Drawing
+    12→Imports System.Windows.Forms
+    13→Imports System.Reflection
+    14→
+    15→Public Class FrmMain
+    16→
+    17→    Private ANGLE() As Double
+    18→    Private LASER() As Double
+    19→
+    20→    Private RealAmp As Double
+    21→    Private RealLAserDistance As Double
+    22→
+    23→    Declare Function Wow64DisableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    24→    Declare Function Wow64EnableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    25→    Private osk As String = "C:\Windows\System32\osk.exe"
+    26→
+    27→    Private OPTION_LHRH As String
+    28→    Private OPTION_RECL As String
+    29→    Private OPTION_SAB As String
+    30→    Private OPTION_VENT As String
+    31→    Private OPTION_LSUPT As String
+    32→    Private OPTION_HARNESS_TARGET As String
+    33→
+    34→    Private D_OutString As String
+    35→    Private rStep As Double
+    36→    Private rCount As Double
+    37→    Private StartTime As String
+    38→    Private EndTime As String
+    39→    Private wStep As Double
+    40→    Private wCount As Double
+    41→    Private TmrCOunt As Double
+    42→    Public D_Value(0 To 48) As Integer
+    43→    Private IN_LABEL(48) As Label
+    44→    Public OUT_LABEL(24) As Label
+    45→
+    46→    Private eStep As Double
+    47→
+    48→    Private Trd1 As Thread
+    49→    Private Trd2 As Thread
+    50→    Private Trd3 As Thread
+    51→    Private RecvString As New System.Text.StringBuilder()
+    52→
+    53→    Private ArryMaxSize As Integer = 100000
+    54→    Private ArryCount As Int64
+    55→    Private ArryAmp(ArryMaxSize) As Double
+    56→    Private ArryTime(ArryMaxSize) As Double
+    57→
+    58→    Private Timer As New HiResTimer()
+    59→
+    60→    Private DOutString As String
+    61→
+    62→    Private Player As New SoundPlayer
+    63→
+    64→    Private CounterAtStart As Int64 = 0
+    65→    Private CounterAtMiddle As Int64 = 0
+    66→    Private CounterAtNow As Int64 = 0
+    67→
+    68→    Private TotalTime As Double = 0
+    69→    Private ErrCount As Double
+    70→
+    71→    Private TmpAmpMAx As Double
+    72→    Private CalcCount As Double
+    73→    Private Sub NG()
+    74→
+    75→        Me.Player.SoundLocation = System.AppDomain.CurrentDomain.BaseDirectory & "\SOUND\NG.wav"
+    76→        Me.Player.Play()
+    77→
+    78→    End Sub
+    79→
+    80→    Private Sub DingDOng()
+    81→
+    82→        Me.Player.SoundLocation = System.AppDomain.CurrentDomain.BaseDirectory & "\SOUND\DINGDONG.wav"
+    83→        Me.Player.Play()
+    84→
+    85→    End Sub
+    86→
+    87→
+    88→    'Private Function StrPtr(ByVal x As String) As Integer
+    89→    '    Return VarPtr(x)
+    90→    'End Function
+    91→
+    92→    'Private Function VarPtr(ByVal obj As Object) As Integer
+    93→    '    ' Obtain a pinned handle to the object
+    94→    '    Dim handle As GCHandle = GCHandle.Alloc(obj, GCHandleType.Pinned)
+    95→    '    Dim pointer As Integer = handle.AddrOfPinnedObject.ToInt32
+    96→
+    97→    '    ' Free the allocated handle. At this point the GC can move the object in memory, this is 
+    98→    '    ' why this function does not exist in .NET. If you were to use this pointer as a destination 
+    99→    '    ' for memcopy for example, you could overwrite unintended memory, which would crash the 
+   100→    '    ' application or cause unexpected behavior. For this function to work you would need to
+   101→    '    ' maintain the handle until after you are finished using it.
+   102→    '    handle.Free()
+   103→
+   104→    '    Return pointer
+   105→    'End Function
+   106→
+   107→    Private Sub Label_Nameing()
+   108→
+   109→    End Sub
+   110→
+   111→    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+   112→        Frmsearch.Show()
+   113→    End Sub
+   114→
+   115→    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+   116→
+   117→        FrmPort.Show()
+   118→        'FormPassword.Show()
+   119→        'CheckFormPort = True
+   120→
+   121→    End Sub
+   122→
+   123→    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+   124→        End
+   125→    End Sub
+   126→
+   127→    Private Sub LoadPicture(ByVal picTarget As PictureBox, ByVal picName As String)
+   128→
+   129→        Try
+   130→            picTarget.Image = System.Drawing.Image.FromFile(System.AppDomain.CurrentDomain.BaseDirectory & "\Image\" & picName & ".png")
+   131→        Catch ex As Exception
+   132→        End Try
+   133→
+   134→        Try
+   135→            picTarget.Image = System.Drawing.Image.FromFile(System.AppDomain.CurrentDomain.BaseDirectory & "\Image\" & picName & ".jpg")
+   136→        Catch ex As Exception
+   137→        End Try
+   138→
+   139→        'LoadPicture(Picture_Main, "ASSEMBLE\NHGT")
+   140→
+   141→    End Sub
+   142→
+   143→    Private Sub Control2Arry()
+   144→
+   145→        IN_LABEL(0) = P_IN_00
+   146→        IN_LABEL(1) = P_IN_01
+   147→        IN_LABEL(2) = P_IN_02
+   148→        IN_LABEL(3) = P_IN_03
+   149→        IN_LABEL(4) = P_IN_04
+   150→        IN_LABEL(5) = P_IN_05
+   151→        IN_LABEL(6) = P_IN_06
+   152→        IN_LABEL(7) = P_IN_07
+   153→
+   154→        IN_LABEL(8) = P_IN_08
+   155→        IN_LABEL(9) = P_IN_09
+   156→        IN_LABEL(10) = P_IN_10
+   157→        IN_LABEL(11) = P_IN_11
+   158→        IN_LABEL(12) = P_IN_12
+   159→        IN_LABEL(13) = P_IN_13
+   160→        IN_LABEL(14) = P_IN_14
+   161→        IN_LABEL(15) = P_IN_15
+   162→
+   163→        IN_LABEL(16) = P_IN_16
+   164→        IN_LABEL(17) = P_IN_17
+   165→        IN_LABEL(18) = P_IN_18
+   166→        IN_LABEL(19) = P_IN_19
+   167→        IN_LABEL(20) = P_IN_20
+   168→        IN_LABEL(21) = P_IN_21
+   169→        IN_LABEL(22) = P_IN_22
+   170→        IN_LABEL(23) = P_IN_23
+   171→
+   172→        IN_LABEL(24) = P_IN_24
+   173→        IN_LABEL(25) = P_IN_25
+   174→        IN_LABEL(26) = P_IN_26
+   175→        IN_LABEL(27) = P_IN_27
+   176→        IN_LABEL(28) = P_IN_28
+   177→        IN_LABEL(29) = P_IN_29
+   178→        IN_LABEL(30) = P_IN_30
+   179→        IN_LABEL(31) = P_IN_31
+   180→
+   181→        IN_LABEL(32) = P_IN_32
+   182→        IN_LABEL(33) = P_IN_33
+   183→        IN_LABEL(34) = P_IN_34
+   184→        IN_LABEL(35) = P_IN_35
+   185→        IN_LABEL(36) = P_IN_36
+   186→        IN_LABEL(37) = P_IN_37
+   187→        IN_LABEL(38) = P_IN_38
+   188→        IN_LABEL(39) = P_IN_39
+   189→
+   190→        IN_LABEL(40) = P_IN_40
+   191→        IN_LABEL(41) = P_IN_41
+   192→        IN_LABEL(42) = P_IN_42
+   193→        IN_LABEL(43) = P_IN_43
+   194→        IN_LABEL(44) = P_IN_44
+   195→        IN_LABEL(45) = P_IN_45
+   196→        IN_LABEL(46) = P_IN_46
+   197→        IN_LABEL(47) = P_IN_47
+   198→
+   199→        OUT_LABEL(0) = P_OUT_00
+   200→        OUT_LABEL(1) = P_OUT_01
+   201→        OUT_LABEL(2) = P_OUT_02
+   202→        OUT_LABEL(3) = P_OUT_03
+   203→        OUT_LABEL(4) = P_OUT_04
+   204→        OUT_LABEL(5) = P_OUT_05
+   205→        OUT_LABEL(6) = P_OUT_06
+   206→        OUT_LABEL(7) = P_OUT_07
+   207→
+   208→        OUT_LABEL(8) = P_OUT_08
+   209→        OUT_LABEL(9) = P_OUT_09
+   210→        OUT_LABEL(10) = P_OUT_10
+   211→        OUT_LABEL(11) = P_OUT_11
+   212→        OUT_LABEL(12) = P_OUT_12
+   213→        OUT_LABEL(13) = P_OUT_13
+   214→        OUT_LABEL(14) = P_OUT_14
+   215→        OUT_LABEL(15) = P_OUT_15
+   216→
+   217→        OUT_LABEL(16) = P_OUT_16
+   218→        OUT_LABEL(17) = P_OUT_17
+   219→        OUT_LABEL(18) = P_OUT_18
+   220→        OUT_LABEL(19) = P_OUT_19
+   221→        OUT_LABEL(20) = P_OUT_20
+   222→        OUT_LABEL(21) = P_OUT_21
+   223→        OUT_LABEL(22) = P_OUT_22
+   224→        OUT_LABEL(23) = P_OUT_23
+   225→
+   226→    End Sub
+   227→
+   228→    Private Sub Init_Grid(ByVal GridName As FlexCell.Grid)
+   229→
+   230→        Dim i As Integer
+   231→        With GridName
+   232→
+   233→            'GridName.Visible = False
+   234→            .AutoRedraw = False
+   235→            .AllowUserPaste = FlexCell.ClipboardDataEnum.Text
+   236→            .AllowUserResizing = FlexCell.ResizeEnum.Columns
+   237→            .AllowUserSort = True
+   238→            .DisplayFocusRect = False
+   239→            .ExtendLastCol = True
+   240→            .SelectionMode = FlexCell.SelectionModeEnum.ByCell
+   241→            .SortIndicatorColor = Color.White
+   242→            .BoldFixedCell = False
+   243→            '.AllowUserResizing = FlexCell.ResizeEnum.None
+   244→
+   245→            .Cols = 4
+   246→
+   247→            .Column(0).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   248→            .Column(1).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   249→            .Column(2).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   250→            .Column(3).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   251→
+   252→            .Column(0).Width = 0
+   253→            .Column(1).Width = 60
+   254→            .Column(2).Width = 80
+   255→            .Column(3).Width = 100
+   256→
+   257→            .Rows = 1
+   258→            .DefaultRowHeight = 0
+   259→
+   260→            For i = 0 To .Rows - 1
+   261→                .Cell(i, 0).Text = ""
+   262→                .Cell(i, 1).Text = "No."
+   263→                .Cell(i, 2).Text = "I/O"
+   264→                .Cell(i, 3).Text = "Dec."
+   265→            Next
+   266→
+   267→            .AutoRedraw = True
+   268→            .Refresh()
+   269→
+   270→        End With
+   271→
+   272→    End Sub
+   273→
+   274→    Private Sub InitTest()
+   275→
+   276→        GraphFwdAmp.ClearData()
+   277→        GraphBwdAmp.ClearData()
+   278→        GraphLsuptFwdAmp.ClearData()
+   279→        GraphLsuptBwdAmp.ClearData()
+   280→
+   281→        lbFWD_SPEED_MIN.Text = FWD_SPEED_MIN
+   282→        lbFWD_SPEED_MAX.Text = FWD_SPEED_MAX
+   283→        lbBWD_SPEED_MIN.Text = BWD_SPEED_MIN
+   284→        lbBWD_SPEED_MAX.Text = BWD_SPEED_MAX
+   285→
+   286→        lbFWD_AMP_MAX.Text = FWD_AMP_MAX
+   287→        lbFWD_AMP_MIN.Text = FWD_AMP_MIN
+   288→        lbBWD_AMP_MAX.Text = BWD_AMP_MAX
+   289→        lbBWD_AMP_MIN.Text = BWD_AMP_MIN
+   290→
+   291→        lbFWD_ANGLE_MIN.Text = FWD_ANGLE_MIN
+   292→        lbFWD_ANGLE_MAX.Text = FWD_ANGLE_MAX
+   293→        lbBWD_ANGLE_MIN.Text = BWD_ANGLE_MIN
+   294→        lbBWD_ANGLE_MAX.Text = BWD_ANGLE_MAX
+   295→        lbEND_ANGLE_MIN.Text = END_ANGLEDEC_MIN
+   296→        lbEND_ANGLE_MAX.Text = END_ANGLEDEC_MAX
+   297→
+   298→        lbFWD_AMP_VALUE.Text = ""
+   299→        lbBWD_AMP_VALUE.Text = ""
+   300→        lbFWD_ANGLE_VALUE.Text = ""
+   301→        lbBWD_ANGLE_VALUE.Text = ""
+   302→        lbEND_ANGLE_VALUE.Text = ""
+   303→        lbFWD_SPEED_VALUE.Text = ""
+   304→        lbBWD_SPEED_VALUE.Text = ""
+   305→
+   306→        lbFWD_AMP_VALUE.BackColor = Color.White
+   307→        lbBWD_AMP_VALUE.BackColor = Color.White
+   308→        lbFWD_ANGLE_VALUE.BackColor = Color.White
+   309→        lbBWD_ANGLE_VALUE.BackColor = Color.White
+   310→        lbEND_ANGLE_VALUE.BackColor = Color.White
+   311→        lbFWD_SPEED_VALUE.BackColor = Color.White
+   312→        lbBWD_SPEED_VALUE.BackColor = Color.White
+   313→
+   314→        lbLsuptFWD_AMP_VALUE.Text = ""
+   315→        lbLsuptBWD_AMP_VALUE.Text = ""
+   316→        lbLsuptFWD_AMP_VALUE.BackColor = Color.White
+   317→        lbLsuptBWD_AMP_VALUE.BackColor = Color.White
+   318→
+   319→        lbLsuptFWD_AMP_MIN.Text = LSUPT_FWD_AMP_MIN
+   320→        lbLsuptFWD_AMP_MAX.Text = LSUPT_FWD_AMP_MAX
+   321→
+   322→        lbLsuptBWD_AMP_MAX.Text = LSUPT_BWD_AMP_MIN
+   323→        lbLsuptBWD_AMP_MAX.Text = LSUPT_BWD_AMP_MAX
+   324→
+   325→        If OPTION_LSUPT = "0" Then
+   326→            lbLsuptBWD_AMP_VALUE.Text = "NA"
+   327→            lbLsuptBWD_AMP_VALUE.BackColor = Color.Blue
+   328→            lbLsuptFWD_AMP_VALUE.Text = "NA"
+   329→            lbLsuptFWD_AMP_VALUE.BackColor = Color.Blue
+   330→        End If
+   331→
+   332→    End Sub
+   333→
+   334→    Private Sub Init_Control()
+   335→
+   336→        GraphFwdAmp.ClearData()
+   337→        GraphBwdAmp.ClearData()
+   338→        GraphLsuptFwdAmp.ClearData()
+   339→        GraphLsuptBwdAmp.ClearData()
+   340→
+   341→        srcMnlAct_Dec.Text = ""
+   342→        srcMnlAct_Dec.BackColor = Color.White
+   343→        srcMnlAct_Target.Text = ""
+   344→
+   345→        lbFWD_SPEED_MIN.Text = FWD_SPEED_MIN
+   346→        lbFWD_SPEED_MAX.Text = FWD_SPEED_MAX
+   347→        lbBWD_SPEED_MIN.Text = BWD_SPEED_MIN
+   348→        lbBWD_SPEED_MAX.Text = BWD_SPEED_MAX
+   349→
+   350→        lbFWD_AMP_MAX.Text = FWD_AMP_MAX
+   351→        lbFWD_AMP_MIN.Text = FWD_AMP_MIN
+   352→        lbBWD_AMP_MAX.Text = BWD_AMP_MAX
+   353→        lbBWD_AMP_MIN.Text = BWD_AMP_MIN
+   354→
+   355→        lbFWD_ANGLE_MIN.Text = FWD_ANGLE_MIN
+   356→        lbFWD_ANGLE_MAX.Text = FWD_ANGLE_MAX
+   357→        lbBWD_ANGLE_MIN.Text = BWD_ANGLE_MIN
+   358→        lbBWD_ANGLE_MAX.Text = BWD_ANGLE_MAX
+   359→        lbEND_ANGLE_MIN.Text = END_ANGLEDEC_MIN
+   360→        lbEND_ANGLE_MAX.Text = END_ANGLEDEC_MAX
+   361→
+   362→        lbFWD_AMP_VALUE.Text = ""
+   363→        lbBWD_AMP_VALUE.Text = ""
+   364→        lbFWD_ANGLE_VALUE.Text = ""
+   365→        lbBWD_ANGLE_VALUE.Text = ""
+   366→        lbEND_ANGLE_VALUE.Text = ""
+   367→        lbFWD_SPEED_VALUE.Text = ""
+   368→        lbBWD_SPEED_VALUE.Text = ""
+   369→
+   370→        lbFWD_AMP_VALUE.BackColor = Color.White
+   371→        lbBWD_AMP_VALUE.BackColor = Color.White
+   372→        lbFWD_ANGLE_VALUE.BackColor = Color.White
+   373→        lbBWD_ANGLE_VALUE.BackColor = Color.White
+   374→        lbEND_ANGLE_VALUE.BackColor = Color.White
+   375→        lbFWD_SPEED_VALUE.BackColor = Color.White
+   376→        lbBWD_SPEED_VALUE.BackColor = Color.White
+   377→
+   378→        lbLsuptFWD_AMP_VALUE.Text = ""
+   379→        lbLsuptBWD_AMP_VALUE.Text = ""
+   380→        lbLsuptFWD_AMP_VALUE.BackColor = Color.White
+   381→        lbLsuptBWD_AMP_VALUE.BackColor = Color.White
+   382→
+   383→        srcHArness.Text = ""
+   384→        srcHArness_DEc.Text = ""
+   385→        srcHArness_DEc.BackColor = Color.White
+   386→        srcHArness_Target.Text = ""
+   387→
+   388→        srcTotal_Decision.Text = ""
+   389→        srcTotal_Decision.BackColor = Color.White
+   390→
+   391→        LoadPicture(srcPicturebox1, "NON")
+   392→        srcPartNo.Text = ""
+   393→        srcPartName.Text = ""
+   394→        srcSerialNumber.Text = ""
+   395→        label_Message.Text = ""
+   396→
+   397→        srcLH.BackColor = Color.White
+   398→        srcRH.BackColor = Color.White
+   399→        srcMNL.BackColor = Color.White
+   400→        srcPWR.BackColor = Color.White
+   401→        srcSAB.BackColor = Color.White
+   402→        srcVENT.BackColor = Color.White
+   403→
+   404→    End Sub
+   405→
+   406→    Sub SerialOpen()
+   407→
+   408→
+   409→        Try
+   410→            If Serial_Module.IsOpen() = True Then
+   411→                Serial_Module.Close()
+   412→            End If
+   413→            Serial_Module.PortName = PortNumber_MODULE
+   414→            Serial_Module.BaudRate = 115200
+   415→            Serial_Module.DataBits = 8
+   416→            Serial_Module.Open()
+   417→
+   418→        Catch ex As Exception
+   419→
+   420→            MsgBox("Serial Open Module Fail " & PortNumber_MODULE)
+   421→        End Try
+   422→
+   423→        Try
+   424→            If Serial_Printer.IsOpen() = True Then
+   425→                Serial_Printer.Close()
+   426→            End If
+   427→            Serial_Printer.PortName = PortNumber_PRINTER
+   428→            Serial_Printer.BaudRate = 9600
+   429→            Serial_Printer.DataBits = 8
+   430→            Serial_Printer.Open()
+   431→
+   432→        Catch ex As Exception
+   433→
+   434→            MsgBox("Serial Open Printer  Fail " & PortNumber_PRINTER)
+   435→        End Try
+   436→
+   437→        Try
+   438→            If Serial_Scanner.IsOpen() = True Then
+   439→                Serial_Scanner.Close()
+   440→            End If
+   441→            Serial_Scanner.PortName = PortNumber_SCANNER
+   442→            Serial_Scanner.BaudRate = 9600
+   443→            Serial_Scanner.DataBits = 8
+   444→            Serial_Scanner.Open()
+   445→
+   446→        Catch ex As Exception
+   447→
+   448→            MsgBox("Serial Open Scanner Fail " & PortNumber_SCANNER)
+   449→        End Try
+   450→
+   451→    End Sub
+   452→
+   453→    Private Function CheckCompleted(strSerial As String) As Boolean
+   454→
+   455→        Dim tmp As Boolean = False
+   456→
+   457→        Connection_Open()
+   458→
+   459→        Dim Rs As New ADODB.Recordset
+   460→
+   461→        Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   462→        Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   463→        Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+   464→
+   465→        Rs.Open("SELECT * FROM Table_Main_PWR WHERE Line_Serial = '" & strSerial & "'", Sql_Connect)
+   466→
+   467→        If Rs.RecordCount = 1 Then
+   468→
+   469→            Try
+   470→                If Trim(Rs.Fields("JA04_DECISION").Value) = "OK" Then
+   471→                    tmp = True
+   472→                Else
+   473→                    tmp = False
+   474→                End If
+   475→            Catch ex As Exception
+   476→                tmp = False
+   477→            End Try
+   478→
+   479→        End If
+   480→
+   481→        Rs.ActiveConnection = Nothing
+   482→        Rs.Close()
+   483→
+   484→        Connection_Close()
+   485→
+   486→        Return tmp
+   487→
+   488→    End Function
+   489→    Private Sub Serial_Scanner_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles Serial_Scanner.DataReceived
+   490→
+   491→        Dim Incoming As String
+   492→        Dim ScanData As String
+   493→
+   494→        Incoming = Serial_Scanner.ReadLine()
+   495→        ScanData = Mid$(Incoming, 1, Len(Incoming) - 1)
+   496→        Label_Scanner.Text = ScanData
+   497→
+   498→        Serial_Scanner.DiscardInBuffer()
+   499→
+   500→        If wStep = 1 Then
+   501→
+   502→            If Len(Label_Scanner.Text) = 23 Then
+   503→                Init_Control()
+   504→                Load_Part(Mid(Label_Scanner.Text, 13, 11))
+   505→                wStep = 2
+   506→            ElseIf Len(Label_Scanner.Text) = 26 Then
+   507→                Init_Control()
+   508→                Load_Part(Mid(Label_Scanner.Text, 13, 14))
+   509→                wStep = 2
+   510→            ElseIf Len(Label_Scanner.Text) = 27 Then
+   511→                Init_Control()
+   512→                Load_Part(Mid(Label_Scanner.Text, 13, 15))
+   513→                wStep = 2
+   514→            End If
+   515→
+   516→        ElseIf wStep = 6.1 Then
+   517→
+   518→            If InStr(1, ScanData, srcHArness_Target.Text) <> 0 Then
+   519→                srcHArness.Text = ScanData
+   520→                srcHArness_DEc.Text = "OK"
+   521→                srcHArness_DEc.BackColor = Color.Blue
+   522→                DingDOng()
+   523→            Else
+   524→                srcHArness.Text = ScanData
+   525→                srcHArness_DEc.Text = "NG"
+   526→                srcHArness_DEc.BackColor = Color.Red
+   527→                NG()
+   528→            End If
+   529→            'NU_FR SEAT BACK LH_X88570S6610_1908280683
+   530→
+   531→        Else
+   532→
+   533→            label_Message.Text = "Reset Need"
+   534→
+   535→        End If
+   536→
+   537→    End Sub
+   538→
+   539→    Private Sub Load_Part(ByVal str As String)
+   540→
+   541→        Connection_Open_MDB()
+   542→
+   543→        Dim Rs As New ADODB.Recordset
+   544→
+   545→        Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   546→        Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   547→        Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+   548→
+   549→        Rs.Open("SELECT * FROM Table_Part WHERE Part_No = '" & str & "'", Mdb_Connect)
+   550→
+   551→        If Rs.RecordCount = 1 Then
+   552→
+   553→            StartTime = Format(Now, "HH:mm:ss")
+   554→            srcPartNo.Text = Trim(Rs.Fields("Part_No").Value)
+   555→            srcPartName.Text = Trim(Rs.Fields("Part_Name").Value)
+   556→            srcSerialNumber.Text = Label_Scanner.Text
+   557→            LoadPicture(srcPicturebox1, str)
+   558→
+   559→            OPTION_LHRH = Trim(Rs.Fields("OPTION_LHRH").Value)
+   560→            OPTION_RECL = Trim(Rs.Fields("OPTION_RECL").Value)
+   561→            OPTION_LSUPT = Trim(Rs.Fields("OPTION_LSUPT").Value)
+   562→            OPTION_SAB = Trim(Rs.Fields("OPTION_SAB").Value)
+   563→            'OPTION_VENT = Trim(Rs.Fields("OPTION_VENT").Value)
+   564→
+   565→            If OPTION_LSUPT = "0" Then
+   566→                lbLsuptBWD_AMP_VALUE.Text = "NA"
+   567→                lbLsuptBWD_AMP_VALUE.BackColor = Color.Blue
+   568→                lbLsuptFWD_AMP_VALUE.Text = "NA"
+   569→                lbLsuptFWD_AMP_VALUE.BackColor = Color.Blue
+   570→            End If
+   571→
+   572→            If OPTION_LHRH = "LH" Then
+   573→                srcLH.BackColor = Color.Black
+   574→                srcRH.BackColor = Color.White
+   575→            ElseIf OPTION_LHRH = "RH" Then
+   576→                srcRH.BackColor = Color.Black
+   577→                srcLH.BackColor = Color.White
+   578→            End If
+   579→
+   580→            If OPTION_RECL = "0" Then 'MNL
+   581→                srcMNL.BackColor = Color.Black
+   582→                srcPWR.BackColor = Color.White
+   583→                srcHArness.Text = "NA"
+   584→                srcHArness_DEc.Text = "NA"
+   585→                srcHArness_Target.Text = "NA"
+   586→            Else 'PWR
+   587→                srcMNL.BackColor = Color.White
+   588→                srcPWR.BackColor = Color.Black
+   589→                srcHArness.Text = ""
+   590→                srcHArness_DEc.Text = ""
+   591→                srcHArness_Target.Text = Trim(Rs.Fields("OPTION_HARNESS").Value)
+   592→                srcMnlAct_Dec.Text = "NA"
+   593→                srcMnlAct_Dec.BackColor = Color.Green
+   594→                srcMnlAct_Target.Text = "NA"
+   595→            End If
+   596→
+   597→            If OPTION_SAB = "0" Then
+   598→                srcSAB.BackColor = Color.White
+   599→            Else
+   600→                srcSAB.BackColor = Color.Black
+   601→            End If
+   602→
+   603→            If OPTION_VENT = 0 Then
+   604→                srcVENT.BackColor = Color.White
+   605→            Else
+   606→                srcVENT.BackColor = Color.black
+   607→            End If
+   608→
+   609→            'srcPWR_EndAngle_Spec.Text = LENGTH_MIN & " ~ " & LENGTH_MAX
+   610→            wStep = 2
+   611→
+   612→        End If
+   613→
+   614→        Rs.ActiveConnection = Nothing
+   615→        Rs.Close()
+   616→
+   617→        Connection_Close_MDB()
+   618→
+   619→    End Sub
+   620→
+   621→    Private Function OptionConvert(str As String) As String
+   622→
+   623→        Dim tmp As String
+   624→
+   625→        If str = "On" Then
+   626→            tmp = ""
+   627→        ElseIf str = "OFF" Then
+   628→            tmp = ""
+   629→        ElseIf str = "PASS" Then
+   630→            tmp = "PASS"
+   631→        End If
+   632→
+   633→        Return tmp
+   634→
+   635→    End Function
+   636→
+   637→    Private Function OptionConvertInt(str As String) As Integer
+   638→
+   639→        Dim tmp As Integer
+   640→
+   641→        If str = "On" Then
+   642→            tmp = 1
+   643→        ElseIf str = "OFF" Then
+   644→            tmp = 0
+   645→        ElseIf str = "PASS" Then
+   646→            tmp = 100
+   647→        End If
+   648→
+   649→        Return tmp
+   650→
+   651→    End Function
+   652→
+   653→
+   654→    Sub DO_ON(ByVal num As Integer)
+   655→
+   656→        If num <= 34 Then
+   657→            Mid$(D_OutString, num + 2, 1) = "1"
+   658→            OUT_LABEL(num).BackColor = Color.Black
+   659→        End If
+   660→
+   661→    End Sub
+   662→
+   663→    Sub DO_OFF(ByVal num As Integer)
+   664→
+   665→        If num <= 34 Then
+   666→            Mid$(D_OutString, num + 2, 1) = "0"
+   667→            OUT_LABEL(num).BackColor = Color.White
+   668→        End If
+   669→
+   670→    End Sub
+   671→
+   672→    Sub DO_WRITE()
+   673→
+   674→        If Serial_Module.IsOpen = True Then Serial_Module.Write(D_OutString)
+   675→
+   676→    End Sub
+   677→
+   678→    Private Sub ThreadTask2()
+   679→
+   680→        Dim AvrCount As Double = 0
+   681→        Dim AvrSum As Double = 0
+   682→        Dim AmpSum As Double = 0
+   683→
+   684→        Do While Serial_Module.IsOpen = True
+   685→
+   686→            'Try
+   687→
+   688→            Dim Incoming1 As String = Serial_Module.ReadLine()
+   689→
+   690→            If Incoming1 Is Nothing Then
+   691→                'Exit Do
+   692→            Else
+   693→                RecvString.Append(Incoming1)
+   694→                'S10000001110000000000102300000000E
+   695→                ' ------------------------------ ----------------------------- 
+   696→                'S 0010 0000 1000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000E
+   697→                'S0010000010000000000000000000000000000000000000000000000000000000E
+   698→                'S0010000010000000000000000000000000000000000000000000000000000000E
+   699→                If RecvString.Length = 66 Then
+   700→
+   701→                    If Mid(RecvString.ToString, 1, 1) = "S" And Mid(RecvString.ToString, 66, 1) = "E" Then
+   702→
+   703→                        For i As Integer = 0 To 31
+   704→                            D_Value(i) = CInt(Mid$(RecvString.ToString, i + 2, 1))
+   705→                        Next
+   706→
+   707→                        '0 -> 50mm
+   708→                        '1000 -> 550 mm
+   709→                        'Y = 0.5X + 50
+   710→                        '1 + 16 + 16
+   711→                        '34 35 36 37
+   712→                        '38
+   713→
+   714→                        'S 0000 1010 0110 1010 0010 0000 0000 0000 0001 0000 0000 0000 0000 0000 0000 0000E
+   715→                        AvrSum = AvrSum + CDbl(Format((0.5 * CDbl(Mid(RecvString.ToString, 38, 4))) + 50, "0.0#"))
+   716→                        AmpSum = AmpSum + CDbl(Format((CDbl(Mid(RecvString.ToString, 34, 4))) * 0.025, "0.0#"))
+   717→
+   718→                        'TextBox1.Text = Mid(RecvString.ToString, 34, 4) & " / " &
+   719→                        '    Mid(RecvString.ToString, 38, 4) & " / " &
+   720→                        '    Mid(RecvString.ToString, 42, 4) & " / " &
+   721→                        '    Mid(RecvString.ToString, 46, 4) & " / " &
+   722→                        '    Mid(RecvString.ToString, 50, 4) & " / " &
+   723→                        '    Mid(RecvString.ToString, 54, 4) & " / " &
+   724→                        '    Mid(RecvString.ToString, 58, 4) & " / " &
+   725→                        '    Mid(RecvString.ToString, 62, 4)
+   726→
+   727→                        AvrCount = AvrCount + 1
+   728→
+   729→                        If AvrCount = 5 Then
+   730→                            RealAmp = CDbl(Format(AmpSum / AvrCount, "0.0#"))
+   731→                            RealLAserDistance = CDbl(Format(AvrSum / AvrCount, "0.0#"))
+   732→                            Label_LaserDistance.Text = RealLAserDistance
+   733→                            Label_LaserAngle.Text = Format(Laser2Angle(RealLAserDistance), "0.0#")
+   734→                            Label_MotorAMP.Text = RealAmp
+   735→                            AvrCount = 0
+   736→                            AvrSum = 0
+   737→                            AmpSum = 0
+   738→                        End If
+   739→
+   740→                    End If
+   741→
+   742→                End If
+   743→
+   744→                RecvString.Clear()
+   745→                Serial_Module.DiscardInBuffer()
+   746→
+   747→            End If
+   748→            'Catch ex As Exception
+   749→            'End Try
+   750→
+   751→        Loop
+   752→
+   753→    End Sub
+   754→
+   755→    Private Function Laser2Angle(ByVal vLaser As Double) As Double
+   756→
+   757→        Dim tmp As Double = 0
+   758→        For i As Integer = 0 To UBound(LASER) - 1
+   759→            If vLaser >= LASER(i) And vLaser <= LASER(i + 1) Then
+   760→                tmp = Calc(LASER(i), ANGLE(i), LASER(i + 1), ANGLE(i + 1), vLaser)
+   761→            End If
+   762→        Next i
+   763→        Return tmp
+   764→
+   765→    End Function
+   766→
+   767→    Public Function Calc(ByVal aLaser As Double, ByVal aAngle As Double, ByVal bLaser As Double, ByVal bAngle As Double, ByVal val As Double) As Double
+   768→
+   769→        Dim t As Double
+   770→        Dim tmp As Double = 0
+   771→        Try
+   772→            If aLaser = 0 And aAngle = 0 And bLaser = 0 And bAngle = 0 Then
+   773→                tmp = 0
+   774→            Else
+   775→                t = (aAngle - bAngle) / (aLaser - bLaser)
+   776→                tmp = (t * val) - (t * bLaser) + bAngle
+   777→            End If
+   778→        Catch ex As Exception
+   779→        End Try
+   780→        Return tmp
+   781→
+   782→    End Function
+   783→
+   784→    Private Sub ThreadTask1()
+   785→
+   786→        Dim tmpAngleStart As Double
+   787→        Dim tmpAngleEnd As Double
+   788→
+   789→        Dim i As Integer
+   790→        Dim DelayCount As Double = 0
+   791→
+   792→        Do
+   793→
+   794→            If wStep = 7.1 Then
+   795→
+   796→                GraphBwdAmp.Cursors.Item(1).YPosition = BWD_AMP_MIN
+   797→                GraphBwdAmp.Cursors.Item(2).YPosition = BWD_AMP_MAX
+   798→                GraphBwdAmp.Cursors.Item(3).YPosition = 0
+   799→                GraphBwdAmp.Cursors.Item(4).YPosition = 0
+   800→
+   801→                DO_ON(8) '리클 후진
+   802→                DO_WRITE()
+   803→                ErrCount = 0
+   804→                CounterAtStart = Timer.Value
+   805→                TmpAmpMAx = 0
+   806→                ArryCount = 0
+   807→                CalcCount = 0
+   808→                tmpAngleStart = Format(Laser2Angle(RealLAserDistance), "0.0")
+   809→                wStep = 7.2
+   810→
+   811→            ElseIf wStep = 7.2 Then
+   812→
+   813→                CounterAtNow = Timer.Value
+   814→                TotalTime = CDbl(((CounterAtNow - CounterAtStart) * 10000 / Timer.Frequency) / 10000)
+   815→
+   816→                If ArryCount < ArryMaxSize Then
+   817→                    ArryAmp(ArryCount) = RealAmp
+   818→                    ArryTime(ArryCount) = TotalTime
+   819→                    ArryCount = ArryCount + 1
+   820→                End If
+   821→
+   822→                GraphBwdAmp.ChartY(RealAmp)
+   823→
+   824→                If TotalTime > 1 Then
+   825→
+   826→                    lbBWD_ANGLE_VALUE.BackColor = Color.Black
+   827→                    lbBWD_ANGLE_VALUE.Text = Format(Laser2Angle(RealLAserDistance), "0.0")
+   828→
+   829→                    If RealAmp < 0.1 Or RealAmp > 5 Then
+   830→                        CalcCount = CalcCount + 1
+   831→                    Else
+   832→                        CalcCount = 0
+   833→                    End If
+   834→
+   835→                    If CalcCount > 5 Then
+   836→                        DO_OFF(8)
+   837→                        DO_OFF(9)
+   838→                        DO_WRITE()
+   839→                        wStep = 7.3
+   840→                    End If
+   841→
+   842→                End If
+   843→
+   844→            ElseIf wStep = 7.3 Then
+   845→
+   846→                For i = 0 To ArryCount
+   847→                    If ArryTime(i) >= StartIgnoreTIme And ArryTime(i) <= TotalTime - EndIgnoreTIme Then
+   848→                        If TmpAmpMAx < ArryAmp(i) Then TmpAmpMAx = ArryAmp(i)
+   849→                    End If
+   850→                Next
+   851→
+   852→                GraphBwdAmp.Cursors.Item(3).XPosition = StartIgnoreTIme * 10
+   853→                GraphBwdAmp.Cursors.Item(4).XPosition = (TotalTime - EndIgnoreTIme) * 10
+   854→
+   855→                lbBWD_AMP_VALUE.Text = TmpAmpMAx
+   856→
+   857→                If TmpAmpMAx >= BWD_AMP_MIN And TmpAmpMAx <= BWD_AMP_MAX Then
+   858→                    lbBWD_AMP_VALUE.BackColor = Color.Blue
+   859→                Else
+   860→                    lbBWD_AMP_VALUE.BackColor = Color.Red
+   861→                End If
+   862→
+   863→                If CDbl(lbBWD_ANGLE_VALUE.Text) >= BWD_ANGLE_MIN And CDbl(lbBWD_ANGLE_VALUE.Text) <= BWD_ANGLE_MAX Then
+   864→                    lbBWD_ANGLE_VALUE.BackColor = Color.Blue
+   865→                Else
+   866→                    lbBWD_ANGLE_VALUE.BackColor = Color.Red
+   867→                End If
+   868→
+   869→                tmpAngleEnd = Format(Laser2Angle(RealLAserDistance), "0.0")
+   870→
+   871→                lbBWD_SPEED_VALUE.Text = Format(TotalTime - 0.5 + BWD_TIME_TOL, "0.0")
+   872→
+   873→                If CDbl(lbBWD_SPEED_VALUE.Text) >= BWD_SPEED_MIN And CDbl(lbBWD_SPEED_VALUE.Text) <= BWD_SPEED_MAX Then
+   874→                    lbBWD_SPEED_VALUE.BackColor = Color.Blue
+   875→                Else
+   876→                    lbBWD_SPEED_VALUE.BackColor = Color.Red
+   877→                End If
+   878→
+   879→                DelayCount = 0
+   880→                wStep = 7.4
+   881→
+   882→            ElseIf wStep = 7.4 Then
+   883→
+   884→                DelayCount = DelayCount + 0.1
+   885→                If DelayCount >= 0.5 Then wStep = 7.5
+   886→
+   887→            ElseIf wStep = 7.5 Then
+   888→
+   889→                GraphFwdAmp.Cursors.Item(1).YPosition = FWD_AMP_MIN
+   890→                GraphFwdAmp.Cursors.Item(2).YPosition = FWD_AMP_MAX
+   891→                GraphFwdAmp.Cursors.Item(3).YPosition = 0
+   892→                GraphFwdAmp.Cursors.Item(4).YPosition = 0
+   893→
+   894→                DO_ON(9) '리클 전진
+   895→                DO_WRITE()
+   896→                ErrCount = 0
+   897→                CounterAtStart = Timer.Value
+   898→                TmpAmpMAx = 0
+   899→                ArryCount = 0
+   900→                CalcCount = 0
+   901→                tmpAngleStart = Format(Laser2Angle(RealLAserDistance), "0.0")
+   902→                wStep = 7.6
+   903→
+   904→            ElseIf wStep = 7.6 Then
+   905→
+   906→                CounterAtNow = Timer.Value
+   907→                TotalTime = CDbl(((CounterAtNow - CounterAtStart) * 10000 / Timer.Frequency) / 10000)
+   908→
+   909→                If ArryCount < ArryMaxSize Then
+   910→                    ArryAmp(ArryCount) = RealAmp
+   911→                    ArryTime(ArryCount) = TotalTime
+   912→                    ArryCount = ArryCount + 1
+   913→                End If
+   914→
+   915→                GraphFwdAmp.ChartY(RealAmp)
+   916→
+   917→                If TotalTime > 1 Then
+   918→
+   919→                    lbFWD_ANGLE_VALUE.BackColor = Color.Black
+   920→                    lbFWD_ANGLE_VALUE.Text = Format(Laser2Angle(RealLAserDistance), "0.0")
+   921→
+   922→                    If RealAmp < 0.1 Or RealAmp > 5 Then
+   923→                        CalcCount = CalcCount + 1
+   924→                    Else
+   925→                        CalcCount = 0
+   926→                    End If
+   927→
+   928→                    If CalcCount > 5 Then
+   929→                        DO_OFF(8)
+   930→                        DO_OFF(9)
+   931→                        DO_WRITE()
+   932→                        wStep = 7.7
+   933→                    End If
+   934→
+   935→                End If
+   936→
+   937→            ElseIf wStep = 7.7 Then
+   938→
+   939→                For i = 0 To ArryCount
+   940→                    If ArryTime(i) >= StartIgnoreTIme And ArryTime(i) <= TotalTime - EndIgnoreTIme Then
+   941→                        If TmpAmpMAx < ArryAmp(i) Then TmpAmpMAx = ArryAmp(i)
+   942→                    End If
+   943→                Next
+   944→
+   945→                GraphFwdAmp.Cursors.Item(3).XPosition = StartIgnoreTIme * 10
+   946→                GraphFwdAmp.Cursors.Item(4).XPosition = (TotalTime - EndIgnoreTIme) * 10
+   947→
+   948→                lbFWD_AMP_VALUE.Text = TmpAmpMAx
+   949→
+   950→                If TmpAmpMAx >= FWD_AMP_MIN And TmpAmpMAx <= FWD_AMP_MAX Then
+   951→                    lbFWD_AMP_VALUE.BackColor = Color.Blue
+   952→                Else
+   953→                    lbFWD_AMP_VALUE.BackColor = Color.Red
+   954→                End If
+   955→
+   956→                If CDbl(lbFWD_ANGLE_VALUE.Text) >= FWD_ANGLE_MIN And CDbl(lbFWD_ANGLE_VALUE.Text) <= FWD_ANGLE_MAX Then
+   957→                    lbFWD_ANGLE_VALUE.BackColor = Color.Blue
+   958→                Else
+   959→                    lbFWD_ANGLE_VALUE.BackColor = Color.Red
+   960→                End If
+   961→
+   962→                tmpAngleEnd = Format(Laser2Angle(RealLAserDistance), "0.0")
+   963→
+   964→                'lbFWD_SPEED_VALUE.Text = Format(Math.Abs(tmpAngleStart - tmpAngleEnd) / (TotalTime - 0.5), "#0.0#")
+   965→                lbFWD_SPEED_VALUE.Text = Format(TotalTime - 0.5 + FWD_TIME_TOL, "0.0")
+   966→
+   967→                If CDbl(lbFWD_SPEED_VALUE.Text) >= FWD_SPEED_MIN And CDbl(lbFWD_SPEED_VALUE.Text) <= FWD_SPEED_MAX Then
+   968→                    lbFWD_SPEED_VALUE.BackColor = Color.Blue
+   969→                Else
+   970→                    lbFWD_SPEED_VALUE.BackColor = Color.Red
+   971→                End If
+   972→
+   973→
+   974→                DelayCount = 0
+   975→                wStep = 7.8
+   976→
+   977→            ElseIf wStep = 7.8 Then
+   978→
+   979→                DelayCount = DelayCount + 0.1
+   980→                If DelayCount >= 0.5 Then wStep = 7.9
+   981→
+   982→            ElseIf wStep = 7.9 Then
+   983→
+   984→                DO_ON(8) '리클 후진
+   985→                DO_WRITE()
+   986→                ErrCount = 0
+   987→                CounterAtStart = Timer.Value
+   988→                TmpAmpMAx = 0
+   989→                ArryCount = 0
+   990→                CalcCount = 0
+   991→                wStep = 8.0
+   992→
+   993→            ElseIf wStep = 8.0 Then
+   994→
+   995→                lbEND_ANGLE_VALUE.BackColor = Color.Black
+   996→                lbEND_ANGLE_VALUE.Text = Format(Laser2Angle(RealLAserDistance), "0.0")
+   997→
+   998→                If (CDbl(lbEND_ANGLE_VALUE.Text) >= END_ANGLE_MIN) And (CDbl(lbEND_ANGLE_VALUE.Text) <= END_ANGLE_MAX) Then
+   999→                    DO_OFF(8)
+  1000→                    DO_OFF(9)
+  1001→                    DO_WRITE()
+  1002→                    wStep = 8.1
+  1003→                End If
+  1004→
+  1005→                If RealAmp < 0.1 Or RealAmp > 5 Then
+  1006→                    CalcCount = CalcCount + 1
+  1007→                Else
+  1008→                    CalcCount = 0
+  1009→                End If
+  1010→
+  1011→                If CalcCount > 5 Then
+  1012→                    DO_OFF(8)
+  1013→                    DO_OFF(9)
+  1014→                    DO_WRITE()
+  1015→                    wStep = 8.1
+  1016→                End If
+  1017→
+  1018→            ElseIf wStep = 8.1 Then
+  1019→
+  1020→                If CDbl(lbEND_ANGLE_VALUE.Text) >= END_ANGLEDEC_MIN And CDbl(lbEND_ANGLE_VALUE.Text) <= END_ANGLEDEC_MAX Then
+  1021→                    lbEND_ANGLE_VALUE.BackColor = Color.Blue
+  1022→                Else
+  1023→                    lbEND_ANGLE_VALUE.BackColor = Color.Red
+  1024→                End If
+  1025→
+  1026→                DelayCount = 0
+  1027→                wStep = 8.2
+  1028→
+  1029→            ElseIf wStep = 8.2 Then
+  1030→
+  1031→                If OPTION_LSUPT = "0" Then
+  1032→                    wStep = 10
+  1033→                Else
+  1034→                    wStep = 9
+  1035→                End If
+  1036→
+  1037→            ElseIf wStep = 9 Then
+  1038→
+  1039→                GraphLsuptFwdAmp.Cursors.Item(1).YPosition = LSUPT_FWD_AMP_MIN
+  1040→                GraphLsuptFwdAmp.Cursors.Item(2).YPosition = LSUPT_FWD_AMP_MAX
+  1041→                GraphLsuptFwdAmp.Cursors.Item(3).YPosition = 0
+  1042→                GraphLsuptFwdAmp.Cursors.Item(4).YPosition = 0
+  1043→
+  1044→                DO_ON(10) '리클 후진
+  1045→                DO_WRITE()
+  1046→                ErrCount = 0
+  1047→                CounterAtStart = Timer.Value
+  1048→                TmpAmpMAx = 0
+  1049→                ArryCount = 0
+  1050→                CalcCount = 0
+  1051→                wStep = 9.1
+  1052→
+  1053→            ElseIf wStep = 9.1 Then
+  1054→
+  1055→                CounterAtNow = Timer.Value
+  1056→                TotalTime = CDbl(((CounterAtNow - CounterAtStart) * 10000 / Timer.Frequency) / 10000)
+  1057→                If ArryCount < ArryMaxSize Then
+  1058→                    ArryAmp(ArryCount) = RealAmp
+  1059→                    ArryTime(ArryCount) = TotalTime
+  1060→                    ArryCount = ArryCount + 1
+  1061→                End If
+  1062→                GraphLsuptFwdAmp.ChartY(RealAmp)
+  1063→                If TotalTime > LSUPT_FWD_TIME Then
+  1064→                    DO_OFF(10)
+  1065→                    DO_OFF(11)
+  1066→                    DO_WRITE()
+  1067→                    wStep = 9.2
+  1068→                End If
+  1069→
+  1070→            ElseIf wStep = 9.2 Then
+  1071→
+  1072→                For i = 0 To ArryCount
+  1073→                    If ArryTime(i) >= StartIgnoreTIme And ArryTime(i) <= TotalTime - EndIgnoreTIme Then
+  1074→                        If TmpAmpMAx < ArryAmp(i) Then TmpAmpMAx = ArryAmp(i)
+  1075→                    End If
+  1076→                Next
+  1077→
+  1078→                GraphLsuptFwdAmp.Cursors.Item(3).XPosition = StartIgnoreTIme * 10
+  1079→                GraphLsuptFwdAmp.Cursors.Item(4).XPosition = (TotalTime - EndIgnoreTIme) * 10
+  1080→
+  1081→                lbLsuptFWD_AMP_VALUE.Text = TmpAmpMAx
+  1082→
+  1083→                If TmpAmpMAx >= LSUPT_FWD_AMP_MIN And TmpAmpMAx <= LSUPT_FWD_AMP_MAX Then
+  1084→                    lbLsuptFWD_AMP_VALUE.BackColor = Color.Blue
+  1085→                Else
+  1086→                    lbLsuptFWD_AMP_VALUE.BackColor = Color.Red
+  1087→                End If
+  1088→
+  1089→                DelayCount = 0
+  1090→                wStep = 9.3
+  1091→
+  1092→            ElseIf wStep = 9.3 Then
+  1093→
+  1094→                GraphLsuptBwdAmp.Cursors.Item(1).YPosition = LSUPT_BWD_AMP_MIN
+  1095→                GraphLsuptBwdAmp.Cursors.Item(2).YPosition = LSUPT_BWD_AMP_MAX
+  1096→                GraphLsuptBwdAmp.Cursors.Item(3).YPosition = 0
+  1097→                GraphLsuptBwdAmp.Cursors.Item(4).YPosition = 0
+  1098→
+  1099→                DO_ON(11) '럼버후진
+  1100→                DO_WRITE()
+  1101→                ErrCount = 0
+  1102→                CounterAtStart = Timer.Value
+  1103→                TmpAmpMAx = 0
+  1104→                ArryCount = 0
+  1105→                CalcCount = 0
+  1106→                wStep = 9.4
+  1107→
+  1108→            ElseIf wStep = 9.4 Then
+  1109→
+  1110→                CounterAtNow = Timer.Value
+  1111→                TotalTime = CDbl(((CounterAtNow - CounterAtStart) * 10000 / Timer.Frequency) / 10000)
+  1112→                If ArryCount < ArryMaxSize Then
+  1113→                    ArryAmp(ArryCount) = RealAmp
+  1114→                    ArryTime(ArryCount) = TotalTime
+  1115→                    ArryCount = ArryCount + 1
+  1116→                End If
+  1117→                GraphLsuptBwdAmp.ChartY(RealAmp)
+  1118→                If TotalTime > LSUPT_BWD_TIME Then
+  1119→                    DO_OFF(10)
+  1120→                    DO_OFF(11)
+  1121→                    DO_WRITE()
+  1122→                    wStep = 9.5
+  1123→                End If
+  1124→
+  1125→            ElseIf wStep = 9.5 Then
+  1126→
+  1127→                For i = 0 To ArryCount
+  1128→                    If ArryTime(i) >= StartIgnoreTIme And ArryTime(i) <= TotalTime - EndIgnoreTIme Then
+  1129→                        If TmpAmpMAx < ArryAmp(i) Then TmpAmpMAx = ArryAmp(i)
+  1130→                    End If
+  1131→                Next
+  1132→
+  1133→                GraphLsuptBwdAmp.Cursors.Item(3).XPosition = StartIgnoreTIme * 10
+  1134→                GraphLsuptBwdAmp.Cursors.Item(4).XPosition = (TotalTime - EndIgnoreTIme) * 10
+  1135→
+  1136→                lbLsuptBWD_AMP_VALUE.Text = TmpAmpMAx
+  1137→
+  1138→                If TmpAmpMAx >= LSUPT_FWD_AMP_MIN And TmpAmpMAx <= LSUPT_FWD_AMP_MAX Then
+  1139→                    lbLsuptBWD_AMP_VALUE.BackColor = Color.Blue
+  1140→                Else
+  1141→                    lbLsuptBWD_AMP_VALUE.BackColor = Color.Red
+  1142→                End If
+  1143→
+  1144→                DelayCount = 0
+  1145→                wStep = 10
+  1146→
+  1147→            End If
+  1148→
+  1149→            Thread.Sleep(100)
+  1150→            Application.DoEvents()
+  1151→
+  1152→        Loop
+  1153→
+  1154→    End Sub
+  1155→
+  1156→    Private Sub Save_DB()
+  1157→
+  1158→        Dim strSQL As String = ""
+  1159→
+  1160→        'Connection_Open()
+  1161→        Connection_Open_MDB()
+  1162→
+  1163→        Dim Rs As New ADODB.Recordset
+  1164→
+  1165→        Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+  1166→        Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+  1167→        Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+  1168→
+  1169→        strSQL = "Select * FROM Table_Main"
+  1170→        Rs.Open(strSQL, Mdb_Connect)
+  1171→
+  1172→        Rs.AddNew()
+  1173→
+  1174→        Rs.Fields("JA04_Date").Value = Format(Now, "yyyy-MM-dd")
+  1175→            Rs.Fields("JA04_Start_Time").Value = StartTime
+  1176→            Rs.Fields("JA04_End_Time").Value = Format(Now, "HH:mm:ss")
+  1177→            Rs.Fields("JA04_END_SERIAL").Value = srcHArness.Text
+  1178→            Rs.Fields("JA04_Decision").Value = srcTotal_Decision.Text
+  1179→            Rs.Fields("JA04_FWD_AMP").Value = lbFWD_AMP_VALUE.Text
+  1180→            Rs.Fields("JA04_FWD_ANGLE").Value = lbFWD_ANGLE_VALUE.Text
+  1181→            Rs.Fields("JA04_FWD_TIME").Value = lbFWD_SPEED_VALUE.Text
+  1182→            Rs.Fields("JA04_BWD_AMP").Value = lbBWD_AMP_VALUE.Text
+  1183→            Rs.Fields("JA04_BWD_ANGLE").Value = lbBWD_ANGLE_VALUE.Text
+  1184→            Rs.Fields("JA04_BWD_TIME").Value = lbBWD_SPEED_VALUE.Text
+  1185→            Rs.Fields("JA04_END_ANGLE").Value = lbEND_ANGLE_VALUE.Text
+  1186→            Rs.Fields("LINE_SERIAL").Value = srcSerialNumber.Text
+  1187→            Rs.Fields("PART_NO").Value = srcPartNo.Text
+  1188→
+  1189→            Rs.Update()
+  1190→
+  1191→        Rs.ActiveConnection = Nothing
+  1192→        Rs.Close()
+  1193→
+  1194→        Connection_Close()
+  1195→
+  1196→    End Sub
+  1197→
+  1198→    Private Sub saveDB_Second()
+  1199→
+  1200→        'Dim strSQL As String = ""
+  1201→
+  1202→        'Connection_Open_MDB()
+  1203→
+  1204→        'strSQL = "INSERT INTO TABLE_MAIN_SECOND (WORK_DATE,WORK_TIME,FIRST_TQ1,FIRST_TQ2,FIRST_TQ3,FIRST_TQ4,WORK_SERIAL" &
+  1205→        '                                                                        ",SECOND_TQ1,SECOND_TQ2,SECOND_TQ3,SECOND_TQ4,SECOND_TQ5,SECOND_TQ6,SECOND_TQ7,SECOND_TQ8,SLIDE_MOTOR_SERIAL) VALUES (" &
+  1206→        '               "'" & Format(Now, "yyyy-MM-dd") & "','" &
+  1207→        '                       Format(Now, "HH:mm:ss") & "','" &
+  1208→        '                       tmpTQ1 & "','" &
+  1209→        '                       tmpTQ2 & "','" &
+  1210→        '                       tmpTQ3 & "','" &
+  1211→        '                       tmpTQ4 & "','" &
+  1212→        '                       tool2Serial.Text & "','" &
+  1213→        '                       Grid2.Cell(0, 1).Text & "','" &
+  1214→        '                       Grid2.Cell(1, 1).Text & "','" &
+  1215→        '                       Grid2.Cell(2, 1).Text & "','" &
+  1216→        '                       Grid2.Cell(3, 1).Text & "','" &
+  1217→        '                       Grid2.Cell(4, 1).Text & "','" &
+  1218→        '                       Grid2.Cell(5, 1).Text & "','" &
+  1219→        '                       Grid2.Cell(6, 1).Text & "','" &
+  1220→        '                       Grid2.Cell(7, 1).Text & "','" &
+  1221→        '                       srcSlideMotorScan_Value.Text & "')"
+  1222→        'Mdb_Connect.Execute(strSQL)
+  1223→        'Connection_Close_MDB()
+  1224→
+  1225→    End Sub
+  1226→
+  1227→    Private Sub saveDB_Second_SQLSERVER()
+  1228→
+  1229→        'Dim strSQL As String = ""
+  1230→
+  1231→        'Connection_Open()
+  1232→
+  1233→        'strSQL = "INSERT INTO TABLE_SLIDE (WORK_DATE,WORK_TIME,FIRST_TQ1,FIRST_TQ2,FIRST_TQ3,FIRST_TQ4,WORK_SERIAL" &
+  1234→        '                                                                        ",SECOND_TQ1,SECOND_TQ2,SECOND_TQ3,SECOND_TQ4,SECOND_TQ5,SECOND_TQ6,SECOND_TQ7,SECOND_TQ8,SLIDE_MOTOR_SERIAL) VALUES (" &
+  1235→        '               "'" & Format(Now, "yyyy-MM-dd") & "','" &
+  1236→        '                       Format(Now, "HH:mm:ss") & "','" &
+  1237→        '                       tmpTQ1 & "','" &
+  1238→        '                       tmpTQ2 & "','" &
+  1239→        '                       tmpTQ3 & "','" &
+  1240→        '                       tmpTQ4 & "','" &
+  1241→        '                       tool2Serial.Text & "','" &
+  1242→        '                       Grid2.Cell(0, 1).Text & "','" &
+  1243→        '                       Grid2.Cell(1, 1).Text & "','" &
+  1244→        '                       Grid2.Cell(2, 1).Text & "','" &
+  1245→        '                       Grid2.Cell(3, 1).Text & "','" &
+  1246→        '                       Grid2.Cell(4, 1).Text & "','" &
+  1247→        '                       Grid2.Cell(5, 1).Text & "','" &
+  1248→        '                       Grid2.Cell(6, 1).Text & "','" &
+  1249→        '                       Grid2.Cell(7, 1).Text & "','" &
+  1250→        '                       srcSlideMotorScan_Value.Text & "')"
+  1251→        'Sql_Connect.Execute(strSQL)
+  1252→        'Connection_Close()
+  1253→
+  1254→
+  1255→    End Sub
+  1256→
+  1257→    Private Function STR2ASC(ByVal str As String) As String
+  1258→
+  1259→        Dim tmp As String = ""
+  1260→        Dim i As Integer
+  1261→
+  1262→        For i = 1 To Len(str)
+  1263→            tmp = tmp & Hex(Asc(Mid(str, i, 1)))
+  1264→        Next
+  1265→
+  1266→        Return tmp
+  1267→
+  1268→    End Function
+  1269→
+  1270→    Private Function ASC2STR(ByVal str As String) As String
+  1271→
+  1272→        Dim One_Hex, Tmp_Hex, retVal As String
+  1273→        Dim i As Integer
+  1274→
+  1275→        retVal = ""
+  1276→        For i = 1 To Len(str)
+  1277→            One_Hex = Mid(str, i, 1)
+  1278→            If IsNumeric(One_Hex) Then
+  1279→                Tmp_Hex = Mid(str, i, 2)
+  1280→                i = i + 1
+  1281→            Else
+  1282→                Tmp_Hex = Mid(str, i, 4)
+  1283→                i = i + 3
+  1284→            End If
+  1285→            retVal = retVal & Chr("&H" & Tmp_Hex)
+  1286→        Next
+  1287→        Return retVal
+  1288→
+  1289→    End Function
+  1290→
+  1291→    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+  1292→
+  1293→        FrmPart.Show()
+  1294→
+  1295→    End Sub
+  1296→
+  1297→    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+  1298→
+  1299→        For i As Integer = 0 To 47
+  1300→            If D_Value(i) = 1 Then
+  1301→                IN_LABEL(i).BackColor = Color.Black
+  1302→            Else
+  1303→                IN_LABEL(i).BackColor = Color.White
+  1304→            End If
+  1305→        Next i
+  1306→
+  1307→    End Sub
+  1308→
+  1309→    Private Sub Tmr_Work1_Tick(sender As Object, e As EventArgs) Handles Tmr_Work1.Tick
+  1310→
+  1311→        Label_Step1.Text = wStep
+  1312→        If D_Value(2) <> 1 Then
+  1313→            If eStep = 1 Then
+  1314→                If D_Value(1) = 1 Then
+  1315→                    lblEMO.Visible = False
+  1316→                    eStep = 0
+  1317→                End If
+  1318→
+  1319→            End If
+  1320→            If rStep = 0 And eStep = 0 Then
+  1321→
+  1322→                If D_Value(1) = 1 Then
+  1323→                    rCount = rCount + 0.1
+  1324→                Else
+  1325→                    rCount = 0
+  1326→                End If
+  1327→
+  1328→                If rCount >= 2 Then
+  1329→                    rCount = 0
+  1330→                    rStep = 1
+  1331→                End If
+  1332→
+  1333→            ElseIf rStep = 1 Then
+  1334→
+  1335→                For i As Integer = 0 To 15
+  1336→                    DO_OFF(i)
+  1337→                Next
+  1338→                DO_ON(0)
+  1339→                DO_ON(2)
+  1340→                DO_ON(4)
+  1341→                DO_ON(6)
+  1342→                DO_WRITE()
+  1343→                rStep = 2
+  1344→
+  1345→            ElseIf rStep = 2 Then
+  1346→
+  1347→                If D_Value(4) = 1 And D_Value(6) = 1 And D_Value(9) = 1 And D_Value(1) = 0 Then
+  1348→                    DO_OFF(0)
+  1349→                    DO_OFF(2)
+  1350→                    DO_OFF(4)
+  1351→                    DO_OFF(6)
+  1352→                    DO_WRITE()
+  1353→                    Init_Control()
+  1354→                    wStep = 0
+  1355→                    rStep = 0
+  1356→                End If
+  1357→
+  1358→            End If
+  1359→
+  1360→            If rStep = 0 And eStep = 0 Then
+  1361→
+  1362→                If wStep = 0 Then
+  1363→
+  1364→                    label_Message.Text = "Scan the Part Barcode."
+  1365→                    wStep = 1
+  1366→
+  1367→                ElseIf wStep = 1 Then '스캔 대기중..
+  1368→
+  1369→                ElseIf wStep = 1.1 Then '한번 한 제품의 경우
+  1370→
+  1371→                    LabelAlarm.Visible = True
+  1372→                    wStep = 0
+  1373→
+  1374→                ElseIf wStep = 2 Then '스캔 완료
+  1375→
+  1376→                    LabelAlarm.Visible = False
+  1377→                    FrmImage.Close()
+  1378→                    '검사 데이터 로드
+  1379→                    'srcSerialNumber.Text = Create_Serial()
+  1380→                    'label_Message.Text = "Scan the Frame Barcode."
+  1381→                    wStep = 4
+  1382→
+  1383→                ElseIf wStep = 4 Then
+  1384→
+  1385→                    If D_Value(0) = 1 And D_Value(3) = 1 Then
+  1386→                        DO_ON(3)
+  1387→                        DO_WRITE()
+  1388→                        wStep = 5
+  1389→                    End If
+  1390→
+  1391→                ElseIf wStep = 5 Then
+  1392→
+  1393→                    If D_Value(7) = 1 And D_Value(8) = 1 And D_Value(0) = 0 Then
+  1394→                        DO_OFF(3)
+  1395→                        DO_ON(1)
+  1396→                        DO_WRITE()
+  1397→                        wStep = 5.1
+  1398→                    End If
+  1399→
+  1400→                ElseIf wStep = 5.1 Then
+  1401→
+  1402→                    If D_Value(5) = 1 Then
+  1403→                        DO_OFF(1)
+  1404→                        DO_WRITE()
+  1405→                        wStep = 5.2
+  1406→                    End If
+  1407→                ElseIf wStep = 5.2 Then
+  1408→                    If D_Value(14) = 1 And D_Value(15) = 0 Then
+  1409→                        label_Message.Text = "Turn Jig After Assemble Rivet."
+  1410→                        'wStep = 5.3
+  1411→                        wStep = 6.01
+  1412→                    End If
+  1413→                ElseIf wStep = 5.3 Then
+  1414→                    If D_Value(14) = 0 And D_Value(15) = 1 Then
+  1415→                        label_Message.Text = "Assemble Rivet."
+  1416→                        wStep = 5.4
+  1417→                    End If
+  1418→                ElseIf wStep = 5.4 Then
+  1419→                    If D_Value(14) = 1 And D_Value(15) = 0 Then
+  1420→                        label_Message.Text = ""
+  1421→                        wStep = 6.01
+  1422→
+  1423→                    End If
+  1424→                ElseIf wStep = 6.01 Then
+  1425→
+  1426→                    If OPTION_RECL = "0" Then 'MNL
+  1427→                        wStep = 11.5
+  1428→                    Else
+  1429→                        wStep = 6.1
+  1430→                    End If
+  1431→
+  1432→                ElseIf wStep = 6.1 Then ' 하네스 판정
+  1433→
+  1434→                    If srcHArness_DEc.Text = "OK" Or srcHArness_DEc.Text = "NA" Then
+  1435→                        wStep = 7
+  1436→                    End If
+  1437→
+  1438→                ElseIf wStep = 7 Then '모터 구동
+  1439→
+  1440→                    If D_Value(0) = 1 Then
+  1441→                        Load_AngleData()
+  1442→                        Load_Basic_Data()
+  1443→                        InitTest()
+  1444→                        wStep = 7.1
+  1445→                    End If
+  1446→
+  1447→                ElseIf wStep = 7.1 Then '검사 시작
+  1448→
+  1449→                ElseIf wStep = 10 Then '검사 종료
+  1450→
+  1451→                    wStep = 11
+  1452→
+  1453→                ElseIf wStep = 11 Then
+  1454→
+  1455→                    If D_Value(5) = 1 Then
+  1456→                        If (srcHArness_DEc.Text = "OK" Or srcHArness_DEc.Text = "NA") And
+  1457→                               (lbFWD_AMP_VALUE.BackColor = Color.Blue) And
+  1458→                               (lbBWD_AMP_VALUE.BackColor = Color.Blue) And
+  1459→                               (lbFWD_ANGLE_VALUE.BackColor = Color.Blue) And
+  1460→                               (lbBWD_ANGLE_VALUE.BackColor = Color.Blue) And
+  1461→                               (lbFWD_SPEED_VALUE.BackColor = Color.Blue) And
+  1462→                               (lbBWD_SPEED_VALUE.BackColor = Color.Blue) And
+  1463→                               (lbEND_ANGLE_VALUE.BackColor = Color.Blue) And
+  1464→                               (lbLsuptFWD_AMP_VALUE.BackColor = Color.Blue) And
+  1465→                               (lbLsuptBWD_AMP_VALUE.BackColor = Color.Blue) Then
+  1466→                            srcTotal_Decision.Text = "OK"
+  1467→                            srcTotal_Decision.BackColor = Color.Blue
+  1468→                            Create_Serial()
+  1469→                            Load_BARCODE_Data()
+  1470→                            Barcode_Print("NX4C F/B " & END_SERIAL.Text,
+  1471→                                          srcPartName.Text,
+  1472→                                          "Recl FWD Current " & lbFWD_AMP_VALUE.Text,
+  1473→                                          "Recl FWD Angle " & lbFWD_ANGLE_VALUE.Text,
+  1474→                                          "Recl BWD Current " & lbBWD_AMP_VALUE.Text,
+  1475→                                          "Recl BWD Angle " & lbBWD_ANGLE_VALUE.Text)
+  1476→
+  1477→                            'Barcode_Print("NX4C F/B 88310-00000,201116,1,0001,04",
+  1478→                            '  "LH PWR ASDFASDFSAD",
+  1479→                            '  "Recl FWD Current 5.55",
+  1480→                            '  "Recl FWD Angle 18.44",
+  1481→                            '  "Recl BWD Current 6.55",
+  1482→                            '  "Recl BWD Angle -18.44")
+  1483→
+  1484→                            Save_DB()
+  1485→                            DO_ON(6)
+  1486→                            'DO_ON(8)
+  1487→                            DO_WRITE()
+  1488→                            wStep = 12
+  1489→                        Else
+  1490→                            srcTotal_Decision.Text = "NG"
+  1491→                            srcTotal_Decision.BackColor = Color.Red
+  1492→                            'Save_DB()
+  1493→                        End If
+  1494→
+  1495→                    End If
+  1496→
+  1497→                ElseIf wStep = 11.5 Then
+  1498→
+  1499→                    If D_Value(0) = 1 Then
+  1500→                        If OPTION_LHRH = "LH" Then
+  1501→                            DO_ON(5)
+  1502→                            DO_WRITE()
+  1503→                        ElseIf OPTION_LHRH = "RH" Then
+  1504→                            DO_ON(7)
+  1505→                            DO_WRITE()
+  1506→                        End If
+  1507→                        wStep = 11.6
+  1508→                    End If
+  1509→
+  1510→                ElseIf wStep = 11.6 Then
+  1511→
+  1512→                    If OPTION_LHRH = "LH" Then
+  1513→                        If D_Value(11) = 1 Then
+  1514→                            DO_OFF(5)
+  1515→                            DO_WRITE()
+  1516→                            srcMnlAct_Target.Text = "0"
+  1517→                            wStep = 11.7
+  1518→                        End If
+  1519→                    ElseIf OPTION_LHRH = "RH" Then
+  1520→                        If D_Value(13) = 1 Then
+  1521→                            DO_OFF(7)
+  1522→                            DO_WRITE()
+  1523→                            srcMnlAct_Target.Text = "0"
+  1524→                            wStep = 11.7
+  1525→                        End If
+  1526→                    End If
+  1527→
+  1528→                ElseIf wStep = 11.7 Then
+  1529→
+  1530→                    If D_Value(16) = 1 Then
+  1531→                        Dim tmp = CInt(srcMnlAct_Target.Text)
+  1532→                        tmp = tmp + 1
+  1533→                        srcMnlAct_Target.Text = tmp
+  1534→                        If srcMnlAct_Target.Text = "2" Then
+  1535→                            DingDOng()
+  1536→                            srcMnlAct_Dec.Text = "OK"
+  1537→                            srcMnlAct_Dec.BackColor = Color.Blue
+  1538→                            wStep = 11.9
+  1539→                        Else
+  1540→                            DingDOng()
+  1541→                            wStep = 11.71
+  1542→                        End If
+  1543→
+  1544→                    End If
+  1545→
+  1546→                ElseIf wStep = 11.71 Then
+  1547→
+  1548→                    If D_Value(16) = 0 Then
+  1549→                        wStep = 11.72
+  1550→                    End If
+  1551→                ElseIf wStep = 11.72 Then
+  1552→                    If D_Value(16) = 1 Then
+  1553→                        wStep = 11.73
+  1554→                    End If
+  1555→                ElseIf wStep = 11.73 Then
+  1556→                    If D_Value(16) = 0 Then
+  1557→                        wStep = 11.7
+  1558→                    End If
+  1559→                ElseIf wStep = 11.9 Then
+  1560→                    If D_Value(0) = 1 Then
+  1561→                        DO_ON(4)
+  1562→                        DO_ON(6)
+  1563→                        DO_WRITE()
+  1564→                        wStep = 11.91
+  1565→                    End If
+  1566→
+  1567→                ElseIf wStep = 11.91 Then
+  1568→                    If D_Value(10) = 1 And D_Value(12) = 1 Then
+  1569→                        DO_OFF(4)
+  1570→                        DO_OFF(6)
+  1571→                        DO_WRITE()
+  1572→                        wStep = 12
+  1573→                    End If
+  1574→                ElseIf wStep = 12 Then
+  1575→
+  1576→                    If D_Value(0) = 1 Then
+  1577→                        DO_ON(0)
+  1578→                        DO_ON(2)
+  1579→                        DO_ON(4)
+  1580→                        DO_ON(6)
+  1581→                        DO_WRITE()
+  1582→                        wStep = 13
+  1583→                    End If
+  1584→
+  1585→                ElseIf wStep = 13 Then
+  1586→
+  1587→                    If D_Value(4) = 1 And D_Value(6) = 1 And D_Value(9) = 1 Then
+  1588→                        DO_OFF(0)
+  1589→                        DO_OFF(2)
+  1590→                        DO_OFF(4)
+  1591→                        DO_OFF(6)
+  1592→                        DO_WRITE()
+  1593→                        wStep = 14
+  1594→                    End If
+  1595→
+  1596→                ElseIf wStep = 14 Then
+  1597→
+  1598→                    wStep = 15
+  1599→
+  1600→                ElseIf wStep = 15 Then
+  1601→
+  1602→                    FrmImage.Show()
+  1603→                    wStep = 0
+  1604→
+  1605→                End If
+  1606→
+  1607→            End If
+  1608→        Else
+  1609→            lblEMO.Visible = True
+  1610→            eStep = 1
+  1611→        End If
+  1612→
+  1613→
+  1614→    End Sub
+  1615→
+  1616→    Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+  1617→
+  1618→
+  1619→        'RH -> 410
+  1620→        'LH -> 410
+  1621→        CheckForIllegalCrossThreadCalls = False
+  1622→        Load_BARCODE_Data()
+  1623→        Load_AngleData()
+  1624→        Load_Basic_Data()
+  1625→        Init_Control()
+  1626→        Control2Arry()
+  1627→        Init_Grid(Grid1)
+  1628→        Load_Port_Data()
+  1629→
+  1630→        SerialOpen()
+  1631→        Label_Nameing()
+  1632→
+  1633→        D_OutString = "S" & "00000000" & "00000000" & "E"
+  1634→        For i As Integer = 0 To 15
+  1635→            DO_OFF(i)
+  1636→        Next
+  1637→        DO_WRITE()
+  1638→
+  1639→        Trd1 = New Thread(AddressOf ThreadTask1)
+  1640→        Trd1.IsBackground = True
+  1641→        Trd1.Start()
+  1642→
+  1643→        If Serial_Module.IsOpen = True Then
+  1644→
+  1645→            DO_WRITE()
+  1646→            Trd2 = New Thread(AddressOf ThreadTask2)
+  1647→            Trd2.IsBackground = True
+  1648→            Trd2.Start()
+  1649→
+  1650→            Timer1.Interval = 100
+  1651→            Timer1.Start()
+  1652→
+  1653→        End If
+  1654→
+  1655→        Tmr_Work1.Interval = 100
+  1656→        Tmr_Work1.Start()
+  1657→        InitTest()
+  1658→        FrmImage.Show()
+  1659→
+  1660→    End Sub
+  1661→
+  1662→    Private Sub P_OUT_00_Click(sender As Object, e As EventArgs) Handles P_OUT_00.Click
+  1663→        If P_OUT_00.BackColor = Color.White Then
+  1664→            DO_ON(0)
+  1665→        Else
+  1666→            DO_OFF(0)
+  1667→        End If
+  1668→        DO_WRITE()
+  1669→    End Sub
+  1670→
+  1671→    Private Sub P_OUT_01_Click(sender As Object, e As EventArgs) Handles P_OUT_01.Click
+  1672→        If P_OUT_01.BackColor = Color.White Then
+  1673→            DO_ON(1)
+  1674→        Else
+  1675→            DO_OFF(1)
+  1676→        End If
+  1677→        DO_WRITE()
+  1678→    End Sub
+  1679→
+  1680→    Private Sub P_OUT_02_Click(sender As Object, e As EventArgs) Handles P_OUT_02.Click
+  1681→        If P_OUT_02.BackColor = Color.White Then
+  1682→            DO_ON(2)
+  1683→        Else
+  1684→            DO_OFF(2)
+  1685→        End If
+  1686→        DO_WRITE()
+  1687→    End Sub
+  1688→
+  1689→    Private Sub P_OUT_03_Click(sender As Object, e As EventArgs) Handles P_OUT_03.Click
+  1690→        If P_OUT_03.BackColor = Color.White Then
+  1691→            DO_ON(3)
+  1692→        Else
+  1693→            DO_OFF(3)
+  1694→        End If
+  1695→        DO_WRITE()
+  1696→    End Sub
+  1697→
+  1698→    Private Sub P_OUT_04_Click(sender As Object, e As EventArgs) Handles P_OUT_04.Click
+  1699→        If P_OUT_04.BackColor = Color.White Then
+  1700→            DO_ON(4)
+  1701→        Else
+  1702→            DO_OFF(4)
+  1703→        End If
+  1704→        DO_WRITE()
+  1705→    End Sub
+  1706→
+  1707→    Private Sub P_OUT_05_Click(sender As Object, e As EventArgs) Handles P_OUT_05.Click
+  1708→        If P_OUT_05.BackColor = Color.White Then
+  1709→            DO_ON(5)
+  1710→        Else
+  1711→            DO_OFF(5)
+  1712→        End If
+  1713→        DO_WRITE()
+  1714→    End Sub
+  1715→
+  1716→    Private Sub P_OUT_06_Click(sender As Object, e As EventArgs) Handles P_OUT_06.Click
+  1717→        If P_OUT_06.BackColor = Color.White Then
+  1718→            DO_ON(6)
+  1719→        Else
+  1720→            DO_OFF(6)
+  1721→        End If
+  1722→        DO_WRITE()
+  1723→    End Sub
+  1724→
+  1725→    Private Sub P_OUT_07_Click(sender As Object, e As EventArgs) Handles P_OUT_07.Click
+  1726→        If P_OUT_07.BackColor = Color.White Then
+  1727→            DO_ON(7)
+  1728→        Else
+  1729→            DO_OFF(7)
+  1730→        End If
+  1731→        DO_WRITE()
+  1732→    End Sub
+  1733→
+  1734→    Private Sub P_OUT_08_Click(sender As Object, e As EventArgs) Handles P_OUT_08.Click
+  1735→        If P_OUT_08.BackColor = Color.White Then
+  1736→            DO_ON(8)
+  1737→        Else
+  1738→            DO_OFF(8)
+  1739→        End If
+  1740→        DO_WRITE()
+  1741→    End Sub
+  1742→
+  1743→    Private Sub P_OUT_09_Click(sender As Object, e As EventArgs) Handles P_OUT_09.Click
+  1744→        If P_OUT_09.BackColor = Color.White Then
+  1745→            DO_ON(9)
+  1746→        Else
+  1747→            DO_OFF(9)
+  1748→        End If
+  1749→        DO_WRITE()
+  1750→    End Sub
+  1751→
+  1752→    Private Sub P_OUT_10_Click(sender As Object, e As EventArgs) Handles P_OUT_10.Click
+  1753→        If P_OUT_10.BackColor = Color.White Then
+  1754→            DO_ON(10)
+  1755→        Else
+  1756→            DO_OFF(10)
+  1757→        End If
+  1758→        DO_WRITE()
+  1759→    End Sub
+  1760→
+  1761→    Private Sub P_OUT_11_Click(sender As Object, e As EventArgs) Handles P_OUT_11.Click
+  1762→        If P_OUT_11.BackColor = Color.White Then
+  1763→            DO_ON(11)
+  1764→        Else
+  1765→            DO_OFF(11)
+  1766→        End If
+  1767→        DO_WRITE()
+  1768→    End Sub
+  1769→
+  1770→    Private Sub P_OUT_12_Click(sender As Object, e As EventArgs) Handles P_OUT_12.Click
+  1771→        If P_OUT_12.BackColor = Color.White Then
+  1772→            DO_ON(12)
+  1773→        Else
+  1774→            DO_OFF(12)
+  1775→        End If
+  1776→        DO_WRITE()
+  1777→    End Sub
+  1778→
+  1779→    Private Sub P_OUT_13_Click(sender As Object, e As EventArgs) Handles P_OUT_13.Click
+  1780→        If P_OUT_13.BackColor = Color.White Then
+  1781→            DO_ON(13)
+  1782→        Else
+  1783→            DO_OFF(13)
+  1784→        End If
+  1785→        DO_WRITE()
+  1786→    End Sub
+  1787→    Private Sub P_OUT_14_Click(sender As Object, e As EventArgs) Handles P_OUT_14.Click
+  1788→        If P_OUT_14.BackColor = Color.White Then
+  1789→            DO_ON(14)
+  1790→        Else
+  1791→            DO_OFF(14)
+  1792→        End If
+  1793→        DO_WRITE()
+  1794→    End Sub
+  1795→
+  1796→    Private Sub P_OUT_15_Click(sender As Object, e As EventArgs) Handles P_OUT_15.Click
+  1797→        If P_OUT_15.BackColor = Color.White Then
+  1798→            DO_ON(15)
+  1799→        Else
+  1800→            DO_OFF(15)
+  1801→        End If
+  1802→        DO_WRITE()
+  1803→    End Sub
+  1804→
+  1805→    Private Sub P_OUT_16_Click(sender As Object, e As EventArgs) Handles P_OUT_16.Click
+  1806→        If P_OUT_16.BackColor = Color.White Then
+  1807→            DO_ON(16)
+  1808→        Else
+  1809→            DO_OFF(16)
+  1810→        End If
+  1811→        DO_WRITE()
+  1812→    End Sub
+  1813→
+  1814→    Private Sub P_OUT_17_Click(sender As Object, e As EventArgs) Handles P_OUT_17.Click
+  1815→        If P_OUT_17.BackColor = Color.White Then
+  1816→            DO_ON(17)
+  1817→        Else
+  1818→            DO_OFF(17)
+  1819→        End If
+  1820→        DO_WRITE()
+  1821→    End Sub
+  1822→
+  1823→    Private Sub P_OUT_18_Click(sender As Object, e As EventArgs) Handles P_OUT_18.Click
+  1824→        If P_OUT_18.BackColor = Color.White Then
+  1825→            DO_ON(18)
+  1826→        Else
+  1827→            DO_OFF(18)
+  1828→        End If
+  1829→        DO_WRITE()
+  1830→    End Sub
+  1831→
+  1832→    Private Sub P_OUT_19_Click(sender As Object, e As EventArgs) Handles P_OUT_19.Click
+  1833→        If P_OUT_19.BackColor = Color.White Then
+  1834→            DO_ON(19)
+  1835→        Else
+  1836→            DO_OFF(19)
+  1837→        End If
+  1838→        DO_WRITE()
+  1839→    End Sub
+  1840→
+  1841→    Private Sub P_OUT_20_Click(sender As Object, e As EventArgs) Handles P_OUT_20.Click
+  1842→        If P_OUT_20.BackColor = Color.White Then
+  1843→            DO_ON(20)
+  1844→        Else
+  1845→            DO_OFF(20)
+  1846→        End If
+  1847→        DO_WRITE()
+  1848→    End Sub
+  1849→
+  1850→    Private Sub P_OUT_21_Click(sender As Object, e As EventArgs) Handles P_OUT_21.Click
+  1851→        If P_OUT_21.BackColor = Color.White Then
+  1852→            DO_ON(21)
+  1853→        Else
+  1854→            DO_OFF(21)
+  1855→        End If
+  1856→        DO_WRITE()
+  1857→    End Sub
+  1858→
+  1859→    Private Sub P_OUT_22_Click(sender As Object, e As EventArgs) Handles P_OUT_22.Click
+  1860→        If P_OUT_22.BackColor = Color.White Then
+  1861→            DO_ON(22)
+  1862→        Else
+  1863→            DO_OFF(22)
+  1864→        End If
+  1865→        DO_WRITE()
+  1866→    End Sub
+  1867→
+  1868→    Private Sub P_OUT_23_Click(sender As Object, e As EventArgs) Handles P_OUT_23.Click
+  1869→        If P_OUT_23.BackColor = Color.White Then
+  1870→            DO_ON(23)
+  1871→        Else
+  1872→            DO_OFF(23)
+  1873→        End If
+  1874→        DO_WRITE()
+  1875→    End Sub
+  1876→
+  1877→    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+  1878→
+  1879→        Dim old As Long
+  1880→        If Environment.Is64BitOperatingSystem Then
+  1881→            If Wow64DisableWow64FsRedirection(old) Then
+  1882→                Process.Start(osk)
+  1883→                Wow64EnableWow64FsRedirection(old)
+  1884→            End If
+  1885→        Else
+  1886→            Process.Start(osk)
+  1887→        End If
+  1888→
+  1889→    End Sub
+  1890→
+  1891→    Private Sub Load_AngleData()
+  1892→
+  1893→        Connection_Open_MDB()
+  1894→        Dim Rs As New ADODB.Recordset
+  1895→        Dim i As Integer
+  1896→
+  1897→        Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+  1898→        Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+  1899→        Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+  1900→
+  1901→        Rs.Open("SELECT * FROM Table_Angle ORDER BY LEN(LASER_LENGTH),LASER_LENGTH", Mdb_Connect)
+  1902→
+  1903→        ReDim ANGLE(Rs.RecordCount)
+  1904→        ReDim LASER(Rs.RecordCount)
+  1905→
+  1906→        If Rs.RecordCount = 0 Then
+  1907→
+  1908→        ElseIf Rs.RecordCount = 1 Then
+  1909→
+  1910→            ANGLE(0) = Rs.Fields("CONVERT_ANGLE").Value
+  1911→            LASER(0) = Rs.Fields("LASER_LENGTH").Value
+  1912→
+  1913→        ElseIf Rs.RecordCount > 1 Then
+  1914→
+  1915→            i = 0
+  1916→            Rs.MoveFirst()
+  1917→
+  1918→            Do Until Rs.EOF
+  1919→                ANGLE(i) = Rs.Fields("CONVERT_ANGLE").Value
+  1920→                LASER(i) = Rs.Fields("LASER_LENGTH").Value
+  1921→                i = i + 1
+  1922→                Rs.MoveNext()
+  1923→            Loop
+  1924→
+  1925→        End If
+  1926→
+  1927→        Rs.ActiveConnection = Nothing
+  1928→        Rs.Close()
+  1929→
+  1930→        Connection_Close_MDB()
+  1931→
+  1932→    End Sub
+  1933→
+  1934→    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+  1935→        frmworkstandardset.Show()
+  1936→    End Sub
+  1937→
+  1938→    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+  1939→        FrmBarcode.Show()
+  1940→    End Sub
+  1941→
+  1942→    'Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+  1943→    '    Init_Control()
+  1944→    '    InitTest()
+  1945→    '    Load_Basic_Data()
+  1946→    '    Load_AngleData()
+  1947→    '    wStep = 7.1
+  1948→
+  1949→    'End Sub
+  1950→
+  1951→    Sub Barcode_Print(Title1 As String, Title2 As String, Title3 As String, Title4 As String, Title5 As String, Title6 As String)
+  1952→
+  1953→        Serial_Printer.Write("^XA")
+  1954→        Serial_Printer.Write("^FO" & B1X & "," & B1Y & "^A0N," & B1H & "," & B1W & "^FD" & Title1 & "^FS")
+  1955→        Serial_Printer.Write("^FO" & B2X & "," & B2Y & "^A0N," & B2H & "," & B2W & "^FD" & Title2 & "^FS")
+  1956→        Serial_Printer.Write("^FO" & B3X & "," & B3Y & "^A0N," & B3H & "," & B3W & "^FD" & Title3 & "^FS")
+  1957→        Serial_Printer.Write("^FO" & B4X & "," & B4Y & "^A0N," & B4H & "," & B4H & "^FD" & Title4 & "^FS")
+  1958→        Serial_Printer.Write("^FO" & B5X & "," & B5Y & "^A0N,," & B5H & "," & B5W & "^FD" & Title5 & "^FS")
+  1959→        Serial_Printer.Write("^FO" & B6X & "," & B6Y & "^A0N,," & B6H & "," & B6W & "^FD" & Title6 & "^FS")
+  1960→        Serial_Printer.Write("^XZ")
+  1961→
+  1962→        'Call Barcode_Print(panel_serialno_End.Caption,
+  1963→        '                       Panel_PartNO.Caption,
+  1964→        '                       Panel_Script.Caption,
+  1965→        '                       "20" & Mid(Panel_SerialNO.Caption, 1, 2) & "." & Mid(Panel_SerialNO.Caption, 3, 2) & "." & Mid(Panel_SerialNO.Caption, 5, 2),
+  1966→        '                       "ADC")
+  1967→        'If Val(Format(Now, "HHMM")) > 800 And Val(Format(Now, "HHMM")) < 2000 Then
+  1968→        '    panel_serialno_End.Caption = Panel_PartNO.Caption & "," & Mid(Str, 1, 6) & "," & "0" & "," & Mid(Str, 7, 4) & "," & "04"
+  1969→        'Else
+  1970→        '    panel_serialno_End.Caption = Panel_PartNO.Caption & "," & Mid(Str, 1, 6) & "," & "1" & "," & Mid(Str, 7, 4) & "," & "04"
+  1971→        'End If
+  1972→
+  1973→    End Sub
+  1974→
+  1975→    Private Sub Create_Serial()
+  1976→
+  1977→        If CInt(Format(Now, "hhMM")) > 800 And CInt(Format(Now, "hhMM")) < 2000 Then
+  1978→            END_SERIAL.Text = srcPartNo.Text & "," & Mid(srcSerialNumber.Text, 3, 6) & "," & "0" & "," & Mid(srcSerialNumber.Text, 9, 4) & "," & "04"
+  1979→        Else
+  1980→            END_SERIAL.Text = srcPartNo.Text & "," & Mid(srcSerialNumber.Text, 3, 6) & "," & "1" & "," & Mid(srcSerialNumber.Text, 9, 4) & "," & "04"
+  1981→        End If
+  1982→
+  1983→    End Sub
+  1984→
+  1985→    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+  1986→        FrmManual.Show()
+  1987→    End Sub
+  1988→
+  1989→    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+  1990→
+  1991→        Save_DB()
+  1992→
+  1993→    End Sub
+  1994→
+  1995→    Private Sub srcPartNo_Click(sender As Object, e As EventArgs) Handles srcPartNo.Click
+  1996→
+  1997→    End Sub
+  1998→End Class

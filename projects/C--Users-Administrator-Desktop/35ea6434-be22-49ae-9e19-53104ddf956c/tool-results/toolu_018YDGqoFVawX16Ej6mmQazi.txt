@@ -1,0 +1,220 @@
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1211:                            WriteLog("Work Seq" & CStr(SeqCount - 1) & vbTab & tmpSeqWorkInfo(SeqCount - 1) & vbTab & Grid1.Cell(SeqCount, 4).Text & vbTab & Grid1.Cell(SeqCount, 5).Text, "LOG")
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1292:                    If Grid1.Cell(SeqCount + 1, 5).Text = "OK" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1336:                    If Grid1.Cell(SeqCount + 1, 5).Text = "OK" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1369:                        'Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1399:                            'Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1406:                                'Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1410:                            'Grid1.Cell(SeqCount + 1, 4).Text = RemoveAllWhiteSpace(tmpSeqTarget(SeqCount))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1447:                            'Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1454:                                'Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1458:                            'Grid1.Cell(SeqCount + 1, 4).Text = RemoveAllWhiteSpace(tmpSeqTarget(SeqCount))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1465:                    If Grid1.Cell(SeqCount + 1, 5).Text = "OK" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1466:                        Grid1.Cell(SeqCount + 1, 4).Text = RemoveAllWhiteSpace(tmpSeqTarget(SeqCount))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1491:                        Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1502:                                Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1505:                            Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1517:                                Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1520:                            Grid1.Cell(SeqCount + 1, 4).Text = tmpSeqTarget(SeqCount)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1527:                    If Grid1.Cell(SeqCount + 1, 5).Text = "OK" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1562:                        If Grid1.Cell(i, 5).Text = "NG" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1585:                    If Grid1.Cell(SeqCount + 1, 5).Text = "OK" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1633:                    Grid1.Cell(SeqCount + 1, 4).Text = AirToolCount.ToString & " / " & AIrToolTarget.ToString
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:1981:                        If Grid1.Cell(i, 5).Text = "NG" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3227:            Grid1.Cell(WorkNum, 1).ForeColor = Color.White
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3228:            Grid1.Cell(WorkNum, 1).BackColor = Color.Black
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3229:            Grid1.Cell(WorkNum + 2, 1).EnsureVisible()
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3251:                For i = 1 To Grid1.Rows - 1
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3259:                For i = 1 To Grid1.Rows - 1
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3264:                            strSQL = strSQL & "'" & Grid1.Cell(i, 4).Text & "',"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3283:                For i = 1 To Grid1.Rows - 1
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3289:                            strSQL = strSQL & tmpSeqColumnName(i - 1) & " = " & "'" & Grid1.Cell(i, 4).Text & "',"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3466:                    Grid1.AddItem(CStr(i + 1) & Chr(9) &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3472:                    Grid1.AddItem(CStr(i + 1) & Chr(9) &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3478:                    Grid1.AddItem(CStr(i + 1) & Chr(9) &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3485:                Grid1.Cell(i + 1, 2).Font = New Font("Arial Narrow", CInt(Rs.Fields("FontSize").Value), FontStyle.Bold)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3486:                Grid1.Cell(i + 1, 4).Font = New Font("Arial Narrow", 30, FontStyle.Bold)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3487:                Grid1.Cell(i + 1, 5).Font = New Font("Arial Narrow", 40, FontStyle.Bold)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3490:                    Grid1.Images.Add(Img(i), "Image" & CStr(i))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3492:                    Grid1.Cell(i + 1, 3).SetImage("Image" & CStr(i))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3698:        Grid1.Cell(Seq + 1, 4).Text = strDAta
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3699:        Grid1.Cell(Seq + 1, 5).Text = strDec
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3701:            Grid1.Cell(Seq + 1, 5).BackColor = Color.Blue
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3702:            Grid1.Cell(Seq + 1, 5).ForeColor = Color.White
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3704:            Grid1.Cell(Seq + 1, 5).BackColor = Color.Red
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3705:            Grid1.Cell(Seq + 1, 5).ForeColor = Color.White
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3710:        Grid1.Cell(Seq + 1, 4).Text = strDAta
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3711:        Grid1.Cell(Seq + 1, 5).Text = strDec
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3713:            Grid1.Cell(Seq + 1, 5).BackColor = Color.Blue
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.vb:3714:            Grid1.Cell(Seq + 1, 5).ForeColor = Color.White
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:278:        Me.Grid1.BorderStyle = FlexCell.BorderStyleEnum.None
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:279:        Me.Grid1.CheckedImage = Nothing
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:280:        Me.Grid1.DefaultFont = New System.Drawing.Font("Arial Narrow", 21.75!, System.Drawing.FontStyle.Bold)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:281:        Me.Grid1.DefaultRowHeight = CType(100, Short)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:282:        Me.Grid1.Enabled = False
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:283:        Me.Grid1.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:284:        Me.Grid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:285:        Me.Grid1.Location = New System.Drawing.Point(482, 108)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:286:        Me.Grid1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:287:        Me.Grid1.Name = "Grid1"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:288:        Me.Grid1.ScrollBars = FlexCell.ScrollBarsEnum.None
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:289:        Me.Grid1.Size = New System.Drawing.Size(1429, 904)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:290:        Me.Grid1.TabIndex = 166
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmMain.Designer.vb:291:        Me.Grid1.UncheckedImage = Nothing
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:332:                If Grid1.Cell(i, 5).Text <> "0" Then Grid1.Cell(i, 5).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:333:                If Grid1.Cell(i, 7).Text <> "0" Then Grid1.Cell(i, 7).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:334:                If Grid1.Cell(i, 8).Text <> "0" Then Grid1.Cell(i, 8).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:336:                If Grid1.Cell(i, 10).Text <> "NoUse" Then Grid1.Cell(i, 10).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:337:                If Grid1.Cell(i, 11).Text <> "-" Then Grid1.Cell(i, 11).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:338:                If Grid1.Cell(i, 12).Text <> "NoUse" Then Grid1.Cell(i, 12).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:339:                If Grid1.Cell(i, 13).Text <> "-" Then Grid1.Cell(i, 13).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:340:                If Grid1.Cell(i, 14).Text <> "NoUse" Then Grid1.Cell(i, 14).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:341:                If Grid1.Cell(i, 15).Text <> "-" Then Grid1.Cell(i, 15).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:342:                If Grid1.Cell(i, 16).Text <> "NoUse" Then Grid1.Cell(i, 16).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:343:                If Grid1.Cell(i, 17).Text <> "-" Then Grid1.Cell(i, 17).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:345:                If Grid1.Cell(i, 18).Text <> "NoUse" Then Grid1.Cell(i, 18).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:346:                If Grid1.Cell(i, 19).Text <> "-" Then Grid1.Cell(i, 19).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:347:                If Grid1.Cell(i, 20).Text <> "NoUse" Then Grid1.Cell(i, 20).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:348:                If Grid1.Cell(i, 21).Text <> "-" Then Grid1.Cell(i, 21).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:349:                If Grid1.Cell(i, 22).Text <> "NoUse" Then Grid1.Cell(i, 22).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:350:                If Grid1.Cell(i, 23).Text <> "-" Then Grid1.Cell(i, 23).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:351:                If Grid1.Cell(i, 24).Text <> "NoUse" Then Grid1.Cell(i, 24).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:352:                If Grid1.Cell(i, 25).Text <> "-" Then Grid1.Cell(i, 25).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:354:                If Grid1.Cell(i, 26).Text = "True" Then Grid1.Cell(i, 26).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:355:                If Grid1.Cell(i, 27).Text = "True" Then Grid1.Cell(i, 27).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:357:                If Grid1.Cell(i, 28).Text = "True" Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:358:                    Grid1.Cell(i, 28).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:359:                    Grid1.Cell(i, 29).BackColor = Color.LightGray
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:466:                Rs.Fields("WorkID").Value = Grid1.Cell(1, 1).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:467:                Rs.Fields("SeqID").Value = Grid1.Cell(1, 2).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:468:                Rs.Fields("WorkInfo").Value = Grid1.Cell(1, 3).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:469:                Rs.Fields("FontSize").Value = Grid1.Cell(1, 4).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:470:                Rs.Fields("ImagePath").Value = Grid1.Cell(1, 5).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:471:                Rs.Fields("Type").Value = Grid1.Cell(1, 6).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:472:                Rs.Fields("Target").Value = Grid1.Cell(1, 7).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:473:                Rs.Fields("MainImagePath").Value = Grid1.Cell(1, 8).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:474:                Rs.Fields("NgImagePath").Value = Grid1.Cell(1, 9).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:475:                Rs.Fields("IN1").Value = Grid1.Cell(1, 10).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:476:                Rs.Fields("IN1_STATE").Value = StrConvert(Grid1.Cell(1, 11).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:477:                Rs.Fields("IN2").Value = Grid1.Cell(1, 12).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:478:                Rs.Fields("IN2_STATE").Value = StrConvert(Grid1.Cell(1, 13).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:479:                Rs.Fields("IN3").Value = Grid1.Cell(1, 14).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:480:                Rs.Fields("IN3_STATE").Value = StrConvert(Grid1.Cell(1, 15).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:481:                Rs.Fields("IN4").Value = Grid1.Cell(1, 16).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:482:                Rs.Fields("IN4_STATE").Value = StrConvert(Grid1.Cell(1, 17).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:483:                Rs.Fields("OUT1").Value = Grid1.Cell(1, 18).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:484:                Rs.Fields("OUT1_ONOFF").Value = Grid1.Cell(1, 19).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:485:                Rs.Fields("OUT2").Value = Grid1.Cell(1, 20).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:486:                Rs.Fields("OUT2_ONOFF").Value = Grid1.Cell(1, 21).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:487:                Rs.Fields("OUT3").Value = Grid1.Cell(1, 22).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:488:                Rs.Fields("OUT3_ONOFF").Value = Grid1.Cell(1, 23).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:489:                Rs.Fields("OUT4").Value = Grid1.Cell(1, 24).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:490:                Rs.Fields("OUT4_ONOFF").Value = Grid1.Cell(1, 25).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:491:                Rs.Fields("IncludeBarcode").Value = str2Bool(Grid1.Cell(1, 26).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:492:                Rs.Fields("DuplicateCheck").Value = str2Bool(Grid1.Cell(1, 27).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:493:                Rs.Fields("DataSave").Value = str2Bool(Grid1.Cell(1, 28).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:494:                Rs.Fields("ColumnName").Value = Grid1.Cell(1, 29).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:500:                    Rs.Fields("WorkID").Value = Grid1.Cell(i, 1).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:501:                    Rs.Fields("SeqID").Value = Grid1.Cell(i, 2).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:502:                    Rs.Fields("WorkInfo").Value = Grid1.Cell(i, 3).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:503:                    Rs.Fields("FontSize").Value = Grid1.Cell(i, 4).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:504:                    Rs.Fields("ImagePath").Value = Grid1.Cell(i, 5).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:505:                    Rs.Fields("Type").Value = Grid1.Cell(i, 6).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:506:                    Rs.Fields("Target").Value = Grid1.Cell(i, 7).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:507:                    Rs.Fields("MainImagePath").Value = Grid1.Cell(i, 8).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:508:                    Rs.Fields("NgImagePath").Value = Grid1.Cell(i, 9).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:509:                    Rs.Fields("IN1").Value = Grid1.Cell(i, 10).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:510:                    Rs.Fields("IN1_STATE").Value = StrConvert(Grid1.Cell(i, 11).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:511:                    Rs.Fields("IN2").Value = Grid1.Cell(i, 12).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:512:                    Rs.Fields("IN2_STATE").Value = StrConvert(Grid1.Cell(i, 13).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:513:                    Rs.Fields("IN3").Value = Grid1.Cell(i, 14).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:514:                    Rs.Fields("IN3_STATE").Value = StrConvert(Grid1.Cell(i, 15).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:515:                    Rs.Fields("IN4").Value = Grid1.Cell(i, 16).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:516:                    Rs.Fields("IN4_STATE").Value = StrConvert(Grid1.Cell(i, 17).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:517:                    Rs.Fields("OUT1").Value = Grid1.Cell(i, 18).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:518:                    Rs.Fields("OUT1_ONOFF").Value = Grid1.Cell(i, 19).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:519:                    Rs.Fields("OUT2").Value = Grid1.Cell(i, 20).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:520:                    Rs.Fields("OUT2_ONOFF").Value = Grid1.Cell(i, 21).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:521:                    Rs.Fields("OUT3").Value = Grid1.Cell(i, 22).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:522:                    Rs.Fields("OUT3_ONOFF").Value = Grid1.Cell(i, 23).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:523:                    Rs.Fields("OUT4").Value = Grid1.Cell(i, 24).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:524:                    Rs.Fields("OUT4_ONOFF").Value = Grid1.Cell(i, 25).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:525:                    Rs.Fields("IncludeBarcode").Value = str2Bool(Grid1.Cell(i, 26).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:526:                    Rs.Fields("duplicateCheck").Value = str2Bool(Grid1.Cell(i, 27).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:527:                    Rs.Fields("DataSave").Value = str2Bool(Grid1.Cell(i, 28).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:528:                    Rs.Fields("ColumnName").Value = Grid1.Cell(i, 29).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:555:    Private Sub Grid1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Grid1.MouseClick
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:557:        If Grid1.Selection.FirstCol = 1 Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:558:            ClickIndex = Grid1.Selection.FirstRow
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:561:        If Grid1.Selection.FirstCol = 5 Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:566:                Grid1.Cell(Grid1.Selection.FirstRow, Grid1.Selection.FirstCol).Text = "0"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:568:                Grid1.Cell(Grid1.Selection.FirstRow, Grid1.Selection.FirstCol).Text = Open.FileName
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:571:        ElseIf Grid1.Selection.FirstCol = 8 Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:576:                Grid1.Cell(Grid1.Selection.FirstRow, Grid1.Selection.FirstCol).Text = "0"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:578:                Grid1.Cell(Grid1.Selection.FirstRow, Grid1.Selection.FirstCol).Text = Open.FileName
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:581:        ElseIf Grid1.Selection.FirstCol = 9 Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:586:                Grid1.Cell(Grid1.Selection.FirstRow, Grid1.Selection.FirstCol).Text = "0"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:588:                Grid1.Cell(Grid1.Selection.FirstRow, Grid1.Selection.FirstCol).Text = Open.FileName
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:626:                                Grid1.Cell(i, 2).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:627:                                Grid1.Cell(i, 3).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:628:                                Grid1.Cell(i, 4).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:629:                                Grid1.Cell(i, 5).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:630:                                Grid1.Cell(i, 6).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:631:                                Grid1.Cell(i, 7).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:632:                                Grid1.Cell(i, 8).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:633:                                Grid1.Cell(i, 9).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:634:                                Grid1.Cell(i, 10).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:635:                                Grid1.Cell(i, 11).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:636:                                Grid1.Cell(i, 12).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:637:                                Grid1.Cell(i, 13).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:638:                                Grid1.Cell(i, 14).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:639:                                Grid1.Cell(i, 15).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:640:                                Grid1.Cell(i, 16).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:641:                                Grid1.Cell(i, 17).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:642:                                Grid1.Cell(i, 18).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:643:                                Grid1.Cell(i, 19).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:644:                                Grid1.Cell(i, 20).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:645:                                Grid1.Cell(i, 21).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:646:                                Grid1.Cell(i, 22).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:647:                                Grid1.Cell(i, 23).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:648:                                Grid1.Cell(i, 24).Text & "','" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:649:                                Grid1.Cell(i, 25).Text & "'," &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:650:                                str2Bool(Grid1.Cell(i, 26).Text) & "," &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:651:                                str2Bool(Grid1.Cell(i, 27).Text) & "," &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:652:                                str2Bool(Grid1.Cell(i, 28).Text) & ",'" &
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:653:                                Grid1.Cell(i, 29).Text & "')"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:728:            Insert(ComboBox2.Text, Grid1.Cell(ClickIndex, 2).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:743:                Delete(ComboBox2.Text, Grid1.Cell(ClickIndex, 2).Text)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:817:                For i = 3 To Grid1.Cols - 1
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:818:                    fromTmp(i) = Grid1.Cell(ClickIndex, i).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:819:                    toTmp(i) = Grid1.Cell(ClickIndex + 1, i).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:820:                    Grid1.Cell(ClickIndex, i).Text = toTmp(i)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:821:                    Grid1.Cell(ClickIndex + 1, i).Text = fromTmp(i)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:844:                For i = 3 To Grid1.Cols - 1
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:845:                    fromTmp(i) = Grid1.Cell(ClickIndex, i).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:846:                    toTmp(i) = Grid1.Cell(ClickIndex - 1, i).Text
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:847:                    Grid1.Cell(ClickIndex, i).Text = toTmp(i)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:848:                    Grid1.Cell(ClickIndex - 1, i).Text = fromTmp(i)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:871:        For i = 1 To Grid1.Rows - 1
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:872:            If Grid1.Cell(i, 28).BooleanValue = True Then
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:873:                'ExecuteQurrySQL("ALTER TABLE " & ServerTableName & " ADD " & ServerColumnName & "_" & Grid1.Cell(i, 29).Text & " NVARCHAR(200) NULL")
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.vb:874:                ExecuteQurrySQL("ALTER TABLE " & ServerTableName & " ADD " & Grid1.Cell(i, 29).Text & " NVARCHAR(200) NULL")
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:46:        Me.Grid1.BorderStyle = FlexCell.BorderStyleEnum.FixedSingle
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:47:        Me.Grid1.CheckedImage = Nothing
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:48:        Me.Grid1.DefaultFont = New System.Drawing.Font("Arial Narrow", 12.75!)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:49:        Me.Grid1.DefaultRowHeight = CType(34, Short)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:50:        Me.Grid1.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:51:        Me.Grid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:52:        Me.Grid1.Location = New System.Drawing.Point(10, 13)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:53:        Me.Grid1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:54:        Me.Grid1.Name = "Grid1"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:55:        Me.Grid1.Size = New System.Drawing.Size(1865, 819)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:56:        Me.Grid1.TabIndex = 133
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSeq.Designer.vb:57:        Me.Grid1.UncheckedImage = Nothing
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.vb:11:        PropertyGrid1.SelectedObject = _settings
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.Designer.vb:31:        Me.PropertyGrid1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.Designer.vb:34:        Me.PropertyGrid1.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.Designer.vb:35:        Me.PropertyGrid1.Location = New System.Drawing.Point(12, 12)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.Designer.vb:36:        Me.PropertyGrid1.Name = "PropertyGrid1"
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.Designer.vb:37:        Me.PropertyGrid1.PropertySort = System.Windows.Forms.PropertySort.Categorized
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.Designer.vb:38:        Me.PropertyGrid1.Size = New System.Drawing.Size(600, 700)
+C:\Users\Administrator\Desktop\DAEIL_JG\PopV4\FrmSet2.Designer.vb:39:        Me.PropertyGrid1.TabIndex = 0

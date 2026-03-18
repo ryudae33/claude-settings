@@ -1,0 +1,344 @@
+4925- SG_ SCM_GST_Byte5 : 40|8@1+ (1,0) [0|0] ""  CGW_CCU
+4926- SG_ SCM_GST_Byte6 : 48|8@1+ (1,0) [0|0] ""  CGW_CCU
+4927- SG_ SCM_GST_Byte7 : 56|8@1+ (1,0) [0|0] ""  CGW_CCU
+4928- SG_ SCM_GST_Byte1 : 8|8@1+ (1,0) [0|0] ""  CGW_CCU
+4929-
+4930:BO_ 992 BCM_02_200ms: 8 CGW_CCU
+4931- SG_ BCM_Crc2Val : 0|8@1+ (1,0) [0|0] ""  Vector__XXX
+4932- SG_ BCM_AlvCnt2Val : 12|4@1+ (1,0) [0|0] ""  Vector__XXX
+4933- SG_ BAlarm_BglrAlrmCurrentSta : 16|4@1+ (1,0) [0|0] ""  BLTN_CAM
+4934- SG_ BAlarm_BglrAlrmSta : 20|2@1+ (1,0) [0|0] ""  Vector__XXX
+4935- SG_ BAlarm_PncAlrmSta : 22|2@1+ (1,0) [0|0] ""  Vector__XXX
+--
+5995-CM_ BO_ 1216 "[EC] On Event and On Change";
+5996-CM_ SG_ 1216 BCM_Crc1Val "BCM_CyclicRedundancyCheck1Value";
+5997-CM_ SG_ 1216 BCM_AlvCnt1Val "BCM_AliveCounter1Value";
+5998-CM_ SG_ 1216 PHEV_FuelDrReleaseSwSta "PHEV_FuelDoorReleaseSwitchStatus ##2G##BCM - BCMmsg01 - C_FuelDrReleaseSw";
+5999-CM_ SG_ 1216 BAlarm_AutoLockrReq "BAlarm_AutoLockRequest ##2G##BCM - BCMmsg01 - C_AutoLockCmd";
+6000:CM_ BO_ 992 "[PE] Periodic and On Event";
+6001:CM_ SG_ 992 BCM_Crc2Val "BCM_CyclicRedundancyCheck2Value";
+6002:CM_ SG_ 992 BCM_AlvCnt2Val "BCM_AliveCounter2Value";
+6003:CM_ SG_ 992 BAlarm_BglrAlrmCurrentSta "BAlarm_BuglarAlarmCurrentStatus ##2G##BCM - BCMmsg17 - C_BAlarmState";
+6004:CM_ SG_ 992 BAlarm_BglrAlrmSta "BAlarm_BuglarAlarmStatus ##2G##BCM - BCMmsg17 - C_BAState";
+6005:CM_ SG_ 992 BAlarm_PncAlrmSta "BAlarm_PanicAlarmStatus ##2G##BCM - BCMmsg17 - C_PanicState";
+6006:CM_ SG_ 992 BAlarm_BrglrHrnRlySta "BAlarm_BurglarHornRelayStatus ##2G##BCM - BCMmsg19 - C_BurglarHornRly";
+6007:CM_ SG_ 992 BCM_KeyInSta "BCM_KeyInStatus ##2G##BCM - BCMmsg17 - C_KeyInSW";
+6008:CM_ SG_ 992 BCM_AccInSta "BCM_AccInputStatus ##2G##BCM - BCMmsg17 - C_Acc";
+6009:CM_ SG_ 992 BCM_Ign1InSta "BCM_Ignition1InputStatus ##2G##BCM - BCMmsg17 - C_Ign1";
+6010:CM_ SG_ 992 BCM_Ign2InSta "BCM_Ignition1InputStatus ##2G##BCM - BCMmsg17 - C_Ign2";
+6011-CM_ BO_ 994 "[PE] Periodic and On Event";
+6012-CM_ SG_ 994 BCM_Crc4Val "BCM_CyclicRedundancyCheck4Value";
+6013-CM_ SG_ 994 BCM_AlvCnt4Val "BCM_AliveCounter4Value";
+6014-CM_ SG_ 994 Warn_BzrWrngSta "Warn_BuzzerWarningStatus ##2G##BCM - BCMmsg18 - C_WngBuz";
+6015-CM_ SG_ 994 Warn_BCMWrngSta "Warn_BCMWarningStatus ##2G##BCM - BCMmsg19 - C_BCMWarning";
+--
+9625-BA_ "GenSigStartValue" SG_ 2281835009 ACU_OdsIDReq 0;
+9626-BA_ "UserSigValidity" SG_ 2281835009 ACU_OdsIDReq 3;
+9627-BA_ "NetworkRequestHoldingTime" SG_ 2281835009 ACU_OdsIDReq 0;
+9628-BA_ "RoutingFactor" SG_ 2281835009 ACU_OdsIDReq 1;
+9629-BA_ "Version" SG_ 2281835009 ACU_OdsIDReq "17.12.00";
+9630:BA_ "NmStationAddress" BU_ PSB 65;
+9631-BA_ "NmNode" BU_ PSB 1;
+9632-BA_ "Description" SG_ 2281835009 SeatBelt_PassBcklFltSta "Information of Passenger Seat Belt Buckle switch Fault condition.
+9633-
+9634-1) Default value : 0x0
+9635-2) Default value Transmit condition
+--
+15104-BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SCM SG_ 1216 Tele_IMSMemoryCmd 0;
+15105-BA_ "NetworkRequest" SG_ 1216 Tele_IMSMemoryCmd 0;
+15106-BA_ "NetworkRequestHoldingTime" SG_ 1216 Tele_IMSMemoryCmd 5000;
+15107-BA_ "RoutingFactor" SG_ 1216 Tele_IMSMemoryCmd 1;
+15108-BA_ "Version" SG_ 1216 Tele_IMSMemoryCmd "20.08.07";
+15109:BA_ "GenMsgSendType" BO_ 992 0;
+15110:BA_ "GenMsgCycleTime" BO_ 992 200;
+15111:BA_ "GenMsgStartDelayTime" BO_ 992 0;
+15112:BA_ "Description" SG_ 992 BCM_Crc2Val "The data area for CRC calculation is based on the data length (DLC) of the message DB.
+15113-The CRC shall be calculated over the entire data block (excluding the CRC bytes) including the user data, alive counter and Data ID 
+15114- 
+15115-- CRC Polynomial (0x1D) , Initial Value : 0x00, XOR value : 0xFF, Data ID Mode : Both, Data ID : Message ID + 0xF800 
+15116-- The initial value is for CRC calculation and the message should be sent with the calculated result value. 
+15117-The mathematical expression to 8 bit CRC polynomial is given here. G(x) = x8 + x4 + x3 + x2 + 1";
+15118:BA_ "GenSigSendType" SG_ 992 BCM_Crc2Val 4;
+15119:BA_ "GenSigStartValue" SG_ 992 BCM_Crc2Val 0;
+15120:BA_ "UserSigValidity" SG_ 992 BCM_Crc2Val 0;
+15121:BA_ "NetworkRequestHoldingTime" SG_ 992 BCM_Crc2Val 0;
+15122:BA_ "RoutingFactor" SG_ 992 BCM_Crc2Val 1;
+15123:BA_ "Version" SG_ 992 BCM_Crc2Val "21.09.03";
+15124:BA_ "Description" SG_ 992 BCM_AlvCnt2Val "For the first transmission request for a data element the counter shall be initialized with 0 and shall be incremented by 1
+15125-for every subsequent send request. When the counter reaches the maximum value(0xE), then it shall restart with 0 for the next send request";
+15126:BA_ "GenSigSendType" SG_ 992 BCM_AlvCnt2Val 4;
+15127:BA_ "GenSigStartValue" SG_ 992 BCM_AlvCnt2Val 0;
+15128:BA_ "UserSigValidity" SG_ 992 BCM_AlvCnt2Val 0;
+15129:BA_ "NetworkRequestHoldingTime" SG_ 992 BCM_AlvCnt2Val 0;
+15130:BA_ "RoutingFactor" SG_ 992 BCM_AlvCnt2Val 1;
+15131:BA_ "Version" SG_ 992 BCM_AlvCnt2Val "21.09.03";
+15132:BA_ "GenSigSendType" SG_ 992 BAlarm_BglrAlrmCurrentSta 4;
+15133:BA_ "GenSigStartValue" SG_ 992 BAlarm_BglrAlrmCurrentSta 0;
+15134:BA_ "UserSigValidity" SG_ 992 BAlarm_BglrAlrmCurrentSta 0;
+15135:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ BLTN_CAM SG_ 992 BAlarm_BglrAlrmCurrentSta 1500;
+15136:BA_ "NetworkRequest" SG_ 992 BAlarm_BglrAlrmCurrentSta 0;
+15137:BA_ "NetworkRequestHoldingTime" SG_ 992 BAlarm_BglrAlrmCurrentSta 5000;
+15138:BA_ "RoutingFactor" SG_ 992 BAlarm_BglrAlrmCurrentSta 1;
+15139:BA_ "Version" SG_ 992 BAlarm_BglrAlrmCurrentSta "21.09.05";
+15140:BA_ "GenSigSendType" SG_ 992 BAlarm_BglrAlrmSta 4;
+15141:BA_ "GenSigStartValue" SG_ 992 BAlarm_BglrAlrmSta 0;
+15142:BA_ "UserSigValidity" SG_ 992 BAlarm_BglrAlrmSta 0;
+15143:BA_ "NetworkRequest" SG_ 992 BAlarm_BglrAlrmSta 0;
+15144:BA_ "NetworkRequestHoldingTime" SG_ 992 BAlarm_BglrAlrmSta 5000;
+15145:BA_ "RoutingFactor" SG_ 992 BAlarm_BglrAlrmSta 1;
+15146:BA_ "Version" SG_ 992 BAlarm_BglrAlrmSta "17.12.00";
+15147:BA_ "Description" SG_ 992 BAlarm_PncAlrmSta "-For TeleCranking Panic Function
+15148--This signal send to IBOX";
+15149:BA_ "GenSigSendType" SG_ 992 BAlarm_PncAlrmSta 4;
+15150:BA_ "GenSigStartValue" SG_ 992 BAlarm_PncAlrmSta 0;
+15151:BA_ "UserSigValidity" SG_ 992 BAlarm_PncAlrmSta 0;
+15152:BA_ "NetworkRequest" SG_ 992 BAlarm_PncAlrmSta 0;
+15153:BA_ "NetworkRequestHoldingTime" SG_ 992 BAlarm_PncAlrmSta 5000;
+15154:BA_ "RoutingFactor" SG_ 992 BAlarm_PncAlrmSta 1;
+15155:BA_ "Version" SG_ 992 BAlarm_PncAlrmSta "21.09.05";
+15156:BA_ "GenSigSendType" SG_ 992 BAlarm_BrglrHrnRlySta 4;
+15157:BA_ "GenSigStartValue" SG_ 992 BAlarm_BrglrHrnRlySta 0;
+15158:BA_ "UserSigValidity" SG_ 992 BAlarm_BrglrHrnRlySta 0;
+15159:BA_ "NetworkRequest" SG_ 992 BAlarm_BrglrHrnRlySta 0;
+15160:BA_ "NetworkRequestHoldingTime" SG_ 992 BAlarm_BrglrHrnRlySta 5000;
+15161:BA_ "RoutingFactor" SG_ 992 BAlarm_BrglrHrnRlySta 1;
+15162:BA_ "Version" SG_ 992 BAlarm_BrglrHrnRlySta "17.12.00";
+15163-BA_ "NmStationAddress" BU_ GW_DLBCU 64;
+15164-BA_ "NmNode" BU_ GW_DLBCU 1;
+15165-BA_ "NmStationAddress" BU_ PFSU 45;
+15166-BA_ "NmNode" BU_ PFSU 1;
+15167-BA_ "NmStationAddress" BU_ SGU 62;
+15168-BA_ "NmNode" BU_ SGU 1;
+15169:BA_ "Description" SG_ 992 BCM_KeyInSta "Mechanical Key In SW State (If SMK option is On, C_KeyInSw always have  Off
+15170- value)";
+15171:BA_ "GenSigSendType" SG_ 992 BCM_KeyInSta 4;
+15172:BA_ "GenSigStartValue" SG_ 992 BCM_KeyInSta 0;
+15173:BA_ "UserSigValidity" SG_ 992 BCM_KeyInSta 0;
+15174:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ALBCU SG_ 992 BCM_KeyInSta 1500;
+15175:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ARS SG_ 992 BCM_KeyInSta 1500;
+15176:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_APSU SG_ 992 BCM_KeyInSta 1500;
+15177:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DLBCU SG_ 992 BCM_KeyInSta 1500;
+15178:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DPSU SG_ 992 BCM_KeyInSta 1500;
+15179:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RLPSU SG_ 992 BCM_KeyInSta 1500;
+15180:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RRPSU SG_ 992 BCM_KeyInSta 1500;
+15181:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ PFSU SG_ 992 BCM_KeyInSta 1500;
+15182:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RLHV SG_ 992 BCM_KeyInSta 1500;
+15183:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RRHV SG_ 992 BCM_KeyInSta 1500;
+15184:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SGU SG_ 992 BCM_KeyInSta 1500;
+15185:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_FR SG_ 992 BCM_KeyInSta 1500;
+15186:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_RR SG_ 992 BCM_KeyInSta 1500;
+15187:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SWRC SG_ 992 BCM_KeyInSta 1500;
+15188:BA_ "NetworkRequest" SG_ 992 BCM_KeyInSta 0;
+15189:BA_ "NetworkRequestHoldingTime" SG_ 992 BCM_KeyInSta 5000;
+15190:BA_ "RoutingFactor" SG_ 992 BCM_KeyInSta 1;
+15191:BA_ "Version" SG_ 992 BCM_KeyInSta "17.12.00";
+15192-BA_ "NmStationAddress" BU_ DSAU 89;
+15193-BA_ "NmNode" BU_ DSAU 1;
+15194-BA_ "NmStationAddress" BU_ WPC2 21;
+15195-BA_ "NmNode" BU_ WPC2 1;
+15196:BA_ "GenSigSendType" SG_ 992 BCM_AccInSta 4;
+15197:BA_ "GenSigStartValue" SG_ 992 BCM_AccInSta 0;
+15198:BA_ "UserSigValidity" SG_ 992 BCM_AccInSta 0;
+15199:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ALBCU SG_ 992 BCM_AccInSta 1500;
+15200:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ARS SG_ 992 BCM_AccInSta 1500;
+15201:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ASAU SG_ 992 BCM_AccInSta 1500;
+15202:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ATS SG_ 992 BCM_AccInSta 1500;
+15203:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DSAU SG_ 992 BCM_AccInSta 1500;
+15204:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_APSU SG_ 992 BCM_AccInSta 1500;
+15205:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DLBCU SG_ 992 BCM_AccInSta 1500;
+15206:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DPSU SG_ 992 BCM_AccInSta 1500;
+15207:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RLPSU SG_ 992 BCM_AccInSta 1500;
+15208:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RRPSU SG_ 992 BCM_AccInSta 1500;
+15209:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ PFSU SG_ 992 BCM_AccInSta 1500;
+15210:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RLHV SG_ 992 BCM_AccInSta 1500;
+15211:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RRHV SG_ 992 BCM_AccInSta 1500;
+15212:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SCM SG_ 992 BCM_AccInSta 1500;
+15213:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SGU SG_ 992 BCM_AccInSta 1500;
+15214:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_FR SG_ 992 BCM_AccInSta 1500;
+15215:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_RR SG_ 992 BCM_AccInSta 1500;
+15216:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SWRC SG_ 992 BCM_AccInSta 1500;
+15217:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ WPC2 SG_ 992 BCM_AccInSta 1500;
+15218:BA_ "NetworkRequest" SG_ 992 BCM_AccInSta 0;
+15219:BA_ "NetworkRequestHoldingTime" SG_ 992 BCM_AccInSta 5000;
+15220:BA_ "RoutingFactor" SG_ 992 BCM_AccInSta 1;
+15221:BA_ "Version" SG_ 992 BCM_AccInSta "21.09.05";
+15222:BA_ "GenSigSendType" SG_ 992 BCM_Ign1InSta 4;
+15223:BA_ "GenSigStartValue" SG_ 992 BCM_Ign1InSta 0;
+15224:BA_ "UserSigValidity" SG_ 992 BCM_Ign1InSta 0;
+15225:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ALBCU SG_ 992 BCM_Ign1InSta 1500;
+15226:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ARS SG_ 992 BCM_Ign1InSta 1500;
+15227:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ASAU SG_ 992 BCM_Ign1InSta 1500;
+15228:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ATS SG_ 992 BCM_Ign1InSta 1500;
+15229:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DSAU SG_ 992 BCM_Ign1InSta 1500;
+15230:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_APSU SG_ 992 BCM_Ign1InSta 1500;
+15231:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DLBCU SG_ 992 BCM_Ign1InSta 1500;
+15232:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DPSU SG_ 992 BCM_Ign1InSta 1500;
+15233:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RLPSU SG_ 992 BCM_Ign1InSta 1500;
+15234:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RRPSU SG_ 992 BCM_Ign1InSta 1500;
+15235:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HOD SG_ 992 BCM_Ign1InSta 1500;
+15236:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ PFSU SG_ 992 BCM_Ign1InSta 1500;
+15237:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RCM SG_ 992 BCM_Ign1InSta 1500;
+15238:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RLHV SG_ 992 BCM_Ign1InSta 1500;
+15239:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RRHV SG_ 992 BCM_Ign1InSta 1500;
+15240:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SCM SG_ 992 BCM_Ign1InSta 1500;
+15241:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SGU SG_ 992 BCM_Ign1InSta 1500;
+15242:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_FR SG_ 992 BCM_Ign1InSta 1500;
+15243:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_RR SG_ 992 BCM_Ign1InSta 1500;
+15244:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SWRC SG_ 992 BCM_Ign1InSta 1500;
+15245:BA_ "NetworkRequest" SG_ 992 BCM_Ign1InSta 0;
+15246:BA_ "NetworkRequestHoldingTime" SG_ 992 BCM_Ign1InSta 5000;
+15247:BA_ "RoutingFactor" SG_ 992 BCM_Ign1InSta 1;
+15248:BA_ "Version" SG_ 992 BCM_Ign1InSta "21.09.05";
+15249:BA_ "GenSigSendType" SG_ 992 BCM_Ign2InSta 4;
+15250:BA_ "GenSigStartValue" SG_ 992 BCM_Ign2InSta 0;
+15251:BA_ "UserSigValidity" SG_ 992 BCM_Ign2InSta 0;
+15252:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ALBCU SG_ 992 BCM_Ign2InSta 1500;
+15253:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ARS SG_ 992 BCM_Ign2InSta 1500;
+15254:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ASAU SG_ 992 BCM_Ign2InSta 1500;
+15255:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ ATS SG_ 992 BCM_Ign2InSta 1500;
+15256:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ DSAU SG_ 992 BCM_Ign2InSta 1500;
+15257:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ FCS SG_ 992 BCM_Ign2InSta 1500;
+15258:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_APSU SG_ 992 BCM_Ign2InSta 1500;
+15259:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DLBCU SG_ 992 BCM_Ign2InSta 1500;
+15260:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_DPSU SG_ 992 BCM_Ign2InSta 1500;
+15261:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RLPSU SG_ 992 BCM_Ign2InSta 1500;
+15262:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ GW_RRPSU SG_ 992 BCM_Ign2InSta 1500;
+15263:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ PFSU SG_ 992 BCM_Ign2InSta 1500;
+15264:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RCM SG_ 992 BCM_Ign2InSta 1500;
+15265:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RLHV SG_ 992 BCM_Ign2InSta 1500;
+15266:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ RRHV SG_ 992 BCM_Ign2InSta 1500;
+15267:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SCM SG_ 992 BCM_Ign2InSta 1500;
+15268:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SGU SG_ 992 BCM_Ign2InSta 1500;
+15269:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_FR SG_ 992 BCM_Ign2InSta 1500;
+15270:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SHVU_RR SG_ 992 BCM_Ign2InSta 1500;
+15271:BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ SWRC SG_ 992 BCM_Ign2InSta 1500;
+15272:BA_ "NetworkRequest" SG_ 992 BCM_Ign2InSta 0;
+15273:BA_ "NetworkRequestHoldingTime" SG_ 992 BCM_Ign2InSta 5000;
+15274:BA_ "RoutingFactor" SG_ 992 BCM_Ign2InSta 1;
+15275:BA_ "Version" SG_ 992 BCM_Ign2InSta "21.09.05";
+15276-BA_ "GenMsgSendType" BO_ 994 0;
+15277-BA_ "GenMsgCycleTime" BO_ 994 200;
+15278-BA_ "GenMsgStartDelayTime" BO_ 994 0;
+15279-BA_ "Description" SG_ 994 BCM_Crc4Val "The data area for CRC calculation is based on the data length (DLC) of the message DB.
+15280-The CRC shall be calculated over the entire data block (excluding the CRC bytes) including the user data, alive counter and Data ID 
+--
+49048-VAL_ 2239851009 ADAS_PRK_Crc3Val 0 "0x0x0~0xFFFF:CRCValue" 65535 "0x0x0~0xFFFF:CRCValue" ;
+49049-VAL_ 2239851009 ADAS_PRK_AlvCnt3Val 0 "0x0x0~0xFF:AlvCntValue" 255 "0x0x0~0xFF:AlvCntValue" ;
+49050-VAL_ 2239851009 RSPA_AvnDis 0 "init" 1 "No display" 2 "RSPA ȭ�� ���" 3 "invalid" ;
+49051-VAL_ 2239851009 RSPA_AvnModDis 0 "init" 1 "�������" 2 "�������" 3 "invalid" ;
+49052-VAL_ 2239851009 RSPA_AvnSubViewDis 0 "init" 1 "No display" 2 "��ü�̹��� ���" 3 "invalid" ;
+49053:[Omitted long matching line]
+49054-VAL_ 2239851010 RSPA_Var 0 "init" 1 "RSPA (ENTRY)" 2 "RSPA" 3 "RSPA 2" 4 "RSPA 3" 5 "RESERVED" 6 "RESERVED" 7 "RESERVED" 8 "RESERVED" 9 "RESERVED" 10 "RESERVED" 11 "RESERVED" 12 "RESERVED" 13 "RESERVED" 14 "RESERVED" 15 "Invalid" ;
+49055-VAL_ 2239851010 RSPA_Sta 0 "RSPA not recognized" 1 "Init" 2 "New Start" 3 "Ready OK" 4 "Assist Req" 5 "Assist OK" 6 "Assist Fail" 7 "Abort" 8 "Ready Fail" ;
+49056-VAL_ 2239851010 RSPA_Actv 0 "RSPA Off" 1 "RSPA On" 2 "Reserved" 3 "Reserved" ;
+49057-VAL_ 2239851011 RSPA_TrgtGearSta 0 "Idle" 1 "P" 2 "R" 3 "N" 4 "D" ;
+49058-VAL_ 2239851011 RSPA_IdOutWarnReq 0 "No Request" 1 "Change Request" 2 "Not Used" 3 "Error Indicator" ;
+--
+49501-VAL_ 1216 Wndshld_FrtGlsHtdMKBDBpReq 0 "Beep Off" 1 "Beep On" 2 "Not Used" 3 "Error Indicator" ;
+49502-VAL_ 1216 BAlarm_AutoLockrReq 0 "Off" 1 "Lock" 2 "Not Used" 3 "Error Indicator" ;
+49503-VAL_ 1216 TiltTele_SmrtIMSDBNum 0 "None" 1 "0x1~0x97E:SmartIMS DB Number (1~2430)" 2430 "0x1~0x97E:SmartIMS DB Number (1~2430)" 2431 "0x97F~0xFFE:Reserved" 4094 "0x97F~0xFFE:Reserved" 4095 "Error indicator" ;
+49504-VAL_ 1216 Tilt_IMSMemoryCmd 0 "None" 1 "Memory 1" 2 "Memory 2" 3 "Memory 3" ;
+49505-VAL_ 1216 Tele_IMSMemoryCmd 0 "None" 1 "Memory 1" 2 "Memory 2" 3 "Memory 3" ;
+49506:VAL_ 992 BCM_Crc2Val 0 "0x0x0~0xFF:CRCValue" 255 "0x0x0~0xFF:CRCValue" ;
+49507:VAL_ 992 BCM_AlvCnt2Val 0 "AlvCntValue" 1 "AlvCntValue" 2 "AlvCntValue" 3 "AlvCntValue" 4 "AlvCntValue" 5 "AlvCntValue" 6 "AlvCntValue" 7 "AlvCntValue" 8 "AlvCntValue" 9 "AlvCntValue" 10 "AlvCntValue" 11 "AlvCntValue" 12 "AlvCntValue" 13 "AlvCntValue" 14 "AlvCntValue" 15 "AlvCntValue" ;
+49508:VAL_ 992 BAlarm_BglrAlrmCurrentSta 0 "Off" 1 "DisArm" 2 "Arm" 3 "PreArm" 4 "ArmWait" 5 "ArmHold(Trunk)" 6 "ReArm" 7 "AutoLockTimer1" 8 "AutoLockTimer2" 9 "Alarm" 10 "Default" 11 "AutoLockTimer3(Tailgate)" 12 "Reserved" 13 "Reserved" 14 "Not Used" 15 "Error Indicator" ;
+49509:VAL_ 992 BAlarm_BglrAlrmSta 0 "DIS-,PRE-,AUTOLOCKTIMER1,2,3(TG)" 1 "ARM,-WAIT,RE-,ALARM,-HD(Trunk)" 2 "Not Used" 3 "Error Indicator" ;
+49510:VAL_ 992 BAlarm_PncAlrmSta 0 "Off" 1 "On (Panic Alarm ON)" 2 "Not Used" 3 "Error Indicator" ;
+49511:VAL_ 992 BAlarm_BrglrHrnRlySta 0 "Off" 1 "On" 2 "Not Used" 3 "Error Indicator" ;
+49512:VAL_ 992 BCM_KeyInSta 0 "Off (Key removed)" 1 "On (Key inserted)" 2 "Not Used" 3 "Error Indicator" ;
+49513:VAL_ 992 BCM_AccInSta 0 "Acc Off" 1 "Acc On" 2 "Not Used" 3 "Error Indicator" ;
+49514:VAL_ 992 BCM_Ign1InSta 0 "IGN1 Off" 1 "IGN1 On" 2 "Not Used" 3 "Error Indicator" ;
+49515:VAL_ 992 BCM_Ign2InSta 0 "IGN2 Off" 1 "IGN2 On" 2 "Not Used" 3 "Error Indicator" ;
+49516-VAL_ 994 BCM_Crc4Val 0 "0x0x0~0xFF:CRCValue" 255 "0x0x0~0xFF:CRCValue" ;
+49517-VAL_ 994 BCM_AlvCnt4Val 0 "AlvCntValue" 1 "AlvCntValue" 2 "AlvCntValue" 3 "AlvCntValue" 4 "AlvCntValue" 5 "AlvCntValue" 6 "AlvCntValue" 7 "AlvCntValue" 8 "AlvCntValue" 9 "AlvCntValue" 10 "AlvCntValue" 11 "AlvCntValue" 12 "AlvCntValue" 13 "AlvCntValue" 14 "AlvCntValue" 15 "AlvCntValue" ;
+49518-VAL_ 994 Warn_BzrWrngSta 0 "Off" 1 "SeatBelt Warning" 2 "Key Operated Warning" 3 "Parking Brake Warning" 4 "Sun Roof Open Warning" 5 "Key Learning Sound(NoSMKOption" 6 "ICE Warning" 7 "Rear Fog Warning" 8 "Reserved" 9 "Reserved" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Not Used" 15 "Error Indicator" ;
+49519-VAL_ 994 Warn_BCMWrngSta 0 "Off" 1 "Power off request warning" 2 "Shift P request Warning" 3 "Shift P Warning 2 (Pwr Off, Shift Enable)" 4 "Shift P Warning 2 (Pwr Off, Shift Disable)" 5 "Shift P Warning 2 (Pwr On, Shift Enable)" 6 "Shift P Warning 2 (Pwr On, Shift Disable)" 7 "RESERVED" 8 "RESERVED" 9 "RESERVED" 10 "RESERVED" 11 "RESERVED" 12 "RESERVED" 13 "RESERVED" 14 "Not Used" 15 "Error Indicator" ;
+49520-VAL_ 994 ROA_RrBlwAutoOffReq 0 "default" 1 "Request of Rear Blow Off (auto Cut)" 2 "Not Used" 3 "Error Indciator" ;
+--
+49724-VAL_ 950 BLTN_CAM_Prk_Oprable_Time_Max 0 "0x0x0~0xFB:the hours of Park Mode Operatable" 251 "0x0x0~0xFB:the hours of Park Mode Operatable" 252 "RESERVED" 253 "Auxiliary Battery is not connected. - Auxiliary Battery applicable on this vehicle model" 254 "Auxiliary Battery is not connected. ? Auxiliary Battery not applicable on this vehicle model" 255 "Invalid" ;
+49725-VAL_ 950 BLTN_CAM_AuxBat_Conn_State 0 "Default" 1 "Auxiliary Battery is connected.(P-LBM or B-LBM)" 2 "Auxiliary Battery is not connected. - Auxiliary Battery applicable on this vehicle model" 3 "Auxiliary Battery is not connected. ? Auxiliary Battery not applicable on this vehicle model" ;
+49726-[Omitted long context line]
+49727-VAL_ 950 BLTN_CAM_RecSta_OWD 0 "Off" 1 "Recording" 2 "Reserved" 3 "invalid" ;
+49728-VAL_ 983 BLTN_CAM_SWVerMajor 0 "ASCII Code Value (HEX)" 1 "ASCII Code Value (HEX)" 2 "ASCII Code Value (HEX)" 3 "ASCII Code Value (HEX)" 4 "ASCII Code Value (HEX)" 5 "ASCII Code Value (HEX)" 6 "ASCII Code Value (HEX)" 7 "ASCII Code Value (HEX)" 8 "ASCII Code Value (HEX)" 9 "ASCII Code Value (HEX)" 10 "ASCII Code Value (HEX)" 11 "ASCII Code Value (HEX)" 12 "ASCII Code Value (HEX)" 13 "ASCII Code Value (HEX)" 14 "ASCII Code Value (HEX)" 15 "ASCII Code Value (HEX)" ;
+49729:[Omitted long matching line]
+49730:[Omitted long matching line]
+49731-VAL_ 983 BLTN_CAM_SD_Card_Manufacturer 0 "SD Card not found" 1 "Micron-Genuine part" 2 "RESERVED" 3 "RESERVED" 4 "RESERVED" 5 "RESERVED" 6 "Unknown" 7 "Invalid" ;
+49732-VAL_ 983 BLTN_CAM_SD_Card_Cap_Class 0 "SD Card not found" 1 "64Gbyte Class" 2 "128Gbyte Class" 3 "256Gbyte Class" 4 "512Gbyte Class" 5 "1Tbyte Class" 6 "2Tbyte Class" 7 "Invalid" ;
+49733:[Omitted long matching line]
+49734-VAL_ 2344811009 BMS_Crc2Val 0 "0x0x0~0xFFFF:CRCValue" 65535 "0x0x0~0xFFFF:CRCValue" ;
+49735-VAL_ 2344811009 BMS_AlvCnt2Val 0 "0x0x0~0xFF:AlvCntValue" 255 "0x0x0~0xFF:AlvCntValue" ;
+49736-VAL_ 2344811009 xEV_SrvLmpReq 0 "Off" 1 "Service Lamp On" 2 "Not used" 3 "Error indicator" ;
+49737-VAL_ 2344811009 xEV_MainRlyOnSta 0 "Open" 1 "Close" 2 "Not used" 3 "Error indicator" ;
+49738-VAL_ 2344811009 xEV_SysFltSta 0 "Normal" 1 "Fault" 2 "Not used" 3 "Error indicator" ;
+--
+49780-VAL_ 2357404929 CHRG_PShftChgSta 0 "Normal" 1 "P Shift For Charging" 2 "Not used" 3 "Error indicator" ;
+49781-VAL_ 2357404929 CHRG_PilotFlSta 0 "Normal" 1 "Notify Pilotline Fail" 2 "Not used" 3 "Error indicator" ;
+49782-VAL_ 2357404930 CHRG_ObcRlyOnSta 0 "Off" 1 "On" 2 "Not used" 3 "Error indicator" ;
+49783-VAL_ 2357404930 CHRG_NrmlOpSta 0 "Normal(repetitive change), Abnormal(fixed)" 1 "Normal(repetitive change), Abnormal(fixed)" ;
+49784-VAL_ 2357404930 CHRG_ChgLamp_1EA 0 "no connection" 1 "charging" 2 "charge completion" 3 "charging fail" 4 "reservation mode" ;
+49785:VAL_ 2357404932 CHRG_ChrgLmp_3EA 0 "Normal" 1 "Main Rly On Status On" 2 "SOC 0~35%" 3 "SOC 35~65%" 4 "SOC 65%~" 5 "Chargnig Complete" 6 "Charging Fail" 7 "Reservation Charging,OBC standby mode" ;
+49786-VAL_ 2323816449 C_CtrlDrLockRlyCCS_Copy_2 0 "Off (default)" 1 "On (remote Lock Command)" 2 "Reserved" 3 "Invalid" ;
+49787-VAL_ 2323816449 C_TeleHeatingCmdIBOX_Copy_2 0 "Off (default)" 1 "On(Remote Heating On)" 2 "Reserved" 3 "Invalid" ;
+49788-VAL_ 2323816449 C_TeleStrgWhlHeatingCmdIBOX_Copy_2 0 "Off (default)" 1 "On(Remote Heating On)" 2 "Reserved" 3 "Invalid" ;
+49789-VAL_ 2323816449 C_TeleDefoggerHeatingCmdIBOX_Copy_2 0 "Off (default)" 1 "On(Remote Heating On)" 2 "Reserved" 3 "Invalid" ;
+49790-VAL_ 2323816449 C_TeleDrvSeatOpCmdIBOX_Copy_2 0 "Init" 1 "Unused" 2 "Seat Heat&Vent OFF" 3 "Seat_Vent_Low" 4 "Seat_Vent_Mid" 5 "Seat_Vent_High" 6 "Seat_Heat_Low" 7 "Seat_Heat_Mid" 8 "Seat_Heat_High" 9 "Unused" 10 "Unused" 11 "Unused" 12 "Unused" 13 "Unused" 14 "Unused" 15 "Invalid" ;
+--
+49830-VAL_ 2315421697 CCU_OTA_EOU 0 "OFF" 1 "ON" 2 "Reserved" 3 "Invalid" ;
+49831-VAL_ 2202063617 CCU_AP_OTA_Crc4Val 0 "0x0x0~0xFFFF:CRCValue" 65535 "0x0x0~0xFFFF:CRCValue" ;
+49832-VAL_ 2202063617 CCU_AP_OTA_AlvCnt4Val 0 "0x0x0~0xFF:AlvCntValue" 255 "0x0x0~0xFF:AlvCntValue" ;
+49833-VAL_ 2202063617 CCU_OTA_Update_time 0 "Default" 1 "0x0001~0xFFFF:update time" 65535 "0x0001~0xFFFF:update time" ;
+49834-VAL_ 2202063617 CCU_OTA_Update_Current 0 "Default" 1 "0x0001~0xFFFF:current" 65535 "0x0001~0xFFFF:current" ;
+49835:[Omitted long matching line]
+49836-VAL_ 2353205505 CDCU_Crc1Val 0 "0x0x0~0xFFFF:CRCValue" 65535 "0x0x0~0xFFFF:CRCValue" ;
+49837-VAL_ 2353205505 CDCU_AlvCnt1Val 0 "0x0x0~0xFF:AlvCntValue" 255 "0x0x0~0xFF:AlvCntValue" ;
+49838-VAL_ 2353205505 CDCU_Rd_LongGrdntPerc 28 "0x0x1C ~ 0xE4 : -100% ~ 100%0xFF : Invalid(Error Or Not Applied)" 228 "0x0x1C ~ 0xE4 : -100% ~ 100%0xFF : Invalid(Error Or Not Applied)" ;
+49839-VAL_ 2353205505 CDCU_Rd_LatGrdntPerc 28 "0x0x1C ~ 0xE4 : -100% ~ 100%0xFF : Invalid(Error Or Not Applied)" 228 "0x0x1C ~ 0xE4 : -100% ~ 100%0xFF : Invalid(Error Or Not Applied)" ;
+49840-VAL_ 2353205505 CDCU_CPE_Sta 0 "Not request" 1 "request(PC)" 2 "request(Nm/bar)" 3 "Not available" 4 "Reserved" 5 "Reserved" 6 "Reserved" 7 "Reserved" 8 "Reserved" 9 "Reserved" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Reserved" 15 "Invalid" ;
+--
+50419-VAL_ 2307024131 HEV_EngDsplceTyp 255 "Error indicator" ;
+50420-VAL_ 2307024131 HEV_EngTyp2 0 "LPI" 1 "MPI" 2 "GDI" 3 "TGDI" 4 "CVVL" 5 "CVVD" 6 "PDI" 7 "FFV" 8 "TCI" 9 "VGT" 10 "Turbo" 14 "Not used" 15 "Error indicator" ;
+50421-VAL_ 2307024131 HEV_EngTyp1 0 "epsilon(��)" 1 "gamma(��)" 2 "kappa(��)" 3 "theta(��)" 4 "nu(��)" 5 "lambda(��)" 6 "tau(��)" 10 "S" 11 "A" 12 "R" 13 "U" 14 "D" 15 "Error indicator" ;
+50422-VAL_ 2307024131 HEV_S_F 0 "AMS" 1 "ISG" 2 "Reserved" 3 "Reserved" ;
+50423-VAL_ 2307024131 HEV_S_F_GEN 0 "No AMS" 1 "1G Generation AMS" 2 "1.5G Generation AMS" 3 "2G Generation AMS" 4 "Reserved" 5 "Reserved" 6 "Reserved" 7 "Reserved" ;
+50424:[Omitted long matching line]
+50425-VAL_ 2307024132 HEV_OilLifeEna 0 "Oil life monitoring Not applied" 1 "Oil life monitoring Applied" 2 "Reserved" 3 "Error" ;
+50426-VAL_ 2307024132 HEV_OilLifeWarn 0 "No display" 1 "'Change engine oil' warning, 1st step (Low urgency)" 2 "'Change engine oil' warning, 2nd step (High urgency)" 3 "Oil change question based on oil temperature" 4 "Oil change confirm based on oil temperature" 5 "Reserved" 6 "Reserved" 7 "Error" ;
+50427-VAL_ 2307024132 HEV_RECTrigSta 0 "No detected" 1 "REC detected" ;
+50428-VAL_ 2307024132 HEV_PendingTrigSta 0 "No detected" 1 "Pending detected" ;
+50429-VAL_ 2277634049 EPB_Crc1Val 0 "0x0x0~0xFFFF:CRCValue" 65535 "0x0x0~0xFFFF:CRCValue" ;
+--
+50824-[Omitted long context line]
+50825-VAL_ 1264 HU_Status 0 "Not used" 1 "Booting Head Unit" 2 "GPS receiving" 3 "Setting Mode" 4 "GPS Unavailable Mode" 5 "No GPS" 6 "RESERVED" 7 "RESERVED" 8 "RESERVED" 9 "RESERVED" 10 "RESERVED" 11 "RESERVED" 12 "RESERVED" 13 "RESERVED" 14 "RESERVED" 15 "Invalid" ;
+50826-[Omitted long context line]
+50827-VAL_ 1264 HU_DisplayMonth 0 "Not used" 1 "1~12 month" 2 "1~12 month" 3 "1~12 month" 4 "1~12 month" 5 "1~12 month" 6 "1~12 month" 7 "1~12 month" 8 "1~12 month" 9 "1~12 month" 10 "1~12 month" 11 "1~12 month" 12 "1~12 month" 13 "RESERVED" 14 "RESERVED" 15 "Invalid" ;
+50828-VAL_ 1264 HU_DisplayYear1 0 "19" 1 "20" 2 "21" 3 "invalid" ;
+50829:[Omitted long matching line]
+50830-[Omitted long context line]
+50831-VAL_ 1264 HU_AM_PM_INFO 0 "Not Used" 1 "AM" 2 "PM" 3 "invalid" ;
+50832-VAL_ 1264 HU_TimeFormat 0 "Not used" 1 "12Hour" 2 "24Hour" 3 "invalid" ;
+50833-VAL_ 1264 HU_ComRefresh 0 "Not Used" 1 "Internal Clock None" 2 "Internal Clock Exist" 3 "Invalid" ;
+50834-VAL_ 1264 HU_ClockInfo 0 "Not Used" 1 "ACLOCK Refresh" 2 "Not Used" 3 "invalid" ;
+--
+50913-VAL_ 1265 HU_DigitalKeyGroupingSupport 0 "Default" 1 "Not supported" 2 "Support" 3 "RESERVED" ;
+50914-VAL_ 1265 HU_Background 0 "Default" 1 "Day" 2 "Night" 3 "RESERVED" 4 "RESERVED" 5 "RESERVED" 6 "RESERVED" 7 "Invalid" ;
+50915-VAL_ 1265 HU_BackgroundFadeInOut 0 "0x0x0~0x3E8:0.0~100.0%" 1000 "0x0x0~0x3E8:0.0~100.0%" 1001 "RESERVED" 1002 "RESERVED" 1003 "RESERVED" 1004 "RESERVED" 1005 "RESERVED" 1006 "RESERVED" 1007 "RESERVED" 1008 "RESERVED" 1009 "RESERVED" 1010 "RESERVED" 1011 "RESERVED" 1012 "RESERVED" 1013 "RESERVED" 1014 "RESERVED" 1015 "RESERVED" 1016 "RESERVED" 1017 "RESERVED" 1018 "RESERVED" 1019 "RESERVED" 1020 "RESERVED" 1021 "RESERVED" 1022 "Default" 1023 "Invalid" ;
+50916-VAL_ 1265 CF_AVN_AutoWashModeSta 0 "Default" 1 "Non Auto Wash Mode" 2 "Auto Wash Mode" 3 "RESERVED" 4 "RESERVED" 5 "RESERVED" 6 "RESERVED" 7 "Invalid" ;
+50917-VAL_ 1265 OMUOSMirCtrl_Vr 0 "Off" 1 "Fold" 2 "Unfold" 3 "invalid" ;
+50918:[Omitted long matching line]
+50919-VAL_ 1278 HU_DistributeInfo 0 "Default (Korea)" 1 "Korea" 2 "North America" 3 "Canada" 4 "East Europe" 5 "West Europe" 6 "China" 7 "India" 8 "Australia" 9 "Middle East" 10 "Africa" 11 "South America" 12 "Russia" 13 "Japan" 14 "General" 15 "0x0F~0xFE:Reserved" 254 "0x0F~0xFE:Reserved" 255 "Invalid" ;
+50920-VAL_ 1278 HU_OptionInfo 0 "0x0x0000~0x01FF:Bit allocation" 511 "0x0x0000~0x01FF:Bit allocation" 512 "0x0200~0x7FFF:RESERVED" 32767 "0x0200~0x7FFF:RESERVED" 32768 "Invalid" 32769 "0x8001~0xFFFF:Not used" 65535 "0x8001~0xFFFF:Not used" ;
+50921-VAL_ 1278 HU_NaviHandshakingSupport 0 "Not Support" 1 "Support" 2 "Unknown" 3 "Invalid" ;
+50922-VAL_ 1278 HU_AMP_EQVariant 0 "Default" 1 "WGN" 2 "WGN PHEV" 3 "5DR" 4 "SB" 5 "CUV" 6 "HEV" 7 "PHEV" 8 "EV" 9 "Reserved" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Reserved" 15 "Reserved" 16 "Reserved" 17 "Reserved" 18 "Reserved" 19 "Reserved" 20 "Reserved" 21 "Reserved" 22 "Reserved" 23 "Reserved" 24 "Reserved" 25 "Reserved" 26 "Reserved" 27 "Reserved" 28 "Reserved" 29 "Reserved" 30 "Reserved" ;
+50923-VAL_ 1278 HU_AdasSupport 0 "Not Support" 1 "ADAS Support(General Map)" 2 "ADAS Support(Map based ADAS v1)" 3 "ADAS Support(Map based ADAS v2)" 4 "ADAS Support(Map based ADAS v2 & Handshaking)" 5 "ADAS Support(Map based ADAS v2_3)" 6 "Reserved" 7 "Invalid" ;
+--
+50967-VAL_ 1193 CF_AVN_EscortHLNValueSet 0 "Default" 1 "Escort Off" 2 "Escort On" 3 "Invalid" ;
+50968-VAL_ 1195 CF_AVN_CluWelcomeSnd 0 "Default" 1 "Off" 2 "On" 3 "Invalid" ;
+50969-VAL_ 1195 CF_AVN_CluTransmissionDisp 0 "Default" 1 "Off" 2 "On" 3 "Invalid" ;
+50970-VAL_ 1195 CF_AVN_CluWiperLight 0 "Default" 1 "Off" 2 "On" 3 "Invalid" ;
+50971-VAL_ 1195 CF_AVN_CluRoadInfoGuide 0 "Default" 1 "Off" 2 "On" 3 "Invalid" ;
+50972:[Omitted long matching line]
+50973-VAL_ 1195 CF_AVN_CluFuelEconUnit_mi 0 "Default" 1 "US gallon" 2 "UK gallon" 3 "Reserved" ;
+50974-VAL_ 1195 CF_AVN_CluFuelEconUnit_km 0 "Default" 1 "km/L, km/kg, km/kWh" 2 "L/100km, kg/100km, kWh/100km" 3 "Reserved" ;
+50975-VAL_ 1195 CF_AVN_CluUserSettingDistance 0 "0x0x0~0x1869F:0~9999km_mi" 99999 "0x0x0~0x1869F:0~9999km_mi" 131071 "Invalid" ;
+50976-VAL_ 1195 CF_AVN_CluRheostatLvl 0 "Reserved" 1 "Step 1" 2 "Step 2" 3 "Step 3" 4 "Step 4" 5 "Step 5" 6 "Step 6" 7 "Step 7" 8 "Step 8" 9 "Step 9" 10 "Step 10" 11 "Step 11" 12 "Step 12" 13 "Step 13" 14 "Step 14" 15 "Step 15" 16 "Step 16" 17 "Step 17" 18 "Step 18" 19 "Step 19" 20 "Step 20(Reset Value)" 21 "Step 21(Detent)" 22 "Reserved" 23 "Reserved" 24 "Reserved" 25 "Reserved" 26 "Reserved" 27 "Reserved" 28 "Reserved" 29 "Reserved" 30 "Reserved" 31 "Invalid" ;
+50977-VAL_ 1195 CF_AVN_EVReset 0 "Default" 1 "USM Reset" 2 "Reserved" 3 "Invalid" ;

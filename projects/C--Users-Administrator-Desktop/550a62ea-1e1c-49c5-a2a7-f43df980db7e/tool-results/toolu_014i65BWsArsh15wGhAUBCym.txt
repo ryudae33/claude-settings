@@ -1,0 +1,1000 @@
+     1→     1→namespace NoiseTest
+     2→     2→{
+     3→     3→    partial class FrmIO
+     4→     4→    {
+     5→     5→        /// <summary>
+     6→     6→        /// Required designer variable.
+     7→     7→        /// </summary>
+     8→     8→        private System.ComponentModel.IContainer components = null;
+     9→     9→
+    10→    10→        /// <summary>
+    11→    11→        /// Clean up any resources being used.
+    12→    12→        /// </summary>
+    13→    13→        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    14→    14→        protected override void Dispose(bool disposing)
+    15→    15→        {
+    16→    16→            if (disposing && (components != null))
+    17→    17→            {
+    18→    18→                components.Dispose();
+    19→    19→            }
+    20→    20→            base.Dispose(disposing);
+    21→    21→        }
+    22→    22→
+    23→    23→        #region Windows Form Designer generated code
+    24→    24→
+    25→    25→        /// <summary>
+    26→    26→        /// Required method for Designer support - do not modify
+    27→    27→        /// the contents of this method with the code editor.
+    28→    28→        /// </summary>
+    29→    29→        private void InitializeComponent()
+    30→    30→        {
+    31→    31→            this.components = new System.ComponentModel.Container();
+    32→    32→            this.panel2 = new System.Windows.Forms.Panel();
+    33→    33→            this.btnClose = new System.Windows.Forms.Button();
+    34→    34→            this.timer1 = new System.Windows.Forms.Timer(this.components);
+    35→    35→            this.panel3 = new System.Windows.Forms.Panel();
+    36→    36→            this.label47 = new System.Windows.Forms.Label();
+    37→    37→            this.label48 = new System.Windows.Forms.Label();
+    38→    38→            this.label43 = new System.Windows.Forms.Label();
+    39→    39→            this.label44 = new System.Windows.Forms.Label();
+    40→    40→            this.label45 = new System.Windows.Forms.Label();
+    41→    41→            this.label46 = new System.Windows.Forms.Label();
+    42→    42→            this.label39 = new System.Windows.Forms.Label();
+    43→    43→            this.label40 = new System.Windows.Forms.Label();
+    44→    44→            this.label41 = new System.Windows.Forms.Label();
+    45→    45→            this.label42 = new System.Windows.Forms.Label();
+    46→    46→            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+    47→    47→            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+    48→    48→            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+    49→    49→            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+    50→    50→            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+    51→    51→            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+    52→    52→            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+    53→    53→            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+    54→    54→            this.pictureBox47 = new System.Windows.Forms.PictureBox();
+    55→    55→            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+    56→    56→            this.label33 = new System.Windows.Forms.Label();
+    57→    57→            this.label34 = new System.Windows.Forms.Label();
+    58→    58→            this.label35 = new System.Windows.Forms.Label();
+    59→    59→            this.label36 = new System.Windows.Forms.Label();
+    60→    60→            this.label37 = new System.Windows.Forms.Label();
+    61→    61→            this.label38 = new System.Windows.Forms.Label();
+    62→    62→            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+    63→    63→            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+    64→    64→            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+    65→    65→            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+    66→    66→            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+    67→    67→            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+    68→    68→            this.label17 = new System.Windows.Forms.Label();
+    69→    69→            this.label18 = new System.Windows.Forms.Label();
+    70→    70→            this.label19 = new System.Windows.Forms.Label();
+    71→    71→            this.label20 = new System.Windows.Forms.Label();
+    72→    72→            this.label21 = new System.Windows.Forms.Label();
+    73→    73→            this.label22 = new System.Windows.Forms.Label();
+    74→    74→            this.label23 = new System.Windows.Forms.Label();
+    75→    75→            this.label24 = new System.Windows.Forms.Label();
+    76→    76→            this.label25 = new System.Windows.Forms.Label();
+    77→    77→            this.label26 = new System.Windows.Forms.Label();
+    78→    78→            this.label27 = new System.Windows.Forms.Label();
+    79→    79→            this.label28 = new System.Windows.Forms.Label();
+    80→    80→            this.label29 = new System.Windows.Forms.Label();
+    81→    81→            this.label30 = new System.Windows.Forms.Label();
+    82→    82→            this.label31 = new System.Windows.Forms.Label();
+    83→    83→            this.label32 = new System.Windows.Forms.Label();
+    84→    84→            this.label15 = new System.Windows.Forms.Label();
+    85→    85→            this.label16 = new System.Windows.Forms.Label();
+    86→    86→            this.label8 = new System.Windows.Forms.Label();
+    87→    87→            this.label9 = new System.Windows.Forms.Label();
+    88→    88→            this.label10 = new System.Windows.Forms.Label();
+    89→    89→            this.label11 = new System.Windows.Forms.Label();
+    90→    90→            this.label12 = new System.Windows.Forms.Label();
+    91→    91→            this.label13 = new System.Windows.Forms.Label();
+    92→    92→            this.label14 = new System.Windows.Forms.Label();
+    93→    93→            this.label7 = new System.Windows.Forms.Label();
+    94→    94→            this.label6 = new System.Windows.Forms.Label();
+    95→    95→            this.label5 = new System.Windows.Forms.Label();
+    96→    96→            this.label4 = new System.Windows.Forms.Label();
+    97→    97→            this.label3 = new System.Windows.Forms.Label();
+    98→    98→            this.label2 = new System.Windows.Forms.Label();
+    99→    99→            this.label1 = new System.Windows.Forms.Label();
+   100→   100→            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+   101→   101→            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+   102→   102→            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+   103→   103→            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+   104→   104→            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+   105→   105→            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+   106→   106→            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+   107→   107→            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+   108→   108→            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+   109→   109→            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+   110→   110→            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+   111→   111→            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+   112→   112→            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+   113→   113→            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+   114→   114→            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+   115→   115→            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+   116→   116→            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+   117→   117→            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+   118→   118→            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+   119→   119→            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+   120→   120→            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+   121→   121→            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+   122→   122→            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+   123→   123→            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+   124→   124→            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+   125→   125→            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+   126→   126→            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+   127→   127→            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+   128→   128→            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+   129→   129→            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+   130→   130→            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+   131→   131→            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+   132→   132→            this.panel2.SuspendLayout();
+   133→   133→            this.panel3.SuspendLayout();
+   134→   134→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+   135→   135→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+   136→   136→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+   137→   137→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+   138→   138→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+   139→   139→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+   140→   140→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+   141→   141→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+   142→   142→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
+   143→   143→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
+   144→   144→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+   145→   145→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+   146→   146→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+   147→   147→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+   148→   148→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+   149→   149→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+   150→   150→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+   151→   151→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+   152→   152→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+   153→   153→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+   154→   154→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+   155→   155→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+   156→   156→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+   157→   157→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+   158→   158→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+   159→   159→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+   160→   160→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+   161→   161→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+   162→   162→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+   163→   163→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+   164→   164→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+   165→   165→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+   166→   166→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+   167→   167→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+   168→   168→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+   169→   169→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+   170→   170→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+   171→   171→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+   172→   172→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+   173→   173→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+   174→   174→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+   175→   175→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+   176→   176→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+   177→   177→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+   178→   178→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+   179→   179→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+   180→   180→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+   181→   181→            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+   182→   182→            this.SuspendLayout();
+   183→   183→            // 
+   184→   184→            // panel2
+   185→   185→            // 
+   186→   186→            this.panel2.Controls.Add(this.btnClose);
+   187→   187→            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+   188→   188→            this.panel2.Location = new System.Drawing.Point(0, 977);
+   189→   189→            this.panel2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+   190→   190→            this.panel2.Name = "panel2";
+   191→   191→            this.panel2.Size = new System.Drawing.Size(668, 59);
+   192→   192→            this.panel2.TabIndex = 23;
+   193→   193→            // 
+   194→   194→            // btnClose
+   195→   195→            // 
+   196→   196→            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   197→   197→            this.btnClose.Location = new System.Drawing.Point(481, 12);
+   198→   198→            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+   199→   199→            this.btnClose.Name = "btnClose";
+   200→   200→            this.btnClose.Size = new System.Drawing.Size(142, 33);
+   201→   201→            this.btnClose.TabIndex = 18;
+   202→   202→            this.btnClose.Text = "CLOSE";
+   203→   203→            this.btnClose.UseVisualStyleBackColor = true;
+   204→   204→            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+   205→   205→            // 
+   206→   206→            // panel3
+   207→   207→            // 
+   208→   208→            this.panel3.Controls.Add(this.label47);
+   209→   209→            this.panel3.Controls.Add(this.label48);
+   210→   210→            this.panel3.Controls.Add(this.label43);
+   211→   211→            this.panel3.Controls.Add(this.label44);
+   212→   212→            this.panel3.Controls.Add(this.label45);
+   213→   213→            this.panel3.Controls.Add(this.label46);
+   214→   214→            this.panel3.Controls.Add(this.label39);
+   215→   215→            this.panel3.Controls.Add(this.label40);
+   216→   216→            this.panel3.Controls.Add(this.label41);
+   217→   217→            this.panel3.Controls.Add(this.label42);
+   218→   218→            this.panel3.Controls.Add(this.pictureBox39);
+   219→   219→            this.panel3.Controls.Add(this.pictureBox40);
+   220→   220→            this.panel3.Controls.Add(this.pictureBox41);
+   221→   221→            this.panel3.Controls.Add(this.pictureBox42);
+   222→   222→            this.panel3.Controls.Add(this.pictureBox43);
+   223→   223→            this.panel3.Controls.Add(this.pictureBox44);
+   224→   224→            this.panel3.Controls.Add(this.pictureBox45);
+   225→   225→            this.panel3.Controls.Add(this.pictureBox46);
+   226→   226→            this.panel3.Controls.Add(this.pictureBox47);
+   227→   227→            this.panel3.Controls.Add(this.pictureBox48);
+   228→   228→            this.panel3.Controls.Add(this.label33);
+   229→   229→            this.panel3.Controls.Add(this.label34);
+   230→   230→            this.panel3.Controls.Add(this.label35);
+   231→   231→            this.panel3.Controls.Add(this.label36);
+   232→   232→            this.panel3.Controls.Add(this.label37);
+   233→   233→            this.panel3.Controls.Add(this.label38);
+   234→   234→            this.panel3.Controls.Add(this.pictureBox33);
+   235→   235→            this.panel3.Controls.Add(this.pictureBox34);
+   236→   236→            this.panel3.Controls.Add(this.pictureBox35);
+   237→   237→            this.panel3.Controls.Add(this.pictureBox36);
+   238→   238→            this.panel3.Controls.Add(this.pictureBox37);
+   239→   239→            this.panel3.Controls.Add(this.pictureBox38);
+   240→   240→            this.panel3.Controls.Add(this.label17);
+   241→   241→            this.panel3.Controls.Add(this.label18);
+   242→   242→            this.panel3.Controls.Add(this.label19);
+   243→   243→            this.panel3.Controls.Add(this.label20);
+   244→   244→            this.panel3.Controls.Add(this.label21);
+   245→   245→            this.panel3.Controls.Add(this.label22);
+   246→   246→            this.panel3.Controls.Add(this.label23);
+   247→   247→            this.panel3.Controls.Add(this.label24);
+   248→   248→            this.panel3.Controls.Add(this.label25);
+   249→   249→            this.panel3.Controls.Add(this.label26);
+   250→   250→            this.panel3.Controls.Add(this.label27);
+   251→   251→            this.panel3.Controls.Add(this.label28);
+   252→   252→            this.panel3.Controls.Add(this.label29);
+   253→   253→            this.panel3.Controls.Add(this.label30);
+   254→   254→            this.panel3.Controls.Add(this.label31);
+   255→   255→            this.panel3.Controls.Add(this.label32);
+   256→   256→            this.panel3.Controls.Add(this.label15);
+   257→   257→            this.panel3.Controls.Add(this.label16);
+   258→   258→            this.panel3.Controls.Add(this.label8);
+   259→   259→            this.panel3.Controls.Add(this.label9);
+   260→   260→            this.panel3.Controls.Add(this.label10);
+   261→   261→            this.panel3.Controls.Add(this.label11);
+   262→   262→            this.panel3.Controls.Add(this.label12);
+   263→   263→            this.panel3.Controls.Add(this.label13);
+   264→   264→            this.panel3.Controls.Add(this.label14);
+   265→   265→            this.panel3.Controls.Add(this.label7);
+   266→   266→            this.panel3.Controls.Add(this.label6);
+   267→   267→            this.panel3.Controls.Add(this.label5);
+   268→   268→            this.panel3.Controls.Add(this.label4);
+   269→   269→            this.panel3.Controls.Add(this.label3);
+   270→   270→            this.panel3.Controls.Add(this.label2);
+   271→   271→            this.panel3.Controls.Add(this.label1);
+   272→   272→            this.panel3.Controls.Add(this.pictureBox17);
+   273→   273→            this.panel3.Controls.Add(this.pictureBox18);
+   274→   274→            this.panel3.Controls.Add(this.pictureBox19);
+   275→   275→            this.panel3.Controls.Add(this.pictureBox20);
+   276→   276→            this.panel3.Controls.Add(this.pictureBox21);
+   277→   277→            this.panel3.Controls.Add(this.pictureBox22);
+   278→   278→            this.panel3.Controls.Add(this.pictureBox23);
+   279→   279→            this.panel3.Controls.Add(this.pictureBox24);
+   280→   280→            this.panel3.Controls.Add(this.pictureBox25);
+   281→   281→            this.panel3.Controls.Add(this.pictureBox26);
+   282→   282→            this.panel3.Controls.Add(this.pictureBox27);
+   283→   283→            this.panel3.Controls.Add(this.pictureBox28);
+   284→   284→            this.panel3.Controls.Add(this.pictureBox29);
+   285→   285→            this.panel3.Controls.Add(this.pictureBox30);
+   286→   286→            this.panel3.Controls.Add(this.pictureBox31);
+   287→   287→            this.panel3.Controls.Add(this.pictureBox32);
+   288→   288→            this.panel3.Controls.Add(this.pictureBox9);
+   289→   289→            this.panel3.Controls.Add(this.pictureBox10);
+   290→   290→            this.panel3.Controls.Add(this.pictureBox11);
+   291→   291→            this.panel3.Controls.Add(this.pictureBox12);
+   292→   292→            this.panel3.Controls.Add(this.pictureBox13);
+   293→   293→            this.panel3.Controls.Add(this.pictureBox14);
+   294→   294→            this.panel3.Controls.Add(this.pictureBox15);
+   295→   295→            this.panel3.Controls.Add(this.pictureBox16);
+   296→   296→            this.panel3.Controls.Add(this.pictureBox5);
+   297→   297→            this.panel3.Controls.Add(this.pictureBox6);
+   298→   298→            this.panel3.Controls.Add(this.pictureBox7);
+   299→   299→            this.panel3.Controls.Add(this.pictureBox8);
+   300→   300→            this.panel3.Controls.Add(this.pictureBox3);
+   301→   301→            this.panel3.Controls.Add(this.pictureBox4);
+   302→   302→            this.panel3.Controls.Add(this.pictureBox2);
+   303→   303→            this.panel3.Controls.Add(this.pictureBox1);
+   304→   304→            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+   305→   305→            this.panel3.Location = new System.Drawing.Point(0, 0);
+   306→   306→            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   307→   307→            this.panel3.Name = "panel3";
+   308→   308→            this.panel3.Size = new System.Drawing.Size(668, 977);
+   309→   309→            this.panel3.TabIndex = 24;
+   310→   310→            // 
+   311→   311→            // label47
+   312→   312→            // 
+   313→   313→            this.label47.AutoSize = true;
+   314→   314→            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   315→   315→            this.label47.Location = new System.Drawing.Point(443, 895);
+   316→   316→            this.label47.Name = "label47";
+   317→   317→            this.label47.Size = new System.Drawing.Size(19, 25);
+   318→   318→            this.label47.TabIndex = 107;
+   319→   319→            this.label47.Text = "-";
+   320→   320→            // 
+   321→   321→            // label48
+   322→   322→            // 
+   323→   323→            this.label48.AutoSize = true;
+   324→   324→            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   325→   325→            this.label48.Location = new System.Drawing.Point(443, 934);
+   326→   326→            this.label48.Name = "label48";
+   327→   327→            this.label48.Size = new System.Drawing.Size(19, 25);
+   328→   328→            this.label48.TabIndex = 106;
+   329→   329→            this.label48.Text = "-";
+   330→   330→            // 
+   331→   331→            // label43
+   332→   332→            // 
+   333→   333→            this.label43.AutoSize = true;
+   334→   334→            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   335→   335→            this.label43.Location = new System.Drawing.Point(443, 739);
+   336→   336→            this.label43.Name = "label43";
+   337→   337→            this.label43.Size = new System.Drawing.Size(19, 25);
+   338→   338→            this.label43.TabIndex = 105;
+   339→   339→            this.label43.Text = "-";
+   340→   340→            // 
+   341→   341→            // label44
+   342→   342→            // 
+   343→   343→            this.label44.AutoSize = true;
+   344→   344→            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   345→   345→            this.label44.Location = new System.Drawing.Point(443, 778);
+   346→   346→            this.label44.Name = "label44";
+   347→   347→            this.label44.Size = new System.Drawing.Size(19, 25);
+   348→   348→            this.label44.TabIndex = 104;
+   349→   349→            this.label44.Text = "-";
+   350→   350→            // 
+   351→   351→            // label45
+   352→   352→            // 
+   353→   353→            this.label45.AutoSize = true;
+   354→   354→            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   355→   355→            this.label45.Location = new System.Drawing.Point(443, 817);
+   356→   356→            this.label45.Name = "label45";
+   357→   357→            this.label45.Size = new System.Drawing.Size(19, 25);
+   358→   358→            this.label45.TabIndex = 103;
+   359→   359→            this.label45.Text = "-";
+   360→   360→            // 
+   361→   361→            // label46
+   362→   362→            // 
+   363→   363→            this.label46.AutoSize = true;
+   364→   364→            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   365→   365→            this.label46.Location = new System.Drawing.Point(443, 856);
+   366→   366→            this.label46.Name = "label46";
+   367→   367→            this.label46.Size = new System.Drawing.Size(19, 25);
+   368→   368→            this.label46.TabIndex = 102;
+   369→   369→            this.label46.Text = "-";
+   370→   370→            // 
+   371→   371→            // label39
+   372→   372→            // 
+   373→   373→            this.label39.AutoSize = true;
+   374→   374→            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   375→   375→            this.label39.Location = new System.Drawing.Point(443, 583);
+   376→   376→            this.label39.Name = "label39";
+   377→   377→            this.label39.Size = new System.Drawing.Size(19, 25);
+   378→   378→            this.label39.TabIndex = 101;
+   379→   379→            this.label39.Text = "-";
+   380→   380→            // 
+   381→   381→            // label40
+   382→   382→            // 
+   383→   383→            this.label40.AutoSize = true;
+   384→   384→            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   385→   385→            this.label40.Location = new System.Drawing.Point(443, 622);
+   386→   386→            this.label40.Name = "label40";
+   387→   387→            this.label40.Size = new System.Drawing.Size(19, 25);
+   388→   388→            this.label40.TabIndex = 100;
+   389→   389→            this.label40.Text = "-";
+   390→   390→            // 
+   391→   391→            // label41
+   392→   392→            // 
+   393→   393→            this.label41.AutoSize = true;
+   394→   394→            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   395→   395→            this.label41.Location = new System.Drawing.Point(443, 661);
+   396→   396→            this.label41.Name = "label41";
+   397→   397→            this.label41.Size = new System.Drawing.Size(19, 25);
+   398→   398→            this.label41.TabIndex = 99;
+   399→   399→            this.label41.Text = "-";
+   400→   400→            // 
+   401→   401→            // label42
+   402→   402→            // 
+   403→   403→            this.label42.AutoSize = true;
+   404→   404→            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   405→   405→            this.label42.Location = new System.Drawing.Point(443, 700);
+   406→   406→            this.label42.Name = "label42";
+   407→   407→            this.label42.Size = new System.Drawing.Size(19, 25);
+   408→   408→            this.label42.TabIndex = 98;
+   409→   409→            this.label42.Text = "-";
+   410→   410→            // 
+   411→   411→            // pictureBox39
+   412→   412→            // 
+   413→   413→            this.pictureBox39.Location = new System.Drawing.Point(377, 576);
+   414→   414→            this.pictureBox39.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   415→   415→            this.pictureBox39.Name = "pictureBox39";
+   416→   416→            this.pictureBox39.Size = new System.Drawing.Size(58, 39);
+   417→   417→            this.pictureBox39.TabIndex = 97;
+   418→   418→            this.pictureBox39.TabStop = false;
+   419→   419→            // 
+   420→   420→            // pictureBox40
+   421→   421→            // 
+   422→   422→            this.pictureBox40.Location = new System.Drawing.Point(377, 615);
+   423→   423→            this.pictureBox40.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   424→   424→            this.pictureBox40.Name = "pictureBox40";
+   425→   425→            this.pictureBox40.Size = new System.Drawing.Size(58, 39);
+   426→   426→            this.pictureBox40.TabIndex = 96;
+   427→   427→            this.pictureBox40.TabStop = false;
+   428→   428→            // 
+   429→   429→            // pictureBox41
+   430→   430→            // 
+   431→   431→            this.pictureBox41.Location = new System.Drawing.Point(377, 654);
+   432→   432→            this.pictureBox41.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   433→   433→            this.pictureBox41.Name = "pictureBox41";
+   434→   434→            this.pictureBox41.Size = new System.Drawing.Size(58, 39);
+   435→   435→            this.pictureBox41.TabIndex = 95;
+   436→   436→            this.pictureBox41.TabStop = false;
+   437→   437→            // 
+   438→   438→            // pictureBox42
+   439→   439→            // 
+   440→   440→            this.pictureBox42.Location = new System.Drawing.Point(377, 693);
+   441→   441→            this.pictureBox42.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   442→   442→            this.pictureBox42.Name = "pictureBox42";
+   443→   443→            this.pictureBox42.Size = new System.Drawing.Size(58, 39);
+   444→   444→            this.pictureBox42.TabIndex = 94;
+   445→   445→            this.pictureBox42.TabStop = false;
+   446→   446→            // 
+   447→   447→            // pictureBox43
+   448→   448→            // 
+   449→   449→            this.pictureBox43.Location = new System.Drawing.Point(377, 732);
+   450→   450→            this.pictureBox43.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   451→   451→            this.pictureBox43.Name = "pictureBox43";
+   452→   452→            this.pictureBox43.Size = new System.Drawing.Size(58, 39);
+   453→   453→            this.pictureBox43.TabIndex = 93;
+   454→   454→            this.pictureBox43.TabStop = false;
+   455→   455→            // 
+   456→   456→            // pictureBox44
+   457→   457→            // 
+   458→   458→            this.pictureBox44.Location = new System.Drawing.Point(377, 771);
+   459→   459→            this.pictureBox44.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   460→   460→            this.pictureBox44.Name = "pictureBox44";
+   461→   461→            this.pictureBox44.Size = new System.Drawing.Size(58, 39);
+   462→   462→            this.pictureBox44.TabIndex = 92;
+   463→   463→            this.pictureBox44.TabStop = false;
+   464→   464→            // 
+   465→   465→            // pictureBox45
+   466→   466→            // 
+   467→   467→            this.pictureBox45.Location = new System.Drawing.Point(377, 810);
+   468→   468→            this.pictureBox45.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   469→   469→            this.pictureBox45.Name = "pictureBox45";
+   470→   470→            this.pictureBox45.Size = new System.Drawing.Size(58, 39);
+   471→   471→            this.pictureBox45.TabIndex = 91;
+   472→   472→            this.pictureBox45.TabStop = false;
+   473→   473→            // 
+   474→   474→            // pictureBox46
+   475→   475→            // 
+   476→   476→            this.pictureBox46.Location = new System.Drawing.Point(377, 849);
+   477→   477→            this.pictureBox46.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   478→   478→            this.pictureBox46.Name = "pictureBox46";
+   479→   479→            this.pictureBox46.Size = new System.Drawing.Size(58, 39);
+   480→   480→            this.pictureBox46.TabIndex = 90;
+   481→   481→            this.pictureBox46.TabStop = false;
+   482→   482→            // 
+   483→   483→            // pictureBox47
+   484→   484→            // 
+   485→   485→            this.pictureBox47.Location = new System.Drawing.Point(377, 888);
+   486→   486→            this.pictureBox47.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   487→   487→            this.pictureBox47.Name = "pictureBox47";
+   488→   488→            this.pictureBox47.Size = new System.Drawing.Size(58, 39);
+   489→   489→            this.pictureBox47.TabIndex = 89;
+   490→   490→            this.pictureBox47.TabStop = false;
+   491→   491→            // 
+   492→   492→            // pictureBox48
+   493→   493→            // 
+   494→   494→            this.pictureBox48.Location = new System.Drawing.Point(377, 927);
+   495→   495→            this.pictureBox48.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   496→   496→            this.pictureBox48.Name = "pictureBox48";
+   497→   497→            this.pictureBox48.Size = new System.Drawing.Size(58, 39);
+   498→   498→            this.pictureBox48.TabIndex = 88;
+   499→   499→            this.pictureBox48.TabStop = false;
+   500→   500→            // 
+   501→   501→            // label33
+   502→   502→            // 
+   503→   503→            this.label33.AutoSize = true;
+   504→   504→            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   505→   505→            this.label33.Location = new System.Drawing.Point(443, 349);
+   506→   506→            this.label33.Name = "label33";
+   507→   507→            this.label33.Size = new System.Drawing.Size(19, 25);
+   508→   508→            this.label33.TabIndex = 87;
+   509→   509→            this.label33.Text = "-";
+   510→   510→            // 
+   511→   511→            // label34
+   512→   512→            // 
+   513→   513→            this.label34.AutoSize = true;
+   514→   514→            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   515→   515→            this.label34.Location = new System.Drawing.Point(443, 388);
+   516→   516→            this.label34.Name = "label34";
+   517→   517→            this.label34.Size = new System.Drawing.Size(19, 25);
+   518→   518→            this.label34.TabIndex = 86;
+   519→   519→            this.label34.Text = "-";
+   520→   520→            // 
+   521→   521→            // label35
+   522→   522→            // 
+   523→   523→            this.label35.AutoSize = true;
+   524→   524→            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   525→   525→            this.label35.Location = new System.Drawing.Point(443, 427);
+   526→   526→            this.label35.Name = "label35";
+   527→   527→            this.label35.Size = new System.Drawing.Size(19, 25);
+   528→   528→            this.label35.TabIndex = 85;
+   529→   529→            this.label35.Text = "-";
+   530→   530→            // 
+   531→   531→            // label36
+   532→   532→            // 
+   533→   533→            this.label36.AutoSize = true;
+   534→   534→            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   535→   535→            this.label36.Location = new System.Drawing.Point(443, 466);
+   536→   536→            this.label36.Name = "label36";
+   537→   537→            this.label36.Size = new System.Drawing.Size(19, 25);
+   538→   538→            this.label36.TabIndex = 84;
+   539→   539→            this.label36.Text = "-";
+   540→   540→            // 
+   541→   541→            // label37
+   542→   542→            // 
+   543→   543→            this.label37.AutoSize = true;
+   544→   544→            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   545→   545→            this.label37.Location = new System.Drawing.Point(443, 505);
+   546→   546→            this.label37.Name = "label37";
+   547→   547→            this.label37.Size = new System.Drawing.Size(19, 25);
+   548→   548→            this.label37.TabIndex = 83;
+   549→   549→            this.label37.Text = "-";
+   550→   550→            // 
+   551→   551→            // label38
+   552→   552→            // 
+   553→   553→            this.label38.AutoSize = true;
+   554→   554→            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   555→   555→            this.label38.Location = new System.Drawing.Point(443, 544);
+   556→   556→            this.label38.Name = "label38";
+   557→   557→            this.label38.Size = new System.Drawing.Size(19, 25);
+   558→   558→            this.label38.TabIndex = 82;
+   559→   559→            this.label38.Text = "-";
+   560→   560→            // 
+   561→   561→            // pictureBox33
+   562→   562→            // 
+   563→   563→            this.pictureBox33.Location = new System.Drawing.Point(377, 342);
+   564→   564→            this.pictureBox33.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   565→   565→            this.pictureBox33.Name = "pictureBox33";
+   566→   566→            this.pictureBox33.Size = new System.Drawing.Size(58, 39);
+   567→   567→            this.pictureBox33.TabIndex = 75;
+   568→   568→            this.pictureBox33.TabStop = false;
+   569→   569→            // 
+   570→   570→            // pictureBox34
+   571→   571→            // 
+   572→   572→            this.pictureBox34.Location = new System.Drawing.Point(377, 381);
+   573→   573→            this.pictureBox34.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   574→   574→            this.pictureBox34.Name = "pictureBox34";
+   575→   575→            this.pictureBox34.Size = new System.Drawing.Size(58, 39);
+   576→   576→            this.pictureBox34.TabIndex = 74;
+   577→   577→            this.pictureBox34.TabStop = false;
+   578→   578→            // 
+   579→   579→            // pictureBox35
+   580→   580→            // 
+   581→   581→            this.pictureBox35.Location = new System.Drawing.Point(377, 420);
+   582→   582→            this.pictureBox35.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   583→   583→            this.pictureBox35.Name = "pictureBox35";
+   584→   584→            this.pictureBox35.Size = new System.Drawing.Size(58, 39);
+   585→   585→            this.pictureBox35.TabIndex = 73;
+   586→   586→            this.pictureBox35.TabStop = false;
+   587→   587→            // 
+   588→   588→            // pictureBox36
+   589→   589→            // 
+   590→   590→            this.pictureBox36.Location = new System.Drawing.Point(377, 459);
+   591→   591→            this.pictureBox36.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   592→   592→            this.pictureBox36.Name = "pictureBox36";
+   593→   593→            this.pictureBox36.Size = new System.Drawing.Size(58, 39);
+   594→   594→            this.pictureBox36.TabIndex = 72;
+   595→   595→            this.pictureBox36.TabStop = false;
+   596→   596→            // 
+   597→   597→            // pictureBox37
+   598→   598→            // 
+   599→   599→            this.pictureBox37.Location = new System.Drawing.Point(377, 498);
+   600→   600→            this.pictureBox37.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   601→   601→            this.pictureBox37.Name = "pictureBox37";
+   602→   602→            this.pictureBox37.Size = new System.Drawing.Size(58, 39);
+   603→   603→            this.pictureBox37.TabIndex = 71;
+   604→   604→            this.pictureBox37.TabStop = false;
+   605→   605→            // 
+   606→   606→            // pictureBox38
+   607→   607→            // 
+   608→   608→            this.pictureBox38.Location = new System.Drawing.Point(377, 537);
+   609→   609→            this.pictureBox38.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   610→   610→            this.pictureBox38.Name = "pictureBox38";
+   611→   611→            this.pictureBox38.Size = new System.Drawing.Size(58, 39);
+   612→   612→            this.pictureBox38.TabIndex = 70;
+   613→   613→            this.pictureBox38.TabStop = false;
+   614→   614→            // 
+   615→   615→            // label17
+   616→   616→            // 
+   617→   617→            this.label17.AutoSize = true;
+   618→   618→            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   619→   619→            this.label17.Location = new System.Drawing.Point(91, 661);
+   620→   620→            this.label17.Name = "label17";
+   621→   621→            this.label17.Size = new System.Drawing.Size(19, 25);
+   622→   622→            this.label17.TabIndex = 63;
+   623→   623→            this.label17.Text = "-";
+   624→   624→            // 
+   625→   625→            // label18
+   626→   626→            // 
+   627→   627→            this.label18.AutoSize = true;
+   628→   628→            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   629→   629→            this.label18.Location = new System.Drawing.Point(91, 700);
+   630→   630→            this.label18.Name = "label18";
+   631→   631→            this.label18.Size = new System.Drawing.Size(19, 25);
+   632→   632→            this.label18.TabIndex = 62;
+   633→   633→            this.label18.Text = "-";
+   634→   634→            // 
+   635→   635→            // label19
+   636→   636→            // 
+   637→   637→            this.label19.AutoSize = true;
+   638→   638→            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   639→   639→            this.label19.Location = new System.Drawing.Point(91, 739);
+   640→   640→            this.label19.Name = "label19";
+   641→   641→            this.label19.Size = new System.Drawing.Size(19, 25);
+   642→   642→            this.label19.TabIndex = 61;
+   643→   643→            this.label19.Text = "-";
+   644→   644→            // 
+   645→   645→            // label20
+   646→   646→            // 
+   647→   647→            this.label20.AutoSize = true;
+   648→   648→            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   649→   649→            this.label20.Location = new System.Drawing.Point(91, 778);
+   650→   650→            this.label20.Name = "label20";
+   651→   651→            this.label20.Size = new System.Drawing.Size(19, 25);
+   652→   652→            this.label20.TabIndex = 60;
+   653→   653→            this.label20.Text = "-";
+   654→   654→            // 
+   655→   655→            // label21
+   656→   656→            // 
+   657→   657→            this.label21.AutoSize = true;
+   658→   658→            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   659→   659→            this.label21.Location = new System.Drawing.Point(91, 817);
+   660→   660→            this.label21.Name = "label21";
+   661→   661→            this.label21.Size = new System.Drawing.Size(19, 25);
+   662→   662→            this.label21.TabIndex = 59;
+   663→   663→            this.label21.Text = "-";
+   664→   664→            // 
+   665→   665→            // label22
+   666→   666→            // 
+   667→   667→            this.label22.AutoSize = true;
+   668→   668→            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   669→   669→            this.label22.Location = new System.Drawing.Point(91, 856);
+   670→   670→            this.label22.Name = "label22";
+   671→   671→            this.label22.Size = new System.Drawing.Size(19, 25);
+   672→   672→            this.label22.TabIndex = 58;
+   673→   673→            this.label22.Text = "-";
+   674→   674→            // 
+   675→   675→            // label23
+   676→   676→            // 
+   677→   677→            this.label23.AutoSize = true;
+   678→   678→            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   679→   679→            this.label23.Location = new System.Drawing.Point(91, 895);
+   680→   680→            this.label23.Name = "label23";
+   681→   681→            this.label23.Size = new System.Drawing.Size(19, 25);
+   682→   682→            this.label23.TabIndex = 57;
+   683→   683→            this.label23.Text = "-";
+   684→   684→            // 
+   685→   685→            // label24
+   686→   686→            // 
+   687→   687→            this.label24.AutoSize = true;
+   688→   688→            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   689→   689→            this.label24.Location = new System.Drawing.Point(91, 934);
+   690→   690→            this.label24.Name = "label24";
+   691→   691→            this.label24.Size = new System.Drawing.Size(19, 25);
+   692→   692→            this.label24.TabIndex = 56;
+   693→   693→            this.label24.Text = "-";
+   694→   694→            // 
+   695→   695→            // label25
+   696→   696→            // 
+   697→   697→            this.label25.AutoSize = true;
+   698→   698→            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   699→   699→            this.label25.Location = new System.Drawing.Point(443, 37);
+   700→   700→            this.label25.Name = "label25";
+   701→   701→            this.label25.Size = new System.Drawing.Size(119, 25);
+   702→   702→            this.label25.TabIndex = 55;
+   703→   703→            this.label25.Text = "진동 모터 ON";
+   704→   704→            // 
+   705→   705→            // label26
+   706→   706→            // 
+   707→   707→            this.label26.AutoSize = true;
+   708→   708→            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   709→   709→            this.label26.Location = new System.Drawing.Point(443, 76);
+   710→   710→            this.label26.Name = "label26";
+   711→   711→            this.label26.Size = new System.Drawing.Size(165, 25);
+   712→   712→            this.label26.TabIndex = 54;
+   713→   713→            this.label26.Text = "방음실 모터 #1 ON";
+   714→   714→            // 
+   715→   715→            // label27
+   716→   716→            // 
+   717→   717→            this.label27.AutoSize = true;
+   718→   718→            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   719→   719→            this.label27.Location = new System.Drawing.Point(443, 115);
+   720→   720→            this.label27.Name = "label27";
+   721→   721→            this.label27.Size = new System.Drawing.Size(114, 25);
+   722→   722→            this.label27.TabIndex = 53;
+   723→   723→            this.label27.Text = "방음실 클램프";
+   724→   724→            // 
+   725→   725→            // label28
+   726→   726→            // 
+   727→   727→            this.label28.AutoSize = true;
+   728→   728→            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   729→   729→            this.label28.Location = new System.Drawing.Point(443, 154);
+   730→   730→            this.label28.Name = "label28";
+   731→   731→            this.label28.Size = new System.Drawing.Size(130, 25);
+   732→   732→            this.label28.TabIndex = 52;
+   733→   733→            this.label28.Text = "방음실 언클램프";
+   734→   734→            // 
+   735→   735→            // label29
+   736→   736→            // 
+   737→   737→            this.label29.AutoSize = true;
+   738→   738→            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   739→   739→            this.label29.Location = new System.Drawing.Point(443, 193);
+   740→   740→            this.label29.Name = "label29";
+   741→   741→            this.label29.Size = new System.Drawing.Size(98, 25);
+   742→   742→            this.label29.TabIndex = 51;
+   743→   743→            this.label29.Text = "방음실 하강";
+   744→   744→            // 
+   745→   745→            // label30
+   746→   746→            // 
+   747→   747→            this.label30.AutoSize = true;
+   748→   748→            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   749→   749→            this.label30.Location = new System.Drawing.Point(443, 232);
+   750→   750→            this.label30.Name = "label30";
+   751→   751→            this.label30.Size = new System.Drawing.Size(98, 25);
+   752→   752→            this.label30.TabIndex = 50;
+   753→   753→            this.label30.Text = "방음실 상승";
+   754→   754→            // 
+   755→   755→            // label31
+   756→   756→            // 
+   757→   757→            this.label31.AutoSize = true;
+   758→   758→            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   759→   759→            this.label31.Location = new System.Drawing.Point(443, 271);
+   760→   760→            this.label31.Name = "label31";
+   761→   761→            this.label31.Size = new System.Drawing.Size(165, 25);
+   762→   762→            this.label31.TabIndex = 49;
+   763→   763→            this.label31.Text = "방음실 모터 #2 ON";
+   764→   764→            // 
+   765→   765→            // label32
+   766→   766→            // 
+   767→   767→            this.label32.AutoSize = true;
+   768→   768→            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   769→   769→            this.label32.Location = new System.Drawing.Point(443, 310);
+   770→   770→            this.label32.Name = "label32";
+   771→   771→            this.label32.Size = new System.Drawing.Size(19, 25);
+   772→   772→            this.label32.TabIndex = 48;
+   773→   773→            this.label32.Text = "-";
+   774→   774→            // 
+   775→   775→            // label15
+   776→   776→            // 
+   777→   777→            this.label15.AutoSize = true;
+   778→   778→            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   779→   779→            this.label15.Location = new System.Drawing.Point(91, 583);
+   780→   780→            this.label15.Name = "label15";
+   781→   781→            this.label15.Size = new System.Drawing.Size(19, 25);
+   782→   782→            this.label15.TabIndex = 47;
+   783→   783→            this.label15.Text = "-";
+   784→   784→            // 
+   785→   785→            // label16
+   786→   786→            // 
+   787→   787→            this.label16.AutoSize = true;
+   788→   788→            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   789→   789→            this.label16.Location = new System.Drawing.Point(91, 622);
+   790→   790→            this.label16.Name = "label16";
+   791→   791→            this.label16.Size = new System.Drawing.Size(19, 25);
+   792→   792→            this.label16.TabIndex = 46;
+   793→   793→            this.label16.Text = "-";
+   794→   794→            // 
+   795→   795→            // label8
+   796→   796→            // 
+   797→   797→            this.label8.AutoSize = true;
+   798→   798→            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   799→   799→            this.label8.Location = new System.Drawing.Point(91, 310);
+   800→   800→            this.label8.Name = "label8";
+   801→   801→            this.label8.Size = new System.Drawing.Size(120, 25);
+   802→   802→            this.label8.TabIndex = 45;
+   803→   803→            this.label8.Text = "진동 시작 버튼";
+   804→   804→            // 
+   805→   805→            // label9
+   806→   806→            // 
+   807→   807→            this.label9.AutoSize = true;
+   808→   808→            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   809→   809→            this.label9.Location = new System.Drawing.Point(91, 349);
+   810→   810→            this.label9.Name = "label9";
+   811→   811→            this.label9.Size = new System.Drawing.Size(120, 25);
+   812→   812→            this.label9.TabIndex = 44;
+   813→   813→            this.label9.Text = "진동 리셋 버튼";
+   814→   814→            // 
+   815→   815→            // label10
+   816→   816→            // 
+   817→   817→            this.label10.AutoSize = true;
+   818→   818→            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   819→   819→            this.label10.Location = new System.Drawing.Point(91, 388);
+   820→   820→            this.label10.Name = "label10";
+   821→   821→            this.label10.Size = new System.Drawing.Size(19, 25);
+   822→   822→            this.label10.TabIndex = 43;
+   823→   823→            this.label10.Text = "-";
+   824→   824→            // 
+   825→   825→            // label11
+   826→   826→            // 
+   827→   827→            this.label11.AutoSize = true;
+   828→   828→            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   829→   829→            this.label11.Location = new System.Drawing.Point(91, 427);
+   830→   830→            this.label11.Name = "label11";
+   831→   831→            this.label11.Size = new System.Drawing.Size(19, 25);
+   832→   832→            this.label11.TabIndex = 42;
+   833→   833→            this.label11.Text = "-";
+   834→   834→            // 
+   835→   835→            // label12
+   836→   836→            // 
+   837→   837→            this.label12.AutoSize = true;
+   838→   838→            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   839→   839→            this.label12.Location = new System.Drawing.Point(91, 466);
+   840→   840→            this.label12.Name = "label12";
+   841→   841→            this.label12.Size = new System.Drawing.Size(19, 25);
+   842→   842→            this.label12.TabIndex = 41;
+   843→   843→            this.label12.Text = "-";
+   844→   844→            // 
+   845→   845→            // label13
+   846→   846→            // 
+   847→   847→            this.label13.AutoSize = true;
+   848→   848→            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   849→   849→            this.label13.Location = new System.Drawing.Point(91, 505);
+   850→   850→            this.label13.Name = "label13";
+   851→   851→            this.label13.Size = new System.Drawing.Size(19, 25);
+   852→   852→            this.label13.TabIndex = 40;
+   853→   853→            this.label13.Text = "-";
+   854→   854→            // 
+   855→   855→            // label14
+   856→   856→            // 
+   857→   857→            this.label14.AutoSize = true;
+   858→   858→            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   859→   859→            this.label14.Location = new System.Drawing.Point(91, 544);
+   860→   860→            this.label14.Name = "label14";
+   861→   861→            this.label14.Size = new System.Drawing.Size(19, 25);
+   862→   862→            this.label14.TabIndex = 39;
+   863→   863→            this.label14.Text = "-";
+   864→   864→            // 
+   865→   865→            // label7
+   866→   866→            // 
+   867→   867→            this.label7.AutoSize = true;
+   868→   868→            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   869→   869→            this.label7.Location = new System.Drawing.Point(91, 271);
+   870→   870→            this.label7.Name = "label7";
+   871→   871→            this.label7.Size = new System.Drawing.Size(152, 25);
+   872→   872→            this.label7.TabIndex = 38;
+   873→   873→            this.label7.Text = "방음실 좌측 클램프";
+   874→   874→            // 
+   875→   875→            // label6
+   876→   876→            // 
+   877→   877→            this.label6.AutoSize = true;
+   878→   878→            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   879→   879→            this.label6.Location = new System.Drawing.Point(91, 232);
+   880→   880→            this.label6.Name = "label6";
+   881→   881→            this.label6.Size = new System.Drawing.Size(152, 25);
+   882→   882→            this.label6.TabIndex = 37;
+   883→   883→            this.label6.Text = "방음실 우측 클램프";
+   884→   884→            // 
+   885→   885→            // label5
+   886→   886→            // 
+   887→   887→            this.label5.AutoSize = true;
+   888→   888→            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   889→   889→            this.label5.Location = new System.Drawing.Point(91, 193);
+   890→   890→            this.label5.Name = "label5";
+   891→   891→            this.label5.Size = new System.Drawing.Size(152, 25);
+   892→   892→            this.label5.TabIndex = 36;
+   893→   893→            this.label5.Text = "방음실 실린더 상승";
+   894→   894→            // 
+   895→   895→            // label4
+   896→   896→            // 
+   897→   897→            this.label4.AutoSize = true;
+   898→   898→            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   899→   899→            this.label4.Location = new System.Drawing.Point(91, 154);
+   900→   900→            this.label4.Name = "label4";
+   901→   901→            this.label4.Size = new System.Drawing.Size(152, 25);
+   902→   902→            this.label4.TabIndex = 35;
+   903→   903→            this.label4.Text = "방음실 실린더 하강";
+   904→   904→            // 
+   905→   905→            // label3
+   906→   906→            // 
+   907→   907→            this.label3.AutoSize = true;
+   908→   908→            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   909→   909→            this.label3.Location = new System.Drawing.Point(91, 115);
+   910→   910→            this.label3.Name = "label3";
+   911→   911→            this.label3.Size = new System.Drawing.Size(136, 25);
+   912→   912→            this.label3.TabIndex = 34;
+   913→   913→            this.label3.Text = "방음실 정지 버튼";
+   914→   914→            // 
+   915→   915→            // label2
+   916→   916→            // 
+   917→   917→            this.label2.AutoSize = true;
+   918→   918→            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   919→   919→            this.label2.Location = new System.Drawing.Point(91, 76);
+   920→   920→            this.label2.Name = "label2";
+   921→   921→            this.label2.Size = new System.Drawing.Size(136, 25);
+   922→   922→            this.label2.TabIndex = 33;
+   923→   923→            this.label2.Text = "방음실 리셋 버튼";
+   924→   924→            // 
+   925→   925→            // label1
+   926→   926→            // 
+   927→   927→            this.label1.AutoSize = true;
+   928→   928→            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   929→   929→            this.label1.Location = new System.Drawing.Point(91, 37);
+   930→   930→            this.label1.Name = "label1";
+   931→   931→            this.label1.Size = new System.Drawing.Size(136, 25);
+   932→   932→            this.label1.TabIndex = 32;
+   933→   933→            this.label1.Text = "방음실 시작 버튼";
+   934→   934→            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   935→   935→            // 
+   936→   936→            // pictureBox17
+   937→   937→            // 
+   938→   938→            this.pictureBox17.Location = new System.Drawing.Point(26, 654);
+   939→   939→            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   940→   940→            this.pictureBox17.Name = "pictureBox17";
+   941→   941→            this.pictureBox17.Size = new System.Drawing.Size(58, 39);
+   942→   942→            this.pictureBox17.TabIndex = 31;
+   943→   943→            this.pictureBox17.TabStop = false;
+   944→   944→            // 
+   945→   945→            // pictureBox18
+   946→   946→            // 
+   947→   947→            this.pictureBox18.Location = new System.Drawing.Point(26, 693);
+   948→   948→            this.pictureBox18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   949→   949→            this.pictureBox18.Name = "pictureBox18";
+   950→   950→            this.pictureBox18.Size = new System.Drawing.Size(58, 39);
+   951→   951→            this.pictureBox18.TabIndex = 30;
+   952→   952→            this.pictureBox18.TabStop = false;
+   953→   953→            // 
+   954→   954→            // pictureBox19
+   955→   955→            // 
+   956→   956→            this.pictureBox19.Location = new System.Drawing.Point(26, 732);
+   957→   957→            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   958→   958→            this.pictureBox19.Name = "pictureBox19";
+   959→   959→            this.pictureBox19.Size = new System.Drawing.Size(58, 39);
+   960→   960→            this.pictureBox19.TabIndex = 29;
+   961→   961→            this.pictureBox19.TabStop = false;
+   962→   962→            // 
+   963→   963→            // pictureBox20
+   964→   964→            // 
+   965→   965→            this.pictureBox20.Location = new System.Drawing.Point(26, 771);
+   966→   966→            this.pictureBox20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   967→   967→            this.pictureBox20.Name = "pictureBox20";
+   968→   968→            this.pictureBox20.Size = new System.Drawing.Size(58, 39);
+   969→   969→            this.pictureBox20.TabIndex = 28;
+   970→   970→            this.pictureBox20.TabStop = false;
+   971→   971→            // 
+   972→   972→            // pictureBox21
+   973→   973→            // 
+   974→   974→            this.pictureBox21.Location = new System.Drawing.Point(26, 810);
+   975→   975→            this.pictureBox21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   976→   976→            this.pictureBox21.Name = "pictureBox21";
+   977→   977→            this.pictureBox21.Size = new System.Drawing.Size(58, 39);
+   978→   978→            this.pictureBox21.TabIndex = 27;
+   979→   979→            this.pictureBox21.TabStop = false;
+   980→   980→            // 
+   981→   981→            // pictureBox22
+   982→   982→            // 
+   983→   983→            this.pictureBox22.Location = new System.Drawing.Point(26, 849);
+   984→   984→            this.pictureBox22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   985→   985→            this.pictureBox22.Name = "pictureBox22";
+   986→   986→            this.pictureBox22.Size = new System.Drawing.Size(58, 39);
+   987→   987→            this.pictureBox22.TabIndex = 26;
+   988→   988→            this.pictureBox22.TabStop = false;
+   989→   989→            // 
+   990→   990→            // pictureBox23
+   991→   991→            // 
+   992→   992→            this.pictureBox23.Location = new System.Drawing.Point(26, 888);
+   993→   993→            this.pictureBox23.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+   994→   994→            this.pictureBox23.Name = "pictureBox23";
+   995→   995→            this.pictureBox23.Size = new System.Drawing.Size(58, 39);
+   996→   996→            this.pictureBox23.TabIndex = 25;
+   997→   997→            this.pictureBox23.TabStop = false;
+   998→   998→            // 
+   999→   999→            // pictureBox24
+  1000→  1000→            // 

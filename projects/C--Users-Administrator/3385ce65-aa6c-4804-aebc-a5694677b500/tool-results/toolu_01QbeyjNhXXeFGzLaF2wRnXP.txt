@@ -1,0 +1,666 @@
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\ClassBasler.vb:64:            ' _camera.Parameters("ExposureAuto").SetValue("Off")
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\ClassBasler.vb:65:            ' _camera.Parameters("ExposureTime").SetValue(10000.0)   ' 10 ms
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16117:        <member name="T:Emgu.CV.Stitching.ExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16122:        <member name="F:Emgu.CV.Stitching.ExposureCompensator._exposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16124:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16127:        <member name="P:Emgu.CV.Stitching.ExposureCompensator.ExposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16129:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16132:        <member name="M:Emgu.CV.Stitching.ExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16137:        <member name="T:Emgu.CV.Stitching.NoExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16142:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.#ctor">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16147:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16154:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16170:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities on each channel independently. 
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16186:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16204:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block on each channel.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:16795:        <member name="M:Emgu.CV.Stitching.Stitcher.SetExposureCompensator(Emgu.CV.Stitching.ExposureCompensator)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19290:        <member name="T:Emgu.CV.AlignExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19295:        <member name="F:Emgu.CV.AlignExposures._alignExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19297:            The pointer to the native AlignExposures object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19300:        <member name="M:Emgu.CV.AlignExposures.Process(Emgu.CV.IInputArrayOfArrays,Emgu.CV.Util.VectorOfMat,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19309:        <member name="M:Emgu.CV.AlignExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19390:        <member name="T:Emgu.CV.MergeExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19395:        <member name="F:Emgu.CV.MergeExposures._mergeExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19397:            The pointer to the unmanaged MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19400:        <member name="M:Emgu.CV.MergeExposures.Process(Emgu.CV.IInputArray,Emgu.CV.IOutputArray,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19409:        <member name="M:Emgu.CV.MergeExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:19411:            Reset the native pointer to the MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25338:        <member name="F:Emgu.CV.CvEnum.CapProp.Exposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25340:            Exposure (only for those cameras that support).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25368:        <member name="F:Emgu.CV.CvEnum.CapProp.AutoExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25370:            Exposure control done by camera, user can adjust reference level using this feature
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25874:            Exposure priority (0.5 - exposure 50%, gain 50%).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25897:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25899:            Exposure time in microseconds
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:25902:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposureBurstCount">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:26597:        <member name="F:Emgu.CV.CvEnum.CapProp.IOSDeviceExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:26729:            Exposure speed. Can be readonly, depends on camera program.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:26737:        <member name="F:Emgu.CV.CvEnum.CapProp.Gphoto2Exposureprogram">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Emgu.CV.xml:42612:            <param name="k">Exposure ratio.</param>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5145:        <member name="P:Basler.Pylon.PLCamEmuCamera.TriggerSelectorEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5147:                <para>The Exposure Start trigger can be configured.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5151:        <member name="P:Basler.Pylon.PLCamEmuCamera.TriggerSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5153:                <para>The Exposure End trigger can be configured.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5157:        <member name="P:Basler.Pylon.PLCamEmuCamera.TriggerSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5159:                <para>The Exposure Active trigger can be configured.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5550:        <member name="P:Basler.Pylon.PLCamEmuCamera.LineSourceEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5552:                <para>The source signal for the currently selected line is set to Exposure Trigger Wait. The signal goes high when the camera is ready to receive exposure trigger signals. When you apply an exposure trigger signal, the signal goes low.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5556:        <member name="P:Basler.Pylon.PLCamEmuCamera.LineSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5558:                <para>The source signal for the currently selected line is set to Exposure Active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5722:        <member name="M:Basler.Pylon.PLCamEmuCamera.ExposureModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5723:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5724:            <returns>Returns the full name of ExposureMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5726:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5727:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5729:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureModeEnum.TriggerWidth">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5735:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureModeEnum.TriggerControlled">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5741:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureModeEnum.Timed">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5743:                <para>The exposure mode is set to Timed. In this mode, the exposure time for each frame acquisition is determined by the value of the camera's Exposure Time (Abs) parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5747:        <member name="T:Basler.Pylon.PLCamEmuCamera.ExposureModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5753:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5756:        <member name="M:Basler.Pylon.PLCamEmuCamera.ExposureAutoEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5757:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5758:            <returns>Returns the full name of ExposureAuto</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5760:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureAutoEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5761:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5763:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureAutoEnum.Once">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5769:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureAutoEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5775:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureAutoEnum.Continuous">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5781:        <member name="T:Basler.Pylon.PLCamEmuCamera.ExposureAutoEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5784:                <para>Sets the operation mode of the Exposure Auto auto function. The Exposure Auto auto function automatically adjusts the exposure time within set limits until a target brightness value has been reached.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:5787:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureAuto" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6301:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureTimeRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6306:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeRaw" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6309:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureTimeBaseAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6314:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeBaseAbs" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6317:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureTimeAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6322:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeAbs" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6325:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6327:                <para>Exposure time of the camera in microseconds.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6330:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTime" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6333:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6338:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6341:        <member name="P:Basler.Pylon.PLCamEmuCamera.ExposureAuto">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6343:                <para>Sets the operation mode of the Exposure Auto auto function. The Exposure Auto auto function automatically adjusts the exposure time within set limits until a target brightness value has been reached.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:6346:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureAuto" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:15155:        <member name="P:Basler.Pylon.PLGigEChunkData.ChunkExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:16202:        <member name="P:Basler.Pylon.PLGigECamera.EventSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:16560:        <member name="P:Basler.Pylon.PLGigECamera.ChunkSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:16786:        <member name="P:Basler.Pylon.PLGigECamera.ParameterSelectorEnum.ExposureOverlapMax">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:16792:        <member name="P:Basler.Pylon.PLGigECamera.ParameterSelectorEnum.ExposureOverhead">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:16810:        <member name="P:Basler.Pylon.PLGigECamera.ParameterSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:17313:                <para>Auto Function AOI 1 is used by the Gain Auto and Exposure Auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:17328:        <member name="P:Basler.Pylon.PLGigECamera.AutoFunctionProfileEnum.ExposureMinimumQuick">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:17330:                <para>Exposure time is kept as low as possible and is adjusted quickly.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:17340:        <member name="P:Basler.Pylon.PLGigECamera.AutoFunctionProfileEnum.ExposureMinimum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:18082:        <member name="P:Basler.Pylon.PLGigECamera.CounterEventSourceEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:18084:                <para>Counts the number of Exposure End.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:18088:        <member name="P:Basler.Pylon.PLGigECamera.CounterEventSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:18090:                <para>Counts the number of Exposure Start.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:18241:        <member name="P:Basler.Pylon.PLGigECamera.TimerTriggerSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:18967:        <member name="P:Basler.Pylon.PLGigECamera.LineSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19154:        <member name="P:Basler.Pylon.PLGigECamera.AcquisitionStatusSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19252:        <member name="M:Basler.Pylon.PLGigECamera.ExposureOverlapTimeModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19253:            <summary>The full name of ExposureOverlapTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19254:            <returns>Returns the full name of ExposureOverlapTimeMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19256:        <member name="P:Basler.Pylon.PLGigECamera.ExposureOverlapTimeModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19257:            <summary>The full name of ExposureOverlapTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19259:        <member name="P:Basler.Pylon.PLGigECamera.ExposureOverlapTimeModeEnum.Automatic">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19265:        <member name="P:Basler.Pylon.PLGigECamera.ExposureOverlapTimeModeEnum.Manual">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19267:                <para>Allows to manually set the ExposureOverlapTimeMax parameter. Its parameter value defines a constant maximum overlap between immediately succeeding image acquisitions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19271:        <member name="T:Basler.Pylon.PLGigECamera.ExposureOverlapTimeModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19275:        <member name="M:Basler.Pylon.PLGigECamera.ExposureTimeModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19276:            <summary>The full name of ExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19277:            <returns>Returns the full name of ExposureTimeMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19279:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19280:            <summary>The full name of ExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19282:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeModeEnum.UltraShort">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19288:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeModeEnum.Standard">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19294:        <member name="T:Basler.Pylon.PLGigECamera.ExposureTimeModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19298:        <member name="M:Basler.Pylon.PLGigECamera.ExposureAutoEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19299:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19300:            <returns>Returns the full name of ExposureAuto</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19302:        <member name="P:Basler.Pylon.PLGigECamera.ExposureAutoEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19303:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19305:        <member name="P:Basler.Pylon.PLGigECamera.ExposureAutoEnum.Continuous">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19311:        <member name="P:Basler.Pylon.PLGigECamera.ExposureAutoEnum.Once">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19317:        <member name="P:Basler.Pylon.PLGigECamera.ExposureAutoEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19319:                <para>Disables the Exposure Auto function.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19323:        <member name="T:Basler.Pylon.PLGigECamera.ExposureAutoEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19325:            <summary>The exposure auto function automatically adjusts the Auto Exposure Time Abs parameter value within set limits, until a target average gray value for the pixel data of the related Auto Function AOI is reached.</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19350:        <member name="M:Basler.Pylon.PLGigECamera.ExposureModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19351:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19352:            <returns>Returns the full name of ExposureMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19354:        <member name="P:Basler.Pylon.PLGigECamera.ExposureModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19355:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19357:        <member name="P:Basler.Pylon.PLGigECamera.ExposureModeEnum.TriggerControlled">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19363:        <member name="P:Basler.Pylon.PLGigECamera.ExposureModeEnum.TriggerWidth">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19369:        <member name="P:Basler.Pylon.PLGigECamera.ExposureModeEnum.Timed">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19375:        <member name="P:Basler.Pylon.PLGigECamera.ExposureModeEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19381:        <member name="T:Basler.Pylon.PLGigECamera.ExposureModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19670:        <member name="P:Basler.Pylon.PLGigECamera.TriggerSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19676:        <member name="P:Basler.Pylon.PLGigECamera.TriggerSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:19682:        <member name="P:Basler.Pylon.PLGigECamera.TriggerSelectorEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22196:        <member name="P:Basler.Pylon.PLGigECamera.ExposureEndEventTimestamp">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22202:        <member name="P:Basler.Pylon.PLGigECamera.ExposureEndEventFrameID">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22208:        <member name="P:Basler.Pylon.PLGigECamera.ExposureEndEventStreamChannelIndex">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22244:        <member name="P:Basler.Pylon.PLGigECamera.ChunkExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22766:        <member name="P:Basler.Pylon.PLGigECamera.AutoExposureTimeAbsUpperLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22768:                <para>Upper limit of the Auto Exposure Time (Abs) [us] parameter</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22772:        <member name="P:Basler.Pylon.PLGigECamera.AutoExposureTimeAbsLowerLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22774:                <para>Lower limit of the Auto Exposure Time (Abs) [us] parameter</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22804:                <para>The gray value adjustment damping parameter controls the rate by which pixel gray values are changed when Exposure Auto and/or Gain Auto are enabled.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:22810:                <para>The gray value adjustment damping parameter controls the rate by which pixel gray values are changed when Exposure Auto and/or Gain Auto are enabled.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23852:        <member name="P:Basler.Pylon.PLGigECamera.ExposureOverlapTimeMaxRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23858:        <member name="P:Basler.Pylon.PLGigECamera.ExposureOverlapTimeMaxAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23864:        <member name="P:Basler.Pylon.PLGigECamera.ExposureOverlapTimeMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23876:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23882:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeBaseAbsEnable">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23888:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeBaseAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23894:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23900:        <member name="P:Basler.Pylon.PLGigECamera.ExposureTimeMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23906:        <member name="P:Basler.Pylon.PLGigECamera.ExposureAuto">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23908:                <para>The exposure auto function automatically adjusts the Auto Exposure Time Abs parameter value within set limits, until a target average gray value for the pixel data of the related Auto Function AOI is reached.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23918:        <member name="P:Basler.Pylon.PLGigECamera.ExposureMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23924:        <member name="P:Basler.Pylon.PLGigECamera.ExposureStartDelayRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:23930:        <member name="P:Basler.Pylon.PLGigECamera.ExposureStartDelayAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:24819:        <member name="P:Basler.Pylon.PLUsbChunkData.ChunkExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:24821:                <para>Exposure time used to acquire the image.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:25272:        <member name="P:Basler.Pylon.PLUsbCamera.RemoveParameterLimitSelectorEnum.ExposureOverhead">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:25274:                <para>The factory limits of the ExposureOverhead parameter can be removed.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:25284:        <member name="P:Basler.Pylon.PLUsbCamera.RemoveParameterLimitSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:25286:                <para>The factory limits of the ExposureTime parameter can be removed.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:25587:        <member name="P:Basler.Pylon.PLUsbCamera.EventSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:25674:        <member name="P:Basler.Pylon.PLUsbCamera.ChunkSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26015:        <member name="P:Basler.Pylon.PLUsbCamera.TimerTriggerSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26173:        <member name="P:Basler.Pylon.PLUsbCamera.LineSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26413:                <para>Auto function AOI 1 can be adjusted. AOI 1 is used by the Gain Auto and Exposure Auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26436:                <para>Auto function ROI 1 can be adjusted. ROI 1 is used by the Gain Auto and Exposure Auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26451:        <member name="P:Basler.Pylon.PLUsbCamera.AutoFunctionProfileEnum.MinimizeExposureTimeQuick">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26453:                <para>Exposure time is kept as low as possible and is adjusted quickly.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26481:        <member name="P:Basler.Pylon.PLUsbCamera.AutoFunctionProfileEnum.MinimizeExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26483:                <para>Exposure time is kept as low as possible during automatic adjustments.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26585:        <member name="P:Basler.Pylon.PLUsbCamera.AcquisitionStatusSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26800:        <member name="M:Basler.Pylon.PLUsbCamera.ExposureOverlapTimeModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26801:            <summary>The full name of ExposureOverlapTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26802:            <returns>Returns the full name of ExposureOverlapTimeMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26804:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureOverlapTimeModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26805:            <summary>The full name of ExposureOverlapTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26807:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureOverlapTimeModeEnum.Automatic">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26813:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureOverlapTimeModeEnum.Manual">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26815:                <para>The camera manually sets the overlap time for each acquisition. In this mode, you must also set the ExposureOverlapTimeMax parameter to specify the maximum overlap time.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26819:        <member name="T:Basler.Pylon.PLUsbCamera.ExposureOverlapTimeModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26823:        <member name="M:Basler.Pylon.PLUsbCamera.ExposureModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26824:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26825:            <returns>Returns the full name of ExposureMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26827:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26828:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26830:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureModeEnum.TriggerWidth">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26836:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureModeEnum.Timed">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26838:                <para>The timed exposure mode is set. In this mode, the exposure time for each frame acquisition is determined by the value of the camera's Exposure Time Abs parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26842:        <member name="T:Basler.Pylon.PLUsbCamera.ExposureModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26846:        <member name="M:Basler.Pylon.PLUsbCamera.ExposureTimeModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26847:            <summary>The full name of ExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26848:            <returns>Returns the full name of ExposureTimeMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26850:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureTimeModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26851:            <summary>The full name of ExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26853:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureTimeModeEnum.UltraShort">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26859:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureTimeModeEnum.Standard">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26865:        <member name="T:Basler.Pylon.PLUsbCamera.ExposureTimeModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26869:        <member name="M:Basler.Pylon.PLUsbCamera.ExposureAutoEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26870:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26871:            <returns>Returns the full name of ExposureAuto</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26873:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureAutoEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26874:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26876:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureAutoEnum.Continuous">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26878:                <para>Exposure time is adjusted repeatedly while images are acquired. The repeated automatic adjustment will proceed until the Once mode of operation is used or until the auto function is set to Off.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26882:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureAutoEnum.Once">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26884:                <para>Exposure time is automatically adjusted until it reaches a specific target value. When the target value has been reached, the auto function will automatically be set to Off and the new parameter value will be applied to the following images.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26888:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureAutoEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:26894:        <member name="T:Basler.Pylon.PLUsbCamera.ExposureAutoEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:28087:        <member name="P:Basler.Pylon.PLUsbCamera.CameraOperationModeEnum.LongExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:28601:        <member name="P:Basler.Pylon.PLUsbCamera.EventExposureEndFrameID">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:28607:        <member name="P:Basler.Pylon.PLUsbCamera.EventExposureEndTimestamp">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:28613:        <member name="P:Basler.Pylon.PLUsbCamera.EventExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:28673:        <member name="P:Basler.Pylon.PLUsbCamera.ChunkExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:28675:                <para>Exposure time used to acquire the image.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:28963:                <para>Assigns the Gain Auto and the Exposure Auto functions to the currently selected auto function AOI. For this parameter, Gain Auto and the Exposure Auto are considered as a single "brightness" auto function.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29011:                <para>Assigns the Gain Auto and the Exposure Auto functions to the currently selected auto function ROI. For this parameter, Gain Auto and the Exposure Auto are considered as a single "brightness" auto function.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29051:        <member name="P:Basler.Pylon.PLUsbCamera.AutoExposureTimeUpperLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29053:                <para>Upper limit for the ExposureTime parameter when the exposure auto function is active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29057:        <member name="P:Basler.Pylon.PLUsbCamera.AutoExposureTimeLowerLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29059:                <para>Lower limit for the ExposureTime parameter when the exposure auto function is active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29189:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureOverlapTimeMax">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29195:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureOverlapTimeMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29201:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29203:                <para>Exposure time of the camera in microseconds.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29207:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29213:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureTimeMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29219:        <member name="P:Basler.Pylon.PLUsbCamera.ExposureAuto">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29926:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ParameterSelectorEnum.ExposureOverhead">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:29944:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ParameterSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:30389:                <para>Auto Function AOI 1 is used by the Gain Auto and Exposure Auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:30404:        <member name="P:Basler.Pylon.PLCameraLinkCamera.AutoFunctionProfileEnum.ExposureMinimum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:31030:        <member name="P:Basler.Pylon.PLCameraLinkCamera.CounterEventSourceEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:31032:                <para>Counts the number of Exposure End.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:31036:        <member name="P:Basler.Pylon.PLCameraLinkCamera.CounterEventSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:31038:                <para>Counts the number of Exposure Start.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:31183:        <member name="P:Basler.Pylon.PLCameraLinkCamera.TimerTriggerSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:31987:        <member name="P:Basler.Pylon.PLCameraLinkCamera.LineSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32246:        <member name="P:Basler.Pylon.PLCameraLinkCamera.AcquisitionStatusSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32362:        <member name="M:Basler.Pylon.PLCameraLinkCamera.ExposureAutoEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32363:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32364:            <returns>Returns the full name of ExposureAuto</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32366:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureAutoEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32367:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32369:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureAutoEnum.Continuous">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32375:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureAutoEnum.Once">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32381:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureAutoEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32383:                <para>Disables the Exposure Auto function.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32387:        <member name="T:Basler.Pylon.PLCameraLinkCamera.ExposureAutoEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32389:            <summary>The exposure auto function automatically adjusts the Auto Exposure Time Abs parameter value within set limits, until a target average gray value for the pixel data of the related Auto Function AOI is reached.</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32414:        <member name="M:Basler.Pylon.PLCameraLinkCamera.ExposureModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32415:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32416:            <returns>Returns the full name of ExposureMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32418:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32419:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32421:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureModeEnum.TriggerControlled">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32427:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureModeEnum.TriggerWidth">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32433:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureModeEnum.Timed">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32439:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureModeEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32445:        <member name="T:Basler.Pylon.PLCameraLinkCamera.ExposureModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32734:        <member name="P:Basler.Pylon.PLCameraLinkCamera.TriggerSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32740:        <member name="P:Basler.Pylon.PLCameraLinkCamera.TriggerSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:32746:        <member name="P:Basler.Pylon.PLCameraLinkCamera.TriggerSelectorEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:34941:        <member name="P:Basler.Pylon.PLCameraLinkCamera.AutoExposureTimeAbsUpperLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:34943:                <para>Upper limit of the Auto Exposure Time (Abs) [us] parameter</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:34947:        <member name="P:Basler.Pylon.PLCameraLinkCamera.AutoExposureTimeAbsLowerLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:34949:                <para>Lower limit of the Auto Exposure Time (Abs) [us] parameter</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:34979:                <para>The gray value adjustment damping parameter controls the rate by which pixel gray values are changed when Exposure Auto and/or Gain Auto are enabled.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:34985:                <para>The gray value adjustment damping parameter controls the rate by which pixel gray values are changed when Exposure Auto and/or Gain Auto are enabled.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35569:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureOverlapTimeMaxRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35575:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureOverlapTimeMaxAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35587:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureTimeRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35593:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureTimeBaseAbsEnable">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35599:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureTimeBaseAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35605:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureTimeAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35611:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureAuto">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35613:                <para>The exposure auto function automatically adjusts the Auto Exposure Time Abs parameter value within set limits, until a target average gray value for the pixel data of the related Auto Function AOI is reached.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35623:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35629:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureStartDelayRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:35635:        <member name="P:Basler.Pylon.PLCameraLinkCamera.ExposureStartDelayAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:36694:        <member name="P:Basler.Pylon.PLChunkData.BslChunkTimestampSelectorEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:36700:        <member name="P:Basler.Pylon.PLChunkData.BslChunkTimestampSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:36736:                <para>Target brightness adjustments are disabled, i.e., Gain Auto and Exposure Auto are set to Off. </para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:36743:                <para>Indicates the status of the target brightness adjustments performed by the Exposure Auto and Gain Auto auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:36960:        <member name="P:Basler.Pylon.PLChunkData.ChunkExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:36962:                <para>Exposure time used to acquire the image.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:37015:                <para>Indicates the status of the target brightness adjustments performed by the Exposure Auto and Gain Auto auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:38092:                <para>The Auto Functions factory set can be loaded. This user set enables the camera's Exposure Auto and Gain Auto auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:38754:        <member name="P:Basler.Pylon.PLCamera.TriggerSelectorEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:38756:                <para>The Exposure Start trigger can be configured.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:38760:        <member name="P:Basler.Pylon.PLCamera.TriggerSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:38762:                <para>The Exposure End trigger can be configured.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:38766:        <member name="P:Basler.Pylon.PLCamera.TriggerSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:38768:                <para>The Exposure Active trigger can be configured.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:39141:        <member name="P:Basler.Pylon.PLCamera.TimerTriggerSourceEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:39143:                <para>The selected timer can be started by an Exposure Trigger Wait signal.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:39147:        <member name="P:Basler.Pylon.PLCamera.TimerTriggerSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:39149:                <para>The selected timer can be started by an Exposure Start signal.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:39153:        <member name="P:Basler.Pylon.PLCamera.TimerTriggerSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:39155:                <para>The selected timer can be started by an Exposure Active signal. By default, an Exposure Active signal is generated whenever exposure is started. You can change this behavior using the Counter Event Activation parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:40482:        <member name="P:Basler.Pylon.PLCamera.SequencerTriggerSourceEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:40484:                <para>Exposure Trigger Wait signals can be used to advance to the next sequence set.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:40488:        <member name="P:Basler.Pylon.PLCamera.SequencerTriggerSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:40490:                <para>Exposure Start signals can be used to advance to the next sequence set.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:40494:        <member name="P:Basler.Pylon.PLCamera.SequencerTriggerSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:40496:                <para>Exposure Active signals can be used to advance to the next sequence set.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:41369:        <member name="P:Basler.Pylon.PLCamera.RemoveParameterLimitSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:41371:                <para>The factory limits of the Exposure Time parameter can be removed.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:41375:        <member name="P:Basler.Pylon.PLCamera.RemoveParameterLimitSelectorEnum.ExposureOverhead">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:41377:                <para>The factory limits of the ExposureOverhead parameter can be removed.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42503:        <member name="P:Basler.Pylon.PLCamera.ParameterSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42505:                <para>The factory limits of the Exposure Time parameter can be removed.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42509:        <member name="P:Basler.Pylon.PLCamera.ParameterSelectorEnum.ExposureOverlapMax">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42511:                <para>The factory limits of the Exposure Overlap Time Max parameter can be removed.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42515:        <member name="P:Basler.Pylon.PLCamera.ParameterSelectorEnum.ExposureOverhead">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42517:                <para>The factory limits of the Exposure Overhead parameter can be removed.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42558:                <para>Overlapping image acquisition is enabled. Exposures and readouts will overlap.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42564:                <para>Overlapping image acquisition is disabled. Exposures and readouts will not overlap.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42776:                <para>The signal for the currently selected line is rising with Frame Trigger Wait and falling with Exposure Active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42798:        <member name="P:Basler.Pylon.PLCamera.LineSourceEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42800:                <para>The source signal for the currently selected line is set to Exposure Trigger Wait. The signal goes high when the camera is ready to receive exposure trigger signals. When you apply an exposure trigger signal, the signal goes low.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42804:        <member name="P:Basler.Pylon.PLCamera.LineSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:42806:                <para>The source signal for the currently selected line is set to Exposure Active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44402:        <member name="M:Basler.Pylon.PLCamera.ExposureTimeModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44403:            <summary>The full name of ExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44404:            <returns>Returns the full name of ExposureTimeMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44406:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44407:            <summary>The full name of ExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44409:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeModeEnum.UltraShort">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44415:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeModeEnum.Standard">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44421:        <member name="T:Basler.Pylon.PLCamera.ExposureTimeModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44427:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44430:        <member name="M:Basler.Pylon.PLCamera.ExposureOverlapTimeModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44431:            <summary>The full name of ExposureOverlapTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44432:            <returns>Returns the full name of ExposureOverlapTimeMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44434:        <member name="P:Basler.Pylon.PLCamera.ExposureOverlapTimeModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44435:            <summary>The full name of ExposureOverlapTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44437:        <member name="P:Basler.Pylon.PLCamera.ExposureOverlapTimeModeEnum.Manual">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44439:                <para>The user can manually set the overlap time for each acquisition. In this mode, you must also specify the maximum overlap time using the Exposure Overlap Time Max parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44443:        <member name="P:Basler.Pylon.PLCamera.ExposureOverlapTimeModeEnum.Automatic">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44449:        <member name="T:Basler.Pylon.PLCamera.ExposureOverlapTimeModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44455:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureOverlapTimeMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44458:        <member name="M:Basler.Pylon.PLCamera.ExposureModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44459:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44460:            <returns>Returns the full name of ExposureMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44462:        <member name="P:Basler.Pylon.PLCamera.ExposureModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44463:            <summary>The full name of ExposureMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44465:        <member name="P:Basler.Pylon.PLCamera.ExposureModeEnum.TriggerWidth">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44471:        <member name="P:Basler.Pylon.PLCamera.ExposureModeEnum.TriggerControlled">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44477:        <member name="P:Basler.Pylon.PLCamera.ExposureModeEnum.Timed">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44479:                <para>The exposure mode is set to Timed. In this mode, the exposure time for each frame acquisition is determined by the value of the camera's Exposure Time (Abs) parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44483:        <member name="P:Basler.Pylon.PLCamera.ExposureModeEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44489:        <member name="T:Basler.Pylon.PLCamera.ExposureModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44495:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44498:        <member name="M:Basler.Pylon.PLCamera.ExposureAutoEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44499:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44500:            <returns>Returns the full name of ExposureAuto</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44502:        <member name="P:Basler.Pylon.PLCamera.ExposureAutoEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44503:            <summary>The full name of ExposureAuto</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44505:        <member name="P:Basler.Pylon.PLCamera.ExposureAutoEnum.Once">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44511:        <member name="P:Basler.Pylon.PLCamera.ExposureAutoEnum.Off">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44517:        <member name="P:Basler.Pylon.PLCamera.ExposureAutoEnum.Continuous">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44523:        <member name="T:Basler.Pylon.PLCamera.ExposureAutoEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44526:                <para>Sets the operation mode of the Exposure Auto auto function. The Exposure Auto auto function automatically adjusts the exposure time within set limits until a target brightness value has been reached.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44529:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureAuto" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44800:        <member name="P:Basler.Pylon.PLCamera.EventSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:44802:                <para>Event notifications for the Exposure End event can be enabled.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:45778:        <member name="P:Basler.Pylon.PLCamera.CounterTriggerSourceEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:45780:                <para>The selected counter can be started by an Exposure Trigger Wait signal.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:45784:        <member name="P:Basler.Pylon.PLCamera.CounterTriggerSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:45786:                <para>The selected counter can be started by an Exposure Start signal.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:45790:        <member name="P:Basler.Pylon.PLCamera.CounterTriggerSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:45792:                <para>The selected counter can be started by an Exposure Active signal. By default, an Exposure Active signal is generated whenever exposure is started. You can change this behavior using the Counter Event Activation parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46158:        <member name="P:Basler.Pylon.PLCamera.CounterResetSourceEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46160:                <para>The selected counter can be reset by an Exposure Trigger Wait signal.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46164:        <member name="P:Basler.Pylon.PLCamera.CounterResetSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46166:                <para>The selected counter can be reset by an Exposure Start signal.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46170:        <member name="P:Basler.Pylon.PLCamera.CounterResetSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46172:                <para>The selected counter can be reset by an Exposure Active signal. By default, an Exposure Active signal is generated whenever exposure is started. You can change this behavior using the Counter Event Activation parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46474:        <member name="P:Basler.Pylon.PLCamera.CounterEventSourceEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46476:                <para>The selected counter counts the number of Exposure Trigger Wait signals.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46480:        <member name="P:Basler.Pylon.PLCamera.CounterEventSourceEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46482:                <para>The selected counter counts the number of Exposure Start signals.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46486:        <member name="P:Basler.Pylon.PLCamera.CounterEventSourceEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46488:                <para>Counts the number of Exposure End.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46492:        <member name="P:Basler.Pylon.PLCamera.CounterEventSourceEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:46494:                <para>The selected counter counts the number of Exposure Active signals. By default, an Exposure Active signal is generated whenever exposure is started. You can change this behavior using the Counter Event Activation parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:47380:        <member name="P:Basler.Pylon.PLCamera.ChunkSelectorEnum.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:47382:                <para>The Exposure Time chunk can be enabled.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:47867:        <member name="P:Basler.Pylon.PLCamera.CameraOperationModeEnum.LongExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:47869:                <para>The camera operation mode is set to Long Exposure.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49017:                <para>The timing of the individual strobe pulses is determined by the Exposure Active signal. The light pulse will last for the duration of the exposure, up to a maximum of 655 350 microseconds.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49389:        <member name="M:Basler.Pylon.PLCamera.BslExposureTimeModeEnum.ToString">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49390:            <summary>The full name of BslExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49391:            <returns>Returns the full name of BslExposureTimeMode</returns>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49393:        <member name="P:Basler.Pylon.PLCamera.BslExposureTimeModeEnum.Name">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49394:            <summary>The full name of BslExposureTimeMode</summary>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49396:        <member name="P:Basler.Pylon.PLCamera.BslExposureTimeModeEnum.UltraShort">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49402:        <member name="P:Basler.Pylon.PLCamera.BslExposureTimeModeEnum.Standard">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49408:        <member name="P:Basler.Pylon.PLCamera.BslExposureTimeModeEnum.Short">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49414:        <member name="T:Basler.Pylon.PLCamera.BslExposureTimeModeEnum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49420:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=BslExposureTimeMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49607:        <member name="P:Basler.Pylon.PLCamera.BslChunkTimestampSelectorEnum.ExposureStart">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49613:        <member name="P:Basler.Pylon.PLCamera.BslChunkTimestampSelectorEnum.ExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49650:                <para>Target brightness adjustments are disabled, i.e., Gain Auto and Exposure Auto are set to Off. </para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49657:                <para>Indicates the status of the target brightness adjustments performed by the Exposure Auto and Gain Auto auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49698:        <member name="P:Basler.Pylon.PLCamera.BslAcquisitionStopModeEnum.CompleteExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:49704:        <member name="P:Basler.Pylon.PLCamera.BslAcquisitionStopModeEnum.AbortExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50378:        <member name="P:Basler.Pylon.PLCamera.AutoFunctionProfileEnum.MinimizeExposureTimeQuick">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50380:                <para>Exposure time is kept as low as possible and is adjusted quickly when there are extreme or rapid changes in brightness.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50384:        <member name="P:Basler.Pylon.PLCamera.AutoFunctionProfileEnum.MinimizeExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50386:                <para>Exposure time is kept as low as possible during automatic adjustments.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50402:        <member name="P:Basler.Pylon.PLCamera.AutoFunctionProfileEnum.ExposureMinimumQuick">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50404:                <para>Exposure time is kept as low as possible and is adjusted quickly.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50408:        <member name="P:Basler.Pylon.PLCamera.AutoFunctionProfileEnum.ExposureMinimum">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50410:                <para>Exposure time is kept as low as possible during automatic adjustments.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50555:        <member name="P:Basler.Pylon.PLCamera.AcquisitionStatusSelectorEnum.ExposureTriggerWait">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50557:                <para>A check determines whether the camera is currently waiting for an Exposure Start trigger signal.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:50561:        <member name="P:Basler.Pylon.PLCamera.AcquisitionStatusSelectorEnum.ExposureActive">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:53125:                <para>Gray value adjustment damping factor (raw value) to be applied. This controls the speed with which pixel gray values are changed when Exposure Auto, Gain Auto, or both are enabled. This can be useful, for example, when objects move into the camera's field of view and the light conditions are changing gradually due to the moving objects.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:53133:                <para>Gray value adjustment damping factor to be applied. This controls the speed with which pixel gray values are changed when Exposure Auto, Gain Auto, or both are enabled. This can be useful, for example, when objects move into the camera's field of view and the light conditions are changing gradually due to the moving objects.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54144:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54146:                <para>Exposure time of the camera (raw value). The actual exposure time equals the current Exposure Time (Raw) value multiplied with the current Exposure Timebase value.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54149:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeRaw" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54152:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54157:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54160:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeBaseAbsEnable">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54165:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeBaseAbsEnable" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54168:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeBaseAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54170:                <para>Timebase (in microseconds) that the camera uses when the exposure time is specified using the Exposure Time (Raw) parameter.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54173:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeBaseAbs" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54176:        <member name="P:Basler.Pylon.PLCamera.ExposureTimeAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54178:                <para>Exposure time of the camera in microseconds.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54181:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTimeAbs" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54184:        <member name="P:Basler.Pylon.PLCamera.ExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54186:                <para>Exposure time of the camera in microseconds.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54189:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureTime" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54192:        <member name="P:Basler.Pylon.PLCamera.ExposureStartDelayRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54197:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureStartDelayRaw" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54200:        <member name="P:Basler.Pylon.PLCamera.ExposureStartDelayAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54205:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureStartDelayAbs" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54208:        <member name="P:Basler.Pylon.PLCamera.ExposureOverlapTimeMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54213:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureOverlapTimeMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54216:        <member name="P:Basler.Pylon.PLCamera.ExposureOverlapTimeMaxRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54221:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureOverlapTimeMaxRaw" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54224:        <member name="P:Basler.Pylon.PLCamera.ExposureOverlapTimeMaxAbs">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54229:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureOverlapTimeMaxAbs" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54232:        <member name="P:Basler.Pylon.PLCamera.ExposureOverlapTimeMax">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54237:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureOverlapTimeMax" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54240:        <member name="P:Basler.Pylon.PLCamera.ExposureMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54245:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54248:        <member name="P:Basler.Pylon.PLCamera.ExposureEndEventTimestamp">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54250:                <para>Timestamp of the Exposure End event.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54253:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureEndEventTimestamp" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54256:        <member name="P:Basler.Pylon.PLCamera.ExposureEndEventStreamChannelIndex">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54258:                <para>Stream channel index of the Exposure End event.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54261:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureEndEventStreamChannelIndex" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54264:        <member name="P:Basler.Pylon.PLCamera.ExposureEndEventFrameID">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54266:                <para>Frame ID of the Exposure End event.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54269:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureEndEventFrameID" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54272:        <member name="P:Basler.Pylon.PLCamera.ExposureAuto">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54274:                <para>Sets the operation mode of the Exposure Auto auto function. The Exposure Auto auto function automatically adjusts the exposure time within set limits until a target brightness value has been reached.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54277:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ExposureAuto" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54581:        <member name="P:Basler.Pylon.PLCamera.EventExposureEndTimestamp">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54583:                <para>Timestamp of the Exposure End event.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54586:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=EventExposureEndTimestamp" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54589:        <member name="P:Basler.Pylon.PLCamera.EventExposureEndFrameID">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54591:                <para>Frame ID of the Exposure End event.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54594:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=EventExposureEndFrameID" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54597:        <member name="P:Basler.Pylon.PLCamera.EventExposureEnd">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54599:                <para>Unique identifier of the Exposure End event. Use this parameter to get notified when the event occurs.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:54602:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=EventExposureEnd" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:55867:        <member name="P:Basler.Pylon.PLCamera.ChunkExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:55869:                <para>Exposure time used to acquire the image.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:55872:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=ChunkExposureTime" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56827:        <member name="P:Basler.Pylon.PLCamera.BslExposureTimeMode">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56832:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=BslExposureTimeMode" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56835:        <member name="P:Basler.Pylon.PLCamera.BslExposureStartDelay">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56837:                <para>Exposure start delay with current settings.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56840:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=BslExposureStartDelay" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56867:        <member name="P:Basler.Pylon.PLCamera.BslEffectiveExposureTime">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56872:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=BslEffectiveExposureTime" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:56986:                <para>Indicates the status of the target brightness adjustments performed by the Exposure Auto and Gain Auto auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57391:                <para>Target brightness for the Gain Auto and the Exposure Auto auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57399:                <para>Brightness adjustment damping factor to be applied. This controls the speed with which pixel gray values are changed when Exposure Auto, Gain Auto, or both are enabled. The lower the damping factor, the faster the target brightness value is reached.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57407:                <para>Target brightness for the Gain Auto and the Exposure Auto auto functions.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57476:                <para>Assigns the Gain Auto and the Exposure Auto auto functions to the currently selected auto function ROI. For this parameter, Gain Auto and Exposure Auto are considered as a single auto function named 'Brightness'.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57556:                <para>Assigns the Gain Auto and the Exposure Auto auto functions to the currently selected auto function AOI. For this parameter, Gain Auto and Exposure Auto are considered as a single auto function named 'Brightness'.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57591:                <para>Assigns the Gain Auto and the Exposure Auto auto functions to the currently selected auto function AOI. For this parameter, Gain Auto and Exposure Auto are considered as a single auto function named 'Intensity'.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57634:        <member name="P:Basler.Pylon.PLCamera.AutoExposureTimeUpperLimitRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57636:                <para>Upper limit of the Exposure Time parameter when the Exposure Auto auto function is active (raw value).</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57639:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=AutoExposureTimeUpperLimitRaw" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57642:        <member name="P:Basler.Pylon.PLCamera.AutoExposureTimeUpperLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57644:                <para>Upper limit of the Exposure Time parameter when the Exposure Auto auto function is active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57647:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=AutoExposureTimeUpperLimit" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57650:        <member name="P:Basler.Pylon.PLCamera.AutoExposureTimeLowerLimitRaw">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57652:                <para>Lower limit of the Exposure Time parameter when the Exposure Auto auto function is active (raw value).</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57655:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=AutoExposureTimeLowerLimitRaw" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57658:        <member name="P:Basler.Pylon.PLCamera.AutoExposureTimeLowerLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57660:                <para>Lower limit of the Exposure Time parameter when the Exposure Auto auto function is active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57663:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=AutoExposureTimeLowerLimit" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57666:        <member name="P:Basler.Pylon.PLCamera.AutoExposureTimeAbsUpperLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57668:                <para>Upper limit of the Exposure Time parameter when the Exposure Auto auto function is active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57671:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=AutoExposureTimeAbsUpperLimit" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57674:        <member name="P:Basler.Pylon.PLCamera.AutoExposureTimeAbsLowerLimit">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57676:                <para>Lower limit of the Exposure Time parameter when the Exposure Auto auto function is active.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\bin\Debug\Basler.Pylon.xml:57679:                <para>The <a href="https://docs.baslerweb.com/?rhcsh=1&amp;rhmapid=AutoExposureTimeAbsLowerLimit" target="_blank">feature documentation</a> may provide more information.</para>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16117:        <member name="T:Emgu.CV.Stitching.ExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16122:        <member name="F:Emgu.CV.Stitching.ExposureCompensator._exposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16124:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16127:        <member name="P:Emgu.CV.Stitching.ExposureCompensator.ExposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16129:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16132:        <member name="M:Emgu.CV.Stitching.ExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16137:        <member name="T:Emgu.CV.Stitching.NoExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16142:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.#ctor">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16147:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16154:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16170:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities on each channel independently. 
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16186:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16204:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block on each channel.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:16795:        <member name="M:Emgu.CV.Stitching.Stitcher.SetExposureCompensator(Emgu.CV.Stitching.ExposureCompensator)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19290:        <member name="T:Emgu.CV.AlignExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19295:        <member name="F:Emgu.CV.AlignExposures._alignExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19297:            The pointer to the native AlignExposures object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19300:        <member name="M:Emgu.CV.AlignExposures.Process(Emgu.CV.IInputArrayOfArrays,Emgu.CV.Util.VectorOfMat,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19309:        <member name="M:Emgu.CV.AlignExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19390:        <member name="T:Emgu.CV.MergeExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19395:        <member name="F:Emgu.CV.MergeExposures._mergeExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19397:            The pointer to the unmanaged MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19400:        <member name="M:Emgu.CV.MergeExposures.Process(Emgu.CV.IInputArray,Emgu.CV.IOutputArray,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19409:        <member name="M:Emgu.CV.MergeExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:19411:            Reset the native pointer to the MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25338:        <member name="F:Emgu.CV.CvEnum.CapProp.Exposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25340:            Exposure (only for those cameras that support).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25368:        <member name="F:Emgu.CV.CvEnum.CapProp.AutoExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25370:            Exposure control done by camera, user can adjust reference level using this feature
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25874:            Exposure priority (0.5 - exposure 50%, gain 50%).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25897:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25899:            Exposure time in microseconds
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:25902:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposureBurstCount">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:26597:        <member name="F:Emgu.CV.CvEnum.CapProp.IOSDeviceExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:26729:            Exposure speed. Can be readonly, depends on camera program.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:26737:        <member name="F:Emgu.CV.CvEnum.CapProp.Gphoto2Exposureprogram">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\xamarinios10\Emgu.CV.xml:42612:            <param name="k">Exposure ratio.</param>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16117:        <member name="T:Emgu.CV.Stitching.ExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16122:        <member name="F:Emgu.CV.Stitching.ExposureCompensator._exposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16124:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16127:        <member name="P:Emgu.CV.Stitching.ExposureCompensator.ExposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16129:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16132:        <member name="M:Emgu.CV.Stitching.ExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16137:        <member name="T:Emgu.CV.Stitching.NoExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16142:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.#ctor">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16147:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16154:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16170:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities on each channel independently. 
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16186:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16204:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block on each channel.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:16795:        <member name="M:Emgu.CV.Stitching.Stitcher.SetExposureCompensator(Emgu.CV.Stitching.ExposureCompensator)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19290:        <member name="T:Emgu.CV.AlignExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19295:        <member name="F:Emgu.CV.AlignExposures._alignExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19297:            The pointer to the native AlignExposures object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19300:        <member name="M:Emgu.CV.AlignExposures.Process(Emgu.CV.IInputArrayOfArrays,Emgu.CV.Util.VectorOfMat,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19309:        <member name="M:Emgu.CV.AlignExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19390:        <member name="T:Emgu.CV.MergeExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19395:        <member name="F:Emgu.CV.MergeExposures._mergeExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19397:            The pointer to the unmanaged MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19400:        <member name="M:Emgu.CV.MergeExposures.Process(Emgu.CV.IInputArray,Emgu.CV.IOutputArray,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19409:        <member name="M:Emgu.CV.MergeExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:19411:            Reset the native pointer to the MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25338:        <member name="F:Emgu.CV.CvEnum.CapProp.Exposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25340:            Exposure (only for those cameras that support).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25368:        <member name="F:Emgu.CV.CvEnum.CapProp.AutoExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25370:            Exposure control done by camera, user can adjust reference level using this feature
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25874:            Exposure priority (0.5 - exposure 50%, gain 50%).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25897:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25899:            Exposure time in microseconds
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:25902:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposureBurstCount">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:26597:        <member name="F:Emgu.CV.CvEnum.CapProp.IOSDeviceExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:26729:            Exposure speed. Can be readonly, depends on camera program.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:26737:        <member name="F:Emgu.CV.CvEnum.CapProp.Gphoto2Exposureprogram">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-maccatalyst16.1\Emgu.CV.xml:42612:            <param name="k">Exposure ratio.</param>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16117:        <member name="T:Emgu.CV.Stitching.ExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16122:        <member name="F:Emgu.CV.Stitching.ExposureCompensator._exposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16124:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16127:        <member name="P:Emgu.CV.Stitching.ExposureCompensator.ExposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16129:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16132:        <member name="M:Emgu.CV.Stitching.ExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16137:        <member name="T:Emgu.CV.Stitching.NoExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16142:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.#ctor">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16147:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16154:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16170:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities on each channel independently. 
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16186:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16204:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block on each channel.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:16795:        <member name="M:Emgu.CV.Stitching.Stitcher.SetExposureCompensator(Emgu.CV.Stitching.ExposureCompensator)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19290:        <member name="T:Emgu.CV.AlignExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19295:        <member name="F:Emgu.CV.AlignExposures._alignExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19297:            The pointer to the native AlignExposures object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19300:        <member name="M:Emgu.CV.AlignExposures.Process(Emgu.CV.IInputArrayOfArrays,Emgu.CV.Util.VectorOfMat,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19309:        <member name="M:Emgu.CV.AlignExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19390:        <member name="T:Emgu.CV.MergeExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19395:        <member name="F:Emgu.CV.MergeExposures._mergeExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19397:            The pointer to the unmanaged MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19400:        <member name="M:Emgu.CV.MergeExposures.Process(Emgu.CV.IInputArray,Emgu.CV.IOutputArray,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19409:        <member name="M:Emgu.CV.MergeExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:19411:            Reset the native pointer to the MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25338:        <member name="F:Emgu.CV.CvEnum.CapProp.Exposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25340:            Exposure (only for those cameras that support).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25368:        <member name="F:Emgu.CV.CvEnum.CapProp.AutoExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25370:            Exposure control done by camera, user can adjust reference level using this feature
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25874:            Exposure priority (0.5 - exposure 50%, gain 50%).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25897:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25899:            Exposure time in microseconds
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:25902:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposureBurstCount">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:26597:        <member name="F:Emgu.CV.CvEnum.CapProp.IOSDeviceExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:26729:            Exposure speed. Can be readonly, depends on camera program.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:26737:        <member name="F:Emgu.CV.CvEnum.CapProp.Gphoto2Exposureprogram">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\net8.0-ios16.1\Emgu.CV.xml:42612:            <param name="k">Exposure ratio.</param>
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16117:        <member name="T:Emgu.CV.Stitching.ExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16122:        <member name="F:Emgu.CV.Stitching.ExposureCompensator._exposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16124:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16127:        <member name="P:Emgu.CV.Stitching.ExposureCompensator.ExposureCompensatorPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16129:            Pointer to the native ExposureCompensator object.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16132:        <member name="M:Emgu.CV.Stitching.ExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16137:        <member name="T:Emgu.CV.Stitching.NoExposureCompensator">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16142:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.#ctor">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16147:        <member name="M:Emgu.CV.Stitching.NoExposureCompensator.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16154:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16170:            Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities on each channel independently. 
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16186:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block intensities
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16204:            Exposure compensator which tries to remove exposure related artifacts by adjusting image block on each channel.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:16795:        <member name="M:Emgu.CV.Stitching.Stitcher.SetExposureCompensator(Emgu.CV.Stitching.ExposureCompensator)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19290:        <member name="T:Emgu.CV.AlignExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19295:        <member name="F:Emgu.CV.AlignExposures._alignExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19297:            The pointer to the native AlignExposures object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19300:        <member name="M:Emgu.CV.AlignExposures.Process(Emgu.CV.IInputArrayOfArrays,Emgu.CV.Util.VectorOfMat,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19309:        <member name="M:Emgu.CV.AlignExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19390:        <member name="T:Emgu.CV.MergeExposures">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19395:        <member name="F:Emgu.CV.MergeExposures._mergeExposuresPtr">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19397:            The pointer to the unmanaged MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19400:        <member name="M:Emgu.CV.MergeExposures.Process(Emgu.CV.IInputArray,Emgu.CV.IOutputArray,Emgu.CV.IInputArray,Emgu.CV.IInputArray)">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19409:        <member name="M:Emgu.CV.MergeExposures.DisposeObject">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:19411:            Reset the native pointer to the MergeExposure object
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25338:        <member name="F:Emgu.CV.CvEnum.CapProp.Exposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25340:            Exposure (only for those cameras that support).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25368:        <member name="F:Emgu.CV.CvEnum.CapProp.AutoExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25370:            Exposure control done by camera, user can adjust reference level using this feature
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25874:            Exposure priority (0.5 - exposure 50%, gain 50%).
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25897:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25899:            Exposure time in microseconds
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:25902:        <member name="F:Emgu.CV.CvEnum.CapProp.XiExposureBurstCount">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:26597:        <member name="F:Emgu.CV.CvEnum.CapProp.IOSDeviceExposure">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:26729:            Exposure speed. Can be readonly, depends on camera program.
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:26737:        <member name="F:Emgu.CV.CvEnum.CapProp.Gphoto2Exposureprogram">
+C:\Users\Administrator\Desktop\Pop\Pop\Pop\packages\Emgu.CV.4.9.0.5494\lib\netstandard2.0\Emgu.CV.xml:42612:            <param name="k">Exposure ratio.</param>

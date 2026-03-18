@@ -1,0 +1,1271 @@
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+\extglob.Name : '\extglob.Name' �� cmdlet, �Լ�, ��ũ��Ʈ ���� �Ǵ� ������ �� �ִ� ���α׷� �̸����� �νĵ��� �ʽ�
+�ϴ�. �̸��� ��Ȯ���� Ȯ���ϰ� ��ΰ� ���Ե� ��� ��ΰ� �ùٸ��� ������ ���� �ٽ� �õ��Ͻʽÿ�.
+��ġ ��:1 ����:123
++ ... talledFontCollection).Families | Where-Object { \extglob.Name -like ' ...
++                                                     ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\extglob.Name:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException

@@ -1,0 +1,897 @@
+warning: in the working copy of 'NX4C REAR/END TEST/FrmMain.Designer.vb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'NX4C REAR/END TEST/FrmMain.vb', LF will be replaced by CRLF the next time Git touches it
+[master (root-commit) e6321c1] DSC_CHINA_NX4: initial commit — FRT/REAR NX4C assembly programs
+ 893 files changed, 187544 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 "260211 NX4C ASS \355\224\204\353\241\234\352\267\270\353\236\250 \354\210\230\354\240\225 \354\232\224\354\262\255.xlsx"
+ create mode 100644 CLAUDE.md
+ create mode 100644 NX4C FRT/.project-analysis.md
+ create mode 100644 NX4C FRT/NX4C FRT/FTECH_SETUP/FTECH_SETUP.vdproj
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/AssemblyInfo.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Common/MDBOperation.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Common/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FRT JA01.vbproj
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FormPassword.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FormPassword.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FormPassword.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmImage.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmImage.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmImage.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmMain.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmMain.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmMain.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmManual.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmManual.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmManual.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmPart.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmPart.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmPart.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmPort.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmPort.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmPort.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmSearch.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmSearch.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmSearch.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmWorkStandardSet.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/FrmWorkStandardSet.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/IO MAP.xlsx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Module1.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/My Project/Resources.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/My Project/Resources.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/My Project/app.manifest
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/My Project/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/DSC2.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Keyboard.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Keyboard1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/SUB IMAGE.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Search.ico
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Search_128.ico
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Search_256.ico
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Search_PNG_128.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Search_PNG_256.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Search_PNG_72.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/Search_PNG_96.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/search_PNG_64.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/serial.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/setting1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/setting11.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/shutdown.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/Resources/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/_UpgradeReport.htm
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/app.config
+ create mode 100644 NX4C FRT/NX4C FRT/JA01/fauto.ico
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/AssemblyInfo.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Common/MDBOperation.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Common/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FRT JA02.vbproj
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FRT PWR 2.vbproj
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmBarcode.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmBarcode.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmBarcode.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmImage.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmImage.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmImage.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmMain.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmMain.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmMain.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmPart.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmPart.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmPart.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmPort.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmPort.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmPort.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmSearch.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmSearch.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmSearch.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmWorkStandardSet.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/FrmWorkStandardSet.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/IO MAP.xlsx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Module1.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/My Project/Resources.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/My Project/Resources.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/My Project/app.manifest
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/My Project/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/DSC2.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/Keyboard.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/Keyboard1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/SUB IMAGE.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/printer.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/search_PNG_64.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/serial.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/setting1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/setting11.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/shutdown.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/Resources/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/_UpgradeReport.htm
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/app.config
+ create mode 100644 NX4C FRT/NX4C FRT/JA02/fauto.ico
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/AssemblyInfo.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Common/MDBOperation.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Common/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FRT JA03.vbproj
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmAngleSet.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmAngleSet.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmAngleSet.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmBarcode.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmBarcode.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmBarcode.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmImage.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmImage.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmImage.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmMain.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmMain.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmMain.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmMain.vb.bak
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmMain.vb.bak2
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmManual.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmManual.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmManual.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmPart.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmPart.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmPart.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmPort.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmPort.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmPort.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmSearch.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmSearch.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmSearch.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmWorkStandardSet.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/FrmWorkStandardSet.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/IO MAP.xlsx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Module1.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/My Project/Resources.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/My Project/Resources.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/My Project/app.manifest
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/My Project/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/DSC2.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/Edit.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/Keyboard.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/Keyboard1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/SUB IMAGE.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/printer.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/search_PNG_64.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/serial.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/setting1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/setting11.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/shutdown.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/tool1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/Resources/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/_UpgradeReport.htm
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/app.config
+ create mode 100644 NX4C FRT/NX4C FRT/JA03/fauto.ico
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/AssemblyInfo.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Common/MDBOperation.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Common/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FRT JA04.sln
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FRT JA04.vbproj
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmBarcode.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmBarcode.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmBarcode.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmImage.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmImage.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmImage.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmMain.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmMain.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmMain.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmManual.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmManual.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmManual.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmPart.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmPart.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmPart.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmPort.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmPort.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmPort.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmSearch.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmSearch.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmWorkStandardSet.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/FrmWorkStandardSet.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/IO MAP.xlsx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Module1.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/My Project/Resources.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/My Project/Resources.resx
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/My Project/app.manifest
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/My Project/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/DSC2.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/Edit.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/Keyboard.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/Keyboard1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/SUB IMAGE.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/printer.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/search_PNG_64.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/serial.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/setting1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/setting11.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/shutdown.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/tool1.png
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/Resources/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/_UpgradeReport.htm
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/app.config
+ create mode 100644 NX4C FRT/NX4C FRT/JA04/fauto.ico
+ create mode 100644 NX4C FRT/NX4C FRT/NX4C FRT ASSEMBLE.sln
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/App.config
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/FrmMain.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/FrmMain.resx
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/FrmMain.vb
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/Module1.vb
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/Application.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/Application.myapp
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/AssemblyInfo.vb
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/Resources.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/Resources.resx
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/Settings.Designer.vb
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/Settings.settings
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/My Project/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/Resources/1.png
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/Resources/DSC2.png
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/Resources/shutdown.png
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/Resources/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/SERVEr Search.vbproj
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/SERVEr Search.vbproj.vspscc
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/fauto.ico
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/mssccprj.scc
+ create mode 100644 NX4C FRT/NX4C FRT/SERVER SEARCH/vssver2.scc
+ create mode 100644 NX4C FRT/NX4C FRT/UpgradeLog.htm
+ create mode 100644 NX4C FRT/NX4C FRT/UpgradeLog2.htm
+ create mode 100644 NX4C FRT/NX4C FRT/UpgradeLog3.htm
+ create mode 100644 NX4C FRT/NX4C FRT/UpgradeLog4.htm
+ create mode 100644 NX4C REAR/.project-analysis.md
+ create mode 100644 NX4C REAR/ALTER_TablePart.sql
+ create mode 100644 NX4C REAR/END TEST/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/END TEST/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/END TEST/Common/vssver2.scc
+ create mode 100644 NX4C REAR/END TEST/END(210).vbproj
+ create mode 100644 NX4C REAR/END TEST/FrmBarcode.Designer.vb
+ create mode 100644 NX4C REAR/END TEST/FrmBarcode.resx
+ create mode 100644 NX4C REAR/END TEST/FrmBarcode.vb
+ create mode 100644 NX4C REAR/END TEST/FrmBasic.Designer.vb
+ create mode 100644 NX4C REAR/END TEST/FrmBasic.resx
+ create mode 100644 NX4C REAR/END TEST/FrmBasic.vb
+ create mode 100644 NX4C REAR/END TEST/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/END TEST/FrmImage.resx
+ create mode 100644 NX4C REAR/END TEST/FrmImage.vb
+ create mode 100644 NX4C REAR/END TEST/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/END TEST/FrmMain.Designer.vb.bak
+ create mode 100644 NX4C REAR/END TEST/FrmMain.Designer.vb.bak3
+ create mode 100644 NX4C REAR/END TEST/FrmMain.resx
+ create mode 100644 NX4C REAR/END TEST/FrmMain.vb
+ create mode 100644 NX4C REAR/END TEST/FrmMain.vb.bak
+ create mode 100644 NX4C REAR/END TEST/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/END TEST/FrmPort.resx
+ create mode 100644 NX4C REAR/END TEST/FrmPort.vb
+ create mode 100644 NX4C REAR/END TEST/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/END TEST/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/END TEST/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/END TEST/IO MAP.xlsx
+ create mode 100644 NX4C REAR/END TEST/Module1.vb
+ create mode 100644 NX4C REAR/END TEST/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/END TEST/My Project/Resources.resx
+ create mode 100644 NX4C REAR/END TEST/My Project/app.manifest
+ create mode 100644 NX4C REAR/END TEST/My Project/licenses.licx
+ create mode 100644 NX4C REAR/END TEST/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/END TEST/Resources/DSC2.png
+ create mode 100644 NX4C REAR/END TEST/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/END TEST/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/END TEST/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/END TEST/Resources/Search.ico
+ create mode 100644 NX4C REAR/END TEST/Resources/Search_128.ico
+ create mode 100644 NX4C REAR/END TEST/Resources/Search_256.ico
+ create mode 100644 NX4C REAR/END TEST/Resources/Search_PNG_128.png
+ create mode 100644 NX4C REAR/END TEST/Resources/Search_PNG_256.png
+ create mode 100644 NX4C REAR/END TEST/Resources/Search_PNG_72.png
+ create mode 100644 NX4C REAR/END TEST/Resources/Search_PNG_96.png
+ create mode 100644 NX4C REAR/END TEST/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/END TEST/Resources/serial.png
+ create mode 100644 NX4C REAR/END TEST/Resources/setting1.png
+ create mode 100644 NX4C REAR/END TEST/Resources/setting11.png
+ create mode 100644 NX4C REAR/END TEST/Resources/shutdown.png
+ create mode 100644 NX4C REAR/END TEST/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/END TEST/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/END TEST/app.config
+ create mode 100644 NX4C REAR/END TEST/fauto.ico
+ create mode 100644 NX4C REAR/FtechNiSetup/FtechNiSetup.vdproj
+ create mode 100644 NX4C REAR/Ftech_Setup/Ftech_Setup.vdproj
+ create mode 100644 NX4C REAR/IMAGE/MNL/88320-BU000_FRM ASSY-FR SEAT BACK, LH, MNL(AWP).JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/88420-BU000_FRM ASSY-FR SEA BACK, RH MNL(AWP).JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/BOLT ASSY-RECL.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/BUSH L-SUPT WIRE HOOK.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/BUSH-RECL LEVER.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/INSIDE COVER-FR, LH.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/INSODE COVER-FR, RH.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/LEVER-RECL.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/NUT-FLANGE.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/RETURN SORING-BACK ASSY.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/SAB GUIIDE LH.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/SIDE AIRBAG MODULE ASSY.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/SPRING ASSY-RECL LEVER.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/SUSPENSION-FR BACK.JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/TAPPING SCREW (M6).JPG
+ create mode 100644 NX4C REAR/IMAGE/MNL/TRUSS HEAD TAPPING SCREW (M5).JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/88320-BU010_FRM ASSY-FR SEAT BACK, LH, PWR(AWP).JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/BUSH L-SUPT WIRE HOOK.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/INSODE COVER-FR, RH.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/LUMBAR SUPPORT ASSY-FR BACK, LH.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/M-SCREW.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/NU-PUSH,PWR.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/NUT-FLANGE.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/RECL MOTOR ASSY.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/SAB GUIIDE LH.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/SCREW-RECL MOTOR MT'G.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/SIDE AIRBAG MODULE ASSY.JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/TAPPING SCREW (M6).JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/TRUSS HEAD TAPPING SCREW (M5).JPG
+ create mode 100644 NX4C REAR/IMAGE/PWR/WIRING HARNESS ASSY LH.JPG
+ create mode 100644 "NX4C REAR/IMAGE/PWR/\354\274\200\354\235\264\353\270\224\355\203\200\354\235\264.JPG"
+ create mode 100644 NX4C REAR/JA02/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/JA02/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/JA02/Common/vssver2.scc
+ create mode 100644 NX4C REAR/JA02/FRT JA02.vbproj
+ create mode 100644 NX4C REAR/JA02/FRT PWR 2.vbproj
+ create mode 100644 NX4C REAR/JA02/FrmBarcode.Designer.vb
+ create mode 100644 NX4C REAR/JA02/FrmBarcode.resx
+ create mode 100644 NX4C REAR/JA02/FrmBarcode.vb
+ create mode 100644 NX4C REAR/JA02/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/JA02/FrmImage.resx
+ create mode 100644 NX4C REAR/JA02/FrmImage.vb
+ create mode 100644 NX4C REAR/JA02/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/JA02/FrmMain.resx
+ create mode 100644 NX4C REAR/JA02/FrmMain.vb
+ create mode 100644 NX4C REAR/JA02/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/JA02/FrmPart.resx
+ create mode 100644 NX4C REAR/JA02/FrmPart.vb
+ create mode 100644 NX4C REAR/JA02/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/JA02/FrmPort.resx
+ create mode 100644 NX4C REAR/JA02/FrmPort.vb
+ create mode 100644 NX4C REAR/JA02/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/JA02/FrmSearch.resx
+ create mode 100644 NX4C REAR/JA02/FrmSearch.vb
+ create mode 100644 NX4C REAR/JA02/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/JA02/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/JA02/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/JA02/IO MAP.xlsx
+ create mode 100644 NX4C REAR/JA02/Module1.vb
+ create mode 100644 NX4C REAR/JA02/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/JA02/My Project/Resources.resx
+ create mode 100644 NX4C REAR/JA02/My Project/app.manifest
+ create mode 100644 NX4C REAR/JA02/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/JA02/Resources/DSC2.png
+ create mode 100644 NX4C REAR/JA02/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/JA02/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/JA02/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/JA02/Resources/printer.png
+ create mode 100644 NX4C REAR/JA02/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/JA02/Resources/serial.png
+ create mode 100644 NX4C REAR/JA02/Resources/setting1.png
+ create mode 100644 NX4C REAR/JA02/Resources/setting11.png
+ create mode 100644 NX4C REAR/JA02/Resources/shutdown.png
+ create mode 100644 NX4C REAR/JA02/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/JA02/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/JA02/app.config
+ create mode 100644 NX4C REAR/JA02/fauto.ico
+ create mode 100644 NX4C REAR/JA03/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/JA03/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/JA03/Common/vssver2.scc
+ create mode 100644 NX4C REAR/JA03/FRT JA03.vbproj
+ create mode 100644 NX4C REAR/JA03/FrmAngleSet.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmAngleSet.resx
+ create mode 100644 NX4C REAR/JA03/FrmAngleSet.vb
+ create mode 100644 NX4C REAR/JA03/FrmBarcode.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmBarcode.resx
+ create mode 100644 NX4C REAR/JA03/FrmBarcode.vb
+ create mode 100644 NX4C REAR/JA03/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmImage.resx
+ create mode 100644 NX4C REAR/JA03/FrmImage.vb
+ create mode 100644 NX4C REAR/JA03/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmMain.resx
+ create mode 100644 NX4C REAR/JA03/FrmMain.vb
+ create mode 100644 NX4C REAR/JA03/FrmManual.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmManual.resx
+ create mode 100644 NX4C REAR/JA03/FrmManual.vb
+ create mode 100644 NX4C REAR/JA03/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmPart.resx
+ create mode 100644 NX4C REAR/JA03/FrmPart.vb
+ create mode 100644 NX4C REAR/JA03/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmPort.resx
+ create mode 100644 NX4C REAR/JA03/FrmPort.vb
+ create mode 100644 NX4C REAR/JA03/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/JA03/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/JA03/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/JA03/IO MAP.xlsx
+ create mode 100644 NX4C REAR/JA03/Module1.vb
+ create mode 100644 NX4C REAR/JA03/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/JA03/My Project/Resources.resx
+ create mode 100644 NX4C REAR/JA03/My Project/app.manifest
+ create mode 100644 NX4C REAR/JA03/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/JA03/Resources/DSC2.png
+ create mode 100644 NX4C REAR/JA03/Resources/Edit.png
+ create mode 100644 NX4C REAR/JA03/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/JA03/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/JA03/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/JA03/Resources/printer.png
+ create mode 100644 NX4C REAR/JA03/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/JA03/Resources/serial.png
+ create mode 100644 NX4C REAR/JA03/Resources/setting1.png
+ create mode 100644 NX4C REAR/JA03/Resources/setting11.png
+ create mode 100644 NX4C REAR/JA03/Resources/shutdown.png
+ create mode 100644 NX4C REAR/JA03/Resources/tool1.png
+ create mode 100644 NX4C REAR/JA03/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/JA03/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/JA03/app.config
+ create mode 100644 NX4C REAR/JA03/fauto.ico
+ create mode 100644 NX4C REAR/JA04/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/JA04/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/JA04/Common/vssver2.scc
+ create mode 100644 NX4C REAR/JA04/FRT JA04.sln
+ create mode 100644 NX4C REAR/JA04/FRT JA04.vbproj
+ create mode 100644 NX4C REAR/JA04/FrmBarcode.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmBarcode.resx
+ create mode 100644 NX4C REAR/JA04/FrmBarcode.vb
+ create mode 100644 NX4C REAR/JA04/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmImage.resx
+ create mode 100644 NX4C REAR/JA04/FrmImage.vb
+ create mode 100644 NX4C REAR/JA04/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmMain.resx
+ create mode 100644 NX4C REAR/JA04/FrmMain.vb
+ create mode 100644 NX4C REAR/JA04/FrmManual.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmManual.resx
+ create mode 100644 NX4C REAR/JA04/FrmManual.vb
+ create mode 100644 NX4C REAR/JA04/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmPart.resx
+ create mode 100644 NX4C REAR/JA04/FrmPart.vb
+ create mode 100644 NX4C REAR/JA04/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmPort.resx
+ create mode 100644 NX4C REAR/JA04/FrmPort.vb
+ create mode 100644 NX4C REAR/JA04/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmSearch.vb
+ create mode 100644 NX4C REAR/JA04/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/JA04/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/JA04/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/JA04/IO MAP.xlsx
+ create mode 100644 NX4C REAR/JA04/Module1.vb
+ create mode 100644 NX4C REAR/JA04/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/JA04/My Project/Resources.resx
+ create mode 100644 NX4C REAR/JA04/My Project/app.manifest
+ create mode 100644 NX4C REAR/JA04/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/JA04/Resources/DSC2.png
+ create mode 100644 NX4C REAR/JA04/Resources/Edit.png
+ create mode 100644 NX4C REAR/JA04/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/JA04/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/JA04/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/JA04/Resources/printer.png
+ create mode 100644 NX4C REAR/JA04/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/JA04/Resources/serial.png
+ create mode 100644 NX4C REAR/JA04/Resources/setting1.png
+ create mode 100644 NX4C REAR/JA04/Resources/setting11.png
+ create mode 100644 NX4C REAR/JA04/Resources/shutdown.png
+ create mode 100644 NX4C REAR/JA04/Resources/tool1.png
+ create mode 100644 NX4C REAR/JA04/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/JA04/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/JA04/app.config
+ create mode 100644 NX4C REAR/JA04/fauto.ico
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/Main.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/Main.resX
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/Main.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/TagAccess_VB.sln
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/TagAccess_VB.vbproj
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/functions.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/rfidlib_aip_iso15683.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Backup/rfidlib_reader.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmBasic.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmBasic.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmBasic.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmImage.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmImage.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmMain.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmMain.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmPart.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmPart.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmPort.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmPort.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmSearch.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmSearch.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmToolSet.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmToolSet.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/FrmToolSet.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/IO.xlsx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Module1.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/My Project/Resources.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/My Project/app.manifest
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/DSC2.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/magnifier.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/magnifying-glass (1).png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/magnifying-glass (2).png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/magnifying-glass (3).png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/save.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/search1.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/serial.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/setting1.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/shutdown.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/Resources/tools.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/VIP 2ND BACK JA01.sln
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/VIP 2ND BACK JA01.vbproj
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/app.config
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/fauto.ico
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/functions.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/rfidlib_ANM201.dll
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/rfidlib_aip_iso15683.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/rfidlib_aip_iso15693.dll
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/rfidlib_reader.dll
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK JA01/rfidlib_reader.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/Main.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/Main.resX
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/Main.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/TagAccess_VB.sln
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/TagAccess_VB.vbproj
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/functions.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/rfidlib_aip_iso15683.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Backup/rfidlib_reader.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmBasic.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmBasic.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmBasic.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmImage.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmImage.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmMain.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmMain.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmPart.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmPort.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmPort.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/FrmSearch.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/IO.xlsx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/KU VIP 2ND BACK.sln
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/KU VIP 2ND BACK.vbproj
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Module1.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/My Project/Resources.resx
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/My Project/app.manifest
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/DSC2.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/magnifying-glass (1).png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/magnifying-glass (2).png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/magnifying-glass (3).png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/search1.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/serial.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/setting1.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/shutdown.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/Resources/tools.png
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/app.config
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/fauto.ico
+ create mode 100644 NX4C REAR/KU VIP 2ND BACK/functions.vb
+ create mode 100644 NX4C REAR/LH_JA01/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/LH_JA01/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/LH_JA01/Common/vssver2.scc
+ create mode 100644 NX4C REAR/LH_JA01/FormPassword.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/FormPassword.resx
+ create mode 100644 NX4C REAR/LH_JA01/FormPassword.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmImage.resx
+ create mode 100644 NX4C REAR/LH_JA01/FrmImage.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmMain.resx
+ create mode 100644 NX4C REAR/LH_JA01/FrmMain.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmPart.resx
+ create mode 100644 NX4C REAR/LH_JA01/FrmPart.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmPort.resx
+ create mode 100644 NX4C REAR/LH_JA01/FrmPort.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmSearch.resx
+ create mode 100644 NX4C REAR/LH_JA01/FrmSearch.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/LH_JA01/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/LH_JA01/IO MAP.xlsx
+ create mode 100644 NX4C REAR/LH_JA01/LH_JA01(211).vbproj
+ create mode 100644 NX4C REAR/LH_JA01/Module1.vb
+ create mode 100644 NX4C REAR/LH_JA01/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA01/My Project/Resources.resx
+ create mode 100644 NX4C REAR/LH_JA01/My Project/app.manifest
+ create mode 100644 NX4C REAR/LH_JA01/My Project/licenses.licx
+ create mode 100644 NX4C REAR/LH_JA01/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/LH_JA01/Resources/DSC2.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Search.ico
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Search_128.ico
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Search_256.ico
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Search_PNG_128.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Search_PNG_256.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Search_PNG_72.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/Search_PNG_96.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/serial.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/setting1.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/setting11.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/shutdown.png
+ create mode 100644 NX4C REAR/LH_JA01/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/LH_JA01/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/LH_JA01/app.config
+ create mode 100644 NX4C REAR/LH_JA01/fauto.ico
+ create mode 100644 NX4C REAR/LH_JA02/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/LH_JA02/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/LH_JA02/Common/vssver2.scc
+ create mode 100644 NX4C REAR/LH_JA02/FormPassword.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/FormPassword.resx
+ create mode 100644 NX4C REAR/LH_JA02/FormPassword.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmImage.resx
+ create mode 100644 NX4C REAR/LH_JA02/FrmImage.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmMain.resx
+ create mode 100644 NX4C REAR/LH_JA02/FrmMain.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmPart.resx
+ create mode 100644 NX4C REAR/LH_JA02/FrmPart.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmPort.resx
+ create mode 100644 NX4C REAR/LH_JA02/FrmPort.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmSearch.resx
+ create mode 100644 NX4C REAR/LH_JA02/FrmSearch.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/LH_JA02/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/LH_JA02/IO MAP.xlsx
+ create mode 100644 NX4C REAR/LH_JA02/LH_JA02(212).vbproj
+ create mode 100644 NX4C REAR/LH_JA02/Module1.vb
+ create mode 100644 NX4C REAR/LH_JA02/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/LH_JA02/My Project/Resources.resx
+ create mode 100644 NX4C REAR/LH_JA02/My Project/app.manifest
+ create mode 100644 NX4C REAR/LH_JA02/My Project/licenses.licx
+ create mode 100644 NX4C REAR/LH_JA02/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/LH_JA02/Resources/DSC2.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Search.ico
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Search_128.ico
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Search_256.ico
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Search_PNG_128.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Search_PNG_256.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Search_PNG_72.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/Search_PNG_96.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/serial.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/setting1.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/setting11.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/shutdown.png
+ create mode 100644 NX4C REAR/LH_JA02/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/LH_JA02/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/LH_JA02/app.config
+ create mode 100644 NX4C REAR/LH_JA02/fauto.ico
+ create mode 100644 NX4C REAR/NX4CREAR.sln
+ create mode 100644 NX4C REAR/PartEditor/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/PartEditor/FrmMain.resx
+ create mode 100644 NX4C REAR/PartEditor/FrmMain.vb
+ create mode 100644 NX4C REAR/PartEditor/My Project/Application.Designer.vb
+ create mode 100644 NX4C REAR/PartEditor/My Project/Application.myapp
+ create mode 100644 NX4C REAR/PartEditor/My Project/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/PartEditor/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/PartEditor/My Project/Resources.resx
+ create mode 100644 NX4C REAR/PartEditor/My Project/Settings.Designer.vb
+ create mode 100644 NX4C REAR/PartEditor/My Project/Settings.settings
+ create mode 100644 NX4C REAR/PartEditor/PartEditor.vbproj
+ create mode 100644 NX4C REAR/PartEditor/Program.vb
+ create mode 100644 NX4C REAR/PartEditor/build.log
+ create mode 100644 NX4C REAR/RH_JA01/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/RH_JA01/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/RH_JA01/Common/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA01/FormPassword.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FormPassword.resx
+ create mode 100644 NX4C REAR/RH_JA01/FormPassword.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmBarcode.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmBarcode.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmBarcode.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmBasic.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmBasic.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmBasic.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmImage.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmImage.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmMain.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmMain.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmPart.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmPart.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmPort.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmPort.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmSearch.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmSearch.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/RH_JA01/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/RH_JA01/IO MAP.xlsx
+ create mode 100644 NX4C REAR/RH_JA01/Module1.vb
+ create mode 100644 NX4C REAR/RH_JA01/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA01/My Project/Resources.resx
+ create mode 100644 NX4C REAR/RH_JA01/My Project/app.manifest
+ create mode 100644 NX4C REAR/RH_JA01/My Project/licenses.licx
+ create mode 100644 NX4C REAR/RH_JA01/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA01/RH_JA01(201).vbproj
+ create mode 100644 NX4C REAR/RH_JA01/Resources/DSC2.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Search.ico
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Search_128.ico
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Search_256.ico
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Search_PNG_128.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Search_PNG_256.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Search_PNG_72.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/Search_PNG_96.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/serial.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/setting1.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/setting11.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/shutdown.png
+ create mode 100644 NX4C REAR/RH_JA01/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA01/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/RH_JA01/app.config
+ create mode 100644 NX4C REAR/RH_JA01/fauto.ico
+ create mode 100644 NX4C REAR/RH_JA02/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/RH_JA02/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/RH_JA02/Common/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA02/FormPassword.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/FormPassword.resx
+ create mode 100644 NX4C REAR/RH_JA02/FormPassword.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmImage.resx
+ create mode 100644 NX4C REAR/RH_JA02/FrmImage.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmMain.resx
+ create mode 100644 NX4C REAR/RH_JA02/FrmMain.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmPart.resx
+ create mode 100644 NX4C REAR/RH_JA02/FrmPart.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmPort.resx
+ create mode 100644 NX4C REAR/RH_JA02/FrmPort.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmSearch.resx
+ create mode 100644 NX4C REAR/RH_JA02/FrmSearch.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/RH_JA02/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/RH_JA02/IO MAP.xlsx
+ create mode 100644 NX4C REAR/RH_JA02/Module1.vb
+ create mode 100644 NX4C REAR/RH_JA02/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA02/My Project/Resources.resx
+ create mode 100644 NX4C REAR/RH_JA02/My Project/app.manifest
+ create mode 100644 NX4C REAR/RH_JA02/My Project/licenses.licx
+ create mode 100644 NX4C REAR/RH_JA02/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA02/RH_JA02(202).vbproj
+ create mode 100644 NX4C REAR/RH_JA02/Resources/DSC2.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Search.ico
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Search_128.ico
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Search_256.ico
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Search_PNG_128.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Search_PNG_256.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Search_PNG_72.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/Search_PNG_96.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/serial.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/setting1.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/setting11.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/shutdown.png
+ create mode 100644 NX4C REAR/RH_JA02/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA02/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/RH_JA02/app.config
+ create mode 100644 NX4C REAR/RH_JA02/fauto.ico
+ create mode 100644 NX4C REAR/RH_JA03/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/RH_JA03/Common/MDBOperation.vb
+ create mode 100644 NX4C REAR/RH_JA03/Common/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA03/FormPassword.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/FormPassword.resx
+ create mode 100644 NX4C REAR/RH_JA03/FormPassword.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmImage.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmImage.resx
+ create mode 100644 NX4C REAR/RH_JA03/FrmImage.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmMain.resx
+ create mode 100644 NX4C REAR/RH_JA03/FrmMain.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmPart.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmPart.resx
+ create mode 100644 NX4C REAR/RH_JA03/FrmPart.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmPort.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmPort.resx
+ create mode 100644 NX4C REAR/RH_JA03/FrmPort.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmSearch.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmSearch.resx
+ create mode 100644 NX4C REAR/RH_JA03/FrmSearch.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmWorkStandardSet.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/FrmWorkStandardSet.resx
+ create mode 100644 NX4C REAR/RH_JA03/FrmWorkStandardSet.vb
+ create mode 100644 NX4C REAR/RH_JA03/IO MAP.xlsx
+ create mode 100644 NX4C REAR/RH_JA03/Module1.vb
+ create mode 100644 NX4C REAR/RH_JA03/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/RH_JA03/My Project/Resources.resx
+ create mode 100644 NX4C REAR/RH_JA03/My Project/app.manifest
+ create mode 100644 NX4C REAR/RH_JA03/My Project/licenses.licx
+ create mode 100644 NX4C REAR/RH_JA03/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA03/RH_JA03(203).vbproj
+ create mode 100644 NX4C REAR/RH_JA03/Resources/DSC2.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Keyboard.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Keyboard1.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/SUB IMAGE.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Search.ico
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Search_128.ico
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Search_256.ico
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Search_PNG_128.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Search_PNG_256.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Search_PNG_72.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/Search_PNG_96.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/search_PNG_64.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/serial.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/setting1.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/setting11.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/shutdown.png
+ create mode 100644 NX4C REAR/RH_JA03/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/RH_JA03/_UpgradeReport.htm
+ create mode 100644 NX4C REAR/RH_JA03/app.config
+ create mode 100644 NX4C REAR/RH_JA03/fauto.ico
+ create mode 100644 NX4C REAR/RRBACK DB.mdb
+ create mode 100644 NX4C REAR/SERVER SEARCH/App.config
+ create mode 100644 NX4C REAR/SERVER SEARCH/FrmMain.Designer.vb
+ create mode 100644 NX4C REAR/SERVER SEARCH/FrmMain.resx
+ create mode 100644 NX4C REAR/SERVER SEARCH/FrmMain.vb
+ create mode 100644 NX4C REAR/SERVER SEARCH/Module1.vb
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/Application.Designer.vb
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/Application.myapp
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/AssemblyInfo.vb
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/Resources.Designer.vb
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/Resources.resx
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/Settings.Designer.vb
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/Settings.settings
+ create mode 100644 NX4C REAR/SERVER SEARCH/My Project/vssver2.scc
+ create mode 100644 NX4C REAR/SERVER SEARCH/Resources/1.png
+ create mode 100644 NX4C REAR/SERVER SEARCH/Resources/DSC2.png
+ create mode 100644 NX4C REAR/SERVER SEARCH/Resources/shutdown.png
+ create mode 100644 NX4C REAR/SERVER SEARCH/Resources/vssver2.scc
+ create mode 100644 NX4C REAR/SERVER SEARCH/SERVEr Search.vbproj
+ create mode 100644 NX4C REAR/SERVER SEARCH/SERVEr Search.vbproj.vspscc
+ create mode 100644 NX4C REAR/SERVER SEARCH/fauto.ico
+ create mode 100644 NX4C REAR/SERVER SEARCH/mssccprj.scc
+ create mode 100644 NX4C REAR/SERVER SEARCH/vssver2.scc
+ create mode 100644 NX4C REAR/UpgradeLog.htm
+ create mode 100644 NX4C REAR/UpgradeLog2.htm
+ create mode 100644 NX4C REAR/UpgradeLog3.htm
+ create mode 100644 NX4C REAR/UpgradeLog4.htm
+ create mode 100644 NX4C REAR/UpgradeLog5.htm
+ create mode 100644 "NX4C REAR/\354\241\260\353\246\275 \354\225\204\354\235\264\354\230\244.xlsx"
+ create mode 100644 "NX4C_ASS_\354\204\244\354\240\225\352\260\200\354\235\264\353\223\234.md"
+ create mode 100644 "NX4C_ASS_\354\210\230\354\240\225\354\232\224\354\262\255.md"
+ create mode 100644 exe.zip
+ create mode 100644 "exe/[FRT] Part Master \354\204\244\354\240\225 \352\260\200\354\235\264\353\223\234.md"
+ create mode 100644 "exe/[REAR] Part Master \354\204\244\354\240\225 \352\260\200\354\235\264\353\223\234.md"
+ create mode 100644 "exe/[\354\240\204\354\262\264] \354\204\244\354\271\230 \353\260\217 SQL \354\213\244\355\226\211 \352\260\200\354\235\264\353\223\234.md"

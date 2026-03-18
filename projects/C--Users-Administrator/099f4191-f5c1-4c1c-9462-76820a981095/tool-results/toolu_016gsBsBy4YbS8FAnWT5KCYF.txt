@@ -1,0 +1,1246 @@
+     1→<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+     2→Partial Class FrmSet
+     3→    Inherits System.Windows.Forms.Form
+     4→
+     5→    'Form은 Dispose를 재정의하여 구성 요소 목록을 정리합니다.
+     6→    <System.Diagnostics.DebuggerNonUserCode()>
+     7→    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+     8→        Try
+     9→            If disposing AndAlso components IsNot Nothing Then
+    10→                components.Dispose()
+    11→            End If
+    12→        Finally
+    13→            MyBase.Dispose(disposing)
+    14→        End Try
+    15→    End Sub
+    16→
+    17→    'Windows Form 디자이너에 필요합니다.
+    18→    Private components As System.ComponentModel.IContainer
+    19→
+    20→    '참고: 다음 프로시저는 Windows Form 디자이너에 필요합니다.
+    21→    '수정하려면 Windows Form 디자이너를 사용하십시오.  
+    22→    '코드 편집기를 사용하여 수정하지 마십시오.
+    23→    <System.Diagnostics.DebuggerStepThrough()>
+    24→    Private Sub InitializeComponent()
+    25→        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmSet))
+    26→        Me.Label4 = New System.Windows.Forms.Label()
+    27→        Me.Label5 = New System.Windows.Forms.Label()
+    28→        Me.ComboBoxScanner = New System.Windows.Forms.ComboBox()
+    29→        Me.ComboBoxPrinter = New System.Windows.Forms.ComboBox()
+    30→        Me.ComboBoxDIO = New System.Windows.Forms.ComboBox()
+    31→        Me.Label9 = New System.Windows.Forms.Label()
+    32→        Me.Label10 = New System.Windows.Forms.Label()
+    33→        Me.TextBoxPassWord = New System.Windows.Forms.TextBox()
+    34→        Me.ComboBoxPowerSupply = New System.Windows.Forms.ComboBox()
+    35→        Me.Label6 = New System.Windows.Forms.Label()
+    36→        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+    37→        Me.Num_1_NoiseMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    38→        Me.Num_1_NoiseMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    39→        Me.Label22 = New System.Windows.Forms.Label()
+    40→        Me.Num_1_Time = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    41→        Me.Label20 = New System.Windows.Forms.Label()
+    42→        Me.Num_1_AmpMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    43→        Me.Num_1_AmpMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    44→        Me.Label17 = New System.Windows.Forms.Label()
+    45→        Me.Label16 = New System.Windows.Forms.Label()
+    46→        Me.Label13 = New System.Windows.Forms.Label()
+    47→        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+    48→        Me.Label31 = New System.Windows.Forms.Label()
+    49→        Me.ComboBoxDIO2 = New System.Windows.Forms.ComboBox()
+    50→        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+    51→        Me.Num_2_Air = New System.Windows.Forms.TextBox()
+    52→        Me.Label19 = New System.Windows.Forms.Label()
+    53→        Me.Num_2_NoiseMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    54→        Me.Num_2_NoiseMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    55→        Me.Label1 = New System.Windows.Forms.Label()
+    56→        Me.Num_2_Time = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    57→        Me.Label2 = New System.Windows.Forms.Label()
+    58→        Me.Num_2_FlowMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    59→        Me.Num_2_FlowMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    60→        Me.Label3 = New System.Windows.Forms.Label()
+    61→        Me.Label7 = New System.Windows.Forms.Label()
+    62→        Me.Label8 = New System.Windows.Forms.Label()
+    63→        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+    64→        Me.Num_3_Air = New System.Windows.Forms.TextBox()
+    65→        Me.Num_3_AmpMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    66→        Me.Num_3_AmpMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    67→        Me.Label23 = New System.Windows.Forms.Label()
+    68→        Me.Label11 = New System.Windows.Forms.Label()
+    69→        Me.Num_3_NoiseMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    70→        Me.Num_3_NoiseMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    71→        Me.Label12 = New System.Windows.Forms.Label()
+    72→        Me.Num_3_Time = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    73→        Me.Label14 = New System.Windows.Forms.Label()
+    74→        Me.Num_3_FlowMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    75→        Me.Num_3_FlowMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    76→        Me.Label15 = New System.Windows.Forms.Label()
+    77→        Me.Label18 = New System.Windows.Forms.Label()
+    78→        Me.Label21 = New System.Windows.Forms.Label()
+    79→        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+    80→        Me.Num_4_Air = New System.Windows.Forms.TextBox()
+    81→        Me.Num_4_AmpMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    82→        Me.Num_4_AmpMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    83→        Me.Label24 = New System.Windows.Forms.Label()
+    84→        Me.Label25 = New System.Windows.Forms.Label()
+    85→        Me.Num_4_NoiseMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    86→        Me.Num_4_NoiseMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    87→        Me.Label26 = New System.Windows.Forms.Label()
+    88→        Me.Num_4_Time = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    89→        Me.Label27 = New System.Windows.Forms.Label()
+    90→        Me.Num_4_FlowMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    91→        Me.Num_4_FlowMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+    92→        Me.Label28 = New System.Windows.Forms.Label()
+    93→        Me.Label29 = New System.Windows.Forms.Label()
+    94→        Me.Label30 = New System.Windows.Forms.Label()
+    95→        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+    96→        Me.ascButtonExit = New AxCWUIControlsLib.AxCWButton()
+    97→        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+    98→        Me.Num_5_Air = New System.Windows.Forms.TextBox()
+    99→        Me.Label33 = New System.Windows.Forms.Label()
+   100→        Me.Num_5_NoiseMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+   101→        Me.Num_5_NoiseMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+   102→        Me.Label34 = New System.Windows.Forms.Label()
+   103→        Me.Num_5_Time = New NationalInstruments.UI.WindowsForms.NumericEdit()
+   104→        Me.Label35 = New System.Windows.Forms.Label()
+   105→        Me.Num_5_FlowMax = New NationalInstruments.UI.WindowsForms.NumericEdit()
+   106→        Me.Num_5_FlowMin = New NationalInstruments.UI.WindowsForms.NumericEdit()
+   107→        Me.Label36 = New System.Windows.Forms.Label()
+   108→        Me.Label37 = New System.Windows.Forms.Label()
+   109→        Me.Label38 = New System.Windows.Forms.Label()
+   110→        Me.TextBox1 = New System.Windows.Forms.TextBox()
+   111→        Me.Label32 = New System.Windows.Forms.Label()
+   112→        Me.Label39 = New System.Windows.Forms.Label()
+   113→        Me.GroupBox2.SuspendLayout()
+   114→        CType(Me.Num_1_NoiseMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   115→        CType(Me.Num_1_NoiseMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   116→        CType(Me.Num_1_Time, System.ComponentModel.ISupportInitialize).BeginInit()
+   117→        CType(Me.Num_1_AmpMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   118→        CType(Me.Num_1_AmpMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   119→        Me.GroupBox1.SuspendLayout()
+   120→        Me.GroupBox3.SuspendLayout()
+   121→        CType(Me.Num_2_NoiseMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   122→        CType(Me.Num_2_NoiseMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   123→        CType(Me.Num_2_Time, System.ComponentModel.ISupportInitialize).BeginInit()
+   124→        CType(Me.Num_2_FlowMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   125→        CType(Me.Num_2_FlowMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   126→        Me.GroupBox4.SuspendLayout()
+   127→        CType(Me.Num_3_AmpMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   128→        CType(Me.Num_3_AmpMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   129→        CType(Me.Num_3_NoiseMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   130→        CType(Me.Num_3_NoiseMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   131→        CType(Me.Num_3_Time, System.ComponentModel.ISupportInitialize).BeginInit()
+   132→        CType(Me.Num_3_FlowMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   133→        CType(Me.Num_3_FlowMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   134→        Me.GroupBox5.SuspendLayout()
+   135→        CType(Me.Num_4_AmpMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   136→        CType(Me.Num_4_AmpMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   137→        CType(Me.Num_4_NoiseMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   138→        CType(Me.Num_4_NoiseMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   139→        CType(Me.Num_4_Time, System.ComponentModel.ISupportInitialize).BeginInit()
+   140→        CType(Me.Num_4_FlowMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   141→        CType(Me.Num_4_FlowMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   142→        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+   143→        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).BeginInit()
+   144→        Me.GroupBox6.SuspendLayout()
+   145→        CType(Me.Num_5_NoiseMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   146→        CType(Me.Num_5_NoiseMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   147→        CType(Me.Num_5_Time, System.ComponentModel.ISupportInitialize).BeginInit()
+   148→        CType(Me.Num_5_FlowMax, System.ComponentModel.ISupportInitialize).BeginInit()
+   149→        CType(Me.Num_5_FlowMin, System.ComponentModel.ISupportInitialize).BeginInit()
+   150→        Me.SuspendLayout()
+   151→        '
+   152→        'Label4
+   153→        '
+   154→        Me.Label4.AutoSize = True
+   155→        Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   156→        Me.Label4.Location = New System.Drawing.Point(14, 38)
+   157→        Me.Label4.Name = "Label4"
+   158→        Me.Label4.Size = New System.Drawing.Size(111, 20)
+   159→        Me.Label4.TabIndex = 10
+   160→        Me.Label4.Text = "SCANNER PORT"
+   161→        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   162→        '
+   163→        'Label5
+   164→        '
+   165→        Me.Label5.AutoSize = True
+   166→        Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   167→        Me.Label5.Location = New System.Drawing.Point(14, 97)
+   168→        Me.Label5.Name = "Label5"
+   169→        Me.Label5.Size = New System.Drawing.Size(103, 20)
+   170→        Me.Label5.TabIndex = 11
+   171→        Me.Label5.Text = "PRINTER PORT"
+   172→        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   173→        '
+   174→        'ComboBoxScanner
+   175→        '
+   176→        Me.ComboBoxScanner.Font = New System.Drawing.Font("Arial Narrow", 14.0!)
+   177→        Me.ComboBoxScanner.FormattingEnabled = True
+   178→        Me.ComboBoxScanner.Location = New System.Drawing.Point(37, 58)
+   179→        Me.ComboBoxScanner.Name = "ComboBoxScanner"
+   180→        Me.ComboBoxScanner.Size = New System.Drawing.Size(145, 31)
+   181→        Me.ComboBoxScanner.TabIndex = 13
+   182→        '
+   183→        'ComboBoxPrinter
+   184→        '
+   185→        Me.ComboBoxPrinter.Font = New System.Drawing.Font("Arial Narrow", 14.0!)
+   186→        Me.ComboBoxPrinter.FormattingEnabled = True
+   187→        Me.ComboBoxPrinter.Location = New System.Drawing.Point(37, 117)
+   188→        Me.ComboBoxPrinter.Name = "ComboBoxPrinter"
+   189→        Me.ComboBoxPrinter.Size = New System.Drawing.Size(145, 31)
+   190→        Me.ComboBoxPrinter.TabIndex = 14
+   191→        '
+   192→        'ComboBoxDIO
+   193→        '
+   194→        Me.ComboBoxDIO.Font = New System.Drawing.Font("Arial Narrow", 14.0!)
+   195→        Me.ComboBoxDIO.FormattingEnabled = True
+   196→        Me.ComboBoxDIO.Location = New System.Drawing.Point(243, 112)
+   197→        Me.ComboBoxDIO.Name = "ComboBoxDIO"
+   198→        Me.ComboBoxDIO.Size = New System.Drawing.Size(145, 31)
+   199→        Me.ComboBoxDIO.TabIndex = 77
+   200→        '
+   201→        'Label9
+   202→        '
+   203→        Me.Label9.AutoSize = True
+   204→        Me.Label9.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   205→        Me.Label9.Location = New System.Drawing.Point(220, 92)
+   206→        Me.Label9.Name = "Label9"
+   207→        Me.Label9.Size = New System.Drawing.Size(42, 20)
+   208→        Me.Label9.TabIndex = 76
+   209→        Me.Label9.Text = "DIO 1"
+   210→        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   211→        '
+   212→        'Label10
+   213→        '
+   214→        Me.Label10.AutoSize = True
+   215→        Me.Label10.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   216→        Me.Label10.Location = New System.Drawing.Point(14, 167)
+   217→        Me.Label10.Name = "Label10"
+   218→        Me.Label10.Size = New System.Drawing.Size(85, 20)
+   219→        Me.Label10.TabIndex = 78
+   220→        Me.Label10.Text = "PASSWORD"
+   221→        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   222→        '
+   223→        'TextBoxPassWord
+   224→        '
+   225→        Me.TextBoxPassWord.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   226→        Me.TextBoxPassWord.Location = New System.Drawing.Point(37, 187)
+   227→        Me.TextBoxPassWord.Name = "TextBoxPassWord"
+   228→        Me.TextBoxPassWord.Size = New System.Drawing.Size(145, 29)
+   229→        Me.TextBoxPassWord.TabIndex = 149
+   230→        '
+   231→        'ComboBoxPowerSupply
+   232→        '
+   233→        Me.ComboBoxPowerSupply.Font = New System.Drawing.Font("Arial Narrow", 14.0!)
+   234→        Me.ComboBoxPowerSupply.FormattingEnabled = True
+   235→        Me.ComboBoxPowerSupply.Location = New System.Drawing.Point(243, 58)
+   236→        Me.ComboBoxPowerSupply.Name = "ComboBoxPowerSupply"
+   237→        Me.ComboBoxPowerSupply.Size = New System.Drawing.Size(145, 31)
+   238→        Me.ComboBoxPowerSupply.TabIndex = 161
+   239→        '
+   240→        'Label6
+   241→        '
+   242→        Me.Label6.AutoSize = True
+   243→        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   244→        Me.Label6.Location = New System.Drawing.Point(220, 38)
+   245→        Me.Label6.Name = "Label6"
+   246→        Me.Label6.Size = New System.Drawing.Size(114, 20)
+   247→        Me.Label6.TabIndex = 160
+   248→        Me.Label6.Text = "POWER SUPPLY"
+   249→        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   250→        '
+   251→        'GroupBox2
+   252→        '
+   253→        Me.GroupBox2.Controls.Add(Me.Num_1_NoiseMax)
+   254→        Me.GroupBox2.Controls.Add(Me.Num_1_NoiseMin)
+   255→        Me.GroupBox2.Controls.Add(Me.Label22)
+   256→        Me.GroupBox2.Controls.Add(Me.Num_1_Time)
+   257→        Me.GroupBox2.Controls.Add(Me.Label20)
+   258→        Me.GroupBox2.Controls.Add(Me.Num_1_AmpMax)
+   259→        Me.GroupBox2.Controls.Add(Me.Num_1_AmpMin)
+   260→        Me.GroupBox2.Controls.Add(Me.Label17)
+   261→        Me.GroupBox2.Controls.Add(Me.Label16)
+   262→        Me.GroupBox2.Controls.Add(Me.Label13)
+   263→        Me.GroupBox2.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   264→        Me.GroupBox2.Location = New System.Drawing.Point(8, 4)
+   265→        Me.GroupBox2.Name = "GroupBox2"
+   266→        Me.GroupBox2.Size = New System.Drawing.Size(305, 215)
+   267→        Me.GroupBox2.TabIndex = 162
+   268→        Me.GroupBox2.TabStop = False
+   269→        Me.GroupBox2.Text = "1차 PLUNGER 검사"
+   270→        '
+   271→        'Num_1_NoiseMax
+   272→        '
+   273→        Me.Num_1_NoiseMax.CoercionInterval = 0.1R
+   274→        Me.Num_1_NoiseMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   275→        Me.Num_1_NoiseMax.Location = New System.Drawing.Point(196, 68)
+   276→        Me.Num_1_NoiseMax.Name = "Num_1_NoiseMax"
+   277→        Me.Num_1_NoiseMax.Size = New System.Drawing.Size(97, 26)
+   278→        Me.Num_1_NoiseMax.TabIndex = 60
+   279→        '
+   280→        'Num_1_NoiseMin
+   281→        '
+   282→        Me.Num_1_NoiseMin.CoercionInterval = 0.1R
+   283→        Me.Num_1_NoiseMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   284→        Me.Num_1_NoiseMin.Location = New System.Drawing.Point(93, 68)
+   285→        Me.Num_1_NoiseMin.Name = "Num_1_NoiseMin"
+   286→        Me.Num_1_NoiseMin.Size = New System.Drawing.Size(97, 26)
+   287→        Me.Num_1_NoiseMin.TabIndex = 59
+   288→        '
+   289→        'Label22
+   290→        '
+   291→        Me.Label22.AutoSize = True
+   292→        Me.Label22.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   293→        Me.Label22.Location = New System.Drawing.Point(18, 71)
+   294→        Me.Label22.Name = "Label22"
+   295→        Me.Label22.Size = New System.Drawing.Size(66, 20)
+   296→        Me.Label22.TabIndex = 58
+   297→        Me.Label22.Text = "소음(dB) :"
+   298→        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   299→        '
+   300→        'Num_1_Time
+   301→        '
+   302→        Me.Num_1_Time.CoercionInterval = 0.1R
+   303→        Me.Num_1_Time.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   304→        Me.Num_1_Time.Location = New System.Drawing.Point(93, 100)
+   305→        Me.Num_1_Time.Name = "Num_1_Time"
+   306→        Me.Num_1_Time.Size = New System.Drawing.Size(97, 26)
+   307→        Me.Num_1_Time.TabIndex = 57
+   308→        '
+   309→        'Label20
+   310→        '
+   311→        Me.Label20.AutoSize = True
+   312→        Me.Label20.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   313→        Me.Label20.Location = New System.Drawing.Point(19, 103)
+   314→        Me.Label20.Name = "Label20"
+   315→        Me.Label20.Size = New System.Drawing.Size(65, 20)
+   316→        Me.Label20.TabIndex = 56
+   317→        Me.Label20.Text = "검사시간 :"
+   318→        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   319→        '
+   320→        'Num_1_AmpMax
+   321→        '
+   322→        Me.Num_1_AmpMax.CoercionInterval = 0.1R
+   323→        Me.Num_1_AmpMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   324→        Me.Num_1_AmpMax.Location = New System.Drawing.Point(196, 36)
+   325→        Me.Num_1_AmpMax.Name = "Num_1_AmpMax"
+   326→        Me.Num_1_AmpMax.Size = New System.Drawing.Size(97, 26)
+   327→        Me.Num_1_AmpMax.TabIndex = 49
+   328→        '
+   329→        'Num_1_AmpMin
+   330→        '
+   331→        Me.Num_1_AmpMin.CoercionInterval = 0.1R
+   332→        Me.Num_1_AmpMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   333→        Me.Num_1_AmpMin.Location = New System.Drawing.Point(93, 36)
+   334→        Me.Num_1_AmpMin.Name = "Num_1_AmpMin"
+   335→        Me.Num_1_AmpMin.Size = New System.Drawing.Size(97, 26)
+   336→        Me.Num_1_AmpMin.TabIndex = 48
+   337→        '
+   338→        'Label17
+   339→        '
+   340→        Me.Label17.AutoSize = True
+   341→        Me.Label17.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   342→        Me.Label17.Location = New System.Drawing.Point(196, 19)
+   343→        Me.Label17.Name = "Label17"
+   344→        Me.Label17.Size = New System.Drawing.Size(37, 20)
+   345→        Me.Label17.TabIndex = 47
+   346→        Me.Label17.Text = "MAX"
+   347→        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   348→        '
+   349→        'Label16
+   350→        '
+   351→        Me.Label16.AutoSize = True
+   352→        Me.Label16.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   353→        Me.Label16.Location = New System.Drawing.Point(93, 19)
+   354→        Me.Label16.Name = "Label16"
+   355→        Me.Label16.Size = New System.Drawing.Size(32, 20)
+   356→        Me.Label16.TabIndex = 45
+   357→        Me.Label16.Text = "MIN"
+   358→        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   359→        '
+   360→        'Label13
+   361→        '
+   362→        Me.Label13.AutoSize = True
+   363→        Me.Label13.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   364→        Me.Label13.Location = New System.Drawing.Point(30, 39)
+   365→        Me.Label13.Name = "Label13"
+   366→        Me.Label13.Size = New System.Drawing.Size(54, 20)
+   367→        Me.Label13.TabIndex = 11
+   368→        Me.Label13.Text = "전류A) :"
+   369→        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   370→        '
+   371→        'GroupBox1
+   372→        '
+   373→        Me.GroupBox1.Controls.Add(Me.Label31)
+   374→        Me.GroupBox1.Controls.Add(Me.ComboBoxDIO2)
+   375→        Me.GroupBox1.Controls.Add(Me.Label4)
+   376→        Me.GroupBox1.Controls.Add(Me.Label5)
+   377→        Me.GroupBox1.Controls.Add(Me.ComboBoxScanner)
+   378→        Me.GroupBox1.Controls.Add(Me.ComboBoxPowerSupply)
+   379→        Me.GroupBox1.Controls.Add(Me.ComboBoxPrinter)
+   380→        Me.GroupBox1.Controls.Add(Me.Label6)
+   381→        Me.GroupBox1.Controls.Add(Me.Label9)
+   382→        Me.GroupBox1.Controls.Add(Me.TextBoxPassWord)
+   383→        Me.GroupBox1.Controls.Add(Me.ComboBoxDIO)
+   384→        Me.GroupBox1.Controls.Add(Me.Label10)
+   385→        Me.GroupBox1.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   386→        Me.GroupBox1.Location = New System.Drawing.Point(8, 225)
+   387→        Me.GroupBox1.Name = "GroupBox1"
+   388→        Me.GroupBox1.Size = New System.Drawing.Size(412, 239)
+   389→        Me.GroupBox1.TabIndex = 164
+   390→        Me.GroupBox1.TabStop = False
+   391→        Me.GroupBox1.Text = "SYSTEM SETTING"
+   392→        '
+   393→        'Label31
+   394→        '
+   395→        Me.Label31.AutoSize = True
+   396→        Me.Label31.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   397→        Me.Label31.Location = New System.Drawing.Point(220, 156)
+   398→        Me.Label31.Name = "Label31"
+   399→        Me.Label31.Size = New System.Drawing.Size(42, 20)
+   400→        Me.Label31.TabIndex = 162
+   401→        Me.Label31.Text = "DIO 2"
+   402→        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   403→        '
+   404→        'ComboBoxDIO2
+   405→        '
+   406→        Me.ComboBoxDIO2.Font = New System.Drawing.Font("Arial Narrow", 14.0!)
+   407→        Me.ComboBoxDIO2.FormattingEnabled = True
+   408→        Me.ComboBoxDIO2.Location = New System.Drawing.Point(243, 176)
+   409→        Me.ComboBoxDIO2.Name = "ComboBoxDIO2"
+   410→        Me.ComboBoxDIO2.Size = New System.Drawing.Size(145, 31)
+   411→        Me.ComboBoxDIO2.TabIndex = 163
+   412→        '
+   413→        'GroupBox3
+   414→        '
+   415→        Me.GroupBox3.Controls.Add(Me.Num_2_Air)
+   416→        Me.GroupBox3.Controls.Add(Me.Label19)
+   417→        Me.GroupBox3.Controls.Add(Me.Num_2_NoiseMax)
+   418→        Me.GroupBox3.Controls.Add(Me.Num_2_NoiseMin)
+   419→        Me.GroupBox3.Controls.Add(Me.Label1)
+   420→        Me.GroupBox3.Controls.Add(Me.Num_2_Time)
+   421→        Me.GroupBox3.Controls.Add(Me.Label2)
+   422→        Me.GroupBox3.Controls.Add(Me.Num_2_FlowMax)
+   423→        Me.GroupBox3.Controls.Add(Me.Num_2_FlowMin)
+   424→        Me.GroupBox3.Controls.Add(Me.Label3)
+   425→        Me.GroupBox3.Controls.Add(Me.Label7)
+   426→        Me.GroupBox3.Controls.Add(Me.Label8)
+   427→        Me.GroupBox3.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   428→        Me.GroupBox3.Location = New System.Drawing.Point(319, 4)
+   429→        Me.GroupBox3.Name = "GroupBox3"
+   430→        Me.GroupBox3.Size = New System.Drawing.Size(305, 215)
+   431→        Me.GroupBox3.TabIndex = 165
+   432→        Me.GroupBox3.TabStop = False
+   433→        Me.GroupBox3.Text = "2차 누기 검사"
+   434→        '
+   435→        'Num_2_Air
+   436→        '
+   437→        Me.Num_2_Air.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   438→        Me.Num_2_Air.Location = New System.Drawing.Point(95, 137)
+   439→        Me.Num_2_Air.Name = "Num_2_Air"
+   440→        Me.Num_2_Air.Size = New System.Drawing.Size(97, 29)
+   441→        Me.Num_2_Air.TabIndex = 150
+   442→        '
+   443→        'Label19
+   444→        '
+   445→        Me.Label19.AutoSize = True
+   446→        Me.Label19.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   447→        Me.Label19.Location = New System.Drawing.Point(15, 137)
+   448→        Me.Label19.Name = "Label19"
+   449→        Me.Label19.Size = New System.Drawing.Size(69, 20)
+   450→        Me.Label19.TabIndex = 61
+   451→        Me.Label19.Text = "부하 공압 :"
+   452→        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   453→        '
+   454→        'Num_2_NoiseMax
+   455→        '
+   456→        Me.Num_2_NoiseMax.CoercionInterval = 0.1R
+   457→        Me.Num_2_NoiseMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   458→        Me.Num_2_NoiseMax.Location = New System.Drawing.Point(198, 68)
+   459→        Me.Num_2_NoiseMax.Name = "Num_2_NoiseMax"
+   460→        Me.Num_2_NoiseMax.Size = New System.Drawing.Size(97, 26)
+   461→        Me.Num_2_NoiseMax.TabIndex = 60
+   462→        '
+   463→        'Num_2_NoiseMin
+   464→        '
+   465→        Me.Num_2_NoiseMin.CoercionInterval = 0.1R
+   466→        Me.Num_2_NoiseMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   467→        Me.Num_2_NoiseMin.Location = New System.Drawing.Point(95, 68)
+   468→        Me.Num_2_NoiseMin.Name = "Num_2_NoiseMin"
+   469→        Me.Num_2_NoiseMin.Size = New System.Drawing.Size(97, 26)
+   470→        Me.Num_2_NoiseMin.TabIndex = 59
+   471→        '
+   472→        'Label1
+   473→        '
+   474→        Me.Label1.AutoSize = True
+   475→        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   476→        Me.Label1.Location = New System.Drawing.Point(22, 71)
+   477→        Me.Label1.Name = "Label1"
+   478→        Me.Label1.Size = New System.Drawing.Size(62, 20)
+   479→        Me.Label1.TabIndex = 58
+   480→        Me.Label1.Text = "소음(dB):"
+   481→        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   482→        '
+   483→        'Num_2_Time
+   484→        '
+   485→        Me.Num_2_Time.CoercionInterval = 0.1R
+   486→        Me.Num_2_Time.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   487→        Me.Num_2_Time.Location = New System.Drawing.Point(95, 100)
+   488→        Me.Num_2_Time.Name = "Num_2_Time"
+   489→        Me.Num_2_Time.Size = New System.Drawing.Size(97, 26)
+   490→        Me.Num_2_Time.TabIndex = 57
+   491→        '
+   492→        'Label2
+   493→        '
+   494→        Me.Label2.AutoSize = True
+   495→        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   496→        Me.Label2.Location = New System.Drawing.Point(15, 103)
+   497→        Me.Label2.Name = "Label2"
+   498→        Me.Label2.Size = New System.Drawing.Size(69, 20)
+   499→        Me.Label2.TabIndex = 56
+   500→        Me.Label2.Text = "검사시간 : "
+   501→        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   502→        '
+   503→        'Num_2_FlowMax
+   504→        '
+   505→        Me.Num_2_FlowMax.CoercionInterval = 0.1R
+   506→        Me.Num_2_FlowMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   507→        Me.Num_2_FlowMax.Location = New System.Drawing.Point(198, 36)
+   508→        Me.Num_2_FlowMax.Name = "Num_2_FlowMax"
+   509→        Me.Num_2_FlowMax.Size = New System.Drawing.Size(97, 26)
+   510→        Me.Num_2_FlowMax.TabIndex = 49
+   511→        '
+   512→        'Num_2_FlowMin
+   513→        '
+   514→        Me.Num_2_FlowMin.CoercionInterval = 0.1R
+   515→        Me.Num_2_FlowMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   516→        Me.Num_2_FlowMin.Location = New System.Drawing.Point(95, 36)
+   517→        Me.Num_2_FlowMin.Name = "Num_2_FlowMin"
+   518→        Me.Num_2_FlowMin.Size = New System.Drawing.Size(97, 26)
+   519→        Me.Num_2_FlowMin.TabIndex = 48
+   520→        '
+   521→        'Label3
+   522→        '
+   523→        Me.Label3.AutoSize = True
+   524→        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   525→        Me.Label3.Location = New System.Drawing.Point(198, 19)
+   526→        Me.Label3.Name = "Label3"
+   527→        Me.Label3.Size = New System.Drawing.Size(37, 20)
+   528→        Me.Label3.TabIndex = 47
+   529→        Me.Label3.Text = "MAX"
+   530→        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   531→        '
+   532→        'Label7
+   533→        '
+   534→        Me.Label7.AutoSize = True
+   535→        Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   536→        Me.Label7.Location = New System.Drawing.Point(95, 19)
+   537→        Me.Label7.Name = "Label7"
+   538→        Me.Label7.Size = New System.Drawing.Size(32, 20)
+   539→        Me.Label7.TabIndex = 45
+   540→        Me.Label7.Text = "MIN"
+   541→        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   542→        '
+   543→        'Label8
+   544→        '
+   545→        Me.Label8.AutoSize = True
+   546→        Me.Label8.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   547→        Me.Label8.Location = New System.Drawing.Point(7, 39)
+   548→        Me.Label8.Name = "Label8"
+   549→        Me.Label8.Size = New System.Drawing.Size(77, 20)
+   550→        Me.Label8.TabIndex = 11
+   551→        Me.Label8.Text = "유량(l/min) :"
+   552→        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   553→        '
+   554→        'GroupBox4
+   555→        '
+   556→        Me.GroupBox4.Controls.Add(Me.Num_3_Air)
+   557→        Me.GroupBox4.Controls.Add(Me.Num_3_AmpMax)
+   558→        Me.GroupBox4.Controls.Add(Me.Num_3_AmpMin)
+   559→        Me.GroupBox4.Controls.Add(Me.Label23)
+   560→        Me.GroupBox4.Controls.Add(Me.Label11)
+   561→        Me.GroupBox4.Controls.Add(Me.Num_3_NoiseMax)
+   562→        Me.GroupBox4.Controls.Add(Me.Num_3_NoiseMin)
+   563→        Me.GroupBox4.Controls.Add(Me.Label12)
+   564→        Me.GroupBox4.Controls.Add(Me.Num_3_Time)
+   565→        Me.GroupBox4.Controls.Add(Me.Label14)
+   566→        Me.GroupBox4.Controls.Add(Me.Num_3_FlowMax)
+   567→        Me.GroupBox4.Controls.Add(Me.Num_3_FlowMin)
+   568→        Me.GroupBox4.Controls.Add(Me.Label15)
+   569→        Me.GroupBox4.Controls.Add(Me.Label18)
+   570→        Me.GroupBox4.Controls.Add(Me.Label21)
+   571→        Me.GroupBox4.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   572→        Me.GroupBox4.Location = New System.Drawing.Point(630, 4)
+   573→        Me.GroupBox4.Name = "GroupBox4"
+   574→        Me.GroupBox4.Size = New System.Drawing.Size(305, 215)
+   575→        Me.GroupBox4.TabIndex = 166
+   576→        Me.GroupBox4.TabStop = False
+   577→        Me.GroupBox4.Text = "3차 흡기 검사"
+   578→        '
+   579→        'Num_3_Air
+   580→        '
+   581→        Me.Num_3_Air.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   582→        Me.Num_3_Air.Location = New System.Drawing.Point(95, 164)
+   583→        Me.Num_3_Air.Name = "Num_3_Air"
+   584→        Me.Num_3_Air.Size = New System.Drawing.Size(97, 29)
+   585→        Me.Num_3_Air.TabIndex = 151
+   586→        '
+   587→        'Num_3_AmpMax
+   588→        '
+   589→        Me.Num_3_AmpMax.CoercionInterval = 0.1R
+   590→        Me.Num_3_AmpMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   591→        Me.Num_3_AmpMax.Location = New System.Drawing.Point(196, 100)
+   592→        Me.Num_3_AmpMax.Name = "Num_3_AmpMax"
+   593→        Me.Num_3_AmpMax.Size = New System.Drawing.Size(97, 26)
+   594→        Me.Num_3_AmpMax.TabIndex = 65
+   595→        '
+   596→        'Num_3_AmpMin
+   597→        '
+   598→        Me.Num_3_AmpMin.CoercionInterval = 0.1R
+   599→        Me.Num_3_AmpMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   600→        Me.Num_3_AmpMin.Location = New System.Drawing.Point(95, 100)
+   601→        Me.Num_3_AmpMin.Name = "Num_3_AmpMin"
+   602→        Me.Num_3_AmpMin.Size = New System.Drawing.Size(97, 26)
+   603→        Me.Num_3_AmpMin.TabIndex = 64
+   604→        '
+   605→        'Label23
+   606→        '
+   607→        Me.Label23.AutoSize = True
+   608→        Me.Label23.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   609→        Me.Label23.Location = New System.Drawing.Point(30, 103)
+   610→        Me.Label23.Name = "Label23"
+   611→        Me.Label23.Size = New System.Drawing.Size(54, 20)
+   612→        Me.Label23.TabIndex = 63
+   613→        Me.Label23.Text = "전류A) :"
+   614→        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   615→        '
+   616→        'Label11
+   617→        '
+   618→        Me.Label11.AutoSize = True
+   619→        Me.Label11.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   620→        Me.Label11.Location = New System.Drawing.Point(15, 168)
+   621→        Me.Label11.Name = "Label11"
+   622→        Me.Label11.Size = New System.Drawing.Size(69, 20)
+   623→        Me.Label11.TabIndex = 61
+   624→        Me.Label11.Text = "부하 공압 :"
+   625→        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   626→        '
+   627→        'Num_3_NoiseMax
+   628→        '
+   629→        Me.Num_3_NoiseMax.CoercionInterval = 0.1R
+   630→        Me.Num_3_NoiseMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   631→        Me.Num_3_NoiseMax.Location = New System.Drawing.Point(198, 68)
+   632→        Me.Num_3_NoiseMax.Name = "Num_3_NoiseMax"
+   633→        Me.Num_3_NoiseMax.Size = New System.Drawing.Size(97, 26)
+   634→        Me.Num_3_NoiseMax.TabIndex = 60
+   635→        '
+   636→        'Num_3_NoiseMin
+   637→        '
+   638→        Me.Num_3_NoiseMin.CoercionInterval = 0.1R
+   639→        Me.Num_3_NoiseMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   640→        Me.Num_3_NoiseMin.Location = New System.Drawing.Point(95, 68)
+   641→        Me.Num_3_NoiseMin.Name = "Num_3_NoiseMin"
+   642→        Me.Num_3_NoiseMin.Size = New System.Drawing.Size(97, 26)
+   643→        Me.Num_3_NoiseMin.TabIndex = 59
+   644→        '
+   645→        'Label12
+   646→        '
+   647→        Me.Label12.AutoSize = True
+   648→        Me.Label12.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   649→        Me.Label12.Location = New System.Drawing.Point(22, 71)
+   650→        Me.Label12.Name = "Label12"
+   651→        Me.Label12.Size = New System.Drawing.Size(62, 20)
+   652→        Me.Label12.TabIndex = 58
+   653→        Me.Label12.Text = "소음(dB):"
+   654→        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   655→        '
+   656→        'Num_3_Time
+   657→        '
+   658→        Me.Num_3_Time.CoercionInterval = 0.1R
+   659→        Me.Num_3_Time.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   660→        Me.Num_3_Time.Location = New System.Drawing.Point(95, 132)
+   661→        Me.Num_3_Time.Name = "Num_3_Time"
+   662→        Me.Num_3_Time.Size = New System.Drawing.Size(97, 26)
+   663→        Me.Num_3_Time.TabIndex = 57
+   664→        '
+   665→        'Label14
+   666→        '
+   667→        Me.Label14.AutoSize = True
+   668→        Me.Label14.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   669→        Me.Label14.Location = New System.Drawing.Point(15, 134)
+   670→        Me.Label14.Name = "Label14"
+   671→        Me.Label14.Size = New System.Drawing.Size(69, 20)
+   672→        Me.Label14.TabIndex = 56
+   673→        Me.Label14.Text = "검사시간 : "
+   674→        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   675→        '
+   676→        'Num_3_FlowMax
+   677→        '
+   678→        Me.Num_3_FlowMax.CoercionInterval = 0.1R
+   679→        Me.Num_3_FlowMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   680→        Me.Num_3_FlowMax.Location = New System.Drawing.Point(198, 36)
+   681→        Me.Num_3_FlowMax.Name = "Num_3_FlowMax"
+   682→        Me.Num_3_FlowMax.Size = New System.Drawing.Size(97, 26)
+   683→        Me.Num_3_FlowMax.TabIndex = 49
+   684→        '
+   685→        'Num_3_FlowMin
+   686→        '
+   687→        Me.Num_3_FlowMin.CoercionInterval = 0.1R
+   688→        Me.Num_3_FlowMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   689→        Me.Num_3_FlowMin.Location = New System.Drawing.Point(95, 36)
+   690→        Me.Num_3_FlowMin.Name = "Num_3_FlowMin"
+   691→        Me.Num_3_FlowMin.Size = New System.Drawing.Size(97, 26)
+   692→        Me.Num_3_FlowMin.TabIndex = 48
+   693→        '
+   694→        'Label15
+   695→        '
+   696→        Me.Label15.AutoSize = True
+   697→        Me.Label15.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   698→        Me.Label15.Location = New System.Drawing.Point(198, 19)
+   699→        Me.Label15.Name = "Label15"
+   700→        Me.Label15.Size = New System.Drawing.Size(37, 20)
+   701→        Me.Label15.TabIndex = 47
+   702→        Me.Label15.Text = "MAX"
+   703→        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   704→        '
+   705→        'Label18
+   706→        '
+   707→        Me.Label18.AutoSize = True
+   708→        Me.Label18.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   709→        Me.Label18.Location = New System.Drawing.Point(95, 19)
+   710→        Me.Label18.Name = "Label18"
+   711→        Me.Label18.Size = New System.Drawing.Size(32, 20)
+   712→        Me.Label18.TabIndex = 45
+   713→        Me.Label18.Text = "MIN"
+   714→        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   715→        '
+   716→        'Label21
+   717→        '
+   718→        Me.Label21.AutoSize = True
+   719→        Me.Label21.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   720→        Me.Label21.Location = New System.Drawing.Point(7, 39)
+   721→        Me.Label21.Name = "Label21"
+   722→        Me.Label21.Size = New System.Drawing.Size(77, 20)
+   723→        Me.Label21.TabIndex = 11
+   724→        Me.Label21.Text = "유량(l/min) :"
+   725→        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   726→        '
+   727→        'GroupBox5
+   728→        '
+   729→        Me.GroupBox5.Controls.Add(Me.Num_4_Air)
+   730→        Me.GroupBox5.Controls.Add(Me.Num_4_AmpMax)
+   731→        Me.GroupBox5.Controls.Add(Me.Num_4_AmpMin)
+   732→        Me.GroupBox5.Controls.Add(Me.Label24)
+   733→        Me.GroupBox5.Controls.Add(Me.Label25)
+   734→        Me.GroupBox5.Controls.Add(Me.Num_4_NoiseMax)
+   735→        Me.GroupBox5.Controls.Add(Me.Num_4_NoiseMin)
+   736→        Me.GroupBox5.Controls.Add(Me.Label26)
+   737→        Me.GroupBox5.Controls.Add(Me.Num_4_Time)
+   738→        Me.GroupBox5.Controls.Add(Me.Label27)
+   739→        Me.GroupBox5.Controls.Add(Me.Num_4_FlowMax)
+   740→        Me.GroupBox5.Controls.Add(Me.Num_4_FlowMin)
+   741→        Me.GroupBox5.Controls.Add(Me.Label28)
+   742→        Me.GroupBox5.Controls.Add(Me.Label29)
+   743→        Me.GroupBox5.Controls.Add(Me.Label30)
+   744→        Me.GroupBox5.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   745→        Me.GroupBox5.Location = New System.Drawing.Point(941, 4)
+   746→        Me.GroupBox5.Name = "GroupBox5"
+   747→        Me.GroupBox5.Size = New System.Drawing.Size(305, 215)
+   748→        Me.GroupBox5.TabIndex = 167
+   749→        Me.GroupBox5.TabStop = False
+   750→        Me.GroupBox5.Text = "4차 배기 검사"
+   751→        '
+   752→        'Num_4_Air
+   753→        '
+   754→        Me.Num_4_Air.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   755→        Me.Num_4_Air.Location = New System.Drawing.Point(95, 162)
+   756→        Me.Num_4_Air.Name = "Num_4_Air"
+   757→        Me.Num_4_Air.Size = New System.Drawing.Size(97, 29)
+   758→        Me.Num_4_Air.TabIndex = 151
+   759→        '
+   760→        'Num_4_AmpMax
+   761→        '
+   762→        Me.Num_4_AmpMax.CoercionInterval = 0.1R
+   763→        Me.Num_4_AmpMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   764→        Me.Num_4_AmpMax.Location = New System.Drawing.Point(196, 100)
+   765→        Me.Num_4_AmpMax.Name = "Num_4_AmpMax"
+   766→        Me.Num_4_AmpMax.Size = New System.Drawing.Size(97, 26)
+   767→        Me.Num_4_AmpMax.TabIndex = 65
+   768→        '
+   769→        'Num_4_AmpMin
+   770→        '
+   771→        Me.Num_4_AmpMin.CoercionInterval = 0.1R
+   772→        Me.Num_4_AmpMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   773→        Me.Num_4_AmpMin.Location = New System.Drawing.Point(95, 100)
+   774→        Me.Num_4_AmpMin.Name = "Num_4_AmpMin"
+   775→        Me.Num_4_AmpMin.Size = New System.Drawing.Size(97, 26)
+   776→        Me.Num_4_AmpMin.TabIndex = 64
+   777→        '
+   778→        'Label24
+   779→        '
+   780→        Me.Label24.AutoSize = True
+   781→        Me.Label24.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   782→        Me.Label24.Location = New System.Drawing.Point(30, 103)
+   783→        Me.Label24.Name = "Label24"
+   784→        Me.Label24.Size = New System.Drawing.Size(54, 20)
+   785→        Me.Label24.TabIndex = 63
+   786→        Me.Label24.Text = "전류A) :"
+   787→        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   788→        '
+   789→        'Label25
+   790→        '
+   791→        Me.Label25.AutoSize = True
+   792→        Me.Label25.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   793→        Me.Label25.Location = New System.Drawing.Point(15, 168)
+   794→        Me.Label25.Name = "Label25"
+   795→        Me.Label25.Size = New System.Drawing.Size(69, 20)
+   796→        Me.Label25.TabIndex = 61
+   797→        Me.Label25.Text = "부하 공압 :"
+   798→        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   799→        '
+   800→        'Num_4_NoiseMax
+   801→        '
+   802→        Me.Num_4_NoiseMax.CoercionInterval = 0.1R
+   803→        Me.Num_4_NoiseMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   804→        Me.Num_4_NoiseMax.Location = New System.Drawing.Point(198, 68)
+   805→        Me.Num_4_NoiseMax.Name = "Num_4_NoiseMax"
+   806→        Me.Num_4_NoiseMax.Size = New System.Drawing.Size(97, 26)
+   807→        Me.Num_4_NoiseMax.TabIndex = 60
+   808→        '
+   809→        'Num_4_NoiseMin
+   810→        '
+   811→        Me.Num_4_NoiseMin.CoercionInterval = 0.1R
+   812→        Me.Num_4_NoiseMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   813→        Me.Num_4_NoiseMin.Location = New System.Drawing.Point(95, 68)
+   814→        Me.Num_4_NoiseMin.Name = "Num_4_NoiseMin"
+   815→        Me.Num_4_NoiseMin.Size = New System.Drawing.Size(97, 26)
+   816→        Me.Num_4_NoiseMin.TabIndex = 59
+   817→        '
+   818→        'Label26
+   819→        '
+   820→        Me.Label26.AutoSize = True
+   821→        Me.Label26.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   822→        Me.Label26.Location = New System.Drawing.Point(22, 71)
+   823→        Me.Label26.Name = "Label26"
+   824→        Me.Label26.Size = New System.Drawing.Size(62, 20)
+   825→        Me.Label26.TabIndex = 58
+   826→        Me.Label26.Text = "소음(dB):"
+   827→        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   828→        '
+   829→        'Num_4_Time
+   830→        '
+   831→        Me.Num_4_Time.CoercionInterval = 0.1R
+   832→        Me.Num_4_Time.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   833→        Me.Num_4_Time.Location = New System.Drawing.Point(95, 132)
+   834→        Me.Num_4_Time.Name = "Num_4_Time"
+   835→        Me.Num_4_Time.Size = New System.Drawing.Size(97, 26)
+   836→        Me.Num_4_Time.TabIndex = 57
+   837→        '
+   838→        'Label27
+   839→        '
+   840→        Me.Label27.AutoSize = True
+   841→        Me.Label27.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   842→        Me.Label27.Location = New System.Drawing.Point(15, 134)
+   843→        Me.Label27.Name = "Label27"
+   844→        Me.Label27.Size = New System.Drawing.Size(69, 20)
+   845→        Me.Label27.TabIndex = 56
+   846→        Me.Label27.Text = "검사시간 : "
+   847→        Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   848→        '
+   849→        'Num_4_FlowMax
+   850→        '
+   851→        Me.Num_4_FlowMax.CoercionInterval = 0.1R
+   852→        Me.Num_4_FlowMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   853→        Me.Num_4_FlowMax.Location = New System.Drawing.Point(198, 36)
+   854→        Me.Num_4_FlowMax.Name = "Num_4_FlowMax"
+   855→        Me.Num_4_FlowMax.Size = New System.Drawing.Size(97, 26)
+   856→        Me.Num_4_FlowMax.TabIndex = 49
+   857→        '
+   858→        'Num_4_FlowMin
+   859→        '
+   860→        Me.Num_4_FlowMin.CoercionInterval = 0.1R
+   861→        Me.Num_4_FlowMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   862→        Me.Num_4_FlowMin.Location = New System.Drawing.Point(95, 36)
+   863→        Me.Num_4_FlowMin.Name = "Num_4_FlowMin"
+   864→        Me.Num_4_FlowMin.Size = New System.Drawing.Size(97, 26)
+   865→        Me.Num_4_FlowMin.TabIndex = 48
+   866→        '
+   867→        'Label28
+   868→        '
+   869→        Me.Label28.AutoSize = True
+   870→        Me.Label28.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   871→        Me.Label28.Location = New System.Drawing.Point(198, 19)
+   872→        Me.Label28.Name = "Label28"
+   873→        Me.Label28.Size = New System.Drawing.Size(37, 20)
+   874→        Me.Label28.TabIndex = 47
+   875→        Me.Label28.Text = "MAX"
+   876→        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   877→        '
+   878→        'Label29
+   879→        '
+   880→        Me.Label29.AutoSize = True
+   881→        Me.Label29.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   882→        Me.Label29.Location = New System.Drawing.Point(95, 19)
+   883→        Me.Label29.Name = "Label29"
+   884→        Me.Label29.Size = New System.Drawing.Size(32, 20)
+   885→        Me.Label29.TabIndex = 45
+   886→        Me.Label29.Text = "MIN"
+   887→        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   888→        '
+   889→        'Label30
+   890→        '
+   891→        Me.Label30.AutoSize = True
+   892→        Me.Label30.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   893→        Me.Label30.Location = New System.Drawing.Point(15, 39)
+   894→        Me.Label30.Name = "Label30"
+   895→        Me.Label30.Size = New System.Drawing.Size(77, 20)
+   896→        Me.Label30.TabIndex = 11
+   897→        Me.Label30.Text = "유량(l/min) :"
+   898→        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   899→        '
+   900→        'AxCWButton1
+   901→        '
+   902→        Me.AxCWButton1.Location = New System.Drawing.Point(1441, 352)
+   903→        Me.AxCWButton1.Name = "AxCWButton1"
+   904→        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+   905→        Me.AxCWButton1.Size = New System.Drawing.Size(116, 49)
+   906→        Me.AxCWButton1.TabIndex = 148
+   907→        '
+   908→        'ascButtonExit
+   909→        '
+   910→        Me.ascButtonExit.Location = New System.Drawing.Point(1441, 407)
+   911→        Me.ascButtonExit.Name = "ascButtonExit"
+   912→        Me.ascButtonExit.OcxState = CType(resources.GetObject("ascButtonExit.OcxState"), System.Windows.Forms.AxHost.State)
+   913→        Me.ascButtonExit.Size = New System.Drawing.Size(116, 49)
+   914→        Me.ascButtonExit.TabIndex = 147
+   915→        '
+   916→        'GroupBox6
+   917→        '
+   918→        Me.GroupBox6.Controls.Add(Me.Num_5_Air)
+   919→        Me.GroupBox6.Controls.Add(Me.Label33)
+   920→        Me.GroupBox6.Controls.Add(Me.Num_5_NoiseMax)
+   921→        Me.GroupBox6.Controls.Add(Me.Num_5_NoiseMin)
+   922→        Me.GroupBox6.Controls.Add(Me.Label34)
+   923→        Me.GroupBox6.Controls.Add(Me.Num_5_Time)
+   924→        Me.GroupBox6.Controls.Add(Me.Label35)
+   925→        Me.GroupBox6.Controls.Add(Me.Num_5_FlowMax)
+   926→        Me.GroupBox6.Controls.Add(Me.Num_5_FlowMin)
+   927→        Me.GroupBox6.Controls.Add(Me.Label36)
+   928→        Me.GroupBox6.Controls.Add(Me.Label37)
+   929→        Me.GroupBox6.Controls.Add(Me.Label38)
+   930→        Me.GroupBox6.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   931→        Me.GroupBox6.Location = New System.Drawing.Point(1252, 4)
+   932→        Me.GroupBox6.Name = "GroupBox6"
+   933→        Me.GroupBox6.Size = New System.Drawing.Size(305, 215)
+   934→        Me.GroupBox6.TabIndex = 168
+   935→        Me.GroupBox6.TabStop = False
+   936→        Me.GroupBox6.Text = "4차 누기 검사"
+   937→        '
+   938→        'Num_5_Air
+   939→        '
+   940→        Me.Num_5_Air.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   941→        Me.Num_5_Air.Location = New System.Drawing.Point(95, 162)
+   942→        Me.Num_5_Air.Name = "Num_5_Air"
+   943→        Me.Num_5_Air.Size = New System.Drawing.Size(97, 29)
+   944→        Me.Num_5_Air.TabIndex = 151
+   945→        '
+   946→        'Label33
+   947→        '
+   948→        Me.Label33.AutoSize = True
+   949→        Me.Label33.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   950→        Me.Label33.Location = New System.Drawing.Point(15, 168)
+   951→        Me.Label33.Name = "Label33"
+   952→        Me.Label33.Size = New System.Drawing.Size(69, 20)
+   953→        Me.Label33.TabIndex = 61
+   954→        Me.Label33.Text = "부하 공압 :"
+   955→        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   956→        '
+   957→        'Num_5_NoiseMax
+   958→        '
+   959→        Me.Num_5_NoiseMax.CoercionInterval = 0.1R
+   960→        Me.Num_5_NoiseMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   961→        Me.Num_5_NoiseMax.Location = New System.Drawing.Point(198, 68)
+   962→        Me.Num_5_NoiseMax.Name = "Num_5_NoiseMax"
+   963→        Me.Num_5_NoiseMax.Size = New System.Drawing.Size(97, 26)
+   964→        Me.Num_5_NoiseMax.TabIndex = 60
+   965→        '
+   966→        'Num_5_NoiseMin
+   967→        '
+   968→        Me.Num_5_NoiseMin.CoercionInterval = 0.1R
+   969→        Me.Num_5_NoiseMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   970→        Me.Num_5_NoiseMin.Location = New System.Drawing.Point(95, 68)
+   971→        Me.Num_5_NoiseMin.Name = "Num_5_NoiseMin"
+   972→        Me.Num_5_NoiseMin.Size = New System.Drawing.Size(97, 26)
+   973→        Me.Num_5_NoiseMin.TabIndex = 59
+   974→        '
+   975→        'Label34
+   976→        '
+   977→        Me.Label34.AutoSize = True
+   978→        Me.Label34.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   979→        Me.Label34.Location = New System.Drawing.Point(22, 71)
+   980→        Me.Label34.Name = "Label34"
+   981→        Me.Label34.Size = New System.Drawing.Size(62, 20)
+   982→        Me.Label34.TabIndex = 58
+   983→        Me.Label34.Text = "소음(dB):"
+   984→        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+   985→        '
+   986→        'Num_5_Time
+   987→        '
+   988→        Me.Num_5_Time.CoercionInterval = 0.1R
+   989→        Me.Num_5_Time.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+   990→        Me.Num_5_Time.Location = New System.Drawing.Point(95, 132)
+   991→        Me.Num_5_Time.Name = "Num_5_Time"
+   992→        Me.Num_5_Time.Size = New System.Drawing.Size(97, 26)
+   993→        Me.Num_5_Time.TabIndex = 57
+   994→        '
+   995→        'Label35
+   996→        '
+   997→        Me.Label35.AutoSize = True
+   998→        Me.Label35.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+   999→        Me.Label35.Location = New System.Drawing.Point(15, 134)
+  1000→        Me.Label35.Name = "Label35"
+  1001→        Me.Label35.Size = New System.Drawing.Size(69, 20)
+  1002→        Me.Label35.TabIndex = 56
+  1003→        Me.Label35.Text = "검사시간 : "
+  1004→        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+  1005→        '
+  1006→        'Num_5_FlowMax
+  1007→        '
+  1008→        Me.Num_5_FlowMax.CoercionInterval = 0.1R
+  1009→        Me.Num_5_FlowMax.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+  1010→        Me.Num_5_FlowMax.Location = New System.Drawing.Point(198, 36)
+  1011→        Me.Num_5_FlowMax.Name = "Num_5_FlowMax"
+  1012→        Me.Num_5_FlowMax.Size = New System.Drawing.Size(97, 26)
+  1013→        Me.Num_5_FlowMax.TabIndex = 49
+  1014→        '
+  1015→        'Num_5_FlowMin
+  1016→        '
+  1017→        Me.Num_5_FlowMin.CoercionInterval = 0.1R
+  1018→        Me.Num_5_FlowMin.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold)
+  1019→        Me.Num_5_FlowMin.Location = New System.Drawing.Point(95, 36)
+  1020→        Me.Num_5_FlowMin.Name = "Num_5_FlowMin"
+  1021→        Me.Num_5_FlowMin.Size = New System.Drawing.Size(97, 26)
+  1022→        Me.Num_5_FlowMin.TabIndex = 48
+  1023→        '
+  1024→        'Label36
+  1025→        '
+  1026→        Me.Label36.AutoSize = True
+  1027→        Me.Label36.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+  1028→        Me.Label36.Location = New System.Drawing.Point(198, 19)
+  1029→        Me.Label36.Name = "Label36"
+  1030→        Me.Label36.Size = New System.Drawing.Size(37, 20)
+  1031→        Me.Label36.TabIndex = 47
+  1032→        Me.Label36.Text = "MAX"
+  1033→        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+  1034→        '
+  1035→        'Label37
+  1036→        '
+  1037→        Me.Label37.AutoSize = True
+  1038→        Me.Label37.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+  1039→        Me.Label37.Location = New System.Drawing.Point(95, 19)
+  1040→        Me.Label37.Name = "Label37"
+  1041→        Me.Label37.Size = New System.Drawing.Size(32, 20)
+  1042→        Me.Label37.TabIndex = 45
+  1043→        Me.Label37.Text = "MIN"
+  1044→        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+  1045→        '
+  1046→        'Label38
+  1047→        '
+  1048→        Me.Label38.AutoSize = True
+  1049→        Me.Label38.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+  1050→        Me.Label38.Location = New System.Drawing.Point(15, 39)
+  1051→        Me.Label38.Name = "Label38"
+  1052→        Me.Label38.Size = New System.Drawing.Size(74, 20)
+  1053→        Me.Label38.TabIndex = 11
+  1054→        Me.Label38.Text = "공압(KPa) :"
+  1055→        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+  1056→        '
+  1057→        'TextBox1
+  1058→        '
+  1059→        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+  1060→        Me.TextBox1.Location = New System.Drawing.Point(509, 237)
+  1061→        Me.TextBox1.Name = "TextBox1"
+  1062→        Me.TextBox1.Size = New System.Drawing.Size(97, 29)
+  1063→        Me.TextBox1.TabIndex = 170
+  1064→        '
+  1065→        'Label32
+  1066→        '
+  1067→        Me.Label32.AutoSize = True
+  1068→        Me.Label32.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+  1069→        Me.Label32.Location = New System.Drawing.Point(442, 241)
+  1070→        Me.Label32.Name = "Label32"
+  1071→        Me.Label32.Size = New System.Drawing.Size(61, 20)
+  1072→        Me.Label32.TabIndex = 169
+  1073→        Me.Label32.Text = "세팅 전압"
+  1074→        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+  1075→        '
+  1076→        'Label39
+  1077→        '
+  1078→        Me.Label39.AutoSize = True
+  1079→        Me.Label39.Font = New System.Drawing.Font("Arial Narrow", 12.0!)
+  1080→        Me.Label39.Location = New System.Drawing.Point(612, 241)
+  1081→        Me.Label39.Name = "Label39"
+  1082→        Me.Label39.Size = New System.Drawing.Size(18, 20)
+  1083→        Me.Label39.TabIndex = 171
+  1084→        Me.Label39.Text = "V"
+  1085→        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+  1086→        '
+  1087→        'FrmSet
+  1088→        '
+  1089→        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
+  1090→        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+  1091→        Me.ClientSize = New System.Drawing.Size(1566, 470)
+  1092→        Me.ControlBox = False
+  1093→        Me.Controls.Add(Me.Label39)
+  1094→        Me.Controls.Add(Me.TextBox1)
+  1095→        Me.Controls.Add(Me.Label32)
+  1096→        Me.Controls.Add(Me.GroupBox6)
+  1097→        Me.Controls.Add(Me.GroupBox5)
+  1098→        Me.Controls.Add(Me.GroupBox4)
+  1099→        Me.Controls.Add(Me.GroupBox3)
+  1100→        Me.Controls.Add(Me.GroupBox1)
+  1101→        Me.Controls.Add(Me.GroupBox2)
+  1102→        Me.Controls.Add(Me.AxCWButton1)
+  1103→        Me.Controls.Add(Me.ascButtonExit)
+  1104→        Me.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+  1105→        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+  1106→        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+  1107→        Me.Name = "FrmSet"
+  1108→        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+  1109→        Me.Text = "FrmSet"
+  1110→        Me.TopMost = True
+  1111→        Me.GroupBox2.ResumeLayout(False)
+  1112→        Me.GroupBox2.PerformLayout()
+  1113→        CType(Me.Num_1_NoiseMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1114→        CType(Me.Num_1_NoiseMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1115→        CType(Me.Num_1_Time, System.ComponentModel.ISupportInitialize).EndInit()
+  1116→        CType(Me.Num_1_AmpMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1117→        CType(Me.Num_1_AmpMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1118→        Me.GroupBox1.ResumeLayout(False)
+  1119→        Me.GroupBox1.PerformLayout()
+  1120→        Me.GroupBox3.ResumeLayout(False)
+  1121→        Me.GroupBox3.PerformLayout()
+  1122→        CType(Me.Num_2_NoiseMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1123→        CType(Me.Num_2_NoiseMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1124→        CType(Me.Num_2_Time, System.ComponentModel.ISupportInitialize).EndInit()
+  1125→        CType(Me.Num_2_FlowMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1126→        CType(Me.Num_2_FlowMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1127→        Me.GroupBox4.ResumeLayout(False)
+  1128→        Me.GroupBox4.PerformLayout()
+  1129→        CType(Me.Num_3_AmpMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1130→        CType(Me.Num_3_AmpMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1131→        CType(Me.Num_3_NoiseMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1132→        CType(Me.Num_3_NoiseMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1133→        CType(Me.Num_3_Time, System.ComponentModel.ISupportInitialize).EndInit()
+  1134→        CType(Me.Num_3_FlowMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1135→        CType(Me.Num_3_FlowMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1136→        Me.GroupBox5.ResumeLayout(False)
+  1137→        Me.GroupBox5.PerformLayout()
+  1138→        CType(Me.Num_4_AmpMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1139→        CType(Me.Num_4_AmpMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1140→        CType(Me.Num_4_NoiseMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1141→        CType(Me.Num_4_NoiseMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1142→        CType(Me.Num_4_Time, System.ComponentModel.ISupportInitialize).EndInit()
+  1143→        CType(Me.Num_4_FlowMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1144→        CType(Me.Num_4_FlowMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1145→        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+  1146→        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).EndInit()
+  1147→        Me.GroupBox6.ResumeLayout(False)
+  1148→        Me.GroupBox6.PerformLayout()
+  1149→        CType(Me.Num_5_NoiseMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1150→        CType(Me.Num_5_NoiseMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1151→        CType(Me.Num_5_Time, System.ComponentModel.ISupportInitialize).EndInit()
+  1152→        CType(Me.Num_5_FlowMax, System.ComponentModel.ISupportInitialize).EndInit()
+  1153→        CType(Me.Num_5_FlowMin, System.ComponentModel.ISupportInitialize).EndInit()
+  1154→        Me.ResumeLayout(False)
+  1155→        Me.PerformLayout()
+  1156→
+  1157→    End Sub
+  1158→    Friend WithEvents Label4 As System.Windows.Forms.Label
+  1159→    Friend WithEvents Label5 As System.Windows.Forms.Label
+  1160→    Friend WithEvents ComboBoxScanner As System.Windows.Forms.ComboBox
+  1161→    Friend WithEvents ComboBoxPrinter As System.Windows.Forms.ComboBox
+  1162→    Friend WithEvents ComboBoxDIO As System.Windows.Forms.ComboBox
+  1163→    Friend WithEvents Label9 As System.Windows.Forms.Label
+  1164→    Friend WithEvents Label10 As System.Windows.Forms.Label
+  1165→    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+  1166→    Friend WithEvents ascButtonExit As AxCWUIControlsLib.AxCWButton
+  1167→    Friend WithEvents TextBoxPassWord As System.Windows.Forms.TextBox
+  1168→    Friend WithEvents ComboBoxPowerSupply As System.Windows.Forms.ComboBox
+  1169→    Friend WithEvents Label6 As System.Windows.Forms.Label
+  1170→    Friend WithEvents GroupBox2 As GroupBox
+  1171→    Friend WithEvents Num_1_Time As WindowsForms.NumericEdit
+  1172→    Friend WithEvents Label20 As Label
+  1173→    Friend WithEvents Num_1_AmpMax As WindowsForms.NumericEdit
+  1174→    Friend WithEvents Num_1_AmpMin As WindowsForms.NumericEdit
+  1175→    Friend WithEvents Label17 As Label
+  1176→    Friend WithEvents Label16 As Label
+  1177→    Friend WithEvents Label13 As Label
+  1178→    Friend WithEvents GroupBox1 As GroupBox
+  1179→    Friend WithEvents Num_1_NoiseMax As WindowsForms.NumericEdit
+  1180→    Friend WithEvents Num_1_NoiseMin As WindowsForms.NumericEdit
+  1181→    Friend WithEvents Label22 As Label
+  1182→    Friend WithEvents GroupBox3 As GroupBox
+  1183→    Friend WithEvents Num_2_NoiseMax As WindowsForms.NumericEdit
+  1184→    Friend WithEvents Num_2_NoiseMin As WindowsForms.NumericEdit
+  1185→    Friend WithEvents Label1 As Label
+  1186→    Friend WithEvents Num_2_Time As WindowsForms.NumericEdit
+  1187→    Friend WithEvents Label2 As Label
+  1188→    Friend WithEvents Num_2_FlowMax As WindowsForms.NumericEdit
+  1189→    Friend WithEvents Num_2_FlowMin As WindowsForms.NumericEdit
+  1190→    Friend WithEvents Label3 As Label
+  1191→    Friend WithEvents Label7 As Label
+  1192→    Friend WithEvents Label8 As Label
+  1193→    Friend WithEvents Label19 As Label
+  1194→    Friend WithEvents GroupBox4 As GroupBox
+  1195→    Friend WithEvents Label11 As Label
+  1196→    Friend WithEvents Num_3_NoiseMax As WindowsForms.NumericEdit
+  1197→    Friend WithEvents Num_3_NoiseMin As WindowsForms.NumericEdit
+  1198→    Friend WithEvents Label12 As Label
+  1199→    Friend WithEvents Num_3_Time As WindowsForms.NumericEdit
+  1200→    Friend WithEvents Label14 As Label
+  1201→    Friend WithEvents Num_3_FlowMax As WindowsForms.NumericEdit
+  1202→    Friend WithEvents Num_3_FlowMin As WindowsForms.NumericEdit
+  1203→    Friend WithEvents Label15 As Label
+  1204→    Friend WithEvents Label18 As Label
+  1205→    Friend WithEvents Label21 As Label
+  1206→    Friend WithEvents Num_3_AmpMax As WindowsForms.NumericEdit
+  1207→    Friend WithEvents Num_3_AmpMin As WindowsForms.NumericEdit
+  1208→    Friend WithEvents Label23 As Label
+  1209→    Friend WithEvents GroupBox5 As GroupBox
+  1210→    Friend WithEvents Num_4_AmpMax As WindowsForms.NumericEdit
+  1211→    Friend WithEvents Num_4_AmpMin As WindowsForms.NumericEdit
+  1212→    Friend WithEvents Label24 As Label
+  1213→    Friend WithEvents Label25 As Label
+  1214→    Friend WithEvents Num_4_NoiseMax As WindowsForms.NumericEdit
+  1215→    Friend WithEvents Num_4_NoiseMin As WindowsForms.NumericEdit
+  1216→    Friend WithEvents Label26 As Label
+  1217→    Friend WithEvents Num_4_Time As WindowsForms.NumericEdit
+  1218→    Friend WithEvents Label27 As Label
+  1219→    Friend WithEvents Num_4_FlowMax As WindowsForms.NumericEdit
+  1220→    Friend WithEvents Num_4_FlowMin As WindowsForms.NumericEdit
+  1221→    Friend WithEvents Label28 As Label
+  1222→    Friend WithEvents Label29 As Label
+  1223→    Friend WithEvents Label30 As Label
+  1224→    Friend WithEvents Label31 As Label
+  1225→    Friend WithEvents ComboBoxDIO2 As ComboBox
+  1226→    Friend WithEvents GroupBox6 As GroupBox
+  1227→    Friend WithEvents Label33 As Label
+  1228→    Friend WithEvents Num_5_NoiseMax As WindowsForms.NumericEdit
+  1229→    Friend WithEvents Num_5_NoiseMin As WindowsForms.NumericEdit
+  1230→    Friend WithEvents Label34 As Label
+  1231→    Friend WithEvents Num_5_Time As WindowsForms.NumericEdit
+  1232→    Friend WithEvents Label35 As Label
+  1233→    Friend WithEvents Num_5_FlowMax As WindowsForms.NumericEdit
+  1234→    Friend WithEvents Num_5_FlowMin As WindowsForms.NumericEdit
+  1235→    Friend WithEvents Label36 As Label
+  1236→    Friend WithEvents Label37 As Label
+  1237→    Friend WithEvents Label38 As Label
+  1238→    Friend WithEvents Num_2_Air As TextBox
+  1239→    Friend WithEvents Num_3_Air As TextBox
+  1240→    Friend WithEvents Num_4_Air As TextBox
+  1241→    Friend WithEvents Num_5_Air As TextBox
+  1242→    Friend WithEvents TextBox1 As TextBox
+  1243→    Friend WithEvents Label32 As Label
+  1244→    Friend WithEvents Label39 As Label
+  1245→End Class
+  1246→

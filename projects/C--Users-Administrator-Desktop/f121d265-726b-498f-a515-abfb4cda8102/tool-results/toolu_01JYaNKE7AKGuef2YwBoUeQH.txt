@@ -1,0 +1,718 @@
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:27:        Me.axcButtonSAve = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:28:        Me.axcButtonClose = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:29:        Me.axcButtonADd = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:30:        Me.axcButtonDelete = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:109:    Friend WithEvents axcButtonSAve As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:110:    Friend WithEvents axcButtonClose As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:111:    Friend WithEvents axcButtonADd As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPart.Designer.vb:112:    Friend WithEvents axcButtonDelete As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:224:    Private Sub PortOpen(ByVal tControl As SerialPort, ByVal tPortNumber As String, ByVal Indicator As AxCWUIControlsLib.AxCWButton, ByVal tbaudRate As Integer)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:509:    Private Sub ascButtonExit_ClickEvent(ByVal sender As Object, ByVal e As System.EventArgs) Handles ascButtonExit.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:529:    Private Sub ascButtonTestSearch_ClickEvent(sender As Object, e As EventArgs) Handles ascButtonTestSearch.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:676:    Private MeasureLabel As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:735:    Private Sub DecideControl(lValue As AxCWUIControlsLib.AxCWButton, lDecision As AxCWUIControlsLib.AxCWButton, sMin As Double, sMax As Double, mValue As Double)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:2603:                acquisitionDataGrid.DataSource = dataTable
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:2623:    Private Sub ascButtonTest_ClickEvent(sender As Object, e As EventArgs) Handles ascButtonTest.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.vb:2627:    Private Sub AxCWButton3_ClickEvent(sender As Object, e As EventArgs) Handles ascButtonTest.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPassWord.Designer.vb:27:        Me.axcButtonBasic = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmPassWord.Designer.vb:70:    Friend WithEvents axcButtonBasic As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:33:        Me.axcButtonSAve = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:34:        Me.axcButtonClose = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:35:        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:38:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:144:        'AxCWButton1
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:146:        Me.AxCWButton1.Location = New System.Drawing.Point(901, 12)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:147:        Me.AxCWButton1.Name = "AxCWButton1"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:148:        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:149:        Me.AxCWButton1.Size = New System.Drawing.Size(161, 57)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:150:        Me.AxCWButton1.TabIndex = 153
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:158:        Me.Controls.Add(Me.AxCWButton1)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:177:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:189:    Friend WithEvents axcButtonSAve As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:190:    Friend WithEvents axcButtonClose As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.Designer.vb:191:    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.vb:53:    Private Sub AxCWButton1_ClickEvent(sender As Object, e As EventArgs) Handles AxCWButton1.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch.vb:60:    Private Sub AxCWButton1_ClickEvent(sender As Object, e As EventArgs) Handles AxCWButton1.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:26:        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:27:        Me.axcButtonSAve = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:28:        Me.axcButtonClose = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:37:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:42:        'AxCWButton1
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:44:        Me.AxCWButton1.Location = New System.Drawing.Point(901, 12)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:45:        Me.AxCWButton1.Name = "AxCWButton1"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:46:        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:47:        Me.AxCWButton1.Size = New System.Drawing.Size(161, 57)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:48:        Me.AxCWButton1.TabIndex = 163
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:184:        Me.Controls.Add(Me.AxCWButton1)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:195:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:203:    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:204:    Friend WithEvents axcButtonSAve As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSearch2.Designer.vb:205:    Friend WithEvents axcButtonClose As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.vb:559:    Private Sub AxCWButton1_ClickEvent(sender As Object, e As EventArgs) Handles AxCWButton1.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.vb:568:    Private Sub AxCWButton2_ClickEvent(sender As Object, e As EventArgs) Handles AxCWButton2.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:56:        Me.acquisitionDataGrid = New System.Windows.Forms.DataGrid()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:170:        Me.lbCellType = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:171:        Me.src5NoiseDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:172:        Me.src5Noise = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:173:        Me.src5NoiseSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:174:        Me.AxCWButton22 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:175:        Me.AxCWButton23 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:176:        Me.AxCWButton24 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:177:        Me.AxCWButton26 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:178:        Me.AxCWButton27 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:179:        Me.src5FlowDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:180:        Me.src5Flow = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:181:        Me.src5FlowSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:182:        Me.AxCWButton42 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:183:        Me.AxCWButton14 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:184:        Me.ascButtonTest = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:185:        Me.LedDIO2 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:186:        Me.src4NoiseDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:187:        Me.src4Noise = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:188:        Me.src4NoiseSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:189:        Me.AxCWButton62 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:190:        Me.src3NoiseDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:191:        Me.src3Noise = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:192:        Me.src3NoiseSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:193:        Me.AxCWButton66 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:194:        Me.AxCWButton44 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:195:        Me.AxCWButton45 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:196:        Me.AxCWButton46 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:197:        Me.AxCWButton47 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:198:        Me.src4AmpDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:199:        Me.src4Amp = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:200:        Me.src4AmpSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:201:        Me.AxCWButton51 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:202:        Me.src4FlowDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:203:        Me.src4Flow = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:204:        Me.src4FlowSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:205:        Me.AxCWButton58 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:206:        Me.AxCWButton7 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:207:        Me.AxCWButton11 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:208:        Me.AxCWButton15 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:209:        Me.AxCWButton21 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:210:        Me.src3AmpDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:211:        Me.src3Amp = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:212:        Me.src3AmpSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:213:        Me.AxCWButton38 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:214:        Me.src3FlowDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:215:        Me.src3Flow = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:216:        Me.src3FlowSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:217:        Me.AxCWButton43 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:218:        Me.AxCWButton34 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:219:        Me.AxCWButton33 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:220:        Me.AxCWButton32 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:221:        Me.AxCWButton31 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:222:        Me.src1NoiseDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:223:        Me.src1Noise6 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:224:        Me.src1Noise5 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:225:        Me.src1Noise4 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:226:        Me.src1Noise3 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:227:        Me.src1Noise2 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:228:        Me.src1Noise1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:229:        Me.src1AmpDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:230:        Me.src1Amp6 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:231:        Me.src1Amp5 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:232:        Me.src1Amp4 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:233:        Me.AxCWButton13 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:234:        Me._1st_Lb6 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:235:        Me._1st_Lb5 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:236:        Me._1st_Lb4 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:237:        Me._1st_Lb3 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:238:        Me._1st_Lb2 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:239:        Me._1st_Lb1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:240:        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:241:        Me.AxCWButton12 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:242:        Me.src2NoiseDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:243:        Me.src2Noise = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:244:        Me.src2NoiseSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:245:        Me.AxCWButton25 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:246:        Me.src2FlowDec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:247:        Me.src2Flow = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:248:        Me.src2FlowSpec = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:249:        Me.AxCWButton29 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:250:        Me.AxCWButton4 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:251:        Me.AxCWButton2 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:252:        Me.LedDAQ = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:253:        Me.LedSUpply = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:254:        Me.src1Amp3 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:255:        Me.LedPrinter = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:256:        Me.LedDIO = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:257:        Me.src1Amp2 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:258:        Me.src1Amp1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:259:        Me.AxCWButton52 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:260:        Me.AxCWButton54 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:261:        Me.AxCWButton57 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:262:        Me.LedScanner = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:263:        Me.axcButtonSIgnal = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:264:        Me.ascButtonExit = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:265:        Me.AxcButtonCountReset = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:266:        Me.AxCWButton41 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:267:        Me.AxCWButton19 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:268:        Me.AxCWButton20 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:269:        Me.axcButtonSearch = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:270:        Me.axcButtonPart = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:271:        Me.axcButtonSEt = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:272:        Me.ascButtonTestSearch = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:274:        CType(Me.acquisitionDataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:301:        CType(Me.AxCWButton22, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:302:        CType(Me.AxCWButton23, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:303:        CType(Me.AxCWButton24, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:304:        CType(Me.AxCWButton26, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:305:        CType(Me.AxCWButton27, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:309:        CType(Me.AxCWButton42, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:310:        CType(Me.AxCWButton14, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:311:        CType(Me.ascButtonTest, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:316:        CType(Me.AxCWButton62, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:320:        CType(Me.AxCWButton66, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:321:        CType(Me.AxCWButton44, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:322:        CType(Me.AxCWButton45, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:323:        CType(Me.AxCWButton46, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:324:        CType(Me.AxCWButton47, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:328:        CType(Me.AxCWButton51, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:332:        CType(Me.AxCWButton58, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:333:        CType(Me.AxCWButton7, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:334:        CType(Me.AxCWButton11, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:335:        CType(Me.AxCWButton15, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:336:        CType(Me.AxCWButton21, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:340:        CType(Me.AxCWButton38, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:344:        CType(Me.AxCWButton43, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:345:        CType(Me.AxCWButton34, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:346:        CType(Me.AxCWButton33, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:347:        CType(Me.AxCWButton32, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:348:        CType(Me.AxCWButton31, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:360:        CType(Me.AxCWButton13, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:367:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:368:        CType(Me.AxCWButton12, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:372:        CType(Me.AxCWButton25, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:376:        CType(Me.AxCWButton29, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:377:        CType(Me.AxCWButton4, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:378:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:386:        CType(Me.AxCWButton52, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:387:        CType(Me.AxCWButton54, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:388:        CType(Me.AxCWButton57, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:391:        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:393:        CType(Me.AxCWButton41, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:394:        CType(Me.AxCWButton19, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:395:        CType(Me.AxCWButton20, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:399:        CType(Me.ascButtonTestSearch, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:663:        'acquisitionDataGrid
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:665:        Me.acquisitionDataGrid.AllowSorting = False
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:666:        Me.acquisitionDataGrid.DataMember = ""
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:667:        Me.acquisitionDataGrid.HeaderForeColor = System.Drawing.SystemColors.ControlText
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:668:        Me.acquisitionDataGrid.Location = New System.Drawing.Point(1576, 227)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:669:        Me.acquisitionDataGrid.Name = "acquisitionDataGrid"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:670:        Me.acquisitionDataGrid.ParentRowsVisible = False
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:671:        Me.acquisitionDataGrid.ReadOnly = True
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:672:        Me.acquisitionDataGrid.Size = New System.Drawing.Size(278, 126)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:673:        Me.acquisitionDataGrid.TabIndex = 651
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:674:        Me.acquisitionDataGrid.TabStop = False
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:675:        Me.acquisitionDataGrid.Visible = False
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2029:        'AxCWButton22
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2031:        Me.AxCWButton22.Location = New System.Drawing.Point(1034, 950)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2032:        Me.AxCWButton22.Name = "AxCWButton22"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2033:        Me.AxCWButton22.OcxState = CType(resources.GetObject("AxCWButton22.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2034:        Me.AxCWButton22.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2035:        Me.AxCWButton22.TabIndex = 775
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2037:        'AxCWButton23
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2039:        Me.AxCWButton23.Location = New System.Drawing.Point(1334, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2040:        Me.AxCWButton23.Name = "AxCWButton23"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2041:        Me.AxCWButton23.OcxState = CType(resources.GetObject("AxCWButton23.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2042:        Me.AxCWButton23.Size = New System.Drawing.Size(119, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2043:        Me.AxCWButton23.TabIndex = 774
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2045:        'AxCWButton24
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2047:        Me.AxCWButton24.Location = New System.Drawing.Point(1453, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2048:        Me.AxCWButton24.Name = "AxCWButton24"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2049:        Me.AxCWButton24.OcxState = CType(resources.GetObject("AxCWButton24.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2050:        Me.AxCWButton24.Size = New System.Drawing.Size(85, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2051:        Me.AxCWButton24.TabIndex = 773
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2053:        'AxCWButton26
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2055:        Me.AxCWButton26.Location = New System.Drawing.Point(1148, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2056:        Me.AxCWButton26.Name = "AxCWButton26"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2057:        Me.AxCWButton26.OcxState = CType(resources.GetObject("AxCWButton26.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2058:        Me.AxCWButton26.Size = New System.Drawing.Size(186, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2059:        Me.AxCWButton26.TabIndex = 772
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2061:        'AxCWButton27
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2063:        Me.AxCWButton27.Location = New System.Drawing.Point(1034, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2064:        Me.AxCWButton27.Name = "AxCWButton27"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2065:        Me.AxCWButton27.OcxState = CType(resources.GetObject("AxCWButton27.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2066:        Me.AxCWButton27.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2067:        Me.AxCWButton27.TabIndex = 771
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2093:        'AxCWButton42
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2095:        Me.AxCWButton42.Location = New System.Drawing.Point(1034, 913)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2096:        Me.AxCWButton42.Name = "AxCWButton42"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2097:        Me.AxCWButton42.OcxState = CType(resources.GetObject("AxCWButton42.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2098:        Me.AxCWButton42.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2099:        Me.AxCWButton42.TabIndex = 763
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2101:        'AxCWButton14
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2103:        Me.AxCWButton14.Location = New System.Drawing.Point(1034, 531)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2104:        Me.AxCWButton14.Name = "AxCWButton14"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2105:        Me.AxCWButton14.OcxState = CType(resources.GetObject("AxCWButton14.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2106:        Me.AxCWButton14.Size = New System.Drawing.Size(510, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2107:        Me.AxCWButton14.TabIndex = 760
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2109:        'ascButtonTest
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2111:        Me.ascButtonTest.Location = New System.Drawing.Point(680, 13)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2112:        Me.ascButtonTest.Name = "ascButtonTest"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2113:        Me.ascButtonTest.OcxState = CType(resources.GetObject("ascButtonTest.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2114:        Me.ascButtonTest.Size = New System.Drawing.Size(161, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2115:        Me.ascButtonTest.TabIndex = 758
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2149:        'AxCWButton62
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2151:        Me.AxCWButton62.Location = New System.Drawing.Point(523, 987)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2152:        Me.AxCWButton62.Name = "AxCWButton62"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2153:        Me.AxCWButton62.OcxState = CType(resources.GetObject("AxCWButton62.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2154:        Me.AxCWButton62.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2155:        Me.AxCWButton62.TabIndex = 752
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2181:        'AxCWButton66
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2183:        Me.AxCWButton66.Location = New System.Drawing.Point(12, 987)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2184:        Me.AxCWButton66.Name = "AxCWButton66"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2185:        Me.AxCWButton66.OcxState = CType(resources.GetObject("AxCWButton66.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2186:        Me.AxCWButton66.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2187:        Me.AxCWButton66.TabIndex = 748
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2189:        'AxCWButton44
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2191:        Me.AxCWButton44.Location = New System.Drawing.Point(823, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2192:        Me.AxCWButton44.Name = "AxCWButton44"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2193:        Me.AxCWButton44.OcxState = CType(resources.GetObject("AxCWButton44.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2194:        Me.AxCWButton44.Size = New System.Drawing.Size(119, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2195:        Me.AxCWButton44.TabIndex = 747
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2197:        'AxCWButton45
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2199:        Me.AxCWButton45.Location = New System.Drawing.Point(942, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2200:        Me.AxCWButton45.Name = "AxCWButton45"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2201:        Me.AxCWButton45.OcxState = CType(resources.GetObject("AxCWButton45.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2202:        Me.AxCWButton45.Size = New System.Drawing.Size(85, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2203:        Me.AxCWButton45.TabIndex = 746
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2205:        'AxCWButton46
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2207:        Me.AxCWButton46.Location = New System.Drawing.Point(637, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2208:        Me.AxCWButton46.Name = "AxCWButton46"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2209:        Me.AxCWButton46.OcxState = CType(resources.GetObject("AxCWButton46.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2210:        Me.AxCWButton46.Size = New System.Drawing.Size(186, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2211:        Me.AxCWButton46.TabIndex = 745
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2213:        'AxCWButton47
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2215:        Me.AxCWButton47.Location = New System.Drawing.Point(523, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2216:        Me.AxCWButton47.Name = "AxCWButton47"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2217:        Me.AxCWButton47.OcxState = CType(resources.GetObject("AxCWButton47.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2218:        Me.AxCWButton47.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2219:        Me.AxCWButton47.TabIndex = 744
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2245:        'AxCWButton51
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2247:        Me.AxCWButton51.Location = New System.Drawing.Point(523, 950)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2248:        Me.AxCWButton51.Name = "AxCWButton51"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2249:        Me.AxCWButton51.OcxState = CType(resources.GetObject("AxCWButton51.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2250:        Me.AxCWButton51.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2251:        Me.AxCWButton51.TabIndex = 740
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2277:        'AxCWButton58
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2279:        Me.AxCWButton58.Location = New System.Drawing.Point(523, 913)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2280:        Me.AxCWButton58.Name = "AxCWButton58"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2281:        Me.AxCWButton58.OcxState = CType(resources.GetObject("AxCWButton58.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2282:        Me.AxCWButton58.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2283:        Me.AxCWButton58.TabIndex = 736
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2285:        'AxCWButton7
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2287:        Me.AxCWButton7.Location = New System.Drawing.Point(312, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2288:        Me.AxCWButton7.Name = "AxCWButton7"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2289:        Me.AxCWButton7.OcxState = CType(resources.GetObject("AxCWButton7.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2290:        Me.AxCWButton7.Size = New System.Drawing.Size(119, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2291:        Me.AxCWButton7.TabIndex = 735
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2293:        'AxCWButton11
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2295:        Me.AxCWButton11.Location = New System.Drawing.Point(431, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2296:        Me.AxCWButton11.Name = "AxCWButton11"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2297:        Me.AxCWButton11.OcxState = CType(resources.GetObject("AxCWButton11.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2298:        Me.AxCWButton11.Size = New System.Drawing.Size(85, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2299:        Me.AxCWButton11.TabIndex = 734
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2301:        'AxCWButton15
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2303:        Me.AxCWButton15.Location = New System.Drawing.Point(126, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2304:        Me.AxCWButton15.Name = "AxCWButton15"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2305:        Me.AxCWButton15.OcxState = CType(resources.GetObject("AxCWButton15.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2306:        Me.AxCWButton15.Size = New System.Drawing.Size(186, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2307:        Me.AxCWButton15.TabIndex = 733
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2309:        'AxCWButton21
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2311:        Me.AxCWButton21.Location = New System.Drawing.Point(12, 876)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2312:        Me.AxCWButton21.Name = "AxCWButton21"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2313:        Me.AxCWButton21.OcxState = CType(resources.GetObject("AxCWButton21.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2314:        Me.AxCWButton21.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2315:        Me.AxCWButton21.TabIndex = 732
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2341:        'AxCWButton38
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2343:        Me.AxCWButton38.Location = New System.Drawing.Point(12, 950)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2344:        Me.AxCWButton38.Name = "AxCWButton38"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2345:        Me.AxCWButton38.OcxState = CType(resources.GetObject("AxCWButton38.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2346:        Me.AxCWButton38.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2347:        Me.AxCWButton38.TabIndex = 728
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2373:        'AxCWButton43
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2375:        Me.AxCWButton43.Location = New System.Drawing.Point(12, 913)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2376:        Me.AxCWButton43.Name = "AxCWButton43"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2377:        Me.AxCWButton43.OcxState = CType(resources.GetObject("AxCWButton43.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2378:        Me.AxCWButton43.Size = New System.Drawing.Size(114, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2379:        Me.AxCWButton43.TabIndex = 724
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2381:        'AxCWButton34
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2383:        Me.AxCWButton34.Location = New System.Drawing.Point(1244, 413)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2384:        Me.AxCWButton34.Name = "AxCWButton34"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2385:        Me.AxCWButton34.OcxState = CType(resources.GetObject("AxCWButton34.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2386:        Me.AxCWButton34.Size = New System.Drawing.Size(147, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2387:        Me.AxCWButton34.TabIndex = 717
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2389:        'AxCWButton33
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2391:        Me.AxCWButton33.Location = New System.Drawing.Point(1391, 413)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2392:        Me.AxCWButton33.Name = "AxCWButton33"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2393:        Me.AxCWButton33.OcxState = CType(resources.GetObject("AxCWButton33.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2394:        Me.AxCWButton33.Size = New System.Drawing.Size(153, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2395:        Me.AxCWButton33.TabIndex = 716
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2397:        'AxCWButton32
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2399:        Me.AxCWButton32.Location = New System.Drawing.Point(923, 413)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2400:        Me.AxCWButton32.Name = "AxCWButton32"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2401:        Me.AxCWButton32.OcxState = CType(resources.GetObject("AxCWButton32.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2402:        Me.AxCWButton32.Size = New System.Drawing.Size(321, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2403:        Me.AxCWButton32.TabIndex = 715
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2405:        'AxCWButton31
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2407:        Me.AxCWButton31.Location = New System.Drawing.Point(781, 413)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2408:        Me.AxCWButton31.Name = "AxCWButton31"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2409:        Me.AxCWButton31.OcxState = CType(resources.GetObject("AxCWButton31.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2410:        Me.AxCWButton31.Size = New System.Drawing.Size(142, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2411:        Me.AxCWButton31.TabIndex = 714
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2501:        'AxCWButton13
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2503:        Me.AxCWButton13.Location = New System.Drawing.Point(687, 413)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2504:        Me.AxCWButton13.Name = "AxCWButton13"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2505:        Me.AxCWButton13.OcxState = CType(resources.GetObject("AxCWButton13.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2506:        Me.AxCWButton13.Size = New System.Drawing.Size(88, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2507:        Me.AxCWButton13.TabIndex = 701
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2557:        'AxCWButton1
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2559:        Me.AxCWButton1.Location = New System.Drawing.Point(12, 413)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2560:        Me.AxCWButton1.Name = "AxCWButton1"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2561:        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2562:        Me.AxCWButton1.Size = New System.Drawing.Size(81, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2563:        Me.AxCWButton1.TabIndex = 694
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2565:        'AxCWButton12
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2567:        Me.AxCWButton12.Location = New System.Drawing.Point(523, 531)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2568:        Me.AxCWButton12.Name = "AxCWButton12"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2569:        Me.AxCWButton12.OcxState = CType(resources.GetObject("AxCWButton12.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2570:        Me.AxCWButton12.Size = New System.Drawing.Size(505, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2571:        Me.AxCWButton12.TabIndex = 683
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2597:        'AxCWButton25
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2599:        Me.AxCWButton25.Location = New System.Drawing.Point(781, 487)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2600:        Me.AxCWButton25.Name = "AxCWButton25"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2601:        Me.AxCWButton25.OcxState = CType(resources.GetObject("AxCWButton25.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2602:        Me.AxCWButton25.Size = New System.Drawing.Size(142, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2603:        Me.AxCWButton25.TabIndex = 678
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2629:        'AxCWButton29
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2631:        Me.AxCWButton29.Location = New System.Drawing.Point(781, 450)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2632:        Me.AxCWButton29.Name = "AxCWButton29"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2633:        Me.AxCWButton29.OcxState = CType(resources.GetObject("AxCWButton29.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2634:        Me.AxCWButton29.Size = New System.Drawing.Size(142, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2635:        Me.AxCWButton29.TabIndex = 673
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2637:        'AxCWButton4
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2639:        Me.AxCWButton4.Location = New System.Drawing.Point(12, 531)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2640:        Me.AxCWButton4.Name = "AxCWButton4"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2641:        Me.AxCWButton4.OcxState = CType(resources.GetObject("AxCWButton4.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2642:        Me.AxCWButton4.Size = New System.Drawing.Size(505, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2643:        Me.AxCWButton4.TabIndex = 652
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2645:        'AxCWButton2
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2647:        Me.AxCWButton2.Location = New System.Drawing.Point(12, 487)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2648:        Me.AxCWButton2.Name = "AxCWButton2"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2649:        Me.AxCWButton2.OcxState = CType(resources.GetObject("AxCWButton2.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2650:        Me.AxCWButton2.Size = New System.Drawing.Size(81, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2651:        Me.AxCWButton2.TabIndex = 390
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2709:        'AxCWButton52
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2711:        Me.AxCWButton52.Location = New System.Drawing.Point(12, 450)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2712:        Me.AxCWButton52.Name = "AxCWButton52"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2713:        Me.AxCWButton52.OcxState = CType(resources.GetObject("AxCWButton52.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2714:        Me.AxCWButton52.Size = New System.Drawing.Size(81, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2715:        Me.AxCWButton52.TabIndex = 214
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2717:        'AxCWButton54
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2719:        Me.AxCWButton54.Location = New System.Drawing.Point(781, 68)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2720:        Me.AxCWButton54.Name = "AxCWButton54"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2721:        Me.AxCWButton54.OcxState = CType(resources.GetObject("AxCWButton54.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2722:        Me.AxCWButton54.Size = New System.Drawing.Size(763, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2723:        Me.AxCWButton54.TabIndex = 212
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2725:        'AxCWButton57
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2727:        Me.AxCWButton57.Location = New System.Drawing.Point(12, 68)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2728:        Me.AxCWButton57.Name = "AxCWButton57"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2729:        Me.AxCWButton57.OcxState = CType(resources.GetObject("AxCWButton57.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2730:        Me.AxCWButton57.Size = New System.Drawing.Size(763, 37)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2731:        Me.AxCWButton57.TabIndex = 209
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2749:        'ascButtonExit
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2751:        Me.ascButtonExit.Location = New System.Drawing.Point(1014, 13)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2752:        Me.ascButtonExit.Name = "ascButtonExit"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2753:        Me.ascButtonExit.OcxState = CType(resources.GetObject("ascButtonExit.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2754:        Me.ascButtonExit.Size = New System.Drawing.Size(161, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2755:        Me.ascButtonExit.TabIndex = 145
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2765:        'AxCWButton41
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2767:        Me.AxCWButton41.Location = New System.Drawing.Point(1550, 161)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2768:        Me.AxCWButton41.Name = "AxCWButton41"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2769:        Me.AxCWButton41.OcxState = CType(resources.GetObject("AxCWButton41.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2770:        Me.AxCWButton41.Size = New System.Drawing.Size(352, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2771:        Me.AxCWButton41.TabIndex = 66
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2773:        'AxCWButton19
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2775:        Me.AxCWButton19.Location = New System.Drawing.Point(1550, 375)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2776:        Me.AxCWButton19.Name = "AxCWButton19"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2777:        Me.AxCWButton19.OcxState = CType(resources.GetObject("AxCWButton19.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2778:        Me.AxCWButton19.Size = New System.Drawing.Size(352, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2779:        Me.AxCWButton19.TabIndex = 64
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2781:        'AxCWButton20
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2783:        Me.AxCWButton20.Location = New System.Drawing.Point(1550, 682)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2784:        Me.AxCWButton20.Name = "AxCWButton20"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2785:        Me.AxCWButton20.OcxState = CType(resources.GetObject("AxCWButton20.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2786:        Me.AxCWButton20.Size = New System.Drawing.Size(352, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2787:        Me.AxCWButton20.TabIndex = 63
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2813:        'ascButtonTestSearch
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2815:        Me.ascButtonTestSearch.Location = New System.Drawing.Point(847, 13)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2816:        Me.ascButtonTestSearch.Name = "ascButtonTestSearch"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2817:        Me.ascButtonTestSearch.OcxState = CType(resources.GetObject("ascButtonTestSearch.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2818:        Me.ascButtonTestSearch.Size = New System.Drawing.Size(161, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2819:        Me.ascButtonTestSearch.TabIndex = 795
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2827:        Me.Controls.Add(Me.ascButtonTestSearch)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2847:        Me.Controls.Add(Me.AxCWButton22)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2848:        Me.Controls.Add(Me.AxCWButton23)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2849:        Me.Controls.Add(Me.AxCWButton24)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2850:        Me.Controls.Add(Me.AxCWButton26)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2851:        Me.Controls.Add(Me.AxCWButton27)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2855:        Me.Controls.Add(Me.AxCWButton42)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2856:        Me.Controls.Add(Me.AxCWButton14)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2857:        Me.Controls.Add(Me.ascButtonTest)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2863:        Me.Controls.Add(Me.AxCWButton62)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2867:        Me.Controls.Add(Me.AxCWButton66)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2868:        Me.Controls.Add(Me.AxCWButton44)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2869:        Me.Controls.Add(Me.AxCWButton45)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2870:        Me.Controls.Add(Me.AxCWButton46)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2871:        Me.Controls.Add(Me.AxCWButton47)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2875:        Me.Controls.Add(Me.AxCWButton51)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2879:        Me.Controls.Add(Me.AxCWButton58)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2880:        Me.Controls.Add(Me.AxCWButton7)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2881:        Me.Controls.Add(Me.AxCWButton11)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2882:        Me.Controls.Add(Me.AxCWButton15)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2883:        Me.Controls.Add(Me.AxCWButton21)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2887:        Me.Controls.Add(Me.AxCWButton38)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2891:        Me.Controls.Add(Me.AxCWButton43)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2892:        Me.Controls.Add(Me.AxCWButton34)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2893:        Me.Controls.Add(Me.AxCWButton33)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2894:        Me.Controls.Add(Me.AxCWButton32)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2895:        Me.Controls.Add(Me.AxCWButton31)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2907:        Me.Controls.Add(Me.AxCWButton13)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2914:        Me.Controls.Add(Me.AxCWButton1)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2915:        Me.Controls.Add(Me.AxCWButton12)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2919:        Me.Controls.Add(Me.AxCWButton25)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2923:        Me.Controls.Add(Me.AxCWButton29)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2924:        Me.Controls.Add(Me.AxCWButton4)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2925:        Me.Controls.Add(Me.acquisitionDataGrid)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2926:        Me.Controls.Add(Me.AxCWButton2)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2939:        Me.Controls.Add(Me.AxCWButton52)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2940:        Me.Controls.Add(Me.AxCWButton54)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2941:        Me.Controls.Add(Me.AxCWButton57)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2946:        Me.Controls.Add(Me.ascButtonExit)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2949:        Me.Controls.Add(Me.AxCWButton41)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2950:        Me.Controls.Add(Me.AxCWButton19)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2951:        Me.Controls.Add(Me.AxCWButton20)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2965:        CType(Me.acquisitionDataGrid, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2992:        CType(Me.AxCWButton22, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2993:        CType(Me.AxCWButton23, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2994:        CType(Me.AxCWButton24, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2995:        CType(Me.AxCWButton26, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:2996:        CType(Me.AxCWButton27, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3000:        CType(Me.AxCWButton42, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3001:        CType(Me.AxCWButton14, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3002:        CType(Me.ascButtonTest, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3007:        CType(Me.AxCWButton62, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3011:        CType(Me.AxCWButton66, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3012:        CType(Me.AxCWButton44, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3013:        CType(Me.AxCWButton45, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3014:        CType(Me.AxCWButton46, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3015:        CType(Me.AxCWButton47, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3019:        CType(Me.AxCWButton51, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3023:        CType(Me.AxCWButton58, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3024:        CType(Me.AxCWButton7, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3025:        CType(Me.AxCWButton11, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3026:        CType(Me.AxCWButton15, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3027:        CType(Me.AxCWButton21, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3031:        CType(Me.AxCWButton38, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3035:        CType(Me.AxCWButton43, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3036:        CType(Me.AxCWButton34, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3037:        CType(Me.AxCWButton33, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3038:        CType(Me.AxCWButton32, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3039:        CType(Me.AxCWButton31, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3051:        CType(Me.AxCWButton13, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3058:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3059:        CType(Me.AxCWButton12, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3063:        CType(Me.AxCWButton25, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3067:        CType(Me.AxCWButton29, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3068:        CType(Me.AxCWButton4, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3069:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3077:        CType(Me.AxCWButton52, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3078:        CType(Me.AxCWButton54, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3079:        CType(Me.AxCWButton57, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3082:        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3084:        CType(Me.AxCWButton41, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3085:        CType(Me.AxCWButton19, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3086:        CType(Me.AxCWButton20, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3090:        CType(Me.ascButtonTestSearch, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3098:    Friend WithEvents axcButtonPart As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3099:    Friend WithEvents axcButtonSEt As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3100:    Friend WithEvents axcButtonSearch As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3101:    Friend WithEvents AxCWButton19 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3102:    Friend WithEvents AxCWButton20 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3103:    Friend WithEvents AxCWButton41 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3105:    Friend WithEvents AxcButtonCountReset As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3106:    Friend WithEvents ascButtonExit As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3107:    Friend WithEvents axcButtonSIgnal As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3109:    Friend WithEvents LedScanner As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3111:    Friend WithEvents LedDIO As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3113:    Friend WithEvents LedPrinter As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3115:    Friend WithEvents LedDAQ As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3117:    Friend WithEvents LedSUpply As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3135:    Friend WithEvents acquisitionDataGrid As DataGrid
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3139:    Friend WithEvents LedDIO2 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3142:    Friend WithEvents ascButtonTest As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3143:    Friend WithEvents lbCellType As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3202:    Friend WithEvents AxCWButton57 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3203:    Friend WithEvents AxCWButton54 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3204:    Friend WithEvents AxCWButton52 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3205:    Friend WithEvents src1Amp1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3206:    Friend WithEvents src1Amp2 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3207:    Friend WithEvents src1Amp3 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3208:    Friend WithEvents AxCWButton2 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3209:    Friend WithEvents AxCWButton4 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3210:    Friend WithEvents AxCWButton29 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3211:    Friend WithEvents src2FlowSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3212:    Friend WithEvents src2Flow As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3213:    Friend WithEvents src2FlowDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3214:    Friend WithEvents AxCWButton25 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3215:    Friend WithEvents src2NoiseSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3216:    Friend WithEvents src2Noise As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3217:    Friend WithEvents src2NoiseDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3218:    Friend WithEvents AxCWButton12 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3219:    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3220:    Friend WithEvents _1st_Lb1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3221:    Friend WithEvents _1st_Lb2 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3222:    Friend WithEvents _1st_Lb3 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3223:    Friend WithEvents _1st_Lb4 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3224:    Friend WithEvents _1st_Lb5 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3225:    Friend WithEvents _1st_Lb6 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3226:    Friend WithEvents AxCWButton13 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3227:    Friend WithEvents src1Amp4 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3228:    Friend WithEvents src1Amp5 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3229:    Friend WithEvents src1Amp6 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3230:    Friend WithEvents src1AmpDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3231:    Friend WithEvents src1Noise1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3232:    Friend WithEvents src1Noise2 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3233:    Friend WithEvents src1Noise3 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3234:    Friend WithEvents src1Noise4 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3235:    Friend WithEvents src1Noise5 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3236:    Friend WithEvents src1Noise6 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3237:    Friend WithEvents src1NoiseDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3238:    Friend WithEvents AxCWButton31 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3239:    Friend WithEvents AxCWButton32 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3240:    Friend WithEvents AxCWButton33 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3241:    Friend WithEvents AxCWButton34 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3242:    Friend WithEvents AxCWButton43 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3243:    Friend WithEvents src3FlowSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3244:    Friend WithEvents src3Flow As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3245:    Friend WithEvents src3FlowDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3246:    Friend WithEvents AxCWButton38 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3247:    Friend WithEvents src3AmpSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3248:    Friend WithEvents src3Amp As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3249:    Friend WithEvents src3AmpDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3250:    Friend WithEvents AxCWButton21 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3251:    Friend WithEvents AxCWButton15 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3252:    Friend WithEvents AxCWButton11 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3253:    Friend WithEvents AxCWButton7 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3254:    Friend WithEvents AxCWButton58 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3255:    Friend WithEvents src4FlowSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3256:    Friend WithEvents src4Flow As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3257:    Friend WithEvents src4FlowDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3258:    Friend WithEvents AxCWButton51 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3259:    Friend WithEvents src4AmpSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3260:    Friend WithEvents src4Amp As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3261:    Friend WithEvents src4AmpDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3262:    Friend WithEvents AxCWButton47 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3263:    Friend WithEvents AxCWButton46 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3264:    Friend WithEvents AxCWButton45 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3265:    Friend WithEvents AxCWButton44 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3266:    Friend WithEvents AxCWButton66 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3267:    Friend WithEvents src3NoiseSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3268:    Friend WithEvents src3Noise As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3269:    Friend WithEvents src3NoiseDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3270:    Friend WithEvents AxCWButton62 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3271:    Friend WithEvents src4NoiseSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3272:    Friend WithEvents src4Noise As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3273:    Friend WithEvents src4NoiseDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3274:    Friend WithEvents AxCWButton14 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3275:    Friend WithEvents AxCWButton42 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3276:    Friend WithEvents src5FlowSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3277:    Friend WithEvents src5Flow As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3278:    Friend WithEvents src5FlowDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3279:    Friend WithEvents AxCWButton27 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3280:    Friend WithEvents AxCWButton26 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3281:    Friend WithEvents AxCWButton24 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3282:    Friend WithEvents AxCWButton23 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3283:    Friend WithEvents AxCWButton22 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3284:    Friend WithEvents src5NoiseSpec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3285:    Friend WithEvents src5Noise As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3286:    Friend WithEvents src5NoiseDec As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmMain.Designer.vb:3340:    Friend WithEvents ascButtonTestSearch As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.vb:127:    Private Sub ascButtonTest_ClickEvent(sender As Object, e As EventArgs) Handles ascButtonTest.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.vb:136:    Private Sub ascButtonExit_ClickEvent(sender As Object, e As EventArgs) Handles ascButtonExit.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:34:        Me.ascButtonTest = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:35:        Me.ascButtonExit = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:38:        CType(Me.ascButtonTest, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:39:        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:100:        'ascButtonTest
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:102:        Me.ascButtonTest.Location = New System.Drawing.Point(701, 272)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:103:        Me.ascButtonTest.Name = "ascButtonTest"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:104:        Me.ascButtonTest.OcxState = CType(resources.GetObject("ascButtonTest.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:105:        Me.ascButtonTest.Size = New System.Drawing.Size(213, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:106:        Me.ascButtonTest.TabIndex = 760
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:108:        'ascButtonExit
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:110:        Me.ascButtonExit.Location = New System.Drawing.Point(701, 334)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:111:        Me.ascButtonExit.Name = "ascButtonExit"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:112:        Me.ascButtonExit.OcxState = CType(resources.GetObject("ascButtonExit.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:113:        Me.ascButtonExit.Size = New System.Drawing.Size(213, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:114:        Me.ascButtonExit.TabIndex = 759
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:125:        Me.Controls.Add(Me.ascButtonTest)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:126:        Me.Controls.Add(Me.ascButtonExit)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:133:        CType(Me.ascButtonTest, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:134:        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:142:    Friend WithEvents ascButtonTest As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmTest.Designer.vb:143:    Friend WithEvents ascButtonExit As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.vb:62:    Private Sub AxCWButton1_ClickEvent(ByVal sender As Object, ByVal e As System.EventArgs) Handles AxCWButton1.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.vb:118:    Private Sub ascButtonExit_ClickEvent(ByVal sender As Object, ByVal e As System.EventArgs) Handles ascButtonExit.ClickEvent
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:414:        Me.axcButtonSAve = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:415:        Me.axcButtonClose = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:418:        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:419:        Me.AxCWButton2 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:429:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:430:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5224:        'AxCWButton1
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5226:        Me.AxCWButton1.Location = New System.Drawing.Point(235, 786)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5227:        Me.AxCWButton1.Name = "AxCWButton1"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5228:        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5229:        Me.AxCWButton1.Size = New System.Drawing.Size(69, 35)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5230:        Me.AxCWButton1.TabIndex = 155
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5232:        'AxCWButton2
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5234:        Me.AxCWButton2.Location = New System.Drawing.Point(235, 827)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5235:        Me.AxCWButton2.Name = "AxCWButton2"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5236:        Me.AxCWButton2.OcxState = CType(resources.GetObject("AxCWButton2.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5237:        Me.AxCWButton2.Size = New System.Drawing.Size(69, 35)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5238:        Me.AxCWButton2.TabIndex = 156
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5279:        Me.Controls.Add(Me.AxCWButton2)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5280:        Me.Controls.Add(Me.AxCWButton1)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5302:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5303:        CType(Me.AxCWButton2, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5695:    Friend WithEvents axcButtonSAve As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5696:    Friend WithEvents axcButtonClose As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5699:    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSIgnal.Designer.vb:5700:    Friend WithEvents AxCWButton2 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:95:        Me.AxCWButton1 = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:96:        Me.ascButtonExit = New AxCWUIControlsLib.AxCWButton()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:142:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:143:        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).BeginInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:900:        'AxCWButton1
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:902:        Me.AxCWButton1.Location = New System.Drawing.Point(1441, 352)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:903:        Me.AxCWButton1.Name = "AxCWButton1"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:904:        Me.AxCWButton1.OcxState = CType(resources.GetObject("AxCWButton1.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:905:        Me.AxCWButton1.Size = New System.Drawing.Size(116, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:906:        Me.AxCWButton1.TabIndex = 148
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:908:        'ascButtonExit
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:910:        Me.ascButtonExit.Location = New System.Drawing.Point(1441, 407)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:911:        Me.ascButtonExit.Name = "ascButtonExit"
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:912:        Me.ascButtonExit.OcxState = CType(resources.GetObject("ascButtonExit.OcxState"), System.Windows.Forms.AxHost.State)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:913:        Me.ascButtonExit.Size = New System.Drawing.Size(116, 49)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:914:        Me.ascButtonExit.TabIndex = 147
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:1102:        Me.Controls.Add(Me.AxCWButton1)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:1103:        Me.Controls.Add(Me.ascButtonExit)
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:1145:        CType(Me.AxCWButton1, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:1146:        CType(Me.ascButtonExit, System.ComponentModel.ISupportInitialize).EndInit()
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:1165:    Friend WithEvents AxCWButton1 As AxCWUIControlsLib.AxCWButton
+C:\Users\Administrator\Desktop\SHINJIN\NoiseTest1\FrmSet.Designer.vb:1166:    Friend WithEvents ascButtonExit As AxCWUIControlsLib.AxCWButton

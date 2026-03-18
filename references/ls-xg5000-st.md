@@ -197,7 +197,33 @@ g_FB_Rst(REQ := bRstReq, BASE := 0, SLOT := 9, AXIS := 0,
 - **APM_EMG** — does NOT exist in standard library.
 - **APM_PRS** — does NOT exist in standard library.
 
-## 7. Direct Variable Addressing
+## 7. Word-Level I/O Copy (Performance Optimization)
+
+Bit-by-bit I/O mapping (320 lines) is slow. Use word-level direct variables instead:
+
+```st
+(* SLOW: 320 bit assignments, needs 320 VAR_EXTERNAL *)
+%MW100.0 := _00_IN00;
+%MW100.1 := _00_IN01;
+...
+
+(* FAST: 20 word assignments, NO VAR_EXTERNAL needed *)
+%MW100 := %IW0.0.0;   (* Slot0 IN00~15, 1 word copy *)
+%MW101 := %IW0.0.1;   (* Slot0 IN16~31 *)
+%QW0.5.0 := %MW202;   (* MW → Slot5 OUT00~15 *)
+```
+
+### Word-Level I/O Direct Variables
+| Format | Example | Description |
+|--------|---------|-------------|
+| %IW b.s.n | %IW0.0.0 | Input word: base.slot.word_index (16-bit) |
+| %QW b.s.n | %QW0.5.0 | Output word: base.slot.word_index (16-bit) |
+
+- Word index 0 = bits 0~15, word index 1 = bits 16~31
+- %IW/%QW are direct variables — no declaration needed, no VAR_EXTERNAL
+- 320 bit ops → 20 word ops = significant scan time reduction
+
+## 8. Direct Variable Addressing
 
 ### M Area (Internal Memory)
 | Format | Example | Description |
@@ -224,7 +250,7 @@ Auto-generated names: `_00_IN00`, `_05_OUT12` — no declaration needed.
 | %UW0.9.1 | | JOG control register |
 | %UW0.9.2~5 | | Position/velocity readback |
 
-## 8. Control Statements
+## 9. Control Statements
 
 ```st
 IF cond THEN ... ELSIF cond THEN ... ELSE ... END_IF;
@@ -241,7 +267,7 @@ EXIT;    // breaks innermost loop only
 - Recursive function calls
 - Operators as function names (OR, XOR, AND, MOD, NOT)
 
-## 9. XG5000 Variable CSV Rules
+## 10. XG5000 Variable CSV Rules
 
 ### Encoding: EUC-KR (CP949) — NOT UTF-8
 XG5000 cannot read UTF-8 CSV files. Claude's Write tool outputs UTF-8 → rejected.
@@ -276,7 +302,7 @@ XG5000 exports 12 columns (includes `모션` before `설명문`). **11-column CS
 - Initial values: leave empty (not "0" or "FALSE")
 - 설명문 (description): leave empty
 
-## 10. Identifier Rules
+## 11. Identifier Rules
 
 - Case-insensitive (internally all UPPERCASE)
 - Korean characters allowed
@@ -284,7 +310,7 @@ XG5000 exports 12 columns (includes `모션` before `설명문`). **11-column CS
 - No spaces
 - **Reserved prefixes**: M, D, T, K are direct address prefixes — prefix variable names with underscore (_M, _D, _T, _K)
 
-## 11. Edge Detection (No R_TRIG in ST)
+## 12. Edge Detection (No R_TRIG in ST)
 
 R_TRIG FB works in ST but manual edge detection is simpler:
 
@@ -299,7 +325,7 @@ IF bEdgeHome THEN
 END_IF;
 ```
 
-## 12. Common Compile Errors
+## 13. Common Compile Errors
 
 | Error | Cause | Fix |
 |-------|-------|-----|

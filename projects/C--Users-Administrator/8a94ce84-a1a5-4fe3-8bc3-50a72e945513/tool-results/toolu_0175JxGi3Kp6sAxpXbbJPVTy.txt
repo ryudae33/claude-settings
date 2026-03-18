@@ -1,0 +1,2163 @@
+     1→===== PAGE 76 =====
+     2→7.1.2. Screwdriver
+     3→General Properties
+     4→Minimum Typical
+     5→Maximum Unit
+     6→Tightening torque range
+     7→0.15
+     8→0.11
+     9→-
+    10→5
+    11→3.68
+    12→[Nm]
+    13→[lbft]
+    14→Tightening torque
+    15→accuracy*
+    16→If torque < 1.33 Nm/
+    17→0.98 lbft
+    18→-
+    19→0.04
+    20→0.03
+    21→-
+    22→[Nm]
+    23→[lbft]
+    24→If torque > 1.33 Nm/
+    25→0.98 lbft
+    26→-
+    27→3
+    28→-
+    29→[%]
+    30→Self-tapping torque
+    31→-
+    32→85% of the
+    33→tightening torque
+    34→3
+    35→[Nm]
+    36→Pre-mount accuracy error**
+    37→-
+    38→-
+    39→0.5
+    40→[mm]
+    41→Output speed
+    42→-
+    43→-
+    44→340
+    45→[RPM]
+    46→Screw length within full safety
+    47→-
+    48→-
+    49→35
+    50→1.37
+    51→[mm]
+    52→[inch]
+    53→Shank stroke (screw axis)
+    54→-
+    55→-
+    56→55
+    57→2.16
+    58→[mm]
+    59→[inch]
+    60→Shank preload (adjustable)
+    61→0
+    62→10
+    63→25
+    64→[N]
+    65→Protective feature force
+    66→35
+    67→40
+    68→45
+    69→[N]
+    70→Storage temperature
+    71→0
+    72→32
+    73→-
+    74→-
+    75→60
+    76→140
+    77→[°C]
+    78→[°F]
+    79→Motor (x2)
+    80→Integrated, electric BLDC
+    81→IP Classification
+    82→IP54
+    83→ESD Safe
+    84→Yes
+    85→Dimensions
+    86→308 x 86 x 114
+    87→12.1 x 3.4 x 4.5
+    88→[mm]
+    89→[inch]
+    90→HARDWARE SPECIFICATION
+    91→76
+    92→
+    93→
+    94→===== PAGE 77 =====
+    95→General Properties
+    96→Minimum Typical
+    97→Maximum Unit
+    98→Weight
+    99→2.5
+   100→5.51
+   101→[kg]
+   102→[lb]
+   103→* See Torque Accuracy Graph for further information.
+   104→** The pitch of the screw might contribute to the total pre-mount accuracy error.
+   105→Operating Conditions
+   106→Minimum
+   107→Typical
+   108→Maximum
+   109→Unit
+   110→Power supply
+   111→20
+   112→24
+   113→25
+   114→[V]
+   115→Current consumption
+   116→75
+   117→-
+   118→4500
+   119→[mA]
+   120→Operating temperature
+   121→5
+   122→41
+   123→-
+   124→-
+   125→50
+   126→122
+   127→[°C]
+   128→[°F]
+   129→Relative humidity (non-condensing)
+   130→0
+   131→-
+   132→95
+   133→[%]
+   134→Calculated operation life
+   135→30 000
+   136→-
+   137→-
+   138→[Hours]
+   139→Supported Screws
+   140→Supported Screws Metric
+   141→Material type
+   142→Magnetic
+   143→Screw length
+   144→Up to 50 mm (35 mm thread length)
+   145→Head type
+   146→Cylinder
+   147→Counter sunk
+   148→Button head
+   149→Appearance
+   150→Standard
+   151→HARDWARE SPECIFICATION
+   152→77
+   153→
+   154→
+   155→===== PAGE 78 =====
+   156→Supported Screws Metric
+   157→Supported
+   158→Thread
+   159→Size
+   160→M1.6
+   161→N/A
+   162→N/A
+   163→N/A
+   164→N/A
+   165→M2
+   166→N/A
+   167→M2.5
+   168→N/A
+   169→M3
+   170→M4
+   171→M5
+   172→M6
+   173→Supported Screws US Standard
+   174→Material type
+   175→Magnetic
+   176→Screw length
+   177→Up to 1.96 inches (1.37 inches thread length)
+   178→Head type
+   179→Cylinder
+   180→Button head
+   181→Counter sunk
+   182→Appearance
+   183→Standard
+   184→Supported
+   185→Thread
+   186→Size
+   187→1#
+   188→N/A
+   189→N/A
+   190→N/A
+   191→N/A
+   192→2#
+   193→N/A
+   194→4#
+   195→6#
+   196→8#
+   197→10#
+   198→12#
+   199→N/A
+   200→N/A
+   201→N/A
+   202→1/4"
+   203→N/A
+   204→N/A
+   205→N/A
+   206→HARDWARE SPECIFICATION
+   207→78
+   208→
+   209→
+   210→===== PAGE 79 =====
+   211→Supported Self-tapping Screws for Aluminium 1/2
+   212→Material type
+   213→Magnetic
+   214→Screw length
+   215→Up to 50 mm (35 mm thread length)
+   216→Head type
+   217→Pan head
+   218→Flat round with
+   219→flange
+   220→Lens head
+   221→Appearance
+   222→Standard
+   223→DIN 7981 C/ ISO
+   224→7049
+   225→DIN 7981 F/ ISO
+   226→7049
+   227→WN 5251
+   228→DIN 7983 C
+   229→Thread size and Bit
+   230→holder/ Bit extender
+   231→Bit, screw carrier and screw fix needed
+   232→ST2.2 / 2.2 / KB22 /
+   233→K22
+   234→N/A
+   235→ST 2.9
+   236→N/A
+   237→3 / M3 / KB30 / K30
+   238→N/A
+   239→N/A
+   240→N/A
+   241→ST3.5.3 / 3.5 / KB35 /
+   242→K35
+   243→ST 3.9
+   244→N/A
+   245→N/A
+   246→N/A
+   247→4 / M4 / KB40 / K40
+   248→N/A
+   249→N/A
+   250→N/A
+   251→ST 4.2
+   252→N/A
+   253→ST 4.8
+   254→N/A
+   255→N/A
+   256→50 / M5 / KB50 / K50
+   257→N/A
+   258→N/A
+   259→N/A
+   260→ST 5.5
+   261→N/A
+   262→N/A
+   263→N/A
+   264→ST 6.3
+   265→N/A
+   266→N/A
+   267→N/A
+   268→Supported Self-tapping Screws for Aluminium 2/2
+   269→Material type
+   270→Magnetic
+   271→Screw length
+   272→Up to 50 mm (35 mm thread length)
+   273→Head type
+   274→Counter sunk
+   275→HARDWARE SPECIFICATION
+   276→79
+   277→
+   278→
+   279→===== PAGE 80 =====
+   280→Supported Self-tapping Screws for Aluminium 2/2
+   281→Appearance
+   282→Standard
+   283→DIN 7500 M
+   284→DIN 14586 C
+   285→DIN 7982 C
+   286→Thread size and Bit holder/ Bit extender
+   287→Bit, screw carrier and screw fix needed
+   288→20 / M2 / K20
+   289→N/A
+   290→N/A
+   291→ST2.2 / 2.2 / KB22 / K22
+   292→N/A
+   293→2.5 / M2.5 / KB25 / K25
+   294→N/A
+   295→N/A
+   296→ST 2.9
+   297→N/A
+   298→3 / M3 / KB30 / K30
+   299→N/A
+   300→N/A
+   301→ST3.5.3 / 3.5 / KB35 / K35
+   302→N/A
+   303→ST 3.9
+   304→N/A
+   305→4 / M4 / KB40 / K40
+   306→N/A
+   307→N/A
+   308→ST 4.2
+   309→N/A
+   310→ST 4.8
+   311→N/A
+   312→50 / M5 / KB50 / K50
+   313→N/A
+   314→N/A
+   315→ST 5.5
+   316→N/A
+   317→60 / M6
+   318→N/A
+   319→N/A
+   320→ST 6.3
+   321→N/A
+   322→Supported Self-tapping Screws for Plastic
+   323→Material type
+   324→Magnetic
+   325→Screw length
+   326→Up to 50 mm (35 mm thread length)
+   327→Head type
+   328→Counter sunk
+   329→Flat round with flange
+   330→HARDWARE SPECIFICATION
+   331→80
+   332→
+   333→
+   334→===== PAGE 81 =====
+   335→Supported Self-tapping Screws for Plastic
+   336→Appearance
+   337→Standard
+   338→ISO 4042
+   339→WN 1411
+   340→WN 5451
+   341→Thread size and Bit holder/ Bit extender
+   342→Bit, screw carrier and screw fix needed
+   343→20 / M2 / K20
+   344→N/A
+   345→N/A
+   346→ST2.2 / 2.2 / KB22 / K22
+   347→N/A
+   348→2.5 / M2.5 / KB25 / K25
+   349→3 / M3 / KB30 / K30
+   350→ST3.5.3 / 3.5 / KB35 / K35
+   351→N/A
+   352→4 / M4 / KB40 / K40
+   353→50 / M5 / KB50 / K50
+   354→N/A
+   355→60 / M6
+   356→N/A
+   357→N/A
+   358→Guidance on Achievable Depth for Self-tapping Screws
+   359→How deep a screw can be self-tapped highly depends on the screw material and the
+   360→workpiece material. There are three examples below of what the maximum depth is for a
+   361→specific screw to go into a specific material.
+   362→Example of WN 1411 in POM
+   363→Screw Size
+   364→Depth
+   365→K18x10
+   366→10
+   367→K20x10
+   368→10
+   369→K22x16
+   370→16
+   371→K25x16
+   372→16
+   373→K30x20
+   374→20
+   375→K35x30
+   376→30
+   377→K40x30
+   378→30
+   379→HARDWARE SPECIFICATION
+   380→81
+   381→
+   382→
+   383→===== PAGE 82 =====
+   384→Screw Size
+   385→Depth
+   386→K50x30
+   387→30
+   388→Example of WN 1411 in NYLON PA Type 6
+   389→Screw Size
+   390→Depth
+   391→K18x10
+   392→10
+   393→K20x10
+   394→10
+   395→K22x16
+   396→16
+   397→K25x16
+   398→16
+   399→K30x20
+   400→20
+   401→K35x30
+   402→30
+   403→K40x30
+   404→30
+   405→K50x30
+   406→30
+   407→Example of DIN 7500 M in Aluminium EN AW-5754
+   408→Screw Size
+   409→Depth
+   410→M2x12
+   411→12
+   412→M2.5x20
+   413→20
+   414→M3x30
+   415→25
+   416→M4x30
+   417→30
+   418→M5x30
+   419→30
+   420→M6x30
+   421→11
+   422→There are three potential outcomes when testing a self-tapping screw:
+   423→1.
+   424→The screw goes all the way in and is tightened with the set target torque. This is
+   425→successful operation.
+   426→2. The screw breaks while screwing in and the Screwdriver returns a result code / runtime
+   427→error: 10 - “Torque dropped unexpectedly”. This means that the screw cannot handle such
+   428→high torque on a material that hard.
+   429→3. The Screwdriver stops halfway through and returns a result code / runtime error: 4 -
+   430→“Torque exceeded prematurely”. This means that a higher torque is needed to go through
+   431→that material with that screw. A solution could be to set a higher tightening torque.
+   432→HARDWARE SPECIFICATION
+   433→82
+   434→
+   435→
+   436→===== PAGE 83 =====
+   437→For a successful tapping, ensure that the hole is made according to the screw manufacturer
+   438→specifications.
+   439→Torque accuracy Metric
+   440→Torque accuracy US Standard
+   441→Screw-bit System
+   442→This system will highly increase the efficacy of the screws to be picked up, aligned with the
+   443→bit, moved around with the Screwdriver and screwed in/out. Therefore, it is highly
+   444→recommended to set up the Screw-bit System correctly to keep a high success rate.
+   445→Example of the Screw-bit System for an ISO 14579, M2 screw.
+   446→HARDWARE SPECIFICATION
+   447→83
+   448→
+   449→
+   450→===== PAGE 84 =====
+   451→1 - Screw
+   452→2 - Screw fix
+   453→3 - Screw carrier
+   454→4 - Bit
+   455→5 - Bit holder
+   456→The following sections explain the different components of the Screw-bit System and how to
+   457→set it up correctly.
+   458→Screws
+   459→The first step is to know what type of screw is going to be used. The screw type will define
+   460→what type of screw fix (in any), screw carrier, bit, and bit holder shall be used.
+   461→NOTE:
+   462→Use a chamfer for better reliability when making the screw hole.
+   463→The recommended screw types for the Screwdriver are the ones that have the properties
+   464→mentioned previously in the Supported Screws tables.
+   465→Screw Fix and Screw Carrier
+   466→Select the right screw fix and screw carrier depending on the screw type and the size to
+   467→maximize the efficacy of the Screw-bit System based on the table in section:
+   468→•
+   469→Metric Screws
+   470→•
+   471→US Standard Screws
+   472→•
+   473→Self-tapping Screws for Aluminium
+   474→•
+   475→Self-tapping Screws for Plastic
+   476→HARDWARE SPECIFICATION
+   477→84
+   478→
+   479→
+   480→===== PAGE 85 =====
+   481→The screw fixes are needed for the DIN 912, ISO 4762, ISO 14579, ISO 14580, DIN 7981C / ISO
+   482→7049, DIN 7981F / ISO 7049, WN 5251, WN 1411, WN 5451 and ASME B18.3 HEX Cylinder
+   483→screw types. The screw fixes have signifiers to show what size of screw they support.
+   484→Screw fixes for Metric - DIN 912, ISO 4762, ISO 14579, ISO 14580, DIN 7981C / ISO 7049, DIN
+   485→7981F / ISO 7049, WN 5251, WN 1411, WN 5451
+   486→M1.6
+   487→M2
+   488→M2.5
+   489→M3
+   490→M4
+   491→M5
+   492→M6
+   493→Screw fixes for US Standard - ASME B18.3 HEX Cylinder, DIN 7981C / ISO 7049, DIN 7981F /
+   494→ISO 7049, WN 5251, WN 5451
+   495→1#
+   496→2#
+   497→4#
+   498→6#
+   499→8#
+   500→10#
+   501→1/4"
+   502→The screw carriers also have signifiers to help identifying what screw type and size they can
+   503→be used with.
+   504→Screw thread size
+   505→Screw type illustration
+   506→Bits
+   507→Select the right bit depending on the screw type and size to maximize the efficacy of the
+   508→Screw-bit System based on the table in section:
+   509→•
+   510→Metric Screws
+   511→•
+   512→US Standard Screws
+   513→•
+   514→Self-tapping Screws for Aluminium
+   515→•
+   516→Self-tapping Screws for Plastic
+   517→The bits have signifiers to help identifying what bit type and size they are.
+   518→HARDWARE SPECIFICATION
+   519→85
+   520→
+   521→
+   522→===== PAGE 86 =====
+   523→Screw type standard
+   524→Shows bit size and type
+   525→Din 912 / ISO 4762
+   526→ASME B18.3 HEX Cylinder
+   527→ISO 14579
+   528→ISO 14580
+   529→ISO 14581
+   530→DIN 7500 M
+   531→DIN 14586 C
+   532→WN 5251
+   533→ISO 4042
+   534→WN 5451
+   535→ASME B18.6.3 Torx Button head
+   536→ASME B18.6.3 Torx Counter sunk
+   537→DIN 7985A
+   538→DIN 7981C / ISO 7049
+   539→DIN 7981F / ISO 7049
+   540→DIN 7982 C
+   541→DIN 7983 C
+   542→WN 1411
+   543→ASME B18.6.3 Cross recessed Button head
+   544→Supported bit shank properties:
+   545→•
+   546→Type 1/4" HEX
+   547→•
+   548→Length 25 mm
+   549→NOTE:
+   550→Bits longer than 25 mm could be used. However, the screw carrier and the
+   551→screw fix might not hold the screw properly in place.
+   552→Bit Holder
+   553→Select the right bit holder depending on the screw type and size to maximize the efficacy of
+   554→the Screw-bit System based on the table in section:
+   555→•
+   556→Metric Screws
+   557→•
+   558→US Standard Screws
+   559→•
+   560→Self-tapping Screws for Aluminium
+   561→•
+   562→Self-tapping Screws for Plastic
+   563→The bit holder generates a magnetic force that will keep the screw attached and aligned to
+   564→the bit.
+   565→There are two types of bit holders:
+   566→HARDWARE SPECIFICATION
+   567→86
+   568→
+   569→
+   570→===== PAGE 87 =====
+   571→•
+   572→Bit Holder A: Generates a higher magnetic force. It is commonly used for the bigger and
+   573→heavier screws.
+   574→•
+   575→Bit Holder B: Generates a lower magnetic force. It is commonly used for the smaller and
+   576→lighter screws.
+   577→WARNING:
+   578→If Bit Holder A is used for smaller and lighter screws instead of Bit Holder B, the
+   579→screws can jump from the Screw Feeder to the Screwdriver because of the
+   580→higher magnetic force.
+   581→Bit Extenders 50 and 100 mm
+   582→The bit extenders are a long version of the previously described bit holders. Bit extenders are
+   583→useful to reach narrow spaces.
+   584→The bit extenders have a lock nut to tighten against the screw carrier to ensure that the screw
+   585→carrier does not move out of position over time.
+   586→When the bit extenders are mounted on the Screwdriver, the maximum total radial runout can
+   587→be up to 0.5 mm (measured below the thread as shown in the following picture).
+   588→The bit extenders need to be purchased separately by contacting your vendor where the
+   589→Screwdriver was purchased.
+   590→•
+   591→Bit extender type A 50 mm - PN 109301
+   592→•
+   593→Bit extender type B 50 mm - PN 109289
+   594→•
+   595→Bit extender type A 100 mm - PN 109290
+   596→•
+   597→Bit extender type B 100 mm - PN 109298
+   598→For more information on the mechanical dimensions, go to the 7.2.2.1. Mechanical Drawings
+   599→section.
+   600→HARDWARE SPECIFICATION
+   601→87
+   602→
+   603→
+   604→===== PAGE 88 =====
+   605→Set up the Screw-bit System
+   606→1.
+   607→Place the bit into the bit holder.
+   608→2. Place the screw carrier on the bit holder.
+   609→3. All screw carriers must be adjusted so that the screw head sits stable on the screw carrier
+   610→avoiding a gap in between. This needs to be done to ensure high performance of the
+   611→Screw-bit System.
+   612→See the pictures below as reference.
+   613→Appearance
+   614→Adjustment method
+   615→HARDWARE SPECIFICATION
+   616→88
+   617→
+   618→
+   619→===== PAGE 89 =====
+   620→Appearance
+   621→Adjustment method
+   622→Din 912 / ISO
+   623→4762 /
+   624→ISO 14579 /
+   625→ISO 14580 /
+   626→ASME B18.3
+   627→Hex Cylinder
+   628→ISO 14581 /
+   629→ASME
+   630→B18.6 HEX
+   631→Counter
+   632→sunk /
+   633→ASME
+   634→B18.6.3
+   635→Torx
+   636→Counter
+   637→sunk
+   638→DIN 7985A /
+   639→ASME B18.6.3
+   640→Cross
+   641→recessed
+   642→Button head /
+   643→ASME B18.6.3
+   644→Torx Button
+   645→head
+   646→4. When this is achieved, remove the screw and push in the screw fix (only Din 912, ISO
+   647→4762, ISO 14579, ISO 14580 and ASME B18.3 HEX Cylinder screw types).
+   648→The final setup of the Screw-bit System with the screw in place should look like in the pictures
+   649→below.
+   650→HARDWARE SPECIFICATION
+   651→89
+   652→
+   653→
+   654→===== PAGE 90 =====
+   655→Screw
+   656→standard
+   657→Din 912 /
+   658→ISO 4762 /
+   659→ISO 14579 /
+   660→ISO 14580 /
+   661→ASME
+   662→B18.3 Hex
+   663→Cylinder
+   664→ISO 14581 /
+   665→ASME
+   666→B18.6 HEX
+   667→Counter
+   668→sunk /
+   669→ASME
+   670→B18.6.3
+   671→Torx
+   672→Counter
+   673→sunk
+   674→DIN 7985A /
+   675→ASME
+   676→B18.6.3
+   677→Cross
+   678→recessed
+   679→Button
+   680→head /
+   681→ASME
+   682→B18.6.3 Torx
+   683→Button head
+   684→Screw-bit
+   685→System
+   686→appearance
+   687→Attaching the Screw-bit System to the Screwdriver
+   688→To attach the Screw-bit System to the Screwdriver, follow the instructions below.
+   689→1.
+   690→Move the shank to the highest possible
+   691→value by using the user interface in the
+   692→robot or in the Web Client.
+   693→2. Detach the Screwdriver from the Quick
+   694→Changer.
+   695→HARDWARE SPECIFICATION
+   696→90
+   697→
+   698→
+   699→===== PAGE 91 =====
+   700→3. Remove the lid.
+   701→4. Place the hex shape of the bit holder inside
+   702→of the end of the Screwdriver's shank. The
+   703→system will be attached to the Screwdriver
+   704→by a magnetic force.
+   705→5. Ensure that the bit holder is perfectly
+   706→attached by gently shaking it to make sure
+   707→it is not loose.
+   708→Detaching the Screw-bit System from the Screwdriver
+   709→To remove the Screw-bit System from the Screwdriver's shank, follow the instructions below.
+   710→1.
+   711→Move the shank all the way out to the
+   712→highest possible value by operating the
+   713→user interface in the robot or in the Web
+   714→Client.
+   715→2. Use the provided key to grab the bit holder.
+   716→While holding the key, move the shank
+   717→inwards (to a lower value) by operating the
+   718→user interface in the robot or in the Web
+   719→Client.
+   720→Overview of the Items Needed Depending on the Screw Type and Size
+   721→In the following tables, an overview is shown of the items needed depending on the screw
+   722→type and size. Based on what screw type and size you have, search for the screw standard
+   723→and the thread size and find what kind of bit, screw fix, screw carrier and bit holder you will
+   724→need.
+   725→HARDWARE SPECIFICATION
+   726→91
+   727→
+   728→
+   729→===== PAGE 92 =====
+   730→For more information, see the example.
+   731→Items Needed Depending on Screw Type and Size for Metric Screws
+   732→Items Needed Depending on Screw Type and Size for Metric Screws
+   733→Head type
+   734→Cylinder
+   735→Counter sunk
+   736→Button head
+   737→Screw
+   738→standard
+   739→Thread Size
+   740→Bit holder, bit, screw carrier and screw fix needed
+   741→M1.6
+   742→N/A
+   743→N/A
+   744→N/A
+   745→N/A
+   746→M2
+   747→N/A
+   748→HARDWARE SPECIFICATION
+   749→92
+   750→
+   751→
+   752→===== PAGE 93 =====
+   753→Items Needed Depending on Screw Type and Size for Metric Screws
+   754→M2.5
+   755→N/A
+   756→M3
+   757→M4
+   758→M5
+   759→M6
+   760→Items Needed Depending on Screw Type and Size for US Standard Screws
+   761→Items Needed Depending on Screw Type and Size for US Standard Screws
+   762→Head type
+   763→Cylinder
+   764→Button head
+   765→Counter sunk
+   766→Screw
+   767→standard
+   768→HEX
+   769→Cross recessed Torx
+   770→HEX
+   771→Torx
+   772→Thread Size
+   773→Bit holder, bit, screw carrier and screw fix needed
+   774→HARDWARE SPECIFICATION
+   775→93
+   776→
+   777→
+   778→===== PAGE 94 =====
+   779→Items Needed Depending on Screw Type and Size for US Standard Screws
+   780→1# 
+   781→N/A
+   782→N/A
+   783→N/A
+   784→N/A
+   785→2# 
+   786→N/A
+   787→4# 
+   788→6# 
+   789→8# 
+   790→10# 
+   791→12# 
+   792→N/A
+   793→N/A
+   794→N/A
+   795→HARDWARE SPECIFICATION
+   796→94
+   797→
+   798→
+   799→===== PAGE 95 =====
+   800→Items Needed Depending on Screw Type and Size for US Standard Screws
+   801→1/4" 
+   802→N/A
+   803→N/A
+   804→N/A
+   805→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   806→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   807→1/2
+   808→Head type
+   809→Pan head
+   810→Flat round with
+   811→flange
+   812→Lens head
+   813→Appearance
+   814→Standard
+   815→DIN 7981 C/ ISO
+   816→7049
+   817→DIN 7981 F/ ISO
+   818→7049
+   819→WN 5251
+   820→DIN 7983 C
+   821→Thread Size
+   822→Bit, screw carrier and screw fix needed
+   823→ST2.2 / 2.2 /
+   824→KB22 / K22
+   825→N/A
+   826→ST 2.9
+   827→N/A
+   828→HARDWARE SPECIFICATION
+   829→95
+   830→
+   831→
+   832→===== PAGE 96 =====
+   833→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   834→1/2
+   835→3 / M3 / KB30 /
+   836→K30
+   837→N/A
+   838→N/A
+   839→N/A
+   840→ST3.5.3 / 3.5 /
+   841→KB35 / K35
+   842→ST 3.9
+   843→N/A
+   844→N/A
+   845→N/A
+   846→4 / M4 / KB40 /
+   847→K40
+   848→N/A
+   849→N/A
+   850→N/A
+   851→ST 4.2
+   852→N/A
+   853→HARDWARE SPECIFICATION
+   854→96
+   855→
+   856→
+   857→===== PAGE 97 =====
+   858→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   859→1/2
+   860→ST 4.8
+   861→N/A
+   862→N/A
+   863→50 / M5 / KB50 /
+   864→K50
+   865→N/A
+   866→N/A
+   867→N/A
+   868→ST 5.5
+   869→N/A
+   870→N/A
+   871→N/A
+   872→ST 6.3
+   873→N/A
+   874→N/A
+   875→N/A
+   876→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   877→2/2
+   878→Head type
+   879→Counter sunk
+   880→Appearance
+   881→Standard
+   882→DIN 7500 M
+   883→DIN 14586 C
+   884→DIN 7982 C
+   885→HARDWARE SPECIFICATION
+   886→97
+   887→
+   888→
+   889→===== PAGE 98 =====
+   890→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   891→2/2
+   892→Thread Size
+   893→Bit, screw carrier and screw fix needed
+   894→20 / M2 / K20
+   895→N/A
+   896→N/A
+   897→ST2.2 / 2.2 / KB22 / K22
+   898→N/A
+   899→2.5 / M2.5 / KB25 / K25
+   900→N/A
+   901→N/A
+   902→ST 2.9
+   903→N/A
+   904→3 / M3 / KB30 / K30
+   905→N/A
+   906→N/A
+   907→ST3.5.3 / 3.5 / KB35 / K35
+   908→N/A
+   909→HARDWARE SPECIFICATION
+   910→98
+   911→
+   912→
+   913→===== PAGE 99 =====
+   914→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   915→2/2
+   916→ST 3.9
+   917→N/A
+   918→4 / M4 / KB40 / K40
+   919→N/A
+   920→N/A
+   921→ST 4.2
+   922→N/A
+   923→ST 4.8
+   924→N/A
+   925→50 / M5 / KB50 / K50
+   926→N/A
+   927→N/A
+   928→ST 5.5
+   929→N/A
+   930→HARDWARE SPECIFICATION
+   931→99
+   932→
+   933→
+   934→===== PAGE 100 =====
+   935→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+   936→2/2
+   937→60 / M6
+   938→N/A
+   939→N/A
+   940→ST 6.3
+   941→N/A
+   942→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+   943→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+   944→Head type
+   945→Counter sunk
+   946→Flat round with flange
+   947→Appearance
+   948→Standard
+   949→ISO 4042
+   950→WN 1411
+   951→WN 5451
+   952→Thread size and Bit holder/ Bit extender
+   953→Bit, screw carrier and screw fix needed
+   954→20 / M2 / K20
+   955→N/A
+   956→N/A
+   957→ST2.2 / 2.2 / KB22 / K22
+   958→N/A
+   959→HARDWARE SPECIFICATION
+   960→100
+   961→
+   962→
+   963→===== PAGE 101 =====
+   964→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+   965→2.5 / M2.5 / KB25 / K25
+   966→3 / M3 / KB30 / K30
+   967→ST3.5.3 / 3.5 / KB35 / K35
+   968→N/A
+   969→4 / M4 / KB40 / K40
+   970→50 / M5 / KB50 / K50
+   971→N/A
+   972→60 / M6
+   973→N/A
+   974→N/A
+   975→HARDWARE SPECIFICATION
+   976→101
+   977→
+   978→
+   979→===== PAGE 102 =====
+   980→Screwdriver Position to Execute Commands
+   981→To successfully execute the Screwdriver commands, it is fundamental to position the
+   982→Screwdriver correctly. This is achieved if the following two conditions are met:
+   983→1.
+   984→The Screw-bit System must be perfectly aligned to
+   985→the screw or thread.
+   986→2. The distance between the Screwdriver's bottom part
+   987→and the surface where the action takes place must
+   988→be within the range of 0-8 mm [0-0.31 inches].
+   989→To successfully execute the Screwdriver commands, it is fundamental to operate the
+   990→Screwdriver downwards or maximum sidewards. The Screwdriver should not be operated
+   991→upwards or with an angle higher than 90° orientate with respect to the ground, since this will
+   992→trigger the protective feature.
+   993→HARDWARE SPECIFICATION
+   994→102
+   995→
+   996→
+   997→===== PAGE 103 =====
+   998→LED - Device Status
+   999→The screwdriver has a LED that shows the device status.
+  1000→Color
+  1001→Device Status
+  1002→ No light
+  1003→Power missing
+  1004→ Steady green
+  1005→Ready to work - Idle - Static
+  1006→ Blinking green
+  1007→Initializing
+  1008→ Steady orange
+  1009→Busy – Moving/rotating shank
+  1010→ Blinking orange
+  1011→Operational malfunction
+  1012→ Steady red
+  1013→Not working – Hardware problem
+  1014→ Blinking red
+  1015→Safety – Emergency stop
+  1016→HARDWARE SPECIFICATION
+  1017→103
+  1018→
+  1019→
+  1020→===== PAGE 104 =====
+  1021→Torque Angle Curve and Torque Gradient
+  1022→The torque gradient shows how the torque is applied in the last phase of the Tightening
+  1023→screw command. This could be used as an indicator to detect if a Tightening command is
+  1024→performed correctly.
+  1025→NOTE:
+  1026→When using self-tapping screws, if the tapping torque is very close to the target
+  1027→torque, the torque gradient might provide an invalid value.
+  1028→For instance, the torque gradient could be different if:
+  1029→•
+  1030→The hole thread is not long enough
+  1031→•
+  1032→The hole thread is different from the screw thread
+  1033→•
+  1034→The hole thread is not clean (for instance by deburrs from CNC machining)
+  1035→•
+  1036→The friction between the screw thread and the hole thread is too low or too high
+  1037→•
+  1038→The friction between the screw head and the tighten part is too low or too high
+  1039→A torque gradient variable is made available to be checked in the robot program.
+  1040→The graph below shows a normal Torque/Angle curve. In this case has been made with an M4
+  1041→screw and 2.4 Nm as target torque.
+  1042→Torque angle curve Metric
+  1043→HARDWARE SPECIFICATION
+  1044→104
+  1045→
+  1046→
+  1047→===== PAGE 105 =====
+  1048→Torque angle curve US Standard
+  1049→Adjusting the Bellow back in Place
+  1050→NOTE:
+  1051→Initially, the bellow should not come out of place, but if it does, follow the
+  1052→instructions below to adjust it back in place.
+  1053→1.
+  1054→Remove the lid.
+  1055→2. Move the shank to the highest possible
+  1056→value by using the user interface in the
+  1057→robot or in the Web Client.
+  1058→HARDWARE SPECIFICATION
+  1059→105
+  1060→
+  1061→
+  1062→===== PAGE 106 =====
+  1063→3. Adjust the bellow back in place.
+  1064→4. Place the lid back on.
+  1065→7.1.3. Compute Box
+  1066→7.1.3.1. With 5A Wall Adapter (120W)
+  1067→Supplied Wall Adapter
+  1068→Minimum
+  1069→Typical
+  1070→Maximum
+  1071→Unit
+  1072→Input voltage (AC)
+  1073→100
+  1074→-
+  1075→240
+  1076→[V]
+  1077→Input current
+  1078→-
+  1079→-
+  1080→2
+  1081→[A]
+  1082→Output voltage
+  1083→-
+  1084→24
+  1085→-
+  1086→[V]
+  1087→Output current
+  1088→-
+  1089→5
+  1090→-
+  1091→[A]
+  1092→Compute Box Power input (24V connector)
+  1093→Minimum
+  1094→Typical
+  1095→Maximum
+  1096→Unit
+  1097→Supply voltage
+  1098→-
+  1099→24
+  1100→25
+  1101→[V]
+  1102→Supply current
+  1103→-
+  1104→5
+  1105→-
+  1106→[A]
+  1107→Compute Box Power output (Device connector)
+  1108→Minimum
+  1109→Typical
+  1110→Maximum
+  1111→Unit
+  1112→Output voltage
+  1113→-
+  1114→24
+  1115→25
+  1116→[V]
+  1117→Output current (CB HW v3.4)
+  1118→-
+  1119→5
+  1120→5.5*
+  1121→[A]
+  1122→Output current (CB HW v3.1)
+  1123→-
+  1124→4.5
+  1125→4.5*
+  1126→[A]
+  1127→* Peak currents.
+  1128→7.1.3.2. With 6.25A Wall Adapter (150W)
+  1129→Supplied Wall Adapter
+  1130→Minimum
+  1131→Typical
+  1132→Maximum
+  1133→Unit
+  1134→Input voltage (AC)
+  1135→100
+  1136→-
+  1137→240
+  1138→[V]
+  1139→Input current
+  1140→-
+  1141→-
+  1142→2.0
+  1143→[A]
+  1144→Output voltage
+  1145→-
+  1146→24
+  1147→-
+  1148→[V]
+  1149→Output current
+  1150→-
+  1151→6.25
+  1152→-
+  1153→[A]
+  1154→HARDWARE SPECIFICATION
+  1155→106
+  1156→
+  1157→
+  1158→===== PAGE 107 =====
+  1159→Compute Box Power input (24V connector)
+  1160→Minimum
+  1161→Typical
+  1162→Maximum
+  1163→Unit
+  1164→Supply voltage
+  1165→-
+  1166→24
+  1167→25
+  1168→[V]
+  1169→Supply current
+  1170→-
+  1171→6.25
+  1172→-
+  1173→[A]
+  1174→Compute Box Power output (Device connector)
+  1175→Minimum
+  1176→Typical
+  1177→Maximum
+  1178→Unit
+  1179→Output voltage
+  1180→-
+  1181→24
+  1182→25
+  1183→[V]
+  1184→Output current
+  1185→-
+  1186→4.5
+  1187→4.5*
+  1188→[A]
+  1189→* Peak currents
+  1190→7.1.3.3. Compute Box I/O interface
+  1191→Power Reference (24V, GND)
+  1192→Minimum
+  1193→Typical
+  1194→Maximum
+  1195→Unit
+  1196→Reference output voltage
+  1197→-
+  1198→24
+  1199→25
+  1200→[V]
+  1201→Reference output current
+  1202→-
+  1203→-
+  1204→100
+  1205→[mA]
+  1206→Output (DO1-DO8)
+  1207→Minimum
+  1208→Typical
+  1209→Maximum
+  1210→Unit
+  1211→Output current - altogether
+  1212→-
+  1213→-
+  1214→100
+  1215→[mA]
+  1216→Output resistance (active state)
+  1217→-
+  1218→24
+  1219→-
+  1220→[Ω]
+  1221→Input (DI1-DI8) as PNP
+  1222→Minimum
+  1223→Typical
+  1224→Maximum
+  1225→Unit
+  1226→Voltage level - TRUE
+  1227→18
+  1228→24
+  1229→30
+  1230→[V]
+  1231→Voltage level - FALSE
+  1232→-0.5
+  1233→0
+  1234→2.5
+  1235→[V]
+  1236→Input current
+  1237→-
+  1238→-
+  1239→6
+  1240→[mA]
+  1241→Input resistance
+  1242→-
+  1243→5
+  1244→-
+  1245→[kΩ]
+  1246→Input (DI1-DI8) as NPN
+  1247→Minimum
+  1248→Typical
+  1249→Maximum
+  1250→Unit
+  1251→Voltage level - TRUE
+  1252→-0.5
+  1253→0
+  1254→5
+  1255→[V]
+  1256→Voltage level - FALSE
+  1257→18
+  1258→24
+  1259→30
+  1260→[V]
+  1261→Input current
+  1262→-
+  1263→-
+  1264→6
+  1265→[mA]
+  1266→Input resistance
+  1267→-
+  1268→5
+  1269→-
+  1270→[kΩ]
+  1271→HARDWARE SPECIFICATION
+  1272→107
+  1273→
+  1274→
+  1275→===== PAGE 108 =====
+  1276→7.2. Mechanical Drawings
+  1277→7.2.1. Mountings
+  1278→7.2.1.1. Quick Changer - Robot Side
+  1279→* Distance from Robot flange interface to OnRobot tool.
+  1280→All dimensions are in mm and [inches].
+  1281→NOTE:
+  1282→The cable holder (on the left side) is only required with the long (5 meter)
+  1283→cable.
+  1284→HARDWARE SPECIFICATION
+  1285→108
+  1286→
+  1287→
+  1288→===== PAGE 109 =====
+  1289→7.2.2. Tools
+  1290→7.2.2.1. Screwdriver
+  1291→All dimensions are in mm and [inches].
+  1292→HARDWARE SPECIFICATION
+  1293→109
+  1294→
+  1295→
+  1296→===== PAGE 110 =====
+  1297→7.2.2.2. Compute Box
+  1298→Compute Box
+  1299→Clip-on Bracket (optional)
+  1300→All dimensions are in mm and [inches].
+  1301→7.2.3. Bit Extender
+  1302→CAUTION:
+  1303→When attached to the Screwdriver, always make sure that the Bit extender
+  1304→does not hit the table, workpiece or any heavy parts as it could damage the
+  1305→inner parts of the Screwdriver.
+  1306→HARDWARE SPECIFICATION
+  1307→110
+  1308→
+  1309→
+  1310→===== PAGE 111 =====
+  1311→All dimensions are in mm and [inches].
+  1312→7.3. TCP, CoG
+  1313→Use the TCP/CoG calculator to calculate the TCP and CoG values for your OnRobot product
+  1314→combination.
+  1315→The TCP/CoG calculator can be downloaded from www.onrobot.com/downloads.
+  1316→NOTE:
+  1317→For more information, see the 6.1.5. Web Client: TCP, CoG section.
+  1318→TCP, CoG, and weight parameters of the single devices (without any mounting/adapter
+  1319→and/or workpiece):
+  1320→HARDWARE SPECIFICATION
+  1321→111
+  1322→
+  1323→
+  1324→===== PAGE 112 =====
+  1325→* The TCP in Z is measured from the tool’s base point to the start of the workpiece, as shown
+  1326→in the image. Similarly, the CoG is measured from the same base point to the center of gravity,
+  1327→as indicated.
+  1328→7.3.1. Screwdriver
+  1329→Coordinate system
+  1330→TCP [mm]
+  1331→Center of Gravity [mm]
+  1332→Weight
+  1333→X=153
+  1334→Y=0
+  1335→Z=81
+  1336→cX=0
+  1337→cY=4
+  1338→cZ=50
+  1339→2.5 kg
+  1340→5.51 lb
+  1341→HARDWARE SPECIFICATION
+  1342→112
+  1343→
+  1344→
+  1345→===== PAGE 113 =====
+  1346→8. Maintenance
+  1347→WARNING:
+  1348→An overall inspection of OnRobot's end-of-arm tooling and accessories must be
+  1349→performed regularly and at least once every 6 months. This inspection must
+  1350→include but is not limited to check for defective material and clean gripping
+  1351→surfaces.
+  1352→Use original spare parts, and original service instructions for OnRobot's end-of-
+  1353→arm tooling, accessories and the robot. Failure to comply with this precaution
+  1354→can cause unexpected risks, resulting in severe injury.
+  1355→If you have questions regarding spare parts and repair, please visit our website
+  1356→www.onrobot.com to contact us.
+  1357→8.1. Screwdriver
+  1358→Screw Fix and Bit
+  1359→NOTE:
+  1360→The screw fixes and bits are wear and tear parts, therefore they must be
+  1361→inspected regularly.
+  1362→These parts must be inspected minimum once a week or after 60.000 cycles.
+  1363→If a screw fix is damaged due to misuse, it must be replaced.
+  1364→If the Pick Screw process is failing, it might be an indicator that the screw fix is worn or has
+  1365→been damaged.
+  1366→WARNING:
+  1367→The Screw-bit System should be visually inspected every time the robot is
+  1368→reset or once per week, depending on application and use.
+  1369→WARNING:
+  1370→Check the inside of the screw bit holder regularly for debris. Make sure that the
+  1371→magnetic interface is clear from metal shavings and dirt.
+  1372→WARNING:
+  1373→Always detach the Screwdriver from the Quick Changer to perform cleaning or
+  1374→maintenance.
+  1375→MAINTENANCE
+  1376→113
+  1377→
+  1378→
+  1379→===== PAGE 114 =====
+  1380→O-Ring Replacement
+  1381→NOTE:
+  1382→The O-Rigs are wear and tear parts, therefore they must be inspected regularly.
+  1383→This part must be inspected minimum once a month. To inspect the O-Ring,
+  1384→attach a bit holder to the shank and check if it is straight and kept in place.
+  1385→In case the O-Ring needs to be replaced, an O-Ring replacement kit or a set of O-Rings can
+  1386→be purchased. For purchasing, contact your vendor where the Screwdriver has been
+  1387→purchased.
+  1388→To replace the O-Ring, follow the instructions below.
+  1389→1.
+  1390→Move the shank to the highest possible
+  1391→value by using the user interface in the
+  1392→robot or in the Web Client.
+  1393→2. Detach the Screwdriver from the Quick
+  1394→Changer.
+  1395→3. Remove the lid.
+  1396→4. If needed, break or remove the O-Ring by
+  1397→pushing it down with the tool until it is out
+  1398→of place. Then pull the O-Ring out.
+  1399→5. Place the new O-Ring in the placement
+  1400→tool.
+  1401→6. Insert the placement tool at the end of the
+  1402→shank.
+  1403→MAINTENANCE
+  1404→114
+  1405→
+  1406→
+  1407→===== PAGE 115 =====
+  1408→7.
+  1409→Push the placement tool to place the O-
+  1410→Ring in the shank's slot.
+  1411→8. Attach a bit holder and gently shake it to
+  1412→make sure it is not loose.
+  1413→Calibration
+  1414→The Screwdriver has been calibrated at the factory to comply with the specifications stated in
+  1415→the technical sheet. A calibration report has been provided in the Screwdriver packaging.
+  1416→If used according to recommended guidelines and conditions and maintained correctly, the
+  1417→Screwdriver performs according to these specifications across its lifetime.
+  1418→In case an updated calibration report is required, contact the vendor from where the
+  1419→Screwdriver has been purchased.
+  1420→Spare Parts
+  1421→•
+  1422→Bit holder A - Spare part kit 1 - PN 104197 (1 unit)
+  1423→•
+  1424→Bit holder B - Spare part kit 2 - PN 104991 (1 unit)
+  1425→•
+  1426→Bit extender type A 50 mm - PN 109301
+  1427→•
+  1428→Bit extender type B 50 mm - PN 109289
+  1429→•
+  1430→Bit extender type A 100 mm - PN 109290
+  1431→•
+  1432→Bit extender type B 100 mm - PN 109298
+  1433→•
+  1434→O-Ring replacement kit - PN 109430
+  1435→•
+  1436→Detaching tool
+  1437→•
+  1438→Attaching tool
+  1439→•
+  1440→5x O-Rings
+  1441→•
+  1442→Replacement instructions
+  1443→•
+  1444→5x O-Ring - PN 109429
+  1445→The table below shows the Kit number and the Part Number of the spare part kits. These are
+  1446→composed of:
+  1447→•
+  1448→Screw carrier (1 unit)
+  1449→•
+  1450→Screw fixes (10 units and only for Din 912 / ISO 4762 / ASME B18.3 Hex Cylinder screws)
+  1451→•
+  1452→Bits (10 units)
+  1453→For example, the kit 3 - PN 105150 contains the following:
+  1454→•
+  1455→1x Screw carrier M1.6 for Din 912 / ISO 4762 screws
+  1456→•
+  1457→10x Screw fixes M1.6
+  1458→•
+  1459→10x H1.5 Bits
+  1460→MAINTENANCE
+  1461→115
+  1462→
+  1463→
+  1464→===== PAGE 116 =====
+  1465→Screw carrier, (screw fix) and bit spare part kits Metric
+  1466→Screw Standard
+  1467→Din 912 /
+  1468→ISO 4762
+  1469→ISO 14579
+  1470→ISO 14580
+  1471→ISO 14581
+  1472→DIN 7985A
+  1473→Thread Size
+  1474→Spare part kit number
+  1475→Part Number
+  1476→M1.6
+  1477→Kit 3
+  1478→PN 105150
+  1479→N/A
+  1480→N/A
+  1481→N/A
+  1482→N/A
+  1483→M2
+  1484→Kit 4
+  1485→PN 105151
+  1486→Kit 10
+  1487→PN 105157
+  1488→N/A
+  1489→Kit 16
+  1490→PN 105163
+  1491→Kit 22
+  1492→PN 105169
+  1493→M2.5
+  1494→Kit 5
+  1495→PN 105152
+  1496→Kit 11
+  1497→PN 105158
+  1498→N/A
+  1499→Kit 17
+  1500→PN 105164
+  1501→Kit 23
+  1502→PN 105170
+  1503→M3
+  1504→Kit 6
+  1505→PN 105153
+  1506→Kit 12
+  1507→PN 105159
+  1508→Kit 12
+  1509→PN 105159
+  1510→Kit 18
+  1511→PN 105165
+  1512→Kit 24
+  1513→PN 105171
+  1514→M4
+  1515→Kit 7
+  1516→PN 105154
+  1517→Kit 13
+  1518→PN 105160
+  1519→Kit 13
+  1520→PN 105160
+  1521→Kit 19
+  1522→PN 105166
+  1523→Kit 25
+  1524→PN 105172
+  1525→M5
+  1526→Kit 8
+  1527→PN 105155
+  1528→Kit 14
+  1529→PN 105161
+  1530→Kit 14
+  1531→PN 105161
+  1532→Kit 20
+  1533→PN 105167
+  1534→Kit 26
+  1535→PN 105173
+  1536→M6
+  1537→Kit 9
+  1538→PN 105156
+  1539→Kit 15
+  1540→PN 105162
+  1541→Kit 15
+  1542→PN 105162
+  1543→Kit 21
+  1544→PN 105168
+  1545→Kit 27
+  1546→PN 105174
+  1547→Screw carrier, (screw fix) and bit spare part kits US Standard
+  1548→Screw
+  1549→Standard
+  1550→ASME B18.3
+  1551→Hex Cylinder
+  1552→ASME B18.6.3
+  1553→Cross recessed
+  1554→Button head
+  1555→ASME B18.6.3
+  1556→Torx Button
+  1557→head
+  1558→ASME B18.3
+  1559→Hex Counter
+  1560→sunk
+  1561→ASME B18.6.3
+  1562→Torx Counter
+  1563→sunk
+  1564→Thread Size
+  1565→Spare part - Part Number
+  1566→1#
+  1567→PN 106310
+  1568→N/A
+  1569→N/A
+  1570→N/A
+  1571→N/A
+  1572→2#
+  1573→PN 106311
+  1574→PN 106324
+  1575→PN 106324
+  1576→N/A
+  1577→PN 106318
+  1578→4#
+  1579→PN 106313
+  1580→PN 106329
+  1581→PN 106329
+  1582→PN 106319
+  1583→PN 106319
+  1584→6#
+  1585→PN 106314
+  1586→PN 106330
+  1587→PN 106330
+  1588→PN 106320
+  1589→PN 106320
+  1590→8#
+  1591→PN 106315
+  1592→PN 106331
+  1593→PN 106331
+  1594→PN 106321
+  1595→PN 106321
+  1596→10#
+  1597→PN 106316
+  1598→PN 106333
+  1599→PN 106333
+  1600→PN 106322
+  1601→PN 106322
+  1602→12#
+  1603→N/A
+  1604→PN 106334
+  1605→PN 106334
+  1606→N/A
+  1607→N/A
+  1608→1/4"
+  1609→PN 106317
+  1610→N/A
+  1611→N/A
+  1612→PN 106323
+  1613→N/A
+  1614→MAINTENANCE
+  1615→116
+  1616→
+  1617→
+  1618→===== PAGE 117 =====
+  1619→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+  1620→1/2
+  1621→Standard
+  1622→DIN 7981 C/ ISO
+  1623→7049
+  1624→DIN 7981 F/ ISO
+  1625→7049
+  1626→WN 5251
+  1627→DIN 7983 C
+  1628→Thread Size
+  1629→Spare part - Part Number
+  1630→ST2.2 / 2.2 / KB22 /
+  1631→K22
+  1632→PN 109695
+  1633→PN 109695
+  1634→N/A
+  1635→PN 109695
+  1636→ST 2.9
+  1637→PN 109696
+  1638→PN 109696
+  1639→N/A
+  1640→PN 109696
+  1641→3 / M3 / KB30 / K30
+  1642→N/A
+  1643→N/A
+  1644→PN 109711
+  1645→N/A
+  1646→ST3.5.3 / 3.5 / KB35 /
+  1647→K35
+  1648→PN 109697
+  1649→PN 109697
+  1650→PN 109690 PN 109697
+  1651→ST 3.9
+  1652→N/A
+  1653→PN 109698
+  1654→N/A
+  1655→N/A
+  1656→4 / M4 / KB40 / K40
+  1657→N/A
+  1658→N/A
+  1659→PN 109712
+  1660→N/A
+  1661→ST 4.2
+  1662→PN 109699
+  1663→PN 109699
+  1664→N/A
+  1665→PN 105172
+  1666→ST 4.8
+  1667→PN 109700
+  1668→N/A
+  1669→N/A
+  1670→PN 106333
+  1671→50 / M5 / KB50 / K50
+  1672→N/A
+  1673→N/A
+  1674→PN 109686 N/A
+  1675→ST 5.5
+  1676→PN 106334
+  1677→N/A
+  1678→N/A
+  1679→N/A
+  1680→ST 6.3
+  1681→PN 105174
+  1682→N/A
+  1683→N/A
+  1684→N/A
+  1685→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Aluminium
+  1686→2/2
+  1687→Standard
+  1688→DIN 7500 M
+  1689→DIN 14586 C
+  1690→DIN 7982 C
+  1691→Thread Size
+  1692→Spare part - Part Number
+  1693→20 / M2 / K20
+  1694→PN 106318
+  1695→N/A
+  1696→N/A
+  1697→ST2.2 / 2.2 / KB22 / K22
+  1698→N/A
+  1699→PN 106318
+  1700→PN 109705
+  1701→2.5 / M2.5 / KB25 / K25
+  1702→PN 105164
+  1703→N/A
+  1704→N/A
+  1705→ST 2.9
+  1706→N/A
+  1707→PN 109702
+  1708→PN 109706
+  1709→3 / M3 / KB30 / K30
+  1710→PN 105165
+  1711→N/A
+  1712→N/A
+  1713→ST3.5.3 / 3.5 / KB35 / K35
+  1714→N/A
+  1715→PN 109703
+  1716→PN 109697
+  1717→ST 3.9
+  1718→N/A
+  1719→PN 109703
+  1720→PN 109697
+  1721→4 / M4 / KB40 / K40
+  1722→PN 109701
+  1723→N/A
+  1724→N/A
+  1725→ST 4.2
+  1726→N/A
+  1727→PN 105166
+  1728→PN 109707
+  1729→ST 4.8
+  1730→N/A
+  1731→PN 109692
+  1732→PN 109708
+  1733→50 / M5 / KB50 / K50
+  1734→PN 105167
+  1735→N/A
+  1736→N/A
+  1737→ST 5.5
+  1738→N/A
+  1739→PN 109704
+  1740→PN 109709
+  1741→60 / M6
+  1742→PN 105168
+  1743→N/A
+  1744→N/A
+  1745→ST 6.3
+  1746→N/A
+  1747→PN 105168
+  1748→PN 109710
+  1749→MAINTENANCE
+  1750→117
+  1751→
+  1752→
+  1753→===== PAGE 118 =====
+  1754→Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+  1755→Standard
+  1756→ISO 4042
+  1757→WN 1411
+  1758→WN 5451
+  1759→Thread size
+  1760→Spare part - Part Number
+  1761→20 / M2 / K20
+  1762→N/A
+  1763→N/A
+  1764→PN 109857
+  1765→ST2.2 / 2.2 / KB22 / K22
+  1766→PN 109713
+  1767→N/A
+  1768→PN 109857
+  1769→2.5 / M2.5 / KB25 / K25
+  1770→PN 105164
+  1771→PN 105169
+  1772→PN 109854
+  1773→3 / M3 / KB30 / K30
+  1774→PN 109702
+  1775→PN 105170
+  1776→PN 106329
+  1777→ST3.5.3 / 3.5 / KB35 / K35
+  1778→PN 109714
+  1779→PN 105171
+  1780→N/A
+  1781→4 / M4 / KB40 / K40
+  1782→PN 105166
+  1783→PN 109715
+  1784→PN 109693
+  1785→50 / M5 / KB50 / K50
+  1786→N/A
+  1787→PN 105172
+  1788→PN 109858
+  1789→60 / M6
+  1790→N/A
+  1791→N/A
+  1792→PN 109859
+  1793→Accessories
+  1794→•
+  1795→Bit extender A 50 mm - PN 109301
+  1796→•
+  1797→Bit extender A 100 mm - PN 109290
+  1798→•
+  1799→Bit extender B 50 mm - PN 109289
+  1800→•
+  1801→Bit extender B 100 mm - PN 109298
+  1802→CAUTION:
+  1803→When attached to the Screwdriver, always make sure that the bit extender
+  1804→does not hit the table, workpiece or any heavy parts as it could damage the
+  1805→inner parts of the Screwdriver.
+  1806→Cleaning Recommendations
+  1807→The following cleaning aids can be used to clean the product:
+  1808→•
+  1809→Isopropyl 70% alcohol
+  1810→•
+  1811→Peroxide
+  1812→NOTE:
+  1813→Long time exposure and high temperatures can have a negative effect on the
+  1814→materials, especially on the sealings.
+  1815→Use a dry cloth to wipe the product dry of the cleaning aids used. For optimum product care,
+  1816→use a cloth with water to do the final cleaning of the product. In this way the exposure of
+  1817→chemical aids is minimized on the product.
+  1818→Cleaning the Chips Inside the Bit Holder/ Bit Extender
+  1819→The bit holder/ bit extender is attached to the Screwdriver by a magnetic force. Due to metal
+  1820→particles sticking to the surface, the bit holder/ bit extender will not be attached correctly. The
+  1821→MAINTENANCE
+  1822→118
+  1823→
+  1824→
+  1825→===== PAGE 119 =====
+  1826→chips inside the bit holder/ bit extender must be cleaned regularly by using a flat magnetic
+  1827→hand screwdriver for instance.
+  1828→MAINTENANCE
+  1829→119
+  1830→
+  1831→
+  1832→===== PAGE 120 =====
+  1833→9. Troubleshooting
+  1834→9.1. Robot Has Not Obtained an IP Address
+  1835→If the Compute Box has not assigned an IP address to the robot, do the following:
+  1836→Assign a static IP address to the robot that matches your current IP settings on your Compute
+  1837→Box. The default IP address of the Compute Box is 192.168.1.1.
+  1838→NOTE:
+  1839→Change the last number in the IP address (if using 255.255.255.0 subnet
+  1840→mask) to avoid an IP conflict with the Compute Box.
+  1841→Example
+  1842→If the default fixed (192.168.1.1) IP address is used on the Compute Box, then use the following
+  1843→values:
+  1844→•
+  1845→IP address: 192.168.1.2
+  1846→•
+  1847→Subnet Mask: 255.255.255.0
+  1848→9.2. Changing the DIP Switch Does Not Take Effect
+  1849→To change the DIP switch network settings, first change the DIP switches and then cycle the
+  1850→Compute Box/Eye Box power so the changes will take effect.
+  1851→If the changes still do not take effect, wait one minute and then cycle the Compute Box/Eye
+  1852→Box power once again.
+  1853→9.3. Screwdriver Error Codes
+  1854→9.3.1. Z-axis (Or General Init) Busy
+  1855→Error code (on the Web Client and in the robot scripts): 2
+  1856→Description: Z-axis (or general init) is busy.
+  1857→Suggestion(s) to solve the error:
+  1858→•
+  1859→Power cycle the tool.
+  1860→•
+  1861→Ensure that the Compute Box software and the tool firmware are updated.
+  1862→•
+  1863→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1864→distributor for more information.
+  1865→9.3.2. Z-axis Safety Activated
+  1866→Error code (on the Web Client and in the robot scripts): 4
+  1867→Description: Z-axis safety is activated.
+  1868→Suggestion(s) to solve the error:
+  1869→•
+  1870→Move shank to 0 position.
+  1871→TROUBLESHOOTING
+  1872→120
+  1873→
+  1874→
+  1875→===== PAGE 121 =====
+  1876→•
+  1877→Correct the setup that has caused the safety being activated.
+  1878→•
+  1879→Power cycle the tool.
+  1880→•
+  1881→Ensure that the Compute Box software and the tool firmware are updated.
+  1882→•
+  1883→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1884→distributor for more information.
+  1885→9.3.3. Tool Is Not Calibrated
+  1886→Error code (on the Web Client and in the robot scripts): 8
+  1887→Description: Tool is not calibrated.
+  1888→Suggestion(s) to solve the error:
+  1889→•
+  1890→Power cycle the tool.
+  1891→•
+  1892→Ensure that the Compute Box software and the tool firmware are updated.
+  1893→•
+  1894→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1895→distributor for more information.
+  1896→9.3.4. Initialize: Z Stall Current Not Reached
+  1897→Error code (on the Web Client and in the robot scripts): 16
+  1898→Description: Initialize: Z stall current not reached.
+  1899→Suggestion(s) to solve the error:
+  1900→•
+  1901→Power cycle the tool.
+  1902→•
+  1903→Ensure that the Compute Box software and the tool firmware are updated.
+  1904→•
+  1905→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1906→distributor for more information.
+  1907→9.3.5. Initialize: No Z Index Mark Found
+  1908→Error code (on the Web Client and in the robot scripts): 32
+  1909→Description: Initialize: No Z index mark found.
+  1910→Suggestion(s) to solve the error:
+  1911→•
+  1912→Power cycle the tool.
+  1913→•
+  1914→Ensure that the Compute Box software and the tool firmware are updated.
+  1915→•
+  1916→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1917→distributor for more information.
+  1918→9.3.6. Initialize: Unable to Home Z-axis/ Run Time: Too Much Current Is
+  1919→Drawn
+  1920→Error code (on the Web Client and in the robot scripts): 48
+  1921→Description: Initialize: Unable to home Z-axis/ Run time: Too much current is drawn.
+  1922→Suggestion(s) to solve the error:
+  1923→•
+  1924→Power cycle the tool.
+  1925→•
+  1926→Ensure that the Compute Box software and the tool firmware are updated.
+  1927→•
+  1928→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1929→distributor for more information.
+  1930→TROUBLESHOOTING
+  1931→121
+  1932→
+  1933→
+  1934→===== PAGE 122 =====
+  1935→9.3.7. Initialize: Z Index Placement Not Ok
+  1936→Error code (on the Web Client and in the robot scripts): 64
+  1937→Description: Initialize: Z index placement not ok.
+  1938→Suggestion(s) to solve the error:
+  1939→•
+  1940→Power cycle the tool.
+  1941→•
+  1942→Ensure that the Compute Box software and the tool firmware are updated.
+  1943→•
+  1944→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1945→distributor for more information.
+  1946→9.3.8. Initialize: No Index Mark Found on Torque Encoders
+  1947→Error code (on the Web Client and in the robot scripts): 80
+  1948→Description: Initialize: No index mark found on torque encoders.
+  1949→Suggestion(s) to solve the error:
+  1950→•
+  1951→Power cycle the tool.
+  1952→•
+  1953→Ensure that the Compute Box software and the tool firmware are updated.
+  1954→•
+  1955→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1956→distributor for more information.
+  1957→9.3.9. Initialize: Too Big Torque Difference During Initialization
+  1958→Error code (on the Web Client and in the robot scripts): 96
+  1959→Description: Initialize: Too big torque diference during initialization.
+  1960→Suggestion(s) to solve the error:
+  1961→•
+  1962→Check if the bellow is touching the screw-bit system. If it does, unscrew the lid and add a
+  1963→drop of grease to the rubber touching the lid.
+  1964→•
+  1965→Power cycle the tool.
+  1966→•
+  1967→Ensure that the Compute Box software and the tool firmware are updated.
+  1968→•
+  1969→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1970→distributor for more information.
+  1971→9.3.10. Index Mark Value Has Changed
+  1972→Error code (on the Web Client and in the robot scripts): 112
+  1973→Description: Index mark value has changed.
+  1974→Suggestion(s) to solve the error:
+  1975→•
+  1976→Power cycle the tool.
+  1977→•
+  1978→Ensure that the Compute Box software and the tool firmware are updated.
+  1979→•
+  1980→If the error is still present, return the tool to OnRobot for repair. Contact your local
+  1981→distributor for more information.
+  1982→9.3.11. Quick Changer Error
+  1983→Error code (on the Web Client and in the robot scripts): 256
+  1984→Description: Quick Changer error.
+  1985→Suggestion(s) to solve the error: The Quick Changer robot side 4.5A must be used.
+  1986→TROUBLESHOOTING
+  1987→122
+  1988→
+  1989→
+  1990→===== PAGE 123 =====
+  1991→9.3.12. Power Supply Error
+  1992→Error code (on the Web Client and in the robot scripts): 512
+  1993→Description: Power supply error.
+  1994→Suggestion(s) to solve the error: The Compute Box power supply 5A or higher must be used.
+  1995→9.3.13. Additional Codes
+  1996→Additional
+  1997→code
+  1998→Description
+  1999→How to solve
+  2000→0
+  2001→No result data
+  2002→The operation is successful. No action is needed.
+  2003→1
+  2004→Screwdriver:
+  2005→command unknown
+  2006→Power cycle the tool.
+  2007→Ensure that the Compute Box software and the tool
+  2008→firmware are updated.
+  2009→If the error is still present, return the tool to OnRobot
+  2010→for repair. Contact your local distributor for more
+  2011→information.
+  2012→2
+  2013→Screwdriver: not
+  2014→screwing in
+  2015→Ensure that the Screwdriver has the screw.
+  2016→Ensure that the thread/hole is in the right position so
+  2017→the Screwdriver is not trying to screw in a flat
+  2018→surface.
+  2019→3
+  2020→Screwdriver: timeout
+  2021→waiting for correct
+  2022→torque (4 sec)
+  2023→Ensure that the thread/hole is in the right position so
+  2024→the Screwdriver is not trying to screw in a flat
+  2025→surface.
+  2026→Input a lower value for the Screwing length.
+  2027→4
+  2028→Screwdriver: torque
+  2029→exceeded
+  2030→unexpected
+  2031→(premature)
+  2032→Input a higher value for the Screwing length.
+  2033→Lower the material to screw in (only for self-tapping).
+  2034→5
+  2035→Screwdriver: unable
+  2036→to loosen screw
+  2037→(max torque
+  2038→exceeded)
+  2039→Try loosening the screw again.
+  2040→If the error is still present, the screw was tightened
+  2041→with a torque higher than 5 Nm so the Screwdriver is
+  2042→not capable of loosening it.
+  2043→6
+  2044→Screwdriver: Z-axis
+  2045→reached the end
+  2046→Place the Screwdriver tip closer to the screw, thread
+  2047→or hole.
+  2048→7
+  2049→Screwdriver: Z-axis
+  2050→obstructed during
+  2051→move
+  2052→Check and make sure that the end of the
+  2053→Screwdriver's shank did not crash into anything.
+  2054→Check and make sure there is nothing inside the
+  2055→Screwdriver.
+  2056→TROUBLESHOOTING
+  2057→123
+  2058→
+  2059→
+  2060→===== PAGE 124 =====
+  2061→Additional
+  2062→code
+  2063→Description
+  2064→How to solve
+  2065→9
+  2066→Screwdriver: Z-axis
+  2067→overload
+  2068→Power cycle the tool.
+  2069→Ensure that the Compute Box software and the tool
+  2070→firmware are updated.
+  2071→If the error is still present, return the tool to OnRobot
+  2072→for repair. Contact your local distributor for more
+  2073→information.
+  2074→TROUBLESHOOTING
+  2075→124
+  2076→
+  2077→
+  2078→===== PAGE 125 =====
+  2079→10. Warranties
+  2080→10.1. Patents
+  2081→Products of OnRobot A/S are protected by several patents; some still in global publication
+  2082→process (Patents pending). All manufacturers of copies and similar products violating any
+  2083→patent claims will be prosecuted.
+  2084→10.2. Product Warranty
+  2085→Without prejudice to any claim the user (customer) may have in relation to the dealer or
+  2086→retailer, the customer shall be granted a manufacturer’s warranty under the conditions set out
+  2087→below. In the case of:
+  2088→•
+  2089→Following new grippers - namely VG10, VGC10, VGP20, VGP30, RG2, RG6, 2FG7, 2FG14,
+  2090→2FGP20, 3FG15, 3FG25, SG Base Part, MG10 and Gecko Gripper - exhibiting defects
+  2091→resulting from manufacturing and/or material faults within 3 years or 3.000.000 operating
+  2092→cycles, whichever comes first.
+  2093→•
+  2094→Non-Gripper products exhibiting defects resulting from manufacturing and/or material
+  2095→faults within 15 months.
+  2096→from shipment, OnRobot A/S shall provide the necessary spare parts or repair, while the
+  2097→customer (user) shall provide working hours to replace the spare parts in the field.
+  2098→This warranty does not apply to wearable or consumable parts as listed in the Spare Parts list,
+  2099→including but not limited to fingers, fingertips, bellows, vacuum cups, silicone parts, gecko
+  2100→pads, or other components that are expected to wear down during normal operation. This
+  2101→warranty shall be invalid if the device defect is attributable to improper treatment and/or
+  2102→failure to comply with information contained in the user guides. This warranty shall not apply
+  2103→to or extend to services performed by the authorized dealer or the customer themselves (e.g.
+  2104→installation, configuration, software downloads). The purchase receipt, together with the date
+  2105→of purchase, shall be required as evidence for invoking the warranty. Claims under the
+  2106→warranty must be submitted within two months of the warranty default becoming evident.
+  2107→Ownership of devices or components replaced by and returned to OnRobot A/S shall vest in
+  2108→OnRobot A/S. Any other claims resulting out of or in connection with the device shall be
+  2109→excluded from this warranty. Nothing in this warranty shall attempt to limit or exclude a
+  2110→customer’s statutory rights nor the manufacturer’s liability for death or personal injury resulting
+  2111→from its negligence. The duration of the warranty shall not be extended by services rendered
+  2112→under the terms of the warranty. Insofar as no warranty default exists, OnRobot A/S reserves
+  2113→the right to charge the customer for replacement or repair. The above provisions do not imply
+  2114→a change in the burden of proof to the detriment of the customer. In case of a device
+  2115→exhibiting defects, OnRobot A/S shall not be liable for any indirect, incidental, special or
+  2116→consequential damages, including but not limited to, lost profits, loss of use, loss of
+  2117→production or damage to other production equipment.
+  2118→In case of a device exhibiting defects, OnRobot A/S shall not cover any consequential
+  2119→damage or loss, such as loss of production or damage to other production equipment.
+  2120→10.3. Disclaimer
+  2121→OnRobot A/S continues to improve reliability and performance of its products, and therefore
+  2122→reserves the right to upgrade the product without prior warning. OnRobot A/S ensures that
+  2123→WARRANTIES
+  2124→125
+  2125→
+  2126→
+  2127→===== PAGE 126 =====
+  2128→the content of this manual is precise and correct but takes no responsibility for any errors or
+  2129→missing information.
+  2130→WARRANTIES
+  2131→126
+  2132→
+  2133→
+  2134→===== PAGE 127 =====
+  2135→11. Certifications
+  2136→CERTIFICATIONS
+  2137→127
+  2138→
+  2139→
+  2140→===== PAGE 128 =====
+  2141→11.1. Manufacturer Test Certificate
+  2142→All OnRobot products are tested according to OnRobot test
+  2143→specification for the individual product that follows the ISO 9001
+  2144→standard procedure. OnRobot testing procedure undergoes
+  2145→continuous review and improvement.
+  2146→CERTIFICATIONS
+  2147→128
+  2148→
+  2149→
+  2150→===== PAGE 129 =====
+  2151→11.2. Screwdriver - Environment
+  2152→CERTIFICATIONS
+  2153→129
+  2154→
+  2155→
+  2156→===== PAGE 130 =====
+  2157→11.3. Declaration of Incorporation
+  2158→11.3.1. Screwdriver
+  2159→CERTIFICATIONS
+  2160→130
+  2161→
+  2162→
+  2163→

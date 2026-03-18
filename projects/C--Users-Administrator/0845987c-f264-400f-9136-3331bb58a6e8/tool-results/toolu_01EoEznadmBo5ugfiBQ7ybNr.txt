@@ -1,0 +1,547 @@
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb-903-                    AppendLog("차속신호:e 1004001x 8 00 00 00 00 00 00 00 00")
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb-904-                    CanStep = 102
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb-905-
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb:906:                ElseIf CanStep = 102 Then '기어 단수
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb-907-                    Serial_CAN.Write(Del_Space("e 1004001 8 00 00 00 00 00 00 00 00") & Chr(13))
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb:908:                    AppendLog("기어단수:e 1004001 8 00 00 00 00 00 00 00 00")
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb-909-                    CanStep = 100
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb-910-
+C:\Users\Administrator\Desktop\DSC_JX1\S140 NEW\FrmMain.vb-911-                ElseIf CanStep = 105 Then
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-30-        Me.Panel4 = New System.Windows.Forms.Panel()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-31-        Me.Panel9 = New System.Windows.Forms.Panel()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-32-        Me.btn_RR_Vent = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:33:        Me.btn_RR_HEater = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-34-        Me.Button11 = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-35-        Me.Button10 = New System.Windows.Forms.Button()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-36-        Me.Button9 = New System.Windows.Forms.Button()
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-150-        Me.Label11 = New System.Windows.Forms.Label()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-151-        Me.PAnel_CAN = New System.Windows.Forms.Label()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-152-        Me.Panel7 = New System.Windows.Forms.Panel()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:153:        Me.srcLbHeater = New System.Windows.Forms.Label()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-154-        Me.Label12 = New System.Windows.Forms.Label()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-155-        Me.srcLbMnlWorkINCheck = New System.Windows.Forms.Label()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-156-        Me.Label10 = New System.Windows.Forms.Label()
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-225-        Me.Panel9.BackColor = System.Drawing.Color.Gainsboro
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-226-        Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-227-        Me.Panel9.Controls.Add(Me.btn_RR_Vent)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:228:        Me.Panel9.Controls.Add(Me.btn_RR_HEater)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-229-        Me.Panel9.Controls.Add(Me.Button11)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-230-        Me.Panel9.Controls.Add(Me.Button10)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-231-        Me.Panel9.Controls.Add(Me.Button9)
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-247-        Me.btn_RR_Vent.Text = "RR 통풍"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-248-        Me.btn_RR_Vent.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-249-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:250:        'btn_RR_HEater
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-251-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:252:        Me.btn_RR_HEater.Location = New System.Drawing.Point(681, 710)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:253:        Me.btn_RR_HEater.Name = "btn_RR_HEater"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:254:        Me.btn_RR_HEater.Size = New System.Drawing.Size(107, 50)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:255:        Me.btn_RR_HEater.TabIndex = 283
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:256:        Me.btn_RR_HEater.Text = "RR 히터"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:257:        Me.btn_RR_HEater.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-258-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-259-        'Button11
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-260-        '
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-271-        Me.Button10.Name = "Button10"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-272-        Me.Button10.Size = New System.Drawing.Size(107, 50)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-273-        Me.Button10.TabIndex = 281
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:274:        Me.Button10.Text = "RL 히터"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-275-        Me.Button10.UseVisualStyleBackColor = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-276-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-277-        'Button9
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1673-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1674-        Me.Panel7.BackColor = System.Drawing.Color.Gainsboro
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1675-        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1676:        Me.Panel7.Controls.Add(Me.srcLbHeater)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1677-        Me.Panel7.Controls.Add(Me.Label12)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1678-        Me.Panel7.Controls.Add(Me.srcLbMnlWorkINCheck)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1679-        Me.Panel7.Controls.Add(Me.Label10)
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1699-        Me.Panel7.Size = New System.Drawing.Size(518, 712)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1700-        Me.Panel7.TabIndex = 98
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1701-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1702:        'srcLbHeater
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1703-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1704:        Me.srcLbHeater.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1705:        Me.srcLbHeater.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1706:        Me.srcLbHeater.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1707:        Me.srcLbHeater.ForeColor = System.Drawing.Color.Black
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1708:        Me.srcLbHeater.Location = New System.Drawing.Point(224, 573)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1709:        Me.srcLbHeater.Name = "srcLbHeater"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1710:        Me.srcLbHeater.Size = New System.Drawing.Size(289, 64)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1711:        Me.srcLbHeater.TabIndex = 280
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1712:        Me.srcLbHeater.Text = "OK"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1713:        Me.srcLbHeater.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1714-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1715-        'Label12
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1716-        '
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1722-        Me.Label12.Name = "Label12"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1723-        Me.Label12.Size = New System.Drawing.Size(221, 64)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1724-        Me.Label12.TabIndex = 279
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:1725:        Me.Label12.Text = "히터 검사"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1726-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1727-        '
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-1728-        'srcLbMnlWorkINCheck
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-2134-    Friend WithEvents Button9 As Button
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-2135-    Friend WithEvents Button10 As Button
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-2136-    Friend WithEvents Button11 As Button
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:2137:    Friend WithEvents srcLbHeater As Label
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-2138-    Friend WithEvents Label12 As Label
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-2139-    Friend WithEvents btn_RR_Vent As Button
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb:2140:    Friend WithEvents btn_RR_HEater As Button
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.Designer.vb-2141-End Class
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-97-    Public CANCommRetryCount As Integer
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-98-    Public CANCommPortReopenCount As Integer
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-99-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:100:    ' 히터 워크플로우 변수
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:101:    Private m_HasHeater As Boolean = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:102:    Private m_HeaterTestDone As Boolean = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:103:    Private m_HeaterTestResult As String = ""
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-104-    Private m_CanLogWriter As System.IO.StreamWriter = Nothing
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-105-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-106-    Private Sub PlayWave(ByVal Wavefilename As String)
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-420-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-421-    Private Sub Init_Control()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-422-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:423:        srcLbHeater.BackColor = Color.White
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:424:        srcLbHeater.ForeColor = Color.White
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:425:        srcLbHeater.Text = ""
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-426-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-427-        srcLbMnlWorkINCheck.BackColor = Color.White
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-428-        srcLbMnlWorkINCheck.ForeColor = Color.White
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-441-        CANCommTimeStamp = 0
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-442-        CANCommRetryCount = 0
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-443-        CANCommPortReopenCount = 0
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:444:        m_HasHeater = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:445:        m_HeaterTestDone = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:446:        m_HeaterTestResult = ""
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-447-        PAnel_CAN.Text = ""
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-448-        PAnel_CAN.BackColor = Color.White
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-449-
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-876-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-877-            Panel_PartNo.Text = Trim(Rs.Fields("Part_No").Value)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-878-            Panel_PartName.Text = Trim(Rs.Fields("Part_Script").Value)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:879:            'm_HasHeater = Panel_PartName.Text.ToUpper().Contains("HEATER")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:880:            m_HasHeater = Panel_PartName.Text.ToUpper().Contains("HEAT")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-881-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-882-            Panel_Position.Text = OP_LHRH & " " & OP_5P7P
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-883-
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-922-                    "S80_TOOL1_TQ4 = '" & tmp1(3) & "'," &
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-923-                    "S80_TOOL1_TQ5 = '" & tmp1(4) & "'," &
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-924-                    "S80_TOOL1_TQ6 = '" & tmp1(5) & "'," &
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:925:                    "S80_HEATER = '" & If(m_HasHeater, m_HeaterTestResult, "-") & "' " &
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-926-                    "WHERE SERIAL_NUMBER = '" & snStr & "'"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-927-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-928-        Sql_Connect.Execute(strSQL)
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1300-                ChangeWorkStep(10)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1301-            Else
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1302-                If PLC_VALUE(3) = 1 And PLC_VALUE(ION_PALLETTE_UP) = 1 Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1303:                    If m_HasHeater Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1304:                        ' HEATER 포함 → 히터 검사 진입 (PWR/MNL 공통)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1305-                        ChangeWorkStep(3.2)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1306-                    ElseIf Panel_PWRMNL.Text = "PWR" Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1307-                        ChangeWorkStep(3.4)
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1314-            End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1315-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1316-        ElseIf wStep = 3.2 Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1317:            ' 히터 테스트 시작
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1318-            Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1319-                Dim logDir As String = System.IO.Path.Combine(
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1320-                    AppDomain.CurrentDomain.BaseDirectory, "Can_Log",
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1326-                m_CanLogWriter.WriteLine("========== CAN 신호 ID 범례 ==========")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1327-                m_CanLogWriter.WriteLine("3E0 = BCM_02 (IGN ON)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1328-                m_CanLogWriter.WriteLine("041 = PE VENT CONDITION2")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1329:                m_CanLogWriter.WriteLine("438 = RL_SHVU_01 (RL 히터 상태)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1330-                m_CanLogWriter.WriteLine("42E = RL_SHVU_02 (RL 인디케이터)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1331:                m_CanLogWriter.WriteLine("453 = RR_SHVU_01 (RR 히터 상태)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1332-                m_CanLogWriter.WriteLine("42F = RR_SHVU_02 (RR 인디케이터)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1333:                m_CanLogWriter.WriteLine("90842901 = DATC_HtrVentSwReq (히터/통풍 스위치)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1334-                m_CanLogWriter.WriteLine("732 = RLPSU 진단 요청")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1335-                m_CanLogWriter.WriteLine("73A = RLPSU 진단 응답")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1336-                m_CanLogWriter.WriteLine("3EE = ECU 모터 상태")
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1340-                RemoteLog(MethodBase.GetCurrentMethod().Name & ": CAN 로그 파일 생성 실패: " & ex.Message)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1341-            End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1342-            If Not m_PcanConnected Then OpenCAN()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1343:            m_HeaterTestDone = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1344:            m_HeaterTestResult = ""
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1345:            ' 히터 상태 초기화
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1346-            m_CurHtOper = -1 : m_CurHtIndiHi = -1 : m_CurHtIndiMid = -1 : m_CurHtIndiLo = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1347-            m_CurRRHtOper = -1 : m_CurRRIndiHi = -1 : m_CurRRIndiMid = -1 : m_CurRRIndiLo = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1348-            m_CanLogEnabled = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1349-            m_SeenCanIds.Clear()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1350:            ' 히터 테스트 스레드 시작
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1351:            Dim htThread As New Thread(AddressOf HeaterWorkflowThread)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1352-            htThread.IsBackground = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1353-            htThread.Start()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1354-            ChangeWorkStep(3.21)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1355-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1356-        ElseIf wStep = 3.21 Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1357:            ' 히터 테스트 완료 대기
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1358:            If m_HeaterTestDone Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1359-                ChangeWorkStep(3.22)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1360-            End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1361-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1362-        ElseIf wStep = 3.22 Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1363:            ' 히터 테스트 결과 판정
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1364:            If m_HeaterTestResult = "OK" Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1365:                srcLbHeater.Text = "OK"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1366:                srcLbHeater.BackColor = Color.Blue
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1367:                srcLbHeater.ForeColor = Color.White
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1368-            Else
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1369:                srcLbHeater.Text = "NG"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1370:                srcLbHeater.BackColor = Color.Red
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1371:                srcLbHeater.ForeColor = Color.White
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1372-            End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1373-            ' CAN 로그 파일 닫기
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1374-            Try
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1379-            Catch ex As Exception
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1380-            End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1381-            m_CanLogEnabled = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1382:            If m_HeaterTestResult = "OK" Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1383-                ' PWR/MNL 분기
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1384-                If Panel_PWRMNL.Text = "PWR" Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1385-                    ChangeWorkStep(3.4)
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1388-                End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1389-            Else
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1390-                ' NG → 알람 표시 후 종료
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:1391:                Panel_Alarm.Text = "히터 검사 NG !!!"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1392-                Panel_Alarm.Visible = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1393-                ChangeWorkStep(9)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-1394-            End If
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2038-                If m_PcanConnected Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2039-                    If RecvCAN(canId, data) Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2040-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2041:                        ' CAN 로그 파일에 RX 기록 (히터 테스트 중)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2042-                        WriteCanLog("RX", canId, data)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2043-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2044-                        If PAnel_CAN.Text <> "OK" Then
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2054-                            AppendCanLog("[RX] 새 ID: " & canId.ToString("X3") & " " & BitConverter.ToString(data))
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2055-                        End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2056-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2057:                        ' TextBox1 로그 - 히터/진단 관련 신호만 필터링
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2058-                        If m_CanLogEnabled Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2059-                            If canId = &H438 OrElse canId = &H42E OrElse canId = &H453 OrElse canId = &H42F OrElse canId = &H73A Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2060-                                If canId = &H438 OrElse canId = &H453 Then
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2081-                                    Dim key As String = $"{side}_{mode}"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2082-                                    If key <> m_LastHtMode Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2083-                                        m_LastHtMode = key
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2084:                                        AppendCanLog($"[RX] {side} 히터 상태: {mode}")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2085-                                    End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2086-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2087-                                ElseIf canId = &H42E OrElse canId = &H42F Then
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2132-                                            Case 3 : valStr = "3단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2133-                                            Case Else : valStr = $"0x{val:X2}"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2134-                                        End Select
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2135:                                        AppendCanLog($"[RX] DIAG: 히터제어 OK → {valStr}")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2136-                                    ElseIf sid = &H7F Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2137-                                        ' 부정응답
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2138-                                        Dim nrc As Byte = If(data.Length >= 4, data(3), CByte(0))
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2329-    Private m_CanLogEnabled As Boolean = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2330-    ' 수신 CAN ID 추적 (진단용 — 처음 보는 ID만 로그)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2331-    Private m_SeenCanIds As New HashSet(Of UInt32)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2332:    ' 히터 상태 변경 감지용 (변경 시에만 로그)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2333-    Private m_LastHtMode As String = ""
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2334-    Private m_LastHtIndi As String = ""
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2335:    ' 히터 상태 변경 감지용 (HeaterTestRH에서 대기)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2336:    Private m_CurHtOper As Integer = -1  ' 현재 히터 모드 (438h SeatHtOperSta)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2337-    Private m_CurHtIndiHi As Integer = -1   ' 42E 3단 인디케이터
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2338-    Private m_CurHtIndiMid As Integer = -1  ' 42E 2단 인디케이터
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2339-    Private m_CurHtIndiLo As Integer = -1   ' 42E 1단 인디케이터
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2401-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2402-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2403-    ''' <summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2404:    ''' RL 히터 테스트: PE Extended CAN 0x90842901 DATC_RLStHtrSwReq 토글
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2405-    ''' </summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2406-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2407-        If Not m_PcanConnected Then
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2421-        m_CurHtIndiHi = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2422-        m_CurHtIndiMid = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2423-        m_CurHtIndiLo = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2424:        AppendCanLog("=== RL 히터 테스트 시작 (PE Ext 0x90842901 DATC_RLStHtrSwReq) ===")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2425-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2426:        Dim t As New Thread(AddressOf HeaterTestRH)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2427-        t.IsBackground = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2428-        t.Start()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2429-    End Sub
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2441-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2442-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2443-    ''' <summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2444:    ''' 히터 상태(438h SeatHtOperSta)가 목표값으로 변경될 때까지 대기
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2445-    ''' </summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2446:    Private Function WaitHeaterState(targetOper As Integer, timeoutMs As Integer) As Boolean
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2447-        Dim sw As New Stopwatch()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2448-        sw.Start()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2449-        Do While sw.ElapsedMilliseconds < timeoutMs
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2454-    End Function
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2455-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2456-    ''' <summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2457:    ''' PE Extended CAN 0x90842901 히터 토글
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2458-    ''' DATC_RLStHtrSwReq: byte6 bit[5:4] → 2=ON, 1=OFF
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2459:    ''' 통풍은 byte6 bit[7:6], 히터는 byte6 bit[5:4]
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2460-    ''' </summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2461:    Private Sub SendHeaterToggle()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2462-        Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2463-            ' byte6=0x20 → DATC_RLStHtrSwReq=2 (ON)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2464-            Dim ret As Boolean = SendCANEx(&H90842901UI, New Byte() {0, 0, 0, 0, 0, 0, &H20, 0})
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2473-                AppendCanLog("[ERR] SendCANEx 0x90842901 실패 (0x10)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2474-                Return
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2475-            End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2476:            AppendCanLog("[TX] Ext 0x90842901 히터 토글 완료 (20→10)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2477-        Catch ex As Exception
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2478:            AppendCanLog("[ERR] SendHeaterToggle: " & ex.Message)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2479-        End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2480-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2481-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2482:    Private Sub HeaterTestRH()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2483-        Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2484-            ' --- IGN + 0x041 주기 전송 시작 ---
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2485-            m_SendIgn = True
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2492-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2493-            ' 초기 상태 확인
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2494-            AppendCanLog("[RX] 초기 상태")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2495:            LogHeaterState()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2496-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2497:            ' 히터 토글 순환: OFF(2) → 3단(8) → 2단(7) → 1단(6) → OFF(2)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2498-            ' (통풍과 같은 순환 패턴일 가능성 높음)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2499-            Dim cycleTargets() As Integer = {8, 7, 6, 2}
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2500-            Dim cycleLabels() As String = {"3단", "2단", "1단", "OFF"}
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2501-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2502-            For stepNum As Integer = 0 To 3
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2503:                AppendCanLog("[TX] 히터 토글 → " & cycleLabels(stepNum) & " 목표 (0x" & Hex(cycleTargets(stepNum)) & ")")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2504:                SendHeaterToggle()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2505-                Thread.Sleep(300)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2506:                If WaitHeaterState(cycleTargets(stepNum), 5000) Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2507-                    AppendCanLog("  -> " & cycleLabels(stepNum) & " OK")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2508-                Else
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2509-                    Dim cur As Integer = Thread.VolatileRead(m_CurHtOper)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2510-                    AppendCanLog("  -> " & cycleLabels(stepNum) & " 미확인 (현재=0x" & Hex(cur) & ")")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2511-                End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2512:                LogHeaterState()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2513-                Thread.Sleep(1000)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2514-            Next
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2515-
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2519-            ' --- 정리 ---
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2520-            m_SendIgn = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2521-            AppendCanLog("[TX] IGN 전송 중지")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2522:            AppendCanLog("=== RL 히터 테스트 완료 ===")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2523-            Me.BeginInvoke(Sub() Button10.Enabled = True)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2524-        End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2525-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2526-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2527-    ''' <summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2528:    ''' 현재 히터 상태 로그 (438h + 42E 인디케이터)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2529-    ''' </summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2530:    Private Sub LogHeaterState()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2531-        Dim oper As Integer = Thread.VolatileRead(m_CurHtOper)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2532-        Dim operLabel As String = "?"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2533-        Select Case oper
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2534-            Case 2 : operLabel = "OFF"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2535:            Case 6 : operLabel = "히터1단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2536:            Case 7 : operLabel = "히터2단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2537:            Case 8 : operLabel = "히터3단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2538-            Case 3 : operLabel = "통풍1단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2539-            Case 4 : operLabel = "통풍2단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2540-            Case 5 : operLabel = "통풍3단"
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2678-    ' ======================== RR (후석 우측) 테스트 ========================
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2679-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2680-    ''' <summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2681:    ''' RR 히터 테스트: PE Extended CAN 0x90842901 DATC_RRStHtrSwReq 토글
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2682-    ''' byte6 bit[1:0]: ON=0x02, OFF=0x01
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2683-    ''' </summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2684:    Private Sub btn_RR_HEater_Click(sender As Object, e As EventArgs) Handles btn_RR_HEater.Click
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2685-        If Not m_PcanConnected Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2686-            OpenCAN()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2687-            If Not m_PcanConnected Then
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2690-            End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2691-        End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2692-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2693:        btn_RR_HEater.Enabled = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2694-        m_CanLogEnabled = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2695-        m_SeenCanIds.Clear()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2696-        m_CurRRHtOper = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2697-        m_CurRRIndiHi = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2698-        m_CurRRIndiMid = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2699-        m_CurRRIndiLo = -1
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2700:        AppendCanLog("=== RR 히터 테스트 시작 (PE Ext 0x90842901 DATC_RRStHtrSwReq) ===")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2701-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2702:        Dim t As New Thread(AddressOf RRHeaterTestThread)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2703-        t.IsBackground = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2704-        t.Start()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2705-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2706-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2707:    Private Sub SendRRHeaterToggle()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2708-        Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2709-            ' byte6=0x02 → DATC_RRStHtrSwReq=2 (ON)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2710-            Dim ret As Boolean = SendCANEx(&H90842901UI, New Byte() {0, 0, 0, 0, 0, 0, &H2, 0})
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2719-                AppendCanLog("[ERR] SendCANEx 0x90842901 실패 (0x01)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2720-                Return
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2721-            End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2722:            AppendCanLog("[TX] Ext 0x90842901 RR 히터 토글 완료 (02→01)")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2723-        Catch ex As Exception
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2724:            AppendCanLog("[ERR] SendRRHeaterToggle: " & ex.Message)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2725-        End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2726-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2727-
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2735-        Return False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2736-    End Function
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2737-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2738:    Private Sub LogRRHeaterState()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2739-        Dim oper As Integer = Thread.VolatileRead(m_CurRRHtOper)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2740-        Dim operLabel As String = "?"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2741-        Select Case oper
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2742-            Case 2 : operLabel = "OFF"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2743:            Case 6 : operLabel = "히터1단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2744:            Case 7 : operLabel = "히터2단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2745:            Case 8 : operLabel = "히터3단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2746-            Case 3 : operLabel = "통풍1단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2747-            Case 4 : operLabel = "통풍2단"
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2748-            Case 5 : operLabel = "통풍3단"
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2757-        End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2758-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2759-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2760:    Private Sub RRHeaterTestThread()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2761-        Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2762-            m_SendIgn = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2763-            Dim ignThread As New Thread(AddressOf IgnSenderThread)
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2768-            Thread.Sleep(1500)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2769-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2770-            AppendCanLog("[RX] 초기 상태")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2771:            LogRRHeaterState()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2772-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2773:            ' 히터 토글 순환: OFF(2) → 3단(8) → 2단(7) → 1단(6) → OFF(2)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2774-            Dim cycleTargets() As Integer = {8, 7, 6, 2}
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2775-            Dim cycleLabels() As String = {"3단", "2단", "1단", "OFF"}
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2776-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2777-            For stepNum As Integer = 0 To 3
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2778:                AppendCanLog("[TX] RR 히터 토글 → " & cycleLabels(stepNum) & " 목표 (0x" & Hex(cycleTargets(stepNum)) & ")")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2779:                SendRRHeaterToggle()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2780-                Thread.Sleep(300)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2781-                If WaitRRState(cycleTargets(stepNum), 5000) Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2782-                    AppendCanLog("  -> " & cycleLabels(stepNum) & " OK")
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2784-                    Dim cur As Integer = Thread.VolatileRead(m_CurRRHtOper)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2785-                    AppendCanLog("  -> " & cycleLabels(stepNum) & " 미확인 (현재=0x" & Hex(cur) & ")")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2786-                End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2787:                LogRRHeaterState()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2788-                Thread.Sleep(1000)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2789-            Next
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2790-
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2793-        Finally
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2794-            m_SendIgn = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2795-            AppendCanLog("[TX] IGN 전송 중지")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2796:            AppendCanLog("=== RR 히터 테스트 완료 ===")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2797:            Me.BeginInvoke(Sub() btn_RR_HEater.Enabled = True)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2798-        End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2799-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2800-
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2891-    ' ======================== CAN 로그 파일 기록 ========================
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2892-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2893-    ''' <summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2894:    ''' CAN 로그 파일에 TX/RX 기록 (히터 테스트 중에만)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2895-    ''' </summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2896-    Private Sub WriteCanLog(direction As String, canId As UInt32, data() As Byte)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2897-        Try
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2905-        End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2906-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2907-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2908:    ' ======================== 히터 워크플로우 (자동 검사) ========================
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2909-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2910-    ''' <summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2911:    ''' 히터 검사 워크플로우 스레드
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2912:    ''' LH → RL 히터 (SendHeaterToggle, 438h 모니터링)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2913:    ''' RH → RR 히터 (SendRRHeaterToggle, 453h 모니터링)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2914-    ''' 순환: OFF→3단→2단→1단→OFF (4단계)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2915-    ''' 1단→OFF 자동 전환은 OK 처리 (NTC 미연결 시 ECU 강제 차단)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2916-    ''' </summary>
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2917:    Private Sub HeaterWorkflowThread()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2918-        Dim allOk As Boolean = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2919-        Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2920-            ' IGN + 0x041 주기 전송 시작
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2922-            Dim ignThread As New Thread(AddressOf IgnSenderThread)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2923-            ignThread.IsBackground = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2924-            ignThread.Start()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2925:            AppendCanLog("=== 히터 워크플로우 시작 ===")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2926-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2927-            Thread.Sleep(1500)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2928-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2929-            Dim isLH As Boolean = (Mid(Panel_Position.Text, 1, 2) = "LH")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2930-            AppendCanLog("사이드: " & If(isLH, "LH (RL)", "RH (RR)"))
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2931-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2932:            ' 히터 토글 순환: OFF(2) → 3단(8) → 2단(7) → 1단(6) → OFF(2)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2933-            Dim cycleTargets() As Integer = {8, 7, 6, 2}
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2934-            Dim cycleLabels() As String = {"3단", "2단", "1단", "OFF"}
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2935-            Dim skipLastOff As Boolean = False
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2941-                    Continue For
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2942-                End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2943-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2944:                AppendCanLog("[TX] 히터 토글 → " & cycleLabels(stepNum) & " 목표")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2945-                If isLH Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2946:                    SendHeaterToggle()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2947-                Else
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2948:                    SendRRHeaterToggle()
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2949-                End If
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2950-                Thread.Sleep(300)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2951-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2952-                Dim ok As Boolean
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2953-                If isLH Then
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2954:                    ok = WaitHeaterState(cycleTargets(stepNum), 5000)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2955-                Else
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2956-                    ok = WaitRRState(cycleTargets(stepNum), 5000)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2957-                End If
+--
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2982-            Next
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2983-
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2984-        Catch ex As Exception
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2985:            AppendCanLog("[ERR] HeaterWorkflowThread: " & ex.Message)
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2986-            allOk = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2987-        Finally
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2988-            m_SendIgn = False
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2989-            AppendCanLog("[TX] IGN 전송 중지")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2990:            AppendCanLog("=== 히터 워크플로우 완료: " & If(allOk, "OK", "NG") & " ===")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2991:            m_HeaterTestResult = If(allOk, "OK", "NG")
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb:2992:            m_HeaterTestDone = True
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2993-        End Try
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2994-    End Sub
+C:\Users\Administrator\Desktop\DSC_JX1\S80\FrmMain.vb-2995-

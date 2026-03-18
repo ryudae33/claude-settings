@@ -1,0 +1,359 @@
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CODE_ANALYSIS.md-222-SeqID REAL                        -- 시퀀스 번호
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CODE_ANALYSIS.md-223-WorkInfo VARCHAR(255)             -- 작업 정보 (화면 표시)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CODE_ANALYSIS.md:224:FontSize VARCHAR(255)             -- 폰트 크기
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CODE_ANALYSIS.md-225-[Type] VARCHAR(255)               -- 타입 (아래 참조)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CODE_ANALYSIS.md-226-Target VARCHAR(255)               -- 타겟 값/설정
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-145-        'Label4
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-146-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:147:        Me.Label4.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-148-        Me.Label4.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-149-        Me.Label4.Location = New System.Drawing.Point(386, 88)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-155-        'Label3
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-156-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:157:        Me.Label3.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-158-        Me.Label3.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-159-        Me.Label3.Location = New System.Drawing.Point(260, 88)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-176-        'Label2
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-177-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:178:        Me.Label2.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-179-        Me.Label2.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-180-        Me.Label2.Location = New System.Drawing.Point(15, 88)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-213-        'Label1
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-214-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:215:        Me.Label1.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-216-        Me.Label1.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-217-        Me.Label1.Location = New System.Drawing.Point(15, 30)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-271-        Me.DgvElements.BackgroundColor = System.Drawing.Color.FromArgb(45, 45, 48)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-272-        Me.DgvElements.BorderStyle = System.Windows.Forms.BorderStyle.None
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:273:        Me.DgvElements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-274-        Me.DgvElements.GridColor = System.Drawing.Color.FromArgb(60, 60, 60)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-275-        Me.DgvElements.Location = New System.Drawing.Point(10, 25)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-363-        'Label7
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-364-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:365:        Me.Label7.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-366-        Me.Label7.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-367-        Me.Label7.Location = New System.Drawing.Point(15, 73)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-385-        'Label6
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-386-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:387:        Me.Label6.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-388-        Me.Label6.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-389-        Me.Label6.Location = New System.Drawing.Point(300, 26)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-407-        'Label5
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-408-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb:409:        Me.Label5.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-410-        Me.Label5.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.Designer.vb-411-        Me.Label5.Location = New System.Drawing.Point(15, 26)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-233-                "ID COUNTER, " &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-234-                "WorkID VARCHAR(255), SeqID REAL, WorkInfo VARCHAR(255), " &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb:235:                "FontSize VARCHAR(255), ImagePath VARCHAR(255), [Type] VARCHAR(255), " &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-236-                "Target VARCHAR(255), MainImagePath VARCHAR(255), " &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-237-                "IN1 VARCHAR(255), IN2 VARCHAR(255), IN3 VARCHAR(255), IN4 VARCHAR(255), " &
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-601-            "  ""Elements"": [" & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-602-            "    { ""Type"": ""DataMatrix"", ""X"": 20, ""Y"": 20, ""Size1"": 8, ""Size2"": 160 }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb:603:            "    { ""Type"": ""Text"", ""Field"": ""PartNo"", ""X"": 200, ""Y"": 20, ""FontSize"": 18 }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb:604:            "    { ""Type"": ""Text"", ""Field"": ""PartName"", ""X"": 200, ""Y"": 50, ""FontSize"": 16 }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb:605:            "    { ""Type"": ""Text"", ""Field"": ""SerialNo"", ""X"": 200, ""Y"": 80, ""FontSize"": 20, ""FontWeight"": ""Bold"" }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb:606:            "    { ""Type"": ""Text"", ""Field"": ""DateTime"", ""X"": 200, ""Y"": 120, ""FontSize"": 12 }" & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-607-            "  ]" & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\DbSchemaManager.vb-608-            "}"
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmLaser.Designer.vb-44-        Me.DgvLaser.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmLaser.Designer.vb-45-        Me.DgvLaser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmLaser.Designer.vb:46:        Me.DgvLaser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmLaser.Designer.vb-47-        Me.DgvLaser.Dock = System.Windows.Forms.DockStyle.Fill
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmLaser.Designer.vb-48-        Me.DgvLaser.EnableHeadersVisualStyles = False
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcode.Designer.vb-142-        'ChkRework
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcode.Designer.vb-143-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcode.Designer.vb:144:        Me.ChkRework.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcode.Designer.vb-145-        Me.ChkRework.Font = New System.Drawing.Font("맑은 고딕", 11.25!, System.Drawing.FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcode.Designer.vb-146-        Me.ChkRework.Location = New System.Drawing.Point(14, 110)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-70-            "  ""Elements"": [" & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-71-            "    { ""Type"": ""DataMatrix"", ""X"": 20, ""Y"": 20, ""Size1"": 8, ""Size2"": 160 }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:72:            "    { ""Type"": ""Text"", ""Field"": ""PartNo"", ""X"": 200, ""Y"": 20, ""FontSize"": 18 }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:73:            "    { ""Type"": ""Text"", ""Field"": ""PartName"", ""X"": 200, ""Y"": 50, ""FontSize"": 16 }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:74:            "    { ""Type"": ""Text"", ""Field"": ""SerialNo"", ""X"": 200, ""Y"": 80, ""FontSize"": 20, ""FontWeight"": ""Bold"" }," & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:75:            "    { ""Type"": ""Text"", ""Field"": ""DateTime"", ""X"": 200, ""Y"": 120, ""FontSize"": 12 }" & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-76-            "  ]" & vbCrLf &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-77-            "}"
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-91-        DgvElements.Columns.Add("X", "X")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-92-        DgvElements.Columns.Add("Y", "Y")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:93:        DgvElements.Columns.Add("FontSize", "Size")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-94-        DgvElements.Columns.Add("FontWeight", "Weight")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-95-
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-99-        DgvElements.Columns("X").Width = 50
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-100-        DgvElements.Columns("Y").Width = 50
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:101:        DgvElements.Columns("FontSize").Width = 50
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-102-        DgvElements.Columns("FontWeight").Width = 60
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-103-
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-133-        newElem.X = 50
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-134-        newElem.Y = 50
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:135:        newElem.FontSize = 14
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-136-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-137-        _elements.Add(newElem)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-288-        Integer.TryParse(GetJsonValue(json, "X"), elem.X)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-289-        Integer.TryParse(GetJsonValue(json, "Y"), elem.Y)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:290:        Integer.TryParse(GetJsonValue(json, "FontSize"), elem.FontSize)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-291-        elem.FontWeight = GetJsonValue(json, "FontWeight")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-292-        Integer.TryParse(GetJsonValue(json, "Size1"), elem.Size1)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-293-        Integer.TryParse(GetJsonValue(json, "Size2"), elem.Size2)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-294-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:295:        If elem.FontSize = 0 Then elem.FontSize = 14
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-296-        If elem.Size1 = 0 Then elem.Size1 = 8
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-297-        If elem.Size2 = 0 Then elem.Size2 = 160
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-352-                sb.Append(", ""X"": " & elem.X)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-353-                sb.Append(", ""Y"": " & elem.Y)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:354:                sb.Append(", ""FontSize"": " & elem.FontSize)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-355-                If Not String.IsNullOrEmpty(elem.FontWeight) AndAlso elem.FontWeight <> "Normal" Then
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-356-                    sb.Append(", ""FontWeight"": """ & elem.FontWeight & """")
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-376-        DgvElements.Rows.Clear()
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-377-        For Each elem As LabelElement In _elements
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:378:            DgvElements.Rows.Add(elem.Type, elem.Field, elem.Text, elem.X, elem.Y, elem.FontSize, elem.FontWeight)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-379-        Next
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-380-    End Sub
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-392-        Integer.TryParse(NullCheck(row.Cells("X").Value), elem.X)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-393-        Integer.TryParse(NullCheck(row.Cells("Y").Value), elem.Y)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:394:        Integer.TryParse(NullCheck(row.Cells("FontSize").Value), elem.FontSize)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-395-        elem.FontWeight = NullCheck(row.Cells("FontWeight").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-396-
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-464-                End If
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-465-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:466:                Dim fontSize As Single = elem.FontSize * _scale
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-467-                If fontSize < 6 Then fontSize = 6
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-468-                Dim fontStyle As FontStyle = If(elem.FontWeight = "Bold", FontStyle.Bold, FontStyle.Regular)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:469:                Using font As New Font("맑은 고딕", fontSize, fontStyle)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-470-                    If isSelected Then
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-471-                        Dim textSize As SizeF = g.MeasureString(text, font)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-554-    Public Property X As Integer = 0
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-555-    Public Property Y As Integer = 0
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb:556:    Public Property FontSize As Integer = 14
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-557-    Public Property FontWeight As String = "Normal"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmBarcodeJson.vb-558-    Public Property Size1 As Integer = 8      ' DataMatrix 모듈 크기
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1006-  "Elements": [
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1007-    { "Type": "DataMatrix", "X": 20, "Y": 20, "Size1": 8, "Size2": 160 },
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md:1008:    { "Type": "Text", "Field": "PartNo", "X": 200, "Y": 20, "FontSize": 18 },
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md:1009:    { "Type": "Text", "Field": "SerialNo", "X": 200, "Y": 80, "FontSize": 20, "FontWeight": "Bold" }
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1010-  ]
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1011-}
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1019-| Text | String | 고정 텍스트 |
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1020-| X, Y | Integer | 위치 좌표 |
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md:1021:| FontSize | Integer | 폰트 크기 (Text용) |
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1022-| FontWeight | String | "Normal" 또는 "Bold" |
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\CLAUDE.md-1023-| Size1, Size2 | Integer | DataMatrix 모듈/렌더링 크기 |
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.Designer.vb-1307-        'lbStep
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.Designer.vb-1308-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.Designer.vb:1309:        Me.lbStep.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.Designer.vb-1310-        Me.lbStep.Location = New System.Drawing.Point(425, 183)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.Designer.vb-1311-        Me.lbStep.Name = "lbStep"
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-294-    Private tmpSeqType(SeqMaxNum) As String
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-295-    Private tmpSeqWorkInfo(SeqMaxNum) As String
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:296:    Private tmpSeqWorkInfoFontSize(SeqMaxNum) As String
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-297-    Private tmpMainImagePath(SeqMaxNum) As String
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-298-    Private tmpNgImagePath(SeqMaxNum) As String
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4294-        End With
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4295-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4296:        ' CellPainting 이벤트 연결 (폰트 자동 조절)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4297:        RemoveHandler Grid1.CellPainting, AddressOf Grid1_CellPainting
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4298:        AddHandler Grid1.CellPainting, AddressOf Grid1_CellPainting
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4299-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4300-        ' UI 업데이트 완료 대기 - 스타일 초기화 후 Paint 방지
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4307-    ''' 셀 크기에 맞춰 폰트 크기 자동 조절
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4308-    ''' </summary>
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4309:    Private Sub Grid1_CellPainting(sender As Object, e As DataGridViewCellPaintingEventArgs)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4310-        Try
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4311-            ' 헤더 행이나 이미지 컬럼은 제외
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4332-            ' 최적 폰트 크기 계산
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4333-            Dim fontFamily As String = "Arial Narrow"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4334:            Dim fontSize As Single = CalculateFontSize(cellValue, textRect, fontFamily, e.Graphics)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4335-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4336-            ' 폰트 생성 및 텍스트 그리기
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4337:            Using font As New Font(fontFamily, fontSize, FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4338-                Dim sf As New StringFormat()
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4339-                sf.Alignment = StringAlignment.Center
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4348-            e.Handled = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4349-        Catch
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4350:            ' CellPainting 예외 시 기본 렌더링으로 처리
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4351-        End Try
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4352-    End Sub
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4355-    ''' 셀 크기에 맞는 최적 폰트 크기 계산
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4356-    ''' </summary>
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4357:    Private Function CalculateFontSize(text As String, rect As Rectangle, fontFamily As String, g As Graphics) As Single
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4358-        Dim minSize As Single = 16
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4359-        Dim maxSize As Single = 40
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4363-        While maxSize - minSize > 1
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4364-            fontSize = (minSize + maxSize) / 2
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:4365:            Using testFont As New Font(fontFamily, fontSize, FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4366-                Dim textSize As SizeF = g.MeasureString(text, testFont)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-4367-                If textSize.Width <= rect.Width AndAlso textSize.Height <= rect.Height Then
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5447-                tmpSeqTarget(i) = NullCheck(Rs.Fields("Target").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5448-                tmpSeqWorkInfo(i) = NullCheck(Rs.Fields("WorkInfo").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:5449:                tmpSeqWorkInfoFontSize(i) = CStr(NullCheckInt(Rs.Fields("FontSize").Value, 12))
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5450-                tmpMainImagePath(i) = NullCheck(Rs.Fields("MainImagePath").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5451-                tmpNgImagePath(i) = NullCheck(Rs.Fields("NgImagePath").Value)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5486-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5487-                ' 셀 폰트 설정
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb:5488:                Grid1.Rows(rowIndex).Cells(2).Style.Font = New Font("Arial Narrow", CInt(tmpSeqWorkInfoFontSize(i)), FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5489-                Grid1.Rows(rowIndex).Cells(4).Style.Font = New Font("Arial Narrow", 30, FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmMain.vb-5490-                Grid1.Rows(rowIndex).Cells(5).Style.Font = New Font("Arial Narrow", 40, FontStyle.Bold)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-205-                    SrcLed(imgCount).Size = New Size(imgSize, imgSize)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-206-                    Try
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb:207:                        SrcLed(imgCount).Font = New Font("Arial Narrow", CInt(imgSize / 2), FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-208-                    Catch
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-209-                    End Try
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-334-                    Dim tmpSize As Double = CDbl(Rs.Fields("ImgSize").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-335-                    Try
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb:336:                        SrcLed(imgCount).Font = New Font("Arial Narrow", CInt(tmpSize / 2), FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-337-                    Catch
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmNg.vb-338-                    End Try
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmPart.Designer.vb-32-        Me.DgvPart.AllowUserToAddRows = False
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmPart.Designer.vb-33-        Me.DgvPart.AllowUserToDeleteRows = False
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmPart.Designer.vb:34:        Me.DgvPart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmPart.Designer.vb-35-        Me.DgvPart.Font = New System.Drawing.Font("맑은 고딕", 11.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmPart.Designer.vb-36-        Me.DgvPart.Location = New System.Drawing.Point(12, 12)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSearch.Designer.vb-40-        Me.Grid3.AllowUserToDeleteRows = False
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSearch.Designer.vb-41-        Me.Grid3.AllowUserToResizeRows = False
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSearch.Designer.vb:42:        Me.Grid3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.None
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSearch.Designer.vb-43-        Me.Grid3.BackgroundColor = System.Drawing.SystemColors.Window
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSearch.Designer.vb-44-        Me.Grid3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-41-        Me.DgvSeq.AllowUserToAddRows = False
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-42-        Me.DgvSeq.AllowUserToDeleteRows = False
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb:43:        Me.DgvSeq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-44-        Me.DgvSeq.Font = New System.Drawing.Font("맑은 고딕", 10.0!)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-45-        Me.DgvSeq.Location = New System.Drawing.Point(12, 12)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-54-        'LblWorkID
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-55-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb:56:        Me.LblWorkID.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-57-        Me.LblWorkID.Font = New System.Drawing.Font("맑은 고딕", 14.0!, System.Drawing.FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-58-        Me.LblWorkID.Location = New System.Drawing.Point(400, 808)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-227-        'LblCopyTo
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-228-        '
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb:229:        Me.LblCopyTo.AutoSize = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-230-        Me.LblCopyTo.Font = New System.Drawing.Font("맑은 고딕", 14.0!, System.Drawing.FontStyle.Bold)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.Designer.vb-231-        Me.LblCopyTo.Location = New System.Drawing.Point(130, 808)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-26-    End Sub
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-27-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:28:    ' CellPainting 이벤트 - 콤보박스 셀 배경색 직접 그리기
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:29:    Private Sub DgvSeq_CellPainting(sender As Object, e As DataGridViewCellPaintingEventArgs) Handles DgvSeq.CellPainting
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-30-        If e.RowIndex < 0 OrElse e.ColumnIndex < 0 Then Return
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-31-
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-135-            .Columns.Add("SeqID", "SeqID")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-136-            .Columns.Add("WorkInfo", "MESSAGE")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:137:            .Columns.Add("FontSize", "FontSize")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-138-            .Columns.Add("ImagePath", "SubImage")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-139-
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-345-            .Columns("SeqID").ReadOnly = True
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-346-            .Columns("WorkInfo").Width = 240
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:347:            .Columns("FontSize").Width = 70
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-348-            .Columns("ImagePath").Width = 110
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-349-            .Columns("Target").Width = 300
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-374-                    DgvSeq.Rows(rowIndex).Cells("SeqID").Value = NullCheck(Rs.Fields("SeqID").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-375-                    DgvSeq.Rows(rowIndex).Cells("WorkInfo").Value = NullCheck(Rs.Fields("WorkInfo").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:376:                    DgvSeq.Rows(rowIndex).Cells("FontSize").Value = NullCheck(Rs.Fields("FontSize").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-377-                    DgvSeq.Rows(rowIndex).Cells("ImagePath").Value = NullCheck(Rs.Fields("ImagePath").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-378-                    DgvSeq.Rows(rowIndex).Cells("Type").Value = NullCheck(Rs.Fields("Type").Value)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-448-        DgvSeq.Rows(rowIndex).Cells("SeqID").Value = "1"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-449-        DgvSeq.Rows(rowIndex).Cells("WorkInfo").Value = "-"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:450:        DgvSeq.Rows(rowIndex).Cells("FontSize").Value = "30"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-451-        DgvSeq.Rows(rowIndex).Cells("ImagePath").Value = "0"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-452-        DgvSeq.Rows(rowIndex).Cells("Type").Value = "MESSAGE"
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-501-                End If
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-502-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:503:                ' IN/OUT 컬럼 색상 (CellPainting에서 처리 - Invalidate만 호출)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-504-                For Each colName As String In targetColumns
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-505-                    Dim colIndex As Integer = DgvSeq.Columns(colName).Index
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-548-                Rs.Fields("SeqID").Value = i + 1  ' 순번 재할당
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-549-                Rs.Fields("WorkInfo").Value = NullCheck(DgvSeq.Rows(i).Cells("WorkInfo").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:550:                Rs.Fields("FontSize").Value = NullCheck(DgvSeq.Rows(i).Cells("FontSize").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-551-                Rs.Fields("ImagePath").Value = NullCheck(DgvSeq.Rows(i).Cells("ImagePath").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-552-                Rs.Fields("Type").Value = NullCheck(DgvSeq.Rows(i).Cells("Type").Value)
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-647-            End If
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-648-
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:649:            ' 2. FontSize 숫자 검사
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:650:            Dim fontSizeVal As String = NullCheck(DgvSeq.Rows(i).Cells("FontSize").Value)
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-651-            If fontSizeVal = "" Then
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:652:                errors.Add("행 " & rowNum & ": FontSize가 비어있습니다.")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-653-            Else
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-654-                Dim fontSize As Integer
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-655-                If Not Integer.TryParse(fontSizeVal, fontSize) Then
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:656:                    errors.Add("행 " & rowNum & ": FontSize가 숫자가 아닙니다. (" & fontSizeVal & ")")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-657-                ElseIf fontSize < 8 OrElse fontSize > 100 Then
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:658:                    errors.Add("행 " & rowNum & ": FontSize는 8~100 사이여야 합니다. (" & fontSizeVal & ")")
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-659-                End If
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-660-            End If
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-731-        DgvSeq.Rows(insertIndex).Cells("SeqID").Value = "NEW"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-732-        DgvSeq.Rows(insertIndex).Cells("WorkInfo").Value = "-"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:733:        DgvSeq.Rows(insertIndex).Cells("FontSize").Value = "30"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-734-        DgvSeq.Rows(insertIndex).Cells("ImagePath").Value = "0"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-735-        DgvSeq.Rows(insertIndex).Cells("Type").Value = "MESSAGE"
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-855-            Rs.Fields("SeqID").Value = seqID
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-856-            Rs.Fields("WorkInfo").Value = "-"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:857:            Rs.Fields("FontSize").Value = "30"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-858-            Rs.Fields("ImagePath").Value = "0"
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-859-            Rs.Fields("Type").Value = "MESSAGE"
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-958-        Try
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-959-            For i As Integer = 0 To DgvSeq.Rows.Count - 1
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:960:                Dim strSQL As String = "INSERT INTO TABLE_SEQ (WorkId,SeqID,WorkInfo,FontSize,ImagePath,Type,Target,MainImagePath,NgImagePath," &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-961-                    "IN1,IN1_STATE,IN2,IN2_STATE,IN3,IN3_STATE,IN4,IN4_STATE," &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-962-                    "OUT1,OUT1_ONOFF,OUT2,OUT2_ONOFF,OUT3,OUT3_ONOFF,OUT4,OUT4_ONOFF," &
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-965-                    (i + 1).ToString() & "," &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-966-                    "'" & NullCheck(DgvSeq.Rows(i).Cells("WorkInfo").Value).Replace("'", "''") & "'," &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb:967:                    "'" & NullCheck(DgvSeq.Rows(i).Cells("FontSize").Value) & "'," &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-968-                    "'" & NullCheck(DgvSeq.Rows(i).Cells("ImagePath").Value).Replace("'", "''") & "'," &
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\FrmSeq.vb-969-                    "'" & NullCheck(DgvSeq.Rows(i).Cells("Type").Value) & "'," &
+--
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\manual\generate_manual.py-398-        ["SeqID", "Step number within the sequence (1, 2, 3...)"],
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\manual\generate_manual.py-399-        ["MESSAGE", "Text displayed in main screen grid"],
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\manual\generate_manual.py:400:        ["FontSize", "Font size for MESSAGE display (default: 30)"],
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\manual\generate_manual.py-401-        ["SubImage", "Path to sub-image displayed during this step"],
+C:\Users\Administrator\Desktop\dsc_pop\PopV3\manual\generate_manual.py-402-        ["Type", "Operation type (see Type Reference below)"],

@@ -1,7 +1,7 @@
 ---
 name: db-explorer
 description: DB structure exploration/analysis. Supports SQL Server(sqlcmd), Access/MDB(OleDb), SQLite(sqlite3), MySQL, PostgreSQL, Excel, CSV, dBASE. Auto-detection by file extension.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: orange
 ---
 
@@ -29,3 +29,4 @@ Rules:
 - For large tables, COUNT only — no full dump
 - For binary/BLOB columns, show size only
 - On connection failure, try alternative method (CLI → PowerShell)
+- Report each step taken and its result in detail before proceeding to the next step

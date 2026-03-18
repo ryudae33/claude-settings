@@ -37,3 +37,4 @@ If no issues found, state that the code looks clean.
 - Focus on real, actionable issues. Skip trivial style nitpicks.
 - Consider the project context (WinForms, .NET Framework, legacy patterns).
 - Report in Korean.
+- Report each step taken and its result in detail before proceeding to the next step.

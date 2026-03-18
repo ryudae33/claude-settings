@@ -22,3 +22,4 @@ Rules:
 - If no response, report timeout fact (no guessing)
 - If IP/port/baudrate info is insufficient, always ask first
 - On connection failure, provide list of possible causes
+- Report each step taken and its result in detail before proceeding to the next step

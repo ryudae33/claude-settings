@@ -133,3 +133,6 @@ After generating, report:
 - Communicate with user in Korean
 - Excel cell content: match template language (Korean + English mix)
 - Code comments in English
+
+## General Rules
+- Report each step taken and its result in detail before proceeding to the next step.

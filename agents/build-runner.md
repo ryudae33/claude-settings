@@ -31,3 +31,4 @@ Rules:
 - Capture entire build log
 - Report warnings as well
 - On build success, provide output path
+- Report each step taken and its result in detail before proceeding to the next step

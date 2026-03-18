@@ -1,0 +1,1688 @@
+     1→Imports System.Runtime.InteropServices
+     2→Imports System.Text
+     3→Imports System.Net
+     4→Imports System.IO
+     5→Imports System.Threading
+     6→Imports System.Media
+     7→Imports System
+     8→Imports System.Collections.Generic
+     9→Imports System.ComponentModel
+    10→Imports System.Data
+    11→Imports System.Drawing
+    12→Imports System.Windows.Forms
+    13→Imports System.Reflection
+    14→Imports System.IO.Ports
+    15→Imports AxCWUIControlsLib
+    16→
+    17→Public Class FrmMain
+    18→
+    19→    Private TmpStg1Load1L_Avr As Double
+    20→    Private TmpStg1Load1L_Max As Double
+    21→    Private TmpStg1Load1R_Avr As Double
+    22→    Private TmpStg1Load1R_Max As Double
+    23→    Private TmpStg2Load1L_Avr As Double
+    24→    Private TmpStg2Load1L_Max As Double
+    25→    Private TmpStg2Load1R_Avr As Double
+    26→    Private TmpStg2Load1R_Max As Double
+    27→
+    28→    Private StartTime As String
+    29→    Private Timer As New HiResTimer()
+    30→    Private TotalTimeR As Double = 0
+    31→    Private TotalTimeL As Double = 0
+    32→    Private ErrCount As Double
+    33→
+    34→    Private CounterAtStartR As Int64 = 0
+    35→    Private CounterAtMiddleR As Int64 = 0
+    36→    Private CounterAtNowR As Int64 = 0
+    37→    Private CounterAtStartL As Int64 = 0
+    38→    Private CounterAtMiddleL As Int64 = 0
+    39→    Private CounterAtNowL As Int64 = 0
+    40→
+    41→    Private ArryMaxSize As Integer = 100000
+    42→    Private ArryCountR As Int64
+    43→    Private ArryCountL As Int64
+    44→    Private ArryLeftLoad(ArryMaxSize) As Double
+    45→    Private ArryRightLoad(ArryMaxSize) As Double
+    46→    Private ArryTimeL(ArryMaxSize) As Double
+    47→    Private ArryTimeR(ArryMaxSize) As Double
+    48→
+    49→    Private AvrCountR As Double
+    50→    Private AvrCountL As Double
+    51→
+    52→    Private AvrLeftSum As Double
+    53→    Private AvrRightSum As Double
+    54→
+    55→    Private TmpLeftMAx As Double
+    56→    Private TmpLeftMin As Double
+    57→    Private TmpLeftAvr As Double
+    58→
+    59→    Private TmpRightMAx As Double
+    60→    Private TmpRightMin As Double
+    61→    Private TmpRightAvr As Double
+    62→
+    63→    Private TxtCount As Integer
+    64→
+    65→    Declare Function Wow64DisableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    66→    Declare Function Wow64EnableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    67→    Private osk As String = "C:\Windows\System32\osk.exe"
+    68→
+    69→    Private Load1LCount As Double
+    70→    Private Load1RCount As Double
+    71→    Private Load2LCount As Double
+    72→    Private Load2RCount As Double
+    73→
+    74→    Private ValueLoad1L As Double
+    75→    Private ValueLoad1R As Double
+    76→    Private ValueLoad2L As Double
+    77→    Private ValueLoad2R As Double
+    78→
+    79→    Private LAser1 As Double
+    80→    Private LAser2 As Double
+    81→    Private LAser3 As Double
+    82→    Private LAser4 As Double
+    83→    Private LaserCount As Double
+    84→
+    85→    Private OPTION_LHRH As String
+    86→    Private OPTION_RECL As String
+    87→    Private OPTION_SAB As String
+    88→    Private OPTION_VENT As String
+    89→    Private OPTION_LSUPT As String
+    90→
+    91→    Private D_OutString As String
+    92→    Private rStep As Double
+    93→    Private rCount As Double
+    94→    Private StartTimeL As String
+    95→    Private StartTimeR As String
+    96→    Private EndTime As String
+    97→    'Private wStepL As Double
+    98→    'Private wStepR As Double
+    99→    Private wCount As Double
+   100→    Private wStep As Double
+   101→
+   102→    Public D_Value(0 To 48) As Integer
+   103→    Public IN_LABEL(48) As AxCWUIControlsLib.AxCWButton
+   104→    Public OUT_LABEL(24) As AxCWUIControlsLib.AxCWButton
+   105→
+   106→    Private Trd1 As Thread
+   107→    Private Trd2 As Thread
+   108→    Private Trd3 As Thread
+   109→    Private RecvString As New System.Text.StringBuilder()
+   110→
+   111→    Private Player As New SoundPlayer
+   112→
+   113→    Private Sub NG()
+   114→
+   115→        Me.Player.SoundLocation = System.AppDomain.CurrentDomain.BaseDirectory & "\SOUND\NG.wav"
+   116→        Me.Player.Play()
+   117→
+   118→    End Sub
+   119→
+   120→    Private Sub DingDOng()
+   121→
+   122→        Me.Player.SoundLocation = System.AppDomain.CurrentDomain.BaseDirectory & "\SOUND\DINGDONG.wav"
+   123→        Me.Player.Play()
+   124→
+   125→    End Sub
+   126→
+   127→    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+   128→
+   129→    End Sub
+   130→
+   131→    Private Sub LoadPicture(ByVal picTarget As PictureBox, ByVal picName As String)
+   132→
+   133→        Try
+   134→            picTarget.Image = System.Drawing.Image.FromFile(System.AppDomain.CurrentDomain.BaseDirectory & "\Image\" & picName & ".png")
+   135→        Catch ex As Exception
+   136→        End Try
+   137→
+   138→        Try
+   139→            picTarget.Image = System.Drawing.Image.FromFile(System.AppDomain.CurrentDomain.BaseDirectory & "\Image\" & picName & ".jpg")
+   140→        Catch ex As Exception
+   141→        End Try
+   142→
+   143→        'LoadPicture(Picture_Main, "ASSEMBLE\NHGT")
+   144→
+   145→    End Sub
+   146→
+   147→
+   148→    Private Sub Control2Arry()
+   149→
+   150→        IN_LABEL(0) = P_IN_00
+   151→        IN_LABEL(1) = P_IN_01
+   152→        IN_LABEL(2) = P_IN_02
+   153→        IN_LABEL(3) = P_IN_03
+   154→        IN_LABEL(4) = P_IN_04
+   155→        IN_LABEL(5) = P_IN_05
+   156→        IN_LABEL(6) = P_IN_06
+   157→        IN_LABEL(7) = P_IN_07
+   158→
+   159→        IN_LABEL(8) = P_IN_08
+   160→        IN_LABEL(9) = P_IN_09
+   161→        IN_LABEL(10) = P_IN_10
+   162→        IN_LABEL(11) = P_IN_11
+   163→        IN_LABEL(12) = P_IN_12
+   164→        IN_LABEL(13) = P_IN_13
+   165→        IN_LABEL(14) = P_IN_14
+   166→        IN_LABEL(15) = P_IN_15
+   167→
+   168→        OUT_LABEL(0) = P_OUT_00
+   169→        OUT_LABEL(1) = P_OUT_01
+   170→        OUT_LABEL(2) = P_OUT_02
+   171→        OUT_LABEL(3) = P_OUT_03
+   172→        OUT_LABEL(4) = P_OUT_04
+   173→        OUT_LABEL(5) = P_OUT_05
+   174→        OUT_LABEL(6) = P_OUT_06
+   175→        OUT_LABEL(7) = P_OUT_07
+   176→
+   177→    End Sub
+   178→
+   179→    Private Sub Init_Grid(ByVal GridName As FlexCell.Grid)
+   180→
+   181→        Dim i As Integer
+   182→        With GridName
+   183→
+   184→            'GridName.Visible = False
+   185→            .AutoRedraw = False
+   186→            .AllowUserPaste = FlexCell.ClipboardDataEnum.Text
+   187→            .AllowUserResizing = FlexCell.ResizeEnum.Columns
+   188→            .AllowUserSort = True
+   189→            .DisplayFocusRect = False
+   190→            .ExtendLastCol = True
+   191→            .SelectionMode = FlexCell.SelectionModeEnum.ByCell
+   192→            .SortIndicatorColor = Color.White
+   193→            .BoldFixedCell = False
+   194→            '.AllowUserResizing = FlexCell.ResizeEnum.None
+   195→
+   196→            .Cols = 4
+   197→
+   198→            .Column(0).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   199→            .Column(1).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   200→            .Column(2).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   201→            .Column(3).Alignment = FlexCell.AlignmentEnum.CenterCenter
+   202→
+   203→            .Column(0).Width = 0
+   204→            .Column(1).Width = 60
+   205→            .Column(2).Width = 80
+   206→            .Column(3).Width = 100
+   207→
+   208→            .Rows = 1
+   209→            .DefaultRowHeight = 0
+   210→
+   211→            For i = 0 To .Rows - 1
+   212→                .Cell(i, 0).Text = ""
+   213→                .Cell(i, 1).Text = "No."
+   214→                .Cell(i, 2).Text = "I/O"
+   215→                .Cell(i, 3).Text = "Dec."
+   216→            Next
+   217→
+   218→            .AutoRedraw = True
+   219→            .Refresh()
+   220→
+   221→        End With
+   222→
+   223→    End Sub
+   224→
+   225→    Private Sub InitControlL()
+   226→
+   227→        srcBarCheckRH.Text = ""
+   228→        srcBarCheckRH.BackColor = Color.Black
+   229→
+   230→        LoadPicture(srcPictureBoxL, "NON")
+   231→        srcLbPartNoL.Text = ""
+   232→        srcLbPartNameL.Text = ""
+   233→        srcLbPartOptionL.Text = ""
+   234→        srcLbSerialL.Text = ""
+   235→        GraphLoad1L.ClearData()
+   236→        GraphLoad2L.ClearData()
+   237→        srclbResultLoad1L.Text = ""
+   238→        srclbResultDecisionLoad1L.Text = ""
+   239→        srclbResultDecisionLoad1L.BackColor = Color.Black
+   240→        srclbResultLoad2L.Text = ""
+   241→        srclbResultDecisionLoad2L.Text = ""
+   242→        srclbResultDecisionLoad2L.BackColor = Color.Black
+   243→
+   244→        srclbUnitLoad1L.Text = BAsicUnit
+   245→        srclbUnitLoad2L.Text = BAsicUnit
+   246→
+   247→        srclbSpecLoad1MinL.Text = BasicLoad1MinL
+   248→        srclbSpecLoad1MaxL.Text = BasicLoad1MaxL
+   249→        srclbSpecLoad2MinL.Text = BasicLoad2MinL
+   250→        srclbSpecLoad2MaxL.Text = BasicLoad2MaxL
+   251→
+   252→    End Sub
+   253→
+   254→    Private Sub InitControlR()
+   255→
+   256→        srcBarCheckRH.Text = ""
+   257→        srcBarCheckRH.BackColor = Color.Black
+   258→
+   259→        LoadPicture(srcPictureBoxR, "NON")
+   260→        srcLbPartNoR.Text = ""
+   261→        srcLbPartNameR.Text = ""
+   262→        srcLbPartOptionR.Text = ""
+   263→        srcLbSerialR.Text = ""
+   264→        GraphLoad1R.ClearData()
+   265→        GraphLoad2R.ClearData()
+   266→        srclbResultLoad1R.Text = ""
+   267→        srclbResultDecisionLoad1R.Text = ""
+   268→        srclbResultDecisionLoad1R.BackColor = Color.Black
+   269→        srclbResultLoad2R.Text = ""
+   270→        srclbResultDecisionLoad2R.Text = ""
+   271→        srclbResultDecisionLoad2R.BackColor = Color.Black
+   272→
+   273→        srclbUnitLoad1R.Text = BAsicUnit
+   274→        srclbUnitLoad2R.Text = BAsicUnit
+   275→
+   276→        srclbSpecLoad1MinR.Text = BasicLoad1MinR
+   277→        srclbSpecLoad1MaxR.Text = BasicLoad1MaxR
+   278→        srclbSpecLoad2MinR.Text = BasicLoad2MinR
+   279→        srclbSpecLoad2MaxR.Text = BasicLoad2MaxR
+   280→
+   281→    End Sub
+   282→
+   283→    Sub SerialOpen()
+   284→
+   285→        Try
+   286→            If Serial_Module.IsOpen() = True Then
+   287→                Serial_Module.Close()
+   288→            End If
+   289→            Serial_Module.PortName = PortNumber_Module
+   290→            Serial_Module.BaudRate = 115200
+   291→            Serial_Module.DataBits = 8
+   292→            Serial_Module.Open()
+   293→            WriteTxtMessage("Serial Module Open Success")
+   294→        Catch ex As Exception
+   295→            WriteTxtMessage("Serial Module Open Fail")
+   296→        End Try
+   297→
+   298→        Try
+   299→            If Serial_PrinterL.IsOpen() = True Then
+   300→                Serial_PrinterL.Close()
+   301→            End If
+   302→            Serial_PrinterL.PortName = PortNumber_PrinterL
+   303→            Serial_PrinterL.BaudRate = 9600
+   304→            Serial_PrinterL.DataBits = 8
+   305→            Serial_PrinterL.Open()
+   306→            WriteTxtMessage("Serial Printer L Open Success")
+   307→        Catch ex As Exception
+   308→            WriteTxtMessage("Serial Printer L Open Fail")
+   309→        End Try
+   310→
+   311→        Try
+   312→            If Serial_PrinterR.IsOpen() = True Then
+   313→                Serial_PrinterR.Close()
+   314→            End If
+   315→            Serial_PrinterR.PortName = PortNumber_PrinterR
+   316→            Serial_PrinterR.BaudRate = 9600
+   317→            Serial_PrinterR.DataBits = 8
+   318→            Serial_PrinterR.Open()
+   319→            WriteTxtMessage("Serial Printer R Open Success")
+   320→        Catch ex As Exception
+   321→            WriteTxtMessage("Serial Printer R Open Fail")
+   322→        End Try
+   323→
+   324→        Try
+   325→            If Serial_ScannerL.IsOpen() = True Then
+   326→                Serial_ScannerL.Close()
+   327→            End If
+   328→            Serial_ScannerL.PortName = PortNumber_ScannerL
+   329→            Serial_ScannerL.BaudRate = 9600
+   330→            Serial_ScannerL.DataBits = 8
+   331→            Serial_ScannerL.Parity = IO.Ports.Parity.None
+   332→            Serial_ScannerL.Handshake = Ports.Handshake.RequestToSendXOnXOff
+   333→            Serial_ScannerL.Open()
+   334→            WriteTxtMessage("Serial Scanner L Open Success " & PortNumber_ScannerL)
+   335→        Catch ex As Exception
+   336→            WriteTxtMessage("Serial Scanner L Open Fail")
+   337→        End Try
+   338→
+   339→        Try
+   340→            If Serial_ScannerR.IsOpen() = True Then
+   341→                Serial_ScannerR.Close()
+   342→            End If
+   343→            Serial_ScannerR.PortName = PortNumber_ScannerR
+   344→            Serial_ScannerR.BaudRate = 9600
+   345→            Serial_ScannerR.DataBits = 8
+   346→            Serial_ScannerR.Parity = IO.Ports.Parity.None
+   347→            Serial_ScannerR.Handshake = Ports.Handshake.RequestToSendXOnXOff
+   348→            Serial_ScannerR.Open()
+   349→            WriteTxtMessage("Serial Scanner R Open Success " & PortNumber_ScannerR)
+   350→        Catch ex As Exception
+   351→            WriteTxtMessage("Serial Scanner R Open Fail")
+   352→        End Try
+   353→
+   354→        Try
+   355→            If Serial_Load1L.IsOpen() = True Then
+   356→                Serial_Load1L.Close()
+   357→            End If
+   358→            Serial_Load1L.PortName = PortNumber_Load1L
+   359→            Serial_Load1L.BaudRate = 14400
+   360→            Serial_Load1L.DataBits = 8
+   361→            Serial_Load1L.Open()
+   362→            WriteTxtMessage("Serial Load1 L Open Success")
+   363→        Catch ex As Exception
+   364→            WriteTxtMessage("Serial Load1 L Open Fail")
+   365→        End Try
+   366→
+   367→        Try
+   368→            If Serial_Load1R.IsOpen() = True Then
+   369→                Serial_Load1R.Close()
+   370→            End If
+   371→            Serial_Load1R.PortName = PortNumber_Load1R
+   372→            Serial_Load1R.BaudRate = 14400
+   373→            Serial_Load1R.DataBits = 8
+   374→            Serial_Load1R.Open()
+   375→            WriteTxtMessage("Serial Load1 R Open Success")
+   376→        Catch ex As Exception
+   377→            WriteTxtMessage("Serial Load1 R Open Fail")
+   378→        End Try
+   379→
+   380→        Try
+   381→            If Serial_Load2R.IsOpen() = True Then
+   382→                Serial_Load2R.Close()
+   383→            End If
+   384→            Serial_Load2R.PortName = PortNumber_Load2R
+   385→            Serial_Load2R.BaudRate = 14400
+   386→            Serial_Load2R.DataBits = 8
+   387→            Serial_Load2R.Open()
+   388→            WriteTxtMessage("Serial Load2 R Open Success")
+   389→        Catch ex As Exception
+   390→            WriteTxtMessage("Serial Load2 R Open Fail")
+   391→        End Try
+   392→
+   393→        Try
+   394→            If Serial_Load2L.IsOpen() = True Then
+   395→                Serial_Load2L.Close()
+   396→            End If
+   397→            Serial_Load2L.PortName = PortNumber_Load2L
+   398→            Serial_Load2L.BaudRate = 14400
+   399→            Serial_Load2L.DataBits = 8
+   400→            Serial_Load2L.Open()
+   401→            WriteTxtMessage("Serial Load2 L Open Success")
+   402→        Catch ex As Exception
+   403→            WriteTxtMessage("Serial Load2 L Open Fail")
+   404→        End Try
+   405→
+   406→    End Sub
+   407→
+   408→    Sub BarcodePrint(ByVal LR As String, ByVal BArcodeString As String, ByVal PArtno As String, ByVal PArtName As String, ByVal DateString As String, ByVal CarString As String)
+   409→
+   410→        If LR = "L" Then
+   411→
+   412→
+   413→            Serial_PrinterL.Write("^XA")
+   414→            Serial_PrinterL.Write("^FO" & B1X & "," & B1Y & "^BQ,2," & B1L & "^FDQA," & BArcodeString & "^FS")
+   415→            Serial_PrinterL.Write("^FO" & B2X & "," & B2Y & "^A0N," & B2H & "," & B2W & "^FD" & BArcodeString & "^FS")
+   416→            Serial_PrinterL.Write("^FO" & B3X & "," & B3Y & "^A0N," & B3H & "," & B3W & "^FDPART NO. : " & PArtno & "^FS")
+   417→            Serial_PrinterL.Write("^FO" & B4X & "," & B4Y & "^A0N," & B4H & "," & B4H & "^FDOPTION : " & PArtName & "^FS")
+   418→            Serial_PrinterL.Write("^FO" & B5X & "," & B5Y & "^A0N,," & B5H & "," & B5W & "^FDDATE : " & DateString & "^FS")
+   419→            Serial_PrinterL.Write("^FO" & B6X & "," & B6Y & "^A0N,," & B6H & "," & B6W & "^FDCAR : " & CarString & "^FS")
+   420→            Serial_PrinterL.Write("^XZ")
+   421→
+   422→            'Barcode_Print("R", CreateEndBArcode(srcLbSerialR.Text), srcLbPartNoR.Text, srcLbPartOptionR.Text)
+   423→
+   424→        ElseIf LR = "R" Then
+   425→
+   426→            Serial_PrinterR.Write("^XA")
+   427→            Serial_PrinterR.Write("^FO" & B1X & "," & B1Y & "^BQ,2," & B1L & "^FDQA," & BArcodeString & "^FS")
+   428→            Serial_PrinterR.Write("^FO" & B2X & "," & B2Y & "^A0N," & B2H & "," & B2W & "^FD" & BArcodeString & "^FS")
+   429→            Serial_PrinterR.Write("^FO" & B3X & "," & B3Y & "^A0N," & B3H & "," & B3W & "^FDPART NO. : " & PArtno & "^FS")
+   430→            Serial_PrinterR.Write("^FO" & B4X & "," & B4Y & "^A0N," & B4H & "," & B4H & "^FDOPTION : " & PArtName & "^FS")
+   431→            Serial_PrinterR.Write("^FO" & B5X & "," & B5Y & "^A0N,," & B5H & "," & B5W & "^FDDATE : " & DateString & "^FS")
+   432→            Serial_PrinterR.Write("^FO" & B6X & "," & B6Y & "^A0N,," & B6H & "," & B6W & "^FDCAR : " & CarString & "^FS")
+   433→            Serial_PrinterR.Write("^XZ")
+   434→
+   435→            'Barcode_Print("R", CreateEndBArcode(srcLbSerialR.Text), srcLbPartNoR.Text, srcLbPartOptionR.Text)
+   436→
+   437→        End If
+   438→
+   439→    End Sub
+   440→
+   441→    'Private Sub Create_Serial()
+   442→
+   443→    '    If CInt(Format(Now, "hhMM")) > 800 And CInt(Format(Now, "hhMM")) < 2000 Then
+   444→    '        END_SERIAL.Text = srcPartNo.Text & "," & Mid(srcSerialNumber.Text, 3, 6) & "," & "0" & "," & Mid(srcSerialNumber.Text, 9, 4) & "," & "04"
+   445→    '    Else
+   446→    '        END_SERIAL.Text = srcPartNo.Text & "," & Mid(srcSerialNumber.Text, 3, 6) & "," & "1" & "," & Mid(srcSerialNumber.Text, 9, 4) & "," & "04"
+   447→    '    End If
+   448→
+   449→    'End Sub
+   450→
+   451→    Private Sub LoadPArt(ByVal str As String)
+   452→
+   453→        ConnectionOpenSQL()
+   454→
+   455→        Dim Rs As New ADODB.Recordset
+   456→
+   457→        Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   458→        Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   459→        Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+   460→
+   461→        Rs.Open("SELECT * FROM TablePart WHERE PartNo = '" & str & "'", SqlConnect)
+   462→
+   463→        If Rs.RecordCount = 1 Then
+   464→
+   465→            If Mid(str, 1, 3) = "893" Then
+   466→
+   467→                srcLbPartNameL.Text = Trim(Rs.Fields("PartName").Value)
+   468→                If Rs.Fields("OptionRemote").Value = True Then
+   469→                    srcLbPartOptionL.Text = "REMOTE"
+   470→                Else
+   471→                    srcLbPartOptionL.Text = "NON"
+   472→                End If
+   473→                LoadPicture(srcPictureBoxL, str)
+   474→                DO_ON(1)
+   475→                DO_ON(2)
+   476→                DO_WRITE()
+   477→
+   478→            ElseIf Mid(str, 1, 3) = "894" Then
+   479→
+   480→                srcLbPartNameR.Text = Trim(Rs.Fields("PartName").Value)
+   481→                If Rs.Fields("OptionRemote").Value = True Then
+   482→                    srcLbPartOptionR.Text = "REMOTE"
+   483→                Else
+   484→                    srcLbPartOptionR.Text = "NON"
+   485→                End If
+   486→                LoadPicture(srcPictureBoxR, str)
+   487→                DO_ON(0)
+   488→                DO_ON(3)
+   489→                DO_WRITE()
+   490→
+   491→            End If
+   492→
+   493→        End If
+   494→
+   495→        Rs.ActiveConnection = Nothing
+   496→        Rs.Close()
+   497→
+   498→        ConnectionCloseSQL()
+   499→
+   500→    End Sub
+   501→
+   502→    Private Function OptionConvert(ByVal str As String) As String
+   503→
+   504→        Dim tmp As String
+   505→
+   506→        If str = "ON" Then
+   507→            tmp = ""
+   508→        ElseIf str = "OFF" Then
+   509→            tmp = ""
+   510→        ElseIf str = "PASS" Then
+   511→            tmp = "PASS"
+   512→        End If
+   513→
+   514→        Return tmp
+   515→
+   516→    End Function
+   517→
+   518→    Private Function OptionConvertInt(ByVal str As String) As Integer
+   519→
+   520→        Dim tmp As Integer
+   521→
+   522→        If str = "ON" Then
+   523→            tmp = 1
+   524→        ElseIf str = "OFF" Then
+   525→            tmp = 0
+   526→        ElseIf str = "PASS" Then
+   527→            tmp = 100
+   528→        End If
+   529→
+   530→        Return tmp
+   531→
+   532→    End Function
+   533→
+   534→    Sub DO_ON(ByVal num As Integer)
+   535→
+   536→        If num <= 7 Then
+   537→            Mid$(D_OutString, num + 2, 1) = "1"
+   538→            OUT_LABEL(num).Value = True
+   539→        End If
+   540→
+   541→    End Sub
+   542→
+   543→    Sub DO_OFF(ByVal num As Integer)
+   544→
+   545→        If num <= 7 Then
+   546→            Mid$(D_OutString, num + 2, 1) = "0"
+   547→            OUT_LABEL(num).Value = False
+   548→        End If
+   549→
+   550→    End Sub
+   551→
+   552→    Sub DO_WRITE()
+   553→
+   554→        If Serial_Module.IsOpen = True Then Serial_Module.Write(D_OutString)
+   555→
+   556→    End Sub
+   557→
+   558→    Private Sub ThreadTask2()
+   559→
+   560→        Do While Serial_Module.IsOpen = True
+   561→
+   562→            Try
+   563→
+   564→                Dim Incoming1 As String = Serial_Module.ReadLine()
+   565→
+   566→                If Incoming1 Is Nothing Then
+   567→                    'Exit Do
+   568→                Else
+   569→
+   570→                    RecvString.Append(Incoming1)
+   571→
+   572→                    'S0010000010000000000000000000000000000000000000000000000000000000E
+   573→                    'S0010000010000000000000000000000000000000000000000000000000000000E
+   574→                    'S0010000010000000000000000000000000000000000000000000000000000000E
+   575→
+   576→                    '32 32 2
+   577→                    If RecvString.Length = 34 Then
+   578→
+   579→                        If Mid(RecvString.ToString, 1, 1) = "S" And Mid(RecvString.ToString, 34, 1) = "E" Then
+   580→
+   581→                            For i As Integer = 0 To 15
+   582→                                D_Value(i) = CInt(Mid$(RecvString.ToString, i + 2, 1))
+   583→                            Next
+   584→
+   585→                        End If
+   586→
+   587→                    End If
+   588→
+   589→                    RecvString.Clear()
+   590→                    Serial_Module.DiscardInBuffer()
+   591→
+   592→                End If
+   593→
+   594→            Catch ex As Exception
+   595→
+   596→            End Try
+   597→
+   598→        Loop
+   599→
+   600→    End Sub
+   601→
+   602→    Private Sub UpdateDB(ByVal strLineSerial As String, ByVal strEndSerial As String)
+   603→
+   604→        Dim strSQL As String = ""
+   605→        ConnectionOpenSQL()
+   606→
+   607→        'JA04_Date	nchar(10)	Checked
+   608→        'JA04_Start_Time	nchar(8)	Checked
+   609→        'JA04_End_Time	nchar(8)	Checked
+   610→        'JA04_STG1_Max	nchar(10)	Checked
+   611→        'JA04_STG1_AVR	nchar(10)	Checked
+   612→        'JA04_STG1_DEC_TYPE	nchar(10)	Checked
+   613→        'JA04_STG1_DECISION	nchar(2)	Checked
+   614→        'JA04_STG2_Max	nchar(10)	Checked
+   615→        'JA04_STG2_AVR	nchar(10)	Checked
+   616→        'JA04_STG2_DEC_TYPE	nchar(10)	Checked
+   617→        'Ja04_STG2_DECISION	nchar(2)	Checked
+   618→        'JA04_END_SERIAL	nchar(200)	Checked
+   619→
+   620→        If InStr(1, strLineSerial, "893") <> 0 Then
+   621→
+   622→            strSQL = "UPDATE TableMainLH SET " &
+   623→                    "JA04_Date = '" & Format(Now, "yyyy-MM-dd") & "'," &
+   624→                    "JA04_Start_Time = '" & StartTime & "'," &
+   625→                    "JA04_End_Time = '" & Format(Now, "HH:mm:ss") & "'," &
+   626→                    "JA04_STG1_Max = '" & TmpStg1Load1L_Max & "'," &
+   627→                    "JA04_STG1_AVR = '" & TmpStg1Load1L_Avr & "'," &
+   628→                    "JA04_STG1_DEC_TYPE = '" & BasicMeasureTypeL & "'," &
+   629→                    "JA04_STG1_DECISION = '" & srclbResultDecisionLoad1L.Text & "'," &
+   630→                    "JA04_STG2_Max = '" & TmpStg2Load1L_Max & "'," &
+   631→                    "JA04_STG2_AVR = '" & TmpStg2Load1L_Avr & "'," &
+   632→                    "JA04_STG2_DEC_TYPE = '" & BasicMeasureTypeL & "'," &
+   633→                    "JA04_STG2_DECISION = '" & srclbResultDecisionLoad2L.Text & "'," &
+   634→                    "JA04_END_SERIAL = '" & strEndSerial & "'" &
+   635→                    " WHERE LineSerial = '" & strLineSerial & "'"
+   636→
+   637→        ElseIf InStr(1, strLineSerial, "894") <> 0 Then
+   638→
+   639→            strSQL = "UPDATE TableMainRH SET " &
+   640→                    "JA04_Date = '" & Format(Now, "yyyy-MM-dd") & "'," &
+   641→                    "JA04_Start_Time = '" & StartTime & "'," &
+   642→                    "JA04_End_Time = '" & Format(Now, "HH:mm:ss") & "'," &
+   643→                    "JA04_STG1_Max = '" & TmpStg1Load1R_Max & "'," &
+   644→                    "JA04_STG1_AVR = '" & TmpStg1Load1R_Avr & "'," &
+   645→                    "JA04_STG1_DEC_TYPE = '" & BasicMeasureTypeR & "'," &
+   646→                    "JA04_STG1_DECISION = '" & srclbResultDecisionLoad1R.Text & "'," &
+   647→                    "JA04_STG2_Max = '" & TmpStg2Load1R_Max & "'," &
+   648→                    "JA04_STG2_AVR = '" & TmpStg2Load1R_Avr & "'," &
+   649→                    "JA04_STG2_DEC_TYPE = '" & BasicMeasureTypeR & "'," &
+   650→                    "JA04_STG2_DECISION = '" & srclbResultDecisionLoad2R.Text & "'," &
+   651→                    "JA04_END_SERIAL = '" & strEndSerial & "'" &
+   652→                    " WHERE LineSerial = '" & strLineSerial & "'"
+   653→
+   654→        End If
+   655→
+   656→        SqlConnect.Execute(strSQL)
+   657→        ConnectionCloseSQL()
+   658→
+   659→    End Sub
+   660→
+   661→    Private Function STR2ASC(ByVal str As String) As String
+   662→
+   663→        Dim tmp As String = ""
+   664→        Dim i As Integer
+   665→
+   666→        For i = 1 To Len(str)
+   667→            tmp = tmp & Hex(Asc(Mid(str, i, 1)))
+   668→        Next
+   669→
+   670→        Return tmp
+   671→
+   672→    End Function
+   673→
+   674→    Private Sub WriteTxtMessage(ByVal strMessage As String)
+   675→
+   676→        TxtCount = TxtCount + 1
+   677→        If TxtCount = 10 Then
+   678→            txtMessage.Text = Format(Now, "yyyy-MM-dd") & " " & Format(Now, "HH:mm:ss") & ": " & strMessage & vbCrLf
+   679→            TxtCount = 1
+   680→        Else
+   681→            txtMessage.Text = txtMessage.Text & Format(Now, "yyyy-MM-dd") & " " & Format(Now, "HH:mm:ss") & ": " & strMessage & vbCrLf
+   682→        End If
+   683→
+   684→    End Sub
+   685→
+   686→    Private Function ASC2STR(ByVal str As String) As String
+   687→
+   688→        Dim One_Hex, Tmp_Hex, retVal As String
+   689→        Dim i As Integer
+   690→
+   691→        retVal = ""
+   692→        For i = 1 To Len(str)
+   693→            One_Hex = Mid(str, i, 1)
+   694→            If IsNumeric(One_Hex) Then
+   695→                Tmp_Hex = Mid(str, i, 2)
+   696→                i = i + 1
+   697→            Else
+   698→                Tmp_Hex = Mid(str, i, 4)
+   699→                i = i + 3
+   700→            End If
+   701→            retVal = retVal & Chr("&H" & Tmp_Hex)
+   702→        Next
+   703→        Return retVal
+   704→
+   705→    End Function
+   706→
+   707→    Private Function Create_Serial() As String
+   708→
+   709→        'Dim Rs As New ADODB.Recordset
+   710→        'Dim tmp As String = ""
+   711→
+   712→        'Connection_Open_MDB()
+   713→
+   714→        'Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   715→        'Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   716→        'Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+   717→
+   718→        'Rs.Open("SELECT * FROM Table_Main WHERE JA01_DATE = '" & Format(Now, "yyyy-MM-dd") & "'", Mdb_Connect)
+   719→
+   720→        'tmp = Format(Now, "yyyyMMdd") & Format(Rs.RecordCount + 1, "0000") & srcPartNo.Text
+   721→
+   722→        'Rs.ActiveConnection = Nothing
+   723→        'Rs.Close()
+   724→
+   725→        'Connection_Close_MDB()
+   726→
+   727→        'Return tmp
+   728→
+   729→    End Function
+   730→
+   731→    Private Sub Timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles Timer1.Tick
+   732→
+   733→        For i As Integer = 0 To 15
+   734→            If D_Value(i) = 1 Then
+   735→                IN_LABEL(i).Value = True
+   736→            Else
+   737→                IN_LABEL(i).Value = False
+   738→            End If
+   739→        Next i
+   740→
+   741→        If wStep = 2.1 Then
+   742→            FrmImage.Close()
+   743→            wStep = 3
+   744→        ElseIf wStep = 100 Then
+   745→            FrmImage.Show()
+   746→            wStep = 0
+   747→        End If
+   748→
+   749→    End Sub
+   750→
+   751→    Private Sub Tmr_Work1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles Tmr_Work1.Tick
+   752→
+   753→
+   754→    End Sub
+   755→
+   756→    Private Sub FrmMain_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+   757→
+   758→        D_OutString = "S" & "00000000" & "E"
+   759→
+   760→        'P_OUT_00.Value = True
+   761→
+   762→        CheckForIllegalCrossThreadCalls = False
+   763→
+   764→        Control2Arry()
+   765→        LoadPortData()
+   766→        LoadBarcodeData()
+   767→        LoadBasicData()
+   768→        InitControlL()
+   769→        InitControlR()
+   770→
+   771→        WriteTxtMessage("Init Complete")
+   772→        SerialOpen()
+   773→
+   774→        srcUnit1.Text = BAsicUnit
+   775→        srcUnit2.Text = BAsicUnit
+   776→        srcUnit3.Text = BAsicUnit
+   777→        srcUnit4.Text = BAsicUnit
+   778→
+   779→        'For i As Integer = 0 To 7
+   780→        '    DO_OFF(i)
+   781→        'Next
+   782→
+   783→        'P_OUT_03.Value = True
+   784→
+   785→        If Serial_Module.IsOpen = True Then
+   786→            DO_WRITE()
+   787→            Trd2 = New Thread(AddressOf ThreadTask2)
+   788→            Trd2.IsBackground = True
+   789→            Trd2.Start()
+   790→            Timer1.Interval = 100
+   791→            Timer1.Start()
+   792→        End If
+   793→        Trd1 = New Thread(AddressOf ThreadTask1)
+   794→        Trd1.IsBackground = True
+   795→        Trd1.Start()
+   796→
+   797→        WriteTxtMessage("System Ready..")
+   798→
+   799→        FrmImage.Show()
+   800→
+   801→    End Sub
+   802→
+   803→    Private Sub ThreadTask1()
+   804→
+   805→        Dim i As Integer
+   806→        Dim tmpFileName As String = ""
+   807→        Dim tmpFolderName As String = ""
+   808→        Dim DecisionString As String = ""
+   809→        Dim tmpEndSerialL As String
+   810→        Dim tmpEndSerialR As String
+   811→
+   812→        Do
+   813→
+   814→            LabelStep.Text = wStep
+   815→            If (D_Value(1) = 1) And wStep <> 0 Then
+   816→                DO_OFF(0)
+   817→                DO_OFF(1)
+   818→                DO_OFF(2)
+   819→                DO_OFF(3)
+   820→                DO_OFF(4)
+   821→                DO_OFF(5)
+   822→                DO_OFF(6)
+   823→                DO_OFF(7)
+   824→                DO_WRITE()
+   825→                InitControlL()
+   826→                InitControlR()
+   827→                wStep = 100
+   828→            End If
+   829→
+   830→            'Try
+   831→
+   832→            If wStep = 0 Then
+   833→
+   834→                If D_Value(0) = 1 Then
+   835→                    InitControlL()
+   836→                    InitControlR()
+   837→                    DO_OFF(0)
+   838→                    DO_OFF(1)
+   839→                    DO_OFF(2)
+   840→                    DO_OFF(3)
+   841→                    DO_OFF(4)
+   842→                    DO_OFF(5)
+   843→                    DO_OFF(6)
+   844→                    DO_OFF(7)
+   845→                    DO_WRITE()
+   846→                    wStep = 1
+   847→                End If
+   848→
+   849→            ElseIf wStep = 1 Then
+   850→
+   851→                If srcLbSerialL.Text <> "" And srcLbSerialR.Text <> "" Then
+   852→                    StartTime = Format(Now, "HH:mm:ss")
+   853→                    'FrmImage.Close()
+   854→                    wStep = 2
+   855→                End If
+   856→
+   857→            ElseIf wStep = 2 Then
+   858→
+   859→                Reset1L()
+   860→                Reset1R()
+   861→                Reset2L()
+   862→                Reset2R()
+   863→                wStep = 2.1
+   864→
+   865→            ElseIf wStep = 3 Then
+   866→
+   867→                If D_Value(3) = 1 Then
+   868→                    WriteTxtMessage("Test Start STG 1")
+   869→                    wStep = 4
+   870→                ElseIf D_Value(4) = 1 Then
+   871→                    WriteTxtMessage("Test Start STG 2")
+   872→                    wStep = 8
+   873→                End If
+   874→
+   875→            ElseIf wStep = 4 Then
+   876→
+   877→                CounterAtStartR = Timer.Value
+   878→                CounterAtStartL = Timer.Value
+   879→                TmpRightMAx = 0
+   880→                TmpRightMin = 1000000
+   881→                TmpRightAvr = 0
+   882→                ArryCountR = 0
+   883→                AvrCountR = 0
+   884→                AvrRightSum = 0
+   885→                TmpLeftMAx = 0
+   886→                TmpLeftMin = 1000000
+   887→                TmpLeftAvr = 0
+   888→                ArryCountL = 0
+   889→                AvrCountL = 0
+   890→                AvrLeftSum = 0
+   891→
+   892→                GraphLoad1L.Cursors.Item(2).YPosition = BasicLoad1MinL
+   893→                GraphLoad1L.Cursors.Item(3).YPosition = BasicLoad1MaxL
+   894→                GraphLoad1R.Cursors.Item(2).YPosition = BasicLoad1MinR
+   895→                GraphLoad1R.Cursors.Item(3).YPosition = BasicLoad1MaxR
+   896→                wStep = 5
+   897→
+   898→            ElseIf wStep = 5 Then
+   899→
+   900→                If D_Value(3) = 0 Then wStep = 6
+   901→
+   902→                CounterAtNowR = Timer.Value
+   903→                TotalTimeR = CDbl(Format(CDbl(((CounterAtNowR - CounterAtStartR) * 10000 / Timer.Frequency) / 10000), "00.00"))
+   904→
+   905→                CounterAtNowL = Timer.Value
+   906→                TotalTimeL = CDbl(Format(CDbl(((CounterAtNowL - CounterAtStartL) * 10000 / Timer.Frequency) / 10000), "00.00"))
+   907→
+   908→                If ArryCountR < ArryMaxSize Then
+   909→                    ArryRightLoad(ArryCountR) = ValueLoad1R
+   910→                    ArryTimeR(ArryCountR) = TotalTimeR
+   911→                    ArryCountR = ArryCountR + 1
+   912→                End If
+   913→
+   914→                If ArryCountL < ArryMaxSize Then
+   915→                    ArryLeftLoad(ArryCountL) = ValueLoad1L
+   916→                    ArryTimeL(ArryCountL) = TotalTimeL
+   917→                    ArryCountL = ArryCountL + 1
+   918→                End If
+   919→
+   920→                GraphLoad1L.PlotXYAppend(TotalTimeL, ValueLoad1L)
+   921→                GraphLoad1R.PlotXYAppend(TotalTimeR, ValueLoad1R)
+   922→
+   923→            ElseIf wStep = 6 Then
+   924→
+   925→                GraphLoad1R.Cursors.Item(0).XPosition = BasicIgnoreEnd
+   926→                GraphLoad1R.Cursors.Item(0).YPosition = 4000
+   927→                GraphLoad1R.Cursors.Item(1).XPosition = TotalTimeR - BasicIgnoreEnd
+   928→                GraphLoad1R.Cursors.Item(1).YPosition = 4000
+   929→
+   930→                GraphLoad1L.Cursors.Item(0).XPosition = BasicIgnoreEnd
+   931→                GraphLoad1L.Cursors.Item(0).YPosition = 4000
+   932→                GraphLoad1L.Cursors.Item(1).XPosition = TotalTimeR - BasicIgnoreEnd
+   933→                GraphLoad1L.Cursors.Item(1).YPosition = 4000
+   934→
+   935→                For i = 0 To ArryCountR
+   936→                    If ArryTimeR(i) >= BasicIgnoreStart And ArryTimeR(i) <= TotalTimeR - BasicIgnoreEnd Then
+   937→                        AvrRightSum = AvrRightSum + ArryRightLoad(i)
+   938→                        AvrCountR = AvrCountR + 1
+   939→                        If TmpRightMAx < ArryRightLoad(i) Then TmpRightMAx = ArryRightLoad(i)
+   940→                        If TmpRightMin > ArryRightLoad(i) Then TmpRightMin = ArryRightLoad(i)
+   941→                    End If
+   942→                Next
+   943→                For i = 0 To ArryCountL
+   944→                    If ArryTimeL(i) >= BasicIgnoreStart And ArryTimeL(i) <= TotalTimeL - BasicIgnoreEnd Then
+   945→                        AvrLeftSum = AvrLeftSum + ArryLeftLoad(i)
+   946→                        AvrCountL = AvrCountL + 1
+   947→                        If TmpLeftMAx < ArryLeftLoad(i) Then TmpLeftMAx = ArryLeftLoad(i)
+   948→                        If TmpLeftMin > ArryLeftLoad(i) Then TmpLeftMin = ArryLeftLoad(i)
+   949→                    End If
+   950→                Next
+   951→
+   952→                TmpRightAvr = CDbl(Format(AvrRightSum / AvrCountR, "#0.0#"))
+   953→                TmpLeftAvr = CDbl(Format(AvrLeftSum / AvrCountL, "#0.0#"))
+   954→
+   955→                If BasicMeasureTypeR = "MAX" Then
+   956→                    srclbResultLoad1R.Text = Format(TmpRightMAx, "#0.0#")
+   957→                    srclbResultLoad1L.Text = Format(TmpLeftMAx, "#0.0#")
+   958→                ElseIf BasicMeasureTypeR = "AVR" Then
+   959→                    srclbResultLoad1R.Text = Format(TmpRightAvr, "#0.0#")
+   960→                    srclbResultLoad1L.Text = Format(TmpLeftAvr, "#0.0#")
+   961→                End If
+   962→
+   963→                TmpStg1Load1L_Avr = TmpLeftAvr
+   964→                TmpStg1Load1L_Max = TmpLeftMAx
+   965→                TmpStg1Load1R_Avr = TmpRightAvr
+   966→                TmpStg1Load1R_Max = TmpRightMAx
+   967→
+   968→                If CDbl(srclbResultLoad1R.Text) >= BasicLoad1MinR And CDbl(srclbResultLoad1R.Text) <= BasicLoad1MaxR Then
+   969→                    srclbResultDecisionLoad1R.Text = "OK"
+   970→                    srclbResultDecisionLoad1R.BackColor = Color.Blue
+   971→                Else
+   972→                    srclbResultDecisionLoad1R.Text = "NG"
+   973→                    srclbResultDecisionLoad1R.BackColor = Color.Red
+   974→                End If
+   975→
+   976→                If CDbl(srclbResultLoad1L.Text) >= BasicLoad1MinL And CDbl(srclbResultLoad1L.Text) <= BasicLoad1MaxL Then
+   977→                    srclbResultDecisionLoad1L.Text = "OK"
+   978→                    srclbResultDecisionLoad1L.BackColor = Color.Blue
+   979→                Else
+   980→                    srclbResultDecisionLoad1L.Text = "NG"
+   981→                    srclbResultDecisionLoad1L.BackColor = Color.Red
+   982→                End If
+   983→
+   984→                DO_ON(4)
+   985→                DO_WRITE()
+   986→                WriteTxtMessage("Test End STG 1")
+   987→                wStep = 11
+   988→
+   989→            ElseIf wStep = 7 Then
+   990→
+   991→                If D_Value(4) = 1 Then
+   992→                    WriteTxtMessage("Test Start STG 2")
+   993→                    wStep = 8
+   994→                End If
+   995→
+   996→            ElseIf wStep = 8 Then
+   997→
+   998→                CounterAtStartR = Timer.Value
+   999→                CounterAtStartL = Timer.Value
+  1000→                TmpRightMAx = 0
+  1001→                TmpRightMin = 1000000
+  1002→                TmpRightAvr = 0
+  1003→                ArryCountR = 0
+  1004→                AvrCountR = 0
+  1005→                AvrRightSum = 0
+  1006→                TmpLeftMAx = 0
+  1007→                TmpLeftMin = 1000000
+  1008→                TmpLeftAvr = 0
+  1009→                ArryCountL = 0
+  1010→                AvrCountL = 0
+  1011→                AvrLeftSum = 0
+  1012→
+  1013→                GraphLoad2L.Cursors.Item(2).YPosition = BasicLoad1MinL
+  1014→                GraphLoad2L.Cursors.Item(3).YPosition = BasicLoad1MaxL
+  1015→                GraphLoad2R.Cursors.Item(2).YPosition = BasicLoad1MinR
+  1016→                GraphLoad2R.Cursors.Item(3).YPosition = BasicLoad1MaxR
+  1017→                wStep = 9
+  1018→
+  1019→            ElseIf wStep = 9 Then
+  1020→
+  1021→                If D_Value(4) = 0 Then wStep = 10
+  1022→
+  1023→                CounterAtNowR = Timer.Value
+  1024→                TotalTimeR = CDbl(Format(CDbl(((CounterAtNowR - CounterAtStartR) * 10000 / Timer.Frequency) / 10000), "00.00"))
+  1025→
+  1026→                CounterAtNowL = Timer.Value
+  1027→                TotalTimeL = CDbl(Format(CDbl(((CounterAtNowL - CounterAtStartL) * 10000 / Timer.Frequency) / 10000), "00.00"))
+  1028→
+  1029→                If ArryCountR < ArryMaxSize Then
+  1030→                    ArryRightLoad(ArryCountR) = ValueLoad2R
+  1031→                    ArryTimeR(ArryCountR) = TotalTimeR
+  1032→                    ArryCountR = ArryCountR + 1
+  1033→                End If
+  1034→
+  1035→                If ArryCountL < ArryMaxSize Then
+  1036→                    ArryLeftLoad(ArryCountL) = ValueLoad2L
+  1037→                    ArryTimeL(ArryCountL) = TotalTimeL
+  1038→                    ArryCountL = ArryCountL + 1
+  1039→                End If
+  1040→
+  1041→                GraphLoad2L.PlotXYAppend(TotalTimeL, ValueLoad2L)
+  1042→                GraphLoad2R.PlotXYAppend(TotalTimeR, ValueLoad2R)
+  1043→
+  1044→            ElseIf wStep = 10 Then
+  1045→
+  1046→                GraphLoad2R.Cursors.Item(0).XPosition = BasicIgnoreEnd
+  1047→                GraphLoad2R.Cursors.Item(0).YPosition = 4000
+  1048→                GraphLoad2R.Cursors.Item(1).XPosition = TotalTimeR - BasicIgnoreEnd
+  1049→                GraphLoad2R.Cursors.Item(1).YPosition = 4000
+  1050→
+  1051→                GraphLoad2L.Cursors.Item(0).XPosition = BasicIgnoreEnd
+  1052→                GraphLoad2L.Cursors.Item(0).YPosition = 4000
+  1053→                GraphLoad2L.Cursors.Item(1).XPosition = TotalTimeR - BasicIgnoreEnd
+  1054→                GraphLoad2L.Cursors.Item(1).YPosition = 4000
+  1055→
+  1056→                For i = 0 To ArryCountR
+  1057→                    If ArryTimeR(i) >= BasicIgnoreStart And ArryTimeR(i) <= TotalTimeR - BasicIgnoreEnd Then
+  1058→                        AvrRightSum = AvrRightSum + ArryRightLoad(i)
+  1059→                        AvrCountR = AvrCountR + 1
+  1060→                        If TmpRightMAx < ArryRightLoad(i) Then TmpRightMAx = ArryRightLoad(i)
+  1061→                        If TmpRightMin > ArryRightLoad(i) Then TmpRightMin = ArryRightLoad(i)
+  1062→                    End If
+  1063→                Next
+  1064→                For i = 0 To ArryCountL
+  1065→                    If ArryTimeL(i) >= BasicIgnoreStart And ArryTimeL(i) <= TotalTimeL - BasicIgnoreEnd Then
+  1066→                        AvrLeftSum = AvrLeftSum + ArryLeftLoad(i)
+  1067→                        AvrCountL = AvrCountL + 1
+  1068→                        If TmpLeftMAx < ArryLeftLoad(i) Then TmpLeftMAx = ArryLeftLoad(i)
+  1069→                        If TmpLeftMin > ArryLeftLoad(i) Then TmpLeftMin = ArryLeftLoad(i)
+  1070→                    End If
+  1071→                Next
+  1072→
+  1073→                TmpRightAvr = CDbl(Format(AvrRightSum / AvrCountR, "#0.0#"))
+  1074→                TmpLeftAvr = CDbl(Format(AvrLeftSum / AvrCountL, "#0.0#"))
+  1075→
+  1076→                If BasicMeasureTypeR = "MAX" Then
+  1077→                    srclbResultLoad2R.Text = Format(TmpRightMAx, "#0.0#")
+  1078→                    srclbResultLoad2L.Text = Format(TmpLeftMAx, "#0.0#")
+  1079→                ElseIf BasicMeasureTypeR = "AVR" Then
+  1080→                    srclbResultLoad2R.Text = Format(TmpRightAvr, "#0.0#")
+  1081→                    srclbResultLoad2L.Text = Format(TmpLeftAvr, "#0.0#")
+  1082→                End If
+  1083→
+  1084→                TmpStg2Load1L_Avr = TmpLeftAvr
+  1085→                TmpStg2Load1L_Max = TmpLeftMAx
+  1086→                TmpStg2Load1R_Avr = TmpRightAvr
+  1087→                TmpStg2Load1R_Max = TmpRightMAx
+  1088→
+  1089→                If CDbl(srclbResultLoad2R.Text) >= BasicLoad2MinR And CDbl(srclbResultLoad2R.Text) <= BasicLoad2MaxR Then
+  1090→                    srclbResultDecisionLoad2R.Text = "OK"
+  1091→                    srclbResultDecisionLoad2R.BackColor = Color.Blue
+  1092→                Else
+  1093→                    srclbResultDecisionLoad2R.Text = "NG"
+  1094→                    srclbResultDecisionLoad2R.BackColor = Color.Red
+  1095→                End If
+  1096→
+  1097→                If CDbl(srclbResultLoad2L.Text) >= BasicLoad2MinL And CDbl(srclbResultLoad2L.Text) <= BasicLoad2MaxL Then
+  1098→                    srclbResultDecisionLoad2L.Text = "OK"
+  1099→                    srclbResultDecisionLoad2L.BackColor = Color.Blue
+  1100→                Else
+  1101→                    srclbResultDecisionLoad2L.Text = "NG"
+  1102→                    srclbResultDecisionLoad2L.BackColor = Color.Red
+  1103→                End If
+  1104→
+  1105→                DO_ON(5)
+  1106→                DO_WRITE()
+  1107→                WriteTxtMessage("Test End STG 2")
+  1108→                wStep = 11
+  1109→
+  1110→            ElseIf wStep = 11 Then
+  1111→
+  1112→                If srclbResultDecisionLoad1L.Text = "OK" And srclbResultDecisionLoad1R.Text = "OK" Then
+  1113→                    tmpEndSerialL = srcLbPartNoL.Text & "," & Mid(srcLbSerialL.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialL.Text, 9, 4) & "," & "04"
+  1114→                    UpdateDB(srcLbSerialL.Text, tmpEndSerialL)
+  1115→                    BarcodePrint("L", tmpEndSerialL, srcLbPartNoL.Text, srcLbPartNameL.Text, Mid(srcLbSerialL.Text, 3, 2) & "." & Mid(srcLbSerialL.Text, 5, 2) & "." & Mid(srcLbSerialL.Text, 7, 2), "NX4C")
+  1116→                    tmpEndSerialR = srcLbPartNoR.Text & "," & Mid(srcLbSerialR.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialR.Text, 9, 4) & "," & "04"
+  1117→                    UpdateDB(srcLbSerialR.Text, tmpEndSerialR)
+  1118→                    BarcodePrint("R", tmpEndSerialR, srcLbPartNoR.Text, srcLbPartNameR.Text, Mid(srcLbSerialR.Text, 3, 2) & "." & Mid(srcLbSerialR.Text, 5, 2) & "." & Mid(srcLbSerialR.Text, 7, 2), "NX4C")
+  1119→
+  1120→                ElseIf srclbResultDecisionLoad2R.Text = "OK" And srclbResultDecisionLoad2R.Text = "OK" Then
+  1121→                    tmpEndSerialL = srcLbPartNoL.Text & "," & Mid(srcLbSerialL.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialL.Text, 9, 4) & "," & "04"
+  1122→                    UpdateDB(srcLbSerialL.Text, tmpEndSerialL)
+  1123→                    BarcodePrint("L", tmpEndSerialL, srcLbPartNoL.Text, srcLbPartNameL.Text, Mid(srcLbSerialL.Text, 3, 2) & "." & Mid(srcLbSerialL.Text, 5, 2) & "." & Mid(srcLbSerialL.Text, 7, 2), "NX4C")
+  1124→                    tmpEndSerialR = srcLbPartNoR.Text & "," & Mid(srcLbSerialR.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialR.Text, 9, 4) & "," & "04"
+  1125→                    UpdateDB(srcLbSerialR.Text, tmpEndSerialR)
+  1126→                    BarcodePrint("R", tmpEndSerialR, srcLbPartNoR.Text, srcLbPartNameR.Text, Mid(srcLbSerialR.Text, 3, 2) & "." & Mid(srcLbSerialR.Text, 5, 2) & "." & Mid(srcLbSerialR.Text, 7, 2), "NX4C")
+  1127→                End If
+  1128→                wStep = 11.1
+  1129→
+  1130→            ElseIf wStep = 11.1 Then
+  1131→
+  1132→                If srcBarCheckLH.Text = "OK" And srcBarCheckRH.Text = "OK" Then
+  1133→                    DO_ON(6)
+  1134→                    DO_WRITE()
+  1135→                    wStep = 12
+  1136→                End If
+  1137→                
+  1138→            ElseIf wStep = 12 Then
+  1139→
+  1140→                If D_Value(2) = 1 Then
+  1141→
+  1142→                    DO_OFF(0)
+  1143→                    DO_OFF(1)
+  1144→                    DO_OFF(2)
+  1145→                    DO_OFF(3)
+  1146→                    DO_OFF(4)
+  1147→                    DO_OFF(5)
+  1148→                    DO_OFF(6)
+  1149→                    DO_OFF(7)
+  1150→                    DO_WRITE()
+  1151→
+  1152→                    'If srclbResultDecisionLoad1L.Text = "OK" And srclbResultDecisionLoad1R.Text = "OK" Then
+  1153→                    '    tmpEndSerialL = srcLbPartNoL.Text & "," & Mid(srcLbSerialL.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialL.Text, 9, 4) & "," & "04"
+  1154→                    '    UpdateDB(srcLbSerialL.Text, tmpEndSerialL)
+  1155→                    '    BarcodePrint("L", tmpEndSerialL, srcLbPartNoL.Text, srcLbPartNameL.Text, Mid(srcLbSerialL.Text, 3, 2) & "." & Mid(srcLbSerialL.Text, 5, 2) & "." & Mid(srcLbSerialL.Text, 7, 2), "NX4C")
+  1156→                    '    tmpEndSerialR = srcLbPartNoR.Text & "," & Mid(srcLbSerialR.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialR.Text, 9, 4) & "," & "04"
+  1157→                    '    UpdateDB(srcLbSerialR.Text, tmpEndSerialR)
+  1158→                    '    BarcodePrint("R", tmpEndSerialR, srcLbPartNoR.Text, srcLbPartNameR.Text, Mid(srcLbSerialR.Text, 3, 2) & "." & Mid(srcLbSerialR.Text, 5, 2) & "." & Mid(srcLbSerialR.Text, 7, 2), "NX4C")
+  1159→
+  1160→                    'ElseIf srclbResultDecisionLoad2R.Text = "OK" And srclbResultDecisionLoad2R.Text = "OK" Then
+  1161→                    '    tmpEndSerialL = srcLbPartNoL.Text & "," & Mid(srcLbSerialL.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialL.Text, 9, 4) & "," & "04"
+  1162→                    '    UpdateDB(srcLbSerialL.Text, tmpEndSerialL)
+  1163→                    '    BarcodePrint("L", tmpEndSerialL, srcLbPartNoL.Text, srcLbPartNameL.Text, Mid(srcLbSerialL.Text, 3, 2) & "." & Mid(srcLbSerialL.Text, 5, 2) & "." & Mid(srcLbSerialL.Text, 7, 2), "NX4C")
+  1164→                    '    tmpEndSerialR = srcLbPartNoR.Text & "," & Mid(srcLbSerialR.Text, 3, 6) & "," & "0" & "," & Mid(srcLbSerialR.Text, 9, 4) & "," & "04"
+  1165→                    '    UpdateDB(srcLbSerialR.Text, tmpEndSerialR)
+  1166→                    '    BarcodePrint("R", tmpEndSerialR, srcLbPartNoR.Text, srcLbPartNameR.Text, Mid(srcLbSerialR.Text, 3, 2) & "." & Mid(srcLbSerialR.Text, 5, 2) & "." & Mid(srcLbSerialR.Text, 7, 2), "NX4C")
+  1167→                    'End If
+  1168→
+  1169→                    wStep = 100
+  1170→
+  1171→                End If
+  1172→
+  1173→            End If
+  1174→
+  1175→            'Catch
+  1176→
+  1177→            'End Try
+  1178→
+  1179→            Thread.Sleep(100)
+  1180→            Application.DoEvents()
+  1181→
+  1182→        Loop
+  1183→
+  1184→
+  1185→    End Sub
+  1186→
+  1187→    Private Function ReturnPrintString(ByVal strData As String) As String
+  1188→
+  1189→        Dim RS As String = "_1e"
+  1190→        Dim GS As String = "_1d"
+  1191→        Dim EOT As String = "_04"
+  1192→
+  1193→        Dim tmp As String = ""
+  1194→        If strData.Length > 10 Then
+  1195→            tmp = "#" & "[)>" & RS & "06" & GS & strData & RS & EOT
+  1196→        End If
+  1197→        Return tmp
+  1198→
+  1199→    End Function
+  1200→
+  1201→    Private Function CreateEndBArcode(ByVal strLineSerial As String) As String
+  1202→
+  1203→        Dim RS As String = "_1e"
+  1204→        Dim GS As String = "_1d"
+  1205→        Dim EOT As String = "_04"
+  1206→        Dim TMP As String = ""
+  1207→        Dim _4M_1 As String
+  1208→        Dim _4M_2 As String = ""
+  1209→        Dim _4M_3 As String
+  1210→        Dim _4M_4 As String
+  1211→        Dim _4M_CODE As String
+  1212→        Dim EndData As String = ""
+  1213→
+  1214→        Dim i As Integer
+  1215→
+  1216→        Dim BUCKLE1_TMP As String = ""
+  1217→        Dim BUCKLE2_TMP As String = ""
+  1218→        Dim BUCKLE3_TMP As String = ""
+  1219→        Dim SplitTmp1() As String
+  1220→        Dim SplitTmp2() As String
+  1221→        Dim SplitTmp3() As String
+  1222→
+  1223→        Dim PrintDataTmp1 As String = ""
+  1224→        Dim PrintDataTmp2 As String = ""
+  1225→        Dim PrintDataTmp3 As String = ""
+  1226→
+  1227→        _4M_1 = "1"
+  1228→        'InStr(1, ScanData, "893") <> 0 Then
+  1229→        If InStr(1, strLineSerial, "893") <> 0 Then
+  1230→            _4M_2 = "L"
+  1231→        Else
+  1232→            _4M_2 = "R"
+  1233→        End If
+  1234→
+  1235→        If CInt(Format(Now, "HHmm")) >= 800 And CInt(Format(Now, "HHmm")) <= 1530 Then
+  1236→            _4M_3 = "A"
+  1237→        Else
+  1238→            _4M_3 = "B"
+  1239→        End If
+  1240→        _4M_4 = "1"
+  1241→        _4M_CODE = _4M_1 & _4M_2 & _4M_3 & _4M_4
+  1242→
+  1243→        '200713 0001 88888 00000 AAA
+  1244→        EndData =
+  1245→            "[)>" & RS & "06" & GS &
+  1246→            "V" & "AKZX" & GS &
+  1247→            "P" & Mid(strLineSerial, 11, 5) & Mid(strLineSerial, 17, 8) & GS &
+  1248→            "S" & "" & GS &
+  1249→            "E" & "" & GS &
+  1250→            "T" & Mid(strLineSerial, 1, 6) & _4M_CODE & "A" & "000" & Mid(strLineSerial, 7, 4) & GS &
+  1251→            "M" & "" & GS &
+  1252→            "C" & "" & GS &
+  1253→            RS & EOT
+  1254→
+  1255→        Return EndData
+  1256→
+  1257→    End Function
+  1258→
+  1259→    Private Sub ThreadTask3()
+  1260→
+  1261→        'Dim incoming2 As String
+  1262→        'Dim RecvString2 As New System.Text.StringBuilder()
+  1263→
+  1264→        'Do While 1
+  1265→
+  1266→
+  1267→        '    Try
+  1268→
+  1269→        '        incoming2 = Serial_Laser2.ReadLine()
+  1270→
+  1271→        '        If incoming2 Is Nothing Then
+  1272→        '            'Exit Do
+  1273→        '        Else
+  1274→
+  1275→        '            RecvString2.Append(incoming2)
+  1276→
+  1277→        '            If RecvString2.Length = 25 Then
+  1278→
+  1279→        '                LAser3 = 100 - CDbl(Mid(RecvString2.ToString, 7, 6))
+  1280→        '                LAser4 = 100 - CDbl(Mid(RecvString2.ToString, 18, 6))
+  1281→
+  1282→        '                LaserFRONT_L.Text = LAser3
+  1283→        '                LaserREAR_L.Text = LAser4
+  1284→
+  1285→        '            End If
+  1286→
+  1287→        '            RecvString2.Clear()
+  1288→        '            Serial_Laser2.DiscardInBuffer()
+  1289→
+  1290→        '        End If
+  1291→
+  1292→        '    Catch ex As Exception
+  1293→
+  1294→        '    End Try
+  1295→
+  1296→        '    Application.DoEvents()
+  1297→        'Loop
+  1298→
+  1299→    End Sub
+  1300→
+  1301→    Public Function Hex2Dec(ByVal str As String) As String
+  1302→
+  1303→        Dim tmp As String = ""
+  1304→
+  1305→        Try
+  1306→            tmp = CDbl("&H" & str)
+  1307→        Catch ex As Exception
+  1308→
+  1309→        End Try
+  1310→
+  1311→        Return tmp
+  1312→
+  1313→    End Function
+  1314→
+  1315→    Private Sub Button5_Click(ByVal sender As Object, ByVal e As EventArgs)
+  1316→        Dim old As Long
+  1317→        If Environment.Is64BitOperatingSystem Then
+  1318→            If Wow64DisableWow64FsRedirection(old) Then
+  1319→                Process.Start(osk)
+  1320→                Wow64EnableWow64FsRedirection(old)
+  1321→            End If
+  1322→        Else
+  1323→            Process.Start(osk)
+  1324→        End If
+  1325→    End Sub
+  1326→
+  1327→    Private Sub SerialPortToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles SerialPortToolStripMenuItem.Click
+  1328→        FrmPort.Show()
+  1329→    End Sub
+  1330→
+  1331→    Private Sub BasicToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BasicToolStripMenuItem.Click
+  1332→        FrmBasic.Show()
+  1333→    End Sub
+  1334→
+  1335→    Private Sub ExitToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ExitToolStripMenuItem.Click
+  1336→        End
+  1337→    End Sub
+  1338→
+  1339→    Private Sub BarcodeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BarcodeToolStripMenuItem.Click
+  1340→        FrmBarcode.Show()
+  1341→    End Sub
+  1342→
+  1343→    Private Sub Serial_ScannerL_DataReceived(ByVal sender As Object, ByVal e As SerialDataReceivedEventArgs) Handles Serial_ScannerL.DataReceived
+  1344→
+  1345→        Dim Incoming As String
+  1346→        Dim ScanData As String
+  1347→
+  1348→        Incoming = Serial_ScannerL.ReadLine()
+  1349→        ScanData = Mid$(Incoming, 1, Len(Incoming) - 1)
+  1350→        srcScanDataL.Text = ScanData
+  1351→
+  1352→        Serial_ScannerL.DiscardInBuffer()
+  1353→
+  1354→        If wStep = 11.1 Then
+  1355→
+  1356→            If (CInt(Mid(ScanData, 3, 2)) >= 22) And
+  1357→               (CInt(Mid(ScanData, 5, 2)) >= 1 And CInt(Mid(ScanData, 5, 2)) <= 12) And
+  1358→               (CInt(Mid(ScanData, 7, 2)) >= 1 And CInt(Mid(ScanData, 7, 2)) <= 31) Then
+  1359→                srcBarCheckLH.Text = "OK"
+  1360→                srcBarCheckLH.BackColor = Color.Blue
+  1361→            End If
+  1362→
+  1363→        Else
+  1364→            If InStr(1, ScanData, "89310-") <> 0 Then
+  1365→                InitControlL()
+  1366→                srcLbSerialL.Text = ScanData
+  1367→                srcLbPartNoL.Text = Mid(ScanData, InStr(1, ScanData, "89310-"), 14)
+  1368→                LoadPArt(srcLbPartNoL.Text)
+  1369→                'FrmImage.Close()
+  1370→            ElseIf InStr(1, ScanData, "89410-") <> 0 Then
+  1371→                InitControlR()
+  1372→                srcLbSerialR.Text = ScanData
+  1373→                srcLbPartNoR.Text = Mid(ScanData, InStr(1, ScanData, "89410-"), 14)
+  1374→                LoadPArt(srcLbPartNoR.Text)
+  1375→                'FrmImage.Close()
+  1376→            End If
+  1377→        End If
+  1378→
+  1379→    End Sub
+  1380→
+  1381→    Private Sub Serial_ScannerR_DataReceived(ByVal sender As Object, ByVal e As SerialDataReceivedEventArgs) Handles Serial_ScannerR.DataReceived
+  1382→
+  1383→        Dim Incoming As String
+  1384→        Dim ScanData As String
+  1385→
+  1386→        Incoming = Serial_ScannerR.ReadLine()
+  1387→        ScanData = Mid$(Incoming, 1, Len(Incoming) - 1)
+  1388→        srcScanDataR.Text = ScanData
+  1389→
+  1390→        Serial_ScannerR.DiscardInBuffer()
+  1391→
+  1392→        If wStep = 11.1 Then
+  1393→            If (CInt(Mid(ScanData, 3, 2)) >= 22) And
+  1394→               (CInt(Mid(ScanData, 5, 2)) >= 1 And CInt(Mid(ScanData, 5, 2)) <= 12) And
+  1395→               (CInt(Mid(ScanData, 7, 2)) >= 1 And CInt(Mid(ScanData, 7, 2)) <= 31) Then
+  1396→                srcBarCheckRH.Text = "OK"
+  1397→                srcBarCheckRH.BackColor = Color.Blue
+  1398→            End If
+  1399→        Else
+  1400→            If InStr(1, ScanData, "89310-") <> 0 Then
+  1401→                InitControlL()
+  1402→                srcLbSerialL.Text = ScanData
+  1403→                srcLbPartNoL.Text = Mid(ScanData, InStr(1, ScanData, "89310-"), 14)
+  1404→                LoadPArt(srcLbPartNoL.Text)
+  1405→                FrmImage.Close()
+  1406→            ElseIf InStr(1, ScanData, "89410-") <> 0 Then
+  1407→                InitControlR()
+  1408→                srcLbSerialR.Text = ScanData
+  1409→                srcLbPartNoR.Text = Mid(ScanData, InStr(1, ScanData, "89410-"), 14)
+  1410→                LoadPArt(srcLbPartNoR.Text)
+  1411→                FrmImage.Close()
+  1412→            End If
+  1413→        End If
+  1414→
+  1415→        
+  1416→    End Sub
+  1417→
+  1418→    Private Sub VitualKeyboardToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles VitualKeyboardToolStripMenuItem.Click
+  1419→
+  1420→        Dim old As Long
+  1421→        If Environment.Is64BitOperatingSystem Then
+  1422→            If Wow64DisableWow64FsRedirection(old) Then
+  1423→                Process.Start(osk)
+  1424→                Wow64EnableWow64FsRedirection(old)
+  1425→            End If
+  1426→        Else
+  1427→            Process.Start(osk)
+  1428→        End If
+  1429→
+  1430→    End Sub
+  1431→
+  1432→    Private Sub LabelOut00_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut00.Click
+  1433→        If P_OUT_00.Value = False Then
+  1434→            DO_ON(0)
+  1435→        Else
+  1436→            DO_OFF(0)
+  1437→        End If
+  1438→        DO_WRITE()
+  1439→
+  1440→    End Sub
+  1441→
+  1442→    Private Sub LabelOut01_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut01.Click
+  1443→        If P_OUT_01.Value = False Then
+  1444→            DO_ON(1)
+  1445→        Else
+  1446→            DO_OFF(1)
+  1447→        End If
+  1448→        DO_WRITE()
+  1449→
+  1450→    End Sub
+  1451→
+  1452→    Private Sub LabelOut02_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut02.Click
+  1453→        If P_OUT_02.Value = False Then
+  1454→            DO_ON(2)
+  1455→        Else
+  1456→            DO_OFF(2)
+  1457→        End If
+  1458→        DO_WRITE()
+  1459→
+  1460→    End Sub
+  1461→
+  1462→    Private Sub LabelOut03_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut03.Click
+  1463→        If P_OUT_03.Value = False Then
+  1464→            DO_ON(3)
+  1465→        Else
+  1466→            DO_OFF(3)
+  1467→        End If
+  1468→        DO_WRITE()
+  1469→
+  1470→    End Sub
+  1471→
+  1472→    Private Sub LabelOut04_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut04.Click
+  1473→        If P_OUT_04.Value = False Then
+  1474→            DO_ON(4)
+  1475→        Else
+  1476→            DO_OFF(4)
+  1477→        End If
+  1478→        DO_WRITE()
+  1479→
+  1480→    End Sub
+  1481→
+  1482→    Private Sub LabelOut05_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut05.Click
+  1483→        If P_OUT_05.Value = False Then
+  1484→            DO_ON(5)
+  1485→        Else
+  1486→            DO_OFF(5)
+  1487→        End If
+  1488→        DO_WRITE()
+  1489→
+  1490→    End Sub
+  1491→
+  1492→    Private Sub LabelOut06_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut06.Click
+  1493→        If P_OUT_06.Value = False Then
+  1494→            DO_ON(6)
+  1495→        Else
+  1496→            DO_OFF(6)
+  1497→        End If
+  1498→        DO_WRITE()
+  1499→
+  1500→    End Sub
+  1501→
+  1502→    Private Sub LabelOut07_Click(ByVal sender As Object, ByVal e As EventArgs) Handles LabelOut07.Click
+  1503→        If P_OUT_07.Value = False Then
+  1504→            DO_ON(7)
+  1505→        Else
+  1506→            DO_OFF(7)
+  1507→        End If
+  1508→        DO_WRITE()
+  1509→
+  1510→    End Sub
+  1511→
+  1512→    'Private Sub P_OUT_00_ValueChanged(sender As Object, e As _DCWButtonEvents_ValueChangedEvent) Handles P_OUT_00.ValueChanged
+  1513→    '    If P_OUT_00.Value = False Then
+  1514→    '        DO_ON(0)
+  1515→    '    Else
+  1516→    '        DO_OFF(0)
+  1517→    '    End If
+  1518→    '    DO_WRITE()
+  1519→    'End Sub
+  1520→
+  1521→    'Private Sub Serial_Tool_DataReceived(sender As Object, e As SerialDataReceivedEventArgs) Handles Serial_Tool.DataReceived
+  1522→
+  1523→    '    Dim Incoming As String
+  1524→    '    Dim RecvData As String
+  1525→    '    Dim Tooldata() As String
+  1526→
+  1527→    '    Incoming = Serial_Tool.ReadLine()
+  1528→    '    RecvData = Mid$(Incoming, 1, Len(Incoming) - 1)
+  1529→
+  1530→    '    Serial_Tool.DiscardInBuffer()
+  1531→    '    Tooldata = Split(RecvData, ",")
+  1532→
+  1533→    '    If Tooldata(7) = "P" Then
+  1534→    '        srcMotorTQ.Text = CStr(CDbl(Tooldata(8)))
+  1535→    '        If CDbl(srcMotorTQ.Text) >= BASIC_MOTOR_TQ_MIN And CDbl(srcMotorTQ.Text) <= BASIC_MOTOR_TQ_MAX Then
+  1536→    '            DingDOng()
+  1537→    '            srcMotorTQ_DEc.Text = "OK"
+  1538→    '            srcMotorTQ_DEc.BackColor = Color.Blue
+  1539→    '        Else
+  1540→    '            NG()
+  1541→    '            srcMotorTQ_DEc.Text = "NG"
+  1542→    '            srcMotorTQ_DEc.BackColor = Color.Red
+  1543→    '        End If
+  1544→
+  1545→    '    Else
+  1546→    '        NG()
+  1547→    '        srcMotorTQ.Text = CStr(CDbl(Tooldata(8)))
+  1548→    '        srcMotorTQ_DEc.Text = "NG"
+  1549→    '        srcMotorTQ_DEc.BackColor = Color.Red
+  1550→    '    End If
+  1551→
+  1552→    'End Sub
+  1553→
+  1554→    Private Sub Serial_Load1L_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles Serial_Load1L.DataReceived
+  1555→
+  1556→        Dim Incoming As String
+  1557→        Dim LoadData As String
+  1558→
+  1559→        Try
+  1560→
+  1561→            Incoming = Serial_Load1L.ReadLine()
+  1562→            LoadData = Mid$(Incoming, 1, Len(Incoming) - 1)
+  1563→            Serial_Load1L.DiscardInBuffer()
+  1564→            DataStringLoad1L.Text = LoadData
+  1565→            Load1LCount = Load1LCount + 1
+  1566→            If Load1LCount > 100000 Then Load1LCount = 0
+  1567→            DataCountLoad1L.Text = Load1LCount
+  1568→            RealValueLoad1L.Text = Mid(LoadData, 10, 8)
+  1569→            ValueLoad1L = CDbl(RealValueLoad1L.Text)
+  1570→            'ST,GS,    0.00 kg
+  1571→
+  1572→
+  1573→        Catch ex As Exception
+  1574→
+  1575→        End Try
+  1576→
+  1577→    End Sub
+  1578→
+  1579→    Private Sub Serial_Load1R_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles Serial_Load1R.DataReceived
+  1580→
+  1581→        Dim Incoming As String
+  1582→        Dim LoadData As String
+  1583→
+  1584→        Try
+  1585→
+  1586→            Incoming = Serial_Load1R.ReadLine()
+  1587→            LoadData = Mid$(Incoming, 1, Len(Incoming) - 1)
+  1588→            Serial_Load1R.DiscardInBuffer()
+  1589→            DataStringLoad1R.Text = LoadData
+  1590→            Load1RCount = Load1RCount + 1
+  1591→            If Load1RCount > 100000 Then Load1RCount = 0
+  1592→            DataCountLoad1R.Text = Load1RCount
+  1593→            RealValueLoad1R.Text = Mid(LoadData, 10, 8)
+  1594→            ValueLoad1R = CDbl(RealValueLoad1R.Text)
+  1595→        Catch ex As Exception
+  1596→
+  1597→        End Try
+  1598→
+  1599→    End Sub
+  1600→
+  1601→    Private Sub Serial_Load2L_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles Serial_Load2L.DataReceived
+  1602→
+  1603→        Dim Incoming As String
+  1604→        Dim LoadData As String
+  1605→
+  1606→        Try
+  1607→
+  1608→            Incoming = Serial_Load2L.ReadLine()
+  1609→            LoadData = Mid$(Incoming, 1, Len(Incoming) - 1)
+  1610→            Serial_Load2L.DiscardInBuffer()
+  1611→            DataStringLoad2L.Text = LoadData
+  1612→            Load2LCount = Load2LCount + 1
+  1613→            If Load2LCount > 100000 Then Load2LCount = 0
+  1614→            DataCountLoad2L.Text = Load2LCount
+  1615→            RealValueLoad2L.Text = Mid(LoadData, 10, 8)
+  1616→            ValueLoad2L = CDbl(RealValueLoad2L.Text)
+  1617→        Catch ex As Exception
+  1618→
+  1619→        End Try
+  1620→
+  1621→    End Sub
+  1622→
+  1623→    Private Sub Serial_Load2R_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles Serial_Load2R.DataReceived
+  1624→
+  1625→        Dim Incoming As String
+  1626→        Dim LoadData As String
+  1627→
+  1628→        Try
+  1629→            Incoming = Serial_Load2R.ReadLine()
+  1630→            LoadData = Mid$(Incoming, 1, Len(Incoming) - 1)
+  1631→            Serial_Load2R.DiscardInBuffer()
+  1632→            DataStringLoad2R.Text = LoadData
+  1633→            Load2RCount = Load2RCount + 1
+  1634→            If Load2RCount > 100000 Then Load2RCount = 0
+  1635→            DataCountLoad2R.Text = Load2RCount
+  1636→            RealValueLoad2R.Text = Mid(LoadData, 10, 8)
+  1637→            ValueLoad2R = CDbl(RealValueLoad2R.Text)
+  1638→        Catch ex As Exception
+  1639→
+  1640→        End Try
+  1641→
+  1642→    End Sub
+  1643→
+  1644→    Private Sub Reset1R()
+  1645→        If Serial_Load1R.IsOpen = True Then Serial_Load1R.Write(Chr("&H01") & Chr("&H5A") & Chr("&H0D") & Chr("&H0A"))
+  1646→    End Sub
+  1647→
+  1648→    Private Sub Reset1L()
+  1649→        If Serial_Load1L.IsOpen = True Then Serial_Load1L.Write(Chr("&H01") & Chr("&H5A") & Chr("&H0D") & Chr("&H0A"))
+  1650→    End Sub
+  1651→
+  1652→    Private Sub Reset2R()
+  1653→        If Serial_Load2R.IsOpen = True Then Serial_Load2R.Write(Chr("&H01") & Chr("&H5A") & Chr("&H0D") & Chr("&H0A"))
+  1654→    End Sub
+  1655→
+  1656→    Private Sub Reset2L()
+  1657→        If Serial_Load2L.IsOpen = True Then Serial_Load2L.Write(Chr("&H01") & Chr("&H5A") & Chr("&H0D") & Chr("&H0A"))
+  1658→    End Sub
+  1659→
+  1660→    Private Sub ResetLoad1R_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResetLoad1R.Click
+  1661→        Reset1R()
+  1662→    End Sub
+  1663→
+  1664→    Private Sub ResetLoad1L_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResetLoad1L.Click
+  1665→        Reset1L()
+  1666→    End Sub
+  1667→
+  1668→    Private Sub ResetLoad2R_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResetLoad2R.Click
+  1669→        Reset2R()
+  1670→    End Sub
+  1671→
+  1672→    Private Sub ResetLoad2L_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResetLoad2L.Click
+  1673→        Reset2L()
+  1674→    End Sub
+  1675→
+  1676→    'Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+  1677→    '    srcLbPartNoL.Text = "89310-AAAAA"
+  1678→    '    srcLbPartNoR.Text = "89410-AAAAA"
+  1679→    '    srcLbSerialL.Text = "20210126000189410-AAAAANNB"
+  1680→    '    srcLbSerialR.Text = "20210126000189310-AAAAANNB"
+  1681→    '    wStep = 1
+  1682→    'End Sub
+  1683→
+  1684→
+  1685→    Private Sub WorkStandardToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WorkStandardToolStripMenuItem.Click
+  1686→        frmworkstandardset.Show()
+  1687→    End Sub
+  1688→End Class

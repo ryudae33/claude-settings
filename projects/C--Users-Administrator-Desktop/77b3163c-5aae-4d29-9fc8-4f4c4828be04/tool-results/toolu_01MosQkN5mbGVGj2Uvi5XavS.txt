@@ -1,0 +1,595 @@
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:102:TON_T0000(IN := TRUE, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:105:TON_T0002(IN := TRUE, PT := T#200ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:124:TON_T0001(IN := M0000A, PT := T#5ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:176:TON_T0003(IN := M00010, PT := T#5ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:209:TON_T0013(IN := M00304, PT := T#1ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:234:TON_T0018(IN := M00018, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:258:TON_T0005(IN := M0001E, PT := T#30000ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:484:TON_T0011(IN := M00016, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:506:TON_T0021(IN := M00031, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:522:TON_T0022(IN := M00032, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:538:TON_T0023(IN := M00033, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:554:TON_T0024(IN := M00034, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:570:TON_T0025(IN := M00035, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:586:TON_T0026(IN := M00036, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:602:TON_T0027(IN := M00037, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:618:TON_T0028(IN := M00038, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:634:TON_T0029(IN := M00039, PT := T#500ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:686:    TON_T0031(IN := FALSE, PT := T#0ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_01_MAIN.st:703:    TON_T0032(IN := FALSE, PT := T#0ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_04_OUTPUT.st:47:TON_T0080(IN := D05001_5, PT := T#40ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_04_OUTPUT.st:49:TON_T0089(IN := D05001_5, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_04_OUTPUT.st:68:TON_T0014(IN := M00304, PT := T#5ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_04_OUTPUT.st:101:               AND NOT M01225 AND M01987, PT := T#15ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_04_OUTPUT.st:223:               AND NOT D00290_0, PT := T#1ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_04_OUTPUT.st:275:               AND NOT D00390_0, PT := T#1ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_04_OUTPUT.st:313:TON_T0074(IN := M05917 AND M01987, PT := T#4ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:382:    TON_T0411(IN := M04011 AND M04314, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:392:    TON_T0412(IN := M04012 AND M04312, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:402:    TON_T0413(IN := M04013 AND M04316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:412:    TON_T0414(IN := M04014 AND M04310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:422:    TON_T0415(IN := M04015, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:432:    TON_T0416(IN := M04016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:493:    TON_T0013(IN := M00030, PT := T#100ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:498:        TON_T0420(IN := TRUE, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:512:        TON_T0421(IN := M04201, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:524:        TON_T0422(IN := M04202, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:539:        TON_T0423(IN := M04203, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:554:        TON_T0424(IN := M04204, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:569:        TON_T0425(IN := M04205, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:586:        TON_T0426(IN := M04206, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:602:        TON_T0427(IN := M04207, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:619:        TON_T0428(IN := M04208, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:642:        TON_T0429(IN := M04209, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:660:        TON_T0430(IN := M0420A, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:674:        TON_T0431(IN := M0420B, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:688:        TON_T0432(IN := M0420C, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:704:        TON_T0433(IN := M0420D, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:723:        TON_T0434(IN := M0420E, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:742:        TON_T0435(IN := M0420F, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:758:        TON_T0436(IN := M04210, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:773:        TON_T0437(IN := M04211, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:788:        TON_T0438(IN := M04212 AND M04316, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:803:        TON_T0439(IN := M04213, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:1044:    TON_T0458(IN := P00091, PT := T#300ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_14_댐퍼.st:1052:    TON_T0459(IN := P00090, PT := T#300ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:256:TON_T0200(IN := M02004, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:278:    TON_T0201(IN := M02002, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:366:    TON_T0211(IN := M02011, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:376:    TON_T0212(IN := M02012, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:386:    TON_T0213(IN := M02013, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:397:    TON_T0214(IN := M02014 AND M02316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:407:    TON_T0215(IN := M02015, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:417:    TON_T0216(IN := M02016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:427:    TON_T0217(IN := M02017, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:437:    TON_T0218(IN := M02018, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:447:    TON_T0219(IN := M02019, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:495:    TON_T0013(IN := M00030, PT := T#100ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:514:        TON_T0221(IN := M02002 AND M02201, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:519:        TON_T0221(IN := M02002 AND M02201, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:535:        TON_T0225(IN := M02205, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:556:        TON_T0226(IN := M02206 AND M02317, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:568:        TON_T0222(IN := M02202, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:580:        TON_T0223(IN := M02203, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:597:        TON_T0220(IN := M02204, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:598:        TON_T0224(IN := M02204, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:613:        TON_T0227(IN := M02207, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:614:        TON_T0236(IN := M02207, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:626:        TON_T0231(IN := M0220B, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:638:        TON_T0228(IN := M02208, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:650:        TON_T0229(IN := M02209, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:662:        TON_T0230(IN := M0220A, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:674:        TON_T0232(IN := M0220C, PT := T#40ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:692:        TON_T0233(IN := M0220D AND M02316, PT := T#40ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:716:        TON_T0234(IN := M0220E, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_12_스프링015.st:738:        TON_T0235(IN := M0220F, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:216:           PT := T#3s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:230:TON_T0501(IN := M05002, PT := T#2s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:347:        TON_T0511(IN := M05011, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:354:        TON_T0512(IN := M05012, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:361:        TON_T0513(IN := M05013, PT := T#3s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:367:        TON_T0514(IN := M05014, PT := T#3s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:373:        TON_T0515(IN := M05015, PT := T#3s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:379:        TON_T0516(IN := M05016, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:385:        TON_T0517(IN := M05017, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:391:        TON_T0518(IN := M05018, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:397:        TON_T0519(IN := M05019, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:430:        TON_T0521(IN := M05201, PT := T#2s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:438:        TON_T0522(IN := M05202, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:446:        TON_T0523(IN := M05203, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:465:        TON_T0525(IN := M05205, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:475:        TON_T0526(IN := M05206, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:488:        TON_T0527(IN := M05207, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:496:        TON_T0528(IN := M05208, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:506:        TON_T0529(IN := M05209, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:516:        TON_T0530(IN := M0520A, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:524:        TON_T0531(IN := M0520B, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:533:        TON_T0532(IN := M0520C, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:547:        TON_T0533(IN := M0520D, PT := T#5s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:553:        TON_T0534(IN := M0520E, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:559:        TON_T0535(IN := M0520F, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:565:        TON_T0536(IN := M05210, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_15_구리스도포.st:571:        TON_T0537(IN := M05211, PT := T#1s);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:284:TON_T0100(IN := M01004, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:306:    TON_T0101(IN := M01002, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:407:    TON_T0111(IN := M01011, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:418:    TON_T0112(IN := M01012, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:429:    TON_T0113(IN := M01013, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:440:    TON_T0114(IN := M01014, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:451:    TON_T0115(IN := M01015, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:462:    TON_T0116(IN := M01016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:472:    TON_T0117(IN := M01017, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:482:    TON_T0118(IN := M01018, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:492:    TON_T0119(IN := M01019, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:541:    TON_T0013(IN := M00030, PT := T#100ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:577:    TON_T0121(IN := M01002 AND M01201, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:588:    TON_T0122(IN := M01002 AND M01202 AND M01301, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:599:    TON_T0123(IN := M01002 AND M01203 AND M01910, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:610:    TON_T0124(IN := M01002 AND M01204, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:621:    TON_T0125(IN := M01002 AND M01205 AND M01312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:632:    TON_T0126(IN := M01002 AND M01206 AND M01311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:643:    TON_T0127(IN := M01002 AND M01207 AND M01317, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:655:    TON_T0128(IN := M01002 AND M01208 AND M01319, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:669:              AND M01316 AND M01111 AND M01101, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:680:    TON_T0130(IN := M01002 AND M0120A AND M01315, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:691:    TON_T0131(IN := M01002 AND M0120B, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:704:    TON_T0132(IN := M01002 AND M0120C AND M01313, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:715:    TON_T0133(IN := M01002 AND M0120D AND M01317 AND M01310, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:727:    TON_T0134(IN := M01002 AND M0120E AND M01318 AND M01911, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:747:    TON_T0135(IN := M01002 AND M0120F AND M01316, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:763:    TON_T0136(IN := M01002 AND M01210 AND M01314, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_11_플런저.st:775:    TON_T0137(IN := M01002 AND M01211 AND M01101 AND M0131A, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:254:TON_T0300(IN := M03004, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:276:    TON_T0301(IN := M03002, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:365:    TON_T0311(IN := M03011, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:374:    TON_T0312(IN := M03012, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:383:    TON_T0313(IN := M03013, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:392:    TON_T0314(IN := M03014 AND M03316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:401:    TON_T0315(IN := M03015, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:410:    TON_T0316(IN := M03016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:419:    TON_T0317(IN := M03017, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:428:    TON_T0318(IN := M03018, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:437:    TON_T0319(IN := M03019, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:483:    TON_T0013(IN := M00030, PT := T#100ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:505:        TON_T0321(IN := M03002 AND M03201, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:517:        TON_T0322(IN := M03202, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:529:        TON_T0323(IN := M03203, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:546:        TON_T0320(IN := M03204, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:547:        TON_T0324(IN := M03204, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:554:        TON_T0071(IN := M03204, PT := T#200ms); (* T0071 추가 대기 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:570:        TON_T0325(IN := M03205, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:608:        TON_T0327(IN := M03207, PT := T#100ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:626:        TON_T0328(IN := M03208, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:638:        TON_T0329(IN := M03209, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:650:        TON_T0330(IN := M0320A, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:662:        TON_T0331(IN := M0320B, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:675:        TON_T0332(IN := M0320C, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:692:        TON_T0333(IN := M0320D AND M03316, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:712:        TON_T0334(IN := M0320E, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_13_스프링023.st:729:        TON_T0335(IN := M0320F, PT := T#0ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:178:    TON_T0700 : TON; (* 반자동 지연 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:179:    TON_T0701 : TON; (* 반자동 지연2 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:180:    TON_T0711 : TON; (* 운전준비 스텝1 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:181:    TON_T0712 : TON; (* 운전준비 스텝2 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:182:    TON_T0713 : TON; (* 운전준비 스텝3 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:183:    TON_T0714 : TON; (* 운전준비 스텝4 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:184:    TON_T0715 : TON; (* 운전준비 스텝5 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:185:    TON_T0716 : TON; (* 운전준비 스텝6 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:186:    TON_T0717 : TON; (* 운전준비 스텝7 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:187:    TON_T0718 : TON; (* 운전준비 스텝8 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:188:    TON_T0719 : TON; (* 운전준비 스텝9 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:191:    TON_T0721 : TON; (* 자동 스텝1  T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:192:    TON_T0722 : TON; (* 자동 스텝2  T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:193:    TON_T0723 : TON; (* 자동 스텝3  T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:194:    TON_T0724 : TON; (* 자동 스텝4  T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:195:    TON_T0725 : TON; (* 자동 스텝5  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:196:    TON_T0726 : TON; (* 자동 스텝6  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:197:    TON_T0727 : TON; (* 자동 스텝7  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:198:    TON_T0728 : TON; (* 자동 스텝8  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:199:    TON_T0729 : TON; (* 자동 스텝9  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:200:    TON_T0730 : TON; (* 자동 스텝10 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:201:    TON_T0731 : TON; (* 자동 스텝11 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:202:    TON_T0732 : TON; (* 자동 스텝12 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:203:    TON_T0733 : TON; (* 자동 스텝13 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:204:    TON_T0734 : TON; (* 자동 스텝14 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:205:    TON_T0735 : TON; (* 자동 스텝15 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:206:    TON_T0736 : TON; (* 자동 스텝16 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:207:    TON_T0737 : TON; (* 자동 스텝17 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:208:    TON_T0738 : TON; (* 자동 스텝18 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:209:    TON_T0739 : TON; (* 자동 스텝19 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:210:    TON_T0740 : TON; (* 자동 스텝20 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:211:    TON_T0741 : TON; (* 자동 스텝21 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:212:    TON_T0742 : TON; (* 자동 스텝22 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:213:    TON_T0745 : TON; (* 자동 스텝4 보조타이머 T#100ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:247:TON_T0700(IN := M07004, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:260:TON_T0701(IN := M07002, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:357:        TON_T0711(IN := M07011, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:364:        TON_T0712(IN := M07012, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:372:        TON_T0713(IN := M07013, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:380:        TON_T0714(IN := M07014, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:387:        TON_T0715(IN := M07015, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:394:        TON_T0716(IN := M07016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:401:        TON_T0717(IN := M07017, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:408:        TON_T0718(IN := M07018, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:414:        TON_T0719(IN := M07019, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:472:    1: (* 래더 Line 232 - 스텝1: 대기 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:473:        TON_T0721(IN := M07002 AND M07201, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:478:    2: (* 래더 Line 241 - 스텝2: 프레임 자재확인(M07302), 자재없음 체크, T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:480:        TON_T0722(IN := M07002 AND M07202, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:493:    3: (* 래더 Line 265 - 스텝3: 대기 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:494:        TON_T0723(IN := M07002 AND M07203, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:499:    4: (* 래더 Line 274 - 스텝4: M07311+M07300 ON, T#50ms + 보조타이머 T#100ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:502:        TON_T0724(IN := M07002 AND M07204, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:507:        TON_T0745(IN := M07300, PT := T#100ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:512:    5: (* 래더 Line 294 - 스텝5: 2차이송 전진 확인(M07313) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:514:        TON_T0725(IN := M07002 AND M07205, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:519:    6: (* 래더 Line 304 - 스텝6: 2차이송 클램프(M07317) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:521:        TON_T0726(IN := M07002 AND M07206, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:526:    7: (* 래더 Line 314 - 스텝7: 2차이송 회전(M07319) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:528:        TON_T0727(IN := M07002 AND M07207, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:533:    8: (* 래더 Line 324 - 스텝8: 2차이송 상승/하강(M07316) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:535:        TON_T0728(IN := M07002 AND M07208, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:540:    9: (* 래더 Line 334 - 스텝9: 2차이송 전진(M07315)+1차이송(M07312) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:543:        TON_T0729(IN := M07002 AND M07209, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:548:    10: (* 래더 Line 345 - 스텝10: 2차이송 클램프(M07317)+제품차단(M07310) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:551:        TON_T0730(IN := M07002 AND M0720A, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:556:    11: (* 래더 Line 356 - 스텝11: 3차이송 가이드보조(M0731F) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:558:        TON_T0731(IN := M07002 AND M0720B, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:563:    12: (* 래더 Line 366 - 스텝12: 3차이송 회전(M07320) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:565:        TON_T0732(IN := M07002 AND M0720C, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:570:    13: (* 래더 Line 376 - 스텝13: 1차이송 회전/복귀(M07318) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:572:        TON_T0733(IN := M07002 AND M0720D, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:577:    14: (* 래더 Line 386 - 스텝14: 2차이송 상승/하강(M07316) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:579:        TON_T0734(IN := M07002 AND M0720E, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:584:    15: (* 래더 Line 396 - 스텝15: 프레임 상부(M07321) ON, T#20ms (PAGE 93) *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:586:        TON_T0735(IN := M07002 AND M0720F, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:591:    16: (* 래더 Line 406 - 스텝16: 3차이송 회전복귀(M0731D) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:593:        TON_T0736(IN := M07002 AND M07210, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:598:    17: (* 래더 Line 416 - 스텝17: 3차이송 보조(M0731B) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:600:        TON_T0737(IN := M07002 AND M07211, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:605:    18: (* 래더 Line 426 - 스텝18: 3차이송 가이드(M0731E) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:607:        TON_T0738(IN := M07002 AND M07212, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:612:    19: (* 래더 Line 436 - 스텝19: M07323+3차이송(M0731A)+2차이송후진(M07314) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:616:        TON_T0739(IN := M07002 AND M07213, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:621:    20: (* 래더 Line 448 - 스텝20: 3차이송 클램프(M0731C) ON, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:623:        TON_T0740(IN := M07002 AND M07214, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:639:        (* 타임아웃: T0741 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:640:        TON_T0741(IN := M07002 AND M07215, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:645:    22: (* 래더 Line 481 - 스텝22: 완료 처리 M07322 ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_17_프레임.st:652:        TON_T0742(IN := M07002 AND M07216, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:162:    TON_T0800 : TON;          (* 반자동 지연 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:163:    TON_T0801 : TON;          (* 반자동 지연2 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:164:    TON_T0811 : TON;          (* 초기화 스텝1 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:165:    TON_T0812 : TON;          (* 초기화 스텝2 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:166:    TON_T0813 : TON;          (* 초기화 스텝3 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:167:    TON_T0814 : TON;          (* 초기화 스텝4 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:168:    TON_T0815 : TON;          (* 초기화 스텝5 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:169:    TON_T0816 : TON;          (* 초기화 스텝6 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:170:    TON_T0817 : TON;          (* 초기화 스텝7 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:171:    TON_T0818 : TON;          (* 초기화 스텝8 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:172:    TON_T0819 : TON;          (* 초기화 스텝9 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:173:    TON_T0821 : TON;          (* 자동 스텝1 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:174:    TON_T0822 : TON;          (* 자동 스텝2 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:175:    TON_T0823 : TON;          (* 자동 스텝3 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:176:    TON_T0824 : TON;          (* 자동 스텝4 T#250ms (25×10ms) *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:177:    TON_T0825 : TON;          (* 자동 스텝5 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:178:    TON_T0826 : TON;          (* 자동 스텝6 T#200ms (20×10ms) *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:179:    TON_T0827 : TON;          (* 자동 스텝7 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:180:    TON_T0828 : TON;          (* 자동 스텝8 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:181:    TON_T0829 : TON;          (* 자동 스텝9 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:182:    TON_T0830 : TON;          (* 자동 스텝10 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:183:    TON_T0831 : TON;          (* 자동 스텝11 T#200ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:184:    TON_T0832 : TON;          (* 자동 스텝12 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:185:    TON_T0833 : TON;          (* 자동 스텝13 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:186:    TON_T0834 : TON;          (* 자동 스텝14 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:187:    TON_T0835 : TON;          (* 자동 스텝15 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:188:    TON_T0836 : TON;          (* 자동 스텝16 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:189:    TON_T0837 : TON;          (* 자동 스텝17 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:217:TON_T0800(IN := M08004, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:237:TON_T0801(IN := M08002, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:329:    1: (* 래더 Line 123 - 스텝1: 작동력 상부 상승 SOL ON, T0811 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:331:        TON_T0811(IN := M08011, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:336:    2: (* 래더 Line 132 - 스텝2: 작동력 상부 하강 SOL ON, T0812 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:338:        TON_T0812(IN := M08012, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:343:    3: (* 래더 Line 141 - 스텝3: 대기, T0813 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:344:        TON_T0813(IN := M08013, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:349:    4: (* 래더 Line 149 - 스텝4: 하부 출력(M08513) ON, T0814 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:351:        TON_T0814(IN := M08014, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:356:    5: (* 래더 Line 158 - 스텝5: 대기, T0815 T#30ms → 스텝6 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:357:        TON_T0815(IN := M08015, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:362:    6: (* 래더 Line 166 - 스텝6: 대기, T0816 T#50ms → 스텝7 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:363:        TON_T0816(IN := M08016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:368:    7: (* 래더 Line 174 - 스텝7: 대기, T0817 T#50ms → 스텝8 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:369:        TON_T0817(IN := M08017, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:374:    8: (* 래더 Line 182 - 스텝8: 대기, T0818 T#50ms → 스텝9 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:375:        TON_T0818(IN := M08018, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:380:    9: (* 래더 Line 190 - 스텝9: 초기화 완료, T0819 T#50ms → 스텝0 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:381:        TON_T0819(IN := M08019, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:434:        TON_T0821(IN := M08201, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:462:        TON_T0822(IN := M08202 AND P00040 AND P00042, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:469:        TON_T0823(IN := M08203 AND P00041 AND P00043, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:474:    4: (* 래더 Line 287 - 스텝4: 검사 상부 BLOWER SOL ON (P0020D), T#250ms(25×10ms) *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:476:        TON_T0824(IN := M08204, PT := T#250ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:481:    5: (* 래더 Line 297 - 스텝5: 대기, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:482:        TON_T0825(IN := M08205, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:487:    6: (* 래더 Line 306 - 스텝6: 하부 블로워(P00259) ON, T#200ms(20×10ms) *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:489:        TON_T0826(IN := M08206, PT := T#200ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:494:    7: (* 래더 Line 316 - 스텝7: 대기, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:495:        TON_T0827(IN := M08207, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:503:            TON_T0828(IN := M08208, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:514:            TON_T0829(IN := M08209 AND P00093, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:520:    10: (* 래더 Line 352 - 스텝10: 대기, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:522:            TON_T0830(IN := M0820A, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:528:    11: (* 래더 Line 361 - 스텝11: 하부 블로워(P00259) 2차 ON, T#200ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:531:            TON_T0831(IN := M0820B, PT := T#200ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:537:    12: (* 래더 Line 371 - 스텝12: 대기, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:539:            TON_T0832(IN := M0820C, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:548:            TON_T0833(IN := M0820D, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:569:            TON_T0834(IN := M0820E, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:586:            TON_T0835(IN := M0820F, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:599:            TON_T0836(IN := M08210, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_18_작동력검사.st:609:            TON_T0837(IN := M08211, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:173:    TON_T0600 : TON; (* 반자동 지연 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:174:    TON_T0601 : TON; (* 반자동 지연2 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:175:    TON_T0611 : TON; (* 운전준비 스텝1 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:176:    TON_T0612 : TON; (* 운전준비 스텝2 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:177:    TON_T0613 : TON; (* 운전준비 스텝3 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:178:    TON_T0614 : TON; (* 운전준비 스텝4 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:179:    TON_T0615 : TON; (* 운전준비 스텝5 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:180:    TON_T0616 : TON; (* 운전준비 스텝6 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:181:    TON_T0617 : TON; (* 운전준비 스텝7 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:182:    TON_T0618 : TON; (* 운전준비 스텝8 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:183:    TON_T0619 : TON; (* 운전준비 스텝9 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:186:    TON_T0621 : TON; (* 자동 스텝1  T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:187:    TON_T0622 : TON; (* 자동 스텝2  T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:188:    TON_T0623 : TON; (* 자동 스텝3  T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:189:    TON_T0624 : TON; (* 자동 스텝4  T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:190:    TON_T0625 : TON; (* 자동 스텝5  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:191:    TON_T0626 : TON; (* 자동 스텝6  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:192:    TON_T0627 : TON; (* 자동 스텝7  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:193:    TON_T0628 : TON; (* 자동 스텝8  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:194:    TON_T0629 : TON; (* 자동 스텝9  T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:195:    TON_T0630 : TON; (* 자동 스텝10 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:196:    TON_T0631 : TON; (* 자동 스텝11 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:197:    TON_T0632 : TON; (* 자동 스텝12 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:198:    TON_T0633 : TON; (* 자동 스텝13 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:199:    TON_T0634 : TON; (* 자동 스텝14 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:200:    TON_T0635 : TON; (* 자동 스텝15 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:201:    TON_T0636 : TON; (* 자동 스텝16 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:202:    TON_T0637 : TON; (* 자동 스텝17 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:203:    TON_T0638 : TON; (* 자동 스텝18 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:204:    TON_T0639 : TON; (* 자동 스텝19 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:205:    TON_T0640 : TON; (* 자동 스텝20 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:206:    TON_T0641 : TON; (* 자동 스텝21 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:207:    TON_T0642 : TON; (* 자동 스텝22 T#100ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:208:    TON_T0643 : TON; (* 자동 스텝23 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:209:    TON_T0644 : TON; (* 자동 스텝24 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:247:TON_T0600(IN := M06004, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:265:TON_T0601(IN := M06002, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:361:        TON_T0611(IN := M06011, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:368:        TON_T0612(IN := M06012, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:375:        TON_T0613(IN := M06013, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:382:        TON_T0614(IN := M06014, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:389:        TON_T0615(IN := M06015, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:396:        TON_T0616(IN := M06016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:404:        TON_T0617(IN := M06017, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:411:        TON_T0618(IN := M06018, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:418:        TON_T0619(IN := M06019, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:493:    1: (* 래더 Line 255 - 스텝1: 대기 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:494:        TON_T0621(IN := M06002 AND M06201, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:499:    2: (* 래더 Line 264 - 스텝2: 코어 자재확인 트리거, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:501:        TON_T0622(IN := M06002 AND M06202, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:508:    3: (* 래더 Line 282 - 스텝3: 코어 하부(M0631D+M06321) ON, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:511:        TON_T0623(IN := M06002 AND M06203, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:516:    4: (* 래더 Line 297 - 스텝4: 코어 2차이송 전진(M06311) ON, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:518:        TON_T0624(IN := M06002 AND M06204, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:523:    5: (* 래더 Line 307 - 스텝5: 코어 2차이송 전진(M06315) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:525:        TON_T0625(IN := M06002 AND M06205, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:530:    6: (* 래더 Line 317 - 스텝6: 코어 2차이송 회전(M06319) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:532:        TON_T0626(IN := M06002 AND M06206, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:537:    7: (* 래더 Line 327 - 스텝7: 코어 2차이송 후진(M06314) ON, 자재확인, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:539:        TON_T0627(IN := M06002 AND M06207, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:552:    8: (* 래더 Line 349 - 스텝8: 코어 하부(M06321+M0631D) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:555:        TON_T0628(IN := M06002 AND M06208, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:560:    9: (* 래더 Line 360 - 스텝9: 코어 회전복귀보조(M06317)+제품차단(M06310), T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:563:        TON_T0629(IN := M06002 AND M06209, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:568:    10: (* 래더 Line 371 - 스텝10: 자재확인, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:569:        TON_T0630(IN := M06002 AND M0620A, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:575:    11: (* 래더 Line 382 - 스텝11: M06321 ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:577:        TON_T0631(IN := M06002 AND M0620B, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:582:    12: (* 래더 Line 392 - 스텝12: 코어 하부(M0631D) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:584:        TON_T0632(IN := M06002 AND M0620C, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:589:    13: (* 래더 Line 402 - 스텝13: M06313 ON, T#20ms (PAGE 85) *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:591:        TON_T0633(IN := M06002 AND M0620D, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:596:    14: (* 래더 Line 412 - 스텝14: 코어 2차이송 전진(M06315) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:598:        TON_T0634(IN := M06002 AND M0620E, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:603:    15: (* 래더 Line 422 - 스텝15: 코어 회전복귀(M06318) ON + 특수플래그 SET, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:606:        TON_T0635(IN := M06002 AND M0620F, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:611:    16: (* 래더 Line 433 - 스텝16: 코어 2차이송 후진(M06314) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:613:        TON_T0636(IN := M06002 AND M06210, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:618:    17: (* 래더 Line 443 - 스텝17: 코어 1차이송(M06312) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:620:        TON_T0637(IN := M06002 AND M06211, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:625:    18: (* 래더 Line 453 - 스텝18: 코어 높이검사보조(M0631B)+상승/하강(M06316) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:628:        TON_T0638(IN := M06002 AND M06212, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:633:    19: (* 래더 Line 464 - 스텝19: 특수플래그 시 클램프+작업완료, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:634:        TON_T0639(IN := M06002 AND M06213, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:645:    20: (* 래더 Line 482 - 스텝20: 대기, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:646:        TON_T0640(IN := M06002 AND M06214, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:651:    21: (* 래더 Line 491 - 스텝21: 코어 프레스(M0631F) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:653:        TON_T0641(IN := M06002 AND M06215, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:670:        (* 타임아웃: T0642 T#100ms → 강제 스텝23 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:671:        TON_T0642(IN := M06002 AND M06216, PT := T#100ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:676:    23: (* 래더 Line 529 - 스텝23: 코어 높이검사 후진(M0631E) ON, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:678:        TON_T0643(IN := M06002 AND M06217, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_16_코어.st:686:        TON_T0644(IN := M06002 AND M06218, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:109:    TON_T0900 : TON; (* 반자동 지연 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:110:    TON_T0901 : TON; (* 반자동 지연2 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:111:    TON_T0911 : TON; (* 운전준비 스텝1 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:112:    TON_T0912 : TON; (* 운전준비 스텝2 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:113:    TON_T0913 : TON; (* 운전준비 스텝3 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:114:    TON_T0914 : TON; (* 운전준비 스텝4 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:115:    TON_T0915 : TON; (* 운전준비 스텝5 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:116:    TON_T0916 : TON; (* 운전준비 스텝6 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:117:    TON_T0917 : TON; (* 운전준비 스텝7 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:118:    TON_T0918 : TON; (* 운전준비 스텝8 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:119:    TON_T0919 : TON; (* 운전준비 스텝9 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:122:    TON_T0921 : TON; (* 자동 스텝1 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:123:    TON_T0922 : TON; (* 자동 스텝2 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:124:    TON_T0923 : TON; (* 자동 스텝3 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:125:    TON_T0924 : TON; (* 자동 스텝4 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:126:    TON_T0925 : TON; (* 자동 스텝5 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:127:    TON_T0926 : TON; (* 자동 스텝6 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:128:    TON_T0927 : TON; (* 자동 스텝7 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:129:    TON_T0928 : TON; (* 자동 스텝8 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:130:    TON_T0929 : TON; (* 자동 스텝9 T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:164:TON_T0900(IN := M09004, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:180:TON_T0901(IN := M09002, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:275:    1: (* 래더 Line 115 - 스텝1: 클램프(M09314)+네스트클램프(M09316) ON, T0911 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:278:        TON_T0911(IN := M09011, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:283:    2: (* 래더 Line 125 - 스텝2: 상승/하강(M09312) ON, T0912 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:285:        TON_T0912(IN := M09012, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:290:    3: (* 래더 Line 134 - 스텝3: 로드레스 전진(M09311) ON, T0913 T#30ms → 스텝0 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:292:        TON_T0913(IN := M09013, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:297:    4: (* 래더 Line 143 - 스텝4: 대기, T0914 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:298:        TON_T0914(IN := M09014, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:303:    5: (* 래더 Line 151 - 스텝5: 대기, T0915 T#30ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:304:        TON_T0915(IN := M09015, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:309:    6: (* 래더 Line 159 - 스텝6: 대기, T0916 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:310:        TON_T0916(IN := M09016, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:315:    7: (* 래더 Line 167 - 스텝7: 대기, T0917 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:316:        TON_T0917(IN := M09017, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:321:    8: (* 래더 Line 175 - 스텝8: 대기, T0918 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:322:        TON_T0918(IN := M09018, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:327:    9: (* 래더 Line 183 - 스텝9: 대기, T0919 T#50ms → 스텝0 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:328:        TON_T0919(IN := M09019, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:373:    1: (* 래더 Line 219 - 스텝1: 불량 판정 확인, 자재/완료 체크, T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:374:        TON_T0921(IN := M09002 AND M09201, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:387:    2: (* 래더 Line 240 - 스텝2: 로드레스 전진(M09311) ON, T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:389:        TON_T0922(IN := M09002 AND M09202, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:394:    3: (* 래더 Line 250 - 스텝3: 상승 보조(M09313) ON, T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:396:        TON_T0923(IN := M09002 AND M09203, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:401:    4: (* 래더 Line 260 - 스텝4: 전진(M09315) ON, T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:403:        TON_T0924(IN := M09002 AND M09204, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:408:    5: (* 래더 Line 270 - 스텝5: 클램프(M09317) ON, T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:410:        TON_T0925(IN := M09002 AND M09205, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:415:    6: (* 래더 Line 280 - 스텝6: 상승/하강(M09312) ON, T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:417:        TON_T0926(IN := M09002 AND M09206, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:422:    7: (* 래더 Line 290 - 스텝7: 로드레스 후진(M09310)+네스트클램프(M09316) ON, T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:425:        TON_T0927(IN := M09002 AND M09207, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:430:    8: (* 래더 Line 301 - 스텝8: 불량 카운트 처리, 클램프(M09314) ON, T#10ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:436:        TON_T0928(IN := M09002 AND M09208, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_20_불량배출.st:452:        TON_T0929(IN := M09002 AND M09209, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:81:    TON_T0840 : TON; (* 자동 스텝1 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:82:    TON_T0841 : TON; (* 자동 스텝2 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:83:    TON_T0842 : TON; (* 자동 스텝3 T#20ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:84:    TON_T0843 : TON; (* 자동 스텝4 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:85:    TON_T0844 : TON; (* 자동 스텝5+반자동 T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:119:TON_T0844(IN := M08009, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:170:        TON_T0840(IN := M08251, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:187:    2: (* 래더 Line 76 - 스텝2: 리노핀 전진 SOL ON(P00045), T#50ms *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:189:        TON_T0841(IN := M08252, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:195:        TON_T0842(IN := M08253, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:229:        TON_T0843(IN := M08254, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_19_통전검사.st:256:        TON_T0844(IN := M08255, PT := T#50ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_10_제품투입배출.st:270:    TON_T0099(IN := FALSE, PT := T#0ms); (* 타이머 리셋 *)
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_10_제품투입배출.st:272:TON_T0099(IN := M00010 AND M00055, PT := T#20ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:145:TON_T0150(IN := M01914 AND NOT M01311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:149:TON_T0151(IN := M01915 AND NOT M01310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:153:TON_T0152(IN := M01917 AND NOT M01313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:157:TON_T0153(IN := M01916 AND NOT M01312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:161:TON_T0154(IN := M01918 AND NOT M01315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:165:TON_T0155(IN := M01919 AND NOT M01314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:169:TON_T0156(IN := M0191A AND NOT M01317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:173:TON_T0157(IN := M0191B AND NOT M01316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:177:TON_T0158(IN := M0191C AND NOT M01319, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:181:TON_T0159(IN := M0191D AND NOT M01318, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:191:TON_T0250(IN := M02914 AND NOT M02311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:195:TON_T0251(IN := M02915 AND NOT M02310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:199:TON_T0252(IN := M02916 AND NOT M02313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:203:TON_T0253(IN := M02917 AND NOT M02312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:207:TON_T0254(IN := M0291C AND NOT M02315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:211:TON_T0255(IN := M0291D AND NOT M02314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:215:TON_T0256(IN := M0291E AND NOT M02317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:219:TON_T0257(IN := M0291F AND NOT M02316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:229:TON_T0350(IN := M03914 AND NOT M03311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:233:TON_T0351(IN := M03915 AND NOT M03310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:237:TON_T0352(IN := M03916 AND NOT M03313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:241:TON_T0353(IN := M03917 AND NOT M03312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:245:TON_T0354(IN := M0391C AND NOT M03315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:249:TON_T0355(IN := M0391D AND NOT M03314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:253:TON_T0356(IN := M0391E AND NOT M03317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:257:TON_T0357(IN := M0391F AND NOT M03316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:266:TON_T0450(IN := M04914 AND NOT M04311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:270:TON_T0451(IN := M04915 AND NOT M04310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:274:TON_T0452(IN := M04916 AND NOT M04313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:278:TON_T0453(IN := M04917 AND NOT M04312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:282:TON_T0454(IN := M04918 AND NOT M04315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:286:TON_T0455(IN := M04919 AND NOT M04314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:290:TON_T0456(IN := M0491C AND NOT M04317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:294:TON_T0457(IN := M0491D AND NOT M04316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:303:TON_T0550(IN := M05910 AND NOT M05311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:307:TON_T0551(IN := M05911 AND NOT M05310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:311:TON_T0552(IN := M05912 AND NOT M05313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:315:TON_T0553(IN := M05913 AND NOT M05312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:319:TON_T0554(IN := M05914 AND M05917 AND NOT M05314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:328:TON_T0650(IN := M06914 AND NOT M06311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:331:TON_T0651(IN := M06915 AND NOT M06310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:334:TON_T0652(IN := M06916 AND NOT M06313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:337:TON_T0653(IN := M06917 AND NOT M06312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:340:TON_T0654(IN := M06918 AND NOT M06315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:343:TON_T0655(IN := M06919 AND NOT M06314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:346:TON_T0656(IN := M0691A AND NOT M06317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:349:TON_T0657(IN := M0691B AND NOT M06316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:352:TON_T0658(IN := M0691C AND NOT M06319, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:355:TON_T0659(IN := M0691D AND NOT M06318, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:358:TON_T0660(IN := M0691E AND NOT M0631B, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:361:TON_T0661(IN := M0691F AND NOT M0631A, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:364:TON_T0662(IN := M06920 AND NOT M0631D, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:367:TON_T0663(IN := M06921 AND NOT M0631C, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:370:TON_T0664(IN := M06922 AND NOT M0631F, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:373:TON_T0665(IN := M06923 AND NOT M0631E, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:382:TON_T0750(IN := M07914 AND NOT M07311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:385:TON_T0751(IN := M07915 AND NOT M07310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:388:TON_T0752(IN := M07916 AND NOT M07313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:391:TON_T0753(IN := M07917 AND NOT M07312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:394:TON_T0754(IN := M07918 AND NOT M07315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:397:TON_T0755(IN := M07919 AND NOT M07314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:400:TON_T0756(IN := M0791A AND NOT M07317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:403:TON_T0757(IN := M0791B AND NOT M07316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:406:TON_T0758(IN := M0791C AND NOT M07319, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:409:TON_T0759(IN := M0791D AND NOT M07318, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:412:TON_T0760(IN := M0791E AND NOT M0731B, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:415:TON_T0761(IN := M0791F AND NOT M0731A, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:418:TON_T0762(IN := M07920 AND NOT M0731D, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:421:TON_T0763(IN := M07921 AND NOT M0731C, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:424:TON_T0764(IN := M07922 AND NOT M0731F, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:427:TON_T0765(IN := M07923 AND NOT M0731E, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:430:TON_T0766(IN := M07924 AND NOT M07320, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:433:TON_T0767(IN := M07925 AND NOT M07321, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:436:TON_T0768(IN := M07927 AND NOT M07322, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:439:TON_T0769(IN := M07926 AND NOT M07323, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:448:TON_T0850(IN := M08910 AND NOT M08311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:451:TON_T0851(IN := M08911 AND NOT M08310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:454:TON_T0852(IN := M08912 AND NOT M08312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:457:TON_T0853(IN := M08913 AND NOT M08313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:460:TON_T0854(IN := M08914 AND NOT M08315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:463:TON_T0855(IN := M08915 AND NOT M08314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:466:TON_T0856(IN := M08916 AND NOT M08317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:469:TON_T0857(IN := M08917 AND NOT M08316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:501:TON_T0950(IN := M09910 AND NOT M09311, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:504:TON_T0951(IN := M09911 AND NOT M09310, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:507:TON_T0952(IN := M09912 AND NOT M09313, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:510:TON_T0953(IN := M09913 AND NOT M09312, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:513:TON_T0954(IN := M09914 AND NOT M09315, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:516:TON_T0955(IN := M09915 AND NOT M09314, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:519:TON_T0956(IN := M09916 AND NOT M09316, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_05_ALARM.st:522:TON_T0957(IN := M09917 AND NOT M09317, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:188:TON_T0012(IN := M00307 AND M01987 AND NOT T0012 AND M00320, PT := T#4ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:297:TON_T0082(IN := M00100, PT := T#10ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:300:TON_T0083(IN := M00100, PT := T#11ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:388:          PT := T#2ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:502:TON_T0006(IN := M00053, PT := T#40ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:505:TON_T0007(IN := P00056 AND M00010, PT := T#5ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:509:TON_T0008(IN := D05000_2 AND P00056 AND M00010, PT := T#5ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:518:TON_T0050(IN := M00995 AND M00171 AND M00055 AND NOT T0051, PT := T#30ms);
+C:\Users\Administrator\Desktop\SHINJIN\1 CELL 조립 장비\PLC RAW\ST_XEC\ST_06_SERVO.st:521:TON_T0051(IN := T0050, PT := T#20ms);

@@ -1,0 +1,441 @@
+135-            Initializes a new instance of the <see cref="T:Vortice.Direct3D11.BufferDescription"/> struct.
+136-            </summary>
+137:            <param name="byteWidth">The size in bytes.</param>
+138-            <param name="bindFlags">The bind flags.</param>
+139-            <param name="usage">The usage.</param>
+--
+142-            <param name="structureByteStride">The structure byte stride.</param>
+143-        </member>
+144:        <member name="F:Vortice.Direct3D11.BufferDescription.ByteWidth">
+145-            <summary>Size of the buffer in bytes.</summary>
+146:            <unmanaged>D3D11_BUFFER_DESC::ByteWidth</unmanaged>
+147:            <unmanaged-short>ByteWidth</unmanaged-short>
+148-        </member>
+149-        <member name="F:Vortice.Direct3D11.BufferDescription.Usage">
+--
+4169-            <unmanaged-short>D3D11_MESSAGE_ID_CREATEVIDEODECODER_INVALIDFORMAT</unmanaged-short>
+4170-        </member>
+4171:        <member name="F:Vortice.Direct3D11.Debug.MessageId.CreatevideodecoderZeroWidthHeight">
+4172-            <unmanaged>D3D11_MESSAGE_ID_CREATEVIDEODECODER_ZEROWIDTHHEIGHT</unmanaged>
+4173-            <unmanaged-short>D3D11_MESSAGE_ID_CREATEVIDEODECODER_ZEROWIDTHHEIGHT</unmanaged-short>
+--
+4313-            <unmanaged-short>D3D11_MESSAGE_ID_CREATEVIDEOPROCESSORENUMERATOR_INVALIDOUTPUTFRAMERATE</unmanaged-short>
+4314-        </member>
+4315:        <member name="F:Vortice.Direct3D11.Debug.MessageId.CreatevideoprocessorenumeratorInvalidWidthheight">
+4316-            <unmanaged>D3D11_MESSAGE_ID_CREATEVIDEOPROCESSORENUMERATOR_INVALIDWIDTHHEIGHT</unmanaged>
+4317-            <unmanaged-short>D3D11_MESSAGE_ID_CREATEVIDEOPROCESSORENUMERATOR_INVALIDWIDTHHEIGHT</unmanaged-short>
+--
+5477-            <unmanaged-short>D3D11_MESSAGE_ID_GETVIDEODECODERCAPS_NULLPARAM</unmanaged-short>
+5478-        </member>
+5479:        <member name="F:Vortice.Direct3D11.Debug.MessageId.GetvideodecodercapsZeroWidthHeight">
+5480-            <unmanaged>D3D11_MESSAGE_ID_GETVIDEODECODERCAPS_ZEROWIDTHHEIGHT</unmanaged>
+5481-            <unmanaged-short>D3D11_MESSAGE_ID_GETVIDEODECODERCAPS_ZEROWIDTHHEIGHT</unmanaged-short>
+--
+5489-            <unmanaged-short>D3D11_MESSAGE_ID_CHECKVIDEODECODERDOWNSAMPLING_INVALIDCOLORSPACE</unmanaged-short>
+5490-        </member>
+5491:        <member name="F:Vortice.Direct3D11.Debug.MessageId.CheckVideoDecoderDownsamplingZeroWidthHeight">
+5492-            <unmanaged>D3D11_MESSAGE_ID_CHECKVIDEODECODERDOWNSAMPLING_ZEROWIDTHHEIGHT</unmanaged>
+5493-            <unmanaged-short>D3D11_MESSAGE_ID_CHECKVIDEODECODERDOWNSAMPLING_ZEROWIDTHHEIGHT</unmanaged-short>
+--
+5557-            <unmanaged-short>D3D11_MESSAGE_ID_RECOMMENDVIDEODECODERDOWNSAMPLING_INVALIDCOLORSPACE</unmanaged-short>
+5558-        </member>
+5559:        <member name="F:Vortice.Direct3D11.Debug.MessageId.RecommendvideodecoderdownsamplingZeroWidthHeight">
+5560-            <unmanaged>D3D11_MESSAGE_ID_RECOMMENDVIDEODECODERDOWNSAMPLING_ZEROWIDTHHEIGHT</unmanaged>
+5561-            <unmanaged-short>D3D11_MESSAGE_ID_RECOMMENDVIDEODECODERDOWNSAMPLING_ZEROWIDTHHEIGHT</unmanaged-short>
+--
+7091-            <unmanaged-short>ID3D11Device::CreateTexture1D</unmanaged-short>
+7092-        </member>
+7093:        <member name="M:Vortice.Direct3D11.ID3D11Device.CreateTexture2D(Vortice.Direct3D11.Texture2DDescription,System.Void*)">
+7094-            <summary>
+7095-      <para>Create an array of 2D textures.</para>
+--
+7761-            <inheritdoc/>
+7762-        </member>
+7763:        <member name="M:Vortice.Direct3D11.ID3D11Device3.CreateTexture2D1(Vortice.Direct3D11.Texture2DDescription1,Vortice.Direct3D11.SubresourceData[])">
+7764-            <summary>
+7765-      <para>Creates a 2D texture.</para>
+--
+10280-            <param name="mipSlice">The mip slice.</param>
+10281-            <param name="arraySlice">The array slice.</param>
+10282:            <param name="mipSize">The size of slice. This values is resource dependent. Texture1D -> mipSize of the Width. Texture2D -> mipSize of the Height. Texture3D -> mipsize of the Depth</param>
+10283-            <returns>The resulting miplevel calulated for this instance with this mipSlice and arraySlice.</returns>
+10284-        </member>
+--
+11653-      <para>Microsoft Docs: <see href="https://docs.microsoft.com/windows/win32/api//d3d11_1/nf-d3d11_1-id3d11videodevice1-getvideodecodercaps" /></para>
+11654-      <param name="decoderProfile">The decode profile for which the capabilities are queried.</param>
+11655:      <param name="sampleWidth">The video width for which the capabilities are queried.</param>
+11656:      <param name="sampleHeight">The video height for which the capabilities are queried.</param>
+11657-      <param name="frameRate">The frame rate of the video content. This information is used by the driver to determine whether the video can be decoded in real-time.</param>
+11658-      <param name="bitRate">The bit rate of the video stream. A value of zero indicates that the bit rate can be ignored.</param>
+--
+11660-      <param name="decoderCaps">A pointer to a bitwise OR combination of <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_1/ne-d3d11_1-d3d11_video_decoder_caps">D3D11_VIDEO_DECODER_CAPS</a> values specifying the decoder capabilities.</param>
+11661-    </summary>
+11662:            <unmanaged>HRESULT ID3D11VideoDevice1::GetVideoDecoderCaps([In] const GUID* pDecoderProfile, [In] UINT SampleWidth, [In] UINT SampleHeight, [In] const DXGI_RATIONAL* pFrameRate, [In] UINT BitRate, [In, Optional] const GUID* pCryptoType, [Out] UINT* pDecoderCaps)</unmanaged>
+11663-            <unmanaged-short>ID3D11VideoDevice1::GetVideoDecoderCaps</unmanaged-short>
+11664-        </member>
+--
+14764-            <param name="miscFlags">The <see cref="T:Vortice.Direct3D11.ResourceOptionFlags"/> that identify other, less common resource options. </param>
+14765-        </member>
+14766:        <member name="M:Vortice.Direct3D11.Texture1DDescription.GetWidth(System.UInt32)">
+14767-            <summary>
+14768-            Get a mip-level width.
+--
+14771-            <returns></returns>
+14772-        </member>
+14773:        <member name="F:Vortice.Direct3D11.Texture1DDescription.Width">
+14774-            <summary>Texture width (in texels). The  range is from 1 to D3D11_REQ_TEXTURE1D_U_DIMENSION (16384). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+14775:            <unmanaged>D3D11_TEXTURE1D_DESC::Width</unmanaged>
+14776:            <unmanaged-short>Width</unmanaged-short>
+14777-        </member>
+14778-        <member name="F:Vortice.Direct3D11.Texture1DDescription.MipLevels">
+--
+14811-            <unmanaged-short>MiscFlags</unmanaged-short>
+14812-        </member>
+14813:        <member name="T:Vortice.Direct3D11.Texture2DDescription">
+14814-            <summary>
+14815-            Describes a 2D texture.
+--
+14822-            <unmanaged-short>D3D11_TEXTURE2D_DESC</unmanaged-short>
+14823-        </member>
+14824:        <member name="M:Vortice.Direct3D11.Texture2DDescription.#ctor(Vortice.DXGI.Format,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Vortice.Direct3D11.BindFlags,Vortice.Direct3D11.ResourceUsage,Vortice.Direct3D11.CpuAccessFlags,System.UInt32,System.UInt32,Vortice.Direct3D11.ResourceOptionFlags)">
+14825-            <summary>
+14826:            Initializes a new instance of the <see cref="T:Vortice.Direct3D11.Texture2DDescription"/> struct.
+14827-            </summary>
+14828-            <param name="format">Texture format.</param>
+--
+14838-            <param name="miscFlags">The <see cref="T:Vortice.Direct3D11.ResourceOptionFlags"/> that identify other, less common resource options. </param>
+14839-        </member>
+14840:        <member name="M:Vortice.Direct3D11.Texture2DDescription.GetWidth(System.UInt32)">
+14841-            <summary>
+14842-            Get a mip-level width.
+--
+14845-            <returns></returns>
+14846-        </member>
+14847:        <member name="M:Vortice.Direct3D11.Texture2DDescription.GetHeight(System.UInt32)">
+14848-            <summary>
+14849-            Get a mip-level height.
+--
+14852-            <returns></returns>
+14853-        </member>
+14854:        <member name="F:Vortice.Direct3D11.Texture2DDescription.Width">
+14855-            <summary>Texture width (in texels). The  range is from 1 to D3D11_REQ_TEXTURE2D_U_OR_V_DIMENSION (16384). For a texture cube-map, the  range is from 1 to D3D11_REQ_TEXTURECUBE_DIMENSION (16384). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+14856:            <unmanaged>D3D11_TEXTURE2D_DESC::Width</unmanaged>
+14857:            <unmanaged-short>Width</unmanaged-short>
+14858-        </member>
+14859:        <member name="F:Vortice.Direct3D11.Texture2DDescription.Height">
+14860-            <summary>Texture height (in texels). The  range is from 1 to D3D11_REQ_TEXTURE2D_U_OR_V_DIMENSION (16384). For a texture cube-map, the  range is from 1 to D3D11_REQ_TEXTURECUBE_DIMENSION (16384). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+14861:            <unmanaged>D3D11_TEXTURE2D_DESC::Height</unmanaged>
+14862:            <unmanaged-short>Height</unmanaged-short>
+14863-        </member>
+14864:        <member name="F:Vortice.Direct3D11.Texture2DDescription.MipLevels">
+14865-            <summary>The maximum number of mipmap levels in the texture. See the remarks in <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ns-d3d11-d3d11_tex1d_srv">D3D11_TEX1D_SRV</a>. Use 1 for a multisampled texture; or 0 to generate a full set of subtextures.</summary>
+14866-            <unmanaged>D3D11_TEXTURE2D_DESC::MipLevels</unmanaged>
+14867-            <unmanaged-short>MipLevels</unmanaged-short>
+14868-        </member>
+14869:        <member name="F:Vortice.Direct3D11.Texture2DDescription.ArraySize">
+14870-[Omitted long context line]
+14871-            <unmanaged>D3D11_TEXTURE2D_DESC::ArraySize</unmanaged>
+14872-            <unmanaged-short>ArraySize</unmanaged-short>
+14873-        </member>
+14874:        <member name="F:Vortice.Direct3D11.Texture2DDescription.Format">
+14875-            <summary>Texture format (see <a href="https://docs.microsoft.com/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format">DXGI_FORMAT</a>).</summary>
+14876-            <unmanaged>D3D11_TEXTURE2D_DESC::Format</unmanaged>
+14877-            <unmanaged-short>Format</unmanaged-short>
+14878-        </member>
+14879:        <member name="F:Vortice.Direct3D11.Texture2DDescription.SampleDescription">
+14880-            <summary>Structure that specifies multisampling parameters for the texture. See <a href="https://docs.microsoft.com/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc">DXGI_SAMPLE_DESC</a>.</summary>
+14881-            <unmanaged>D3D11_TEXTURE2D_DESC::SampleDesc</unmanaged>
+14882-            <unmanaged-short>SampleDesc</unmanaged-short>
+14883-        </member>
+14884:        <member name="F:Vortice.Direct3D11.Texture2DDescription.Usage">
+14885-            <summary>Value that identifies how the texture is to be read from and written to. The most common value is D3D11_USAGE_DEFAULT; see <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ne-d3d11-d3d11_usage">D3D11_USAGE</a> for all possible values.</summary>
+14886-            <unmanaged>D3D11_TEXTURE2D_DESC::Usage</unmanaged>
+14887-            <unmanaged-short>Usage</unmanaged-short>
+14888-        </member>
+14889:        <member name="F:Vortice.Direct3D11.Texture2DDescription.BindFlags">
+14890-            <summary>Flags (see <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ne-d3d11-d3d11_bind_flag">D3D11_BIND_FLAG</a>) for binding to pipeline stages. The flags can be combined by a logical OR.</summary>
+14891-            <unmanaged>D3D11_TEXTURE2D_DESC::BindFlags</unmanaged>
+14892-            <unmanaged-short>BindFlags</unmanaged-short>
+14893-        </member>
+14894:        <member name="F:Vortice.Direct3D11.Texture2DDescription.CPUAccessFlags">
+14895-            <summary>Flags (see <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ne-d3d11-d3d11_cpu_access_flag">D3D11_CPU_ACCESS_FLAG</a>) to specify the types of CPU access allowed. Use 0 if CPU access is not required. These flags can be combined with a logical OR.</summary>
+14896-            <unmanaged>D3D11_TEXTURE2D_DESC::CPUAccessFlags</unmanaged>
+14897-            <unmanaged-short>CPUAccessFlags</unmanaged-short>
+14898-        </member>
+14899:        <member name="F:Vortice.Direct3D11.Texture2DDescription.MiscFlags">
+14900-[Omitted long context line]
+14901-            <unmanaged>D3D11_TEXTURE2D_DESC::MiscFlags</unmanaged>
+14902-            <unmanaged-short>MiscFlags</unmanaged-short>
+14903-        </member>
+14904:        <member name="T:Vortice.Direct3D11.Texture2DDescription1">
+14905-            <summary>
+14906-            Describes a 2D texture.
+--
+14913-            <unmanaged-short>D3D11_TEXTURE2D_DESC1</unmanaged-short>
+14914-        </member>
+14915:        <member name="M:Vortice.Direct3D11.Texture2DDescription1.#ctor(Vortice.DXGI.Format,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Vortice.Direct3D11.BindFlags,Vortice.Direct3D11.ResourceUsage,Vortice.Direct3D11.CpuAccessFlags,System.UInt32,System.UInt32,Vortice.Direct3D11.ResourceOptionFlags,Vortice.Direct3D11.TextureLayout)">
+14916-            <summary>
+14917:            Initializes a new instance of the <see cref="T:Vortice.Direct3D11.Texture2DDescription1"/> struct.
+14918-            </summary>
+14919-            <param name="format">Texture format.</param>
+--
+14928-            <param name="sampleQuality">Specifies multisampling parameters for the texture.</param>
+14929-            <param name="miscFlags">The <see cref="T:Vortice.Direct3D11.ResourceOptionFlags"/> that identify other, less common resource options. </param>
+14930:            <param name="textureLayout">A <see cref="F:Vortice.Direct3D11.Texture2DDescription1.TextureLayout"/> value that identifies the layout of the texture.</param>
+14931-        </member>
+14932:        <member name="M:Vortice.Direct3D11.Texture2DDescription1.#ctor(Vortice.Direct3D11.Texture2DDescription@,Vortice.Direct3D11.TextureLayout)">
+14933-            <summary>
+14934:            Initializes a new instance of the <see cref="T:Vortice.Direct3D11.Texture2DDescription1"/> struct.
+14935-            </summary>
+14936:            <param name="description">The <see cref="T:Vortice.Direct3D11.Texture2DDescription"/> to copy from.</param>
+14937:            <param name="textureLayout">A <see cref="F:Vortice.Direct3D11.Texture2DDescription1.TextureLayout"/> value that identifies the layout of the texture.</param>
+14938-        </member>
+14939:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.Width">
+14940-            <summary>Texture width (in texels). The  range is from 1 to D3D11_REQ_TEXTURE2D_U_OR_V_DIMENSION (16384). For a texture cube-map, the  range is from 1 to D3D11_REQ_TEXTURECUBE_DIMENSION (16384). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+14941:            <unmanaged>D3D11_TEXTURE2D_DESC1::Width</unmanaged>
+14942:            <unmanaged-short>Width</unmanaged-short>
+14943-        </member>
+14944:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.Height">
+14945-            <summary>Texture height (in texels). The  range is from 1 to D3D11_REQ_TEXTURE2D_U_OR_V_DIMENSION (16384). For a texture cube-map, the  range is from 1 to D3D11_REQ_TEXTURECUBE_DIMENSION (16384). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+14946:            <unmanaged>D3D11_TEXTURE2D_DESC1::Height</unmanaged>
+14947:            <unmanaged-short>Height</unmanaged-short>
+14948-        </member>
+14949:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.MipLevels">
+14950-            <summary>The maximum number of mipmap levels in the texture. See the remarks in <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ns-d3d11-d3d11_tex1d_srv">D3D11_TEX1D_SRV</a>. Use 1 for a multisampled texture; or 0 to generate a full set of subtextures.</summary>
+14951-            <unmanaged>D3D11_TEXTURE2D_DESC1::MipLevels</unmanaged>
+14952-            <unmanaged-short>MipLevels</unmanaged-short>
+14953-        </member>
+14954:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.ArraySize">
+14955-[Omitted long context line]
+14956-            <unmanaged>D3D11_TEXTURE2D_DESC1::ArraySize</unmanaged>
+14957-            <unmanaged-short>ArraySize</unmanaged-short>
+14958-        </member>
+14959:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.Format">
+14960-            <summary>Texture format (see <a href="https://docs.microsoft.com/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format">DXGI_FORMAT</a>).</summary>
+14961-            <unmanaged>D3D11_TEXTURE2D_DESC1::Format</unmanaged>
+14962-            <unmanaged-short>Format</unmanaged-short>
+14963-        </member>
+14964:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.SampleDescription">
+14965-            <summary>Structure that specifies multisampling parameters for the texture. See <a href="https://docs.microsoft.com/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc">DXGI_SAMPLE_DESC</a>.</summary>
+14966-            <unmanaged>D3D11_TEXTURE2D_DESC1::SampleDesc</unmanaged>
+14967-            <unmanaged-short>SampleDesc</unmanaged-short>
+14968-        </member>
+14969:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.Usage">
+14970-            <summary>Value that identifies how the texture is to be read from and written to. The most common value is D3D11_USAGE_DEFAULT; see <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ne-d3d11-d3d11_usage">D3D11_USAGE</a> for all possible values.</summary>
+14971-            <unmanaged>D3D11_TEXTURE2D_DESC1::Usage</unmanaged>
+14972-            <unmanaged-short>Usage</unmanaged-short>
+14973-        </member>
+14974:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.BindFlags">
+14975-            <summary>Flags (see <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ne-d3d11-d3d11_bind_flag">D3D11_BIND_FLAG</a>) for binding to pipeline stages. The flags can be combined by a logical OR.</summary>
+14976-            <unmanaged>D3D11_TEXTURE2D_DESC1::BindFlags</unmanaged>
+14977-            <unmanaged-short>BindFlags</unmanaged-short>
+14978-        </member>
+14979:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.CPUAccessFlags">
+14980-            <summary>Flags (see <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/ne-d3d11-d3d11_cpu_access_flag">D3D11_CPU_ACCESS_FLAG</a>) to specify the types of CPU access allowed. Use 0 if CPU access is not required. These flags can be combined with a logical OR.</summary>
+14981-            <unmanaged>D3D11_TEXTURE2D_DESC1::CPUAccessFlags</unmanaged>
+14982-            <unmanaged-short>CPUAccessFlags</unmanaged-short>
+14983-        </member>
+14984:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.MiscFlags">
+14985-[Omitted long context line]
+14986-            <unmanaged>D3D11_TEXTURE2D_DESC1::MiscFlags</unmanaged>
+14987-            <unmanaged-short>MiscFlags</unmanaged-short>
+14988-        </member>
+14989:        <member name="F:Vortice.Direct3D11.Texture2DDescription1.TextureLayout">
+14990-            <summary>A <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_3/ne-d3d11_3-d3d11_texture_layout">D3D11_TEXTURE_LAYOUT</a>-typed value that identifies the layout of the texture.
+14991-
+--
+15026-            <param name="miscFlags">The <see cref="T:Vortice.Direct3D11.ResourceOptionFlags"/> that identify other, less common resource options. </param>
+15027-        </member>
+15028:        <member name="F:Vortice.Direct3D11.Texture3DDescription.Width">
+15029-            <summary>Texture width (in texels). The  range is from 1 to D3D11_REQ_TEXTURE3D_U_V_OR_W_DIMENSION (2048). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+15030:            <unmanaged>D3D11_TEXTURE3D_DESC::Width</unmanaged>
+15031:            <unmanaged-short>Width</unmanaged-short>
+15032-        </member>
+15033:        <member name="F:Vortice.Direct3D11.Texture3DDescription.Height">
+15034-            <summary>Texture height (in texels). The  range is from 1 to D3D11_REQ_TEXTURE3D_U_V_OR_W_DIMENSION (2048). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+15035:            <unmanaged>D3D11_TEXTURE3D_DESC::Height</unmanaged>
+15036:            <unmanaged-short>Height</unmanaged-short>
+15037-        </member>
+15038-        <member name="F:Vortice.Direct3D11.Texture3DDescription.Depth">
+--
+15104-            <param name="textureLayout">A <see cref="F:Vortice.Direct3D11.Texture3DDescription1.TextureLayout"/> value that identifies the layout of the texture.</param>
+15105-        </member>
+15106:        <member name="F:Vortice.Direct3D11.Texture3DDescription1.Width">
+15107-            <summary>Texture width (in texels). The  range is from 1 to D3D11_REQ_TEXTURE3D_U_V_OR_W_DIMENSION (2048). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+15108:            <unmanaged>D3D11_TEXTURE3D_DESC1::Width</unmanaged>
+15109:            <unmanaged-short>Width</unmanaged-short>
+15110-        </member>
+15111:        <member name="F:Vortice.Direct3D11.Texture3DDescription1.Height">
+15112-            <summary>Texture height (in texels). The  range is from 1 to D3D11_REQ_TEXTURE3D_U_V_OR_W_DIMENSION (2048). However, the range is actually constrained by the <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> at which you create the rendering device. For more information about restrictions, see Remarks.</summary>
+15113:            <unmanaged>D3D11_TEXTURE3D_DESC1::Height</unmanaged>
+15114:            <unmanaged-short>Height</unmanaged-short>
+15115-        </member>
+15116-        <member name="F:Vortice.Direct3D11.Texture3DDescription1.Depth">
+--
+15236-        </member>
+15237-        <member name="F:Vortice.Direct3D11.TileRegionSize.UseBox">
+15238:            <summary>Specifies whether the runtime uses the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members to define the region. 
+15239-
+15240:If <b>TRUE</b>, the runtime uses the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members to define the region. 
+15241-
+15242:If <b>FALSE</b>, the runtime ignores the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members and uses the <b>NumTiles</b> member to traverse tiles in the resource linearly across x, then y, then z (as applicable) and then spills over mipmaps/arrays in subresource order.  For example, use this technique to map an entire resource at once.
+15243-
+15244-Regardless of whether you specify <b>TRUE</b> or <b>FALSE</b> for <b>bUseBox</b>, you use a <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_2/ns-d3d11_2-d3d11_tiled_resource_coordinate">D3D11_TILED_RESOURCE_COORDINATE</a> structure to specify the starting location for the region within the resource as a separate parameter outside of this structure by using x, y, and z coordinates. 
+--
+15248-            <unmanaged-short>bUseBox</unmanaged-short>
+15249-        </member>
+15250:        <member name="F:Vortice.Direct3D11.TileRegionSize.Width">
+15251-            <summary>The width of the tiled region, in tiles. Used for buffer and 1D, 2D, and 3D textures.</summary>
+15252:            <unmanaged>D3D11_TILE_REGION_SIZE::Width</unmanaged>
+15253:            <unmanaged-short>Width</unmanaged-short>
+15254-        </member>
+15255:        <member name="F:Vortice.Direct3D11.TileRegionSize.Height">
+15256-            <summary>The height of the tiled region, in tiles. Used for 2D and 3D textures.</summary>
+15257:            <unmanaged>D3D11_TILE_REGION_SIZE::Height</unmanaged>
+15258:            <unmanaged-short>Height</unmanaged-short>
+15259-        </member>
+15260-        <member name="F:Vortice.Direct3D11.TileRegionSize.Depth">
+--
+19390-            <unmanaged-short>NumElements</unmanaged-short>
+19391-        </member>
+19392:        <member name="F:Vortice.Direct3D11.BufferRenderTargetView.ElementWidth">
+19393-            <summary>The width of each element (in bytes). This can be determined from the format stored in the render-target-view description.</summary>
+19394:            <unmanaged>D3D11_BUFFER_RTV::ElementWidth</unmanaged>
+19395:            <unmanaged-short>ElementWidth</unmanaged-short>
+19396-        </member>
+19397-        <member name="T:Vortice.Direct3D11.BufferShaderResourceView">
+--
+19418-            <unmanaged-short>NumElements</unmanaged-short>
+19419-        </member>
+19420:        <member name="F:Vortice.Direct3D11.BufferShaderResourceView.ElementWidth">
+19421-            <summary>The width of each element (in bytes).
+19422-              This can be determined from the format stored in the shader-resource-view description.</summary>
+19423:            <unmanaged>D3D11_BUFFER_SRV::ElementWidth</unmanaged>
+19424:            <unmanaged-short>ElementWidth</unmanaged-short>
+19425-        </member>
+19426-        <member name="T:Vortice.Direct3D11.BufferUnorderedAccessView">
+--
+20406-            <unmanaged-short>D3D11_SUBRESOURCE_TILING</unmanaged-short>
+20407-        </member>
+20408:        <member name="F:Vortice.Direct3D11.SubresourceTiling.WidthInTiles">
+20409-            <summary>The width in tiles of the subresource.</summary>
+20410:            <unmanaged>D3D11_SUBRESOURCE_TILING::WidthInTiles</unmanaged>
+20411:            <unmanaged-short>WidthInTiles</unmanaged-short>
+20412-        </member>
+20413:        <member name="F:Vortice.Direct3D11.SubresourceTiling.HeightInTiles">
+20414-            <summary>The height in tiles of the subresource.</summary>
+20415:            <unmanaged>D3D11_SUBRESOURCE_TILING::HeightInTiles</unmanaged>
+20416:            <unmanaged-short>HeightInTiles</unmanaged-short>
+20417-        </member>
+20418-        <member name="F:Vortice.Direct3D11.SubresourceTiling.DepthInTiles">
+--
+21187-            <unmanaged-short>D3D11_TILE_SHAPE</unmanaged-short>
+21188-        </member>
+21189:        <member name="F:Vortice.Direct3D11.TileShape.WidthInTexels">
+21190-            <summary>The width in texels of the tile.</summary>
+21191:            <unmanaged>D3D11_TILE_SHAPE::WidthInTexels</unmanaged>
+21192:            <unmanaged-short>WidthInTexels</unmanaged-short>
+21193-        </member>
+21194:        <member name="F:Vortice.Direct3D11.TileShape.HeightInTexels">
+21195-            <summary>The height in texels of the tile.</summary>
+21196:            <unmanaged>D3D11_TILE_SHAPE::HeightInTexels</unmanaged>
+21197:            <unmanaged-short>HeightInTexels</unmanaged-short>
+21198-        </member>
+21199-        <member name="F:Vortice.Direct3D11.TileShape.DepthInTexels">
+--
+21380-            <unmanaged-short>NumMBsInBuffer</unmanaged-short>
+21381-        </member>
+21382:        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription.Width">
+21383-            <summary>Reserved. Set to zero.</summary>
+21384:            <unmanaged>D3D11_VIDEO_DECODER_BUFFER_DESC::Width</unmanaged>
+21385:            <unmanaged-short>Width</unmanaged-short>
+21386-        </member>
+21387:        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription.Height">
+21388-            <summary>Reserved. Set to zero.</summary>
+21389:            <unmanaged>D3D11_VIDEO_DECODER_BUFFER_DESC::Height</unmanaged>
+21390:            <unmanaged-short>Height</unmanaged-short>
+21391-        </member>
+21392-        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription.Stride">
+--
+21678-            <unmanaged-short>Guid</unmanaged-short>
+21679-        </member>
+21680:        <member name="F:Vortice.Direct3D11.VideoDecoderDescription.SampleWidth">
+21681-            <summary>The width of the video frame, in pixels.</summary>
+21682:            <unmanaged>D3D11_VIDEO_DECODER_DESC::SampleWidth</unmanaged>
+21683:            <unmanaged-short>SampleWidth</unmanaged-short>
+21684-        </member>
+21685:        <member name="F:Vortice.Direct3D11.VideoDecoderDescription.SampleHeight">
+21686-            <summary>The height of the video frame, in pixels.</summary>
+21687:            <unmanaged>D3D11_VIDEO_DECODER_DESC::SampleHeight</unmanaged>
+21688:            <unmanaged-short>SampleHeight</unmanaged-short>
+21689-        </member>
+21690-        <member name="F:Vortice.Direct3D11.VideoDecoderDescription.OutputFormat">
+--
+21848-            <unmanaged-short>InputFrameRate</unmanaged-short>
+21849-        </member>
+21850:        <member name="F:Vortice.Direct3D11.VideoProcessorContentDescription.InputWidth">
+21851-            <summary>The width of the input frames, in pixels.</summary>
+21852:            <unmanaged>D3D11_VIDEO_PROCESSOR_CONTENT_DESC::InputWidth</unmanaged>
+21853:            <unmanaged-short>InputWidth</unmanaged-short>
+21854-        </member>
+21855:        <member name="F:Vortice.Direct3D11.VideoProcessorContentDescription.InputHeight">
+21856-            <summary>The height of the input frames, in pixels.</summary>
+21857:            <unmanaged>D3D11_VIDEO_PROCESSOR_CONTENT_DESC::InputHeight</unmanaged>
+21858:            <unmanaged-short>InputHeight</unmanaged-short>
+21859-        </member>
+21860-        <member name="F:Vortice.Direct3D11.VideoProcessorContentDescription.OutputFrameRate">
+--
+21863-            <unmanaged-short>OutputFrameRate</unmanaged-short>
+21864-        </member>
+21865:        <member name="F:Vortice.Direct3D11.VideoProcessorContentDescription.OutputWidth">
+21866-            <summary>The width of the output frames, in pixels.</summary>
+21867:            <unmanaged>D3D11_VIDEO_PROCESSOR_CONTENT_DESC::OutputWidth</unmanaged>
+21868:            <unmanaged-short>OutputWidth</unmanaged-short>
+21869-        </member>
+21870:        <member name="F:Vortice.Direct3D11.VideoProcessorContentDescription.OutputHeight">
+21871-            <summary>The height of the output frames, in pixels.</summary>
+21872:            <unmanaged>D3D11_VIDEO_PROCESSOR_CONTENT_DESC::OutputHeight</unmanaged>
+21873:            <unmanaged-short>OutputHeight</unmanaged-short>
+21874-        </member>
+21875-        <member name="F:Vortice.Direct3D11.VideoProcessorContentDescription.Usage">
+--
+22101-            <unmanaged-short>Enable</unmanaged-short>
+22102-        </member>
+22103:        <member name="F:Vortice.Direct3D11.VideoProcessorStreamBehaviorHint.Width">
+22104-            <summary>The width of the input stream.</summary>
+22105:            <unmanaged>D3D11_VIDEO_PROCESSOR_STREAM_BEHAVIOR_HINT::Width</unmanaged>
+22106:            <unmanaged-short>Width</unmanaged-short>
+22107-        </member>
+22108:        <member name="F:Vortice.Direct3D11.VideoProcessorStreamBehaviorHint.Height">
+22109-            <summary>The height of the input stream.</summary>
+22110:            <unmanaged>D3D11_VIDEO_PROCESSOR_STREAM_BEHAVIOR_HINT::Height</unmanaged>
+22111:            <unmanaged-short>Height</unmanaged-short>
+22112-        </member>
+22113-        <member name="F:Vortice.Direct3D11.VideoProcessorStreamBehaviorHint.Format">
+--
+22124-            <unmanaged-short>D3D11_VIDEO_SAMPLE_DESC</unmanaged-short>
+22125-        </member>
+22126:        <member name="F:Vortice.Direct3D11.VideoSampleDescription.Width">
+22127-            <summary>The width of the video sample.</summary>
+22128:            <unmanaged>D3D11_VIDEO_SAMPLE_DESC::Width</unmanaged>
+22129:            <unmanaged-short>Width</unmanaged-short>
+22130-        </member>
+22131:        <member name="F:Vortice.Direct3D11.VideoSampleDescription.Height">
+22132-            <summary>The height of the video sample.</summary>
+22133:            <unmanaged>D3D11_VIDEO_SAMPLE_DESC::Height</unmanaged>
+22134:            <unmanaged-short>Height</unmanaged-short>
+22135-        </member>
+22136-        <member name="F:Vortice.Direct3D11.VideoSampleDescription.Format">
+--
+23310-      <para>Microsoft Docs: <see href="https://docs.microsoft.com/windows/win32/api//d3d11_1/nf-d3d11_1-id3d11videocontext1-videoprocessorgetbehaviorhints" /></para>
+23311-      <param name="videoProcessor">A pointer to the <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/nn-d3d11-id3d11videoprocessor">ID3D11VideoProcessor</a> interface.</param>
+23312:      <param name="outputWidth">The width of the output stream.</param>
+23313:      <param name="outputHeight">The height of the output stream.</param>
+23314-      <param name="outputFormat">The format of the output stream.</param>
+23315-      <param name="streamCount">The number of input streams to process.</param>
+--
+23317-[Omitted long context line]
+23318-    </summary>
+23319:            <unmanaged>HRESULT ID3D11VideoContext1::VideoProcessorGetBehaviorHints([In] ID3D11VideoProcessor* pVideoProcessor, [In] UINT OutputWidth, [In] UINT OutputHeight, [In] DXGI_FORMAT OutputFormat, [In] UINT StreamCount, [In, Buffer] const D3D11_VIDEO_PROCESSOR_STREAM_BEHAVIOR_HINT* pStreams, [Out] UINT* pBehaviorHints)</unmanaged>
+23320-            <unmanaged-short>ID3D11VideoContext1::VideoProcessorGetBehaviorHints</unmanaged-short>
+23321-        </member>

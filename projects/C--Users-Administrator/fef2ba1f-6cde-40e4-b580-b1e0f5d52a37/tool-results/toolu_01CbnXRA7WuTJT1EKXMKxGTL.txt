@@ -1,0 +1,1627 @@
+     1→Imports System.Runtime.InteropServices
+     2→Imports System.Text
+     3→Imports System.Net
+     4→Imports System.IO
+     5→Imports System.Threading
+     6→Imports System.Media
+     7→Imports System
+     8→Imports System.Collections.Generic
+     9→Imports System.ComponentModel
+    10→Imports System.Data
+    11→Imports System.Drawing
+    12→Imports System.Windows.Forms
+    13→Imports System.Reflection
+    14→Imports System.IO.Ports
+    15→
+    16→Public Class FrmMain
+    17→
+    18→    Private RF_READ_DELAY As Double
+    19→    Private RF_READ_COUNT As Double
+    20→
+    21→    Private FLAG_RFID_RUN As Boolean
+    22→    Private RFID_TAG_ID As String = "" ' 최초 인식된 태그ID 보관
+    23→
+    24→    Private Tmr_Count As Double
+    25→    Private PLC_STRING As String
+    26→    Private WORK_PARTNO As String
+    27→
+    28→    Private Tool_Delay_count As Double
+    29→    Private Tool_Ready As Boolean
+    30→    Private Tool_String As String
+    31→    Private Tool_Connection As Boolean
+    32→
+    33→    Private tError1 As String
+    34→    Private tStep1 As String
+    35→
+    36→    Private FLAG_CONNECTION_PLC1 As Boolean
+    37→    Private ADDRESS_CONNECTION_PLC1 As String
+    38→    Private OPTION_CARTYPE As String
+    39→    Private OPTION_LHRH As String
+    40→    Private OPTION_RECL As String
+    41→    Private OPTION_VENT As Boolean
+    42→    Private OPTION_LSUPT As String
+    43→
+    44→    Private TARGET_SAB_SN As String
+    45→    Private TARGET_LSUPT_SN As String
+    46→    Private TARGET_RECL_SN As String
+    47→
+    48→    Private D_OutString As String
+    49→    Private rStep As Double
+    50→    Private rCount As Double
+    51→    Private StartTime As String
+    52→    Private EndTime As String
+    53→    Private wStep As Double
+    54→    Private wCount As Double
+    55→
+    56→    Public D_Value(0 To 48) As Integer
+    57→    Private IN_LABEL(20) As Label
+    58→    Private OUT_LABEL(20) As Label
+    59→    Private VALUE_IN_LABEL(20) As Label
+    60→    Private VALUE_OUT_LABEL(20) As Label
+    61→    Public PLC_VALUE(0 To 100) As Integer
+    62→
+    63→    Private Trd1 As Thread
+    64→    Private Trd2 As Thread
+    65→    Private Trd3 As Thread
+    66→    Private RecvString As New System.Text.StringBuilder()
+    67→
+    68→    Private Player As New SoundPlayer
+    69→
+    70→    ' MX Component ActiveX - 디자이너 깨짐 방지를 위해 코드에서 동적 생성
+    71→    Friend WithEvents ACT_PLC1 As AxACTETHERLib.AxActQNUDECPUTCP
+    72→
+    73→    Private Sub NG()
+    74→
+    75→        Me.Player.SoundLocation = System.AppDomain.CurrentDomain.BaseDirectory & "\SOUND\NG.wav"
+    76→        Me.Player.Play()
+    77→
+    78→    End Sub
+    79→
+    80→    Private Sub DingDOng()
+    81→
+    82→        Me.Player.SoundLocation = System.AppDomain.CurrentDomain.BaseDirectory & "\SOUND\DINGDONG.wav"
+    83→        Me.Player.Play()
+    84→
+    85→    End Sub
+    86→
+    87→    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    88→
+    89→        Process.Start("OSK")
+    90→
+    91→        'Dim ProcID As Integer
+    92→        '' Start the Notepad application, and store the process id.
+    93→        'ProcID = Shell("C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessibility\osk.exe")
+    94→        '' Activate the Notepad application.
+    95→        'AppActivate(ProcID)
+    96→        '' Send the keystrokes to the Notepad application.
+    97→        'My.Computer.Keyboard.SendKeys("I ", True)
+    98→        'My.Computer.Keyboard.SendKeys("♥", True)
+    99→        'My.Computer.Keyboard.SendKeys(" Visual Basic!", True)
+   100→        '' The sentence I ♥ Visual Basic! is printed on Notepad.
+   101→
+   102→        'SendKeys.Send("{ENTER}")
+   103→
+   104→    End Sub
+   105→
+   106→    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+   107→
+   108→        FrmPort.Show()
+   109→        'FormPassword.Show()
+   110→        'CheckFormPort = True
+   111→
+   112→    End Sub
+   113→
+   114→    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+   115→        End
+   116→    End Sub
+   117→
+   118→    Private Sub LoadPicture(ByVal picTarget As PictureBox, ByVal picName As String)
+   119→
+   120→        Try
+   121→            picTarget.Image = System.Drawing.Image.FromFile(System.AppDomain.CurrentDomain.BaseDirectory & "\Image\" & picName & ".png")
+   122→        Catch ex As Exception
+   123→        End Try
+   124→
+   125→        Try
+   126→            picTarget.Image = System.Drawing.Image.FromFile(System.AppDomain.CurrentDomain.BaseDirectory & "\Image\" & picName & ".jpg")
+   127→        Catch ex As Exception
+   128→        End Try
+   129→
+   130→        'LoadPicture(Picture_Main, "ASSEMBLE\NHGT")
+   131→
+   132→    End Sub
+   133→
+   134→
+   135→    Private Sub Control2Arry()
+   136→
+   137→        IN_LABEL(0) = LABEL_ADDRESS_IN_0
+   138→        IN_LABEL(1) = LABEL_ADDRESS_IN_1
+   139→        IN_LABEL(2) = LABEL_ADDRESS_IN_2
+   140→        IN_LABEL(3) = LABEL_ADDRESS_IN_3
+   141→        IN_LABEL(4) = LABEL_ADDRESS_IN_4
+   142→        IN_LABEL(5) = LABEL_ADDRESS_IN_5
+   143→        IN_LABEL(6) = LABEL_ADDRESS_IN_6
+   144→        IN_LABEL(7) = LABEL_ADDRESS_IN_7
+   145→        IN_LABEL(8) = LABEL_ADDRESS_IN_8
+   146→        IN_LABEL(9) = LABEL_ADDRESS_IN_9
+   147→        IN_LABEL(10) = LABEL_ADDRESS_IN_10
+   148→        IN_LABEL(11) = LABEL_ADDRESS_IN_11
+   149→
+   150→        OUT_LABEL(0) = LABEL_ADDRESS_OUT_0
+   151→        OUT_LABEL(1) = LABEL_ADDRESS_OUT_1
+   152→        OUT_LABEL(2) = LABEL_ADDRESS_OUT_2
+   153→        OUT_LABEL(3) = LABEL_ADDRESS_OUT_3
+   154→        OUT_LABEL(4) = LABEL_ADDRESS_OUT_4
+   155→        OUT_LABEL(5) = LABEL_ADDRESS_OUT_5
+   156→        OUT_LABEL(6) = LABEL_ADDRESS_OUT_6
+   157→        OUT_LABEL(7) = LABEL_ADDRESS_OUT_7
+   158→        OUT_LABEL(8) = LABEL_ADDRESS_OUT_8
+   159→        OUT_LABEL(9) = LABEL_ADDRESS_OUT_9
+   160→        OUT_LABEL(10) = LABEL_ADDRESS_OUT_10
+   161→        OUT_LABEL(11) = LABEL_ADDRESS_OUT_11
+   162→
+   163→        VALUE_IN_LABEL(0) = VALUE_ADDRESS_IN_0
+   164→        VALUE_IN_LABEL(1) = VALUE_ADDRESS_IN_1
+   165→        VALUE_IN_LABEL(2) = VALUE_ADDRESS_IN_2
+   166→        VALUE_IN_LABEL(3) = VALUE_ADDRESS_IN_3
+   167→        VALUE_IN_LABEL(4) = VALUE_ADDRESS_IN_4
+   168→        VALUE_IN_LABEL(5) = VALUE_ADDRESS_IN_5
+   169→        VALUE_IN_LABEL(6) = VALUE_ADDRESS_IN_6
+   170→        VALUE_IN_LABEL(7) = VALUE_ADDRESS_IN_7
+   171→        VALUE_IN_LABEL(8) = VALUE_ADDRESS_IN_8
+   172→        VALUE_IN_LABEL(9) = VALUE_ADDRESS_IN_9
+   173→        VALUE_IN_LABEL(10) = VALUE_ADDRESS_IN_10
+   174→        VALUE_IN_LABEL(11) = VALUE_ADDRESS_IN_11
+   175→
+   176→        VALUE_OUT_LABEL(0) = VALUE_ADDRESS_OUT_0
+   177→        VALUE_OUT_LABEL(1) = VALUE_ADDRESS_OUT_1
+   178→        VALUE_OUT_LABEL(2) = VALUE_ADDRESS_OUT_2
+   179→        VALUE_OUT_LABEL(3) = VALUE_ADDRESS_OUT_3
+   180→        VALUE_OUT_LABEL(4) = VALUE_ADDRESS_OUT_4
+   181→        VALUE_OUT_LABEL(5) = VALUE_ADDRESS_OUT_5
+   182→        VALUE_OUT_LABEL(6) = VALUE_ADDRESS_OUT_6
+   183→        VALUE_OUT_LABEL(7) = VALUE_ADDRESS_OUT_7
+   184→        VALUE_OUT_LABEL(8) = VALUE_ADDRESS_OUT_8
+   185→        VALUE_OUT_LABEL(9) = VALUE_ADDRESS_OUT_9
+   186→        VALUE_OUT_LABEL(10) = VALUE_ADDRESS_OUT_10
+   187→        VALUE_OUT_LABEL(11) = VALUE_ADDRESS_OUT_11
+   188→
+   189→        IN_LABEL(0).Text = "D4000"
+   190→        IN_LABEL(1).Text = "D4001"
+   191→        IN_LABEL(2).Text = "D4002"
+   192→        IN_LABEL(3).Text = "D4003"
+   193→        IN_LABEL(4).Text = "D4004"
+   194→        IN_LABEL(5).Text = "D4005"
+   195→        IN_LABEL(6).Text = "D4006"
+   196→        IN_LABEL(7).Text = "D4007"
+   197→        IN_LABEL(8).Text = "D4008"
+   198→        IN_LABEL(9).Text = "D4009"
+   199→        IN_LABEL(10).Text = "D4010"
+   200→        IN_LABEL(11).Text = "D4011"
+   201→
+   202→        OUT_LABEL(0).Text = "D4050"
+   203→        OUT_LABEL(1).Text = "D4051"
+   204→        OUT_LABEL(2).Text = "D4052"
+   205→        OUT_LABEL(3).Text = "D4053"
+   206→        OUT_LABEL(4).Text = "D4054"
+   207→        OUT_LABEL(5).Text = "D4055"
+   208→        OUT_LABEL(6).Text = "D4056"
+   209→        OUT_LABEL(7).Text = "D4057"
+   210→        OUT_LABEL(8).Text = "D4058"
+   211→        OUT_LABEL(9).Text = "D4059"
+   212→        OUT_LABEL(10).Text = "D4060"
+   213→        OUT_LABEL(11).Text = "D4061"
+   214→
+   215→    End Sub
+   216→
+   217→
+   218→
+   219→    Private Sub Init_Control()
+   220→
+   221→        srcTotal_Decision.Text = ""
+   222→        srcTotal_Decision.BackColor = Color.White
+   223→
+   224→        LAbel_RF_CHECK.Text = ""
+   225→        LAbel_RF_CHECK.BackColor = Color.White
+   226→
+   227→        LoadPicture(srcPicturebox1, "NON")
+   228→        srcPartNo.Text = ""
+   229→        srcColorCode.Text = ""
+   230→        srcPartName.Text = ""
+   231→        srcSerialNumber.Text = ""
+   232→        label_Message.Text = ""
+   233→
+   234→        srcLSUPT.BackColor = Color.White
+   235→
+   236→        srcCN7.BackColor = Color.White
+   237→        srcAD.BackColor = Color.White
+   238→        srcAE.BackColor = Color.White
+   239→        srcPD.BackColor = Color.White
+   240→
+   241→        srcLH.BackColor = Color.White
+   242→        srcRH.BackColor = Color.White
+   243→        srcMNL.BackColor = Color.White
+   244→        srcEMC.BackColor = Color.White
+   245→        srcEMS.BackColor = Color.White
+   246→        srcIMS.BackColor = Color.White
+   247→        srcSAB.BackColor = Color.White
+   248→        srcVENT.BackColor = Color.White
+   249→
+   250→        srcMotorBArcode.Text = ""
+   251→        srcMotorBArcode_DEc.Text = ""
+   252→        srcMotorBArcode_DEc.BackColor = Color.White
+   253→        srcMotorBArcode_Target.Text = ""
+   254→
+   255→        srcMotoTQ.Text = ""
+   256→        srcMotorTQ_DEc.Text = ""
+   257→        srcMotorTQ_DEc.BackColor = Color.White
+   258→        srcMotorTQ_SPEC.Text = ""
+   259→
+   260→        LAbel_RF_CHECK.Text = ""
+   261→        LAbel_RF_CHECK.BackColor = Color.White
+   262→
+   263→        srcHBArcode.Text = ""
+   264→        srcHBArcode_DEc.Text = ""
+   265→        srcHBArcode_DEc.BackColor = Color.White
+   266→        srcHBArcode_Target.Text = ""
+   267→
+   268→    End Sub
+   269→
+   270→    Sub SerialOpen()
+   271→
+   272→        Try
+   273→            If Serial_RFID.IsOpen() = True Then
+   274→                Serial_RFID.Close()
+   275→            End If
+   276→            Serial_RFID.PortName = PortNumber_RFID
+   277→            Serial_RFID.ReceivedBytesThreshold = 50
+   278→            Serial_RFID.BaudRate = 9600
+   279→            Serial_RFID.DataBits = 8
+   280→            Serial_RFID.Open()
+   281→
+   282→        Catch ex As Exception
+   283→            MsgBox("Serial Open Module Fail " & PortNumber_RFID)
+   284→        End Try
+   285→
+   286→        Try
+   287→            If Serial_Scanner.IsOpen() = True Then
+   288→                Serial_Scanner.Close()
+   289→            End If
+   290→            Serial_Scanner.PortName = PortNumber_SCANNER
+   291→            Serial_Scanner.BaudRate = 9600
+   292→            Serial_Scanner.DataBits = 8
+   293→            Serial_Scanner.Open()
+   294→
+   295→        Catch ex As Exception
+   296→
+   297→            MsgBox("Serial Open Scanner Fail " & PortNumber_SCANNER)
+   298→        End Try
+   299→
+   300→        Try
+   301→            If Serial_Tool.IsOpen() = True Then
+   302→                Serial_Tool.Close()
+   303→            End If
+   304→            Serial_Tool.PortName = PortNumber_TOOL
+   305→            Serial_Tool.BaudRate = 9600
+   306→            Serial_Tool.DataBits = 8
+   307→            Serial_Tool.Open()
+   308→            Serial_Tool.Write(Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "00200001            " & Chr("0") & Chr("3"))
+   309→            Serial_Tool.Write(Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "00200060            " & Chr("0") & Chr("3"))
+   310→            tmr_Tool.Interval = 5000
+   311→            tmr_Tool.Start()
+   312→
+   313→        Catch ex As Exception
+   314→            MsgBox("Serial Open Tool Fail " & PortNumber_TOOL)
+   315→        End Try
+   316→
+   317→
+   318→    End Sub
+   319→
+   320→    Private Sub PLC_CONNECT()
+   321→
+   322→        'ACT_PLC1.ActNetworkNumber = 1
+   323→        'ACT_PLC1.ActStationNumber = 1
+   324→        ACT_PLC1.ActCpuType = 146
+   325→
+   326→        ACT_PLC1.ActHostAddress = ADDRESS_CONNECTION_PLC1
+   327→        If ACT_PLC1.Open <> 0 Then
+   328→            FLAG_CONNECTION_PLC1 = False
+   329→        Else
+   330→            FLAG_CONNECTION_PLC1 = True
+   331→        End If
+   332→
+   333→    End Sub
+   334→
+   335→    Private Sub Save_WorkPArt(ByVal str As String)
+   336→
+   337→        Connection_Open()
+   338→        Dim Rs As New ADODB.Recordset
+   339→        Try
+   340→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   341→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   342→            Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+   343→            Rs.Open("Select * FROM Table_Work", Sql_Connect)
+   344→
+   345→            If Rs.RecordCount = 1 Then
+   346→                Rs.Fields("WORK_PARTNO").Value = str
+   347→                Rs.Update()
+   348→            End If
+   349→        Catch ex As Exception
+   350→        Finally
+   351→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+   352→                Rs.ActiveConnection = Nothing
+   353→                Rs.Close()
+   354→            End If
+   355→        End Try
+   356→
+   357→    End Sub
+   358→
+   359→    Private Sub Serial_Scanner_DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles Serial_Scanner.DataReceived
+   360→
+   361→        Dim Incoming As String
+   362→        Dim ScanData As String
+   363→
+   364→        Incoming = Serial_Scanner.ReadLine()
+   365→
+   366→        ScanData = Mid$(Incoming, 1, Len(Incoming) - 1)
+   367→        Label_Scanner.Text = ScanData
+   368→
+   369→        Serial_Scanner.DiscardInBuffer()
+   370→
+   371→        'If Len(Label_Scanner.Text) >= 11 Then
+   372→
+   373→        '    Init_Control()
+   374→        '    Label_RF_READ.Text = ""
+   375→        '    ' 칼라코드 분리
+   376→        '    If Len(Label_Scanner.Text) > 11 Then
+   377→        '        srcColorCode.Text = Mid(Label_Scanner.Text, 12)
+   378→        '    End If
+   379→        '    Save_WorkPArt(Label_Scanner.Text)
+   380→        '    Load_PArt(Microsoft.VisualBasic.Left(Label_Scanner.Text, 11))
+   381→        '    wStep = 4
+   382→
+   383→        'Else
+   384→
+   385→        If wStep = 9 Then
+   386→
+   387→            ' 모터 바코드 미완료 시 모터 바코드 스캔
+   388→            If srcMotorBArcode_DEc.Text <> "OK" And srcMotorBArcode_DEc.Text <> "NA" And srcMotorBArcode_DEc.Text <> "PASS" Then
+   389→                If InStr(1, ScanData, srcMotorBArcode_Target.Text) <> 0 Then
+   390→                    srcMotorBArcode.Text = ScanData
+   391→                    srcMotorBArcode_DEc.Text = "OK"
+   392→                    srcMotorBArcode_DEc.BackColor = Color.Blue
+   393→                    DingDOng()
+   394→                Else
+   395→                    srcMotorBArcode.Text = ScanData
+   396→                    srcMotorBArcode_DEc.Text = "NG"
+   397→                    srcMotorBArcode_DEc.BackColor = Color.Red
+   398→                    NG()
+   399→                End If
+   400→
+   401→                ' 하네스 바코드 미완료 시 하네스 바코드 스캔
+   402→            ElseIf srcHBArcode_DEc.Text <> "OK" And srcHBArcode_DEc.Text <> "NA" And srcHBArcode_DEc.Text <> "PASS" Then
+   403→                If InStr(1, ScanData, srcHBArcode_Target.Text) <> 0 Then
+   404→                    srcHBArcode.Text = ScanData
+   405→                    srcHBArcode_DEc.Text = "OK"
+   406→                    srcHBArcode_DEc.BackColor = Color.Blue
+   407→                    DingDOng()
+   408→                Else
+   409→                    srcHBArcode.Text = ScanData
+   410→                    srcHBArcode_DEc.Text = "NG"
+   411→                    srcHBArcode_DEc.BackColor = Color.Red
+   412→                    NG()
+   413→                End If
+   414→            Else
+   415→                ' 스캔할 항목 없음 (모두 PASS/NA/OK)
+   416→                NG()
+   417→            End If
+   418→
+   419→        Else
+   420→
+   421→            label_Message.Text = "Reset Need"
+   422→
+   423→        End If
+   424→
+   425→        'End If
+   426→
+   427→
+   428→    End Sub
+   429→
+   430→    Private Sub Barcode_Print()
+   431→
+   432→        Serial_Printer.Write("^XA")
+   433→        Serial_Printer.Write("^FO90,100^BY2,5.0^BXN,5,200,,,,^FD" & srcSerialNumber.Text & "^FS")
+   434→        Serial_Printer.Write("^FO220,60^A0N,60,40^FD" & srcPartNo.Text & "^FS")
+   435→        Serial_Printer.Write("^FO220,120^A0N,60,20^FD" & srcSerialNumber.Text & "^FS")
+   436→        Serial_Printer.Write("^FO220,180^A0N,40,20^FD" & srcPartName.Text & "^FS")
+   437→        Serial_Printer.Write("^XZ")
+   438→
+   439→    End Sub
+   440→
+   441→    Private Sub Load_PArt(ByVal str As String)
+   442→
+   443→        Connection_Open()
+   444→        Dim Rs As New ADODB.Recordset
+   445→        Try
+   446→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   447→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   448→            Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+   449→            Dim basePartNo As String = If(str.Length > 11, Microsoft.VisualBasic.Left(str, 11), str)
+   450→            Rs.Open("SELECT * FROM Table_Part WITH (NOLOCK) WHERE Part_No = '" & basePartNo & "'", Sql_Connect)
+   451→
+   452→            If Rs.RecordCount = 1 Then
+   453→
+   454→                StartTime = Format(Now, "HH:mm:ss")
+   455→
+   456→                srcPartNo.Text = SafeStr(Rs.Fields("Part_No").Value)
+   457→                srcPartName.Text = SafeStr(Rs.Fields("Part_Name").Value)
+   458→
+   459→                LoadPicture(srcPicturebox1, str)
+   460→
+   461→                OPTION_CARTYPE = SafeStr(Rs.Fields("OPTION_CAR").Value)
+   462→                OPTION_LHRH = SafeStr(Rs.Fields("OPTION_LHRH").Value)
+   463→                OPTION_RECL = SafeStr(Rs.Fields("OPTION_RECL").Value)
+   464→                OPTION_VENT = SafeBool(Rs.Fields("OPTION_VENT").Value)
+   465→                OPTION_LSUPT = SafeStr(Rs.Fields("OPTION_LSUPT").Value)
+   466→
+   467→                TARGET_RECL_SN = SafeStr(Rs.Fields("RECL_SN").Value)
+   468→                TARGET_SAB_SN = SafeStr(Rs.Fields("SAB_SN").Value)
+   469→                TARGET_LSUPT_SN = SafeStr(Rs.Fields("LSUPT_SN").Value)
+   470→
+   471→                If OPTION_LSUPT = "2WAY" Then
+   472→                    srcLSUPT.BackColor = Color.Black
+   473→                Else
+   474→                    srcLSUPT.BackColor = Color.White
+   475→                End If
+   476→
+   477→                If OPTION_CARTYPE = "CN7" Then
+   478→                    srcCN7.BackColor = Color.Black
+   479→                    srcAD.BackColor = Color.White
+   480→                    srcAE.BackColor = Color.White
+   481→                    srcPD.BackColor = Color.White
+   482→                    srcCN8.BackColor = Color.White
+   483→                ElseIf OPTION_CARTYPE = "AD" Then
+   484→                    srcCN7.BackColor = Color.White
+   485→                    srcAD.BackColor = Color.Black
+   486→                    srcAE.BackColor = Color.White
+   487→                    srcPD.BackColor = Color.White
+   488→                    srcCN8.BackColor = Color.White
+   489→                ElseIf OPTION_CARTYPE = "AE" Then
+   490→                    srcCN7.BackColor = Color.White
+   491→                    srcAD.BackColor = Color.White
+   492→                    srcAE.BackColor = Color.Black
+   493→                    srcPD.BackColor = Color.White
+   494→                    srcCN8.BackColor = Color.White
+   495→                ElseIf OPTION_CARTYPE = "PD" Then
+   496→                    srcCN7.BackColor = Color.White
+   497→                    srcAD.BackColor = Color.White
+   498→                    srcAE.BackColor = Color.White
+   499→                    srcPD.BackColor = Color.Black
+   500→                    srcCN8.BackColor = Color.White
+   501→                ElseIf OPTION_CARTYPE = "CN8" Then
+   502→                    srcCN7.BackColor = Color.White
+   503→                    srcAD.BackColor = Color.White
+   504→                    srcAE.BackColor = Color.White
+   505→                    srcPD.BackColor = Color.White
+   506→                    srcCN8.BackColor = Color.Black
+   507→                End If
+   508→
+   509→                If OPTION_RECL = "MNL" Then
+   510→
+   511→                    srcMotorBArcode.Text = "NA"
+   512→                    srcMotorBArcode_DEc.Text = "NA"
+   513→                    srcMotorBArcode_DEc.BackColor = Color.Green
+   514→                    srcMotorBArcode_Target.Text = "NA"
+   515→
+   516→                    srcMotoTQ.Text = "NA"
+   517→                    srcMotorTQ_DEc.Text = "NA"
+   518→                    srcMotorTQ_DEc.BackColor = Color.Green
+   519→                    srcMotorTQ_SPEC.Text = "NA"
+   520→
+   521→                ElseIf OPTION_RECL = "EMC" Or OPTION_RECL = "IMS" Or OPTION_RECL = "EMS" Then
+   522→
+   523→                    If FUNCTION_MOTOR_TQ = True Then
+   524→
+   525→                        srcMotoTQ.Text = ""
+   526→                        srcMotorTQ_DEc.Text = ""
+   527→                        srcMotorTQ_DEc.BackColor = Color.White
+   528→                        srcMotorTQ_SPEC.Text = ""
+   529→                        srcMotorTQ_SPEC.Text = BASIC_MOTOR_TQ_MIN & " ~ " & BASIC_MOTOR_TQ_MAX & " " & BASIC_MOTOR_TQ_UNIT
+   530→
+   531→                    Else
+   532→
+   533→                        srcMotoTQ.Text = "PASS"
+   534→                        srcMotorTQ_DEc.Text = "PASS"
+   535→                        srcMotorTQ_DEc.BackColor = Color.Green
+   536→                        srcMotorTQ_SPEC.Text = ""
+   537→                        srcMotorTQ_SPEC.Text = BASIC_MOTOR_TQ_MIN & " ~ " & BASIC_MOTOR_TQ_MAX & " " & BASIC_MOTOR_TQ_UNIT
+   538→
+   539→                    End If
+   540→
+   541→                    If FUNCTION_MOTOR_SERIAL = True Then
+   542→
+   543→                        srcMotorBArcode.Text = ""
+   544→                        srcMotorBArcode_DEc.Text = ""
+   545→                        srcMotorBArcode_DEc.BackColor = Color.White
+   546→                        srcMotorBArcode_Target.Text = SafeStr(Rs.Fields("RECL_SN").Value)
+   547→
+   548→                    Else
+   549→
+   550→                        srcMotorBArcode.Text = "PASS"
+   551→                        srcMotorBArcode_DEc.Text = "PASS"
+   552→                        srcMotorBArcode_DEc.BackColor = Color.Green
+   553→                        srcMotorBArcode_Target.Text = SafeStr(Rs.Fields("RECL_SN").Value)
+   554→
+   555→                    End If
+   556→
+   557→                End If
+   558→
+   559→                If OPTION_LHRH = "LH" Then
+   560→                    srcLH.BackColor = Color.Black
+   561→                    srcRH.BackColor = Color.White
+   562→                ElseIf OPTION_LHRH = "RH" Then
+   563→                    srcRH.BackColor = Color.Black
+   564→                    srcLH.BackColor = Color.White
+   565→                End If
+   566→
+   567→                If OPTION_RECL = "MNL" Then
+   568→                    srcMNL.BackColor = Color.Black
+   569→                    srcEMC.BackColor = Color.White
+   570→                    srcEMS.BackColor = Color.White
+   571→                    srcIMS.BackColor = Color.White
+   572→                ElseIf OPTION_RECL = "EMC" Then
+   573→                    srcMNL.BackColor = Color.White
+   574→                    srcEMC.BackColor = Color.Black
+   575→                    srcEMS.BackColor = Color.White
+   576→                    srcIMS.BackColor = Color.White
+   577→                ElseIf OPTION_RECL = "IMS" Then
+   578→                    srcMNL.BackColor = Color.White
+   579→                    srcEMC.BackColor = Color.White
+   580→                    srcEMS.BackColor = Color.White
+   581→                    srcIMS.BackColor = Color.Black
+   582→                ElseIf OPTION_RECL = "EMS" Then
+   583→                    srcMNL.BackColor = Color.White
+   584→                    srcEMS.BackColor = Color.Black
+   585→                    srcEMC.BackColor = Color.White
+   586→                    srcIMS.BackColor = Color.Black
+   587→                End If
+   588→
+   589→                If TARGET_SAB_SN <> "0" Then
+   590→                    srcSAB.BackColor = Color.Black
+   591→                Else
+   592→                    srcSAB.BackColor = Color.White
+   593→                End If
+   594→
+   595→                ' 하네스 바코드 설정
+   596→                Dim harnessVal As String = SafeStr(Rs.Fields("Harness_SN").Value)
+   597→                If harnessVal = "" Or harnessVal = "0" Then
+   598→                    srcHBArcode.Text = "NA"
+   599→                    srcHBArcode_DEc.Text = "NA"
+   600→                    srcHBArcode_DEc.BackColor = Color.Green
+   601→                    srcHBArcode_Target.Text = "NA"
+   602→                ElseIf FUNCTION_HARNESS_SCAN = True Then
+   603→                    srcHBArcode.Text = ""
+   604→                    srcHBArcode_DEc.Text = ""
+   605→                    srcHBArcode_DEc.BackColor = Color.White
+   606→                    srcHBArcode_Target.Text = harnessVal
+   607→                Else
+   608→                    srcHBArcode.Text = "PASS"
+   609→                    srcHBArcode_DEc.Text = "PASS"
+   610→                    srcHBArcode_DEc.BackColor = Color.Green
+   611→                    srcHBArcode_Target.Text = harnessVal
+   612→                End If
+   613→
+   614→                If OPTION_VENT = True Then
+   615→                    srcVENT.BackColor = Color.Black
+   616→                Else
+   617→                    srcVENT.BackColor = Color.White
+   618→                End If
+   619→
+   620→                wStep = 4
+   621→
+   622→            End If
+   623→        Catch ex As Exception
+   624→        Finally
+   625→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+   626→                Rs.ActiveConnection = Nothing
+   627→                Rs.Close()
+   628→            End If
+   629→        End Try
+   630→
+   631→    End Sub
+   632→
+   633→    Private Function OptionConvert(str As String) As String
+   634→
+   635→        Dim tmp As String
+   636→
+   637→        If str = "ON" Then
+   638→            tmp = ""
+   639→        ElseIf str = "OFF" Then
+   640→            tmp = ""
+   641→        ElseIf str = "PASS" Then
+   642→            tmp = "PASS"
+   643→        End If
+   644→
+   645→        Return tmp
+   646→
+   647→    End Function
+   648→
+   649→    Private Function OptionConvertInt(str As String) As Integer
+   650→
+   651→        Dim tmp As Integer
+   652→
+   653→        If str = "ON" Then
+   654→            tmp = 1
+   655→        ElseIf str = "OFF" Then
+   656→            tmp = 0
+   657→        ElseIf str = "PASS" Then
+   658→            tmp = 100
+   659→        End If
+   660→
+   661→        Return tmp
+   662→
+   663→    End Function
+   664→
+   665→    Private Sub Read_RFiD()
+   666→        If Serial_RFID.IsOpen = True Then
+   667→            Dim cmd() As Byte = {&H2, &H2, &H0, &H3, &H7, &H3, &HE8, &H3}
+   668→            Serial_RFID.Write(cmd, 0, cmd.Length)
+   669→        End If
+   670→    End Sub
+   671→
+   672→    Private Sub ThreadTask1()
+   673→        Dim sRecvData As String = ""
+   674→        Do
+   675→            Dim Incoming1 As String = Serial_RFID.ReadByte
+   676→            If Incoming1 Is Nothing Then
+   677→            Else
+   678→                sRecvData = sRecvData & Dec2Hex(Incoming1)
+   679→                If Incoming1 = 3 Then 'ETX
+   680→                    If sRecvData.Length = 28 Then
+   681→                        If Mid(sRecvData, 11, 1) = "E" Then
+   682→                            Dim tagId As String = Mid(sRecvData, 11, 16)
+   683→                            Label_RF_READ.Text = tagId
+   684→                            ' 최초 인식 시 캡처
+   685→                            If RFID_TAG_ID = "" Then RFID_TAG_ID = tagId
+   686→                        Else
+   687→                            Label_RF_READ.Text = "Empty"
+   688→                        End If
+   689→                    Else
+   690→                        Label_RF_READ.Text = "Empty"
+   691→                    End If
+   692→                    sRecvData = ""
+   693→                    Serial_RFID.DiscardInBuffer()
+   694→                End If
+   695→            End If
+   696→            Thread.Sleep(10)
+   697→        Loop
+   698→    End Sub
+   699→
+   700→    Private Sub ThreadTask2()
+   701→
+   702→        Dim Incoming1 As String
+   703→        Dim ToolData As Double
+   704→
+   705→        Do While Serial_Tool.IsOpen = True
+   706→
+   707→            Try
+   708→
+   709→                If Serial_Tool.BytesToRead > 0 Then
+   710→
+   711→                    Incoming1 = Serial_Tool.ReadChar
+   712→                    If Incoming1 = 3 Then
+   713→
+   714→                        If Len(Tool_String) = 59 And Mid(Tool_String, 6, 4) = "0002" Then
+   715→                            Serial_Tool.Write(Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "00200060            " & Chr("0") & Chr("3"))
+   716→                        ElseIf Len(Tool_String) = 26 And Mid(Tool_String, 6, 4) = "0005" Then
+   717→                            Serial_Tool.Write(Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "00209999            " & Chr("0") & Chr("3"))
+   718→                        ElseIf Len(Tool_String) = 22 And Mid(Tool_String, 6, 4) = "9999" Then
+   719→                            Tool_Connection = True
+   720→                        ElseIf Len(Tool_String) > 200 And Mid(Tool_String, 6, 4) = "0061" Then
+   721→                            Serial_Tool.Write(Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "00200062            " & Chr("0") & Chr("3"))
+   722→                            ToolData = CDbl(Format(Val(Mid(Tool_String, 143, 3) & "." & Mid(Tool_String, 146, 2))))
+   723→
+   724→                            If wStep = 9 Then
+   725→
+   726→                                srcMotoTQ.Text = ToolData
+   727→
+   728→                                If ToolData >= BASIC_MOTOR_TQ_MIN And ToolData <= BASIC_MOTOR_TQ_MAX And Mid(Tool_String, 109, 1) = "1" Then
+   729→                                    srcMotorTQ_DEc.Text = "OK"
+   730→                                    srcMotorTQ_DEc.BackColor = Color.Blue
+   731→                                    DingDOng()
+   732→                                Else
+   733→                                    srcMotorTQ_DEc.Text = "NG"
+   734→                                    srcMotorTQ_DEc.BackColor = Color.Red
+   735→                                    NG()
+   736→                                End If
+   737→
+   738→                            End If
+   739→
+   740→                        End If
+   741→
+   742→                        Tool_String = ""
+   743→                        Serial_Tool.DiscardInBuffer()
+   744→
+   745→                    Else
+   746→
+   747→                        Tool_String = Tool_String & Chr(Incoming1)
+   748→
+   749→                    End If
+   750→
+   751→                End If
+   752→
+   753→            Catch ex As Exception
+   754→
+   755→                Incoming1 = ""
+   756→                Tool_String = ""
+   757→            End Try
+   758→
+   759→            Application.DoEvents()
+   760→
+   761→        Loop
+   762→
+   763→    End Sub
+   764→
+   765→    Private harnessColumnEnsured As Boolean = False
+   766→
+   767→    ' TABLE_MAIN에 HARNESS_SN 컬럼 없으면 자동 생성
+   768→    Private Sub EnsureHarnessColumn()
+   769→        If harnessColumnEnsured Then Exit Sub
+   770→        Try
+   771→            Sql_Connect.Execute("IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID('TABLE_MAIN') AND name = 'HARNESS_SN') " &
+   772→                                "ALTER TABLE TABLE_MAIN ADD HARNESS_SN nvarchar(100) NULL")
+   773→            harnessColumnEnsured = True
+   774→        Catch ex As Exception
+   775→        End Try
+   776→    End Sub
+   777→
+   778→    Private indexEnsured As Boolean = False
+   779→
+   780→    ' TABLE_MAIN에 ST01_DATE 인덱스 없으면 자동 생성
+   781→    Private Sub EnsureIndex()
+   782→        If indexEnsured Then Exit Sub
+   783→        Try
+   784→            Sql_Connect.Execute("IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE object_id = OBJECT_ID('TABLE_MAIN') AND name = 'IX_TABLE_MAIN_ST01_DATE') " &
+   785→                                "CREATE NONCLUSTERED INDEX IX_TABLE_MAIN_ST01_DATE ON TABLE_MAIN (ST01_DATE)")
+   786→            indexEnsured = True
+   787→        Catch ex As Exception
+   788→        End Try
+   789→    End Sub
+   790→
+   791→    Private Sub Save_DB()
+   792→
+   793→        Connection_Open()
+   794→        Try
+   795→            EnsureHarnessColumn()
+   796→
+   797→            Dim strSQL As String = "INSERT INTO TABLE_MAIN (PART_NO,PART_TYPE,PART_NAME,SERIAL_NUMBER,ST01_DATE,ST01_START_TIME,ST01_END_TIME,ST01_MOTOR_SERIAL,ST01_MOTOR_TQ,ST01_DECISION,HARNESS_SN) VALUES (" &
+   798→                           "'" & srcPartNo.Text & srcColorCode.Text & "','" &
+   799→                                    OPTION_CARTYPE & "','" &
+   800→                                    srcPartName.Text & "','" &
+   801→                                    srcSerialNumber.Text & "','" &
+   802→                                    Format(Now, "yyyy-MM-dd") & "','" &
+   803→                                   StartTime & "','" &
+   804→                                   Format(Now, "HH:mm:ss") & "','" &
+   805→                                   srcMotorBArcode.Text & "','" &
+   806→                                   srcMotoTQ.Text & "','" &
+   807→                                   "OK" & "','" &
+   808→                                   srcHBArcode.Text & "')"
+   809→            Sql_Connect.Execute(strSQL)
+   810→        Catch ex As Exception
+   811→        End Try
+   812→
+   813→    End Sub
+   814→
+   815→    Private Sub saveDB_Second()
+   816→
+   817→        'Dim strSQL As String = ""
+   818→
+   819→        'Connection_Open_MDB()
+   820→
+   821→        'strSQL = "INSERT INTO TABLE_MAIN_SECOND (WORK_DATE,WORK_TIME,FIRST_TQ1,FIRST_TQ2,FIRST_TQ3,FIRST_TQ4,WORK_SERIAL" &
+   822→        '                                                                        ",SECOND_TQ1,SECOND_TQ2,SECOND_TQ3,SECOND_TQ4,SECOND_TQ5,SECOND_TQ6,SECOND_TQ7,SECOND_TQ8,SLIDE_MOTOR_SERIAL) VALUES (" &
+   823→        '               "'" & Format(Now, "yyyy-MM-dd") & "','" &
+   824→        '                       Format(Now, "HH:mm:ss") & "','" &
+   825→        '                       tmpTQ1 & "','" &
+   826→        '                       tmpTQ2 & "','" &
+   827→        '                       tmpTQ3 & "','" &
+   828→        '                       tmpTQ4 & "','" &
+   829→        '                       tool2Serial.Text & "','" &
+   830→        '                       Grid2.Cell(0, 1).Text & "','" &
+   831→        '                       Grid2.Cell(1, 1).Text & "','" &
+   832→        '                       Grid2.Cell(2, 1).Text & "','" &
+   833→        '                       Grid2.Cell(3, 1).Text & "','" &
+   834→        '                       Grid2.Cell(4, 1).Text & "','" &
+   835→        '                       Grid2.Cell(5, 1).Text & "','" &
+   836→        '                       Grid2.Cell(6, 1).Text & "','" &
+   837→        '                       Grid2.Cell(7, 1).Text & "','" &
+   838→        '                       srcSlideMotorScan_Value.Text & "')"
+   839→        'Mdb_Connect.Execute(strSQL)
+   840→        'Connection_Close_MDB()
+   841→
+   842→    End Sub
+   843→
+   844→    Private Sub saveDB_Second_SQLSERVER()
+   845→
+   846→        'Dim strSQL As String = ""
+   847→
+   848→        'Connection_Open()
+   849→
+   850→        'strSQL = "INSERT INTO TABLE_SLIDE (WORK_DATE,WORK_TIME,FIRST_TQ1,FIRST_TQ2,FIRST_TQ3,FIRST_TQ4,WORK_SERIAL" &
+   851→        '                                                                        ",SECOND_TQ1,SECOND_TQ2,SECOND_TQ3,SECOND_TQ4,SECOND_TQ5,SECOND_TQ6,SECOND_TQ7,SECOND_TQ8,SLIDE_MOTOR_SERIAL) VALUES (" &
+   852→        '               "'" & Format(Now, "yyyy-MM-dd") & "','" &
+   853→        '                       Format(Now, "HH:mm:ss") & "','" &
+   854→        '                       tmpTQ1 & "','" &
+   855→        '                       tmpTQ2 & "','" &
+   856→        '                       tmpTQ3 & "','" &
+   857→        '                       tmpTQ4 & "','" &
+   858→        '                       tool2Serial.Text & "','" &
+   859→        '                       Grid2.Cell(0, 1).Text & "','" &
+   860→        '                       Grid2.Cell(1, 1).Text & "','" &
+   861→        '                       Grid2.Cell(2, 1).Text & "','" &
+   862→        '                       Grid2.Cell(3, 1).Text & "','" &
+   863→        '                       Grid2.Cell(4, 1).Text & "','" &
+   864→        '                       Grid2.Cell(5, 1).Text & "','" &
+   865→        '                       Grid2.Cell(6, 1).Text & "','" &
+   866→        '                       Grid2.Cell(7, 1).Text & "','" &
+   867→        '                       srcSlideMotorScan_Value.Text & "')"
+   868→        'Sql_Connect.Execute(strSQL)
+   869→        'Connection_Close()
+   870→
+   871→
+   872→    End Sub
+   873→
+   874→    Private Function STR2ASC(ByVal str As String) As String
+   875→
+   876→        Dim tmp As String = ""
+   877→        Dim i As Integer
+   878→
+   879→        For i = 1 To Len(str)
+   880→            tmp = tmp & Hex(Asc(Mid(str, i, 1)))
+   881→        Next
+   882→
+   883→        Return tmp
+   884→
+   885→    End Function
+   886→
+   887→    Private Function ASC2STR(ByVal str As String) As String
+   888→
+   889→        Dim One_Hex, Tmp_Hex, retVal As String
+   890→        Dim i As Integer
+   891→
+   892→        retVal = ""
+   893→        For i = 1 To Len(str)
+   894→            One_Hex = Mid(str, i, 1)
+   895→            If IsNumeric(One_Hex) Then
+   896→                Tmp_Hex = Mid(str, i, 2)
+   897→                i = i + 1
+   898→            Else
+   899→                Tmp_Hex = Mid(str, i, 4)
+   900→                i = i + 3
+   901→            End If
+   902→            retVal = retVal & Chr("&H" & Tmp_Hex)
+   903→        Next
+   904→        Return retVal
+   905→
+   906→    End Function
+   907→
+   908→    Private Function Create_Serial() As String
+   909→
+   910→        Dim Rs As New ADODB.Recordset
+   911→        Dim tmp As String = ""
+   912→
+   913→        Connection_Open()
+   914→        EnsureIndex()
+   915→        Try
+   916→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   917→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   918→            Rs.LockType = ADODB.LockTypeEnum.adLockReadOnly
+   919→            Rs.Open("SELECT COUNT(*) AS CNT FROM Table_Main WITH (NOLOCK) WHERE ST01_DATE = '" & Format(Now, "yyyy-MM-dd") & "'", Sql_Connect)
+   920→
+   921→            Dim cnt As Integer = SafeInt(Rs.Fields("CNT").Value)
+   922→            tmp = Format(Now, "yyyyMMdd") & Format(cnt + LOT_START + 1, "0000") & srcPartNo.Text & srcColorCode.Text
+   923→        Catch ex As Exception
+   924→        Finally
+   925→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+   926→                Rs.ActiveConnection = Nothing
+   927→                Rs.Close()
+   928→            End If
+   929→        End Try
+   930→
+   931→        Return tmp
+   932→
+   933→    End Function
+   934→
+   935→
+   936→    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+   937→
+   938→        FrmPart.Show()
+   939→
+   940→    End Sub
+   941→
+   942→    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+   943→
+   944→        For i As Integer = 0 To 47
+   945→            If D_Value(i) = 1 Then
+   946→                IN_LABEL(i).BackColor = Color.Black
+   947→            Else
+   948→                IN_LABEL(i).BackColor = Color.White
+   949→            End If
+   950→        Next i
+   951→
+   952→    End Sub
+   953→
+   954→    Private Sub PLC_WRITE(ByVal strChr As String, ByVal StartArry As String, ByVal ArryMessage As String)
+   955→
+   956→        Dim iReturnCode As Integer              'Return code
+   957→        Dim szDeviceName As String = ""         'List data for 'DeviceName'
+   958→        Dim sharrDeviceValue() As Short          'Data for 'DeviceValue'
+   959→
+   960→        ReDim sharrDeviceValue(Len(ArryMessage))
+   961→
+   962→        For i As Integer = 0 To Len(ArryMessage) - 1
+   963→            szDeviceName = szDeviceName & strChr & Format((Int(StartArry) + i), "0000")
+   964→            'If i <> Len(ArryMessage - 1) Then szDeviceName = szDeviceName + ControlChars.Lf
+   965→            If i < Len(ArryMessage) - 1 Then szDeviceName = szDeviceName & ControlChars.Lf
+   966→            sharrDeviceValue(i) = Mid(ArryMessage, i + 1, 1)
+   967→        Next
+   968→
+   969→        Try
+   970→
+   971→            iReturnCode = ACT_PLC1.WriteDeviceRandom2(szDeviceName, Len(ArryMessage), sharrDeviceValue(0))
+   972→
+   973→        Catch exception As Exception
+   974→
+   975→            'Exception processing
+   976→            'MessageBox.Show(exception.Message, Text, MessageBoxButtons.OK, MessageBoxIcon.Error)
+   977→            FLAG_CONNECTION_PLC1 = False
+   978→            Exit Sub
+   979→
+   980→        End Try
+   981→
+   982→        'The return code of the method is displayed by the hexadecimal.
+   983→        'txt_ReturnCode.Text = String.Format("0x{0:x8} [HEX]", iReturnCode)
+   984→
+   985→    End Sub
+   986→
+   987→    Private Sub Check_Now()
+   988→
+   989→        Connection_Open()
+   990→        Dim Rs As New ADODB.Recordset
+   991→        Try
+   992→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+   993→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+   994→            Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+   995→            Rs.Open("SELECT * FROM Table_Work WITH (NOLOCK)", Sql_Connect)
+   996→
+   997→            If Rs.RecordCount = 1 Then
+   998→                WORK_PARTNO = Trim(Rs.Fields("WORK_PARTNO").Value)
+   999→            End If
+  1000→        Catch ex As Exception
+  1001→        Finally
+  1002→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+  1003→                Rs.ActiveConnection = Nothing
+  1004→                Rs.Close()
+  1005→            End If
+  1006→        End Try
+  1007→
+  1008→    End Sub
+  1009→
+  1010→    Private Sub Init_Grid()
+  1011→
+  1012→        With Grid1
+  1013→
+  1014→            .DisplayFocusRect = False
+  1015→            .DrawMode = FlexCell.DrawModeEnum.OwnerDraw
+  1016→            .AllowUserResizing = FlexCell.ResizeEnum.None
+  1017→
+  1018→            .AutoRedraw = True
+  1019→            .Cols = 3
+  1020→            .Rows = 1
+  1021→            .FixedRows = 2
+  1022→            .FrozenBottomRows = 1
+  1023→
+  1024→            .Column(1).Locked = True
+  1025→            .Column(2).Locked = True
+  1026→
+  1027→            For i As Integer = 1 To 2
+  1028→
+  1029→                .Column(i).Alignment = FlexCell.AlignmentEnum.CenterCenter
+  1030→
+  1031→            Next
+  1032→
+  1033→            .Column(0).Width = 0
+  1034→            .Column(1).Width = 220
+  1035→            .Column(2).Width = 170
+  1036→
+  1037→            .Cell(0, 1).Text = "품번"
+  1038→            .Cell(0, 2).Text = "생산수량"
+  1039→
+  1040→            .AutoRedraw = True
+  1041→            .Refresh()
+  1042→
+  1043→        End With
+  1044→
+  1045→    End Sub
+  1046→
+  1047→    Private Sub Load_Grid()
+  1048→
+  1049→        Connection_Open()
+  1050→        Dim Rs As New ADODB.Recordset
+  1051→        Try
+  1052→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+  1053→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+  1054→            Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+  1055→            Rs.Open("SELECT Part_No,Count_ST01 FROM Table_Part WITH (NOLOCK)", Sql_Connect)
+  1056→
+  1057→            If Rs.RecordCount > 0 Then
+  1058→                Rs.MoveFirst()
+  1059→                Do Until Rs.EOF
+  1060→                    If SafeInt(Rs.Fields("Count_ST01").Value) <> 0 Then
+  1061→                        Grid1.AddItem(SafeStr(Rs.Fields("Part_No").Value) & Chr(9) &
+  1062→                                      SafeInt(Rs.Fields("COUNT_ST01").Value))
+  1063→                    End If
+  1064→                    Rs.MoveNext()
+  1065→                Loop
+  1066→            End If
+  1067→        Catch ex As Exception
+  1068→        Finally
+  1069→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+  1070→                Rs.ActiveConnection = Nothing
+  1071→                Rs.Close()
+  1072→            End If
+  1073→        End Try
+  1074→
+  1075→    End Sub
+  1076→
+  1077→    Private Sub Reset_Count()
+  1078→
+  1079→        Connection_Open()
+  1080→        Dim Rs As New ADODB.Recordset
+  1081→        Try
+  1082→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+  1083→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+  1084→            Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+  1085→            Rs.Open("SELECT Part_No,COUNT_ST01 FROM Table_Part", Sql_Connect)
+  1086→
+  1087→            If Rs.RecordCount > 0 Then
+  1088→                Rs.MoveFirst()
+  1089→                Do Until Rs.EOF
+  1090→                    Rs.Fields("COUNT_ST01").Value = "0"
+  1091→                    Rs.Update()
+  1092→                    Rs.MoveNext()
+  1093→                Loop
+  1094→            End If
+  1095→        Catch ex As Exception
+  1096→        Finally
+  1097→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+  1098→                Rs.ActiveConnection = Nothing
+  1099→                Rs.Close()
+  1100→            End If
+  1101→        End Try
+  1102→
+  1103→    End Sub
+  1104→
+  1105→    Private Sub Save_Count()
+  1106→
+  1107→        Connection_Open()
+  1108→        Dim Rs As New ADODB.Recordset
+  1109→        Try
+  1110→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+  1111→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+  1112→            Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+  1113→            Rs.Open("SELECT Part_No,COUNT_ST01 FROM Table_Part Where Part_No = '" & srcPartNo.Text & "'", Sql_Connect)
+  1114→
+  1115→            If Not (Rs.BOF = True Or Rs.EOF = True) Then
+  1116→                Dim tmp As Integer = SafeInt(Rs.Fields("COUNT_ST01").Value)
+  1117→                tmp = tmp + 1
+  1118→                If tmp > 20000 Then tmp = 0
+  1119→                Rs.Fields("COUNT_ST01").Value = tmp
+  1120→                Rs.Update()
+  1121→            End If
+  1122→        Catch ex As Exception
+  1123→        Finally
+  1124→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+  1125→                Rs.ActiveConnection = Nothing
+  1126→                Rs.Close()
+  1127→            End If
+  1128→        End Try
+  1129→
+  1130→    End Sub
+  1131→
+  1132→    Private Sub Tmr_Work1_Tick(sender As Object, e As EventArgs) Handles Tmr_Work1.Tick
+  1133→
+  1134→        Label_Step.Text = wStep
+  1135→
+  1136→        ' 저장 단계(wStep >= 13)에서는 PLC 리셋 무시 (데이터 손실 방지)
+  1137→        If PLC_VALUE(0) = 0 And wStep <> 0 And wStep < 13 Then
+  1138→            PLC_WRITE("D", "4050", "0000000000")
+  1139→            Label_RF_READ.Text = ""
+  1140→            wStep = 0
+  1141→        End If
+  1142→
+  1143→        'If (wStep > 0 And wStep <= 2) And (wStep >= 6 And wStep <= 8) Then
+  1144→        FLAG_RFID_RUN = True
+  1145→        'Elseh
+  1146→        '    FLAG_RFID_RUN = False
+  1147→        'End If
+  1148→
+  1149→        If wStep = 0 Then
+  1150→
+  1151→            If PLC_VALUE(0) = 1 And PLC_VALUE(1) = 1 Then
+  1152→                wStep = 2
+  1153→            End If
+  1154→
+  1155→        ElseIf wStep = 2 Then
+  1156→
+  1157→            Label_RF_READ.Text = ""
+  1158→            RFID_TAG_ID = "" ' 새 사이클 시작 - 태그ID 클리어
+  1159→            Init_Control()
+  1160→            wStep = 3
+  1161→
+  1162→        ElseIf wStep = 3 Then
+  1163→            TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [3] Check_Now 시작" & vbCrLf)
+  1164→            Try
+  1165→                WORK_PARTNO = ""
+  1166→                Check_Now()
+  1167→                Label2.Text = WORK_PARTNO.ToString
+  1168→                TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [3] Check_Now 완료 PARTNO=" & WORK_PARTNO & " → wStep=3.1" & vbCrLf)
+  1169→                wStep = 3.1
+  1170→            Catch ex As Exception
+  1171→                TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [3] Check_Now 오류: " & ex.Message & vbCrLf)
+  1172→            End Try
+  1173→
+  1174→        ElseIf wStep = 3.1 Then
+  1175→            TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [3.1] Load_PArt 시작" & vbCrLf)
+  1176→            Try
+  1177→                If WORK_PARTNO.Length >= 11 Then
+  1178→                    ' 칼라코드 분리
+  1179→                    If WORK_PARTNO.Length > 11 Then
+  1180→                        srcColorCode.Text = Mid(WORK_PARTNO, 12)
+  1181→                    End If
+  1182→                    Load_PArt(Microsoft.VisualBasic.Left(WORK_PARTNO, 11))
+  1183→                    TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [3.1] Load_PArt 완료 → wStep=4" & vbCrLf)
+  1184→                Else
+  1185→                    ' PARTNO 없음 → wStep=3으로 복귀해서 사양 재조회 (사양 변경 타이밍 이슈 대응)
+  1186→                    TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [3.1] PARTNO 길이부족 → wStep=3 재시도" & vbCrLf)
+  1187→                    wStep = 3
+  1188→                End If
+  1189→            Catch ex As Exception
+  1190→                TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [3.1] Load_PArt 오류: " & ex.Message & " → wStep=3 재시도" & vbCrLf)
+  1191→                wStep = 3
+  1192→            End Try
+  1193→
+  1194→        ElseIf wStep = 4 Then '사양 PLC 전달
+  1195→            TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [4] PLC_WRITE 시작" & vbCrLf)
+  1196→            PLC_STRING = "0000000000"
+  1197→
+  1198→            If OPTION_RECL = "EMC" Or OPTION_RECL = "EMS" Then
+  1199→                Mid(PLC_STRING, 3, 1) = "1"
+  1200→            ElseIf OPTION_RECL = "MNL" Then
+  1201→                Mid(PLC_STRING, 3, 1) = "2"
+  1202→            ElseIf OPTION_RECL = "IMS" Then
+  1203→                Mid(PLC_STRING, 3, 1) = "3"
+  1204→            End If
+  1205→
+  1206→            If OPTION_LHRH = "LH" Then
+  1207→                Mid(PLC_STRING, 4, 1) = "1"
+  1208→            ElseIf OPTION_LHRH = "RH" Then
+  1209→                Mid(PLC_STRING, 4, 1) = "2"
+  1210→            End If
+  1211→
+  1212→            If TARGET_SAB_SN = "0" Then
+  1213→                Mid(PLC_STRING, 5, 1) = "2"
+  1214→            Else
+  1215→                Mid(PLC_STRING, 5, 1) = "1"
+  1216→            End If
+  1217→
+  1218→            If OPTION_VENT = True Then
+  1219→                Mid(PLC_STRING, 6, 1) = "1"
+  1220→            Else
+  1221→                Mid(PLC_STRING, 6, 1) = "2"
+  1222→            End If
+  1223→
+  1224→            If OPTION_LSUPT = "2WAY" Then
+  1225→                Mid(PLC_STRING, 7, 1) = "2"
+  1226→            Else
+  1227→                Mid(PLC_STRING, 7, 1) = "1"
+  1228→            End If
+  1229→
+  1230→            If OPTION_CARTYPE = "CN7" Then
+  1231→                Mid(PLC_STRING, 8, 1) = "1"
+  1232→            ElseIf OPTION_CARTYPE = "AD" Then
+  1233→                Mid(PLC_STRING, 8, 1) = "2"
+  1234→            ElseIf OPTION_CARTYPE = "AE" Then
+  1235→                Mid(PLC_STRING, 8, 1) = "3"
+  1236→            ElseIf OPTION_CARTYPE = "PD" Then
+  1237→                Mid(PLC_STRING, 8, 1) = "4"
+  1238→            ElseIf OPTION_CARTYPE = "CN8" Then
+  1239→                Mid(PLC_STRING, 8, 1) = "5"
+  1240→            End If
+  1241→
+  1242→            Mid(PLC_STRING, 1, 1) = "1" 'PC 정상
+  1243→            PLC_WRITE("D", "4050", PLC_STRING)
+  1244→            TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [4] PLC_WRITE 완료 → wStep=5" & vbCrLf)
+  1245→            wStep = 5
+  1246→
+  1247→        ElseIf wStep = 5 Then
+  1248→            TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [5] 진입 → wStep=6" & vbCrLf)
+  1249→            wStep = 6
+  1250→
+  1251→        ElseIf wStep = 6 Then
+  1252→            TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [6] Create_Serial 시작" & vbCrLf)
+  1253→            Try
+  1254→                srcSerialNumber.Text = Create_Serial()
+  1255→                TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [6] Create_Serial 완료 → wStep=7 serial=" & srcSerialNumber.Text & vbCrLf)
+  1256→                wStep = 7
+  1257→            Catch ex As Exception
+  1258→                TextBox1.AppendText(Format(Now, "HH:mm:ss.fff") & " [6] Create_Serial 오류: " & ex.Message & vbCrLf)
+  1259→            End Try
+  1260→
+  1261→        ElseIf wStep = 7 Then
+  1262→
+  1263→            wStep = 8
+  1264→
+  1265→        ElseIf wStep = 8 Then
+  1266→
+  1267→            wStep = 9
+  1268→
+  1269→        ElseIf wStep = 9 Then ' 모터 스캔, 토크, 하네스 바코드 작업
+  1270→
+  1271→            If (srcMotorBArcode_DEc.Text = "OK" Or srcMotorBArcode_DEc.Text = "NA" Or srcMotorBArcode_DEc.Text = "PASS") And
+  1272→                (srcMotorTQ_DEc.Text = "OK" Or srcMotorTQ_DEc.Text = "NA" Or srcMotorTQ_DEc.Text = "PASS") And
+  1273→                (srcHBArcode_DEc.Text = "OK" Or srcHBArcode_DEc.Text = "NA" Or srcHBArcode_DEc.Text = "PASS") Then
+  1274→                srcTotal_Decision.Text = "OK"
+  1275→                srcTotal_Decision.BackColor = Color.Blue
+  1276→                wStep = 11
+  1277→            End If
+  1278→
+  1279→        ElseIf wStep = 11 Then
+  1280→
+  1281→            PLC_WRITE("D", "4051", "1")
+  1282→            wStep = 12
+  1283→
+  1284→        ElseIf wStep = 12 Then
+  1285→
+  1286→            If PLC_VALUE(13) = 1 Then
+  1287→                wStep = 13
+  1288→            Else
+  1289→                wStep = 11
+  1290→            End If
+  1291→
+  1292→        ElseIf wStep = 13 Then
+  1293→
+  1294→            If PLC_VALUE(2) = 1 Then
+  1295→                wStep = 13.1
+  1296→            End If
+  1297→
+  1298→        ElseIf wStep = 13.1 Then
+  1299→            Try
+  1300→                SavePallet(RFID_TAG_ID, srcSerialNumber.Text)
+  1301→                Tmr_Count = 0
+  1302→                wStep = 13.2
+  1303→            Catch ex As Exception
+  1304→            End Try
+  1305→
+  1306→        ElseIf wStep = 13.2 Then
+  1307→            Tmr_Count = Tmr_Count + 0.1
+  1308→            If Tmr_Count >= 0.5 Then
+  1309→                LAbel_RF_CHECK.Text = "OK"
+  1310→                LAbel_RF_CHECK.BackColor = Color.Blue
+  1311→                wStep = 13.3
+  1312→            End If
+  1313→
+  1314→        ElseIf wStep = 13.3 Then
+  1315→
+  1316→            PLC_WRITE("D", "4058", "1")
+  1317→            wStep = 13.4
+  1318→
+  1319→        ElseIf wStep = 13.4 Then
+  1320→
+  1321→            If PLC_VALUE(20) = 1 Then
+  1322→                wStep = 14
+  1323→            Else
+  1324→                wStep = 13.3
+  1325→            End If
+  1326→
+  1327→        ElseIf wStep = 14 Then
+  1328→
+  1329→            Try
+  1330→                Save_DB()
+  1331→                wStep = 14.1
+  1332→            Catch ex As Exception
+  1333→            End Try
+  1334→
+  1335→        ElseIf wStep = 14.1 Then
+  1336→
+  1337→            Try
+  1338→                Save_Count()
+  1339→                wStep = 14.2
+  1340→            Catch ex As Exception
+  1341→            End Try
+  1342→
+  1343→        ElseIf wStep = 14.2 Then
+  1344→
+  1345→            Init_Grid()
+  1346→            Try
+  1347→                Load_Grid()
+  1348→            Catch ex As Exception
+  1349→            End Try
+  1350→            wStep = 15
+  1351→
+  1352→        ElseIf wStep = 15 Then
+  1353→
+  1354→            If PLC_VALUE(0) = 0 Then
+  1355→                PLC_WRITE("D", "4050", "0000000000")
+  1356→                Label_RF_READ.Text = ""
+  1357→                wStep = 0
+  1358→            End If
+  1359→
+  1360→        End If
+  1361→
+  1362→    End Sub
+  1363→
+  1364→    Private Sub FrmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+  1365→        Connection_ForceClose()
+  1366→    End Sub
+  1367→
+  1368→    Private Shared appMutex As System.Threading.Mutex
+  1369→
+  1370→    Private Sub FrmMain_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+  1371→
+  1372→        ' 중복 실행 방지
+  1373→        Dim createdNew As Boolean = False
+  1374→        appMutex = New System.Threading.Mutex(True, "CN7_ST01_MUTEX", createdNew)
+  1375→        If Not createdNew Then
+  1376→            MessageBox.Show("프로그램이 이미 실행 중입니다.", "CN7 ST01", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+  1377→            End
+  1378→        End If
+  1379→
+  1380→        ' DB 연결 초기화 (영구 연결)
+  1381→        Connection_Open()
+  1382→        Connection_Open_MDB()
+  1383→        EnsureMdbColumns()
+  1384→
+  1385→        InitializeActPlc()
+  1386→        Init_Control()
+  1387→        Control2Arry()
+  1388→        Init_Grid()
+  1389→        Load_Port_Data()
+  1390→        Load_BASIC_Data()
+  1391→
+  1392→        SerialOpen()
+  1393→
+  1394→        ACT_PLC1.ActTimeOut = 500
+  1395→        ADDRESS_CONNECTION_PLC1 = "192.168.0.110"
+  1396→        FLAG_CONNECTION_PLC1 = False
+  1397→
+  1398→        Tmr_Connect1.Interval = 500
+  1399→        Tmr_Connect1.Start()
+  1400→
+  1401→        FLAG_RFID_RUN = False
+  1402→        RF_READ_COUNT = 0
+  1403→
+  1404→        If Serial_RFID.IsOpen = True Then
+  1405→            Trd1 = New Thread(AddressOf ThreadTask1)
+  1406→            Trd1.IsBackground = True
+  1407→            Trd1.Start()
+  1408→        End If
+  1409→
+  1410→        If Serial_Tool.IsOpen = True Then
+  1411→            Trd2 = New Thread(AddressOf ThreadTask2)
+  1412→            Trd2.IsBackground = True
+  1413→            Trd2.Start()
+  1414→        End If
+  1415→
+  1416→        Tmr_Work1.Interval = 100
+  1417→        Tmr_Work1.Start()
+  1418→
+  1419→        Init_Grid()
+  1420→        Load_Grid()
+  1421→
+  1422→    End Sub
+  1423→
+  1424→    Private Sub Tmr_Connect1_Tick(sender As Object, e As EventArgs) Handles Tmr_Connect1.Tick
+  1425→
+  1426→        If tError1 = "OK" Then
+  1427→            PLC1_ERR.Text = tError1
+  1428→            PLC1_ERR.BackColor = Color.Blue
+  1429→            PLC1_ERR.ForeColor = Color.White
+  1430→        Else
+  1431→            PLC1_ERR.Text = tError1
+  1432→            PLC1_ERR.BackColor = Color.Red
+  1433→            PLC1_ERR.ForeColor = Color.White
+  1434→        End If
+  1435→
+  1436→        If tStep1 = 0 Then
+  1437→            PLC_CONNECT()
+  1438→            tStep1 = 2
+  1439→        ElseIf tStep1 = 2 Then
+  1440→            If FLAG_CONNECTION_PLC1 = True Then
+  1441→                tStep1 = 3
+  1442→            Else
+  1443→                tStep1 = 0
+  1444→            End If
+  1445→        ElseIf tStep1 = 3 Then
+  1446→            tError1 = ""
+  1447→            PLC_READ()
+  1448→            tStep1 = 4
+  1449→        ElseIf tStep1 = 4 Then
+  1450→            If tError1 <> "" Then
+  1451→                If tError1 = "OK" Then
+  1452→                    tStep1 = 2
+  1453→                Else
+  1454→                    ACT_PLC1.Close()
+  1455→                    tStep1 = 0
+  1456→                End If
+  1457→            End If
+  1458→
+  1459→        End If
+  1460→
+  1461→        RF_READ_COUNT = RF_READ_COUNT + 0.5
+  1462→        If RF_READ_COUNT >= 1 Then
+  1463→            If FLAG_RFID_RUN = True Then Read_RFiD()
+  1464→            Label_Time.Text = Format(Now, "yyyy-MM-dd HH:mm:ss")
+  1465→            RF_READ_COUNT = 0
+  1466→        End If
+  1467→
+  1468→    End Sub
+  1469→
+  1470→    Private Sub PLC_READ()
+  1471→
+  1472→        Dim i As Integer
+  1473→        Dim j As Integer
+  1474→        Dim iReturnCode As Integer              'Return code
+  1475→        Dim szDeviceName As String = ""         'List data for 'DeviceName'
+  1476→        Dim iNumberOfDeviceName As Integer = 0  'Data for 'DeviceSize'
+  1477→        Dim sharrDeviceValue() As Short         'Data for 'DeviceValue'
+  1478→        Dim szarrData() As String               'Array for 'Data'
+  1479→        Dim iNumber As Integer                  'Loop counter
+  1480→        Dim Arrysize As Integer = 24
+  1481→
+  1482→        ReDim sharrDeviceValue(Arrysize - 1)
+  1483→        ReDim szarrData(Arrysize - 1)
+  1484→
+  1485→        szDeviceName = "D4000" & vbLf &
+  1486→                                "D4001" & vbLf &
+  1487→                                "D4002" & vbLf &
+  1488→                                "D4003" & vbLf &
+  1489→                                "D4004" & vbLf &
+  1490→                                "D4005" & vbLf &
+  1491→                                "D4006" & vbLf &
+  1492→                                "D4007" & vbLf &
+  1493→                                "D4008" & vbLf &
+  1494→                                "D4009" & vbLf &
+  1495→                                "D4010" & vbLf &
+  1496→                                "D4011" & vbLf &
+  1497→                                "D4050" & vbLf &
+  1498→                                "D4051" & vbLf &
+  1499→                                "D4052" & vbLf &
+  1500→                                "D4053" & vbLf &
+  1501→                                "D4054" & vbLf &
+  1502→                                "D4055" & vbLf &
+  1503→                                "D4056" & vbLf &
+  1504→                                "D4057" & vbLf &
+  1505→                                "D4058" & vbLf &
+  1506→                                "D4059" & vbLf &
+  1507→                                "D4060" & vbLf &
+  1508→                                "D4061"
+  1509→        Try
+  1510→            iReturnCode = ACT_PLC1.ReadDeviceRandom2(szDeviceName, Arrysize, sharrDeviceValue(0))
+  1511→        Catch exException As Exception
+  1512→            'Exception processing
+  1513→            MessageBox.Show(exException.Message, Name, MessageBoxButtons.OK, MessageBoxIcon.Error)
+  1514→            Exit Sub
+  1515→        End Try
+  1516→
+  1517→        'When the ReadDeviceRandom2 method is succeeded, display the read data.
+  1518→        If iReturnCode = 0 Then
+  1519→
+  1520→            'Copy the read data to the 'lpszarrData'.
+  1521→            For iNumber = 0 To iNumberOfDeviceName - 1
+  1522→                szarrData(iNumber) = sharrDeviceValue(iNumber).ToString()
+  1523→            Next iNumber
+  1524→            For i = 0 To Arrysize - 1
+  1525→                PLC_VALUE(i) = CInt(sharrDeviceValue(i))
+  1526→            Next i
+  1527→
+  1528→            For j = 0 To 11
+  1529→                VALUE_IN_LABEL(j).Text = PLC_VALUE(j)
+  1530→                If VALUE_IN_LABEL(j).Text = "0" Then
+  1531→                    VALUE_IN_LABEL(j).ForeColor = Color.Black
+  1532→                    VALUE_IN_LABEL(j).BackColor = Color.White
+  1533→                Else
+  1534→                    VALUE_IN_LABEL(j).ForeColor = Color.White
+  1535→                    VALUE_IN_LABEL(j).BackColor = Color.Black
+  1536→                End If
+  1537→            Next
+  1538→            For j = 0 To 11
+  1539→                VALUE_OUT_LABEL(j).Text = PLC_VALUE(j + 12)
+  1540→                If VALUE_OUT_LABEL(j).Text = "0" Then
+  1541→                    VALUE_OUT_LABEL(j).ForeColor = Color.Black
+  1542→                    VALUE_OUT_LABEL(j).BackColor = Color.White
+  1543→                Else
+  1544→                    VALUE_OUT_LABEL(j).ForeColor = Color.White
+  1545→                    VALUE_OUT_LABEL(j).BackColor = Color.Black
+  1546→                End If
+  1547→            Next
+  1548→
+  1549→            tError1 = "OK"
+  1550→
+  1551→        Else
+  1552→
+  1553→            tError1 = Dec2Hex(iReturnCode)
+  1554→
+  1555→        End If
+  1556→
+  1557→    End Sub
+  1558→
+  1559→    Private Sub tmr_Tool_Tick(sender As Object, e As EventArgs) Handles tmr_Tool.Tick
+  1560→
+  1561→        If Tool_Connection = False Then
+  1562→            Tool_Connection = True
+  1563→            Serial_Tool.Write(Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "002099990010" & Chr(20) & Chr(20) & Chr(20) & Chr(20) & Chr(20) & Chr(20) & Chr(20) & Chr(20) & Chr("0") & Chr("3"))
+  1564→        ElseIf Tool_Connection = True Then
+  1565→            Serial_Tool.Write(Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "00200001            " & Chr("0") & Chr("3") &
+  1566→            Chr("7") & Chr("9") & Chr("7") & Chr("9") & Chr("2") & "00200060            " & Chr("0") & Chr("3"))
+  1567→        End If
+  1568→
+  1569→    End Sub
+  1570→
+  1571→    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+  1572→
+  1573→        Check_Now()
+  1574→
+  1575→    End Sub
+  1576→
+  1577→    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+  1578→        Reset_Count()
+  1579→        Init_Grid()
+  1580→        Load_Grid()
+  1581→    End Sub
+  1582→
+  1583→    ' MX Component ActiveX 동적 생성 (디자이너 깨짐 방지)
+  1584→    Private Sub InitializeActPlc()
+  1585→        Try
+  1586→            ACT_PLC1 = New AxACTETHERLib.AxActQNUDECPUTCP()
+  1587→            CType(ACT_PLC1, System.ComponentModel.ISupportInitialize).BeginInit()
+  1588→            ACT_PLC1.Enabled = True
+  1589→            ACT_PLC1.Location = New System.Drawing.Point(1735, 5)
+  1590→            ACT_PLC1.Name = "ACT_PLC1"
+  1591→            ACT_PLC1.Size = New System.Drawing.Size(32, 32)
+  1592→            ACT_PLC1.Visible = False
+  1593→            Me.Panel6.Controls.Add(ACT_PLC1)
+  1594→            CType(ACT_PLC1, System.ComponentModel.ISupportInitialize).EndInit()
+  1595→        Catch ex As Exception
+  1596→            MsgBox("ACT_PLC1 초기화 실패: " & ex.Message)
+  1597→        End Try
+  1598→    End Sub
+  1599→
+  1600→    ' 팔레트 저장 (INSERT or UPDATE)
+  1601→    Private Sub SavePallet(ByVal strPalletID As String, ByVal strSerial As String)
+  1602→        Connection_Open()
+  1603→        Dim Rs As New ADODB.Recordset
+  1604→        Try
+  1605→            Rs.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+  1606→            Rs.CursorType = ADODB.CursorTypeEnum.adOpenStatic
+  1607→            Rs.LockType = ADODB.LockTypeEnum.adLockOptimistic
+  1608→            Rs.Open("SELECT * FROM Table_pallet WHERE PalletID = '" & strPalletID & "'", Sql_Connect)
+  1609→            If Rs.RecordCount >= 1 Then
+  1610→                Rs.Fields("SerialNumber").Value = strSerial
+  1611→                Rs.Update()
+  1612→            Else
+  1613→                Rs.AddNew()
+  1614→                Rs.Fields("PalletID").Value = strPalletID
+  1615→                Rs.Fields("SerialNumber").Value = strSerial
+  1616→                Rs.Update()
+  1617→            End If
+  1618→        Catch ex As Exception
+  1619→        Finally
+  1620→            If Rs.State = ADODB.ObjectStateEnum.adStateOpen Then
+  1621→                Rs.ActiveConnection = Nothing
+  1622→                Rs.Close()
+  1623→            End If
+  1624→        End Try
+  1625→    End Sub
+  1626→
+  1627→End Class

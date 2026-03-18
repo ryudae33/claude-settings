@@ -23,3 +23,4 @@ Rules:
 - Ask first if HW/protocol info is insufficient
 - Reflect CLAUDE.md global rules (global exception handler, ScottPlot Korean font)
 - Development environment: C# .NET 9.0 WinForms by default
+- Report each step taken and its result in detail before proceeding to the next step

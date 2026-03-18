@@ -1,0 +1,1246 @@
+=== PAGE 96 ===
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for
+Aluminium 1/2
+ST 2.9
+N/A
+3 / M3 / KB30 /
+K30
+N/A
+N/A
+N/A
+ST3.5.3 / 3.5 /
+KB35 / K35
+ST 3.9
+N/A
+N/A
+N/A
+4 / M4 / KB40 /
+K40
+N/A
+N/A
+N/A
+하드웨어 사양
+96
+
+=== PAGE 97 ===
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for
+Aluminium 1/2
+ST 4.2
+N/A
+ST 4.8
+N/A
+N/A
+50 / M5 / KB50 /
+K50
+N/A
+N/A
+N/A
+ST 5.5
+N/A
+N/A
+N/A
+ST 6.3
+N/A
+N/A
+N/A
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for
+Aluminium 2/2
+Head type
+Counter sunk
+하드웨어 사양
+97
+
+=== PAGE 98 ===
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for
+Aluminium 2/2
+Appearance
+Standard
+DIN 7500 M
+DIN 14586 C
+DIN 7982 C
+Thread Size
+Bit, screw carrier and screw fix needed
+20 / M2 / K20
+N/A
+N/A
+ST2.2 / 2.2 / KB22 / K22
+N/A
+2.5 / M2.5 / KB25 / K25
+N/A
+N/A
+ST 2.9
+N/A
+하드웨어 사양
+98
+
+=== PAGE 99 ===
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for
+Aluminium 2/2
+3 / M3 / KB30 / K30
+N/A
+N/A
+ST3.5.3 / 3.5 / KB35 /
+K35
+N/A
+ST 3.9
+N/A
+4 / M4 / KB40 / K40
+N/A
+N/A
+ST 4.2
+N/A
+하드웨어 사양
+99
+
+=== PAGE 100 ===
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for
+Aluminium 2/2
+ST 4.8
+N/A
+50 / M5 / KB50 / K50
+N/A
+N/A
+ST 5.5
+N/A
+60 / M6
+N/A
+N/A
+ST 6.3
+N/A
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+Head type
+Counter sunk
+Flat round with flange
+하드웨어 사양
+100
+
+=== PAGE 101 ===
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+Appearance
+Standard
+ISO 4042
+WN 1411
+WN 5451
+Thread size and Bit holder/ Bit extender
+Bit, screw carrier and screw fix needed
+20 / M2 / K20
+N/A
+N/A
+ST2.2 / 2.2 / KB22 / K22
+N/A
+2.5 / M2.5 / KB25 / K25
+3 / M3 / KB30 / K30
+ST3.5.3 / 3.5 / KB35 / K35
+N/A
+하드웨어 사양
+101
+
+=== PAGE 102 ===
+Items Needed Depending on Screw Type and Size for Self-tapping Screws for Plastic
+4 / M4 / KB40 / K40
+50 / M5 / KB50 / K50
+N/A
+60 / M6
+N/A
+N/A
+Screwdriver Position to Execute Commands
+To successfully execute the Screwdriver commands, it is fundamental to position the
+Screwdriver correctly. This is achieved if the following two conditions are met:
+1. The Screw-bit System must be perfectly aligned to
+the screw or thread.
+하드웨어 사양
+102
+
+=== PAGE 103 ===
+2. The distance between the Screwdriver's bottom part
+and the surface where the action takes place must
+be within the range of 0-8 mm [0-0.31 inches].
+To successfully execute the Screwdriver commands, it is fundamental to operate the
+Screwdriver downwards or maximum sidewards. The Screwdriver should not be operated
+upwards or with an angle higher than 90° orientate with respect to the ground, since this will
+trigger the protective feature.
+LED - Device Status
+The screwdriver has a LED that shows the device status.
+하드웨어 사양
+103
+
+=== PAGE 104 ===
+Color
+Device Status
+ No light
+Power missing
+ Steady green
+Ready to work - Idle - Static
+ Blinking green
+Initializing
+ Steady orange
+Busy – Moving/rotating shank
+ Blinking orange
+Operational malfunction
+ Steady red
+Not working – Hardware problem
+ Blinking red
+Safety – Emergency stop
+Torque Angle Curve and Torque Gradient
+The torque gradient shows how the torque is applied in the last phase of the Tightening
+screw command. This could be used as an indicator to detect if a Tightening command is
+performed correctly.
+참고
+When using self-tapping screws, if the tapping torque is very close to the
+target torque, the torque gradient might provide an invalid value.
+For instance, the torque gradient could be different if:
+•
+The hole thread is not long enough
+•
+The hole thread is different from the screw thread
+•
+The hole thread is not clean (for instance by deburrs from CNC machining)
+•
+The friction between the screw thread and the hole thread is too low or too high
+•
+The friction between the screw head and the tighten part is too low or too high
+A torque gradient variable is made available to be checked in the robot program.
+The graph below shows a normal Torque/Angle curve. In this case has been made with an
+M4 screw and 2.4 Nm as target torque.
+하드웨어 사양
+104
+
+=== PAGE 105 ===
+Torque angle curve Metric
+Torque angle curve US Standard
+Adjusting the Bellow back in Place
+참고
+Initially, the bellow should not come out of place, but if it does, follow the
+instructions below to adjust it back in place.
+하드웨어 사양
+105
+
+=== PAGE 106 ===
+1. Remove the lid.
+2. Move the shank to the highest possible
+value by using the user interface in the
+robot or in the Web Client.
+3. Adjust the bellow back in place.
+4. Place the lid back on.
+7.1.3. Compute Box
+7.1.3.1. 5A의 벽 부착용 어댑터(120W)
+함께 제공된 벽 부착용 어댑터
+최소
+일반
+최대
+단위
+입력 전압(AC)
+100
+~
+240
+[V]
+입력 전류
+~
+~
+2
+[A]
+출력 전압
+~
+24
+~
+[V]
+출력 전류
+~
+5
+~
+[A]
+Compute Box 전원 입력(24V 커넥터)
+최소
+일반
+최대
+단위
+공급 전압
+~
+24
+25
+[V]
+공급 전류
+~
+5
+~
+[A]
+Compute Box 전원 출력(장치 커넥터)
+최소
+일반
+최대
+단위
+출력 전압
+~
+24
+25
+[V]
+출력 전류(CB HW v3.4)
+~
+5
+5.5*
+[A]
+출력 전류(CB HW v3.1)
+~
+4.5
+4.5*
+[A]
+*최대 순간 전류
+하드웨어 사양
+106
+
+=== PAGE 107 ===
+7.1.3.2. 6.25A의 벽 부착용 어댑터(150W)
+함께 제공된 벽 부착용 어댑터
+최소
+일반
+최대
+단위
+입력 전압(AC)
+100
+~
+240
+[V]
+입력 전류
+~
+~
+2.0
+[A]
+출력 전압
+~
+24
+~
+[V]
+출력 전류
+~
+6.25
+~
+[A]
+Compute Box 전원 입력(24V 커넥터)
+최소
+일반
+최대
+단위
+공급 전압
+~
+24
+25
+[V]
+공급 전류
+~
+6.25
+~
+[A]
+Compute Box 전원 출력(장치 커넥터)
+최소
+일반
+최대
+단위
+출력 전압
+~
+24
+25
+[V]
+출력 전류
+~
+4.5
+4.5*
+[A]
+* 최대 순간 전류
+7.1.3.3. Compute Box I/O 인터페이스
+전원 기준(24V, GND)
+최소
+일반
+최대
+단위
+기준 출력 전압
+~
+24
+25
+[V]
+기준 출력 전류
+~
+~
+100
+[mA]
+출력(DO1~DO8)
+최소
+일반
+최대
+단위
+모든 출력 전류
+~
+~
+100
+[mA]
+출력 저항(활성 상태)
+~
+24
+~
+[Ω]
+입력(DI1~DI8, PNP)
+최소
+일반
+최대
+단위
+전압 준위 - true
+18
+24
+30
+[V]
+전압 준위 - 거짓
+-0.5
+0
+2.5
+[V]
+입력 전류
+~
+~
+6
+[mA]
+입력 저항
+~
+5
+~
+[kΩ]
+입력(DI1~DI8, NPN)
+최소
+일반
+최대
+단위
+전압 준위 - true
+-0.5
+0
+5
+[V]
+전압 준위 - 거짓
+18
+24
+30
+[V]
+입력 전류
+~
+~
+6
+[mA]
+입력 저항
+~
+5
+~
+[kΩ]
+하드웨어 사양
+107
+
+=== PAGE 108 ===
+7.2. 기계 도면
+7.2.1. 장착
+7.2.2. 도구
+7.2.2.1. Screwdriver
+모든 치수는 mm 및 [inches] 단위입니다.
+하드웨어 사양
+108
+
+=== PAGE 109 ===
+7.2.2.2. Quick Changer - 도구 면
+모든 치수는 mm 및 [inches] 단위입니다.
+7.2.2.3. Compute Box
+Compute Box
+하드웨어 사양
+109
+
+=== PAGE 110 ===
+클립 온 브래킷(선택)
+모든 치수는 mm 및 [inches] 단위입니다.
+7.2.3. 비트 확장기
+주의
+Screwdriver에 부착될 때, 비트 확장기가 테이블, 작업물 또는 모든 무거운 부
+품을 치지 않도록 하십시오. 치게 되면 Screwdriver 내부 부품을 손상할 수 있
+습니다.
+하드웨어 사양
+110
+
+=== PAGE 111 ===
+모든 치수는 mm 및 [inches] 단위입니다.
+7.3. TCP, CoG
+TCP/CoG 계산기를 사용하여 OnRobot 제품 조합에 대한 TCP 및 CoG 값을 계산합니다.
+TCP/CoG 계산기는 www.onrobot.com/downloads에서 다운받을 수 있습니다.
+참고
+자세한 내용은 6.1.5. 웹 클라이언트: TCP, CoG 섹션을 참조하세요.
+단일 장치의 TCP, CoG 및 중량 매개 변수(다른 장착/어댑터는 및/또는 작업물 없음):
+하드웨어 사양
+111
+
+=== PAGE 112 ===
+* 이미지에 표시된 것처럼 Z축에서의 TCP는 도구의 기준점에서 공작물 시작점까지를 측정한
+것입니다. 마찬가지로 CoG는 표시된 대로 동일한 기준점에서 무게중심까지를 측정됩니다.
+7.3.1. Screwdriver
+좌표 시스템
+TCP [mm]
+무게 중심 [mm]
+중량
+X=153
+Y=0
+Z=81
+cX=0
+cY=4
+cZ=50
+2.5 kg
+5.51 lb
+하드웨어 사양
+112
+
+=== PAGE 113 ===
+8. 유지 보수
+경고
+OnRobot의 말단 적용체 종합 점검은 최소 6개월에 한 번씩 정기적으로 수행되
+어야 합니다. 이 점검은 움켜쥐는 부분의 표면을 꼭 포함해야 하며 결함에만 국
+한되지 않습니다.
+OnRobot의 말단 적용체와 로봇에 정품 예비부품을 사용하고 정품 서비스 지침
+따라야 합니다. 본 주의 사항을 준수하지 않으면, 예상치 못한 위험이 발생하여
+심각한 부상에 이를 수 있습니다.
+예비부품 및 수리에 관한 문의는 당사 웹사이트 www.onrobot.com에 방문하여 문의하여 주
+십시오.
+8.1. Screwdriver
+나사 고정 장치 및 비트
+참고
+나사 고정 장치 및 비트는 마모 및 파손될 수 있으므로 정기적으로 검사해야 합
+니다.
+본 부품은 최소 일주일에 한 번 또는 60,000사이클이 되면 검사해야 합니다.
+잘못된 사용으로 나사 고정 장치가 파손될 경우, 교체해야 합니다.
+Pick Screw 프로세스를 실패할 경우 나사 고정 장치가 마모되었거나 파손되었다는 지표일
+수 있습니다.
+경고
+나사 비트 시스템은 애플리케이션 및 용도에 따라 로봇을 재설정할 때마다 또
+는 일주일에 한 번 육안으로 검사해야 합니다.
+경고
+나사 비트 홀더 내부에 이물질이 없는지 정기적으로 검사해야 합니다. 자성 인
+터페이스에 금속 파편 및 오물이 없는지 확인해야 합니다.
+경고
+청소 또는 유지보수를 수행해 Quick Changer의 Screwdriver를 항상 감지하십
+시오.
+유지 보수
+113
+
+=== PAGE 114 ===
+오링 교체
+참고
+오링은 마모 및 파손될 수 있으므로 정기적으로 검사해야 합니다.
+본 부품은 최소 한 달에 한 번 검사되어야 합니다. 오링을 검사하려면, 비트 홀
+더를 샹크에 부착시켜, 그것이 똑바르고 제자리에 있는지 확인합니다.
+오링 교체가 필요하면, 오링 교체 키트 또는 오링 세트를 구매할 수 있습니다. 구매하려면,
+Screwdriver를 구매한 대리점으로 문의하십시오.
+오링을 교체하려면, 아래 지침을 따르십시오.
+1. 로봇 또는 Web Client에서 사용자 인터페
+이스를 사용해 샹크를 최대 높은 값까지 오
+도록 합니다.
+2. Quick Changer에서 Screwdriver를 감지합
+니다.
+3. 모든 뚜껑을 제거합니다.
+4. 필요하다면, 오링이 제자리에서 벗어날 때
+까지 도구를 사용해 밀어 분해하거나 제거
+합니다. 그런 다음 오링을 꺼냅니다.
+5. 교체 도구로 새 오링으로 교체합니다.
+6. 샹크 뜻에 교체 도구를 삽입합니다.
+유지 보수
+114
+
+=== PAGE 115 ===
+7. 샹크 슬롯에 오링이 들어갈 수 있도록 교체
+도구를 밉니다.
+8. 비트 홀더를 부착시키고 조심히 흔들어 잘
+들어갔는지 확인합니다.
+보정
+Screwdriver는 기술 시트에 명시된 사양을 준수하도록 공장에서 보정되었습니다. 보정 보고
+서는 Screwdriver 패키지에 동봉되어 있습니다.
+권장 가이드라인 및 조건에 따라 사용 및 유지 관리가 올바르게 되고 있다면 Screwdriver는 해
+당 수명 기간 동안 사양에 따라 작동할 것입니다.
+업데이트된 보정 보고서가 필요한 경우 Screwdriver를 구매한 대리점으로 문의하십시오.
+예비 부품
+•
+비트 홀더 A - 예비 부품 키트 1 - PN 104197 (1개)
+•
+비트 홀더 B - 예비 부품 키트 2 - PN 104991 (1개)
+•
+비트 확장기 유형 A 50 mm - PN 109301
+•
+비트 확장기 유형 B 50 mm - PN 109289
+•
+비트 확장기 유형 A 100 mm - PN 109290
+•
+비트 확장기 유형 B 100 mm - PN 109298
+•
+오링 교체 키트 - PN 109430
+•
+감지 도구
+•
+부착 도구
+•
+5x 오링
+•
+교체 지침
+•
+5x 오링 - PN 109429
+아래 표는 예비 부품 세트의 키트 번호 및 부품 번호를 나타낸 표입니다. 구성품은 다음과 같
+습니다.
+•
+나사 캐리어 (1개)
+•
+나사 고정 장치 (10대, Din 912 / ISO 4762 / ASME B18.3 육각 실린더 나사 전용)
+•
+비트 (10개)
+예를 들어 키트 3 - PN 105150은 다음의 구성품이 포함되어 있습니다.
+•
+나사 캐리어 M1.6 (1개), Din 912 / ISO 4762 나사 전용
+•
+나사 고정 장치 M1.6 (10대)
+•
+H1.5 비트 (10개)
+유지 보수
+115
+
+=== PAGE 116 ===
+나사 캐리어, (나사 고정 장치) 및 비트 예비 부품 키트 미터법
+나사 표준
+Din 912 /
+ISO 4762
+ISO 14579
+ISO 14580
+ISO 14581
+DIN 7985A
+스레드 크기
+예비 부품 키트 번호
+부품 번호
+M1.6
+키트 3
+PN 105150
+해당 없음
+해당 없음
+해당 없음
+해당 없음
+M2
+키트 4
+PN 105151
+키트 10
+PN 105157
+해당 없음
+키트 16
+PN 105163
+키트 22
+PN 105169
+M2.5
+키트 5
+PN 105152
+키트 11
+PN 105158
+해당 없음
+키트 17
+PN 105164
+키트 23
+PN 105170
+M3
+키트 6
+PN 105153
+키트 12
+PN 105159
+키트 12
+PN 105159
+키트 18
+PN 105165
+키트 24
+PN 105171
+M4
+키트 7
+PN 105154
+키트 13
+PN 105160
+키트 13
+PN 105160
+키트 19
+PN 105166
+키트 25
+PN 105172
+M5
+키트 8
+PN 105155
+키트 14
+PN 105161
+키트 14
+PN 105161
+키트 20
+PN 105167
+키트 26
+PN 105173
+M6
+키트 9
+PN 105156
+키트 15
+PN 105162
+키트 15
+PN 105162
+키트 21
+PN 105168
+키트 27
+PN 105174
+나사 캐리어, (나사 고정 장치) 및 비트 예비 부품 키트 US 표준
+나사 표준
+ASME B18.3
+육각 실린더
+ASME B18.6.3
+오목한 교차 버튼
+헤드
+ASME B18.6.3
+별모양 버튼 헤드
+ASME B18.3
+육각 접시형
+ASME B18.6.3
+별모양 접시형
+스레드 크
+기
+예비 부품 - 부품 번호
+1#
+PN 106310
+해당 없음
+해당 없음
+해당 없음
+해당 없음
+2#
+PN 106311
+PN 106324
+PN 106324
+해당 없음
+PN 106318
+4#
+PN 106313
+PN 106329
+PN 106329
+PN 106319
+PN 106319
+6#
+PN 106314
+PN 106330
+PN 106330
+PN 106320
+PN 106320
+8#
+PN 106315
+PN 106331
+PN 106331
+PN 106321
+PN 106321
+10#
+PN 106316
+PN 106333
+PN 106333
+PN 106322
+PN 106322
+12#
+해당 없음
+PN 106334
+PN 106334
+해당 없음
+해당 없음
+1/4”
+PN 106317
+해당 없음
+해당 없음
+PN 106323
+해당 없음
+유지 보수
+116
+
+=== PAGE 117 ===
+알루미늄 1/2용 셀프 태핑 나사의 나사 유형 및 크기에 따른 필요 항목
+표준
+DIN 7981 C/ ISO
+7049
+DIN 7981 F/ ISO
+7049
+WN 5251
+DIN 7983 C
+스레드 크기
+예비 부품 - 부품 번호
+ST2.2 / 2.2 / KB22 /
+K22
+PN 109695
+PN 109695
+해당 없음
+PN 109695
+ST 2.9
+PN 109696
+PN 109696
+해당 없음
+PN 109696
+3 / M3 / KB30 / K30
+해당 없음
+해당 없음
+PN 109711 해당 없음
+ST3.5.3 / 3.5 /
+KB35 / K35
+PN 109697
+PN 109697
+PN 109690 PN 109697
+ST 3.9
+해당 없음
+PN 109698
+해당 없음
+해당 없음
+4 / M4 / KB40 / K40
+해당 없음
+해당 없음
+PN 109712 해당 없음
+ST 4.2
+PN 109699
+PN 109699
+해당 없음
+PN 105172
+ST 4.8
+PN 109700
+해당 없음
+해당 없음
+PN 106333
+50 / M5 / KB50 / K50 해당 없음
+해당 없음
+PN 109686 해당 없음
+ST 5.5
+PN 106334
+해당 없음
+해당 없음
+해당 없음
+ST 6.3
+PN 105174
+해당 없음
+해당 없음
+해당 없음
+알루미늄 2/2용 셀프 태핑 나사의 나사 유형 및 크기에 따른 필요 항목
+표준
+DIN 7500 M
+DIN 14586 C
+DIN 7982 C
+스레드 크기
+예비 부품 - 부품 번호
+20 / M2 / K20
+PN 106318
+해당 없음
+해당 없음
+ST2.2 / 2.2 / KB22 / K22
+해당 없음
+PN 106318
+PN 109705
+2.5 / M2.5 / KB25 / K25
+PN 105164
+해당 없음
+해당 없음
+ST 2.9
+해당 없음
+PN 109702
+PN 109706
+3 / M3 / KB30 / K30
+PN 105165
+해당 없음
+해당 없음
+ST3.5.3 / 3.5 / KB35 / K35
+해당 없음
+PN 109703
+PN 109697
+ST 3.9
+해당 없음
+PN 109703
+PN 109697
+4 / M4 / KB40 / K40
+PN 109701
+해당 없음
+해당 없음
+ST 4.2
+해당 없음
+PN 105166
+PN 109707
+ST 4.8
+해당 없음
+PN 109692
+PN 109708
+50 / M5 / KB50 / K50
+PN 105167
+해당 없음
+해당 없음
+ST 5.5
+해당 없음
+PN 109704
+PN 109709
+60 / M6
+PN 105168
+해당 없음
+해당 없음
+ST 6.3
+해당 없음
+PN 105168
+PN 109710
+유지 보수
+117
+
+=== PAGE 118 ===
+플라스틱용 셀프 태핑 나사의 나사 유형 및 크기에 따른 필요 항목
+표준
+ISO 4042
+WN 1411
+WN 5451
+스레드 크기
+예비 부품 - 부품 번호
+20 / M2 / K20
+해당 없음
+해당 없음
+PN 109857
+ST2.2 / 2.2 / KB22 / K22
+PN 109713
+해당 없음
+PN 109857
+2.5 / M2.5 / KB25 / K25
+PN 105164
+PN 105169
+PN 109854
+3 / M3 / KB30 / K30
+PN 109702
+PN 105170
+PN 106329
+ST3.5.3 / 3.5 / KB35 / K35
+PN 109714
+PN 105171
+해당 없음
+4 / M4 / KB40 / K40
+PN 105166
+PN 109715
+PN 109693
+50 / M5 / KB50 / K50
+해당 없음
+PN 105172
+PN 109858
+60 / M6
+해당 없음
+해당 없음
+PN 109859
+부속품
+•
+비트 확장기 A 50 mm - PN 109301
+•
+비트 확장기 A 100 mm - PN 109290
+•
+비트 확장기 A 50 mm - PN 109289
+•
+비트 확장기 A 100 mm - PN 109298
+주의
+Screwdriver에 부착될 때, 비트 확장기가 테이블, 작업물 또는 모든 무거운 부
+품을 치지 않도록 하십시오. 치게 되면 Screwdriver 내부 부품을 손상할 수 있
+습니다.
+세척 권장 사항
+다음의 세척 보조 도구를 사용하여 제품을 세척할 수 있습니다.
+•
+알코올(이소프로필 70%)
+•
+과산화수소수
+참고
+장시간의 노출 및 고온의 환경은 자재, 특히 씰링에 부정적인 효과를 일으킬 수
+있습니다.
+세척 보조 도구를 사용한 후 건조시키고 마른 천으로 제품을 닦아냅니다. 최적의 제품 관리를
+위해 물에 적신 천으로 제품을 최종 세척합니다. 해당 방식으로 제품의 화학 보조 물질 노출을
+최소화할 수 있습니다.
+비트 홀더/비트 확장기 안의 칩 청소
+비트 홀더/비트 확장기는 자기력에 의해 Screwdriver에 부착됩니다. 표면에 붙은 금속 입자 때
+문에, 비트 홀더/비트 확장기가 표면에 올바르게 부착되지 않을 수 있습니다. 예를 들면, 비트
+홀더/비트 확장기 내 칩은 평 자석 핸드 나사를 사용해 정기적으로 청소해야 합니다.
+유지 보수
+118
+
+=== PAGE 119 ===
+9. 문제 해결
+9.1. 로봇이 IP 주소를 얻지 못하는 경우
+Compute Box가 로봇에 IP를 할당하지 못하는 경우 다음을 수행하십시오.
+Compute Box에 현재 IP 설정과 일치하는 정적 IP 주소를 로봇에 할당합니다. Compute Box
+의 초기 IP주소는 192.168.1.1입니다.
+참고
+IP가 Compute Box와 충돌하지 않도록 IP 주소(255.255.255.0 서브넷 마스크
+를 사용하는 경우)의 마지막 숫자를 변경합니다.
+예제
+기본 고정 IP 주소(192.168.1.1)가 Compute Box에 사용된 경우 다음을 입력하십시오.
+•
+IP 주소: 192.168.1.2
+•
+서브넷 마스크: 255.255.255.0
+9.2. DIP 스위치 변경 사항은 적용되지 않습니다.
+DIP 스위치 네트워크 변경을 변경하려면, 먼저 DIP 스위치를 변경하고 변경 사항을 적용하려
+면 Compute Box/Eye Box 전원을 껐다가 켜야 합니다.
+변경 사항이 적용되지 않으면, 1분간 기다리시고 다시 한번 Compute Box/Eye Box 전원을 껐
+다가 켭니다.
+9.3. Screwdriver 오류 코드
+9.3.1. Z축(또는 일반 초기화) 작동 중
+오류 코드(Web Client 위, 로봇 스크립트 내): 2
+설명: Z축(또는 일반 초기화) 작동 중입니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.2. Z축 안전 활성화
+오류 코드(Web Client 위, 로봇 스크립트 내): 4
+설명: Z축 안전이 활성화되었습니다.
+오류 해결을 위한 제 안:
+•
+샹크를 0 위치로 이동합니다.
+•
+안전 활성화가 야기되는 설정을 수정합니다.
+문제 해결
+119
+
+=== PAGE 120 ===
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.3. 도구가 보정되지 않음
+오류 코드(Web Client 위, 로봇 스크립트 내): 8
+설명: 도구가 보정되지 않았습니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.4. 초기화: Z 스톨 전류에 도달하지 못함
+오류 코드(Web Client 위, 로봇 스크립트 내): 16
+설명: 초기화: Z 스톨 전류에 도달하지 못했습니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.5. 초기화: Z 인덱스 마크를 찾을 수 없음
+오류 코드(Web Client 위, 로봇 스크립트 내): 32
+설명: 초기화: Z 인덱스 마크를 찾을 수 없습니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.6. 초기화: Z축 원 위치로 돌아갈 수 없음/실행 시간: 너무 많은 전류가 소비
+됨
+오류 코드(Web Client 위, 로봇 스크립트 내): 48
+설명: 초기화: Z축 원 위치로 돌아갈 수 없음/실행 시간: 너무 많은 전류가 소비되었습니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+문제 해결
+120
+
+=== PAGE 121 ===
+9.3.7. 초기화: Z 인덱스 설치가 적합하지 않습니다.
+오류 코드(Web Client 위, 로봇 스크립트 내): 64
+설명: 초기화: Z 인덱스 설치가 적합하지 않습니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.8. 초기화: 토크 인코더에서 인덱스 마크를 찾을 수 없습니다.
+오류 코드(Web Client 위, 로봇 스크립트 내): 80
+설명: 초기화: 토크 인코더에서 인덱스 마크를 찾을 수 없습니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.9. 초기화: 초기화하는 동안의 토크 차이가 너무 큽니다.
+오류 코드(Web Client 위, 로봇 스크립트 내): 96
+초기화: 초기화하는 동안의 토크 차이가 너무 큽니다.
+오류 해결을 위한 제 안:
+•
+벨로우가 스크류 비트 시스템에 접촉하고 있는지 확인합니다. 만약 그렇다면, 덮개를 제거
+하고 덮개에 접촉하는 고무에 한 방울의 오일을 추가하십시오.
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어 및 도구 펌웨어가 업데이트되었는지 확인합니다.
+•
+오류가 여전히 나타나면 OnRobot에 해당 도구를 복구하십시오. 자세한 내용은 현지 배포
+자에게 문의하십시오.
+9.3.10. 인덱스 표시 값을 변경했습니다.
+오류 코드(Web Client 위, 로봇 스크립트 내): 112
+설명: 인덱스 표시 값을 변경했습니다.
+오류 해결을 위한 제 안:
+•
+도구에 전력을 순환합니다.
+•
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십시오.
+•
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반환합니다. 더 많은 정보는 지역
+판매점에 문의하십시오.
+9.3.11. Quick Changer 오류
+오류 코드(Web Client 위, 로봇 스크립트 내): 256
+설명: Quick Changer 오류입니다.
+오류 해결을 위한 제 안: Quick Changer 로봇 측에 4.5A의 전류를 사용해야 합니다.
+문제 해결
+121
+
+=== PAGE 122 ===
+9.3.12. 전력 공급 오류
+오류 코드(Web Client 위, 로봇 스크립트 내): 512
+설명: 전력 공급 오류입니다.
+오류 해결을 위한 제 안: Compute Box 전력 공급에 5A 이상 전류를 사용해야 합니다.
+9.3.13. 추가 코드
+추
+가
+코
+드
+설명
+문제 해결
+0
+결과 데이터 없음
+작동이 성공적입니다. 조치가 필요 없습니다.
+1
+Screwdriver: 명령 알 수
+없음
+도구에 전력을 순환합니다.
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십
+시오.
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반
+환합니다. 더 많은 정보는 지역 판매점에 문의하십시오.
+2
+Screwdriver: 나사 조이
+지 않음
+Screwdriver에 나사가 있는지 확인합니다.
+스레드/구멍이 올바른 위치에 있어 Screwdriver가 평평한
+표면에 나사조임이 필요가 없도록 하십시오.
+3
+Screwdriver: 수정 토크
+대기 시간 초과(4초)
+스레드/구멍이 올바른 위치에 있어 Screwdriver가 평평한
+표면에 나사조임이 필요가 없도록 하십시오.
+나사조임 길이를 위해 더 낮은 값을 입력합니다.
+4
+Screwdriver: 토크가 예
+상치 못한 값을 초과함
+(예상보다 빠름)
+나사조임 길이를 위해 더 높은 값을 입력합니다.
+나사를 고정할 재료를 낮추십시오(셀프 태핑 전용).
+5
+Screwdriver: 나사를 풀
+수 없음(최대 토크 초
+과)
+나사를 다시 풉니다.
+문제가 여전히 지속되면, 나사가 5Nm 이상 토크로 조여진
+것이기에 Screwdriver가 이를 풀 수 없습니다.
+6
+Screwdriver: Z축이 끝
+에 도달함
+Screwdriver 팁을 나사, 스레드 또는 구멍 근처에 두십시오.
+7
+Screwdriver: Z축이 이
+동 중 막힘
+Screwdriver의 샹크 끝이 어떤 것과도 충돌하지 않도록 확
+인하십시오.
+Screwdriver 안에 아무것도 없도록 하십시오.
+9
+Screwdriver: Z 축 과부
+하
+도구에 전력을 순환합니다.
+Compute Box 소프트웨어와 도구 펌웨어를 업데이트하십
+시오.
+오류가 계속 지속되면, 수리를 위해 OnRobot로 도구를 반
+환합니다. 더 많은 정보는 지역 판매점에 문의하십시오.
+문제 해결
+122
+
+=== PAGE 123 ===
+10. 보증
+10.1. 특허
+OnRobot A/S의 제품은 여러 특허권의 보호를 받습니다. 일부 제품은 세계 전역에 등록 처리
+중입니다(특허 출원 중). 모든 특허 청구범위를 위반하는 모든 복제 및 유사 제품 제조업체는
+기소될 것입니다.
+10.2. 제품 보증
+사용자(고객)가 판매자 또는 소매업자와 관련하여 제기할 수 있는 모든 청구범위를 침해하지
+않는 한, 고객은 아래 명시된 조건에 따라 제조업체의 보증을 받게 됩니다. 사례는 다음과 같
+습니다:
+•
+새로운 그리퍼(VG10, VGC10, VGP20, VGP30, RG2, RG6, 2FG7, 2FG14, 2FGP20,
+3FG15, 3FG25, SG 베이스 파트, MG10 및 Gecko 그리퍼)에 이어 제조 및/또는 재료 결함
+으로 인한 결함이 3년 이내 또는 3.000.000 작동 주기 내에 발생합니다.
+•
+15개월 이내에 제조 및/또는 재료 결함으로 인해 결함이 발생한 비그리퍼 제품.
+배송부터 OnRobot A/S는 필요한 예비 부품을 제공하거나 수리하며, 고객(사용자)은 현장에
+서 예비 부품을 교체할 수 있는 작업 시간을 제공해야 합니다.
+본 보증은 핑거, 핑거팁, 벨로우즈, 진공 컵, 실리콘 부품, Gecko 패드 또는 정상 작동 중 마모
+가 예상되는 기타 구성품을 포함하되 이에 국한되지 않는 예비 부품 목록에 나열된 마모성 또
+는 소모성 부품에는 적용되지 않습니다. 기기 결함이 부적절한 취급 및/또는 사용 설명서에 포
+함된 정보를 준수하지 않아 발생한 경우 이 보증은 무효화됩니다. 이 보증은 공인 대리점 또는
+고객이 직접 수행한 서비스(예: 설치, 구성, 소프트웨어 다운로드)에는 적용되지 않거나 연장
+되지 않습니다. 보증을 청구하려면 구매 영수증과 함께 구매 날짜가 기재된 증거가 필요합니
+다. 보증에 따른 클레임은 보증 불이행이 명백해진 날로부터 이개월 이내에 제출해야 합니다.
+교체 및 반송된 장치 또는 구성품의 소유권은 OnRobot A/S에 귀속됩니다. 장치로 인해 또는
+장치와 관련하여 발생하는 기타 모든 클레임은 이 보증에서 제외됩니다. 본 보증의 어떠한 내
+용도 고객의 법적 권리나 제조업체의 과실로 인한 사망 또는 신체적 상해에 대한 책임을 제한
+하거나 배제하지 않습니다. 보증 기간은 보증 조건에 따라 제공되는 서비스에 의해 연장되지
+않습니다. 보증 불이행이 존재하지 않는 한, OnRobot A/S는 고객에게 교체 또는 수리 비용을
+청구할 권리를 보유합니다. 위의 조항은 고객에게 불리한 입증 책임의 변경을 의미하지 않습
+니다. 장치에 결함이 있는 경우 OnRobot A/S는 이익 손실, 사용 손실, 생산 손실 또는 기타 생
+산 장비의 손상을 포함하되 이에 국한되지 않는 간접적, 부수적, 특별 또는 결과적 손해에 대
+해 책임을 지지 않습니다.
+결함이 있는 장비의 경우 OnRobot A/S는 생산 손실이나 기타 생산 장비의 손상과 같이 부수
+적 손상이나 손실에 대해 보상하지 않습니다.
+10.3. 고지 사항
+OnRobot A/S는 제품의 신뢰성과 성능을 지속해서 향상하기 위해 사전 경고 없이 제품을 업그
+레이드할 수 있는 권한을 가지고 있습니다. OnRobot A/S는 본 매뉴얼 내용의 정확성과 확실
+성을 보증하지만, 오류나 누락된 정보에 대한 책임은 지지 않습니다.
+보증
+123
+
+=== PAGE 124 ===
+11. 인증서
+인증서
+124
+
+=== PAGE 125 ===
+11.1. 제조 업체 테스트 인증서
+모든 OnRobot 제품은 ISO 9001 기준 절차를 따르는 개별 제품용
+OnRobot 테스트 사양에 따라 테스트 됩니다. OnRobot 테스팅 절
+차는 지속적으로 검토되고 개선됩니다.
+인증서
+125
+
+=== PAGE 126 ===
+11.2. EMC
+인증서
+126
+
+=== PAGE 127 ===
+11.3. Screwdriver - 환경
+인증서
+127
+
+=== PAGE 128 ===
+11.4. 편입 선언
+11.4.1. Screwdriver
+인증서
+128
+

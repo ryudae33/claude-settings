@@ -1,0 +1,1076 @@
+     1→<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+     2→Partial Class FrmPart
+     3→    Inherits System.Windows.Forms.Form
+     4→
+     5→    'Form은 Dispose를 재정의하여 구성 요소 목록을 정리합니다.
+     6→    <System.Diagnostics.DebuggerNonUserCode()> _
+     7→    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+     8→        Try
+     9→            If disposing AndAlso components IsNot Nothing Then
+    10→                components.Dispose()
+    11→            End If
+    12→        Finally
+    13→            MyBase.Dispose(disposing)
+    14→        End Try
+    15→    End Sub
+    16→
+    17→    'Windows Form 디자이너에 필요합니다.
+    18→    Private components As System.ComponentModel.IContainer
+    19→
+    20→    '참고: 다음 프로시저는 Windows Form 디자이너에 필요합니다.
+    21→    '수정하려면 Windows Form 디자이너를 사용하십시오.  
+    22→    '코드 편집기에서는 수정하지 마세요.
+    23→    <System.Diagnostics.DebuggerStepThrough()> _
+    24→    Private Sub InitializeComponent()
+    25→        Me.Button1 = New System.Windows.Forms.Button()
+    26→        Me.Button2 = New System.Windows.Forms.Button()
+    27→        Me.Button3 = New System.Windows.Forms.Button()
+    28→        Me.Panel1 = New System.Windows.Forms.Panel()
+    29→        Me.Grid1 = New FlexCell.Grid()
+    30→        Me.Button4 = New System.Windows.Forms.Button()
+    31→        Me.Button5 = New System.Windows.Forms.Button()
+    32→        Me.Panel7 = New System.Windows.Forms.Panel()
+    33→        Me.TextBox19 = New System.Windows.Forms.TextBox()
+    34→        Me.TextBox20 = New System.Windows.Forms.TextBox()
+    35→        Me.Label28 = New System.Windows.Forms.Label()
+    36→        Me.Label29 = New System.Windows.Forms.Label()
+    37→        Me.Label30 = New System.Windows.Forms.Label()
+    38→        Me.TextBox17 = New System.Windows.Forms.TextBox()
+    39→        Me.TextBox18 = New System.Windows.Forms.TextBox()
+    40→        Me.Label25 = New System.Windows.Forms.Label()
+    41→        Me.Label26 = New System.Windows.Forms.Label()
+    42→        Me.Label27 = New System.Windows.Forms.Label()
+    43→        Me.TextBox15 = New System.Windows.Forms.TextBox()
+    44→        Me.TextBox16 = New System.Windows.Forms.TextBox()
+    45→        Me.Label21 = New System.Windows.Forms.Label()
+    46→        Me.Label22 = New System.Windows.Forms.Label()
+    47→        Me.Label24 = New System.Windows.Forms.Label()
+    48→        Me.TextBox13 = New System.Windows.Forms.TextBox()
+    49→        Me.TextBox14 = New System.Windows.Forms.TextBox()
+    50→        Me.Label18 = New System.Windows.Forms.Label()
+    51→        Me.Label19 = New System.Windows.Forms.Label()
+    52→        Me.Label20 = New System.Windows.Forms.Label()
+    53→        Me.TextBox11 = New System.Windows.Forms.TextBox()
+    54→        Me.TextBox12 = New System.Windows.Forms.TextBox()
+    55→        Me.Label15 = New System.Windows.Forms.Label()
+    56→        Me.Label16 = New System.Windows.Forms.Label()
+    57→        Me.Label17 = New System.Windows.Forms.Label()
+    58→        Me.Button7 = New System.Windows.Forms.Button()
+    59→        Me.TextBox9 = New System.Windows.Forms.TextBox()
+    60→        Me.TextBox10 = New System.Windows.Forms.TextBox()
+    61→        Me.TextBox7 = New System.Windows.Forms.TextBox()
+    62→        Me.TextBox8 = New System.Windows.Forms.TextBox()
+    63→        Me.Label12 = New System.Windows.Forms.Label()
+    64→        Me.Label13 = New System.Windows.Forms.Label()
+    65→        Me.Label14 = New System.Windows.Forms.Label()
+    66→        Me.TextBox5 = New System.Windows.Forms.TextBox()
+    67→        Me.TextBox6 = New System.Windows.Forms.TextBox()
+    68→        Me.Label9 = New System.Windows.Forms.Label()
+    69→        Me.Label10 = New System.Windows.Forms.Label()
+    70→        Me.Label11 = New System.Windows.Forms.Label()
+    71→        Me.TextBox3 = New System.Windows.Forms.TextBox()
+    72→        Me.TextBox4 = New System.Windows.Forms.TextBox()
+    73→        Me.Label6 = New System.Windows.Forms.Label()
+    74→        Me.Label7 = New System.Windows.Forms.Label()
+    75→        Me.Label8 = New System.Windows.Forms.Label()
+    76→        Me.TextBox1 = New System.Windows.Forms.TextBox()
+    77→        Me.TextBox2 = New System.Windows.Forms.TextBox()
+    78→        Me.Label3 = New System.Windows.Forms.Label()
+    79→        Me.Label4 = New System.Windows.Forms.Label()
+    80→        Me.Label5 = New System.Windows.Forms.Label()
+    81→        Me.Button6 = New System.Windows.Forms.Button()
+    82→        Me.Label2 = New System.Windows.Forms.Label()
+    83→        Me.Label1 = New System.Windows.Forms.Label()
+    84→        Me.Label23 = New System.Windows.Forms.Label()
+    85→        Me.TextBox23 = New System.Windows.Forms.TextBox()
+    86→        Me.TextBox24 = New System.Windows.Forms.TextBox()
+    87→        Me.Label34 = New System.Windows.Forms.Label()
+    88→        Me.Label35 = New System.Windows.Forms.Label()
+    89→        Me.Label36 = New System.Windows.Forms.Label()
+    90→        Me.Label31 = New System.Windows.Forms.Label()
+    91→        Me.TextBox21 = New System.Windows.Forms.TextBox()
+    92→        Me.TextBox22 = New System.Windows.Forms.TextBox()
+    93→        Me.Label32 = New System.Windows.Forms.Label()
+    94→        Me.TextBox25 = New System.Windows.Forms.TextBox()
+    95→        Me.TextBox26 = New System.Windows.Forms.TextBox()
+    96→        Me.Label33 = New System.Windows.Forms.Label()
+    97→        Me.Label37 = New System.Windows.Forms.Label()
+    98→        Me.Label38 = New System.Windows.Forms.Label()
+    99→        Me.Panel1.SuspendLayout()
+   100→        Me.Panel7.SuspendLayout()
+   101→        Me.SuspendLayout()
+   102→        '
+   103→        'Button1
+   104→        '
+   105→        Me.Button1.Location = New System.Drawing.Point(400, 667)
+   106→        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   107→        Me.Button1.Name = "Button1"
+   108→        Me.Button1.Size = New System.Drawing.Size(82, 40)
+   109→        Me.Button1.TabIndex = 101
+   110→        Me.Button1.Text = "SAVE"
+   111→        Me.Button1.UseVisualStyleBackColor = True
+   112→        '
+   113→        'Button2
+   114→        '
+   115→        Me.Button2.Location = New System.Drawing.Point(488, 667)
+   116→        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   117→        Me.Button2.Name = "Button2"
+   118→        Me.Button2.Size = New System.Drawing.Size(82, 40)
+   119→        Me.Button2.TabIndex = 102
+   120→        Me.Button2.Text = "EXIT"
+   121→        Me.Button2.UseVisualStyleBackColor = True
+   122→        '
+   123→        'Button3
+   124→        '
+   125→        Me.Button3.Location = New System.Drawing.Point(312, 667)
+   126→        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   127→        Me.Button3.Name = "Button3"
+   128→        Me.Button3.Size = New System.Drawing.Size(82, 40)
+   129→        Me.Button3.TabIndex = 103
+   130→        Me.Button3.Text = "PART BARCODE"
+   131→        Me.Button3.UseVisualStyleBackColor = True
+   132→        '
+   133→        'Panel1
+   134→        '
+   135→        Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
+   136→        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   137→        Me.Panel1.Controls.Add(Me.Grid1)
+   138→        Me.Panel1.Controls.Add(Me.Button4)
+   139→        Me.Panel1.Controls.Add(Me.Button3)
+   140→        Me.Panel1.Controls.Add(Me.Button2)
+   141→        Me.Panel1.Controls.Add(Me.Button5)
+   142→        Me.Panel1.Controls.Add(Me.Button1)
+   143→        Me.Panel1.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   144→        Me.Panel1.Location = New System.Drawing.Point(12, 14)
+   145→        Me.Panel1.Name = "Panel1"
+   146→        Me.Panel1.Size = New System.Drawing.Size(999, 713)
+   147→        Me.Panel1.TabIndex = 107
+   148→        '
+   149→        'Grid1
+   150→        '
+   151→        Me.Grid1.BorderStyle = FlexCell.BorderStyleEnum.FixedSingle
+   152→        Me.Grid1.CheckedImage = Nothing
+   153→        Me.Grid1.DefaultFont = New System.Drawing.Font("Tahoma", 10.2!)
+   154→        Me.Grid1.DefaultRowHeight = CType(24, Short)
+   155→        Me.Grid1.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   156→        Me.Grid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+   157→        Me.Grid1.Location = New System.Drawing.Point(15, 14)
+   158→        Me.Grid1.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
+   159→        Me.Grid1.Name = "Grid1"
+   160→        Me.Grid1.Size = New System.Drawing.Size(963, 616)
+   161→        Me.Grid1.TabIndex = 100
+   162→        Me.Grid1.UncheckedImage = Nothing
+   163→        '
+   164→        'Button4
+   165→        '
+   166→        Me.Button4.Location = New System.Drawing.Point(808, 639)
+   167→        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   168→        Me.Button4.Name = "Button4"
+   169→        Me.Button4.Size = New System.Drawing.Size(82, 63)
+   170→        Me.Button4.TabIndex = 103
+   171→        Me.Button4.Text = "PART BARCODE"
+   172→        Me.Button4.UseVisualStyleBackColor = True
+   173→        '
+   174→        'Button5
+   175→        '
+   176→        Me.Button5.Location = New System.Drawing.Point(896, 639)
+   177→        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   178→        Me.Button5.Name = "Button5"
+   179→        Me.Button5.Size = New System.Drawing.Size(82, 63)
+   180→        Me.Button5.TabIndex = 101
+   181→        Me.Button5.Text = "SAVE"
+   182→        Me.Button5.UseVisualStyleBackColor = True
+   183→        '
+   184→        'Panel7
+   185→        '
+   186→        Me.Panel7.BackColor = System.Drawing.Color.Gainsboro
+   187→        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   188→        Me.Panel7.Controls.Add(Me.TextBox22)
+   189→        Me.Panel7.Controls.Add(Me.Label32)
+   190→        Me.Panel7.Controls.Add(Me.TextBox25)
+   191→        Me.Panel7.Controls.Add(Me.TextBox26)
+   192→        Me.Panel7.Controls.Add(Me.Label33)
+   193→        Me.Panel7.Controls.Add(Me.Label37)
+   194→        Me.Panel7.Controls.Add(Me.Label38)
+   195→        Me.Panel7.Controls.Add(Me.TextBox21)
+   196→        Me.Panel7.Controls.Add(Me.Label31)
+   197→        Me.Panel7.Controls.Add(Me.TextBox23)
+   198→        Me.Panel7.Controls.Add(Me.TextBox24)
+   199→        Me.Panel7.Controls.Add(Me.Label34)
+   200→        Me.Panel7.Controls.Add(Me.Label35)
+   201→        Me.Panel7.Controls.Add(Me.Label36)
+   202→        Me.Panel7.Controls.Add(Me.TextBox19)
+   203→        Me.Panel7.Controls.Add(Me.TextBox20)
+   204→        Me.Panel7.Controls.Add(Me.Label28)
+   205→        Me.Panel7.Controls.Add(Me.Label29)
+   206→        Me.Panel7.Controls.Add(Me.Label30)
+   207→        Me.Panel7.Controls.Add(Me.TextBox17)
+   208→        Me.Panel7.Controls.Add(Me.TextBox18)
+   209→        Me.Panel7.Controls.Add(Me.Label25)
+   210→        Me.Panel7.Controls.Add(Me.Label26)
+   211→        Me.Panel7.Controls.Add(Me.Label27)
+   212→        Me.Panel7.Controls.Add(Me.TextBox15)
+   213→        Me.Panel7.Controls.Add(Me.TextBox16)
+   214→        Me.Panel7.Controls.Add(Me.Label21)
+   215→        Me.Panel7.Controls.Add(Me.Label22)
+   216→        Me.Panel7.Controls.Add(Me.Label24)
+   217→        Me.Panel7.Controls.Add(Me.TextBox13)
+   218→        Me.Panel7.Controls.Add(Me.TextBox14)
+   219→        Me.Panel7.Controls.Add(Me.Label18)
+   220→        Me.Panel7.Controls.Add(Me.Label19)
+   221→        Me.Panel7.Controls.Add(Me.Label20)
+   222→        Me.Panel7.Controls.Add(Me.TextBox11)
+   223→        Me.Panel7.Controls.Add(Me.TextBox12)
+   224→        Me.Panel7.Controls.Add(Me.Label15)
+   225→        Me.Panel7.Controls.Add(Me.Label16)
+   226→        Me.Panel7.Controls.Add(Me.Label17)
+   227→        Me.Panel7.Controls.Add(Me.Button7)
+   228→        Me.Panel7.Controls.Add(Me.TextBox9)
+   229→        Me.Panel7.Controls.Add(Me.TextBox10)
+   230→        Me.Panel7.Controls.Add(Me.TextBox7)
+   231→        Me.Panel7.Controls.Add(Me.TextBox8)
+   232→        Me.Panel7.Controls.Add(Me.Label12)
+   233→        Me.Panel7.Controls.Add(Me.Label13)
+   234→        Me.Panel7.Controls.Add(Me.Label14)
+   235→        Me.Panel7.Controls.Add(Me.TextBox5)
+   236→        Me.Panel7.Controls.Add(Me.TextBox6)
+   237→        Me.Panel7.Controls.Add(Me.Label9)
+   238→        Me.Panel7.Controls.Add(Me.Label10)
+   239→        Me.Panel7.Controls.Add(Me.Label11)
+   240→        Me.Panel7.Controls.Add(Me.TextBox3)
+   241→        Me.Panel7.Controls.Add(Me.TextBox4)
+   242→        Me.Panel7.Controls.Add(Me.Label6)
+   243→        Me.Panel7.Controls.Add(Me.Label7)
+   244→        Me.Panel7.Controls.Add(Me.Label8)
+   245→        Me.Panel7.Controls.Add(Me.TextBox1)
+   246→        Me.Panel7.Controls.Add(Me.TextBox2)
+   247→        Me.Panel7.Controls.Add(Me.Label3)
+   248→        Me.Panel7.Controls.Add(Me.Label4)
+   249→        Me.Panel7.Controls.Add(Me.Label5)
+   250→        Me.Panel7.Controls.Add(Me.Button6)
+   251→        Me.Panel7.Controls.Add(Me.Label2)
+   252→        Me.Panel7.Controls.Add(Me.Label1)
+   253→        Me.Panel7.Controls.Add(Me.Label23)
+   254→        Me.Panel7.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   255→        Me.Panel7.Location = New System.Drawing.Point(1017, 14)
+   256→        Me.Panel7.Name = "Panel7"
+   257→        Me.Panel7.Size = New System.Drawing.Size(403, 713)
+   258→        Me.Panel7.TabIndex = 106
+   259→        '
+   260→        'TextBox19
+   261→        '
+   262→        Me.TextBox19.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   263→        Me.TextBox19.Location = New System.Drawing.Point(218, 504)
+   264→        Me.TextBox19.Name = "TextBox19"
+   265→        Me.TextBox19.Size = New System.Drawing.Size(168, 26)
+   266→        Me.TextBox19.TabIndex = 150
+   267→        '
+   268→        'TextBox20
+   269→        '
+   270→        Me.TextBox20.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   271→        Me.TextBox20.Location = New System.Drawing.Point(218, 478)
+   272→        Me.TextBox20.Name = "TextBox20"
+   273→        Me.TextBox20.Size = New System.Drawing.Size(168, 26)
+   274→        Me.TextBox20.TabIndex = 149
+   275→        '
+   276→        'Label28
+   277→        '
+   278→        Me.Label28.BackColor = System.Drawing.Color.Gainsboro
+   279→        Me.Label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   280→        Me.Label28.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   281→        Me.Label28.ForeColor = System.Drawing.Color.Black
+   282→        Me.Label28.Location = New System.Drawing.Point(12, 478)
+   283→        Me.Label28.Name = "Label28"
+   284→        Me.Label28.Size = New System.Drawing.Size(110, 52)
+   285→        Me.Label28.TabIndex = 148
+   286→        Me.Label28.Text = "TIME TOL"
+   287→        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   288→        '
+   289→        'Label29
+   290→        '
+   291→        Me.Label29.BackColor = System.Drawing.Color.Gainsboro
+   292→        Me.Label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   293→        Me.Label29.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   294→        Me.Label29.ForeColor = System.Drawing.Color.Black
+   295→        Me.Label29.Location = New System.Drawing.Point(122, 504)
+   296→        Me.Label29.Name = "Label29"
+   297→        Me.Label29.Size = New System.Drawing.Size(96, 26)
+   298→        Me.Label29.TabIndex = 147
+   299→        Me.Label29.Text = "BWD"
+   300→        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   301→        '
+   302→        'Label30
+   303→        '
+   304→        Me.Label30.BackColor = System.Drawing.Color.Gainsboro
+   305→        Me.Label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   306→        Me.Label30.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   307→        Me.Label30.ForeColor = System.Drawing.Color.Black
+   308→        Me.Label30.Location = New System.Drawing.Point(122, 478)
+   309→        Me.Label30.Name = "Label30"
+   310→        Me.Label30.Size = New System.Drawing.Size(96, 26)
+   311→        Me.Label30.TabIndex = 146
+   312→        Me.Label30.Text = "FWD"
+   313→        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   314→        '
+   315→        'TextBox17
+   316→        '
+   317→        Me.TextBox17.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   318→        Me.TextBox17.Location = New System.Drawing.Point(218, 296)
+   319→        Me.TextBox17.Name = "TextBox17"
+   320→        Me.TextBox17.Size = New System.Drawing.Size(168, 26)
+   321→        Me.TextBox17.TabIndex = 145
+   322→        '
+   323→        'TextBox18
+   324→        '
+   325→        Me.TextBox18.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   326→        Me.TextBox18.Location = New System.Drawing.Point(218, 270)
+   327→        Me.TextBox18.Name = "TextBox18"
+   328→        Me.TextBox18.Size = New System.Drawing.Size(168, 26)
+   329→        Me.TextBox18.TabIndex = 144
+   330→        '
+   331→        'Label25
+   332→        '
+   333→        Me.Label25.BackColor = System.Drawing.Color.Gainsboro
+   334→        Me.Label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   335→        Me.Label25.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   336→        Me.Label25.ForeColor = System.Drawing.Color.Black
+   337→        Me.Label25.Location = New System.Drawing.Point(12, 270)
+   338→        Me.Label25.Name = "Label25"
+   339→        Me.Label25.Size = New System.Drawing.Size(110, 52)
+   340→        Me.Label25.TabIndex = 143
+   341→        Me.Label25.Text = "END ANGLE (DECISION)"
+   342→        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   343→        '
+   344→        'Label26
+   345→        '
+   346→        Me.Label26.BackColor = System.Drawing.Color.Gainsboro
+   347→        Me.Label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   348→        Me.Label26.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   349→        Me.Label26.ForeColor = System.Drawing.Color.Black
+   350→        Me.Label26.Location = New System.Drawing.Point(122, 296)
+   351→        Me.Label26.Name = "Label26"
+   352→        Me.Label26.Size = New System.Drawing.Size(96, 26)
+   353→        Me.Label26.TabIndex = 142
+   354→        Me.Label26.Text = "MAX"
+   355→        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   356→        '
+   357→        'Label27
+   358→        '
+   359→        Me.Label27.BackColor = System.Drawing.Color.Gainsboro
+   360→        Me.Label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   361→        Me.Label27.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   362→        Me.Label27.ForeColor = System.Drawing.Color.Black
+   363→        Me.Label27.Location = New System.Drawing.Point(122, 270)
+   364→        Me.Label27.Name = "Label27"
+   365→        Me.Label27.Size = New System.Drawing.Size(96, 26)
+   366→        Me.Label27.TabIndex = 141
+   367→        Me.Label27.Text = "MIN"
+   368→        Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   369→        '
+   370→        'TextBox15
+   371→        '
+   372→        Me.TextBox15.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   373→        Me.TextBox15.Location = New System.Drawing.Point(218, 452)
+   374→        Me.TextBox15.Name = "TextBox15"
+   375→        Me.TextBox15.Size = New System.Drawing.Size(168, 26)
+   376→        Me.TextBox15.TabIndex = 140
+   377→        '
+   378→        'TextBox16
+   379→        '
+   380→        Me.TextBox16.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   381→        Me.TextBox16.Location = New System.Drawing.Point(218, 426)
+   382→        Me.TextBox16.Name = "TextBox16"
+   383→        Me.TextBox16.Size = New System.Drawing.Size(168, 26)
+   384→        Me.TextBox16.TabIndex = 139
+   385→        '
+   386→        'Label21
+   387→        '
+   388→        Me.Label21.BackColor = System.Drawing.Color.Gainsboro
+   389→        Me.Label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   390→        Me.Label21.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   391→        Me.Label21.ForeColor = System.Drawing.Color.Black
+   392→        Me.Label21.Location = New System.Drawing.Point(12, 426)
+   393→        Me.Label21.Name = "Label21"
+   394→        Me.Label21.Size = New System.Drawing.Size(110, 52)
+   395→        Me.Label21.TabIndex = 138
+   396→        Me.Label21.Text = "IGNORE TIME"
+   397→        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   398→        '
+   399→        'Label22
+   400→        '
+   401→        Me.Label22.BackColor = System.Drawing.Color.Gainsboro
+   402→        Me.Label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   403→        Me.Label22.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   404→        Me.Label22.ForeColor = System.Drawing.Color.Black
+   405→        Me.Label22.Location = New System.Drawing.Point(122, 452)
+   406→        Me.Label22.Name = "Label22"
+   407→        Me.Label22.Size = New System.Drawing.Size(96, 26)
+   408→        Me.Label22.TabIndex = 137
+   409→        Me.Label22.Text = "END"
+   410→        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   411→        '
+   412→        'Label24
+   413→        '
+   414→        Me.Label24.BackColor = System.Drawing.Color.Gainsboro
+   415→        Me.Label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   416→        Me.Label24.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   417→        Me.Label24.ForeColor = System.Drawing.Color.Black
+   418→        Me.Label24.Location = New System.Drawing.Point(122, 426)
+   419→        Me.Label24.Name = "Label24"
+   420→        Me.Label24.Size = New System.Drawing.Size(96, 26)
+   421→        Me.Label24.TabIndex = 136
+   422→        Me.Label24.Text = "START"
+   423→        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   424→        '
+   425→        'TextBox13
+   426→        '
+   427→        Me.TextBox13.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   428→        Me.TextBox13.Location = New System.Drawing.Point(218, 400)
+   429→        Me.TextBox13.Name = "TextBox13"
+   430→        Me.TextBox13.Size = New System.Drawing.Size(168, 26)
+   431→        Me.TextBox13.TabIndex = 135
+   432→        '
+   433→        'TextBox14
+   434→        '
+   435→        Me.TextBox14.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   436→        Me.TextBox14.Location = New System.Drawing.Point(218, 374)
+   437→        Me.TextBox14.Name = "TextBox14"
+   438→        Me.TextBox14.Size = New System.Drawing.Size(168, 26)
+   439→        Me.TextBox14.TabIndex = 134
+   440→        '
+   441→        'Label18
+   442→        '
+   443→        Me.Label18.BackColor = System.Drawing.Color.Gainsboro
+   444→        Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   445→        Me.Label18.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   446→        Me.Label18.ForeColor = System.Drawing.Color.Black
+   447→        Me.Label18.Location = New System.Drawing.Point(12, 374)
+   448→        Me.Label18.Name = "Label18"
+   449→        Me.Label18.Size = New System.Drawing.Size(110, 52)
+   450→        Me.Label18.TabIndex = 133
+   451→        Me.Label18.Text = "BWD TIME"
+   452→        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   453→        '
+   454→        'Label19
+   455→        '
+   456→        Me.Label19.BackColor = System.Drawing.Color.Gainsboro
+   457→        Me.Label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   458→        Me.Label19.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   459→        Me.Label19.ForeColor = System.Drawing.Color.Black
+   460→        Me.Label19.Location = New System.Drawing.Point(122, 400)
+   461→        Me.Label19.Name = "Label19"
+   462→        Me.Label19.Size = New System.Drawing.Size(96, 26)
+   463→        Me.Label19.TabIndex = 132
+   464→        Me.Label19.Text = "MAX"
+   465→        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   466→        '
+   467→        'Label20
+   468→        '
+   469→        Me.Label20.BackColor = System.Drawing.Color.Gainsboro
+   470→        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   471→        Me.Label20.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   472→        Me.Label20.ForeColor = System.Drawing.Color.Black
+   473→        Me.Label20.Location = New System.Drawing.Point(122, 374)
+   474→        Me.Label20.Name = "Label20"
+   475→        Me.Label20.Size = New System.Drawing.Size(96, 26)
+   476→        Me.Label20.TabIndex = 131
+   477→        Me.Label20.Text = "MIN"
+   478→        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   479→        '
+   480→        'TextBox11
+   481→        '
+   482→        Me.TextBox11.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   483→        Me.TextBox11.Location = New System.Drawing.Point(218, 348)
+   484→        Me.TextBox11.Name = "TextBox11"
+   485→        Me.TextBox11.Size = New System.Drawing.Size(168, 26)
+   486→        Me.TextBox11.TabIndex = 130
+   487→        '
+   488→        'TextBox12
+   489→        '
+   490→        Me.TextBox12.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   491→        Me.TextBox12.Location = New System.Drawing.Point(218, 322)
+   492→        Me.TextBox12.Name = "TextBox12"
+   493→        Me.TextBox12.Size = New System.Drawing.Size(168, 26)
+   494→        Me.TextBox12.TabIndex = 129
+   495→        '
+   496→        'Label15
+   497→        '
+   498→        Me.Label15.BackColor = System.Drawing.Color.Gainsboro
+   499→        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   500→        Me.Label15.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   501→        Me.Label15.ForeColor = System.Drawing.Color.Black
+   502→        Me.Label15.Location = New System.Drawing.Point(12, 322)
+   503→        Me.Label15.Name = "Label15"
+   504→        Me.Label15.Size = New System.Drawing.Size(110, 52)
+   505→        Me.Label15.TabIndex = 128
+   506→        Me.Label15.Text = "FWD TIME"
+   507→        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   508→        '
+   509→        'Label16
+   510→        '
+   511→        Me.Label16.BackColor = System.Drawing.Color.Gainsboro
+   512→        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   513→        Me.Label16.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   514→        Me.Label16.ForeColor = System.Drawing.Color.Black
+   515→        Me.Label16.Location = New System.Drawing.Point(122, 348)
+   516→        Me.Label16.Name = "Label16"
+   517→        Me.Label16.Size = New System.Drawing.Size(96, 26)
+   518→        Me.Label16.TabIndex = 127
+   519→        Me.Label16.Text = "MAX"
+   520→        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   521→        '
+   522→        'Label17
+   523→        '
+   524→        Me.Label17.BackColor = System.Drawing.Color.Gainsboro
+   525→        Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   526→        Me.Label17.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   527→        Me.Label17.ForeColor = System.Drawing.Color.Black
+   528→        Me.Label17.Location = New System.Drawing.Point(122, 322)
+   529→        Me.Label17.Name = "Label17"
+   530→        Me.Label17.Size = New System.Drawing.Size(96, 26)
+   531→        Me.Label17.TabIndex = 126
+   532→        Me.Label17.Text = "MIN"
+   533→        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   534→        '
+   535→        'Button7
+   536→        '
+   537→        Me.Button7.Location = New System.Drawing.Point(304, 592)
+   538→        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   539→        Me.Button7.Name = "Button7"
+   540→        Me.Button7.Size = New System.Drawing.Size(82, 42)
+   541→        Me.Button7.TabIndex = 125
+   542→        Me.Button7.Text = "ANGLE"
+   543→        Me.Button7.UseVisualStyleBackColor = True
+   544→        '
+   545→        'TextBox9
+   546→        '
+   547→        Me.TextBox9.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   548→        Me.TextBox9.Location = New System.Drawing.Point(218, 244)
+   549→        Me.TextBox9.Name = "TextBox9"
+   550→        Me.TextBox9.Size = New System.Drawing.Size(168, 26)
+   551→        Me.TextBox9.TabIndex = 124
+   552→        '
+   553→        'TextBox10
+   554→        '
+   555→        Me.TextBox10.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   556→        Me.TextBox10.Location = New System.Drawing.Point(218, 218)
+   557→        Me.TextBox10.Name = "TextBox10"
+   558→        Me.TextBox10.Size = New System.Drawing.Size(168, 26)
+   559→        Me.TextBox10.TabIndex = 123
+   560→        '
+   561→        'TextBox7
+   562→        '
+   563→        Me.TextBox7.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   564→        Me.TextBox7.Location = New System.Drawing.Point(218, 192)
+   565→        Me.TextBox7.Name = "TextBox7"
+   566→        Me.TextBox7.Size = New System.Drawing.Size(168, 26)
+   567→        Me.TextBox7.TabIndex = 122
+   568→        '
+   569→        'TextBox8
+   570→        '
+   571→        Me.TextBox8.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   572→        Me.TextBox8.Location = New System.Drawing.Point(218, 166)
+   573→        Me.TextBox8.Name = "TextBox8"
+   574→        Me.TextBox8.Size = New System.Drawing.Size(168, 26)
+   575→        Me.TextBox8.TabIndex = 121
+   576→        '
+   577→        'Label12
+   578→        '
+   579→        Me.Label12.BackColor = System.Drawing.Color.Gainsboro
+   580→        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   581→        Me.Label12.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   582→        Me.Label12.ForeColor = System.Drawing.Color.Black
+   583→        Me.Label12.Location = New System.Drawing.Point(12, 218)
+   584→        Me.Label12.Name = "Label12"
+   585→        Me.Label12.Size = New System.Drawing.Size(110, 52)
+   586→        Me.Label12.TabIndex = 120
+   587→        Me.Label12.Text = "END ANGLE(STOP)"
+   588→        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   589→        '
+   590→        'Label13
+   591→        '
+   592→        Me.Label13.BackColor = System.Drawing.Color.Gainsboro
+   593→        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   594→        Me.Label13.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   595→        Me.Label13.ForeColor = System.Drawing.Color.Black
+   596→        Me.Label13.Location = New System.Drawing.Point(122, 244)
+   597→        Me.Label13.Name = "Label13"
+   598→        Me.Label13.Size = New System.Drawing.Size(96, 26)
+   599→        Me.Label13.TabIndex = 119
+   600→        Me.Label13.Text = "MAX"
+   601→        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   602→        '
+   603→        'Label14
+   604→        '
+   605→        Me.Label14.BackColor = System.Drawing.Color.Gainsboro
+   606→        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   607→        Me.Label14.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   608→        Me.Label14.ForeColor = System.Drawing.Color.Black
+   609→        Me.Label14.Location = New System.Drawing.Point(122, 218)
+   610→        Me.Label14.Name = "Label14"
+   611→        Me.Label14.Size = New System.Drawing.Size(96, 26)
+   612→        Me.Label14.TabIndex = 118
+   613→        Me.Label14.Text = "MIN"
+   614→        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   615→        '
+   616→        'TextBox5
+   617→        '
+   618→        Me.TextBox5.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   619→        Me.TextBox5.Location = New System.Drawing.Point(218, 140)
+   620→        Me.TextBox5.Name = "TextBox5"
+   621→        Me.TextBox5.Size = New System.Drawing.Size(168, 26)
+   622→        Me.TextBox5.TabIndex = 117
+   623→        '
+   624→        'TextBox6
+   625→        '
+   626→        Me.TextBox6.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   627→        Me.TextBox6.Location = New System.Drawing.Point(218, 114)
+   628→        Me.TextBox6.Name = "TextBox6"
+   629→        Me.TextBox6.Size = New System.Drawing.Size(168, 26)
+   630→        Me.TextBox6.TabIndex = 116
+   631→        '
+   632→        'Label9
+   633→        '
+   634→        Me.Label9.BackColor = System.Drawing.Color.Gainsboro
+   635→        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   636→        Me.Label9.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   637→        Me.Label9.ForeColor = System.Drawing.Color.Black
+   638→        Me.Label9.Location = New System.Drawing.Point(12, 166)
+   639→        Me.Label9.Name = "Label9"
+   640→        Me.Label9.Size = New System.Drawing.Size(110, 52)
+   641→        Me.Label9.TabIndex = 115
+   642→        Me.Label9.Text = "BWD ANGLE"
+   643→        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   644→        '
+   645→        'Label10
+   646→        '
+   647→        Me.Label10.BackColor = System.Drawing.Color.Gainsboro
+   648→        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   649→        Me.Label10.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   650→        Me.Label10.ForeColor = System.Drawing.Color.Black
+   651→        Me.Label10.Location = New System.Drawing.Point(122, 192)
+   652→        Me.Label10.Name = "Label10"
+   653→        Me.Label10.Size = New System.Drawing.Size(96, 26)
+   654→        Me.Label10.TabIndex = 114
+   655→        Me.Label10.Text = "MAX"
+   656→        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   657→        '
+   658→        'Label11
+   659→        '
+   660→        Me.Label11.BackColor = System.Drawing.Color.Gainsboro
+   661→        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   662→        Me.Label11.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   663→        Me.Label11.ForeColor = System.Drawing.Color.Black
+   664→        Me.Label11.Location = New System.Drawing.Point(122, 166)
+   665→        Me.Label11.Name = "Label11"
+   666→        Me.Label11.Size = New System.Drawing.Size(96, 26)
+   667→        Me.Label11.TabIndex = 113
+   668→        Me.Label11.Text = "MIN"
+   669→        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   670→        '
+   671→        'TextBox3
+   672→        '
+   673→        Me.TextBox3.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   674→        Me.TextBox3.Location = New System.Drawing.Point(218, 88)
+   675→        Me.TextBox3.Name = "TextBox3"
+   676→        Me.TextBox3.Size = New System.Drawing.Size(168, 26)
+   677→        Me.TextBox3.TabIndex = 112
+   678→        '
+   679→        'TextBox4
+   680→        '
+   681→        Me.TextBox4.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   682→        Me.TextBox4.Location = New System.Drawing.Point(218, 62)
+   683→        Me.TextBox4.Name = "TextBox4"
+   684→        Me.TextBox4.Size = New System.Drawing.Size(168, 26)
+   685→        Me.TextBox4.TabIndex = 111
+   686→        '
+   687→        'Label6
+   688→        '
+   689→        Me.Label6.BackColor = System.Drawing.Color.Gainsboro
+   690→        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   691→        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   692→        Me.Label6.ForeColor = System.Drawing.Color.Black
+   693→        Me.Label6.Location = New System.Drawing.Point(12, 114)
+   694→        Me.Label6.Name = "Label6"
+   695→        Me.Label6.Size = New System.Drawing.Size(110, 52)
+   696→        Me.Label6.TabIndex = 110
+   697→        Me.Label6.Text = "FWD ANGLE"
+   698→        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   699→        '
+   700→        'Label7
+   701→        '
+   702→        Me.Label7.BackColor = System.Drawing.Color.Gainsboro
+   703→        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   704→        Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   705→        Me.Label7.ForeColor = System.Drawing.Color.Black
+   706→        Me.Label7.Location = New System.Drawing.Point(122, 140)
+   707→        Me.Label7.Name = "Label7"
+   708→        Me.Label7.Size = New System.Drawing.Size(96, 26)
+   709→        Me.Label7.TabIndex = 109
+   710→        Me.Label7.Text = "MAX"
+   711→        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   712→        '
+   713→        'Label8
+   714→        '
+   715→        Me.Label8.BackColor = System.Drawing.Color.Gainsboro
+   716→        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   717→        Me.Label8.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   718→        Me.Label8.ForeColor = System.Drawing.Color.Black
+   719→        Me.Label8.Location = New System.Drawing.Point(122, 114)
+   720→        Me.Label8.Name = "Label8"
+   721→        Me.Label8.Size = New System.Drawing.Size(96, 26)
+   722→        Me.Label8.TabIndex = 108
+   723→        Me.Label8.Text = "MIN"
+   724→        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   725→        '
+   726→        'TextBox1
+   727→        '
+   728→        Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   729→        Me.TextBox1.Location = New System.Drawing.Point(218, 36)
+   730→        Me.TextBox1.Name = "TextBox1"
+   731→        Me.TextBox1.Size = New System.Drawing.Size(168, 26)
+   732→        Me.TextBox1.TabIndex = 107
+   733→        '
+   734→        'TextBox2
+   735→        '
+   736→        Me.TextBox2.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   737→        Me.TextBox2.Location = New System.Drawing.Point(218, 10)
+   738→        Me.TextBox2.Name = "TextBox2"
+   739→        Me.TextBox2.Size = New System.Drawing.Size(168, 26)
+   740→        Me.TextBox2.TabIndex = 106
+   741→        '
+   742→        'Label3
+   743→        '
+   744→        Me.Label3.BackColor = System.Drawing.Color.Gainsboro
+   745→        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   746→        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   747→        Me.Label3.ForeColor = System.Drawing.Color.Black
+   748→        Me.Label3.Location = New System.Drawing.Point(12, 62)
+   749→        Me.Label3.Name = "Label3"
+   750→        Me.Label3.Size = New System.Drawing.Size(110, 52)
+   751→        Me.Label3.TabIndex = 105
+   752→        Me.Label3.Text = "AMP BWD"
+   753→        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   754→        '
+   755→        'Label4
+   756→        '
+   757→        Me.Label4.BackColor = System.Drawing.Color.Gainsboro
+   758→        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   759→        Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   760→        Me.Label4.ForeColor = System.Drawing.Color.Black
+   761→        Me.Label4.Location = New System.Drawing.Point(122, 88)
+   762→        Me.Label4.Name = "Label4"
+   763→        Me.Label4.Size = New System.Drawing.Size(96, 26)
+   764→        Me.Label4.TabIndex = 104
+   765→        Me.Label4.Text = "MAX"
+   766→        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   767→        '
+   768→        'Label5
+   769→        '
+   770→        Me.Label5.BackColor = System.Drawing.Color.Gainsboro
+   771→        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   772→        Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   773→        Me.Label5.ForeColor = System.Drawing.Color.Black
+   774→        Me.Label5.Location = New System.Drawing.Point(122, 62)
+   775→        Me.Label5.Name = "Label5"
+   776→        Me.Label5.Size = New System.Drawing.Size(96, 26)
+   777→        Me.Label5.TabIndex = 103
+   778→        Me.Label5.Text = "MIN"
+   779→        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   780→        '
+   781→        'Button6
+   782→        '
+   783→        Me.Button6.Location = New System.Drawing.Point(304, 642)
+   784→        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   785→        Me.Button6.Name = "Button6"
+   786→        Me.Button6.Size = New System.Drawing.Size(82, 42)
+   787→        Me.Button6.TabIndex = 102
+   788→        Me.Button6.Text = "SAVE"
+   789→        Me.Button6.UseVisualStyleBackColor = True
+   790→        '
+   791→        'Label2
+   792→        '
+   793→        Me.Label2.BackColor = System.Drawing.Color.Gainsboro
+   794→        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   795→        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   796→        Me.Label2.ForeColor = System.Drawing.Color.Black
+   797→        Me.Label2.Location = New System.Drawing.Point(12, 10)
+   798→        Me.Label2.Name = "Label2"
+   799→        Me.Label2.Size = New System.Drawing.Size(110, 52)
+   800→        Me.Label2.TabIndex = 61
+   801→        Me.Label2.Text = "AMP FWD"
+   802→        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   803→        '
+   804→        'Label1
+   805→        '
+   806→        Me.Label1.BackColor = System.Drawing.Color.Gainsboro
+   807→        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   808→        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   809→        Me.Label1.ForeColor = System.Drawing.Color.Black
+   810→        Me.Label1.Location = New System.Drawing.Point(122, 36)
+   811→        Me.Label1.Name = "Label1"
+   812→        Me.Label1.Size = New System.Drawing.Size(96, 26)
+   813→        Me.Label1.TabIndex = 60
+   814→        Me.Label1.Text = "MAX"
+   815→        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   816→        '
+   817→        'Label23
+   818→        '
+   819→        Me.Label23.BackColor = System.Drawing.Color.Gainsboro
+   820→        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   821→        Me.Label23.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   822→        Me.Label23.ForeColor = System.Drawing.Color.Black
+   823→        Me.Label23.Location = New System.Drawing.Point(122, 10)
+   824→        Me.Label23.Name = "Label23"
+   825→        Me.Label23.Size = New System.Drawing.Size(96, 26)
+   826→        Me.Label23.TabIndex = 58
+   827→        Me.Label23.Text = "MIN"
+   828→        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   829→        '
+   830→        'TextBox23
+   831→        '
+   832→        Me.TextBox23.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   833→        Me.TextBox23.Location = New System.Drawing.Point(156, 582)
+   834→        Me.TextBox23.Name = "TextBox23"
+   835→        Me.TextBox23.Size = New System.Drawing.Size(89, 26)
+   836→        Me.TextBox23.TabIndex = 155
+   837→        '
+   838→        'TextBox24
+   839→        '
+   840→        Me.TextBox24.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   841→        Me.TextBox24.Location = New System.Drawing.Point(156, 608)
+   842→        Me.TextBox24.Name = "TextBox24"
+   843→        Me.TextBox24.Size = New System.Drawing.Size(89, 26)
+   844→        Me.TextBox24.TabIndex = 154
+   845→        '
+   846→        'Label34
+   847→        '
+   848→        Me.Label34.BackColor = System.Drawing.Color.Gainsboro
+   849→        Me.Label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   850→        Me.Label34.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   851→        Me.Label34.ForeColor = System.Drawing.Color.Black
+   852→        Me.Label34.Location = New System.Drawing.Point(12, 530)
+   853→        Me.Label34.Name = "Label34"
+   854→        Me.Label34.Size = New System.Drawing.Size(70, 78)
+   855→        Me.Label34.TabIndex = 153
+   856→        Me.Label34.Text = "L/SUPT FWD"
+   857→        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   858→        '
+   859→        'Label35
+   860→        '
+   861→        Me.Label35.BackColor = System.Drawing.Color.Gainsboro
+   862→        Me.Label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   863→        Me.Label35.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   864→        Me.Label35.ForeColor = System.Drawing.Color.Black
+   865→        Me.Label35.Location = New System.Drawing.Point(82, 556)
+   866→        Me.Label35.Name = "Label35"
+   867→        Me.Label35.Size = New System.Drawing.Size(74, 26)
+   868→        Me.Label35.TabIndex = 152
+   869→        Me.Label35.Text = "MAX"
+   870→        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   871→        '
+   872→        'Label36
+   873→        '
+   874→        Me.Label36.BackColor = System.Drawing.Color.Gainsboro
+   875→        Me.Label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   876→        Me.Label36.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   877→        Me.Label36.ForeColor = System.Drawing.Color.Black
+   878→        Me.Label36.Location = New System.Drawing.Point(82, 530)
+   879→        Me.Label36.Name = "Label36"
+   880→        Me.Label36.Size = New System.Drawing.Size(74, 26)
+   881→        Me.Label36.TabIndex = 151
+   882→        Me.Label36.Text = "MIN"
+   883→        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   884→        '
+   885→        'Label31
+   886→        '
+   887→        Me.Label31.BackColor = System.Drawing.Color.Gainsboro
+   888→        Me.Label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   889→        Me.Label31.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   890→        Me.Label31.ForeColor = System.Drawing.Color.Black
+   891→        Me.Label31.Location = New System.Drawing.Point(82, 582)
+   892→        Me.Label31.Name = "Label31"
+   893→        Me.Label31.Size = New System.Drawing.Size(74, 26)
+   894→        Me.Label31.TabIndex = 156
+   895→        Me.Label31.Text = "TIME"
+   896→        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   897→        '
+   898→        'TextBox21
+   899→        '
+   900→        Me.TextBox21.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   901→        Me.TextBox21.Location = New System.Drawing.Point(156, 530)
+   902→        Me.TextBox21.Name = "TextBox21"
+   903→        Me.TextBox21.Size = New System.Drawing.Size(89, 26)
+   904→        Me.TextBox21.TabIndex = 157
+   905→        '
+   906→        'TextBox22
+   907→        '
+   908→        Me.TextBox22.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   909→        Me.TextBox22.Location = New System.Drawing.Point(156, 556)
+   910→        Me.TextBox22.Name = "TextBox22"
+   911→        Me.TextBox22.Size = New System.Drawing.Size(89, 26)
+   912→        Me.TextBox22.TabIndex = 164
+   913→        '
+   914→        'Label32
+   915→        '
+   916→        Me.Label32.BackColor = System.Drawing.Color.Gainsboro
+   917→        Me.Label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   918→        Me.Label32.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   919→        Me.Label32.ForeColor = System.Drawing.Color.Black
+   920→        Me.Label32.Location = New System.Drawing.Point(82, 660)
+   921→        Me.Label32.Name = "Label32"
+   922→        Me.Label32.Size = New System.Drawing.Size(74, 26)
+   923→        Me.Label32.TabIndex = 163
+   924→        Me.Label32.Text = "TIME"
+   925→        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   926→        '
+   927→        'TextBox25
+   928→        '
+   929→        Me.TextBox25.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   930→        Me.TextBox25.Location = New System.Drawing.Point(156, 634)
+   931→        Me.TextBox25.Name = "TextBox25"
+   932→        Me.TextBox25.Size = New System.Drawing.Size(89, 26)
+   933→        Me.TextBox25.TabIndex = 162
+   934→        '
+   935→        'TextBox26
+   936→        '
+   937→        Me.TextBox26.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   938→        Me.TextBox26.Location = New System.Drawing.Point(156, 660)
+   939→        Me.TextBox26.Name = "TextBox26"
+   940→        Me.TextBox26.Size = New System.Drawing.Size(89, 26)
+   941→        Me.TextBox26.TabIndex = 161
+   942→        '
+   943→        'Label33
+   944→        '
+   945→        Me.Label33.BackColor = System.Drawing.Color.Gainsboro
+   946→        Me.Label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   947→        Me.Label33.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   948→        Me.Label33.ForeColor = System.Drawing.Color.Black
+   949→        Me.Label33.Location = New System.Drawing.Point(12, 608)
+   950→        Me.Label33.Name = "Label33"
+   951→        Me.Label33.Size = New System.Drawing.Size(70, 78)
+   952→        Me.Label33.TabIndex = 160
+   953→        Me.Label33.Text = "L/SUPT BWD"
+   954→        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   955→        '
+   956→        'Label37
+   957→        '
+   958→        Me.Label37.BackColor = System.Drawing.Color.Gainsboro
+   959→        Me.Label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   960→        Me.Label37.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   961→        Me.Label37.ForeColor = System.Drawing.Color.Black
+   962→        Me.Label37.Location = New System.Drawing.Point(82, 634)
+   963→        Me.Label37.Name = "Label37"
+   964→        Me.Label37.Size = New System.Drawing.Size(74, 26)
+   965→        Me.Label37.TabIndex = 159
+   966→        Me.Label37.Text = "MAX"
+   967→        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   968→        '
+   969→        'Label38
+   970→        '
+   971→        Me.Label38.BackColor = System.Drawing.Color.Gainsboro
+   972→        Me.Label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+   973→        Me.Label38.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   974→        Me.Label38.ForeColor = System.Drawing.Color.Black
+   975→        Me.Label38.Location = New System.Drawing.Point(82, 608)
+   976→        Me.Label38.Name = "Label38"
+   977→        Me.Label38.Size = New System.Drawing.Size(74, 26)
+   978→        Me.Label38.TabIndex = 158
+   979→        Me.Label38.Text = "MIN"
+   980→        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+   981→        '
+   982→        'FrmPart
+   983→        '
+   984→        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+   985→        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+   986→        Me.ClientSize = New System.Drawing.Size(1429, 739)
+   987→        Me.Controls.Add(Me.Panel1)
+   988→        Me.Controls.Add(Me.Panel7)
+   989→        Me.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+   990→        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+   991→        Me.Name = "FrmPart"
+   992→        Me.Text = "FrmPart"
+   993→        Me.TopMost = True
+   994→        Me.Panel1.ResumeLayout(False)
+   995→        Me.Panel7.ResumeLayout(False)
+   996→        Me.Panel7.PerformLayout()
+   997→        Me.ResumeLayout(False)
+   998→
+   999→    End Sub
+  1000→
+  1001→    Friend WithEvents Button1 As Button
+  1002→    Friend WithEvents Button2 As Button
+  1003→    Friend WithEvents Button3 As Button
+  1004→    Friend WithEvents Panel1 As Panel
+  1005→    Friend WithEvents Grid1 As FlexCell.Grid
+  1006→    Friend WithEvents Button4 As Button
+  1007→    Friend WithEvents Button5 As Button
+  1008→    Friend WithEvents Panel7 As Panel
+  1009→    Friend WithEvents Button6 As Button
+  1010→    Friend WithEvents Label2 As Label
+  1011→    Friend WithEvents Label1 As Label
+  1012→    Friend WithEvents Label23 As Label
+  1013→    Friend WithEvents TextBox7 As TextBox
+  1014→    Friend WithEvents TextBox8 As TextBox
+  1015→    Friend WithEvents Label12 As Label
+  1016→    Friend WithEvents Label13 As Label
+  1017→    Friend WithEvents Label14 As Label
+  1018→    Friend WithEvents TextBox5 As TextBox
+  1019→    Friend WithEvents TextBox6 As TextBox
+  1020→    Friend WithEvents Label9 As Label
+  1021→    Friend WithEvents Label10 As Label
+  1022→    Friend WithEvents Label11 As Label
+  1023→    Friend WithEvents TextBox3 As TextBox
+  1024→    Friend WithEvents TextBox4 As TextBox
+  1025→    Friend WithEvents Label6 As Label
+  1026→    Friend WithEvents Label7 As Label
+  1027→    Friend WithEvents Label8 As Label
+  1028→    Friend WithEvents TextBox1 As TextBox
+  1029→    Friend WithEvents TextBox2 As TextBox
+  1030→    Friend WithEvents Label3 As Label
+  1031→    Friend WithEvents Label4 As Label
+  1032→    Friend WithEvents Label5 As Label
+  1033→    Friend WithEvents TextBox9 As TextBox
+  1034→    Friend WithEvents TextBox10 As TextBox
+  1035→    Friend WithEvents Button7 As Button
+  1036→    Friend WithEvents TextBox13 As TextBox
+  1037→    Friend WithEvents TextBox14 As TextBox
+  1038→    Friend WithEvents Label18 As Label
+  1039→    Friend WithEvents Label19 As Label
+  1040→    Friend WithEvents Label20 As Label
+  1041→    Friend WithEvents TextBox11 As TextBox
+  1042→    Friend WithEvents TextBox12 As TextBox
+  1043→    Friend WithEvents Label15 As Label
+  1044→    Friend WithEvents Label16 As Label
+  1045→    Friend WithEvents Label17 As Label
+  1046→    Friend WithEvents TextBox15 As TextBox
+  1047→    Friend WithEvents TextBox16 As TextBox
+  1048→    Friend WithEvents Label21 As Label
+  1049→    Friend WithEvents Label22 As Label
+  1050→    Friend WithEvents Label24 As Label
+  1051→    Friend WithEvents TextBox17 As TextBox
+  1052→    Friend WithEvents TextBox18 As TextBox
+  1053→    Friend WithEvents Label25 As Label
+  1054→    Friend WithEvents Label26 As Label
+  1055→    Friend WithEvents Label27 As Label
+  1056→    Friend WithEvents TextBox19 As TextBox
+  1057→    Friend WithEvents TextBox20 As TextBox
+  1058→    Friend WithEvents Label28 As Label
+  1059→    Friend WithEvents Label29 As Label
+  1060→    Friend WithEvents Label30 As Label
+  1061→    Friend WithEvents Label31 As Label
+  1062→    Friend WithEvents TextBox23 As TextBox
+  1063→    Friend WithEvents TextBox24 As TextBox
+  1064→    Friend WithEvents Label34 As Label
+  1065→    Friend WithEvents Label35 As Label
+  1066→    Friend WithEvents Label36 As Label
+  1067→    Friend WithEvents TextBox21 As TextBox
+  1068→    Friend WithEvents TextBox22 As TextBox
+  1069→    Friend WithEvents Label32 As Label
+  1070→    Friend WithEvents TextBox25 As TextBox
+  1071→    Friend WithEvents TextBox26 As TextBox
+  1072→    Friend WithEvents Label33 As Label
+  1073→    Friend WithEvents Label37 As Label
+  1074→    Friend WithEvents Label38 As Label
+  1075→End Class
+  1076→

@@ -24,3 +24,4 @@ Write WinForms or WPF UI code.
 - WinForms: write in Designer.cs only, sequential TabIndex, Name required, event += wiring only
 - WPF: separate .xaml + .xaml.cs, x:Name required
 - Maintain designer compatibility
+- Report each step taken and its result in detail before proceeding to the next step.

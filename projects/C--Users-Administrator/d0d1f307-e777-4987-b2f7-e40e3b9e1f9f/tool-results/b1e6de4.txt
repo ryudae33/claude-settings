@@ -1,0 +1,394 @@
+
+==========================================
+SHEET: IOCtrl_시트$
+==========================================
+R0: - | - | - | Bit7 | Bit6 | Bit5 | Bit4 | Bit3 | Bit2 | Bit1 | Bit0 | - | - | -
+R1: DID 0xXX00 | Supported DID Data_A | - | DID0xXX01 | DID0xXX02 | DID0xXX03 | DID0xXX04 | DID0xXX05 | DID0xXX06 | DID0xXX07 | DID0xXX08 | - | - | -
+R2: - | Supported DID Data_B | - | DID0xXX09 | DID0xXX0A | DID0xXX0B | DID0xXX0C | DID0xXX0D | DID0xXX0E | DID0xXX0F | DID0xXX10 | - | - | -
+R3: - | Supported DID Data_C | - | DID0xXX11 | DID0xXX12 | DID0xXX13 | DID0xXX14 | DID0xXX15 | DID0xXX16 | DID0xXX17 | DID0xXX18 | - | - | -
+R4: - | Supported DID Data_D | - | DID0xXX19 | DID0xXX1A | DID0xXX1B | DID0xXX1C | DID0xXX1D | DID0xXX1E | DID0xXX1F | DID0xXX20 | - | - | -
+R5: DID 0xXX20 | Supported DID Data_A | - | DID0xXX21 | DID0xXX22 | DID0xXX23 | DID0xXX24 | DID0xXX25 | DID0xXX26 | DID0xXX27 | DID0xXX28 | - | - | -
+R6: - | Supported DID Data_B | - | DID0xXX29 | DID0xXX2A | DID0xXX2B | DID0xXX2C | DID0xXX2D | DID0xXX2E | DID0xXX2F | DID0xXX30 | - | - | -
+R7: - | Supported DID Data_C | - | DID0xXX31 | DID0xXX32 | DID0xXX33 | DID0xXX34 | DID0xXX35 | DID0xXX36 | DID0xXX37 | DID0xXX38 | - | - | -
+R8: - | Supported DID Data_D | - | DID0xXX39 | DID0xXX3A | DID0xXX3B | DID0xXX3C | DID0xXX3D | DID0xXX3E | DID0xXX3F | DID0xXX40 | - | - | -
+R9: DID 0xXX40 | Supported DID Data_A | - | DID0xXX41 | DID0xXX42 | DID0xXX43 | DID0xXX44 | DID0xXX45 | DID0xXX46 | DID0xXX47 | DID0xXX48 | - | - | -
+R10: - | Supported DID Data_B | - | DID0xXX49 | DID0xXX4A | DID0xXX4B | DID0xXX4C | DID0xXX4D | DID0xXX4E | DID0xXX4F | DID0xXX50 | - | - | -
+R11: - | Supported DID Data_C | - | DID0xXX51 | DID0xXX52 | DID0xXX53 | DID0xXX54 | DID0xXX55 | DID0xXX56 | DID0xXX57 | DID0xXX58 | - | - | -
+R12: - | Supported DID Data_D | - | DID0xXX59 | DID0xXX5A | DID0xXX5B | DID0xXX5C | DID0xXX5D | DID0xXX5E | DID0xXX5F | DID0xXX60 | - | - | -
+R13: : | : | - | : | : | : | : | : | : | : | : | - | - | -
+R14: : | : | - | : | : | : | : | : | : | : | : | - | - | -
+R17: · Request Message | - | - | - | - | - | - | - | - | - | - | - | - | -
+R18: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | - | - | -
+R19: Data Byte | #1 | 2F | InputOutputControlByIdentifier Request Service ID | - | - | - | - | - | - | - | - | - | -
+R20: - | #2~#3 | XXXX | dataIdentifier | - | - | - | - | - | - | - | - | - | -
+R21: - | #4 | XX | controlOptionRecord
+※ Supported check control Parameter 0x02 | - | - | - | - | - | - | - | - | - | -
+R24: · Supported Check Positive Response Message | - | - | - | - | - | - | - | - | - | - | - | - | -
+R25: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | - | - | -
+R26: Data Byte | #1 | 6F | Positive Response Identification | - | - | - | - | - | - | - | - | - | -
+R27: - | #2 ~ #3 | XXXX | dataIdentifier - Supported Input Output Identifier | - | - | - | - | - | - | - | - | - | -
+R28: - | #4 | 02 | controlOptionRecord | - | - | - | - | - | - | - | - | - | -
+R29: - | #5 | XX | Supported DID #1 | - | - | - | - | - | - | - | - | - | -
+R30: - | #6 | XX | Supported DID #2 | - | - | - | - | - | - | - | - | - | -
+R31: - | #7 | XX | Supported DID #3 | - | - | - | - | - | - | - | - | - | -
+R32: - | #8 | XX | Supported DID #4 | - | - | - | - | - | - | - | - | - | -
+R35: 1.1.1.1       IOCBI - Input Output Control by Local Identifier of JX1 RLPSU, RRPSU | - | - | - | - | - | - | - | - | - | - | - | - | -
+R37: · Request Message | - | - | - | - | - | - | - | - | - | - | - | - | -
+R38: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | - | - | -
+R39: Data Byte | #1 | 2F | Request Service Identifier | - | - | - | - | - | - | - | - | - | -
+R40: - | #2 ~ #3 | F01X | Input Output Local Identifier  | - | - | - | - | - | - | - | - | - | -
+R41: - | - | - | (refer to Input Output Local Identifier table) | - | - | - | - | - | - | - | - | - | -
+R42: - | #4 | XX | Input Output Control Parameter | - | - | - | - | - | - | - | - | - | -
+R43: - | - | - |  - 0x00: STOP(returnControlToECU) | - | - | - | - | - | - | - | - | - | -
+R44: - | - | - |  - 0x03: START(shortTermAdjustment) | - | - | - | - | - | - | - | - | - | -
+R46: Input/Output | Control By Local Identifier | - | - | - | Output | Output Time | - | Remark | RG3 | JX1 | JX1 PE | - | -
+R47: - | - | - | - | - | Condition | - | - | - | - | - | - | - | -
+R48: Hex Value | Parameter Description | - | - | - | - | - | - | - | - | - | - | - | -
+R49: F010 | Supported check DID F010 | - | - | - | - | - | - | - | - | O | O | - | -
+R50: F011 | Actuator signal output | - | - | - | Battery = ON | 1s | - | - | - | O | O | - | -
+R51: F012 | MOVE P/Seat to the foremost position(RECLINE) | - | - | - | Battery = ON | Until Stop Command | - | - | - | O | O | - | -
+R52: F013 | MOVE P/Seat to the last position(RECLINE) | - | - | - | Battery = ON | Until Stop Command | - | - | - | O | O | - | -
+R53: F014 | MOVE P/Seat to the foremost position(Tilt) | - | - | - | Battery = ON | Until Stop Command | - | - | - | O | O | - | -
+R54: F015 | MOVE P/Seat to the last position(Tilt) | - | - | - | Battery = ON | Until Stop Command | - | - | - | O | O | - | -
+R55: F016 | Heater step 3 operation | - | - | - | IGN = ON | 1 minute | - | - | - | O | O | - | -
+R56: F017 | Cooler step 3 operation | - | - | - | IGN = ON | 1 minute | - | - | - | O | O | - | -
+R57: F018 | MOVE P/Seat to the foremost position(SLIDE) | - | - | - | Battery = ON | Until Stop Command | - | - | - | O | O | - | -
+R58: F019 | MOVE P/Seat to the last position(SLIDE) | - | - | - | Battery = ON | Until Stop Command | - | - | - | O | O | - | -
+R59: F01A | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R60: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R61: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R62: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R63: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R64: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R65: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R66: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R67: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R68: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R69: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R70: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R71: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R72: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R73: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R74: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R75: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R76: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R77: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R78: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R79: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+R80: - | (reserved) | - | - | - | - | - | - | - | - | - | - | - | -
+
+==========================================
+SHEET: ReadData_시트$
+==========================================
+R0: · Request Message | - | - | - | - | - | - | - | - | - | - | -
+R1: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | -
+R2: Data Byte | #1 | 22 | Read Data By Identifier | - | - | - | - | - | - | - | -
+R3: - | #2~#3 | C301 | dataIdentifier - User Option Record Local | - | - | - | - | - | - | - | -
+R5: · Positive Response Message | - | - | - | - | - | - | - | - | - | - | -
+R6: Data Byte | PID | Hex Value | Parameter Name | - | - | - | - | - | - | - | -
+R7: #0 | - | 62 | Read Data By Local Identifier Request Service ID | - | - | - | - | - | - | - | -
+R8: #1~#2 | - | C301 | Record Local Identifier (User Option) | - | - | - | - | - | - | - | -
+R11: User Option - DID C301 | - | - | - | - | - | - | - | - | - | - | -
+R12: Data Byte | PID | Hex Value | Description | - | - | Remark | - | - | - | - | -
+R13: #0 ~ #3 | 0x00 | XX | Supported PID | Supported PID : 0x01 ~ 0x20 | - | 0 = not supported, | - | - | - | - | -
+R14: - | - | - | - | Response : 4 Byte (A, B, C, D) | - | 1 = supported | - | - | - | - | -
+R15: - | - | - | - | Byte #0 : PID 0x01~0x08, Byte #1 : PID 0x09~0x10 | - | - | - | - | - | - | -
+R16: - | - | - | - | Byte #2 : PID 0x11~0x18, Byte #3 : PID 0x19~0x20 | - | - | - | - | - | - | -
+R18: #4 | - | - | - | - | - | - | - | - | - | - | -
+R19: #5 | - | - | - | - | - | - | - | - | - | - | -
+R20: #6 | - | - | - | - | - | - | - | - | - | - | -
+R24: · Request Message | - | - | - | - | - | - | - | - | - | - | -
+R25: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | -
+R26: Data Byte | #1 | 22 | RearDataByIdentifier Service ID | - | - | - | - | - | - | - | -
+R27: - | #2~#3 | C302 | dataIdentifier - Input Output Record Local Identifier | - | - | - | - | - | - | - | -
+R29: · Positive Response Message | - | - | - | - | - | - | - | - | - | - | -
+R30: Data Byte | PID | Hex Value | bit | Description | - | Remark | - | - | - | - | -
+R31: #0 | - | 62 | - | Read Data By Local Identifier Response Service ID | - | - | - | - | - | - | -
+R32: #1~#2 | - | C302 | - | Input Output Read | - | - | - | - | - | - | -
+R34: Input Output Record Local Identifier #2(Bit Data) - DID C302 | - | - | - | - | - | - | - | - | - | - | -
+R35: Data Byte | PID | Hex Value | bit | Description | - | Remark | - | - | - | - | -
+R36: #0 ~ #3 | 0x00 | XX | - | Supported PID | Supported PID : 0x01 ~ 0x20 | 0 = not supported, | - | - | - | - | -
+R37: - | - | - | - | - | Response : 4 Byte (A, B, C, D) | 1 = supported | - | - | - | - | -
+R38: - | - | - | - | - | Byte #0 : PID 0x01~0x08, Byte #1 : PID 0x09~0x10 | - | - | - | - | - | -
+R39: - | - | - | - | - | Byte #2 : PID 0x11~0x18, Byte #3 : PID 0x19~0x20 | - | - | - | - | - | -
+R40: - | - | - | - | - | - | - | - | RG3 2열 | JX1 2열 | JX1 PE 2열 | -
+R41: #4 | 0x01 | XX | b0 | Input | Cush Walkin Switch | (0:OFF / 1:ON) | 센서 입출력부 | - | O | O | -
+R42: - | 0x02 | - | b1 | Input | Back Walkin Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R43: - | 0x03 | - | b2 | Input | Recline Rear Manual Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R44: - | 0x04 | - | b3 | Input | Recline Front Manual Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R45: - | 0x05 | - | b4 | Input | Tilt Down Manual Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R46: - | 0x06 | - | b5 | Input | Tilt Up Manual Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R47: - | 0x07 | - | b6 | Input | 2nd seat Folding Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R48: - | 0x08 | - | b7 | Input | Luggage Folding Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R49: #5 | 0x09 | XX | b0 | Output | Actuator Signal Output | (0:OFF / 1:ON) | - | - | O | O | -
+R50: - | 0x0A | - | b1 | Output | Recline Backward Motor Output | (0:OFF / 1:ON) | - | - | O | O | -
+R51: - | 0x0B | - | b2 | Output | Recline Forward Motor Output | (0:OFF / 1:ON) | - | - | O | O | -
+R52: - | 0x0C | - | b3 | Output | Tilt Motor Down Output | (0:OFF / 1:ON) | - | - | O | O | -
+R53: - | 0x0D | - | b4 | Output | Tilt Motor Up Output | (0:OFF / 1:ON) | - | - | O | O | -
+R54: - | 0x0E | - | b5 | Input | IGN1 Switch  | (0:OFF / 1:ON) | - | - | O | - | -
+R55: - | 0x0F | - | b6 | Input | Recline Rear Limit Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R56: - | 0x10 | - | b7 | Input | Recline Front Limit Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R57: #6 | 0x11 | XX | b0 | Output | Heater High Indicator | (0:OFF / 1:ON) | - | - | O | O | -
+R58: - | 0x12 | - | b1 | Output | Heater Mid Indicator | (0:OFF / 1:ON) | - | - | O | O | -
+R59: - | 0x13 | - | b2 | Output | Heater Low Indicator | (0:OFF / 1:ON) | - | - | O | O | -
+R60: - | 0x14 | - | b3 | Output | Cooler High Indicator | (0:OFF / 1:ON) | - | - | O | O | -
+R61: - | 0x15 | - | b4 | Output | Cooler Mid Indicator | (0:OFF / 1:ON) | - | - | O | O | -
+R62: - | 0x16 | - | b5 | Output | Cooler Low Indicator | (0:OFF / 1:ON) | - | - | O | O | -
+R63: - | 0x17 | - | b6 | Output | Slide Backward Motor Output | (0:OFF / 1:ON) | - | - | O | O | -
+R64: - | 0x18 | - | b7 | Output | Slide Forward Motor Output | (0:OFF / 1:ON) | - | - | O | O | -
+R67: · Request Message | - | - | - | - | - | - | - | - | - | - | -
+R68: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | -
+R69: Data Byte | #1 | 22 | RearDataByIdentifier Service ID | - | - | - | - | - | - | - | -
+R70: - | #2~#3 | C303 | dataIdentifier - Input Output Record Local Identifier | - | - | - | - | - | - | - | -
+R72: · Positive Response Message | - | - | - | - | - | - | - | - | - | - | -
+R73: Data Byte | PID | Hex Value | bit | Description | - | Remark | - | - | - | - | -
+R74: #0 | - | 62 | - | Read Data By Local Identifier Response Service ID | - | - | - | - | - | - | -
+R75: #1~#2 | - | C303 | - | Input Output Read | - | - | - | - | - | - | -
+R77: Input Output Record Local Identifier #4(Bit Data) - DID C303 | - | - | - | - | - | - | - | - | - | - | -
+R78: Data Byte | PID | Hex Value | bit | Description | - | Remark | 비고 | - | - | - | -
+R79: #0 ~ #3 | 0x00 | XX | - | Supported PID | Supported PID : 0x01 ~ 0x20 | 0 = not supported, | - | - | - | - | -
+R80: - | - | - | - | - | Response : 4 Byte (A, B, C, D) | 1 = supported | - | - | - | - | -
+R81: - | - | - | - | - | Byte #0 : PID 0x01~0x08, Byte #1 : PID 0x09~0x10 | - | - | - | - | - | -
+R82: - | - | - | - | - | Byte #2 : PID 0x11~0x18, Byte #3 : PID 0x19~0x20 | - | - | - | - | - | -
+R83: - | - | - | - | - | - | - | - | RG3 2열 | JX1 2열 | JX1 PE 2열 | -
+R84: #4 | 0x01 | XX | b0 | Output | Recline  Motor Short Circuit GND Detection | (0:None / 1:Short Circuit GND) | 파워시트 Fail 정보 | - | O | O | -
+R85: - | 0x02 | - | b1 | Output | Tilt Motor Short Circuit GND Detection | (0:None / 1:Short Circuit GND) | - | - | O | O | -
+R86: - | 0x03 | - | b2 | Output | Recline  Motor Open Load Detection | (0:None / 1:Open) | - | - | O | O | -
+R87: - | 0x04 | - | b3 | Output | Tilt  Motor Open Load Detection | (0:None / 1:Open) | - | - | O | O | -
+R88: - | 0x05 | - | b4 | Output | Actuator Signal Output Short Circuit GND Detection | (0:None / 1:Short Circuit GND) | - | - | O | O | -
+R89: - | 0x06 | - | b5 | Output | Actuator Signal Output Short Circuit Bat Detection | (0:None / 1:Short Circuit Bat) | - | - | O | O | -
+R90: - | 0x07 | - | b6 | Output | Slide  Motor Short Circuit GND Detection | (0:None / 1:Short Circuit GND) | - | - | O | O | -
+R91: - | 0x08 | - | b7 | Output | Slide Motor Open load Detection | (0:None / 1:Open) | - | - | O | O | -
+R92: #5 | 0x09 | XX | b0 | Input | Slide Backward Manual Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R93: - | 0x0A | - | b1 | Input | Slide Forward Manual Switch | (0:OFF / 1:ON) | - | - | O | O | -
+R94: - | 0x0B | - | b2 | input | Termination Resistor(종단저항 여부) | (0:Not applied  / 1:Applied) | - | - | O | - | -
+R95: - | 0x0C | - | b3 | - | - | - | - | - | - | - | -
+R96: - | 0x0D | - | b4 | - | - | - | - | - | - | - | -
+R97: - | 0x0E | - | b5 | - | - | - | - | - | - | - | -
+R98: - | 0x0F | - | b6 | - | - | - | - | - | - | - | -
+R99: - | 0x10 | - | b7 | - | - | - | - | - | - | - | -
+R103: · Request Message | - | - | - | - | - | - | - | - | - | - | -
+R104: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | -
+R105: Data Byte | #1 | 22 | RearDataByIdentifier Service ID | - | - | - | - | - | - | - | -
+R106: - | #2~#3 | C304 | dataIdentifier - Input Output Record Local Identifier #1 | - | - | - | - | - | - | - | -
+R108: · Positive Response Message | - | - | - | - | - | - | - | - | - | - | -
+R109: Data Byte | PID | Hex Value | Description | - | - | Remark | - | - | - | - | -
+R110: #0 | - | 62 | Read Data By Local Identifier Response Service ID | - | - | - | - | - | - | - | -
+R111: #1~#2 | - | C304 | Input Output Read #1 | - | - | - | - | - | - | - | -
+R113: Input Output Record Local Identifier #3(Byte Data) - DID C304 | - | - | - | - | - | - | - | - | - | - | -
+R114: Data Byte | PID | Hex Value | Description | - | - | Remark | - | - | - | - | -
+R115: #0 ~ #3 | 0x00 | XX | Supported PID | Supported PID : 0x01 ~ 0x20 | - | 0 = not supported, | - | - | - | - | -
+R116: - | - | - | - | Response : 4 Byte (A, B, C, D) | - | 1 = supported | - | - | - | - | -
+R117: - | - | - | - | Byte #0 : PID 0x01~0x08, Byte #1 : PID 0x09~0x10 | - | - | - | - | - | - | -
+R118: - | - | - | - | Byte #2 : PID 0x11~0x18, Byte #3 : PID 0x19~0x20 | - | - | - | - | - | - | -
+R119: - | - | - | - | - | - | - | 파워시트 위치 정보 | RG3 2열 | JX1 2열 | JX1 PE 2열 | -
+R120: #4 | 0x01 | XX | Input | Recline Position | - | 32 * X [edge] | ECU는 Recline edge수를 32으로 나누어 전송. 진단기는 32을 곱해서 화면 표시. 아래도 동일한 개념. | - | O | O | -
+R121: #5 | 0x02 | XX | Input | Tilt Position | - | 8 * X [edge] | - | - | O | O | -
+R122: #6 | 0x03 | XX | Input | Slide Position | - | 16 * X [edge] | - | - | O | O | -
+R123: #7 | 0x04 | XX | Input | - | - | - | - | - | - | - | -
+R128: · Request Message | - | - | - | - | - | - | - | - | - | - | -
+R129: - | Message Byte | Hex Value | Parameter Name | - | - | - | - | - | - | - | -
+R130: Data Byte | #1 | 22 | RearDataByIdentifier Service ID | - | - | - | - | - | - | - | -
+R131: - | #2~#3 | C305 | dataIdentifier - Input Output Record Local Identifier | - | - | - | - | - | - | - | -
+R133: · Positive Response Message | - | - | - | - | - | - | - | - | - | - | -
+R134: Data Byte | PID | Hex Value | bit | Description | - | Remark | - | - | - | - | -
+R135: #0 | - | 62 | - | Read Data By Local Identifier Response Service ID | - | - | - | - | - | - | -
+R136: #1~#2 | - | C305 | - | Input Output Read | - | - | - | - | - | - | -
+R138: Input Output Record Local Identifier #5(Bit Data) - DID C305 | - | - | - | - | - | - | - | - | - | - | -
+R139: Data Byte | PID | Hex Value | bit | Description | - | Remark | - | - | - | - | -
+R140: #0 ~ #3 | 0x00 | XX | - | Supported PID | Supported PID : 0x01 ~ 0x20 | 0 = not supported, | 히터통풍Fail | - | - | - | -
+R141: - | - | - | - | - | Response : 4 Byte (A, B, C, D) | 1 = supported | - | - | - | - | -
+R142: - | - | - | - | - | Byte #0 : PID 0x01~0x08, Byte #1 : PID 0x09~0x10 | - | - | - | - | - | -
+R143: - | - | - | - | - | Byte #2 : PID 0x11~0x18, Byte #3 : PID 0x19~0x20 | - | - | - | - | - | -
+R144: - | - | - | - | - | - | - | - | - | RG3 2열 | JX1 2열 | JX1 PE 2열
+R145: #4 | 0x01 | XX | b0 | Input | Heater NTC open detection | (0:None / 1:Open) | 히터 only | - | - | O | O
+R146: - | 0x02 | - | b1 | Input | Heater NTC short to GND detection | (0:None / 1:Short) | 히터 only | - | - | O | O
+R147: - | 0x03 | - | b2 | Input | Heater NTC short to Bat detection | (0:None / 1:Short) | 히터 only | 동시검출 : NTC open | - | O | O
+R148: - | 0x04 | - | b3 | Output | Heater wire open detection | (0:None / 1:Open) | 히터 only | - | - | O | O
+R149: - | 0x05 | - | b4 | Output | Heater wire short to GND detection | (0:None / 1:Short) | 히터 only | - | - | O | O
+R150: - | 0x06 | - | b5 | Output | Heater wire short to Bat detection | (0:None / 1:Short) | 히터 only | 동시검출 : Heater wire open | - | O | O
+R151: - | 0x07 | - | b6 | Output | Blower Power wire open detection | (0:None / 1:Open) | 통풍 only | - | - | O | O
+R152: - | 0x08 | - | b7 | Output | Blower Power wire short to GND detection | (0:None / 1:Short) | 통풍 only | - | - | O | O
+R153: #5 | 0x09 | XX | b0 | Output | Blower Power wire short to Bat detection | (0:None / 1:Short) | 통풍 only | 동시검출 : Blower Power Open | - | O | O
+R154: - | 0x0A | - | b1 | Output | Blower VSP wire open detection | (0:None / 1:Open) | 통풍 only | 동시검출 : Blower Power Open | - | O | O
+R155: - | 0x0B | - | b2 | Output | Blower VSP wire short to GND detection | (0:None / 1:Short) | 통풍 only | - | - | O | O
+R156: - | 0x0C | - | b3 | Output | Blower VSP wire short to Bat detection | (0:None / 1:Short) | 통풍 only | - | - | O | O
+R157: - | 0x0D | - | b4 | Input | Center Heater NTC open detection | (0:None / 1:Open) | JX1 2열 only | - | - | O | O
+R158: - | 0x0E | - | b5 | Input | Center Heater NTC short to GND detection | (0:None / 1:Short) | JX1 2열 only | - | - | O | O
+R159: - | 0x0F | - | b6 | Input | Center Heater NTC short to Bat detection | (0:None / 1:Short) | JX1 2열 only | 동시검출 : NTC open | - | O | O
+R160: - | 0x10 | - | b7 | Output | Center Heater wire open detection | (0:None / 1:Open) | JX1 2열 only | - | - | O | O
+R161: #6 | 0x11 | XX | b0 | Output | Center Heater wire short to GND detection | (0:None / 1:Short) | JX1 2열 only | - | - | O | O
+R162: - | 0x12 | - | b1 | Output | Center Heater wire short to Bat detection | (0:None / 1:Short) | JX1 2열 only | 동시검출 : Heater wire open | - | O | O
+R163: - | 0x13 | - | b2 | Output | Under Target Temperature Failure | (0:None / 1:Present) | 히터 or TED only (목표온도 미도달) | - | - | O | O
+R164: - | 0x14 | - | b3 | Output | Center Heater Under Target Temperature Failure | (0:None / 1:Present) | 히터 or TED only (목표온도 미도달) | - | - | O | O
+R165: - | 0x15 | - | b4 | - | - | - | - | - | - | - | -
+R166: - | 0x16 | - | b5 | - | - | - | - | - | - | - | -
+R167: - | 0x17 | - | b6 | - | - | - | - | - | - | - | -
+R168: - | 0x18 | - | b7 | - | - | - | - | - | - | - | -
+
+==========================================
+SHEET: ReadData DID_시트$
+==========================================
+R0: - | 1.1.1.1.1      Data Identifier for BCM | - | - | - | - | - | - | - | -
+R1: - | · Data Identifier of BCM | - | - | - | - | - | - | - | -
+R2: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R3: - | #B001h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R4: - | #B002h | RDBI - RKE Data Record Local | Byte frame | - | - | - | - | - | -
+R5: - | #B003h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R6: - | #B004h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R7: - | #B005h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R8: - | #B006h | RDBI - Input Output Record Local Identifier #4(Bit Data) | Byte frame | - | - | - | - | - | -
+R9: - | #B007h | RDBI - Input Output Record Local Identifier #5(Bit Data) | Byte frame | - | - | - | - | - | -
+R10: - | #B008h | RDBI - Input Output Record Local Identifier #6(Bit Data) | Byte frame | - | - | - | - | - | -
+R11: - | #B009h | RDBI - Input Output Record Local Identifier #7(Bit Data) | Byte frame | - | - | - | - | - | -
+R12: - | #B00Ah | RDBI - Input Output Record Local Identifier #8(Bit Data) | Byte frame | - | - | - | - | - | -
+R13: - | #B00Bh | RDBI - Input Output Record Local Identifier #8(Bit Data) | Byte frame | - | - | - | - | - | -
+R14: - | Table 5: Data Identifier of BCM | - | - | - | - | - | - | - | -
+R16: - | 1.1.1.1.2      Data Identifier of DDM | - | - | - | - | - | - | - | -
+R17: - | · Data Identifier of DDM | - | - | - | - | - | - | - | -
+R18: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R19: - | #B101h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R20: - | #B102h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R21: - | #B103h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R22: - | #B104h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R23: - | #B105h | RDBI - Input Output Record Local Identifier #4(Bit Data) | Byte frame | - | - | - | - | - | -
+R24: - | Table 6: Data Identifier of DDM | - | - | - | - | - | - | - | -
+R26: - | 1.1.1.1.3      Data Identifier of ADM | - | - | - | - | - | - | - | -
+R27: - | · Data Identifier of ADM | - | - | - | - | - | - | - | -
+R28: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R29: - | #B201h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R30: - | #B202h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R31: - | #B203h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R32: - | Table 7: Data Identifier of ADM | - | - | - | - | - | - | - | -
+R34: - | 1.1.1.1.4      Data Identifier of MFSW | - | - | - | - | - | - | - | -
+R35: - | · Data Identifier of MFSW | - | - | - | - | - | - | - | -
+R36: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R37: - | #B301h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R38: - | #B302h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R39: - | #B303h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R40: - | Table 8: Data Identifier of MFSW | - | - | - | - | - | - | - | -
+R42: - | 1.1.1.1.5      Data Identifier of PSM | - | - | - | - | - | - | - | -
+R43: - | · Data Identifier of PSM | - | - | - | - | - | - | - | -
+R44: - | Data Identifier | Description | Remark | HI | - | - | - | - | -
+R45: - | #B401h | RDBI - User Option Record Local Identifier | Byte frame | O | - | - | - | - | -
+R46: - | #B402h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | O | - | - | - | - | -
+R47: - | #B403h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | O | - | - | - | - | -
+R48: - | #B404h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | O | - | - | - | - | -
+R49: - | #B405h | RDBI - Input Output Record Local Identifier #4(Bit Data) | Byte frame | O | - | - | - | - | -
+R50: - | Table 9: Data Identifier of PSM | - | - | - | - | - | - | - | -
+R53: - | 1.1.1.1.6      Data Identifier of SCM | - | - | - | - | - | - | - | -
+R54: - | · Data Identifier of SCM | - | - | - | - | - | - | - | -
+R55: - | Data Identifier | Description | Remark | HI | - | - | - | - | -
+R56: - | #B501h | RDBI - User Option Record Local Identifier | Byte frame | O | - | - | - | - | -
+R57: - | #B502h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | O | - | - | - | - | -
+R58: - | #B503h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | O | - | - | - | - | -
+R59: - | Table 10: Data Identifier of SCM | - | - | - | - | - | - | - | -
+R62: - | 1.1.1.1.8      Data Identifier of APSM | - | - | - | - | - | - | - | -
+R63: - | · Data Identifier of APSM | - | - | - | - | - | - | - | -
+R64: - | Data Identifier | Description | Remark | HI | - | - | - | - | -
+R65: - | #B701h | RDBI - User Option Record Local Identifier | Byte frame | X | - | - | - | - | -
+R66: - | #B702h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | O | - | - | - | - | -
+R67: - | #B703h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | O | - | - | - | - | -
+R68: - | #B704h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | O | - | - | - | - | -
+R69: - | Table 10: Data Identifier of ASPM | - | - | - | - | - | - | - | -
+R71: - | 1.1.1.1.9      Data Identifier of HUD | - | - | - | - | - | - | - | -
+R72: - | · Data Identifier of HUD | - | - | - | - | - | - | - | -
+R73: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R74: - | #B801h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R75: - | #B802h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R76: - | #B803h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R77: - | #B804h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R78: - | Table 11: Data Identifier of HUD | - | - | - | - | - | - | - | -
+R80: - | 1.1.1.1.10  Data Identifier of PTM | - | - | - | - | - | - | - | -
+R81: - | · Data Identifier of PTM | - | - | - | - | - | - | - | -
+R82: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R83: - | #B901h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R84: - | #B902h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R85: - | #B903h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R86: - | #B904h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R87: - | Table 11: Data Identifier of PTM | - | - | - | - | - | - | - | -
+R89: - | 1.1.1.1.11  Data Identifier of HSM | - | - | - | - | - | - | - | -
+R90: - | · Data Identifier of HSM | - | - | - | - | - | - | - | -
+R91: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R92: - | #BA01h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R93: - | #BA02h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R94: - | #BA03h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R95: - | #BA04h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R96: - | Table 11: Data Identifier of HSM | - | - | - | - | - | - | - | -
+R98: - | 1.1.1.1.12  Data Identifier of STM | - | - | - | - | - | - | - | -
+R99: - | · Data Identifier of STM | - | - | - | - | - | - | - | -
+R100: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R101: - | #BB01h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R102: - | #BB02h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R103: - | #BB03h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R104: - | #BB04h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R105: - | Table 11: Data Identifier of STM | - | - | - | - | - | - | - | -
+R107: - | 1.1.1.1.13  Data Identifier of SJB | - | - | - | - | - | - | - | -
+R108: - | · Data Identifier of SJB | - | - | - | - | - | - | - | -
+R109: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R110: - | #BC01h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R111: - | #BC02h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R112: - | #BC03h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R113: - | #BC04h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R114: - | #BC05h | RDBI - Input Output Record Local Identifier #4(Bit Data) | Byte frame | - | - | - | - | - | -
+R115: - | Table 11: Data Identifier of SJB | - | - | - | - | - | - | - | -
+R117: - | 1.1.1.1.13  Data Identifier of FSJB | - | - | - | - | - | - | - | -
+R118: - | · Data Identifier of FSJB | - | - | - | - | - | - | - | -
+R119: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R120: - | #BC01h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R121: - | #BC02h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R122: - | #BC03h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R123: - | #BC04h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R124: - | Table 11: Data Identifier of FSJB | - | - | - | - | - | - | - | -
+R126: - | 1.1.1.1.14  Data Identifier of RSJB | - | - | - | - | - | - | - | -
+R127: - | · Data Identifier of RSJB | - | - | - | - | - | - | - | -
+R128: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R129: - | #BD01h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R130: - | #BD02h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R131: - | #BD03h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R132: - | #BD04h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R133: - | Table 11: Data Identifier of RSJB | - | - | - | - | - | - | - | -
+R136: - | 1.1.1.1.14  Data Identifier of PTGM | - | - | - | - | - | - | - | -
+R137: - | · Data Identifier of PTGM | - | - | - | - | - | - | - | -
+R138: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R139: - | #B901h | RDBI - dataIdentifier #1 (Bit Data) | Byte frame | - | - | - | - | - | -
+R140: - | #B902h | RDBI - dataIdentifier #2 (Byte Data) | Byte frame | - | - | - | - | - | -
+R141: - | #B903h | RDBI - dataIdentifier #3 (Bit Data) | Byte frame | - | - | - | - | - | -
+R142: - | #B904h | RDBI - dataIdentifier #4 (Bit Data) | Byte frame | - | - | - | - | - | -
+R143: - | Table 11: Data Identifier of PTGM | - | - | - | - | - | - | - | -
+R146: - | 1.1.1.1.14  Data Identifier of SLB | - | - | - | - | - | - | - | -
+R147: - | · Data Identifier of SLB | - | - | - | - | - | - | - | -
+R148: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R149: - | #C103h | RDBI - dataIdentifier #1 (Bit Data) | Byte frame | - | - | - | - | - | -
+R150: - | #C104h | RDBI - dataIdentifier #2 (Bit Data) | Byte frame | - | - | - | - | - | -
+R151: - | Table 11: Data Identifier of SLB | - | - | - | - | - | - | - | -
+R153: - | 1.1.1.1.14  Data Identifier of DSS | - | - | - | - | - | - | - | -
+R154: - | · Data Identifier of DSS | - | - | - | - | - | - | - | -
+R155: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R156: - | #C003h | RDBI - dataIdentifier #1 (Bit Data) | Byte frame | - | - | - | - | - | -
+R157: - | Table 11: Data Identifier of DSS | - | - | - | - | - | - | - | -
+R160: - | 1.1.1.1.9      Data Identifier of RLPSM | - | - | - | - | - | - | - | -
+R161: - | · Data Identifier of RLPSM | - | - | - | - | - | - | - | -
+R162: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R163: - | #BA01h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R164: - | #BA02h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R165: - | #BA03h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R166: - | #BA04h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R167: - | Table 10: Data Identifier of RLSPM | - | - | - | - | - | - | - | -
+R170: - | 1.1.1.1.10     Data Identifier of RRPSM | - | - | - | - | - | - | - | -
+R171: - | · Data Identifier of RRPSM | - | - | - | - | - | - | - | -
+R172: - | Data Identifier | Description | Remark | - | - | - | - | - | -
+R173: - | #BB01h | RDBI - User Option Record Local Identifier | Byte frame | - | - | - | - | - | -
+R174: - | #BB02h | RDBI - Input Output Record Local Identifier #1(Byte Data) | Byte frame | - | - | - | - | - | -
+R175: - | #BB03h | RDBI - Input Output Record Local Identifier #2(Bit Data) | Byte frame | - | - | - | - | - | -
+R176: - | #BB04h | RDBI - Input Output Record Local Identifier #3(Bit Data) | Byte frame | - | - | - | - | - | -
+R177: - | Table 10: Data Identifier of RRSPM | - | - | - | - | - | - | - | -
+R181: - | 1.1.1.1.10     Data Identifier of JX1 RLPSU | - | - | - | - | - | - | - | -
+R182: - | · Data Identifier of JX1 RLPSU, RRPSU | - | - | - | - | - | - | - | -
+R183: - | Data Identifier | Description | Remark | RG3 | JX1 2열 | JX1 PE 2열 | - | - | -
+R184: - | #C301h | RDBI - User Option Record Local Identifier | Byte frame | O | O | O | user option | - | -
+R185: - | #C302h | RDBI - Input Output Record Local Identifier #1 (Bit Data) | Byte frame | O | O | O | 센서 입출력부 | - | -
+R186: - | #C303h | RDBI - Input Output Record Local Identifier #2 (Bit Data) | Byte frame | O | O | O | 파워시트 Fail정보 | - | -
+R187: - | #C304h | RDBI - Input Output Record Local Identifier #4 (Byte Data) | Byte frame | O | O | O | 파워시트 위치정보 | - | -
+R188: - | #C305h | RDBI - Input Output Record Local Identifier #3 (Bit Data) | Byte frame | O | O | O | 히터통풍 Fail정보 | - | -
+R189: - | Table 11: Data Identifier of JX1 RLPSU | - | - | - | - | - | - | - | -

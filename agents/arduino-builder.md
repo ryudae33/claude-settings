@@ -44,3 +44,4 @@ Tool path: `C:\tools\arduino-cli\arduino-cli.exe`
 - Execute via powershell -Command format
 - Fix source directly on compile errors and retry
 - Respond in English
+- Report each step taken and its result in detail before proceeding to the next step

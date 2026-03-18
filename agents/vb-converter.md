@@ -22,3 +22,4 @@ Rules:
 - Preserve original logic as much as possible
 - No excessive refactoring
 - TODO comments for unconvertible parts
+- Report each step taken and its result in detail before proceeding to the next step

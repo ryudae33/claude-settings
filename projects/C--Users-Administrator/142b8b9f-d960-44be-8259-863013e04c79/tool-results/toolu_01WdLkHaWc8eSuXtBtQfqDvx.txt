@@ -1,0 +1,516 @@
+2109-            <unmanaged-short>D3D11_MESSAGE_ID_DEVICE_RESOLVESUBRESOURCE_FORMAT_INVALID</unmanaged-short>
+2110-        </member>
+2111:        <member name="F:Vortice.Direct3D11.Debug.MessageId.BufferMapInvalidMapType">
+2112-            <unmanaged>D3D11_MESSAGE_ID_BUFFER_MAP_INVALIDMAPTYPE</unmanaged>
+2113-            <unmanaged-short>D3D11_MESSAGE_ID_BUFFER_MAP_INVALIDMAPTYPE</unmanaged-short>
+2114-        </member>
+2115:        <member name="F:Vortice.Direct3D11.Debug.MessageId.BufferMapInvalidFlags">
+2116-            <unmanaged>D3D11_MESSAGE_ID_BUFFER_MAP_INVALIDFLAGS</unmanaged>
+2117-            <unmanaged-short>D3D11_MESSAGE_ID_BUFFER_MAP_INVALIDFLAGS</unmanaged-short>
+2118-        </member>
+2119:        <member name="F:Vortice.Direct3D11.Debug.MessageId.BufferMapAlreadyMapped">
+2120-            <unmanaged>D3D11_MESSAGE_ID_BUFFER_MAP_ALREADYMAPPED</unmanaged>
+2121-            <unmanaged-short>D3D11_MESSAGE_ID_BUFFER_MAP_ALREADYMAPPED</unmanaged-short>
+2122-        </member>
+2123:        <member name="F:Vortice.Direct3D11.Debug.MessageId.BufferMapDeviceRemovedReturn">
+2124-            <unmanaged>D3D11_MESSAGE_ID_BUFFER_MAP_DEVICEREMOVED_RETURN</unmanaged>
+2125-            <unmanaged-short>D3D11_MESSAGE_ID_BUFFER_MAP_DEVICEREMOVED_RETURN</unmanaged-short>
+2126-        </member>
+2127:        <member name="F:Vortice.Direct3D11.Debug.MessageId.BufferUnmapNotMapped">
+2128-            <unmanaged>D3D11_MESSAGE_ID_BUFFER_UNMAP_NOTMAPPED</unmanaged>
+2129-            <unmanaged-short>D3D11_MESSAGE_ID_BUFFER_UNMAP_NOTMAPPED</unmanaged-short>
+2130-        </member>
+2131:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture1DMapInvalidMapType">
+2132-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE1D_MAP_INVALIDMAPTYPE</unmanaged>
+2133-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE1D_MAP_INVALIDMAPTYPE</unmanaged-short>
+2134-        </member>
+2135:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture1DMapInvalidSubresource">
+2136-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE1D_MAP_INVALIDSUBRESOURCE</unmanaged>
+2137-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE1D_MAP_INVALIDSUBRESOURCE</unmanaged-short>
+2138-        </member>
+2139:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture1DMapInvalidFlags">
+2140-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE1D_MAP_INVALIDFLAGS</unmanaged>
+2141-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE1D_MAP_INVALIDFLAGS</unmanaged-short>
+2142-        </member>
+2143:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture1DMapAlreadyMapped">
+2144-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE1D_MAP_ALREADYMAPPED</unmanaged>
+2145-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE1D_MAP_ALREADYMAPPED</unmanaged-short>
+2146-        </member>
+2147:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture1DMapDeviceRemovedReturn">
+2148-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE1D_MAP_DEVICEREMOVED_RETURN</unmanaged>
+2149-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE1D_MAP_DEVICEREMOVED_RETURN</unmanaged-short>
+--
+2153-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE1D_UNMAP_INVALIDSUBRESOURCE</unmanaged-short>
+2154-        </member>
+2155:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture1DUnmapNotMapped">
+2156-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE1D_UNMAP_NOTMAPPED</unmanaged>
+2157-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE1D_UNMAP_NOTMAPPED</unmanaged-short>
+2158-        </member>
+2159:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture2DMapInvalidMapType">
+2160-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE2D_MAP_INVALIDMAPTYPE</unmanaged>
+2161-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE2D_MAP_INVALIDMAPTYPE</unmanaged-short>
+2162-        </member>
+2163:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture2DMapInvalidSubresource">
+2164-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE2D_MAP_INVALIDSUBRESOURCE</unmanaged>
+2165-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE2D_MAP_INVALIDSUBRESOURCE</unmanaged-short>
+2166-        </member>
+2167:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture2DMapInvalidFlags">
+2168-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE2D_MAP_INVALIDFLAGS</unmanaged>
+2169-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE2D_MAP_INVALIDFLAGS</unmanaged-short>
+2170-        </member>
+2171:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture2DMapAlreadyMapped">
+2172-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE2D_MAP_ALREADYMAPPED</unmanaged>
+2173-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE2D_MAP_ALREADYMAPPED</unmanaged-short>
+2174-        </member>
+2175:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture2DMapDeviceRemovedReturn">
+2176-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE2D_MAP_DEVICEREMOVED_RETURN</unmanaged>
+2177-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE2D_MAP_DEVICEREMOVED_RETURN</unmanaged-short>
+--
+2181-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE2D_UNMAP_INVALIDSUBRESOURCE</unmanaged-short>
+2182-        </member>
+2183:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture2DUnmapNotMapped">
+2184-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE2D_UNMAP_NOTMAPPED</unmanaged>
+2185-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE2D_UNMAP_NOTMAPPED</unmanaged-short>
+2186-        </member>
+2187:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture3DMapInvalidMapType">
+2188-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE3D_MAP_INVALIDMAPTYPE</unmanaged>
+2189-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE3D_MAP_INVALIDMAPTYPE</unmanaged-short>
+2190-        </member>
+2191:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture3DMapInvalidSubresource">
+2192-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE3D_MAP_INVALIDSUBRESOURCE</unmanaged>
+2193-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE3D_MAP_INVALIDSUBRESOURCE</unmanaged-short>
+2194-        </member>
+2195:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture3DMapInvalidFlags">
+2196-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE3D_MAP_INVALIDFLAGS</unmanaged>
+2197-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE3D_MAP_INVALIDFLAGS</unmanaged-short>
+2198-        </member>
+2199:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture3DMapAlreadyMapped">
+2200-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE3D_MAP_ALREADYMAPPED</unmanaged>
+2201-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE3D_MAP_ALREADYMAPPED</unmanaged-short>
+2202-        </member>
+2203:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture3DMapDeviceRemovedReturn">
+2204-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE3D_MAP_DEVICEREMOVED_RETURN</unmanaged>
+2205-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE3D_MAP_DEVICEREMOVED_RETURN</unmanaged-short>
+--
+2209-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE3D_UNMAP_INVALIDSUBRESOURCE</unmanaged-short>
+2210-        </member>
+2211:        <member name="F:Vortice.Direct3D11.Debug.MessageId.Texture3DUnmapNotMapped">
+2212-            <unmanaged>D3D11_MESSAGE_ID_TEXTURE3D_UNMAP_NOTMAPPED</unmanaged>
+2213-            <unmanaged-short>D3D11_MESSAGE_ID_TEXTURE3D_UNMAP_NOTMAPPED</unmanaged-short>
+--
+2385-            <unmanaged-short>D3D11_MESSAGE_ID_DEVICE_DRAW_OUTPUT_STREAM_NOT_SET</unmanaged-short>
+2386-        </member>
+2387:        <member name="F:Vortice.Direct3D11.Debug.MessageId.DeviceDrawBoundResourceMapped">
+2388-            <unmanaged>D3D11_MESSAGE_ID_DEVICE_DRAW_BOUND_RESOURCE_MAPPED</unmanaged>
+2389-            <unmanaged-short>D3D11_MESSAGE_ID_DEVICE_DRAW_BOUND_RESOURCE_MAPPED</unmanaged-short>
+--
+3177-            <unmanaged-short>D3D11_MESSAGE_ID_DEVICE_DRAWINDIRECT_OFFSET_OVERFLOW</unmanaged-short>
+3178-        </member>
+3179:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceMapInvalidMapType">
+3180-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_MAP_INVALIDMAPTYPE</unmanaged>
+3181-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_MAP_INVALIDMAPTYPE</unmanaged-short>
+3182-        </member>
+3183:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceMapInvalidSubresource">
+3184-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_MAP_INVALIDSUBRESOURCE</unmanaged>
+3185-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_MAP_INVALIDSUBRESOURCE</unmanaged-short>
+3186-        </member>
+3187:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceMapInvalidFlags">
+3188-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_MAP_INVALIDFLAGS</unmanaged>
+3189-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_MAP_INVALIDFLAGS</unmanaged-short>
+3190-        </member>
+3191:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceMapAlreadyMapped">
+3192-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_MAP_ALREADYMAPPED</unmanaged>
+3193-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_MAP_ALREADYMAPPED</unmanaged-short>
+3194-        </member>
+3195:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceMapDeviceRemovedReturn">
+3196-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_MAP_DEVICEREMOVED_RETURN</unmanaged>
+3197-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_MAP_DEVICEREMOVED_RETURN</unmanaged-short>
+3198-        </member>
+3199:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceMapOutOfMemoryReturn">
+3200-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_MAP_OUTOFMEMORY_RETURN</unmanaged>
+3201-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_MAP_OUTOFMEMORY_RETURN</unmanaged-short>
+3202-        </member>
+3203:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceMapWithoutInitialDiscard">
+3204-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_MAP_WITHOUT_INITIAL_DISCARD</unmanaged>
+3205-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_MAP_WITHOUT_INITIAL_DISCARD</unmanaged-short>
+--
+3209-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_UNMAP_INVALIDSUBRESOURCE</unmanaged-short>
+3210-        </member>
+3211:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResourceUnmapNotMapped">
+3212-            <unmanaged>D3D11_MESSAGE_ID_RESOURCE_UNMAP_NOTMAPPED</unmanaged>
+3213-            <unmanaged-short>D3D11_MESSAGE_ID_RESOURCE_UNMAP_NOTMAPPED</unmanaged-short>
+--
+3893-            <unmanaged-short>D3D11_MESSAGE_ID_DEVICE_UNORDEREDACCESSVIEW_ATOMIC_UNSIGNED_MINMAX_UNSUPPORTED</unmanaged-short>
+3894-        </member>
+3895:        <member name="F:Vortice.Direct3D11.Debug.MessageId.DeviceDispatchBoundResourceMapped">
+3896-            <unmanaged>D3D11_MESSAGE_ID_DEVICE_DISPATCH_BOUND_RESOURCE_MAPPED</unmanaged>
+3897-            <unmanaged-short>D3D11_MESSAGE_ID_DEVICE_DISPATCH_BOUND_RESOURCE_MAPPED</unmanaged-short>
+--
+4997-            <unmanaged-short>D3D11_MESSAGE_ID_ENCRYPTIONBLT_DST_NOT_STAGING</unmanaged-short>
+4998-        </member>
+4999:        <member name="F:Vortice.Direct3D11.Debug.MessageId.EncryptionbltSourceMapped">
+5000-            <unmanaged>D3D11_MESSAGE_ID_ENCRYPTIONBLT_SRC_MAPPED</unmanaged>
+5001-            <unmanaged-short>D3D11_MESSAGE_ID_ENCRYPTIONBLT_SRC_MAPPED</unmanaged-short>
+5002-        </member>
+5003:        <member name="F:Vortice.Direct3D11.Debug.MessageId.EncryptionbltDestinationMapped">
+5004-            <unmanaged>D3D11_MESSAGE_ID_ENCRYPTIONBLT_DST_MAPPED</unmanaged>
+5005-            <unmanaged-short>D3D11_MESSAGE_ID_ENCRYPTIONBLT_DST_MAPPED</unmanaged-short>
+--
+5053-            <unmanaged-short>D3D11_MESSAGE_ID_DECRYPTIONBLT_DST_NOT_RENDER_TARGET</unmanaged-short>
+5054-        </member>
+5055:        <member name="F:Vortice.Direct3D11.Debug.MessageId.DecrementYptionbltSourceMapped">
+5056-            <unmanaged>D3D11_MESSAGE_ID_DECRYPTIONBLT_SRC_MAPPED</unmanaged>
+5057-            <unmanaged-short>D3D11_MESSAGE_ID_DECRYPTIONBLT_SRC_MAPPED</unmanaged-short>
+5058-        </member>
+5059:        <member name="F:Vortice.Direct3D11.Debug.MessageId.DecrementYptionbltDestinationMapped">
+5060-            <unmanaged>D3D11_MESSAGE_ID_DECRYPTIONBLT_DST_MAPPED</unmanaged>
+5061-            <unmanaged-short>D3D11_MESSAGE_ID_DECRYPTIONBLT_DST_MAPPED</unmanaged-short>
+--
+5629-            <unmanaged-short>D3D11_MESSAGE_ID_UPDATETILEMAPPINGS_INVALID_PARAMETER</unmanaged-short>
+5630-        </member>
+5631:        <member name="F:Vortice.Direct3D11.Debug.MessageId.CopyTileMappingsInvalidParameter">
+5632-            <unmanaged>D3D11_MESSAGE_ID_COPYTILEMAPPINGS_INVALID_PARAMETER</unmanaged>
+5633-            <unmanaged-short>D3D11_MESSAGE_ID_COPYTILEMAPPINGS_INVALID_PARAMETER</unmanaged-short>
+--
+5649-            <unmanaged-short>D3D11_MESSAGE_ID_TILEDRESOURCEBARRIER_INVALID_PARAMETER</unmanaged-short>
+5650-        </member>
+5651:        <member name="F:Vortice.Direct3D11.Debug.MessageId.NullTileMappingAccessWarning">
+5652-            <unmanaged>D3D11_MESSAGE_ID_NULL_TILE_MAPPING_ACCESS_WARNING</unmanaged>
+5653-            <unmanaged-short>D3D11_MESSAGE_ID_NULL_TILE_MAPPING_ACCESS_WARNING</unmanaged-short>
+5654-        </member>
+5655:        <member name="F:Vortice.Direct3D11.Debug.MessageId.NullTileMappingAccessError">
+5656-            <unmanaged>D3D11_MESSAGE_ID_NULL_TILE_MAPPING_ACCESS_ERROR</unmanaged>
+5657-            <unmanaged-short>D3D11_MESSAGE_ID_NULL_TILE_MAPPING_ACCESS_ERROR</unmanaged-short>
+5658-        </member>
+5659:        <member name="F:Vortice.Direct3D11.Debug.MessageId.DirtyTileMappingAccess">
+5660-            <unmanaged>D3D11_MESSAGE_ID_DIRTY_TILE_MAPPING_ACCESS</unmanaged>
+5661-            <unmanaged-short>D3D11_MESSAGE_ID_DIRTY_TILE_MAPPING_ACCESS</unmanaged-short>
+5662-        </member>
+5663:        <member name="F:Vortice.Direct3D11.Debug.MessageId.DuplicateTileMappingsInCoveredArea">
+5664-            <unmanaged>D3D11_MESSAGE_ID_DUPLICATE_TILE_MAPPINGS_IN_COVERED_AREA</unmanaged>
+5665-            <unmanaged-short>D3D11_MESSAGE_ID_DUPLICATE_TILE_MAPPINGS_IN_COVERED_AREA</unmanaged-short>
+5666-        </member>
+5667:        <member name="F:Vortice.Direct3D11.Debug.MessageId.TileMappingsInCoveredAreaDuplicatedOutside">
+5668-            <unmanaged>D3D11_MESSAGE_ID_TILE_MAPPINGS_IN_COVERED_AREA_DUPLICATED_OUTSIDE</unmanaged>
+5669-            <unmanaged-short>D3D11_MESSAGE_ID_TILE_MAPPINGS_IN_COVERED_AREA_DUPLICATED_OUTSIDE</unmanaged-short>
+5670-        </member>
+5671:        <member name="F:Vortice.Direct3D11.Debug.MessageId.TileMappingsSharedBetweenIncompatibleResources">
+5672-            <unmanaged>D3D11_MESSAGE_ID_TILE_MAPPINGS_SHARED_BETWEEN_INCOMPATIBLE_RESOURCES</unmanaged>
+5673-            <unmanaged-short>D3D11_MESSAGE_ID_TILE_MAPPINGS_SHARED_BETWEEN_INCOMPATIBLE_RESOURCES</unmanaged-short>
+5674-        </member>
+5675:        <member name="F:Vortice.Direct3D11.Debug.MessageId.TileMappingsSharedBetweenInputAndOutput">
+5676-            <unmanaged>D3D11_MESSAGE_ID_TILE_MAPPINGS_SHARED_BETWEEN_INPUT_AND_OUTPUT</unmanaged>
+5677-            <unmanaged-short>D3D11_MESSAGE_ID_TILE_MAPPINGS_SHARED_BETWEEN_INPUT_AND_OUTPUT</unmanaged-short>
+--
+5685-            <unmanaged-short>D3D11_MESSAGE_ID_GETRESOURCETILING_NONTILED_RESOURCE</unmanaged-short>
+5686-        </member>
+5687:        <member name="F:Vortice.Direct3D11.Debug.MessageId.ResizetilepoolShrinkWithMappingsStillDefinedPastEnd">
+5688-            <unmanaged>D3D11_MESSAGE_ID_RESIZETILEPOOL_SHRINK_WITH_MAPPINGS_STILL_DEFINED_PAST_END</unmanaged>
+5689-            <unmanaged-short>D3D11_MESSAGE_ID_RESIZETILEPOOL_SHRINK_WITH_MAPPINGS_STILL_DEFINED_PAST_END</unmanaged-short>
+--
+7872-        <member name="M:Vortice.Direct3D11.ID3D11Device3.WriteToSubresource(Vortice.Direct3D11.ID3D11Resource,System.UInt32,System.Nullable{Vortice.Mathematics.Box},System.IntPtr,System.UInt32,System.UInt32)">
+7873-            <summary>
+7874:      <para>Copies data into a D3D11_USAGE_DEFAULTtexture which was mapped using ID3D11DeviceContext3::Mapwhile providing a NULL D3D11_MAPPED_SUBRESOURCEparameter.</para>
+7875-      <para>Microsoft Docs: <see href="https://docs.microsoft.com/windows/win32/api//d3d11_3/nf-d3d11_3-id3d11device3-writetosubresource" /></para>
+7876-      <param name="dstResource">A pointer to the destination resource (an
+--
+7897-        <member name="M:Vortice.Direct3D11.ID3D11Device3.ReadFromSubresource(System.IntPtr,System.UInt32,System.UInt32,Vortice.Direct3D11.ID3D11Resource,System.UInt32,System.Nullable{Vortice.Mathematics.Box})">
+7898-            <summary>
+7899:      <para>Copies data from a D3D11_USAGE_DEFAULTtexture which was mapped using ID3D11DeviceContext3::Mapwhile providing a NULL D3D11_MAPPED_SUBRESOURCEparameter.</para>
+7900-      <para>Microsoft Docs: <see href="https://docs.microsoft.com/windows/win32/api//d3d11_3/nf-d3d11_3-id3d11device3-readfromsubresource" /></para>
+7901-      <param name="dstData">A pointer to the destination data in memory.</param>
+--
+8118-            </summary>
+8119-        </member>
+8120:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.Map(Vortice.Direct3D11.ID3D11Buffer,Vortice.Direct3D11.MapMode,Vortice.Direct3D11.MapFlags)">
+8121-            <summary>
+8122:            Maps the data contained in a subresource to a memory pointer, and denies the GPU access to that subresource.
+8123-            </summary>
+8124-            <param name="resource">The resource.</param>
+--
+8126-            <param name="flags">The flags.</param>
+8127-        </member>
+8128:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.Map(Vortice.Direct3D11.ID3D11Resource,System.UInt32,System.UInt32,Vortice.Direct3D11.MapMode,Vortice.Direct3D11.MapFlags,System.UInt32@,System.UInt32@)">
+8129-            <summary>
+8130:            Maps the data contained in a subresource to a memory pointer, and denies the GPU access to that subresource.
+8131-            </summary>
+8132-            <param name="resource">The resource.</param>
+--
+8138-            <param name="mipSize">Size of the selected miplevel.</param>
+8139-        </member>
+8140:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.Map(Vortice.Direct3D11.ID3D11Resource,System.UInt32,System.UInt32,Vortice.Direct3D11.MapMode,Vortice.Direct3D11.MapFlags,System.UInt32@,Vortice.Direct3D11.MappedSubresource@)">
+8141-            <summary>
+8142:            Maps the data contained in a subresource to a memory pointer, and denies the GPU access to that subresource.
+8143-            </summary>
+8144-            <param name="resource">The resource.</param>
+--
+8198-            <param name="region">A region that defines the portion of the destination subresource to copy the resource data into. Coordinates are in bytes for buffers and in texels for textures.</param>
+8199-        </member>
+8200:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.UpdateSubresource(Vortice.Direct3D11.MappedSubresource,Vortice.Direct3D11.ID3D11Resource,System.UInt32)">
+8201-            <summary>
+8202-            Copies data from the CPU to to a non-mappable subresource region.
+--
+8206-            <param name="subresource">The destination subresource.</param>
+8207-        </member>
+8208:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.UpdateSubresource(Vortice.Direct3D11.MappedSubresource,Vortice.Direct3D11.ID3D11Resource,System.UInt32,Vortice.Mathematics.Box)">
+8209-            <summary>
+8210-            Copies data from the CPU to to a non-mappable subresource region.
+--
+8263-            </remarks>
+8264-        </member>
+8265:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.UpdateSubresourceSafe(Vortice.Direct3D11.MappedSubresource,Vortice.Direct3D11.ID3D11Resource,System.UInt32,System.UInt32,System.Boolean)">
+8266-            <summary>
+8267-              Copies data from the CPU to to a non-mappable subresource region.
+--
+8276-            </remarks>
+8277-        </member>
+8278:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.UpdateSubresourceSafe(Vortice.Direct3D11.MappedSubresource,Vortice.Direct3D11.ID3D11Resource,System.UInt32,System.UInt32,Vortice.Mathematics.Box,System.Boolean)">
+8279-            <summary>
+8280-            Copies data from the CPU to to a non-mappable subresource region.
+--
+8452-            <unmanaged-short>ID3D11DeviceContext::Draw</unmanaged-short>
+8453-        </member>
+8454:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.Map(Vortice.Direct3D11.ID3D11Resource,System.UInt32,Vortice.Direct3D11.MapMode,Vortice.Direct3D11.MapFlags,Vortice.Direct3D11.MappedSubresource@)">
+8455-            <summary>
+8456-      <para>Gets a pointer to the data contained in a subresource, and denies the GPU access to that subresource.</para>
+--
+8464-            See the Remarks section regarding NULL pointers.</param>
+8465-    </summary>
+8466:            <unmanaged>HRESULT ID3D11DeviceContext::Map([In] ID3D11Resource* pResource, [In] UINT Subresource, [In] D3D11_MAP MapType, [In] UINT MapFlags, [Out] D3D11_MAPPED_SUBRESOURCE* pMappedResource)</unmanaged>
+8467:            <unmanaged-short>ID3D11DeviceContext::Map</unmanaged-short>
+8468-        </member>
+8469-        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext.Unmap(Vortice.Direct3D11.ID3D11Resource,System.UInt32)">
+--
+10017-            <unmanaged-short>ID3D11DeviceContext2</unmanaged-short>
+10018-        </member>
+10019:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext2.UpdateTileMappings(Vortice.Direct3D11.ID3D11Resource,System.UInt32,Vortice.Direct3D11.TiledResourceCoordinate[],Vortice.Direct3D11.TileRegionSize[],Vortice.Direct3D11.ID3D11Buffer,System.UInt32,Vortice.Direct3D11.TileRangeFlags[],System.UInt32[],System.UInt32[],Vortice.Direct3D11.TileMappingFlags)">
+10020-            <summary>
+10021-      <para>Updates mappings of tile locations in tiled resources to memory locations in a tile pool.</para>
+--
+10034-      <param name="flags">A combination of <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_2/ne-d3d11_2-d3d11_tile_mapping_flag">D3D11_TILE_MAPPING_FLAGS</a> values that are combined by using a bitwise OR operation.</param>
+10035-    </summary>
+10036:[Omitted long matching line]
+10037:            <unmanaged-short>ID3D11DeviceContext2::UpdateTileMappings</unmanaged-short>
+10038-        </member>
+10039:        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext2.CopyTileMappings(Vortice.Direct3D11.ID3D11Resource,Vortice.Direct3D11.TiledResourceCoordinate,Vortice.Direct3D11.ID3D11Resource,Vortice.Direct3D11.TiledResourceCoordinate,Vortice.Direct3D11.TileRegionSize,Vortice.Direct3D11.TileMappingFlags)">
+10040-            <summary>
+10041-      <para>Copies mappings from a source tiled resource to a destination tiled resource.</para>
+--
+10046-      <param name="sourceRegionStartCoordinate">A pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_2/ns-d3d11_2-d3d11_tiled_resource_coordinate">D3D11_TILED_RESOURCE_COORDINATE</a> structure that describes the starting coordinates of the source tiled resource.</param>
+10047-      <param name="tileRegionSize">A pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_2/ns-d3d11_2-d3d11_tile_region_size">D3D11_TILE_REGION_SIZE</a> structure that describes the size of the tiled region.</param>
+10048:[Omitted long matching line]
+10049-    </summary>
+10050:            <unmanaged>HRESULT ID3D11DeviceContext2::CopyTileMappings([In] ID3D11Resource* pDestTiledResource, [In] const D3D11_TILED_RESOURCE_COORDINATE* pDestRegionStartCoordinate, [In] ID3D11Resource* pSourceTiledResource, [In] const D3D11_TILED_RESOURCE_COORDINATE* pSourceRegionStartCoordinate, [In] const D3D11_TILE_REGION_SIZE* pTileRegionSize, [In] UINT Flags)</unmanaged>
+10051:            <unmanaged-short>ID3D11DeviceContext2::CopyTileMappings</unmanaged-short>
+10052-        </member>
+10053-        <member name="M:Vortice.Direct3D11.ID3D11DeviceContext2.CopyTiles(Vortice.Direct3D11.ID3D11Resource,Vortice.Direct3D11.TiledResourceCoordinate,Vortice.Direct3D11.TileRegionSize,Vortice.Direct3D11.ID3D11Buffer,System.UInt64,Vortice.Direct3D11.TileCopyFlags)">
+--
+11923-            <unmanaged-short>InstanceDataStepRate</unmanaged-short>
+11924-        </member>
+11925:        <member name="T:Vortice.Direct3D11.MappedSubresource">
+11926-            <summary>
+11927-            Provides access to subresource data.
+--
+11934-            <unmanaged-short>D3D11_MAPPED_SUBRESOURCE</unmanaged-short>
+11935-        </member>
+11936:        <member name="M:Vortice.Direct3D11.MappedSubresource.#ctor(System.IntPtr,System.UInt32,System.UInt32)">
+11937-            <summary>
+11938:            Create a new instance of <see cref="T:Vortice.Direct3D11.MappedSubresource"/> struct.
+11939-            </summary>
+11940-            <param name="dataPointer">Pointer to the data</param>
+--
+11942-            <param name="depthPitch">The depth pitch, or width, or physical size (in bytes)of the data.</param>
+11943-        </member>
+11944:        <member name="M:Vortice.Direct3D11.MappedSubresource.#ctor(System.IntPtr)">
+11945-            <summary>
+11946:            Create a new instance of <see cref="T:Vortice.Direct3D11.MappedSubresource"/> struct.
+11947-            </summary>
+11948-            <param name="dataPointer">Pointer to the data</param>
+11949-        </member>
+11950:        <member name="F:Vortice.Direct3D11.MappedSubresource.DataPointer">
+11951:            <summary>Pointer to the data. When <a href="https://docs.microsoft.com/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-map">ID3D11DeviceContext::Map</a> provides the pointer, the runtime ensures that the pointer has a specific alignment, depending on the following feature levels:
+11952-
+11953-<ul>
+--
+11958-            <unmanaged-short>pData</unmanaged-short>
+11959-        </member>
+11960:        <member name="F:Vortice.Direct3D11.MappedSubresource.RowPitch">
+11961-            <summary>The row pitch, or width, or physical size (in bytes) of the data.</summary>
+11962-            <unmanaged>D3D11_MAPPED_SUBRESOURCE::RowPitch</unmanaged>
+11963-            <unmanaged-short>RowPitch</unmanaged-short>
+11964-        </member>
+11965:        <member name="F:Vortice.Direct3D11.MappedSubresource.DepthPitch">
+11966-            <summary>The depth pitch, or width, or physical size (in bytes)of the data.</summary>
+11967-            <unmanaged>D3D11_MAPPED_SUBRESOURCE::DepthPitch</unmanaged>
+--
+14723-            <param name="slicePitch">The slice pitch.</param>
+14724-        </member>
+14725:        <member name="F:Vortice.Direct3D11.SubresourceData.DataPointer">
+14726-            <summary>Pointer to the initialization data.</summary>
+14727-            <unmanaged>D3D11_SUBRESOURCE_DATA::pSysMem</unmanaged>
+--
+16980-            <unmanaged-short>D3D11_LOGIC_OP_OR_INVERTED</unmanaged-short>
+16981-        </member>
+16982:        <member name="T:Vortice.Direct3D11.MapFlags">
+16983-            <summary>
+16984:      <para>Specifies how the CPU should respond when an application calls the ID3D11DeviceContext::Map method on a resource that is being used by the GPU.</para>
+16985-      <para>Microsoft Docs: <see href="https://docs.microsoft.com/windows/win32/api//d3d11/ne-d3d11-d3d11_map_flag" /></para>
+16986-    </summary>
+--
+16988-            <unmanaged-short>D3D11_MAP_FLAG</unmanaged-short>
+16989-        </member>
+16990:        <member name="F:Vortice.Direct3D11.MapFlags.DoNotWait">
+16991-            <unmanaged>D3D11_MAP_FLAG_DO_NOT_WAIT</unmanaged>
+16992-            <unmanaged-short>D3D11_MAP_FLAG_DO_NOT_WAIT</unmanaged-short>
+16993-        </member>
+16994:        <member name="F:Vortice.Direct3D11.MapFlags.None">
+16995-            <summary>
+16996-            Synthetic NONE value
+--
+16999-            <unmanaged-short>None</unmanaged-short>
+17000-        </member>
+17001:        <member name="T:Vortice.Direct3D11.MapMode">
+17002-            <summary>
+17003-      <para>Identifies a resource to be accessed for reading and writing by the CPU. Applications may combine one or more of these flags.</para>
+--
+17007-            <unmanaged-short>D3D11_MAP</unmanaged-short>
+17008-        </member>
+17009:        <member name="F:Vortice.Direct3D11.MapMode.Read">
+17010-            <unmanaged>D3D11_MAP_READ</unmanaged>
+17011-            <unmanaged-short>D3D11_MAP_READ</unmanaged-short>
+17012-        </member>
+17013:        <member name="F:Vortice.Direct3D11.MapMode.Write">
+17014-            <unmanaged>D3D11_MAP_WRITE</unmanaged>
+17015-            <unmanaged-short>D3D11_MAP_WRITE</unmanaged-short>
+17016-        </member>
+17017:        <member name="F:Vortice.Direct3D11.MapMode.ReadWrite">
+17018-            <unmanaged>D3D11_MAP_READ_WRITE</unmanaged>
+17019-            <unmanaged-short>D3D11_MAP_READ_WRITE</unmanaged-short>
+17020-        </member>
+17021:        <member name="F:Vortice.Direct3D11.MapMode.WriteDiscard">
+17022-            <unmanaged>D3D11_MAP_WRITE_DISCARD</unmanaged>
+17023-            <unmanaged-short>D3D11_MAP_WRITE_DISCARD</unmanaged-short>
+17024-        </member>
+17025:        <member name="F:Vortice.Direct3D11.MapMode.WriteNoOverwrite">
+17026-            <unmanaged>D3D11_MAP_WRITE_NO_OVERWRITE</unmanaged>
+17027-            <unmanaged-short>D3D11_MAP_WRITE_NO_OVERWRITE</unmanaged-short>
+--
+17571-            <unmanaged-short>D3D11_TILED_RESOURCES_TIER_3</unmanaged-short>
+17572-        </member>
+17573:        <member name="T:Vortice.Direct3D11.TileMappingFlags">
+17574-            <summary>
+17575-      <para>Identifies how to perform a tile-mapping operation.</para>
+--
+17579-            <unmanaged-short>D3D11_TILE_MAPPING_FLAG</unmanaged-short>
+17580-        </member>
+17581:        <member name="F:Vortice.Direct3D11.TileMappingFlags.NoOverwrite">
+17582-            <unmanaged>D3D11_TILE_MAPPING_NO_OVERWRITE</unmanaged>
+17583-            <unmanaged-short>D3D11_TILE_MAPPING_NO_OVERWRITE</unmanaged-short>
+17584-        </member>
+17585:        <member name="F:Vortice.Direct3D11.TileMappingFlags.None">
+17586-            <summary>
+17587-            Synthetic NONE value
+--
+17885-            <unmanaged-short>D3D11_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_COLOR_CORRECTION</unmanaged-short>
+17886-        </member>
+17887:        <member name="F:Vortice.Direct3D11.VideoProcessorAutoStreamCaps.FleshToneMapping">
+17888-            <unmanaged>D3D11_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_FLESH_TONE_MAPPING</unmanaged>
+17889-            <unmanaged-short>D3D11_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_FLESH_TONE_MAPPING</unmanaged-short>
+--
+19688-            <unmanaged-short>ConstantBufferOffsetting</unmanaged-short>
+19689-        </member>
+19690:        <member name="F:Vortice.Direct3D11.FeatureDataD3D11Options.MapNoOverwriteOnDynamicConstantBuffer">
+19691:[Omitted long matching line]
+19692-
+19693-<div class="alert"><b>Note</b>  For <a href="https://docs.microsoft.com/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">feature level</a> 9.1, 9.2, and 9.3, this member is always <b>TRUE</b> because the option is emulated by the runtime.</div>
+19694-<div> </div></summary>
+19695:            <unmanaged>D3D11_FEATURE_DATA_D3D11_OPTIONS::MapNoOverwriteOnDynamicConstantBuffer</unmanaged>
+19696:            <unmanaged-short>MapNoOverwriteOnDynamicConstantBuffer</unmanaged-short>
+19697-        </member>
+19698:        <member name="F:Vortice.Direct3D11.FeatureDataD3D11Options.MapNoOverwriteOnDynamicBufferSRV">
+19699:[Omitted long matching line]
+19700:            <unmanaged>D3D11_FEATURE_DATA_D3D11_OPTIONS::MapNoOverwriteOnDynamicBufferSRV</unmanaged>
+19701:            <unmanaged-short>MapNoOverwriteOnDynamicBufferSRV</unmanaged-short>
+19702-        </member>
+19703-        <member name="F:Vortice.Direct3D11.FeatureDataD3D11Options.MultisampleRTVWithForcedSampleCountOne">
+--
+19744-            <unmanaged-short>ClearViewAlsoSupportsDepthOnlyFormats</unmanaged-short>
+19745-        </member>
+19746:        <member name="F:Vortice.Direct3D11.FeatureDataD3D11Options1.MapOnDefaultBuffers">
+19747:[Omitted long matching line]
+19748:            <unmanaged>D3D11_FEATURE_DATA_D3D11_OPTIONS1::MapOnDefaultBuffers</unmanaged>
+19749:            <unmanaged-short>MapOnDefaultBuffers</unmanaged-short>
+19750-        </member>
+19751-        <member name="T:Vortice.Direct3D11.FeatureDataD3D11Options2">
+--
+19787-            <unmanaged-short>TiledResourcesTier</unmanaged-short>
+19788-        </member>
+19789:        <member name="F:Vortice.Direct3D11.FeatureDataD3D11Options2.MapOnDefaultTextures">
+19790-            <summary>Specifies whether the hardware and driver support mapping on default textures.
+19791-            The runtime sets this member to <b>TRUE</b> if the hardware and driver support this option.</summary>
+19792:            <unmanaged>D3D11_FEATURE_DATA_D3D11_OPTIONS2::MapOnDefaultTextures</unmanaged>
+19793:            <unmanaged-short>MapOnDefaultTextures</unmanaged-short>
+19794-        </member>
+19795-        <member name="F:Vortice.Direct3D11.FeatureDataD3D11Options2.StandardSwizzle">
+--
+21453-            <unmanaged-short>IVSize</unmanaged-short>
+21454-        </member>
+21455:        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription1.SubSampleMappingBlock">
+21456-            <summary>A pointer to an array of <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_video_decoder_sub_sample_mapping_block">D3D11_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures, which indicates exactly which bytes in the decode buffer are encrypted and which are in the clear.  If the decode buffer does not contain encrypted data, set this member to NULL.
+21457-
+21458-Values in the sub sample mapping blocks are relative to the start of the decode buffer.</summary>
+21459:            <unmanaged>D3D11_VIDEO_DECODER_BUFFER_DESC1::pSubSampleMappingBlock</unmanaged>
+21460:            <unmanaged-short>pSubSampleMappingBlock</unmanaged-short>
+21461-        </member>
+21462:        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription1.SubSampleMappingCount">
+21463:            <summary>The number of <a href="https://docs.microsoft.com/windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_video_decoder_sub_sample_mapping_block">D3D11_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</a> structures specified in the <i>pSubSampleMappingBlocks</i> parameter. If <i>pSubSampleMappingBlocks</i> is NULL, set this member to zero.</summary>
+21464:            <unmanaged>D3D11_VIDEO_DECODER_BUFFER_DESC1::SubSampleMappingCount</unmanaged>
+21465:            <unmanaged-short>SubSampleMappingCount</unmanaged-short>
+21466-        </member>
+21467-        <member name="T:Vortice.Direct3D11.VideoDecoderBufferDescription2">
+--
+21489-            <unmanaged-short>IVSize</unmanaged-short>
+21490-        </member>
+21491:        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription2.SubSampleMappingBlock">
+21492:            <unmanaged>D3D11_VIDEO_DECODER_BUFFER_DESC2::pSubSampleMappingBlock</unmanaged>
+21493:            <unmanaged-short>pSubSampleMappingBlock</unmanaged-short>
+21494-        </member>
+21495:        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription2.SubSampleMappingCount">
+21496:            <unmanaged>D3D11_VIDEO_DECODER_BUFFER_DESC2::SubSampleMappingCount</unmanaged>
+21497:            <unmanaged-short>SubSampleMappingCount</unmanaged-short>
+21498-        </member>
+21499-        <member name="F:Vortice.Direct3D11.VideoDecoderBufferDescription2.CBlocksStripeEncrypted">
+--
+21759-            <unmanaged-short>Texture2D</unmanaged-short>
+21760-        </member>
+21761:        <member name="T:Vortice.Direct3D11.VideoDecoderSubSampleMappingBlock">
+21762-            <summary>
+21763-      <para>Describes a sub sample mapping block.</para>
+--
+21767-            <unmanaged-short>D3D11_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK</unmanaged-short>
+21768-        </member>
+21769:        <member name="F:Vortice.Direct3D11.VideoDecoderSubSampleMappingBlock.ClearSize">
+21770-            <summary>The number of clear (non-encrypted) bytes at the start of the block.</summary>
+21771-            <unmanaged>D3D11_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK::ClearSize</unmanaged>
+21772-            <unmanaged-short>ClearSize</unmanaged-short>
+21773-        </member>
+21774:        <member name="F:Vortice.Direct3D11.VideoDecoderSubSampleMappingBlock.EncryptedSize">
+21775-            <summary>The number of encrypted bytes following the clear bytes.</summary>
+21776-            <unmanaged>D3D11_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK::EncryptedSize</unmanaged>
+--
+22170-            <unmanaged-short>D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS</unmanaged-short>
+22171-        </member>
+22172:        <member name="F:Vortice.Direct3D11.ResultCode.DeferredContextMapWithoutInitialDiscard">
+22173-            <summary>
+22174:            Result DeferredContextMapWithoutInitialDiscard
+22175-            </summary>
+22176-            <unmanaged>D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD</unmanaged>
+--
+23875-        <member name="F:Vortice.Direct3D11on12.ResourceFlags.CpuAccessFlags">
+23876-            <summary>The <b>CPUAccessFlags</b> are not inferred from the D3D12 resource.
+23877:              This is because all resources are treated as D3D11_USAGE_DEFAULT, so <b>CPUAccessFlags</b> force validation which assumes <a href="https://docs.microsoft.com/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-map">Map</a> of default buffers or textures.
+23878:              Wrapped resources do not support <b>Map(DISCARD)</b>.
+23879:              Wrapped resources do not support <b>Map(NO_OVERWRITE)</b>, but that can be implemented by mapping the underlying D3D12 resource instead.
+23880:              Issuing a <b>Map</b> call on a wrapped resource will synchronize with all D3D11 work submitted against that resource, unless the DO_NOT_WAIT flag was used.</summary>
+23881-            <unmanaged>D3D11_RESOURCE_FLAGS::CPUAccessFlags</unmanaged>
+23882-            <unmanaged-short>CPUAccessFlags</unmanaged-short>

@@ -1,0 +1,1601 @@
+6.1.10.                                       
+                                                -
+         No.                                    -
+          1 RSET                                -
+          2 EBCMP                               -
+          3 EMOV                                -
+          4 EERRST                              -
+                                                -
+                                                -
+                                                -
+6.1.11.                                         -
+                                                -
+      No.                                       -
+                                                -
+      1 MEQ_***         Masking                 -
+                                                -
+      2 DIS_***          Bit   
+
+      3 UNI_***       Array     Bit  
+
+      4 BIT_BYTE      8  Bit  BYTE  
+
+      5 BYTE_BIT      BYTE  8  Bit  
+
+      6 BYTE_WORD     2  BYTE  WORD  
+
+      7 WORD_BYTE     WORD  2  BYTE  
+
+      8 WORD_DWORD    2  WORD  DWORD  
+
+      9 DWORD_WORD    DWORD  2  WORD  
+
+      10 DWORD_LWORD  2  DWORD  LWORD  
+
+      11 LWORD_DWORD  LWORD  2  DWORD  
+
+      12 GET_CHAR       (Character) 
+
+      13 PUT_CHAR         
+
+      14 STRING_BYTE    BYTE Array  
+
+      15 BYTE_STRING  BYTE Array    
+
+6-11
+                      6    
+
+6.1.12.    
+
+No.                  
+                       -
+1 FIFO_***     
+                       -
+2 LIFO_***     
+
+                             6-12
+ 6    
+
+6.2. MK(MASTER-K) 
+
+No.                     (, n  8  )                
+                                                    -
+1 ENCO_B,W,D,L        On                            -
+                                                    -
+2 DECO_B,W,D,L           On                         -
+                                                    -
+3 BSUM_B,W,D,L        On                            -
+                                                    -
+4 SEG_WORD            BCD  HEX  7    
+
+5 BMOV_B,W,D,L           , 
+
+6 INC_B,W,D,L         IN   
+
+7 DEC_B,W,D,L         IN   
+
+6.3. Array   
+
+No.                                               
+                                                    -
+1 ARY_MOVE            Array Type   (OUT <= IN)      -
+                                                    -
+2 ARY_CMP_***         2  Array                      -
+                                                    -
+3 ARY_SCH_***         Array                         -
+                                                    -
+4 ARY_FLL_***            Array    .                 -
+                                                    -
+5 ARY_AVE_***         Array      
+
+6 ARY_SFT_C_***       Array  Bit      
+
+7 ARY_ROT_C_***       Array  Bit      
+
+8 SHIFT_A_***         Array        
+
+9 ROTATE_A_***        Array        
+
+10 ARY_CMP_EQ         2  Array        / 
+
+11 ARY_CMP_NE         2  Array         / 
+
+6.4.   
+
+6.4.1.   
+
+             No.                                  
+              1 SR                                  -
+              2 RS                                  -
+              3 SEMA                                -
+                         
+6-13
+                         Semaphore
+                                                 6    
+
+6.4.2.    
+
+No.                                             
+ 1 R_TRIG                                         -
+ 2 F_TRIG       (Rising Edge Detector)            -
+ 3 FF                                             -
+                (Falling Edge Detector)
+                                                
+                                                  -
+
+6.4.3.                                            -
+
+No.                                               -
+ 1 CTU_***
+ 2 CTD_***     (Up Counter)                       -
+ 3 CTUD_***
+ 4 CTR        INT,DINT,LINT,UINT,UDINT,ULINT    
+                                                  -
+               (Down Counter)                     -
+                                                  -
+              INT,DINT,LINT,UINT,UDINT,ULINT      -
+                                                  -
+               (Up Down Counter)                  -
+                                                  -
+              INT,DINT,LINT,UINT,UDINT,ULINT      -
+                                                  -
+               (Ring Counter)                     -
+                                                  -
+6.4.4.                                            -
+                                                  -
+No.                                 
+ 1 TP
+ 2 TON         (Pulse Timer)
+ 3 TOF
+ 4 TMR        On  (On-Delay Timer)
+ 5 TP_RST
+ 6 TRTG       Off  (Off-Delay Timer)
+ 7 TOF_RST
+ 8 TON_UINT    (Integrating Timer)
+ 9 TOF_UINT
+10 TP_UINT       Off    
+11 TMR_UINT
+12 TMR_FLK     (Retriggerable Timer)
+13 TRTG_UINT
+                 Off   Off  (Off-Delay Timer)
+
+                On  (On-Delay Timer)
+
+                Off  (Off-Delay Timer)
+
+                 (Pulse Timer)
+
+                 (Integrating Timer)
+
+                
+
+                 
+
+                                                        6-14
+       6    
+
+6.4.5.    
+
+      No.                             
+       1 EBREAD                         -
+       2 EBWRITE    R                   -
+
+                    R                 
+                                        -
+6.4.6.                                  -
+                                        -
+      No.                               -
+       1 SCON                           -
+       2 DUTY           
+       3 RTC_SET                      
+       4 SPA         Scan  On/Off       -
+       5 INLATCH                        -
+                                        -
+                                        -
+                                        -
+                                        -
+                                        -
+                                        -
+6.4.7.                                  -
+
+      No.                             
+                                        -
+      1 P2PSN                           -
+                                        -
+      2 P2PRD                           -
+                                        -
+      3 P2PWR                           -
+                                        -
+      4 SEND_UDATA                      -
+
+      5 RCV_UDATA      
+
+      6 SEND_DTR        
+
+      7 SEND_RTS        
+
+      8 GET_IP         
+
+      9 SET_IP         
+
+6.4.8.   
+
+      No.                           
+       1 GET
+       2 PUT           
+       3 ARY_GET
+       4 ARY_PUT       
+       5 GETE
+       6 PUTE          ()
+       7 ARY_GETE
+       8 ARY_PUTE      ()
+
+                       (  Access )
+
+                       (  Access )
+
+                       (,   Access )
+
+                       (,   Access )
+
+6-15
+                             6    
+
+6.4.9.     (XGF-M16M )
+
+No.                         
+ 1 GETM                       -
+ 2 PUTM                       -
+ 3 ARY_GETM                   -
+ 4 ARY_PUTM                   -
+
+                 ()
+
+                 ()
+
+                                    6-16
+       6    
+
+6.4.10.    (APM)
+
+      No.                            
+                                       -
+      1   APM_ORG                      -
+                                       -
+      2   APM_FLT                      -
+                                       -
+      3   APM_DST                      -
+                                       -
+      4   APM_IST                      -
+                                       -
+      5   APM_LIN                      -
+                                       -
+      6   APM_CIN                      -
+                                       -
+      7   APM_SST                      -
+                                       -
+      8   APM_VTP   /                  -
+                                       -
+      9   APM_PTV   /                  -
+                                       -
+      10  APM_STP                      -
+                                       -
+      11  APM_SKP                      -
+                                       -
+      12  APM_SSP                      -
+                                       -
+      13  APM_SSS                      -
+                                       -
+      14  APM_SSSP                     -
+                                       -
+      15  APM_POR                      -
+                                       -
+      16  APM_SOR                      -
+
+      17  APM_PSO      
+
+      18  APM_NMV    
+
+      19  APM_INC    
+
+      20  APM_RTP        
+
+      21  APM_SNS      
+
+      22  APM_SRS      
+
+      23  APM_MOF   M  
+
+      24  APM_PRS     
+
+      25  APM_ZONE  Zone  /
+
+      26  APM_EPRE   
+
+      27  APM_TEA    (ROM, RAM)
+
+      28  APM_ATEA   (ROM, RAM)
+
+      29  APM_SBP     
+
+      30  APM_SEP     
+
+      31  APM_SHP      
+
+      32  APM_SMP      
+
+6-17
+No.                         6    
+
+33  APM_SIP                                    
+                                                 -
+34  APM_SCP                                      -
+                                                 -
+35  APM_SMD                                      -
+                                                 -
+36  APM_EMG                                      -
+                                                 -
+37  APM_RST      /                               -
+                                                 -
+38  APM_PST                                      -
+                                                 -
+39  APM_WRT    /                                 -
+
+40  APM_CRD                                      -
+                                                 -
+41  APM_SRD                                      -
+
+42  APM_ENCRD                                  
+                                                 -
+43  APM_JOG                                      -
+                                                 -
+44  APM_MPG      (MPG)                           -
+                                                 -
+45  APM_RCP                                      -
+                                                 -
+46  APM_VRD                                      -
+
+47  APM_VWR                                XGF-PN8A/B
+                                                 -
+48  APM_VTPP    /                                -
+                                                 -
+6.4.11.    (XPM)                                 -
+
+No.                                                               6-18
+
+1   XPM_ORG      
+
+2   XPM_FLT      
+
+3   XPM_DST     
+
+4   XPM_IST     
+
+5   XPM_SST     
+
+6   XPM_VTP    /  
+
+7   XPM_VTPP    /  
+
+8   XPM_PTV    /  
+
+9   XPM_PTT    /  
+
+10  XPM_STP     
+
+11  XPM_SKP     
+
+12  XPM_SSP     
+
+13  XPM_SSS     
+
+14  XPM_SSSP      
+       6    
+
+      No.                          
+                                      -
+      15  XPM_POR                     -
+                                      -
+      16  XPM_SOR                     -
+                                      -
+      17  XPM_PSO                     -
+                                      -
+      18  XPM_NMV                     -
+                                      -
+      19  XPM_INC                     -
+                                      -
+      20  XPM_RTP                     -
+                                      -
+      21  XPM_SNS                     -
+                                    XPM
+      22  XPM_SRS                     -
+                                    XPM
+      23  XPM_MOF    M                -
+                                      -
+      24  XPM_PRS                     -
+                                      -
+      25  APM_EPRE                    -
+                                      -
+      26  APM_ATEA                    -
+                                      -
+      27  XPM_SBP                     -
+                                      -
+      28  XPM_SEP      
+                                XGF-PN8A/B
+      29  XPM_SHP                     -
+                                      -
+      30  XPM_SMP       
+                                      -
+      31  XPM_SIP                     -
+
+      32  XPM_SCP      
+
+      33  XPM_SMD      
+
+      34  XPM_EMG     
+
+      35  XPM_RST     
+
+      36  XPM_HRST     
+
+      37  XPM_PST     
+
+      38  XPM_WRD    /  
+
+      39  XPM_CRD      
+
+      40  XPM_SRD      
+
+      41  XPM_ENCRD   
+
+      42  XPM_SVERD     
+
+      43  XPM_JOG     
+
+      44  XPM_CAM    CAM 
+
+      45  XPM_CAMO      CAM 
+
+      45  XPM_ELIN     
+
+      47  XPM_VRD      
+
+6-19
+                                       6    
+
+No.                                      
+                                            -
+48      XPM_VWR      
+                                      XGF-PN8A/B
+49      XPM_ECON                      XGF-PN8A/B
+                                      XGF-PN8A/B
+50      XPM_DCON                      XGF-PN8A/B
+                                      XGF-PN8A/B
+51      XPM_SVON                      XGF-PN8A/B
+
+52     XPM_SVOFF                            -
+                                          XPM
+53      XPM_SRST                      XGF-PN8A/B
+                                       XGF-PN8B
+54     XPM_SHRST                       XGF-PN8B
+                                       XGF-PN8B
+55      XPM_RSTR                       XGF-PN8B
+                                      XGF-PN8A/B
+56      XPM_POE       /               XGF-PN8A/B
+                                      XGF-PN8A/B
+57      XPM_TRQ                        XGF-PN8B
+                                      XGF-PN8A/B
+58     XPM_SVIRD                      XGF-PN8A/B
+                                      XGF-PN8A/B
+59     XPM_SVPRD                      XGF-PN8A/B
+                                      XGF-PN8A/B
+60     XPM_SVPWR                      XGF-PN8A/B
+
+61     XPM_SVSAVE                        
+                                            -
+62      XPM_PTT                             -
+                                            -
+63      XPM_LRD                             -
+
+64      XPM_LCLR                                            6-20
+
+65      XPM_LSET    
+
+66      XPM_STC     
+
+67   XPM_PHASING    
+
+68      XPM_SSSD   32   
+
+69     XPM_SSSPD   32    
+
+70     XPM_SETOVR  / 
+
+71      XPM_CAMA    
+
+6.5.  
+
+No.                                 
+
+1 FOR
+
+                   FOR ~ NEXT  n  
+
+2 NEXT
+
+3 BREAK            FOR ~ NEXT   
+                   SBRT  
+4 CALL
+       6    
+
+      5 SBRT       CALL       -
+
+      6 RET        RETURN     -
+
+      7 JMP        LABLE      -
+
+      8 INIT_DONE             -
+
+      9 END                   -
+
+6-21
+                                            6    
+
+6.6.   
+
+NO.                                        
+
+                             
+
+1 MC_Power                  /              -
+
+2 MC_Home                                  -
+
+3 MC_Stop                                  -
+
+4 MC_Halt                                  -
+
+5 MC_MoveAbsolute                          -
+
+6 MC_MoveRelative                          -
+
+7 MC_MoveAdditive                          -
+
+8 MC_MoveVelocity                          -
+
+9 MC_MoveContinuousAbsolute                -
+
+10 MC_MoveContinuousRelative               -
+
+11 MC_TorqueControl                        -
+
+12 MC_SetPosition                          -
+
+13 MC_SetOverride          /               -
+
+14 MC_ReadParameter                        -
+
+15 MC_WriteParameter                       -
+
+16 MC_Reset                                -
+
+17 MC_TouchProbe                           -
+
+18 MC_AbortTrigger                         -
+
+19 MC_MoveSuperImposed     SuperImposed    -
+
+20 MC_HaltSuperImposed     SuperImposed    -
+
+                            
+
+21 MC_CamIn                                -
+
+22 MC_CamOut                               -
+
+23 MC_GearIn                               -
+
+24 MC_GearOut                              -
+
+25 MC_GearInPos                            -
+
+26 MC_Phasing                              -
+
+                            
+
+27 MC_AddAxisToGroup                       -
+
+28 MC_RemoveAxisFromGroup                  -
+
+29 MC_UngroupAllAxes                       -
+
+                                                   6-22
+       6    
+
+      NO.                                   
+
+      30 MC_GroupEnable                     -
+
+      31 MC_GroupDisable                    -
+
+      32 MC_GroupHome                       -
+
+      33 MC_GroupSetPosition                -
+
+      34 MC_GroupStop                       -
+
+      35 MC_GroupHalt                       -
+
+      36 MC_GroupReset                      -
+
+      37 MC_MoveLinearAbsolute              -
+
+      38 MC_MoveLinearRelative              -
+
+      39 MC_MoveCircularAbsolute            -
+
+      40 MC_MoveCircularRelative            -
+
+                                  LS 
+
+      41 LS_Connect                         -
+
+      42 LS_Disconnect                      -
+
+      43 LS_ReadSDO                SDO      -
+
+      44 LS_WriteSDO               SDO      -
+
+      45 LS_SaveSDO                SDO      -
+
+      46 LS_EncoderPreset                   -
+
+      47 LS_Jog                             -
+
+      48 LS_ReadCamData                     -
+
+      49 LS_WriteCamData                    -
+
+      50 LS_ReadEsc               ESC       -
+
+      51 LS_WriteEsc              ESC       -
+
+      52 LS_CamSkip                         -
+
+      53 LS_VarCamIn                        -
+
+      54 LS_VarGearIn               
+
+      55 LS_VarGearInPos                    -
+
+      56 LS_ReadCamTableSlavePos            -
+
+      57 LS_InverterWriteVel                -
+
+      58 LS_InverterReadVel                 -
+
+      59 LS_InverterControl                 -
+
+      60 LS_InverterStatus1          1      -
+
+      61 LS_InverterStatus2          2      -
+
+      62 LS_SyncMoveVelocity        (csv )  -
+
+6-23
+                                                        6    
+
+NO.                                                    
+
+63 LS_ReadCamTableMasterPos                            -
+
+64 LS_OnOffCam                                         -
+
+65 LS_RotaryKnifeCamGen                                -
+
+66 LS_CrossSealCamGen                                  -
+
+67 LS_OnOffCamEx                
+
+                                
+
+68 MC_SetKinTransform                                  -
+
+69 MC_SetCartesianTransform   PCS                      -
+
+70 LS_SetWorkSpace                                     -
+
+71 LS_MoveLinearTimeAbsolute                           -
+
+72 LS_MoveLinearTimeRelative                           -
+
+73 MC_MoveCircularAbsolute2D                           -
+
+74 MC_MoveCircularRelative2D                           -
+
+75 MC_TrackConveyorBelt                                -
+
+76 MC_TrackRotaryTable                                 -
+
+77 LS_RobotJog                                         -
+
+78 LS_SetMovePath                                      -
+
+79 LS_ResetMovePath                                    -
+
+80 LS_GetMovePath                                      -
+
+81 LS_RunMovePath                                      -
+
+                              NC  
+
+82 NC_LoadProgram             NC                       -
+
+83 NC_BlockControl            Single/Optional Block    -
+
+84 NC_Reset                   NC                       -
+
+85 NC_Emergency                                        -
+
+86 NC_CycleStart                                       -
+
+87 NC_FeedHold                Feed Hold                -
+
+88 NC_Home                    NC                       -
+
+89 NC_RapidTraverseOverride   NC                       -
+
+90 NC_CuttingFeedOverride     NC                       -
+
+91 NC_SpindleOverride         NC                       -
+
+92 NC_McodeComplete           M Code                   -
+
+93 NC_ScodeComplete           S Code                   -
+
+94 NC_TcodeComplete           T Code                   -
+
+                                                               6-24
+       6    
+
+      NO.                                      
+
+      95 NC_ReadParameter       NC             -
+
+      96 NC_WriteParameter      NC             -
+
+      97 NC_RetraceMove          
+
+      98 NC_BlockSkip            
+
+      99 NC_DryRun                
+
+      100 NC_ToolMode            / 
+
+      101 NC_ReadToolMode        /  
+
+      102 NC_MirrorImage         
+
+      103 NC_SpindleControl       
+
+      104 NC_BlockOptionalSkip  NC Optional  
+
+      105 NC_ManualToolComp     NC   
+
+      106 NC_ChgSpindleGear     NC   
+
+                                 
+
+      107 FILE_OPEN             SD     
+      108 FILE_CLOSE
+      109 FILE_WRITE            SD     
+      110 FILE_READ
+                                SD     
+      111 FILE_SEEK
+                                SD     
+
+                                SD     
+
+                                 
+
+                                
+
+      112 PID                   PID            -
+      113 LINAC
+      114 SLINAC                               -
+
+                                S-             -
+
+6-25
+ 6    
+
+                                       6-26
+     7   
+
+ 7  
+
+     1.     .
+     2.     3.4.1         , 
+
+            .
+
+7-1
+                                                                           7   
+
+7.1. ABS                                                                  
+
+    ABS                   XGI, XGR, XEC, XMC                              _ERR, _LER
+
+       
+
+                                                         
+
+                           EN : 1    
+                                   IN :    
+
+                           ENO : 1  
+                                   OUT : 
+
+                          IN, OUT     .
+
+ANY                    BOOL
+                                BYTE
+                  IN                      WORD
+                  OUT                              DWORD
+                                                           LWORD
+                                                                  SINT
+                                                                        INT
+                                                                               DINT
+                                                                                     LINT
+                                                                                            USINT
+                                                                                                   UINT
+                                                                                                         UDINT
+                                                                                                                ULINT
+                                                                                                                      REAL
+                                                                                                                             LREAL
+                                                                                                                                   TIME
+                                                                                                                                          DATE
+                                                                                                                                                TOD
+                                                                                                                                                       DT
+                                                                                                                                                              STRING
+
+                          
+                          
+
+ 
+
+    1. IN   OUT  .
+          OUT = IN
+
+    2. X   X 
+          A. X0  X= X ,
+          B. X0  X= -X .
+
+                                                                        
+         
+          _ERR  IN   (-)  _ERR, _LER  (Set).
+                )   SINT   IN   -128  
+
+                                                                                                                                                                      7-2
+      7   
+
+                                        ABS
+     1. LD                         EN ENO
+
+                  %IX0.0.0         IN OUT
+
+                            Value            ABS_Value
+
+     2. ST
+
+        ABS_Value := ABS(EN:=%IX0.0.0, IN:=Value);
+
+       (1) (%IX0.0.0) On   ABS  .
+       (2) VALUE = -7 , ABS_VALUE = -7 = 7  .
+
+             VALUE = 200 , ABS_VALUE = 200 = 200  .
+       (3) INT    2  Complement  (3.2.4.    )
+
+7-3
+                                                                          7   
+
+7.2. ACOS                                        
+
+    ACOS
+
+Arc Cosine                   XGI, XGR, XEC, XMC  _ERR, _LER
+                           
+                                                           
+
+                              EN : 1    
+                                      IN : Arc Cosine   
+
+                              ENO : EN   
+                                      OUT : Arc Cosine    (Radian)
+
+                             IN, OUT     
+
+                                                                       
+                                                                       
+ANY                       BOOL
+                                   BYTE
+                     IN                      WORD
+                     OUT                              DWORD
+                                                                LWORD
+                                                                        SINT
+                                                                               INT
+                                                                                      DINT
+                                                                                              LINT
+                                                                                                     USINT
+                                                                                                            UINT
+                                                                                                                   UDINT
+                                                                                                                         ULINT
+                                                                                                                               REAL
+                                                                                                                                     LREAL
+                                                                                                                                           TIME
+                                                                                                                                                 DATE
+                                                                                                                                                       TOD
+                                                                                                                                                             DT
+                                                                                                                                                                   STRING
+
+ 
+
+1. IN  Arc Cosine   OUT  .   0    .
+      OUT = ACOS (IN)
+
+                                                                             
+                      -1.0  1.0     _ERR, _LER  (SET).
+           
+             _ERR
+
+                                                                                                                                                                           7-4
+      7   
+
+       
+     1. LD
+
+     2. ST
+       RESULT := ACOS(EN:=%IX0.1.3, IN:=INPUT);
+
+     (1) (%IX0.1.3) On   Arc Cosine   ACOS  .
+
+     (2) INPUT      0.8660... (                  )      RESULT  0.5235...
+
+     ( /6 rad = 30) .
+
+7-5
+                                                              7   
+
+7.3. ADD                                                     
+
+    ADD
+
+                                 XGI, XGR, XEC, XMC          _ERR, _LER
+
+                                                           
+
+                            EN : 1    
+                                    IN1 :  
+                                    IN2 :  
+                                     8   
+
+                            ENO :    1  
+                                    OUT :   
+
+                           IN1, IN2, ..., OUT      
+                            .
+
+                                   
+                                   
+                                   
+ANY                      BOOL
+                                  BYTE
+                    IN1                    WORD
+                    IN2                             DWORD
+                    OUT                                      LWORD
+                                                                     SINT
+                                                                             INT
+                                                                                    DINT
+                                                                                            LINT
+                                                                                                   USINT
+                                                                                                           UINT
+                                                                                                                  UDINT
+                                                                                                                        ULINT
+                                                                                                                              REAL
+                                                                                                                                    LREAL
+                                                                                                                                          TIME
+                                                                                                                                                 DATE
+                                                                                                                                                       TOD
+                                                                                                                                                             DT
+                                                                                                                                                                   STRING
+
+ 
+
+   1. IN1, IN2,..., INn (n   )  OUT  .
+         OUT = IN1 + IN2 + ... + INn
+
+                                                                        
+                          _ERR, _LER  (Set)
+           
+            _ERR
+
+ REAL, LREAL   IN1  IN8         REAL,
+    LREAL      _ERR,_LER  (Set)     
+    
+  (1.#INF000000000000e+000, 1.#SNAN00000000000e+000, 1.#QNAN00000000000e+000) .
+
+                                                                                                                                                                           7-6
+      7   
+
+       
+
+     1. LD
+
+            %MX0               ADD
+                          EN ENO
+                  VALUE1  IN1 OUT   OUT_VAL
+                  VALUE2  IN2
+                  VALUE3  IN3
+
+     2. ST
+
+       (1) OUT_VAL := ADD(EN:=%MX0, IN1:= VALUE1, IN2:= VALUE2, IN3:= VALUE3);
+
+       (2) (%MX0) On    ADD  .
+       (3)   VALUE1 = 300, VALUE2 = 200, VALUE3 = 100 ,   OUT_VAL = 300 + 200 + 100
+
+             = 600  .
+
+7-7
+                                                  7   
+
+7.4. ADD_TIME                                    
+
+    ADD_TIME
+
+                 XGI, XGR, XEC, XMC              _ERR, _LER
+
+                                               
+
+                  EN : 1    
+                          IN1 :   
+                          IN2 :  
+
+                  ENO :    1  
+                          OUT :     
+
+                 OUT    IN1   .  IN1  
+                  TIME_OF_DAY ,  OUT   TIME_OF_DAY
+                 .
+
+                                                                    
+                                                                    
+ANY            BOOL
+                        BYTE
+         IN1                      WORD
+         OUT                               DWORD
+                                                    LWORD
+                                                             SINT
+                                                                    INT
+                                                                          DINT
+                                                                                 LINT
+                                                                                        USINT
+                                                                                               UINT
+                                                                                                      UDINT
+                                                                                                            ULINT
+                                                                                                                 REAL
+                                                                                                                        LREAL
+                                                                                                                              TIME
+                                                                                                                                     DATE
+                                                                                                                                           TOD
+                                                                                                                                                 DT
+                                                                                                                                                        STRING
+
+ 
+
+1. IN1  TIME        .
+2. IN1  TIME_OF_DAY         .
+3. IN1  DATE_AND_TIME           .
+
+ 
+
+                                                               
+ _ERR
+              , _ERR, _LER  (Set). 
+           TIME    T#49D17H2M47S295MS   (TOD)
+          24   ,   (DT)    2163 
+           .
+
+                                                                                                                                                                7-8
+     7   
+       
+     1. LD
+     2. ST
+
+        END_TIME := ADD_TIME(EN:= %IX0.1.0, IN1:= START_TIME, IN2:= WORK_TIME);
+        (1) (%IX0.1.0) On     ADD_TIME  .
+        (2)   START_TIME  TOD#08:30:00    WORK_TIME  T#2H10M20S500MS   
+
+              END_TIME  TOD#10:40:20.5  .
+
+7-9
+                                                                                   7   
+
+7.5. ADD_CAL                                                              
+
+    ADD_CAL
+
+                                                       XGI                _ERR, _LER
+
+                                                                        
+
+                 ADD_CAL                  EN : 1    
+                                                  IN1 :  
+      BOOL  EN             ENO  BOOL              IN2 :  ()
+ARRAY OF                                          IN3 :  ()
+            IN1            OUT  ARRY OF           IN4 :  ()
+      BYTE                      BYTE
+
+      WORD  IN2
+
+BYTE IN3                                  ENO :    1  
+BYTE IN4                                          OUT :    
+
+ 
+    1. IN1      IN2, IN3, IN4      OUT  .
+
+IN1[0] : 16#00~16#99                                                      OUT[0] 
+IN1[1] : 16#01~16#12
+                                                                          OUT[1]  
+
+IN1[2]      : 16#01~16#31       IN2 : 16#0000~16#9999                     OUT[2]  
+IN1[3]      : 16#00~16#23       IN3 : 16#00~16#59
+                                IN4 : 16#00~16#59                         OUT[3]  
+
+IN1[4] : 16#00~16#59                                                      OUT[4]  
+
+IN1[5] : 16#00~16#59                                                      OUT[5]  
+
+IN1[6]      :                                                             OUT[6] 
+                                                                          OUT[7] 
+IN1[7] : 16#19~16#21
+
+*         _RTC_TIME(%FB106) .
+*     BCD  .
+*  : 0-, 1-, 2-, 3-, 4-, 5-, 6-
+
+  *           .
+
+                                                                                      7-10
+ 7   
+
+ 
+
+                                                                      
+        _ERR
+              1. IN1  RTC    
+               - RTC  : 1984-01-01 00:00:00 ~ 2163-06-06 23:59:59
+               - RTC         
+
+                  (ex: 2019-11-31 10:57:30)
+               -     (Don't care)
+              2. IN2, IN3, IN4        
+               - IN2(16#0000~16#9999), IN3(16#00~16#59), IN4(16#00~16#59),
+              3. IN1~IN4   BCD   
+              4.  OUT  RTC    
+
+  
+
+2. LD
+
+         %IX0.1.0           ADD_CAL
+       START_CALENDER
+                       EN            ENO
+
+                       IN1           OUT  END_CALENDER
+
+       WORK_TIME_HOUR IN2
+
+       WORK_TIME_MIN IN3
+       WORK_TIME_SEC IN4
+
+2. ST
+
+   END_CALENDER := ADD_CAL(EN:=%IX0.1.0, IN1:= START_CALENDER, IN2:= WORK_TIME_HOUR, IN3:= WORK_TIME_MIN
+                              IN4:= WORK_TIME_SEC);
+
+  (1) (%IX0.0.0) On   ADD_CAL  .
+  (2)    START_CALENDER  2019-10-14 09:00:00    WORK_TIME IN2~IN4 
+
+        500:00:00       OUT  2019-11-04 05:00:00 () .
+
+7-11
+                                             7   
+
+7.6. AND                                    
+
+    AND
+
+                 XGI, XGR, XEC, XMC                                   -
+
+                                          
+
+                  N : 1    
+                          IN1 : AND  
+                          IN2 : AND  
+                           8   
+
+                  ENO : EN   
+                          OUT : AND  
+
+                                                 IN1, IN2, OUT     .
+
+                    
+                    
+                    
+ANY              BOOL
+                          BYTE
+            IN1                    WORD
+            IN2                              DWORD
+            OUT                                      LWORD
+                                                            SINT
+                                                                  INT
+                                                                         DINT
+                                                                               LINT
+                                                                                      USINT
+                                                                                             UINT
+                                                                                                   UDINT
+                                                                                                          ULINT
+                                                                                                                REAL
+                                                                                                                       LREAL
+                                                                                                                             TIME
+                                                                                                                                    DATE
+                                                                                                                                           TOD
+                                                                                                                                                 DT
+                                                                                                                                                        STRING
+
+ 
+
+      1. IN1  IN2   AND  OUT  .
+                     IN1 1111 ..... 0000
+                                    &
+                     IN2 1010 ..... 1010
+                     OUT 1010 ..... 0000
+
+                                                                                                                                                                7-12
+ 7   
+
+  
+
+1. LD
+
+       %IX0.1.1               AND
+                         EN ENO
+                 %MB10             %QB0.0.0
+                    ABC  IN1 OUT
+                         IN2
+
+2. ST
+
+    ST  AND   .
+    AND2_BYTE  
+
+   %QB0.0.0 := AND2_BYTE(EN:=%IX0.1.1, IN1:= %MB10, IN2:= ABC);
+
+ (1) (%IX0.1.1) On   AND  .
+ (2) IN1= %MB10  IN2 = ABC  AND   OUT = %QB0.0.0  .
+
+7-13
+                                                                       7   
+
+7.7. ASIN                                                             
+
+    ASIN
+
+Arc Sine                                          XGI, XGR, XEC, XMC  _ERR, _LER
+
+                                                                              
+
+                                                   EN : 1    
+                                                           IN : Arc Sine   
+
+        BOOL EN            ASIN         BOOL       ENO : EN   
+   ANY_REAL IN                     ENO  ANY_REAL           OUT : Arc Sine    (Radian)
+                                   OUT
+
+                                                  IN, OUT     
+
+                                                                                         
+                                                                                         
+ANY                        BOOL
+                                     BYTE
+                      IN                       WORD
+                      OUT                                DWORD
+                                                                   LWORD
+                                                                           SINT
+                                                                                  INT
+                                                                                         DINT
+                                                                                               LINT
+                                                                                                      USINT
+                                                                                                             UINT
+                                                                                                                   UDINT
+                                                                                                                          ULINT
+                                                                                                                               REAL
+                                                                                                                                     LREAL
+                                                                                                                                          TIME
+                                                                                                                                                DATE
+                                                                                                                                                      TOD
+                                                                                                                                                           DT
+                                                                                                                                                                 STRING
+
+ 
+
+1. IN  Arc Sine   OUT  .   -/2  /2   .
+      OUT = ASIN (IN)
+
+                                                                            
+                       -1.0  1.0     _ERR, _LER  (SET).
+              _ERR
+
+                                                                                                                                                                         7-14
+ 7   
+  
+1. LD
+
+2. ST
+    RESULT := ASIN(EN:=%IX0.1.3, IN1:= INPUT);
+
+      (1) (%IX0.1.3) On   ASIN  .
+
+      (2) INPUT      0.8660... (                )      RESULT  1.0471...
+
+      ( /3 rad = 60°) .
+
+7-15
+                                                            7   
+
+                            7.8. ATAN
+
+ATAN                                                       
+
+Arc Tangent                            XGI, XGR, XEC, XMC                             -
+                          
+                                                           
+
+                             EN : 1    
+                                     IN : Arc Tangent   
+
+                             ENO : EN   
+                                     OUT : Arc Tangent   (Radian)
+
+                            IN, OUT     
+
+                                                                                    
+                                                                                    
+   ANY          BOOL
+                          BYTE
+           IN                       WORD
+           OUT                                DWORD
+                                                     LWORD
+                                                            SINT
+                                                                   INT
+                                                                           DINT
+                                                                                  LINT
+                                                                                          USINT
+                                                                                                 UINT
+                                                                                                         UDINT
+                                                                                                               ULINT
+                                                                                                                     REAL
+                                                                                                                          LREAL
+                                                                                                                                TIME
+                                                                                                                                     DATE
+                                                                                                                                           TOD
+                                                                                                                                                 DT
+                                                                                                                                                      STRING
+
+ 
+
+1. IN  Arc Tangent   OUT  .   -/2  /2   .
+      OUT = ATAN (IN)
+
+  
+1. LD
+
+2. ST
+    RESULT := ATAN(EN:=%IX0.1.3, IN1:= INPUT);
+
+ (1) (%IX0.1.3) On   Arc Tangent   ATAN  .
+ (2) INPUT      1.0      RESULT  0.7853...
+
+       ( /4 rad = 45°) .
+
+                                                                                                                                                    7-16
+ 7   
+
+_*** 7.9. BCD_TO                                                  
+
+    BCD_TO_***
+
+      BCD                                     XGI, XGR, XEC, XMC  _ERR, _LER
+                              
+                                                                               
+
+                                               EN : 1    
+                                                       IN : BCD     ANY 
+
+                                               ENO : EN   
+                                                       OUT :   
+
+      ANY                BOOL
+                                  BYTE
+                IN                         WORD
+                OUT                                 DWORD
+                                                            LWORD
+                                                                  SINT
+                                                                          INT
+                                                                                 DINT
+                                                                                         LINT
+                                                                                                USINT
+                                                                                                        UINT
+                                                                                                                UDINT
+                                                                                                                      ULINT
+                                                                                                                            REAL
+                                                                                                                                  LREAL
+                                                                                                                                         TIME
+                                                                                                                                               DATE
+                                                                                                                                                      TOD
+                                                                                                                                                            DT
+                                                                                                                                                                  STRING
+
+                                       
+                                                          
+
+      *ANY_BIT : ANY_BIT  BOOL 
+
+ 
+    1. IN    OUT  .
+
+                                                  
+
+      BYTE_BCD_TO_SINT          BYTE   SINT
+
+      WORD_BCD_TO_INT           WORD   INT
+
+      DWORD_BCD_TO_DINT         DWORD  DINT    BCD      .
+      LWORD_BCD_TO_LINT         LWORD  LINT     BCD    .
+      BYTE_BCD_TO_USINT         BYTE   USINT   (   WORD   016#9999  
+      WORD_BCD_TO_UINT          WORD   UINT   .)
+
+      DWORD_BCD_TO_UDINT DWORD         UDINT
+
+      LWORD_BCD_TO_ULINT LWORD         ULINT
+
+7-17
+                  7   
+
+                                                                         
+                 IN  BCD    ,  0   _ERR, _LER  (Set).
+          
+           _ERR
+1
+
+  
+
+1. LD
+
+2. ST
+
+    ST  BCD_TO_***  .
+    BYTE_BCD_TO_SINT  
+
+    OUT_VAL := BYTE_BCD_TO_SINT(EN:=%MX0, IN:= BCD_VAL);
+
+   (1) (%MX0) On   BCD_TO_***  .
+   (2) BCD_VAL(BYTE ) = 16#22(2#0010_0010),     OUT_VAL(SINT ) = 22
+
+        (2#0001_0110) .
+
+      (IN1) :BCD_VAL(BYTE) = 16#22 0 0 1 0 0 0 1 0
+
+                                                                                   (BCD_TO_SINT)
+
+        (OUT): OUT_VAL(SINT) = 22 0 0 0 1 0 1 1 0
+
+                                                                           7-18
+ 7   
+
+_TO 7.10. BOOL_*** _***  V
+
+      BOOL_TO_***                                                          
+
+      BOOL                                 XGI, XGR, XEC, XMC              -
+                              
+                                                                         
+
+                                         EN : 1    
+                                                IN :   (1 )
+
+                                         ENO : EN   
+                                                OUT :   
+
+      ANY                             BOOL
+                                            BYTE
+                                                   WORD
+                                                         DWORD
+                                                                LWORD
+                                                                      SINT
+                                                                             INT
+                                                                                   DINT
+                                                                                          LINT
+                                                                                                 USINT
+                                                                                                       UINT
+                                                                                                              UDINT
+                                                                                                                    ULINT
+                                                                                                                           REAL
+                                                                                                                                 LREAL
+                                                                                                                                        TIME
+                                                                                                                                              DATE
+                                                                                                                                                     TOD
+                                                                                                                                                            DT
+                                                                                                                                                                  STRING
+
+                         OUT                                                  
+
+*ANY_BIT: ANY_BIT   BOOL 
+
+ 
+
+      1. IN    OUT  .
+
+                                               
+
+      BOOL_TO_SINT              SINT
+
+      BOOL_TO_INT               INT
+
+      BOOL_TO_DINT              DINT    BOOL   2#0   `0', 2#1   `1'
+      BOOL_TO_LINT              LINT        .
+      BOOL_TO_USINT             USINT
+
+      BOOL_TO_UINT              UINT
+
+      BOOL_TO_UDINT             UDINT
+
+      BOOL_TO_ULINT             ULINT
+
+      BOOL_TO_BYTE              BYTE
+
+      BOOL_TO_WORD              WORD    BOOL    0       
+
+      BOOL_TO_DWORD             DWORD   .
+
+      BOOL_TO_LWORD             LWORD
+
+      BOOL_TO_STRING            STRING   BOOL  STRING  . `0'  `1' 
+                                        .
+
+7-19
+        7   
+
+  
+1. LD
+
+2. ST
+
+    ST  BOOL_TO_***  .
+    BOOL_TO_BYTE  
+
+    OUT_VAL := BOOL_TO_BYTE(EN:=%MX0, IN:= BOOL_VAL);
+
+  (1) ( %MX0) On   BOOL_TO_*** .
+  (2)    BOOL_VAL(BOOL ) = 2#1 ,    OUT_VAL(BYTE ) = 2#0000_0001)
+
+         .
+
+       7-20
+ 7   
+
+7.11. BYTE_TO_***                                                          
+7.12.
+
+    BYTE_TO_***

@@ -1,0 +1,1100 @@
+     1→namespace NoiseTest
+     2→{
+     3→    partial class FrmMain
+     4→    {
+     5→        /// <summary>
+     6→        /// 필수 디자이너 변수입니다.
+     7→        /// </summary>
+     8→        private System.ComponentModel.IContainer components = null;
+     9→
+    10→        /// <summary>
+    11→        /// 사용 중인 모든 리소스를 정리합니다.
+    12→        /// </summary>
+    13→        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+    14→        protected override void Dispose(bool disposing)
+    15→        {
+    16→            if (disposing && (components != null))
+    17→            {
+    18→                components.Dispose();
+    19→            }
+    20→            base.Dispose(disposing);
+    21→        }
+    22→
+    23→        #region Windows Form 디자이너에서 생성한 코드
+    24→
+    25→        /// <summary>
+    26→        /// 디자이너 지원에 필요한 메서드입니다. 
+    27→        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+    28→        /// </summary>
+    29→        private void InitializeComponent()
+    30→        {
+    31→            this.components = new System.ComponentModel.Container();
+    32→            this.label86 = new System.Windows.Forms.Label();
+    33→            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+    34→            this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    35→            this.systemSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    36→            this.partSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    37→            this.barcodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    38→            this.dataSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    39→            this.iOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    40→            this.kEYBOARDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    41→            this.basicSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    42→            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+    43→            this.panel4 = new System.Windows.Forms.Panel();
+    44→            this._listZ = new System.Windows.Forms.ListView();
+    45→            this.GraphZ = new ZedGraph.ZedGraphControl();
+    46→            this.Graph7 = new ZedGraph.ZedGraphControl();
+    47→            this.textBox1 = new System.Windows.Forms.TextBox();
+    48→            this.panel11 = new System.Windows.Forms.Panel();
+    49→            this.srcLbNoise = new System.Windows.Forms.Label();
+    50→            this.SerialScanner1 = new System.IO.Ports.SerialPort(this.components);
+    51→            this.SerialPrinter = new System.IO.Ports.SerialPort(this.components);
+    52→            this.srcLbVolt = new System.Windows.Forms.Label();
+    53→            this.srcLbCurr = new System.Windows.Forms.Label();
+    54→            this.tmrWorkNoiseCurrent = new System.Windows.Forms.Timer(this.components);
+    55→            this.panel5 = new System.Windows.Forms.Panel();
+    56→            this._listY = new System.Windows.Forms.ListView();
+    57→            this.GraphY = new ZedGraph.ZedGraphControl();
+    58→            this.Graph6 = new ZedGraph.ZedGraphControl();
+    59→            this.panel8 = new System.Windows.Forms.Panel();
+    60→            this._listX = new System.Windows.Forms.ListView();
+    61→            this.GraphX = new ZedGraph.ZedGraphControl();
+    62→            this.Graph5 = new ZedGraph.ZedGraphControl();
+    63→            this.label7 = new System.Windows.Forms.Label();
+    64→            this.Spec_StartUp1 = new System.Windows.Forms.Label();
+    65→            this.Val_StartUp1 = new System.Windows.Forms.Label();
+    66→            this.label5 = new System.Windows.Forms.Label();
+    67→            this.Val_Operating1 = new System.Windows.Forms.Label();
+    68→            this.Spec_Operating1 = new System.Windows.Forms.Label();
+    69→            this.Dec_StartUp1 = new System.Windows.Forms.Label();
+    70→            this.Dec_Operating1 = new System.Windows.Forms.Label();
+    71→            this.panel1 = new System.Windows.Forms.Panel();
+    72→            this.Graph1 = new ZedGraph.ZedGraphControl();
+    73→            this.panel2 = new System.Windows.Forms.Panel();
+    74→            this.Dec_Operating2 = new System.Windows.Forms.Label();
+    75→            this.Graph2 = new ZedGraph.ZedGraphControl();
+    76→            this.Dec_StartUp2 = new System.Windows.Forms.Label();
+    77→            this.Spec_Operating2 = new System.Windows.Forms.Label();
+    78→            this.Val_Operating2 = new System.Windows.Forms.Label();
+    79→            this.Val_StartUp2 = new System.Windows.Forms.Label();
+    80→            this.Spec_StartUp2 = new System.Windows.Forms.Label();
+    81→            this.srcLbZ = new System.Windows.Forms.Label();
+    82→            this.srcLbY = new System.Windows.Forms.Label();
+    83→            this.srcLbX = new System.Windows.Forms.Label();
+    84→            this.label1 = new System.Windows.Forms.Label();
+    85→            this.label11 = new System.Windows.Forms.Label();
+    86→            this.label13 = new System.Windows.Forms.Label();
+    87→            this.label14 = new System.Windows.Forms.Label();
+    88→            this.label4 = new System.Windows.Forms.Label();
+    89→            this.label6 = new System.Windows.Forms.Label();
+    90→            this.label15 = new System.Windows.Forms.Label();
+    91→            this.srclbTestTime = new System.Windows.Forms.Label();
+    92→            this.tmrDisplay = new System.Windows.Forms.Timer(this.components);
+    93→            this.panel3 = new System.Windows.Forms.Panel();
+    94→            this.Dec_Operating4 = new System.Windows.Forms.Label();
+    95→            this.Graph4 = new ZedGraph.ZedGraphControl();
+    96→            this.Dec_StartUp4 = new System.Windows.Forms.Label();
+    97→            this.Spec_Operating4 = new System.Windows.Forms.Label();
+    98→            this.Val_Operating4 = new System.Windows.Forms.Label();
+    99→            this.Val_StartUp4 = new System.Windows.Forms.Label();
+   100→            this.Spec_StartUp4 = new System.Windows.Forms.Label();
+   101→            this.panel6 = new System.Windows.Forms.Panel();
+   102→            this.Dec_Operating3 = new System.Windows.Forms.Label();
+   103→            this.Graph3 = new ZedGraph.ZedGraphControl();
+   104→            this.Dec_StartUp3 = new System.Windows.Forms.Label();
+   105→            this.Spec_Operating3 = new System.Windows.Forms.Label();
+   106→            this.Val_Operating3 = new System.Windows.Forms.Label();
+   107→            this.Val_StartUp3 = new System.Windows.Forms.Label();
+   108→            this.Spec_StartUp3 = new System.Windows.Forms.Label();
+   109→            this.tmrWorkVib = new System.Windows.Forms.Timer(this.components);
+   110→            this.label16 = new System.Windows.Forms.Label();
+   111→            this.srclbvTestTime = new System.Windows.Forms.Label();
+   112→            this.button1 = new System.Windows.Forms.Button();
+   113→            this.SerialScanner2 = new System.IO.Ports.SerialPort(this.components);
+   114→            this.label24 = new System.Windows.Forms.Label();
+   115→            this.srclbVibScanOK = new System.Windows.Forms.Label();
+   116→            this.srclbNoiseScanOK1 = new System.Windows.Forms.Label();
+   117→            this.label30 = new System.Windows.Forms.Label();
+   118→            this.srclbNoiseScanOK2 = new System.Windows.Forms.Label();
+   119→            this.label32 = new System.Windows.Forms.Label();
+   120→            this.srcDisScan1 = new System.Windows.Forms.Label();
+   121→            this.srcDisScan2_1 = new System.Windows.Forms.Label();
+   122→            this.srcDisScan2_2 = new System.Windows.Forms.Label();
+   123→            this.label2 = new System.Windows.Forms.Label();
+   124→            this.label8 = new System.Windows.Forms.Label();
+   125→            this.label3 = new System.Windows.Forms.Label();
+   126→            this.label9 = new System.Windows.Forms.Label();
+   127→            this.label10 = new System.Windows.Forms.Label();
+   128→            this.label12 = new System.Windows.Forms.Label();
+   129→            this.panel7 = new System.Windows.Forms.Panel();
+   130→            this.label17 = new System.Windows.Forms.Label();
+   131→            this.label18 = new System.Windows.Forms.Label();
+   132→            this.label19 = new System.Windows.Forms.Label();
+   133→            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+   134→            this.label20 = new System.Windows.Forms.Label();
+   135→            this.label21 = new System.Windows.Forms.Label();
+   136→            this.label22 = new System.Windows.Forms.Label();
+   137→            this.label23 = new System.Windows.Forms.Label();
+   138→            this.label25 = new System.Windows.Forms.Label();
+   139→            this.panel9 = new System.Windows.Forms.Panel();
+   140→            this.label26 = new System.Windows.Forms.Label();
+   141→            this.label27 = new System.Windows.Forms.Label();
+   142→            this.label28 = new System.Windows.Forms.Label();
+   143→            this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
+   144→            this.label29 = new System.Windows.Forms.Label();
+   145→            this.label31 = new System.Windows.Forms.Label();
+   146→            this.label33 = new System.Windows.Forms.Label();
+   147→            this.label34 = new System.Windows.Forms.Label();
+   148→            this.label35 = new System.Windows.Forms.Label();
+   149→            this.panel10 = new System.Windows.Forms.Panel();
+   150→            this.label36 = new System.Windows.Forms.Label();
+   151→            this.label37 = new System.Windows.Forms.Label();
+   152→            this.label38 = new System.Windows.Forms.Label();
+   153→            this.zedGraphControl3 = new ZedGraph.ZedGraphControl();
+   154→            this.label39 = new System.Windows.Forms.Label();
+   155→            this.label40 = new System.Windows.Forms.Label();
+   156→            this.label41 = new System.Windows.Forms.Label();
+   157→            this.label42 = new System.Windows.Forms.Label();
+   158→            this.label43 = new System.Windows.Forms.Label();
+   159→            this.panel100 = new System.Windows.Forms.Panel();
+   160→            this.label44 = new System.Windows.Forms.Label();
+   161→            this.zedGraphControl4 = new ZedGraph.ZedGraphControl();
+   162→            this.label45 = new System.Windows.Forms.Label();
+   163→            this.label46 = new System.Windows.Forms.Label();
+   164→            this.label47 = new System.Windows.Forms.Label();
+   165→            this.label48 = new System.Windows.Forms.Label();
+   166→            this.label49 = new System.Windows.Forms.Label();
+   167→            this.label50 = new System.Windows.Forms.Label();
+   168→            this.label51 = new System.Windows.Forms.Label();
+   169→            this.menuStrip1.SuspendLayout();
+   170→            this.panel4.SuspendLayout();
+   171→            this.panel11.SuspendLayout();
+   172→            this.panel5.SuspendLayout();
+   173→            this.panel8.SuspendLayout();
+   174→            this.panel1.SuspendLayout();
+   175→            this.panel2.SuspendLayout();
+   176→            this.panel3.SuspendLayout();
+   177→            this.panel6.SuspendLayout();
+   178→            this.panel7.SuspendLayout();
+   179→            this.panel9.SuspendLayout();
+   180→            this.panel10.SuspendLayout();
+   181→            this.panel100.SuspendLayout();
+   182→            this.SuspendLayout();
+   183→            // 
+   184→            // label86
+   185→            // 
+   186→            this.label86.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+   187→            this.label86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   188→            this.label86.Dock = System.Windows.Forms.DockStyle.Top;
+   189→            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   190→            this.label86.ForeColor = System.Drawing.Color.Black;
+   191→            this.label86.Location = new System.Drawing.Point(0, 0);
+   192→            this.label86.Name = "label86";
+   193→            this.label86.Size = new System.Drawing.Size(459, 30);
+   194→            this.label86.TabIndex = 125;
+   195→            this.label86.Text = "# LOG";
+   196→            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   197→            // 
+   198→            // menuStrip1
+   199→            // 
+   200→            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+   201→            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   202→            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+   203→            this.mENUToolStripMenuItem});
+   204→            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+   205→            this.menuStrip1.Name = "menuStrip1";
+   206→            this.menuStrip1.Size = new System.Drawing.Size(1916, 28);
+   207→            this.menuStrip1.TabIndex = 61;
+   208→            this.menuStrip1.Text = "menuStrip1";
+   209→            // 
+   210→            // mENUToolStripMenuItem
+   211→            // 
+   212→            this.mENUToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+   213→            this.systemSettingToolStripMenuItem,
+   214→            this.partSettingToolStripMenuItem,
+   215→            this.barcodeToolStripMenuItem,
+   216→            this.dataSearchToolStripMenuItem,
+   217→            this.iOToolStripMenuItem,
+   218→            this.kEYBOARDToolStripMenuItem,
+   219→            this.basicSettingToolStripMenuItem,
+   220→            this.exitToolStripMenuItem});
+   221→            this.mENUToolStripMenuItem.Name = "mENUToolStripMenuItem";
+   222→            this.mENUToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+   223→            this.mENUToolStripMenuItem.Text = "MENU";
+   224→            // 
+   225→            // systemSettingToolStripMenuItem
+   226→            // 
+   227→            this.systemSettingToolStripMenuItem.Name = "systemSettingToolStripMenuItem";
+   228→            this.systemSettingToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   229→            this.systemSettingToolStripMenuItem.Text = "System Setting";
+   230→            this.systemSettingToolStripMenuItem.Click += new System.EventHandler(this.systemSettingToolStripMenuItem_Click);
+   231→            // 
+   232→            // partSettingToolStripMenuItem
+   233→            // 
+   234→            this.partSettingToolStripMenuItem.Name = "partSettingToolStripMenuItem";
+   235→            this.partSettingToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   236→            this.partSettingToolStripMenuItem.Text = "Part Setting";
+   237→            this.partSettingToolStripMenuItem.Click += new System.EventHandler(this.partSettingToolStripMenuItem_Click);
+   238→            // 
+   239→            // barcodeToolStripMenuItem
+   240→            // 
+   241→            this.barcodeToolStripMenuItem.Name = "barcodeToolStripMenuItem";
+   242→            this.barcodeToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   243→            this.barcodeToolStripMenuItem.Text = "Barcode";
+   244→            // 
+   245→            // dataSearchToolStripMenuItem
+   246→            // 
+   247→            this.dataSearchToolStripMenuItem.Name = "dataSearchToolStripMenuItem";
+   248→            this.dataSearchToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   249→            this.dataSearchToolStripMenuItem.Text = "Data Search";
+   250→            this.dataSearchToolStripMenuItem.Click += new System.EventHandler(this.dataSearchToolStripMenuItem_Click);
+   251→            // 
+   252→            // iOToolStripMenuItem
+   253→            // 
+   254→            this.iOToolStripMenuItem.Name = "iOToolStripMenuItem";
+   255→            this.iOToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   256→            this.iOToolStripMenuItem.Text = "I/O";
+   257→            this.iOToolStripMenuItem.Click += new System.EventHandler(this.iOToolStripMenuItem_Click);
+   258→            // 
+   259→            // kEYBOARDToolStripMenuItem
+   260→            // 
+   261→            this.kEYBOARDToolStripMenuItem.Name = "kEYBOARDToolStripMenuItem";
+   262→            this.kEYBOARDToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   263→            this.kEYBOARDToolStripMenuItem.Text = "KEYBOARD";
+   264→            // 
+   265→            // basicSettingToolStripMenuItem
+   266→            // 
+   267→            this.basicSettingToolStripMenuItem.Name = "basicSettingToolStripMenuItem";
+   268→            this.basicSettingToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   269→            this.basicSettingToolStripMenuItem.Text = "Noise Setting";
+   270→            this.basicSettingToolStripMenuItem.Click += new System.EventHandler(this.basicSettingToolStripMenuItem_Click);
+   271→            // 
+   272→            // exitToolStripMenuItem
+   273→            // 
+   274→            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+   275→            this.exitToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+   276→            this.exitToolStripMenuItem.Text = "Exit";
+   277→            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+   278→            // 
+   279→            // panel4
+   280→            // 
+   281→            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   282→            this.panel4.Controls.Add(this._listZ);
+   283→            this.panel4.Controls.Add(this.GraphZ);
+   284→            this.panel4.Controls.Add(this.Graph7);
+   285→            this.panel4.Location = new System.Drawing.Point(965, 790);
+   286→            this.panel4.Name = "panel4";
+   287→            this.panel4.Size = new System.Drawing.Size(471, 240);
+   288→            this.panel4.TabIndex = 167;
+   289→            // 
+   290→            // _listZ
+   291→            // 
+   292→            this._listZ.Dock = System.Windows.Forms.DockStyle.Fill;
+   293→            this._listZ.FullRowSelect = true;
+   294→            this._listZ.GridLines = true;
+   295→            this._listZ.HideSelection = false;
+   296→            this._listZ.Location = new System.Drawing.Point(0, 180);
+   297→            this._listZ.Name = "_listZ";
+   298→            this._listZ.Size = new System.Drawing.Size(469, 58);
+   299→            this._listZ.TabIndex = 190;
+   300→            this._listZ.UseCompatibleStateImageBehavior = false;
+   301→            this._listZ.View = System.Windows.Forms.View.Details;
+   302→            // 
+   303→            // GraphZ
+   304→            // 
+   305→            this.GraphZ.Dock = System.Windows.Forms.DockStyle.Top;
+   306→            this.GraphZ.Location = new System.Drawing.Point(0, 90);
+   307→            this.GraphZ.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
+   308→            this.GraphZ.Name = "GraphZ";
+   309→            this.GraphZ.ScrollGrace = 0D;
+   310→            this.GraphZ.ScrollMaxX = 0D;
+   311→            this.GraphZ.ScrollMaxY = 0D;
+   312→            this.GraphZ.ScrollMaxY2 = 0D;
+   313→            this.GraphZ.ScrollMinX = 0D;
+   314→            this.GraphZ.ScrollMinY = 0D;
+   315→            this.GraphZ.ScrollMinY2 = 0D;
+   316→            this.GraphZ.SelectModifierKeys = System.Windows.Forms.Keys.D1;
+   317→            this.GraphZ.Size = new System.Drawing.Size(469, 90);
+   318→            this.GraphZ.TabIndex = 189;
+   319→            this.GraphZ.UseExtendedPrintDialog = true;
+   320→            // 
+   321→            // Graph7
+   322→            // 
+   323→            this.Graph7.Dock = System.Windows.Forms.DockStyle.Top;
+   324→            this.Graph7.Location = new System.Drawing.Point(0, 0);
+   325→            this.Graph7.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+   326→            this.Graph7.Name = "Graph7";
+   327→            this.Graph7.ScrollGrace = 0D;
+   328→            this.Graph7.ScrollMaxX = 0D;
+   329→            this.Graph7.ScrollMaxY = 0D;
+   330→            this.Graph7.ScrollMaxY2 = 0D;
+   331→            this.Graph7.ScrollMinX = 0D;
+   332→            this.Graph7.ScrollMinY = 0D;
+   333→            this.Graph7.ScrollMinY2 = 0D;
+   334→            this.Graph7.SelectModifierKeys = System.Windows.Forms.Keys.D1;
+   335→            this.Graph7.Size = new System.Drawing.Size(469, 90);
+   336→            this.Graph7.TabIndex = 156;
+   337→            this.Graph7.UseExtendedPrintDialog = true;
+   338→            // 
+   339→            // textBox1
+   340→            // 
+   341→            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   342→            this.textBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   343→            this.textBox1.Location = new System.Drawing.Point(0, 30);
+   344→            this.textBox1.Multiline = true;
+   345→            this.textBox1.Name = "textBox1";
+   346→            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+   347→            this.textBox1.Size = new System.Drawing.Size(459, 728);
+   348→            this.textBox1.TabIndex = 181;
+   349→            // 
+   350→            // panel11
+   351→            // 
+   352→            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   353→            this.panel11.Controls.Add(this.label86);
+   354→            this.panel11.Controls.Add(this.textBox1);
+   355→            this.panel11.Location = new System.Drawing.Point(1442, 35);
+   356→            this.panel11.Name = "panel11";
+   357→            this.panel11.Size = new System.Drawing.Size(461, 761);
+   358→            this.panel11.TabIndex = 182;
+   359→            // 
+   360→            // srcLbNoise
+   361→            // 
+   362→            this.srcLbNoise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   363→            this.srcLbNoise.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   364→            this.srcLbNoise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   365→            this.srcLbNoise.ForeColor = System.Drawing.Color.White;
+   366→            this.srcLbNoise.Location = new System.Drawing.Point(1795, 853);
+   367→            this.srcLbNoise.Name = "srcLbNoise";
+   368→            this.srcLbNoise.Size = new System.Drawing.Size(109, 27);
+   369→            this.srcLbNoise.TabIndex = 149;
+   370→            this.srcLbNoise.Text = "srcLbNoise";
+   371→            this.srcLbNoise.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   372→            // 
+   373→            // srcLbVolt
+   374→            // 
+   375→            this.srcLbVolt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   376→            this.srcLbVolt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   377→            this.srcLbVolt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   378→            this.srcLbVolt.ForeColor = System.Drawing.Color.White;
+   379→            this.srcLbVolt.Location = new System.Drawing.Point(1795, 799);
+   380→            this.srcLbVolt.Name = "srcLbVolt";
+   381→            this.srcLbVolt.Size = new System.Drawing.Size(109, 27);
+   382→            this.srcLbVolt.TabIndex = 184;
+   383→            this.srcLbVolt.Text = "srcLbVolt";
+   384→            this.srcLbVolt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   385→            // 
+   386→            // srcLbCurr
+   387→            // 
+   388→            this.srcLbCurr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   389→            this.srcLbCurr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   390→            this.srcLbCurr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   391→            this.srcLbCurr.ForeColor = System.Drawing.Color.White;
+   392→            this.srcLbCurr.Location = new System.Drawing.Point(1795, 826);
+   393→            this.srcLbCurr.Name = "srcLbCurr";
+   394→            this.srcLbCurr.Size = new System.Drawing.Size(109, 27);
+   395→            this.srcLbCurr.TabIndex = 185;
+   396→            this.srcLbCurr.Text = "srcLbCurr";
+   397→            this.srcLbCurr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   398→            // 
+   399→            // tmrWorkNoiseCurrent
+   400→            // 
+   401→            this.tmrWorkNoiseCurrent.Tick += new System.EventHandler(this.tmrWorkNoiseCurrent_Tick);
+   402→            // 
+   403→            // panel5
+   404→            // 
+   405→            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   406→            this.panel5.Controls.Add(this._listY);
+   407→            this.panel5.Controls.Add(this.GraphY);
+   408→            this.panel5.Controls.Add(this.Graph6);
+   409→            this.panel5.Location = new System.Drawing.Point(488, 790);
+   410→            this.panel5.Name = "panel5";
+   411→            this.panel5.Size = new System.Drawing.Size(471, 240);
+   412→            this.panel5.TabIndex = 166;
+   413→            // 
+   414→            // _listY
+   415→            // 
+   416→            this._listY.Dock = System.Windows.Forms.DockStyle.Fill;
+   417→            this._listY.FullRowSelect = true;
+   418→            this._listY.GridLines = true;
+   419→            this._listY.HideSelection = false;
+   420→            this._listY.Location = new System.Drawing.Point(0, 180);
+   421→            this._listY.Name = "_listY";
+   422→            this._listY.Size = new System.Drawing.Size(469, 58);
+   423→            this._listY.TabIndex = 187;
+   424→            this._listY.UseCompatibleStateImageBehavior = false;
+   425→            this._listY.View = System.Windows.Forms.View.Details;
+   426→            // 
+   427→            // GraphY
+   428→            // 
+   429→            this.GraphY.Dock = System.Windows.Forms.DockStyle.Top;
+   430→            this.GraphY.Location = new System.Drawing.Point(0, 90);
+   431→            this.GraphY.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
+   432→            this.GraphY.Name = "GraphY";
+   433→            this.GraphY.ScrollGrace = 0D;
+   434→            this.GraphY.ScrollMaxX = 0D;
+   435→            this.GraphY.ScrollMaxY = 0D;
+   436→            this.GraphY.ScrollMaxY2 = 0D;
+   437→            this.GraphY.ScrollMinX = 0D;
+   438→            this.GraphY.ScrollMinY = 0D;
+   439→            this.GraphY.ScrollMinY2 = 0D;
+   440→            this.GraphY.SelectModifierKeys = System.Windows.Forms.Keys.D1;
+   441→            this.GraphY.Size = new System.Drawing.Size(469, 90);
+   442→            this.GraphY.TabIndex = 186;
+   443→            this.GraphY.UseExtendedPrintDialog = true;
+   444→            // 
+   445→            // Graph6
+   446→            // 
+   447→            this.Graph6.Dock = System.Windows.Forms.DockStyle.Top;
+   448→            this.Graph6.Location = new System.Drawing.Point(0, 0);
+   449→            this.Graph6.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+   450→            this.Graph6.Name = "Graph6";
+   451→            this.Graph6.ScrollGrace = 0D;
+   452→            this.Graph6.ScrollMaxX = 0D;
+   453→            this.Graph6.ScrollMaxY = 0D;
+   454→            this.Graph6.ScrollMaxY2 = 0D;
+   455→            this.Graph6.ScrollMinX = 0D;
+   456→            this.Graph6.ScrollMinY = 0D;
+   457→            this.Graph6.ScrollMinY2 = 0D;
+   458→            this.Graph6.SelectModifierKeys = System.Windows.Forms.Keys.D1;
+   459→            this.Graph6.Size = new System.Drawing.Size(469, 90);
+   460→            this.Graph6.TabIndex = 156;
+   461→            this.Graph6.UseExtendedPrintDialog = true;
+   462→            // 
+   463→            // panel8
+   464→            // 
+   465→            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   466→            this.panel8.Controls.Add(this._listX);
+   467→            this.panel8.Controls.Add(this.GraphX);
+   468→            this.panel8.Controls.Add(this.Graph5);
+   469→            this.panel8.Location = new System.Drawing.Point(11, 790);
+   470→            this.panel8.Name = "panel8";
+   471→            this.panel8.Size = new System.Drawing.Size(471, 240);
+   472→            this.panel8.TabIndex = 176;
+   473→            // 
+   474→            // _listX
+   475→            // 
+   476→            this._listX.Dock = System.Windows.Forms.DockStyle.Fill;
+   477→            this._listX.FullRowSelect = true;
+   478→            this._listX.GridLines = true;
+   479→            this._listX.HideSelection = false;
+   480→            this._listX.Location = new System.Drawing.Point(0, 180);
+   481→            this._listX.Name = "_listX";
+   482→            this._listX.Size = new System.Drawing.Size(469, 58);
+   483→            this._listX.TabIndex = 178;
+   484→            this._listX.UseCompatibleStateImageBehavior = false;
+   485→            this._listX.View = System.Windows.Forms.View.Details;
+   486→            // 
+   487→            // GraphX
+   488→            // 
+   489→            this.GraphX.Dock = System.Windows.Forms.DockStyle.Top;
+   490→            this.GraphX.Location = new System.Drawing.Point(0, 90);
+   491→            this.GraphX.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+   492→            this.GraphX.Name = "GraphX";
+   493→            this.GraphX.ScrollGrace = 0D;
+   494→            this.GraphX.ScrollMaxX = 0D;
+   495→            this.GraphX.ScrollMaxY = 0D;
+   496→            this.GraphX.ScrollMaxY2 = 0D;
+   497→            this.GraphX.ScrollMinX = 0D;
+   498→            this.GraphX.ScrollMinY = 0D;
+   499→            this.GraphX.ScrollMinY2 = 0D;
+   500→            this.GraphX.SelectModifierKeys = System.Windows.Forms.Keys.D1;
+   501→            this.GraphX.Size = new System.Drawing.Size(469, 90);
+   502→            this.GraphX.TabIndex = 177;
+   503→            this.GraphX.UseExtendedPrintDialog = true;
+   504→            // 
+   505→            // Graph5
+   506→            // 
+   507→            this.Graph5.Dock = System.Windows.Forms.DockStyle.Top;
+   508→            this.Graph5.Location = new System.Drawing.Point(0, 0);
+   509→            this.Graph5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+   510→            this.Graph5.Name = "Graph5";
+   511→            this.Graph5.ScrollGrace = 0D;
+   512→            this.Graph5.ScrollMaxX = 0D;
+   513→            this.Graph5.ScrollMaxY = 0D;
+   514→            this.Graph5.ScrollMaxY2 = 0D;
+   515→            this.Graph5.ScrollMinX = 0D;
+   516→            this.Graph5.ScrollMinY = 0D;
+   517→            this.Graph5.ScrollMinY2 = 0D;
+   518→            this.Graph5.SelectModifierKeys = System.Windows.Forms.Keys.D1;
+   519→            this.Graph5.Size = new System.Drawing.Size(469, 90);
+   520→            this.Graph5.TabIndex = 155;
+   521→            this.Graph5.UseExtendedPrintDialog = true;
+   522→            this.Graph5.Load += new System.EventHandler(this.Graph5_Load);
+   523→            // 
+   524→            // label7
+   525→            // 
+   526→            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+   527→            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   528→            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   529→            this.label7.ForeColor = System.Drawing.Color.Black;
+   530→            this.label7.Location = new System.Drawing.Point(0, 109);
+   531→            this.label7.Name = "label7";
+   532→            this.label7.Size = new System.Drawing.Size(77, 25);
+   533→            this.label7.TabIndex = 32;
+   534→            this.label7.Text = "START UP";
+   535→            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   536→            // 
+   537→            // Spec_StartUp1
+   538→            // 
+   539→            this.Spec_StartUp1.BackColor = System.Drawing.Color.WhiteSmoke;
+   540→            this.Spec_StartUp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   541→            this.Spec_StartUp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   542→            this.Spec_StartUp1.ForeColor = System.Drawing.Color.Black;
+   543→            this.Spec_StartUp1.Location = new System.Drawing.Point(77, 109);
+   544→            this.Spec_StartUp1.Name = "Spec_StartUp1";
+   545→            this.Spec_StartUp1.Size = new System.Drawing.Size(256, 25);
+   546→            this.Spec_StartUp1.TabIndex = 33;
+   547→            this.Spec_StartUp1.Text = "SPEC";
+   548→            this.Spec_StartUp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   549→            // 
+   550→            // Val_StartUp1
+   551→            // 
+   552→            this.Val_StartUp1.BackColor = System.Drawing.Color.WhiteSmoke;
+   553→            this.Val_StartUp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   554→            this.Val_StartUp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   555→            this.Val_StartUp1.ForeColor = System.Drawing.Color.Black;
+   556→            this.Val_StartUp1.Location = new System.Drawing.Point(333, 109);
+   557→            this.Val_StartUp1.Name = "Val_StartUp1";
+   558→            this.Val_StartUp1.Size = new System.Drawing.Size(243, 25);
+   559→            this.Val_StartUp1.TabIndex = 153;
+   560→            this.Val_StartUp1.Text = "SPEC";
+   561→            this.Val_StartUp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   562→            // 
+   563→            // label5
+   564→            // 
+   565→            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+   566→            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   567→            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   568→            this.label5.ForeColor = System.Drawing.Color.Black;
+   569→            this.label5.Location = new System.Drawing.Point(0, 134);
+   570→            this.label5.Name = "label5";
+   571→            this.label5.Size = new System.Drawing.Size(77, 25);
+   572→            this.label5.TabIndex = 34;
+   573→            this.label5.Text = "OPERATING";
+   574→            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   575→            // 
+   576→            // Val_Operating1
+   577→            // 
+   578→            this.Val_Operating1.BackColor = System.Drawing.Color.WhiteSmoke;
+   579→            this.Val_Operating1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   580→            this.Val_Operating1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   581→            this.Val_Operating1.ForeColor = System.Drawing.Color.Black;
+   582→            this.Val_Operating1.Location = new System.Drawing.Point(333, 134);
+   583→            this.Val_Operating1.Name = "Val_Operating1";
+   584→            this.Val_Operating1.Size = new System.Drawing.Size(243, 25);
+   585→            this.Val_Operating1.TabIndex = 154;
+   586→            this.Val_Operating1.Text = "SPEC";
+   587→            this.Val_Operating1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   588→            // 
+   589→            // Spec_Operating1
+   590→            // 
+   591→            this.Spec_Operating1.BackColor = System.Drawing.Color.WhiteSmoke;
+   592→            this.Spec_Operating1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   593→            this.Spec_Operating1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   594→            this.Spec_Operating1.ForeColor = System.Drawing.Color.Black;
+   595→            this.Spec_Operating1.Location = new System.Drawing.Point(77, 134);
+   596→            this.Spec_Operating1.Name = "Spec_Operating1";
+   597→            this.Spec_Operating1.Size = new System.Drawing.Size(256, 25);
+   598→            this.Spec_Operating1.TabIndex = 35;
+   599→            this.Spec_Operating1.Text = "SPEC";
+   600→            this.Spec_Operating1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   601→            // 
+   602→            // Dec_StartUp1
+   603→            // 
+   604→            this.Dec_StartUp1.BackColor = System.Drawing.Color.WhiteSmoke;
+   605→            this.Dec_StartUp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   606→            this.Dec_StartUp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   607→            this.Dec_StartUp1.ForeColor = System.Drawing.Color.White;
+   608→            this.Dec_StartUp1.Location = new System.Drawing.Point(576, 109);
+   609→            this.Dec_StartUp1.Name = "Dec_StartUp1";
+   610→            this.Dec_StartUp1.Size = new System.Drawing.Size(133, 25);
+   611→            this.Dec_StartUp1.TabIndex = 36;
+   612→            this.Dec_StartUp1.Text = "OK";
+   613→            this.Dec_StartUp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   614→            // 
+   615→            // Dec_Operating1
+   616→            // 
+   617→            this.Dec_Operating1.BackColor = System.Drawing.Color.WhiteSmoke;
+   618→            this.Dec_Operating1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   619→            this.Dec_Operating1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   620→            this.Dec_Operating1.ForeColor = System.Drawing.Color.White;
+   621→            this.Dec_Operating1.Location = new System.Drawing.Point(576, 134);
+   622→            this.Dec_Operating1.Name = "Dec_Operating1";
+   623→            this.Dec_Operating1.Size = new System.Drawing.Size(134, 25);
+   624→            this.Dec_Operating1.TabIndex = 156;
+   625→            this.Dec_Operating1.Text = "OK";
+   626→            this.Dec_Operating1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   627→            // 
+   628→            // panel1
+   629→            // 
+   630→            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   631→            this.panel1.Controls.Add(this.Dec_Operating1);
+   632→            this.panel1.Controls.Add(this.Graph1);
+   633→            this.panel1.Controls.Add(this.Dec_StartUp1);
+   634→            this.panel1.Controls.Add(this.Spec_Operating1);
+   635→            this.panel1.Controls.Add(this.Val_Operating1);
+   636→            this.panel1.Controls.Add(this.label5);
+   637→            this.panel1.Controls.Add(this.Val_StartUp1);
+   638→            this.panel1.Controls.Add(this.Spec_StartUp1);
+   639→            this.panel1.Controls.Add(this.label7);
+   640→            this.panel1.Location = new System.Drawing.Point(11, 76);
+   641→            this.panel1.Name = "panel1";
+   642→            this.panel1.Size = new System.Drawing.Size(711, 161);
+   643→            this.panel1.TabIndex = 160;
+   644→            // 
+   645→            // Graph1
+   646→            // 
+   647→            this.Graph1.Dock = System.Windows.Forms.DockStyle.Top;
+   648→            this.Graph1.Location = new System.Drawing.Point(0, 0);
+   649→            this.Graph1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+   650→            this.Graph1.Name = "Graph1";
+   651→            this.Graph1.ScrollGrace = 0D;
+   652→            this.Graph1.ScrollMaxX = 0D;
+   653→            this.Graph1.ScrollMaxY = 0D;
+   654→            this.Graph1.ScrollMaxY2 = 0D;
+   655→            this.Graph1.ScrollMinX = 0D;
+   656→            this.Graph1.ScrollMinY = 0D;
+   657→            this.Graph1.ScrollMinY2 = 0D;
+   658→            this.Graph1.Size = new System.Drawing.Size(709, 109);
+   659→            this.Graph1.TabIndex = 155;
+   660→            this.Graph1.UseExtendedPrintDialog = true;
+   661→            // 
+   662→            // panel2
+   663→            // 
+   664→            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   665→            this.panel2.Controls.Add(this.label3);
+   666→            this.panel2.Controls.Add(this.label9);
+   667→            this.panel2.Controls.Add(this.Dec_Operating2);
+   668→            this.panel2.Controls.Add(this.Graph2);
+   669→            this.panel2.Controls.Add(this.Dec_StartUp2);
+   670→            this.panel2.Controls.Add(this.Spec_Operating2);
+   671→            this.panel2.Controls.Add(this.Val_Operating2);
+   672→            this.panel2.Controls.Add(this.Val_StartUp2);
+   673→            this.panel2.Controls.Add(this.Spec_StartUp2);
+   674→            this.panel2.Location = new System.Drawing.Point(11, 243);
+   675→            this.panel2.Name = "panel2";
+   676→            this.panel2.Size = new System.Drawing.Size(711, 161);
+   677→            this.panel2.TabIndex = 189;
+   678→            // 
+   679→            // Dec_Operating2
+   680→            // 
+   681→            this.Dec_Operating2.BackColor = System.Drawing.Color.WhiteSmoke;
+   682→            this.Dec_Operating2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   683→            this.Dec_Operating2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   684→            this.Dec_Operating2.ForeColor = System.Drawing.Color.White;
+   685→            this.Dec_Operating2.Location = new System.Drawing.Point(576, 134);
+   686→            this.Dec_Operating2.Name = "Dec_Operating2";
+   687→            this.Dec_Operating2.Size = new System.Drawing.Size(133, 25);
+   688→            this.Dec_Operating2.TabIndex = 168;
+   689→            this.Dec_Operating2.Text = "OK";
+   690→            this.Dec_Operating2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   691→            // 
+   692→            // Graph2
+   693→            // 
+   694→            this.Graph2.Dock = System.Windows.Forms.DockStyle.Top;
+   695→            this.Graph2.Location = new System.Drawing.Point(0, 0);
+   696→            this.Graph2.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
+   697→            this.Graph2.Name = "Graph2";
+   698→            this.Graph2.ScrollGrace = 0D;
+   699→            this.Graph2.ScrollMaxX = 0D;
+   700→            this.Graph2.ScrollMaxY = 0D;
+   701→            this.Graph2.ScrollMaxY2 = 0D;
+   702→            this.Graph2.ScrollMinX = 0D;
+   703→            this.Graph2.ScrollMinY = 0D;
+   704→            this.Graph2.ScrollMinY2 = 0D;
+   705→            this.Graph2.Size = new System.Drawing.Size(709, 109);
+   706→            this.Graph2.TabIndex = 156;
+   707→            this.Graph2.UseExtendedPrintDialog = true;
+   708→            // 
+   709→            // Dec_StartUp2
+   710→            // 
+   711→            this.Dec_StartUp2.BackColor = System.Drawing.Color.WhiteSmoke;
+   712→            this.Dec_StartUp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   713→            this.Dec_StartUp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   714→            this.Dec_StartUp2.ForeColor = System.Drawing.Color.White;
+   715→            this.Dec_StartUp2.Location = new System.Drawing.Point(576, 109);
+   716→            this.Dec_StartUp2.Name = "Dec_StartUp2";
+   717→            this.Dec_StartUp2.Size = new System.Drawing.Size(133, 25);
+   718→            this.Dec_StartUp2.TabIndex = 161;
+   719→            this.Dec_StartUp2.Text = "OK";
+   720→            this.Dec_StartUp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   721→            // 
+   722→            // Spec_Operating2
+   723→            // 
+   724→            this.Spec_Operating2.BackColor = System.Drawing.Color.WhiteSmoke;
+   725→            this.Spec_Operating2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   726→            this.Spec_Operating2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   727→            this.Spec_Operating2.ForeColor = System.Drawing.Color.Black;
+   728→            this.Spec_Operating2.Location = new System.Drawing.Point(77, 134);
+   729→            this.Spec_Operating2.Name = "Spec_Operating2";
+   730→            this.Spec_Operating2.Size = new System.Drawing.Size(256, 25);
+   731→            this.Spec_Operating2.TabIndex = 160;
+   732→            this.Spec_Operating2.Text = "SPEC";
+   733→            this.Spec_Operating2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   734→            // 
+   735→            // Val_Operating2
+   736→            // 
+   737→            this.Val_Operating2.BackColor = System.Drawing.Color.WhiteSmoke;
+   738→            this.Val_Operating2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   739→            this.Val_Operating2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   740→            this.Val_Operating2.ForeColor = System.Drawing.Color.Black;
+   741→            this.Val_Operating2.Location = new System.Drawing.Point(333, 134);
+   742→            this.Val_Operating2.Name = "Val_Operating2";
+   743→            this.Val_Operating2.Size = new System.Drawing.Size(243, 25);
+   744→            this.Val_Operating2.TabIndex = 167;
+   745→            this.Val_Operating2.Text = "SPEC";
+   746→            this.Val_Operating2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   747→            // 
+   748→            // Val_StartUp2
+   749→            // 
+   750→            this.Val_StartUp2.BackColor = System.Drawing.Color.WhiteSmoke;
+   751→            this.Val_StartUp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   752→            this.Val_StartUp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   753→            this.Val_StartUp2.ForeColor = System.Drawing.Color.Black;
+   754→            this.Val_StartUp2.Location = new System.Drawing.Point(333, 109);
+   755→            this.Val_StartUp2.Name = "Val_StartUp2";
+   756→            this.Val_StartUp2.Size = new System.Drawing.Size(243, 25);
+   757→            this.Val_StartUp2.TabIndex = 166;
+   758→            this.Val_StartUp2.Text = "SPEC";
+   759→            this.Val_StartUp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   760→            // 
+   761→            // Spec_StartUp2
+   762→            // 
+   763→            this.Spec_StartUp2.BackColor = System.Drawing.Color.WhiteSmoke;
+   764→            this.Spec_StartUp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   765→            this.Spec_StartUp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   766→            this.Spec_StartUp2.ForeColor = System.Drawing.Color.Black;
+   767→            this.Spec_StartUp2.Location = new System.Drawing.Point(77, 109);
+   768→            this.Spec_StartUp2.Name = "Spec_StartUp2";
+   769→            this.Spec_StartUp2.Size = new System.Drawing.Size(256, 25);
+   770→            this.Spec_StartUp2.TabIndex = 158;
+   771→            this.Spec_StartUp2.Text = "SPEC";
+   772→            this.Spec_StartUp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   773→            // 
+   774→            // srcLbZ
+   775→            // 
+   776→            this.srcLbZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   777→            this.srcLbZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   778→            this.srcLbZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   779→            this.srcLbZ.ForeColor = System.Drawing.Color.White;
+   780→            this.srcLbZ.Location = new System.Drawing.Point(1550, 853);
+   781→            this.srcLbZ.Name = "srcLbZ";
+   782→            this.srcLbZ.Size = new System.Drawing.Size(134, 27);
+   783→            this.srcLbZ.TabIndex = 190;
+   784→            this.srcLbZ.Text = "label1";
+   785→            this.srcLbZ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   786→            // 
+   787→            // srcLbY
+   788→            // 
+   789→            this.srcLbY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   790→            this.srcLbY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   791→            this.srcLbY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   792→            this.srcLbY.ForeColor = System.Drawing.Color.White;
+   793→            this.srcLbY.Location = new System.Drawing.Point(1550, 826);
+   794→            this.srcLbY.Name = "srcLbY";
+   795→            this.srcLbY.Size = new System.Drawing.Size(134, 27);
+   796→            this.srcLbY.TabIndex = 191;
+   797→            this.srcLbY.Text = "label4";
+   798→            this.srcLbY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   799→            // 
+   800→            // srcLbX
+   801→            // 
+   802→            this.srcLbX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   803→            this.srcLbX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   804→            this.srcLbX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   805→            this.srcLbX.ForeColor = System.Drawing.Color.White;
+   806→            this.srcLbX.Location = new System.Drawing.Point(1550, 799);
+   807→            this.srcLbX.Name = "srcLbX";
+   808→            this.srcLbX.Size = new System.Drawing.Size(134, 27);
+   809→            this.srcLbX.TabIndex = 192;
+   810→            this.srcLbX.Text = "srcLbX";
+   811→            this.srcLbX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   812→            // 
+   813→            // label1
+   814→            // 
+   815→            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   816→            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   817→            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   818→            this.label1.ForeColor = System.Drawing.Color.White;
+   819→            this.label1.Location = new System.Drawing.Point(1442, 799);
+   820→            this.label1.Name = "label1";
+   821→            this.label1.Size = new System.Drawing.Size(108, 27);
+   822→            this.label1.TabIndex = 198;
+   823→            this.label1.Text = "X (m/s²)";
+   824→            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   825→            // 
+   826→            // label11
+   827→            // 
+   828→            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   829→            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   830→            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   831→            this.label11.ForeColor = System.Drawing.Color.White;
+   832→            this.label11.Location = new System.Drawing.Point(1442, 853);
+   833→            this.label11.Name = "label11";
+   834→            this.label11.Size = new System.Drawing.Size(108, 27);
+   835→            this.label11.TabIndex = 195;
+   836→            this.label11.Text = "Z (m/s²)";
+   837→            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   838→            // 
+   839→            // label13
+   840→            // 
+   841→            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   842→            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   843→            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   844→            this.label13.ForeColor = System.Drawing.Color.White;
+   845→            this.label13.Location = new System.Drawing.Point(1442, 826);
+   846→            this.label13.Name = "label13";
+   847→            this.label13.Size = new System.Drawing.Size(108, 27);
+   848→            this.label13.TabIndex = 194;
+   849→            this.label13.Text = "Y (m/s²)";
+   850→            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   851→            // 
+   852→            // label14
+   853→            // 
+   854→            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   855→            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   856→            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   857→            this.label14.ForeColor = System.Drawing.Color.White;
+   858→            this.label14.Location = new System.Drawing.Point(1690, 799);
+   859→            this.label14.Name = "label14";
+   860→            this.label14.Size = new System.Drawing.Size(105, 27);
+   861→            this.label14.TabIndex = 193;
+   862→            this.label14.Text = "VOLT (V)";
+   863→            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   864→            // 
+   865→            // label4
+   866→            // 
+   867→            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   868→            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   869→            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   870→            this.label4.ForeColor = System.Drawing.Color.White;
+   871→            this.label4.Location = new System.Drawing.Point(1690, 826);
+   872→            this.label4.Name = "label4";
+   873→            this.label4.Size = new System.Drawing.Size(105, 27);
+   874→            this.label4.TabIndex = 199;
+   875→            this.label4.Text = "CURRENT (A)";
+   876→            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   877→            // 
+   878→            // label6
+   879→            // 
+   880→            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+   881→            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   882→            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   883→            this.label6.ForeColor = System.Drawing.Color.White;
+   884→            this.label6.Location = new System.Drawing.Point(1690, 853);
+   885→            this.label6.Name = "label6";
+   886→            this.label6.Size = new System.Drawing.Size(105, 27);
+   887→            this.label6.TabIndex = 200;
+   888→            this.label6.Text = "NOISE (dB)";
+   889→            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   890→            // 
+   891→            // label15
+   892→            // 
+   893→            this.label15.BackColor = System.Drawing.SystemColors.Control;
+   894→            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   895→            this.label15.ForeColor = System.Drawing.Color.Black;
+   896→            this.label15.Location = new System.Drawing.Point(1442, 901);
+   897→            this.label15.Name = "label15";
+   898→            this.label15.Size = new System.Drawing.Size(169, 40);
+   899→            this.label15.TabIndex = 201;
+   900→            this.label15.Text = "방음실 검사 시간 : ";
+   901→            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   902→            this.label15.Click += new System.EventHandler(this.label15_Click);
+   903→            // 
+   904→            // srclbTestTime
+   905→            // 
+   906→            this.srclbTestTime.BackColor = System.Drawing.SystemColors.Control;
+   907→            this.srclbTestTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   908→            this.srclbTestTime.ForeColor = System.Drawing.Color.Black;
+   909→            this.srclbTestTime.Location = new System.Drawing.Point(1611, 901);
+   910→            this.srclbTestTime.Name = "srclbTestTime";
+   911→            this.srclbTestTime.Size = new System.Drawing.Size(246, 40);
+   912→            this.srclbTestTime.TabIndex = 202;
+   913→            this.srclbTestTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+   914→            this.srclbTestTime.Click += new System.EventHandler(this.srclbTestTime_Click);
+   915→            // 
+   916→            // panel3
+   917→            // 
+   918→            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   919→            this.panel3.Controls.Add(this.label10);
+   920→            this.panel3.Controls.Add(this.label12);
+   921→            this.panel3.Controls.Add(this.Dec_Operating4);
+   922→            this.panel3.Controls.Add(this.Graph4);
+   923→            this.panel3.Controls.Add(this.Dec_StartUp4);
+   924→            this.panel3.Controls.Add(this.Spec_Operating4);
+   925→            this.panel3.Controls.Add(this.Val_Operating4);
+   926→            this.panel3.Controls.Add(this.Val_StartUp4);
+   927→            this.panel3.Controls.Add(this.Spec_StartUp4);
+   928→            this.panel3.Location = new System.Drawing.Point(726, 242);
+   929→            this.panel3.Name = "panel3";
+   930→            this.panel3.Size = new System.Drawing.Size(711, 161);
+   931→            this.panel3.TabIndex = 204;
+   932→            // 
+   933→            // Dec_Operating4
+   934→            // 
+   935→            this.Dec_Operating4.BackColor = System.Drawing.Color.WhiteSmoke;
+   936→            this.Dec_Operating4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   937→            this.Dec_Operating4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   938→            this.Dec_Operating4.ForeColor = System.Drawing.Color.White;
+   939→            this.Dec_Operating4.Location = new System.Drawing.Point(576, 134);
+   940→            this.Dec_Operating4.Name = "Dec_Operating4";
+   941→            this.Dec_Operating4.Size = new System.Drawing.Size(133, 25);
+   942→            this.Dec_Operating4.TabIndex = 168;
+   943→            this.Dec_Operating4.Text = "OK";
+   944→            this.Dec_Operating4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   945→            // 
+   946→            // Graph4
+   947→            // 
+   948→            this.Graph4.Dock = System.Windows.Forms.DockStyle.Top;
+   949→            this.Graph4.Location = new System.Drawing.Point(0, 0);
+   950→            this.Graph4.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
+   951→            this.Graph4.Name = "Graph4";
+   952→            this.Graph4.ScrollGrace = 0D;
+   953→            this.Graph4.ScrollMaxX = 0D;
+   954→            this.Graph4.ScrollMaxY = 0D;
+   955→            this.Graph4.ScrollMaxY2 = 0D;
+   956→            this.Graph4.ScrollMinX = 0D;
+   957→            this.Graph4.ScrollMinY = 0D;
+   958→            this.Graph4.ScrollMinY2 = 0D;
+   959→            this.Graph4.Size = new System.Drawing.Size(709, 109);
+   960→            this.Graph4.TabIndex = 156;
+   961→            this.Graph4.UseExtendedPrintDialog = true;
+   962→            // 
+   963→            // Dec_StartUp4
+   964→            // 
+   965→            this.Dec_StartUp4.BackColor = System.Drawing.Color.WhiteSmoke;
+   966→            this.Dec_StartUp4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   967→            this.Dec_StartUp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   968→            this.Dec_StartUp4.ForeColor = System.Drawing.Color.White;
+   969→            this.Dec_StartUp4.Location = new System.Drawing.Point(576, 109);
+   970→            this.Dec_StartUp4.Name = "Dec_StartUp4";
+   971→            this.Dec_StartUp4.Size = new System.Drawing.Size(133, 25);
+   972→            this.Dec_StartUp4.TabIndex = 161;
+   973→            this.Dec_StartUp4.Text = "OK";
+   974→            this.Dec_StartUp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   975→            // 
+   976→            // Spec_Operating4
+   977→            // 
+   978→            this.Spec_Operating4.BackColor = System.Drawing.Color.WhiteSmoke;
+   979→            this.Spec_Operating4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   980→            this.Spec_Operating4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   981→            this.Spec_Operating4.ForeColor = System.Drawing.Color.Black;
+   982→            this.Spec_Operating4.Location = new System.Drawing.Point(77, 134);
+   983→            this.Spec_Operating4.Name = "Spec_Operating4";
+   984→            this.Spec_Operating4.Size = new System.Drawing.Size(256, 25);
+   985→            this.Spec_Operating4.TabIndex = 160;
+   986→            this.Spec_Operating4.Text = "SPEC";
+   987→            this.Spec_Operating4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+   988→            // 
+   989→            // Val_Operating4
+   990→            // 
+   991→            this.Val_Operating4.BackColor = System.Drawing.Color.WhiteSmoke;
+   992→            this.Val_Operating4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   993→            this.Val_Operating4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+   994→            this.Val_Operating4.ForeColor = System.Drawing.Color.Black;
+   995→            this.Val_Operating4.Location = new System.Drawing.Point(333, 134);
+   996→            this.Val_Operating4.Name = "Val_Operating4";
+   997→            this.Val_Operating4.Size = new System.Drawing.Size(243, 25);
+   998→            this.Val_Operating4.TabIndex = 167;
+   999→            this.Val_Operating4.Text = "SPEC";
+  1000→            this.Val_Operating4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1001→            // 
+  1002→            // Val_StartUp4
+  1003→            // 
+  1004→            this.Val_StartUp4.BackColor = System.Drawing.Color.WhiteSmoke;
+  1005→            this.Val_StartUp4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1006→            this.Val_StartUp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1007→            this.Val_StartUp4.ForeColor = System.Drawing.Color.Black;
+  1008→            this.Val_StartUp4.Location = new System.Drawing.Point(333, 109);
+  1009→            this.Val_StartUp4.Name = "Val_StartUp4";
+  1010→            this.Val_StartUp4.Size = new System.Drawing.Size(243, 25);
+  1011→            this.Val_StartUp4.TabIndex = 166;
+  1012→            this.Val_StartUp4.Text = "SPEC";
+  1013→            this.Val_StartUp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1014→            // 
+  1015→            // Spec_StartUp4
+  1016→            // 
+  1017→            this.Spec_StartUp4.BackColor = System.Drawing.Color.WhiteSmoke;
+  1018→            this.Spec_StartUp4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1019→            this.Spec_StartUp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1020→            this.Spec_StartUp4.ForeColor = System.Drawing.Color.Black;
+  1021→            this.Spec_StartUp4.Location = new System.Drawing.Point(77, 109);
+  1022→            this.Spec_StartUp4.Name = "Spec_StartUp4";
+  1023→            this.Spec_StartUp4.Size = new System.Drawing.Size(256, 25);
+  1024→            this.Spec_StartUp4.TabIndex = 158;
+  1025→            this.Spec_StartUp4.Text = "SPEC";
+  1026→            this.Spec_StartUp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1027→            // 
+  1028→            // panel6
+  1029→            // 
+  1030→            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1031→            this.panel6.Controls.Add(this.label2);
+  1032→            this.panel6.Controls.Add(this.label8);
+  1033→            this.panel6.Controls.Add(this.Dec_Operating3);
+  1034→            this.panel6.Controls.Add(this.Graph3);
+  1035→            this.panel6.Controls.Add(this.Dec_StartUp3);
+  1036→            this.panel6.Controls.Add(this.Spec_Operating3);
+  1037→            this.panel6.Controls.Add(this.Val_Operating3);
+  1038→            this.panel6.Controls.Add(this.Val_StartUp3);
+  1039→            this.panel6.Controls.Add(this.Spec_StartUp3);
+  1040→            this.panel6.Location = new System.Drawing.Point(726, 77);
+  1041→            this.panel6.Name = "panel6";
+  1042→            this.panel6.Size = new System.Drawing.Size(711, 160);
+  1043→            this.panel6.TabIndex = 203;
+  1044→            // 
+  1045→            // Dec_Operating3
+  1046→            // 
+  1047→            this.Dec_Operating3.BackColor = System.Drawing.Color.WhiteSmoke;
+  1048→            this.Dec_Operating3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1049→            this.Dec_Operating3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1050→            this.Dec_Operating3.ForeColor = System.Drawing.Color.White;
+  1051→            this.Dec_Operating3.Location = new System.Drawing.Point(575, 133);
+  1052→            this.Dec_Operating3.Name = "Dec_Operating3";
+  1053→            this.Dec_Operating3.Size = new System.Drawing.Size(134, 25);
+  1054→            this.Dec_Operating3.TabIndex = 156;
+  1055→            this.Dec_Operating3.Text = "OK";
+  1056→            this.Dec_Operating3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1057→            // 
+  1058→            // Graph3
+  1059→            // 
+  1060→            this.Graph3.Dock = System.Windows.Forms.DockStyle.Top;
+  1061→            this.Graph3.Location = new System.Drawing.Point(0, 0);
+  1062→            this.Graph3.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+  1063→            this.Graph3.Name = "Graph3";
+  1064→            this.Graph3.ScrollGrace = 0D;
+  1065→            this.Graph3.ScrollMaxX = 0D;
+  1066→            this.Graph3.ScrollMaxY = 0D;
+  1067→            this.Graph3.ScrollMaxY2 = 0D;
+  1068→            this.Graph3.ScrollMinX = 0D;
+  1069→            this.Graph3.ScrollMinY = 0D;
+  1070→            this.Graph3.ScrollMinY2 = 0D;
+  1071→            this.Graph3.Size = new System.Drawing.Size(709, 108);
+  1072→            this.Graph3.TabIndex = 155;
+  1073→            this.Graph3.UseExtendedPrintDialog = true;
+  1074→            // 
+  1075→            // Dec_StartUp3
+  1076→            // 
+  1077→            this.Dec_StartUp3.BackColor = System.Drawing.Color.WhiteSmoke;
+  1078→            this.Dec_StartUp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1079→            this.Dec_StartUp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1080→            this.Dec_StartUp3.ForeColor = System.Drawing.Color.White;
+  1081→            this.Dec_StartUp3.Location = new System.Drawing.Point(575, 108);
+  1082→            this.Dec_StartUp3.Name = "Dec_StartUp3";
+  1083→            this.Dec_StartUp3.Size = new System.Drawing.Size(134, 25);
+  1084→            this.Dec_StartUp3.TabIndex = 36;
+  1085→            this.Dec_StartUp3.Text = "OK";
+  1086→            this.Dec_StartUp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1087→            // 
+  1088→            // Spec_Operating3
+  1089→            // 
+  1090→            this.Spec_Operating3.BackColor = System.Drawing.Color.WhiteSmoke;
+  1091→            this.Spec_Operating3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+  1092→            this.Spec_Operating3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+  1093→            this.Spec_Operating3.ForeColor = System.Drawing.Color.Black;
+  1094→            this.Spec_Operating3.Location = new System.Drawing.Point(76, 133);
+  1095→            this.Spec_Operating3.Name = "Spec_Operating3";
+  1096→            this.Spec_Operating3.Size = new System.Drawing.Size(256, 25);
+  1097→            this.Spec_Operating3.TabIndex = 35;
+  1098→            this.Spec_Operating3.Text = "SPEC";
+  1099→            this.Spec_Operating3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+  1100→            // 
