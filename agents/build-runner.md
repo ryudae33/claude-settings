@@ -1,7 +1,7 @@
 ---
 name: build-runner
 description: Build and command execution. dotnet build/publish, MSBuild, PowerShell/CMD script execution. Build error analysis and reporting.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: green
 ---
 

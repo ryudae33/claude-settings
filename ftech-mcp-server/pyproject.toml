@@ -1,0 +1,15 @@
+[project]
+name = "ftech-mcp-server"
+version = "0.1.0"
+description = "공장 자동화용 MCP 서버 - HW/DB 연결 유지"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]",
+    "pyserial",
+    "python-can",
+    "pymodbus",
+    "pyodbc",
+]
+
+[project.scripts]
+ftech-mcp = "server:main"

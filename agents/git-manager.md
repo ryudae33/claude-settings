@@ -1,7 +1,7 @@
 ---
 name: git-manager
 description: GitHub repo search/clone/commit/push/create. Uses gh CLI. Default org ftech-projects. Always gh auth switch --user ryudae33 first.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: green
 ---
 

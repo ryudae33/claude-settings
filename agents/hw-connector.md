@@ -1,7 +1,7 @@
 ---
 name: hw-connector
 description: Direct device connection/verification. Serial(COM), Ethernet(TCP/UDP), USB, Modbus TCP communication testing. Port scanning, send/receive testing, Modbus register reading via PowerShell.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: red
 ---
 

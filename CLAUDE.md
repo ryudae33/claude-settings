@@ -1,4 +1,4 @@
-# Global Rules (v2026.03.19)
+# Global Rules (v2026.03.20)
 
 ## Response
 - Respond in Korean, code comments in **Korean**. Be concise, no flattery/chatter
@@ -32,6 +32,7 @@
 - See `references/project-structure-guide.md` for examples
 
 ## New Project Baseline
+- When starting a new project, recommend the most suitable language/framework for the project requirements — not limited to C#/.NET. Consider factors: target platform, performance needs, ecosystem, team expertise, deployment environment
 - Global exception handler: `ThreadException` + `UnhandledException` → crash.log. Thread/timer try-catch mandatory
 - ScottPlot Korean font: `ScottPlot.Fonts.Default = "Malgun Gothic";` in OnStartup
 
