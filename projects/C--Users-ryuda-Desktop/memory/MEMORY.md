@@ -58,6 +58,10 @@
 - OneDrive 한글 경로에서 aapt2 빌드 실패 가능 → 영문 경로로 복사 후 빌드
 
 ## 진행중 프로젝트
+- **VISION FA 비전 검사 도구** — 상세: `vision-project.md`
+  - 위치: `Desktop/VISION/`
+  - 스킬: `/vision` (commands/vision.md)
+  - 상태: Phase 1 완료 (카메라+웹), Phase 2 진행중 (inspect 엔진, 샘플 스크래치 검출 성공)
 - **AVS 조립성 검증 시스템** — 상세: `avs-project.md`
   - 위치: `Desktop/Assemble Test/`
   - 상태: 계획서 완료, 디렉토리 생성 완료, conda 미설치 → Phase 1 시작 전

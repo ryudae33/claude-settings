@@ -30,10 +30,18 @@ case "${1}" in
         VERSION="v$(date '+%Y.%m.%d')"
         sed -i "s/^# Global Rules (v[0-9.]*)/# Global Rules ($VERSION)/" "$CLAUDE_DIR/CLAUDE.md"
 
-        # Copy dotfiles (settings excluded — machine-specific)
+        # Copy dotfiles
         cp "$CLAUDE_DIR/CLAUDE.md" "$LOCAL_REPO/" 2>/dev/null
         cp "$CLAUDE_DIR/.claudeignore" "$LOCAL_REPO/" 2>/dev/null
         cp "$CLAUDE_DIR/build-template.md" "$LOCAL_REPO/" 2>/dev/null
+        cp "$CLAUDE_DIR/settings.json" "$LOCAL_REPO/" 2>/dev/null
+
+        # Scripts (statusline, hooks, etc.)
+        if ls "$CLAUDE_DIR/scripts/"* &>/dev/null || ls "$CLAUDE_DIR/"*.sh &>/dev/null; then
+            mkdir -p "$LOCAL_REPO/scripts"
+            cp "$CLAUDE_DIR/"*.sh "$LOCAL_REPO/scripts/" 2>/dev/null
+            cp "$CLAUDE_DIR/scripts/"* "$LOCAL_REPO/scripts/" 2>/dev/null
+        fi
 
         # Commands (skills)
         mkdir -p "$LOCAL_REPO/commands"
@@ -94,10 +102,18 @@ case "${1}" in
         echo "[Claude Config] GitHub → Local restore..."
         cd "$LOCAL_REPO" && git pull
 
-        # Restore dotfiles (settings excluded — machine-specific)
+        # Restore dotfiles
         cp "$LOCAL_REPO/CLAUDE.md" "$CLAUDE_DIR/" 2>/dev/null
         cp "$LOCAL_REPO/.claudeignore" "$CLAUDE_DIR/" 2>/dev/null
         cp "$LOCAL_REPO/build-template.md" "$CLAUDE_DIR/" 2>/dev/null
+        cp "$LOCAL_REPO/settings.json" "$CLAUDE_DIR/" 2>/dev/null
+
+        # Scripts (statusline, hooks, etc.)
+        if [ -d "$LOCAL_REPO/scripts" ]; then
+            cp "$LOCAL_REPO/scripts/"*.sh "$CLAUDE_DIR/" 2>/dev/null
+            mkdir -p "$CLAUDE_DIR/scripts"
+            cp "$LOCAL_REPO/scripts/"* "$CLAUDE_DIR/scripts/" 2>/dev/null
+        fi
 
         # Commands
         mkdir -p "$CLAUDE_DIR/commands"
