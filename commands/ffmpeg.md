@@ -7,7 +7,7 @@ description: "Convert or process video/audio files using FFmpeg. Supports format
 
 ## Task Settings
 - subagent_type: Bash
-- model: haiku
+- model: sonnet
 
 ## Role
 Converts or processes video/audio files using FFmpeg CLI.

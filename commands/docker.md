@@ -7,7 +7,7 @@ description: "Manage Docker containers, images, and compose operations using Doc
 
 ## Task Settings
 - subagent_type: Bash
-- model: haiku
+- model: sonnet
 
 ## Role
 Manages container execution, image management, and compose operations using Docker CLI.

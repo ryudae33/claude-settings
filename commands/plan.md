@@ -1,6 +1,6 @@
 ---
 name: plan
-description: "Plan and design new automation projects. Requirements gathering, project structure, communication protocol design, DB schema, sequence/state machine design, PLC address map, and WBS creation. Use when the user asks to plan, design, or architect a new project, especially industrial automation projects with device communication."
+description: "Plan and design NEW automation projects from scratch: requirements → project structure → communication protocol → DB schema → state machine → PLC address map → WBS. Use when user asks to plan, design, architect, or start a new project. Also triggers on '새 프로젝트', 'new project', '설계해줘', 'project planning'."
 ---
 
 # Project Planning/Design Agent

@@ -7,7 +7,7 @@ description: "Ultra-fast file/folder search across all drives using Everything (
 
 ## Task Settings
 - subagent_type: Bash
-- model: haiku
+- model: sonnet
 
 ## Role
 Performs ultra-fast file/folder search across all drives using Everything (es.exe).

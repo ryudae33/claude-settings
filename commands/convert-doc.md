@@ -7,7 +7,7 @@ description: "Convert office documents between formats using LibreOffice CLI (he
 
 ## Task Settings
 - subagent_type: Bash
-- model: haiku
+- model: sonnet
 
 ## Role
 Converts documents to other formats using LibreOffice CLI.

@@ -1,6 +1,6 @@
 ---
 name: analyze-project
-description: "Automated analysis of .NET automation projects. Analyzes communication protocols, state machines, PLC address maps, file structure, data flow, DB schemas, and hardcoded constants. Use whenever the user wants to analyze or understand an existing project's architecture, especially industrial automation projects with serial/TCP/Modbus communication."
+description: "Analyze existing .NET automation project architecture: communication protocols, state machines, PLC address maps, file structure, data flow, DB schemas, hardcoded constants. Use when user asks to analyze, understand, or reverse-engineer a project — especially industrial automation with serial/TCP/Modbus. Also triggers on '프로젝트 분석', 'analyze project', 'what does this project do'."
 ---
 
 # Automated Project Analysis Agent

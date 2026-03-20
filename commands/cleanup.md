@@ -7,7 +7,7 @@ description: "Clean up .NET project build artifacts (bin, obj, .vs, packages, Te
 
 ## Task Settings
 - subagent_type: build-runner
-- model: haiku
+- model: sonnet
 
 ## Role
 Cleans up .NET project build artifacts (bin/obj) and unnecessary cache folders to free disk space.

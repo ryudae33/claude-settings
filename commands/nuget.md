@@ -7,7 +7,7 @@ description: "Search, add, update, and remove NuGet packages for .NET projects. 
 
 ## Task Settings
 - subagent_type: build-runner
-- model: haiku
+- model: sonnet
 
 ## Role
 Searches, adds, updates, and removes NuGet packages.

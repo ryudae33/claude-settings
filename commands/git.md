@@ -7,7 +7,7 @@ description: "Git operations including GitHub repo management, clone, commit, pu
 
 ## Task Settings
 - subagent_type: git-manager
-- model: haiku
+- model: sonnet
 
 ## Role
 Performs Git operations including GitHub repo search, clone, commit, push, etc.

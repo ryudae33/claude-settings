@@ -7,7 +7,7 @@ description: "Initialize a new Git repository with .gitignore, CLAUDE.md templat
 
 ## Task Settings
 - subagent_type: git-manager
-- model: haiku
+- model: sonnet
 
 ## Role
 Initializes a Git repository for a new project, creates a repo under the ftech-projects organization, and sets up required template files.

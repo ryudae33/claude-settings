@@ -7,7 +7,7 @@ description: "Convert document formats using Pandoc, specializing in Markdown, H
 
 ## Task Settings
 - subagent_type: Bash
-- model: haiku
+- model: sonnet
 
 ## Role
 Converts document formats including Markdown, Word, HTML, PDF using Pandoc.

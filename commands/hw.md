@@ -1,6 +1,6 @@
 ---
 name: hw
-description: "Test device connections and communication for Serial (COM), TCP, Modbus RTU/TCP devices. Port scanning, send/receive testing, Modbus register reading, packet capture. Use when the user asks to test serial communication, scan COM ports, check TCP connections, read Modbus registers, ping devices, or troubleshoot device connectivity."
+description: "Test physical device connections: Serial (COM port), TCP/UDP, Modbus RTU/TCP. Port scanning, send/receive, register reading, packet capture. Use when user asks to test communication, scan ports, check connectivity, read Modbus, ping devices, or troubleshoot serial/TCP connections. Also triggers on 'COM 포트', '통신 테스트', 'Modbus 읽기'."
 ---
 
 # Device Connection/Communication Agent

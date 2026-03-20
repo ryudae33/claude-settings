@@ -1,6 +1,6 @@
 ---
 name: vision
-description: "FA vision inspection tool powered by LLM. Camera management, image analysis (Claude Vision), CV/AI pipeline auto-generation, inspection execution, result viewing via web client. Use when the user asks about vision inspection, camera setup, image analysis for defects, scratch/dent/stain detection, or building inspection pipelines."
+description: "FA vision inspection: camera management, defect detection (scratch/dent/stain), CV/AI pipeline auto-generation, inspection execution, web result viewer. Use when user asks about vision inspection, camera setup, image defect analysis, quality inspection, or building inspection pipelines. Also triggers on '비전 검사', '외관 검사', 'defect detection', '카메라'."
 ---
 
 # VISION - FA Vision Inspection Tool

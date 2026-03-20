@@ -1,6 +1,6 @@
 ---
 name: nlm
-description: "Analyze documents using Google NotebookLM via nlm CLI. Create notebooks, add sources (PDF/URL/text), query content, get summaries. Use when the user wants to analyze manuals, technical documents, or any files using NotebookLM AI."
+description: "Deep AI analysis of documents via Google NotebookLM (nlm CLI). Create notebooks, add sources (PDF/URL/text), query, summarize. Use when user wants AI-powered document analysis, manual summarization, or multi-source Q&A — especially for large technical docs (100p+). Also triggers on '문서 분석', 'NotebookLM', '매뉴얼 요약', 'nlm'."
 ---
 
 # NotebookLM Manual Analyzer

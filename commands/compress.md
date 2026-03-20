@@ -7,7 +7,7 @@ description: "Compress files/folders or extract archives using 7-Zip CLI. Suppor
 
 ## Task Settings
 - subagent_type: Bash
-- model: haiku
+- model: sonnet
 
 ## Role
 Compresses files/folders or extracts archives using 7-Zip CLI.

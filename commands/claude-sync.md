@@ -7,7 +7,7 @@ description: "Backup or restore Claude Code settings (skills, agents, references
 
 ## Task Settings
 - subagent_type: git-manager
-- model: haiku
+- model: sonnet
 
 ## Role
 Backs up or restores Claude Code settings (skills/agents/references/memory/dotfiles) to/from GitHub.

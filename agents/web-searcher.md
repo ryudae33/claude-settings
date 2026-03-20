@@ -1,7 +1,7 @@
 ---
 name: web-searcher
 description: Web search/technical research. Error resolution, API docs, library usage, device specs/manuals, PLC protocol documentation search.
-model: claude-haiku-4-5-20251001
+model: claude-sonnet-4-6
 color: cyan
 ---
 
